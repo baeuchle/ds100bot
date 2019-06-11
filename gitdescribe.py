@@ -4,11 +4,11 @@ import version
 def get_last_version(cursor):
     cursor.execute("""
         SELECT
-            gitdescribe
+            content
         FROM
             last
-        ORDER BY time
-        DESC LIMIT 1
+        WHERE
+            subject = 'gitdescribe'
         """)
     row = cursor.fetchone()
     if row == None:
@@ -24,14 +24,14 @@ def is_same_version(cursor):
 def store_version(cursor):
     # store last answer time
     cursor.execute("""
-        INSERT INTO
-            last(
-                time,
-                gitdescribe
-            )
-        VALUES(?,?)
+        UPDATE
+            last
+        SET
+            content = ?
+        WHERE
+            subject = 'gitdescribe'
         """,
-        (datetime.datetime.now().strftime('%Y%m%d%H%M%S'),
-         get_version()
+        (
+         get_version(),
         )
         )

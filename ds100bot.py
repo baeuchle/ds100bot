@@ -3,18 +3,17 @@
 import answer
 import credentials
 import gitdescribe
+import since
+
+import datetime
 import sqlite3
 import sys
-import datetime
 import tweepy
 
 # setup twitter API
 auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
 auth.set_access_token(credentials.access_token, credentials.access_token_secret)
 api = tweepy.API(auth)
-
-# find tweets to answer
-text = "Hallo hier ist ein ütf8-Test mit #_FF #_FFLF #_FKW #_FH #_FKOZ #_FKON #_HG #_FFLU #_FFS #_FW #_FFFFF #_AA #_RSI #_TS #_AA__G #_FF"
 
 # setup database
 sql = sqlite3.connect('info.db')
@@ -25,11 +24,14 @@ if not gitdescribe.is_same_version(sqlcursor):
         gitdescribe.get_version())
     api.update_status("Ich twittere nun von Version {}".format(gitdescribe.get_version()))
 
+highest_id = since.get_since_id(sqlcursor)
 for tweet in tweepy.Cursor(api.search,
                            q='#DS100',
-                           tweet_mode='extended'
+                           tweet_mode='extended',
+                           since_id=highest_id
                           ).items(100):
     print (tweet.full_text)
+    highest_id = max(highest_id, tweet.id)
     twcounter = 1
     for reply in answer.compose_answer(tweet.full_text, sqlcursor):
         try:
@@ -42,9 +44,11 @@ for tweet in tweepy.Cursor(api.search,
             print ("-----------------")
             twcounter += 1
         except:
-            pass
+            print("Not tweeting reply")
 
 gitdescribe.store_version(sqlcursor)
+
+since.store_since_id(sqlcursor, highest_id)
 
 sqlcursor.close()
 sql.commit()
