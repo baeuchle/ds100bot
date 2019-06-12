@@ -3,7 +3,7 @@ import re
 
 max_tweet_length = 280
 
-def compose_answer(tweet, cursor):
+def compose_answer(tweet, cursor, readwrite):
     all_answers = []
     # generate answer
     charcount = 0
@@ -20,19 +20,20 @@ def compose_answer(tweet, cursor):
             (abbr, )
         )
         row = cursor.fetchone()
-        cursor.execute("""
-            INSERT INTO
-                requests(
-                    ds100_id
-                  , request_date
-                  , status
-                    )
-                VALUES (?,?,?)
-            """,
-               (abbr
-              , datetime.datetime.today().strftime('%Y%m%d')
-              , row != None
-              , ))
+        if readwrite:
+            cursor.execute("""
+                INSERT INTO
+                    requests(
+                        ds100_id
+                      , request_date
+                      , status
+                        )
+                    VALUES (?,?,?)
+                """,
+                   (abbr
+                  , datetime.datetime.today().strftime('%Y%m%d')
+                  , row != None
+                  , ))
         if row == None:
             continue
         explain = "{}: {}\n".format(row[0], row[1])
