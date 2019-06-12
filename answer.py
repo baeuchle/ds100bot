@@ -16,7 +16,18 @@ def compose_answer(tweet, cursor, readwrite):
         if normalized not in short_list:
             short_list.append(normalized)
     for abbr in short_list:
-        cursor.execute('SELECT Abk, Name FROM ds100 WHERE Abk = ?',
+        cursor.execute("""
+            SELECT
+                Abk,
+                Name,
+                gültigvon
+            FROM
+                ds100
+            WHERE
+                Abk = ?
+            ORDER BY gültigvon DESC
+            LIMIT 1
+            """,
             (abbr, )
         )
         row = cursor.fetchone()
