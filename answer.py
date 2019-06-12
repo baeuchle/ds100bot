@@ -8,7 +8,7 @@ def compose_answer(tweet, cursor, readwrite):
     # generate answer
     charcount = 0
     generated_content = ""
-    marker = re.compile("#_([A-Z_]+)")
+    marker = re.compile("#_?([A-Z_]+\d*)")
     short_list = []
     # get unique abbreviations, but keep them in order:
     for abbr in marker.findall(tweet):
