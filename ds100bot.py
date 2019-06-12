@@ -56,7 +56,7 @@ for tweet in tweepy.Cursor(api.search,
                                  )
             else:
                 print("NOT TWEETING:")
-            print ("Tweet {}:".format(twcounter))
+            print ("Tweet {} ({} chars):".format(twcounter, len(reply)))
             print (reply)
             print ("-----------------")
             twcounter += 1
