@@ -47,7 +47,7 @@ def compose_answer(tweet, cursor, readwrite):
                   , ))
         if row == None:
             continue
-        explain = "{}: {}\n".format(row[0], row[1])
+        explain = "{}: {}\n".format(row[0], row[1]).replace('.','\u2024')
         if charcount + len(explain) > max_tweet_length:
             all_answers.append(generated_content.strip())
             generated_content = ""
