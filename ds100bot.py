@@ -2,7 +2,7 @@
 
 import answer
 import credentials
-import gitdescribe
+import gitdescribe as git
 import since
 
 import argparse
@@ -31,12 +31,7 @@ api = tweepy.API(auth)
 # setup database
 sql = sqlite3.connect('info.db')
 sqlcursor = sql.cursor()
-if not gitdescribe.is_same_version(sqlcursor):
-    print("version has changed:",
-        gitdescribe.get_last_version(sqlcursor),
-        gitdescribe.get_version())
-    if readwrite:
-        api.update_status("Ich twittere nun von Version {}".format(gitdescribe.get_version()))
+git.notify_new_version(sqlcursor, api, readwrite)
 
 highest_id = since.get_since_id(sqlcursor)
 for tweet in tweepy.Cursor(api.search,
@@ -64,7 +59,7 @@ for tweet in tweepy.Cursor(api.search,
             print("Not tweeting reply")
 
 if readwrite:
-    gitdescribe.store_version(sqlcursor)
+    git.store_version(sqlcursor)
     since.store_since_id(sqlcursor, highest_id)
 
 sqlcursor.close()
