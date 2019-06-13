@@ -1,4 +1,5 @@
 import datetime
+import tweepy
 import version
 
 def get_last_hash(cursor):
