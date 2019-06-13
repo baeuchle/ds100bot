@@ -59,7 +59,10 @@ def notify_new_version(sqlcursor, api, readwrite):
     if len(status) > 280:
         status = status[0:280]
     if readwrite:
-        api.update_status(status)
+        try:
+            api.update_status(status)
+        except tweepy.TweepError as twerror:
+            print("Error {} tweeting new version: {}".format(twerror.api_code, twerror.reason))
     else:
         print("NOT TWEETING:")
     print("Tweet ({} chars):\n{}".format(len(status), status))
