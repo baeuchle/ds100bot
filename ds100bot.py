@@ -68,6 +68,7 @@ git.notify_new_version(sqlcursor, api, readwrite)
 
 highest_id = since.get_since_id(sqlcursor)
 seen_ids = {}
+seen_ids[highest_id] = 1
 for tweet in tweepy.Cursor(api.search,
                            q='#DS100',
                            tweet_mode='extended',
