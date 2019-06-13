@@ -20,12 +20,12 @@ def compose_answer(tweet, cursor, readwrite):
             SELECT
                 Abk,
                 Name,
-                gültigvon
+                gueltigvon
             FROM
-                ds100
+                shortstore
             WHERE
                 Abk = ?
-            ORDER BY gültigvon DESC
+            ORDER BY gueltigvon DESC
             LIMIT 1
             """,
             (abbr, )
