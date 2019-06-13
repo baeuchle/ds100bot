@@ -3,17 +3,40 @@ import re
 
 max_tweet_length = 280
 
-def compose_answer(tweet, cursor, readwrite):
+def compose_answer(tweet, cursor, readwrite, modus):
     all_answers = []
     # generate answer
     charcount = 0
     generated_content = ""
-    marker = re.compile("#_?([A-Z_]+\d*)")
+    markers = [
+        re.compile(r'#_?([A-Z_]+\d*)\b'),
+        re.compile(r'#_?([a-z_]+\d*)\b'),
+        re.compile(r'\b([A-Z_]+\d*)\b')
+    ]
+    marker_indices = []
+    if modus == 'hashtag':
+        marker_indices = [0, 1]
+    elif modus == 'mention' or modus == 'quoted' or modus == 'referenced':
+        marker_indices = [0, 1, 2]
+    else:
+        print("UNKNOWN MODUS", modus)
     short_list = []
     # get unique abbreviations, but keep them in order:
-    for abbr in marker.findall(tweet):
-        normalized = ' '.join(abbr.replace('_', ' ').split())
-        if normalized not in short_list:
+    for mi in marker_indices:
+        for abbr in markers[mi].findall(tweet):
+            abbr = abbr.replace('_', ' ')
+            normalized = ' '.join(abbr.split())
+            normalized = normalized.upper()
+            if len(normalized) == 0:
+                continue
+            if normalized == 'DS100':
+                continue
+            if normalized[0] == '_':
+                continue
+            if normalized[0].isdigit():
+                continue
+            if normalized in short_list:
+                continue
             short_list.append(normalized)
     for abbr in short_list:
         cursor.execute("""
