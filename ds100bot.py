@@ -84,6 +84,9 @@ for tweet in tweepy.Cursor(api.mentions_timeline,
     if tweet.id in seen_ids:
         continue
     seen_ids[tweet.id] = 1
+    if tweet.author.screen_name == '_ds_100':
+        print("Not processing my own tweets")
+        continue
     process_tweet(tweet, api, sqlcursor, readwrite, 'mention')
     if 'quoted_status_id' in vars(tweet) and tweet.quoted_status_id not in seen_ids:
         print("Processing quoted Tweet")
