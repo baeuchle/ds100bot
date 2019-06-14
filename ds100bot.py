@@ -13,10 +13,9 @@ import tweepy
 
 def print_rate_limit(api):
     rls = api.rate_limit_status()
-    print("Rate limit:")
     for r in rls['resources']:
         for l in rls['resources'][r]:
-            if rls['resources'][r][l]['limit'] != rls['resources'][r][l]['remaining']:
+            if rls['resources'][r][l]['limit'] != rls['resources'][r][l]['remaining'] and rls['resources'][r][l]['remaining'] < 10:
                 print(l, rls['resources'][r][l]['limit'], rls['resources'][r][l]['remaining'])
 
 def print_tweet_object(tweet):
