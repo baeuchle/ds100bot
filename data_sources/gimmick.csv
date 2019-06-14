@@ -1,0 +1,9 @@
+Abk;Name;Kurzname;Typ;Betr-Zust;Primary location code;UIC;RB;gültig von;gültig bis;Netz-Key;Fpl-rel;Fpl-Gr
+RKRSN;Rekursion: #DS100 #RKRSN (aber ich antworte mir nicht selbst);Rekursion;;;;;;00000000;;;;
+RKRSV;Rekursiv:  #DS100 #RKRSV (aber ich antworte mir nicht selbst);Rekursiv ;;;;;;00000000;;;;
+RCRSN;Recursion: #DS100 #RCRSN (but I don't answer myself);Rekursion;;;;;;00000000;;;;
+RCRSV;Recursive: #DS100 #RCRSV (but I don't answer myself);Recursive;;;;;;00000000;;;;
+RTFM;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht.;Siehe Webseite;;;;;;00000000;;;;
+MAN;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht.;Siehe Webseite;;;;;;00000000;;;;
+XXX;This bot is not x-rated;No Problem;;;;;;00000000;;;;
+NSFW;Dieser Bot ist Safe for Work;SFW;;;;;;00000000;;;;

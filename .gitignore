@@ -2,4 +2,3 @@ credentials.py
 version.py
 __pycache__
 info.db
-data_sources/gimmick.csv
