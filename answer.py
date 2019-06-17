@@ -29,6 +29,8 @@ def compose_answer(tweet, cursor, readwrite, modus):
             normalized = normalized.upper()
             if len(normalized) == 0:
                 continue
+            if len(normalized) > 5:
+                continue
             if normalized == 'DS100':
                 continue
             if normalized[0] == '_':

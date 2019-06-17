@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>DS100-bot</title>
+ </head>
+ <body>
+  <p style="font-size: 50%">Diese Seite ist so; hier fehlt kein CSS.</p>
+  <h1>DS 100-bot</h1>
+  <p>
+    Diese Seite beschreibt den <a
+    href="https://twitter.com/_ds_100">DS100-Twitterbot</a> in der
+    Version VERSION.
+  </p>
+  <h2>Zweck des Bots</h2>
+  <p>
+    Der Bot soll helfen, Betriebsstellen Deutschen Bahn nach DS 100
+    (Betriebsstellenverzeichnis) abzukürzen und trotzdem sicherzustellen, dass
+    auch Dritte den Inhalt des Tweets verstehen können. Auf erkannte Tweets
+    antwortet der Bot mit dem erkannten Kürzel, ": ", und dem langen Namen der
+    Betriebsstelle.
+  </p>
+  <p>
+    Der Bot entspringt aus einem privaten Wochenendprojekt und wird <em>pro
+    bono</em> betrieben; es stehen keine wirtschaftlichen Interessen und keine
+    Umsatz- oder Gewinnabsicht hinter Erstellung und / oder Betreiben des Bots.
+  </p>
+  <h2>Benutzung des Bots</h2>
+  <h3>Per Hashtag #DS100</h3>
+  <p>
+    Der Bot durchsucht alle Tweets, die mit dem Hashtag <a
+    href="https://twitter.com/hashtag/DS100?src=hash">#DS100</a> gekennzeichnet
+    sind. Wenn er in diesen Tweets Hashtags mit einem DS100-Kürzel findet, also
+    etwa "#FF" oder "#FKW_W", dann antwortet er auf diesen Tweet mit dem
+    dazugehörigen Namen laut DS100, in diesem Beispiel:
+  </p>
+  <blockquote>
+    FF: Frankfurt (Main) Hbf<br>
+    FKW W: Kassel-Wilhelmshöhe West
+  </blockquote>
+  <p>
+    Die Abkürzungen müssen dabei in konsistenter Groß-/Kleinschreibung
+    geschrieben werden (#FF oder #ff, nicht #Ff oder #fF) und
+    Leerzeichen durch einen Unterstrich ('_') ersetzt werden. Mehrere
+    aufeinanderfolgende Leerzeichen können zu einem Unterstrich
+    zusammengefasst werden; umgekehrt kann ein Leerzeichen in der
+    Abkürzung durch beliebig viele Unterstriche dargestellt werden.
+    Eventuell wird es zukünftig eine maximale Länge der Abkürzungen
+    geben. So kann "Hamburg-Altona Gbf" (DS100-Abkürzung
+    "<tt>AA&nbsp;&nbsp;G</tt>") mit #AA_G oder #AA__G markiert werden.
+    Markierungen, die länger als 5 Zeichen sind, werden ignoriert.
+  </p>
+  <h3>Per Mention @ds_100</h3>
+  <p>
+    Wird der Bot in einem Tweet erwähnt, so durchsucht er diesen Tweet,
+    sowie einen eventuell davon beantworteten oder zitierten Tweet nach
+    DS100-Abkürzungen. Im Gegensatz zu Tweets, die per Hashtag gefunden
+    werden (siehe oben), erkennt der Bot in den hier gefundenen Tweets
+    auch DS100-Abkürzungen in Großbuchstaben und ohne Hashtag (also FF
+    und FKW_W, aber nicht ff, Ff, fF, FKW_w usw.).
+  </p>
+  <h3>Output</h3>
+  <p>
+    Mehrere gefundene Abkürzungen werden in der Reihenfolge der Erwähnung im
+    Tweet erweitert; eine Erweiterung wird dabei nicht wiederholt. Wenn alle
+    Erweiterungen nicht in einen Tweet passen, werden mehrere Tweets
+    gesendet, die aufeinander antworten. Innerhalb einer solchen Gruppe
+    von Tweets werden Erweiterungen auch nicht wiederholt.
+  </p>
+  <p>
+    Aktuell sucht der Bot zuerst nach #DS100 und erst dann nach den
+    Mentions. Dabei betrachtet er keinen Tweet zweimal. Der Tweet
+  </p>
+  <blockquote>
+    Das hier ist ein Test-Tweet FF #DS100 @_ds_100
+  </blockquote>
+  <p>
+    wird daher keine Antwort auslösen.
+  </p>
+  <h2>Beitragen</h2>
+  <p>
+    Kommentare zum Bot, Fehlermeldungen und Ideen können gerne per Twitter an
+    den <a href="https://twitter.com/_ds_100">Bot selbst</a> oder an <a
+    href="https://twitter.com/baeuchle">@baeuchle</a> geschickt werden.
+  </p>
+  <p>
+    Eine geplante mögliche Erweiterung des Bots würde andere
+    Bahnabkürzungslisten, etwa von anderen Bahnverwaltungen, einschließen. Wer
+    eine solche Liste hat und weitergeben darf, kann sich gerne melden, siehe
+    vorheriger Absatz.
+  </p>
+  <h2>Fehler</h2>
+  <p>
+    In Kürze soll es einen Projektmanagement-Bereich geben, in dem Changelogs,
+    Bugreports und Feature Requests gesammelt werden. Aktuell sind keine Fehler
+    bekannt.
+  </p>
+  <h2>Haftungsausschluss</h2>
+  <p>
+    Die Daten, die dieser Bot liefert, sollten richtig und vollständig sein,
+    aber dafür wird keine Garantie gegeben.
+  </p>
+  <p>
+    Schäden, die dadurch entstehen, dass dieser Bot fehlerhafte oder
+    unvollständige Informationen liefert, liegen einzig und alleine in der
+    Verantwortung derjenigen Person, die diese Informationen
+    weiterverwendet.
+  </p>
+  <h2>Daten und Urheberrecht</h2>
+  <p>
+    Der Bot benutzt das <a href="https://data.deutschebahn.com/dataset/data-betriebsstellen">Betriebsstellenverzeichnis
+    der Deutschen Bahn AG</a>, das unter CC-BY 4.0 veröffentlicht ist. Im Namen
+    auftretende mehrfache Leerzeichen werden als ein Leerzeichen geschrieben;
+    außerdem werden Punkte ('.') durch das Zeichen ONE DOT LEADER ('&#x2024;')
+    ersetzt, um Twitter daran zu hindern, automatisch einen Link zu erzeugen.
+  </p>
+  <p>
+    Die Tweets des Bots besitzen keine ausreichende Schöpfungstiefe, die
+    die Anwendung eines Urheberrechtes rechtfertigen würden. Der vorherige
+    Absatz ist davon unberührt.
+  </p>
+  <h2>Datenschutz</h2>
+  <p>
+    Der Bot erhebt oder speichert keine personalisierten Daten. Die Antworten
+    des Bots sind nur auf Twitter abrufbar; für die Daten, die Twitter erhebt,
+    besteht von Seiten des Bots keine Verantwortung.
+  </p>
+  <p>
+    Der Bot speichert die letzte Tweet-ID, die er gesehen hat, damit er nicht
+    zweimal auf den gleichen Tweet antwortet, sowie jede DS100-Abkürzung, die
+    er in einem Tweet zu erkennen glaubte. Diese werden zusammen mit dem
+    Erkennungsdatum und der Information, ob die Abkürzung einem Langnamen
+    zugeordnet werden konnte, gespeichert. Es wird dabei nicht gespeichert,
+    welcher Twitter-User den Ursprungstweet verfasst oder anderweitig zur
+    Aufmerksamkeit des Bots gebracht hat (etwa durch Retweet). Aus dieser
+    Liste kann in regelmäßigen oder unregelmäßigen Abständen eine
+    Zusammenstellung der am häufigsten gesuchten Abkürzungen und der
+    nicht-erkannten Abkürzungen erstellt werden. Durch Löschen der
+    entsprechenden Tweets bei Twitter sind diese Daten auch über den Bot
+    oder dessen gespeicherte Daten nicht mehr zugänglich.
+  </p>
+  <p>
+    Beim Besuch <em>dieser</em> Seite werden im Rahmen der gesetzlichen
+    Vorschriften keine personalisierten Daten erhoben. Es werden keine Cookies
+    gesetzt und kein Inhalt von externen Servern, die nicht unter der gleichen
+    Kontrolle wie dieser Server liegen, geladen.
+  </p>
+  <h2>Impressum</h2>
+  <h3>Angaben gemäß §5 TMG:</h3>
+  <p>
+    Verantwortlich für diesen Bot und diese Seite ist:<br>
+    Dr. Bjørn Bäuchle<br>
+    Am Garten 1<br>
+    34121 Kassel<br>
+    ds100 minus bot at frankfurtium dot de
+  </p>
+  <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
+  <p>
+    Bjørn Bäuchle
+  </p>
+ </body>
+</html>

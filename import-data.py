@@ -37,24 +37,57 @@ for f in os.listdir(directory):
             name = ' '.join(datum['Name'].split()).replace('.', '\u2024')
             kurzname = ' '.join(datum['Kurzname'].split())
             sqlcursor.execute("""
-                REPLACE INTO
-                    shortstore(
-                        Abk,
-                        Name,
-                        Kurzname,
-                        gueltigvon,
-                        source
-                    )
-                    VALUES
-                    (?,?,?,?,?)
+                SELECT
+                    *
+                FROM
+                    shortstore
+                WHERE
+                    Abk = ?
+                  AND
+                    source = ?
                 """,
-                (abk
-               , name
-               , kurzname
-               , datum['gültig von']
-               , quelle
-               , )
+                (abk, quelle, )
             )
+            if sqlcursor.fetchone() == None:
+                sqlcursor.execute("""
+                    INSERT INTO
+                        shortstore(
+                            Abk,
+                            Name,
+                            Kurzname,
+                            gueltigvon,
+                            source
+                        )
+                        VALUES
+                        (?,?,?,?,?)
+                    """,
+                    (abk
+                   , name
+                   , kurzname
+                   , datum['gültig von']
+                   , quelle
+                   , )
+                )
+            else:
+                sqlcursor.execute("""
+                    UPDATE
+                        shortstore
+                    SET
+                        Name = ?,
+                        Kurzname = ?,
+                        gueltigvon = ?
+                    WHERE
+                        Abk = ?
+                      AND
+                        source = ?
+                    """,
+                    (name
+                   , kurzname
+                   , datum['gültig von']
+                   , abk
+                   , quelle
+                   , )
+                )
 sqlcursor.close()
 sql.commit()
 sql.close()
