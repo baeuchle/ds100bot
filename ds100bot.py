@@ -53,6 +53,7 @@ def process_tweet(tweet, api, sqlcursor, readwrite, modus):
             print("=================")
         return
     print_tweet_object(tweet)
+    reply_id = tweet.id
     twcounter = 1
     for reply in answer.compose_answer(tweet.full_text, sqlcursor, readwrite, modus):
         print("Tweet {} ({} chars):".format(twcounter, len(reply)))
@@ -61,10 +62,11 @@ def process_tweet(tweet, api, sqlcursor, readwrite, modus):
         if not readwrite:
             continue
         try:
-            api.update_status(reply,
-                              in_reply_to_status_id=tweet.id,
+            new_tweet = api.update_status(reply,
+                              in_reply_to_status_id=reply_id,
                               auto_populate_reply_metadata=True
                              )
+            reply_id = new_tweet.id
         except tweepy.TweepError as twerror:
             print("Error {} tweeting {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
     if verbose:
