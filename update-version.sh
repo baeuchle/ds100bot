@@ -29,6 +29,6 @@ echo '"""'
 tdir=/var/www/ds100
 if [ -d "$tdir" ]; then
     for html in html/*.html; do
-        perl -pe "s/VERSION/$(git describe --always --dirty)/g;" $html > $tdir/${html/^html/}
+        perl -pe "s/VERSION/$(git describe --always --dirty)/g;" $html > $tdir/${html/html/}
     done
 fi
