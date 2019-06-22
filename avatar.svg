@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="225"
+  height="225"
+  viewBox="-16 -52 225 225"
+   >
+ <title>DS100</title>
+ <metadata>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+           xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <rdf:Description>
+    <dc:creator><![CDATA[Bjørn Bäuchle <ds100 minus bot at frankfurtium dot de>]]></dc:creator>
+    <dc:identifier>https://avatar.frankfurtium.de/ds100.svg</dc:identifier>
+    <dc:relation>https://avatar.frankfurtium.de/ds100.svg</dc:relation>
+    <dc:rights>© Bjørn Bäuchle CC-0 4.0</dc:rights>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type>Image</dc:type>
+    <dc:title>DS100</dc:title>
+    <dc:date>2019-06-20</dc:date>
+   </rdf:Description>
+  </rdf:RDF>
+ </metadata>
+ <style type="text/css"><![CDATA[
+  path#stiel { stroke: #646464; stroke-width: 10; }
+  path#rahmen { stroke: red; fill: white; stroke-width: 5; stroke-linejoin: round; }
+  text {
+    fill: black;
+    font-size: 30pt;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+ ]]>
+ </style>
+ <g>
+  <path id="stiel" d="M -20, 50 L 10, 50" />
+  <path id="rahmen" d="M 3, 60 L 3,3 L 206,60 L 3,117 L 3,60" />
+  <text x="10" y="74">DS 100</text>
+  <!--<circle cx="96" cy="60" r="112" style="fill: none; stroke: blue; stroke-width: 1; "/>-->
+ </g>
+</svg>
