@@ -109,17 +109,7 @@ git.notify_new_version(sqlcursor, api, readwrite)
 highest_id = since.get_since_id(sqlcursor)
 seen_ids = {}
 seen_ids[highest_id] = 1
-if verbose > 0:
-    print("####### Processing #DS100-tweets")
-for tweet in tweepy.Cursor(api.search,
-                           q='#DS100',
-                           tweet_mode='extended',
-                           since_id=highest_id
-                          ).items():
-    if tweet.id in seen_ids:
-        continue
-    seen_ids[tweet.id] = 1
-    process_tweet(tweet, api, sqlcursor, readwrite, 'hashtag')
+
 if verbose > 0:
     print("####### Processing mentions")
 for tweet in tweepy.Cursor(api.mentions_timeline,
@@ -159,6 +149,17 @@ for tweet in tweepy.Cursor(api.mentions_timeline,
         except tweepy.TweepError as twerror:
             print("Error {} receiving referenced tweet {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
             print("Referee was >>>{}<<<".format(tweet.full_text))
+if verbose > 0:
+    print("####### Processing #DS100-tweets")
+for tweet in tweepy.Cursor(api.search,
+                           q='#DS100',
+                           tweet_mode='extended',
+                           since_id=highest_id
+                          ).items():
+    if tweet.id in seen_ids:
+        continue
+    seen_ids[tweet.id] = 1
+    process_tweet(tweet, api, sqlcursor, readwrite, 'hashtag')
 
 highest_id = max(seen_ids.keys())
 
