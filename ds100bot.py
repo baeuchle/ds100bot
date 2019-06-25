@@ -3,6 +3,7 @@
 import answer
 import credentials
 import gitdescribe as git
+import react
 import since
 
 import argparse
@@ -121,6 +122,7 @@ for tweet in tweepy.Cursor(api.mentions_timeline,
             print("Have seen tweet {} already:\n{}".format(tweet.id, tweet.full_text))
         continue
     seen_ids[tweet.id] = 1
+    react.process_commands(tweet, api, readwrite)
     process_tweet(tweet, api, sqlcursor, readwrite, 'mention')
     if tweet.author.screen_name == '_ds_100':
         print("Not processing my own tweets")
