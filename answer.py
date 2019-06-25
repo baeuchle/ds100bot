@@ -18,6 +18,8 @@ def compose_answer(tweet, cursor, readwrite, modus):
         marker_indices = [0, 1]
     elif modus == 'mention' or modus == 'quoted' or modus == 'referenced':
         marker_indices = [0, 1, 2]
+    elif modus == 'timeline':
+        marker_indices = [0]
     else:
         print("UNKNOWN MODUS", modus)
     short_list = []

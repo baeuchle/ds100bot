@@ -152,6 +152,23 @@ for tweet in tweepy.Cursor(api.mentions_timeline,
             print("Error {} receiving referenced tweet {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
             print("Referee was >>>{}<<<".format(tweet.full_text))
 if verbose > 0:
+    print("####### Processing timeline")
+for tweet in tweepy.Cursor(api.home_timeline,
+                           tweet_mode='extended',
+                           since_id=highest_id
+                           ).items():
+    if tweet.id in seen_ids:
+        if verbose > 0:
+            print("Have seen tweet {} already:\n{}".format(tweet.id, tweet.full_text))
+        continue
+    seen_ids[tweet.id] = 1
+    if tweet.author.screen_name == '_ds_100':
+        print("Not processing my own tweets")
+        continue
+    process_tweet(tweet, api, sqlcursor, readwrite, 'timeline')
+    
+
+if verbose > 0:
     print("####### Processing #DS100-tweets")
 for tweet in tweepy.Cursor(api.search,
                            q='#DS100',
