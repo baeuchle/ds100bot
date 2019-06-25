@@ -19,7 +19,7 @@ def print_rate_limit(api):
         rr = res[r]
         for l in res[r]:
             rrl = res[r][l]
-            if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 10:
+            if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
                 print("Resource limit for {} low: {} of {} remaining".format(
                     l,
                     rrl['remaining'],
