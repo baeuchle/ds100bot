@@ -5,6 +5,7 @@
   <title>DS100-bot</title>
  </head>
  <body>
+  <img src="https://avatar.frankfurtium.de/ds100.svg" width="30%" style="margin-right: 1em; margin-bottom: 1em; float: left; " alt="DS100" />
   <p style="font-size: 50%">Diese Seite ist so; hier fehlt kein CSS.</p>
   <h1>DS 100-bot</h1>
   <p>
@@ -45,8 +46,7 @@
     aufeinanderfolgende Leerzeichen können zu einem Unterstrich
     zusammengefasst werden; umgekehrt kann ein Leerzeichen in der
     Abkürzung durch beliebig viele Unterstriche dargestellt werden.
-    Eventuell wird es zukünftig eine maximale Länge der Abkürzungen
-    geben. So kann "Hamburg-Altona Gbf" (DS100-Abkürzung
+    So kann "Hamburg-Altona Gbf" (DS100-Abkürzung
     "<tt>AA&nbsp;&nbsp;G</tt>") mit #AA_G oder #AA__G markiert werden.
     Markierungen, die länger als 5 Zeichen sind, werden ignoriert.
   </p>
@@ -59,6 +59,29 @@
     auch DS100-Abkürzungen in Großbuchstaben und ohne Hashtag (also FF
     und FKW_W, aber nicht ff, Ff, fF, FKW_w usw.).
   </p>
+  <h3>Gefolge</h3>
+  <p>
+    Wem der Bot folgt, dessen Tweets werden automatisch nach
+    großgeschriebenen Hashtags (#FF) durchsucht und diese beantwortet.
+    Um den Bot dazu zu bringen, zu folgen, bitte eine Mention an den Bot
+    schicken mit dem Hashtag #folgenbitte:
+  </p>
+  <blockquote>
+    @_ds_100 #folgenbitte
+  </blockquote>
+  <p>
+    Wenn das zu nervig wird, kann der Bot folgendermaßen angewiesen
+    werden, wieder zu entfolgen:
+  </p>
+  <blockquote>
+    @_ds_100 #entfolgen
+  </blockquote>
+  <p>
+    Eine zu kurze Abfolge von #folgenbitte und #entfolgen kann eventuell
+    übersehen oder in der falschen Reihenfolge abgearbeitet werden. Der
+    Bot läuft im Normalfall alle zwei Minuten; nach dem nächsten Lauf
+    kann ein neuer Befehl abgesetzt werden.
+  </p>
   <h3>Output</h3>
   <p>
     Mehrere gefundene Abkürzungen werden in der Reihenfolge der Erwähnung im
@@ -68,14 +91,14 @@
     von Tweets werden Erweiterungen auch nicht wiederholt.
   </p>
   <p>
-    Aktuell sucht der Bot zuerst nach #DS100 und erst dann nach den
-    Mentions. Dabei betrachtet er keinen Tweet zweimal. Der Tweet
+    Aktuell sucht der Bot zuerst nach den Mentions und dann nach #DS100.
+    Der Tweet
   </p>
   <blockquote>
     Das hier ist ein Test-Tweet FF #DS100 @_ds_100
   </blockquote>
   <p>
-    wird daher keine Antwort auslösen.
+    wird also beantwortet.
   </p>
   <h2>Beitragen</h2>
   <p>

@@ -32,3 +32,8 @@ if [ -d "$tdir" ]; then
         perl -pe "s/VERSION/$(git describe --always --dirty)/g;" $html > $tdir/${html/html/}
     done
 fi
+
+adir=/var/www/avatar
+if [ -d "$adir" ]; then
+    cp avatar.svg $adir/ds100.svg
+fi
