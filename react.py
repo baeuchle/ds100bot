@@ -5,12 +5,14 @@ def process_commands(tweet, api, readwrite):
             api.create_friendship(id=tweet.author.id)
             if ht['text'].lower() == 'folgenbitte':
                 friendship = api.show_friendship(myself.id, target_id=tweet.author.id)
-                if not friendship[0].following and readwrite:
+                print ("folgenbitte von @{}; folge schon: {}".format(tweet.author.screen_name, friendship[0].following))
+                if readwrite and not friendship[0].following:
                     print ("Following user @{}".format(tweet.author.screen_name))
                     api.create_friendship(id=tweet.author.id)
             if ht['text'].lower() == 'entfolgen':
                 friendship = api.show_friendship(myself.id, target_id=tweet.author.id)
-                if not friendship[0].following and readwrite:
+                print ("entfolgen von @{}; folge schon: {}".format(tweet.author.screen_name, friendship[0].following))
+                if readwrite and friendship[0].following:
                     print ("Defollow user".format(tweet.author.screen_name))
                     api.destroy_friendship(id=tweet.author.id)
         except tweepy.TweepError as twerror:
