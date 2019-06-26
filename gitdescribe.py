@@ -50,7 +50,7 @@ def get_changelog(sqlcursor):
         return version.changelog[last_hash]
     return ""
 
-def notify_new_version(sqlcursor, api, readwrite):
+def notify_new_version(sqlcursor, api, readwrite, verbose):
     if is_same_version(sqlcursor):
         return
     status = "Ich twittere nun von Version {}".format(get_version())
@@ -64,6 +64,7 @@ def notify_new_version(sqlcursor, api, readwrite):
             api.update_status(status)
         except tweepy.TweepError as twerror:
             print("Error {} tweeting new version: {}".format(twerror.api_code, twerror.reason))
-    else:
+    elif verbose > 0:
         print("NOT TWEETING:")
-    print("Tweet ({} chars):\n{}".format(len(status), status))
+    if verbose > 0:
+        print("Tweet ({} chars):\n{}".format(len(status), status))

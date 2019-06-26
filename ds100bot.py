@@ -28,7 +28,7 @@ def print_rate_limit(api):
 
 def print_tweet_object(tweet):
     global verbose
-    if not verbose > 1:
+    if not verbose > 3:
         return
     for k in vars(tweet):
         if k[0] == '_':
@@ -36,28 +36,31 @@ def print_tweet_object(tweet):
         print(k, vars(tweet)[k])
 
 def process_tweet(tweet, api, sqlcursor, readwrite, modus):
-    if verbose > 0:
+    if verbose > 2:
         print("Processing tweet {}:".format(tweet.id))
         print(tweet.full_text)
         print("+++++++++++++++++")
     if 'retweeted_status' in vars(tweet):
-        print("Not replying to retweets")
+        if verbose > 1:
+            print("Not replying to retweets")
         print_tweet_object(tweet)
-        if verbose > 0:
+        if verbose > 1:
             print("=================")
         return   
     if tweet.author.screen_name == '_ds_100':
-        print("Not replying to my own tweets")
+        if verbose > 2:
+            print("Not replying to my own tweets")
         print_tweet_object(tweet)
-        if verbose > 0:
+        if verbose > 2:
             print("=================")
         return
     print_tweet_object(tweet)
     reply_id = tweet.id
     twcounter = 1
     for reply in answer.compose_answer(tweet.full_text, sqlcursor, readwrite, modus):
-        print("Tweet {} ({} chars):".format(twcounter, len(reply)))
-        print(reply)
+        if verbose > 0:
+            print("I tweet {} ({} chars):".format(twcounter, len(reply)))
+            print(reply)
         twcounter += 1
         if not readwrite:
             continue
@@ -69,7 +72,7 @@ def process_tweet(tweet, api, sqlcursor, readwrite, modus):
             reply_id = new_tweet.id
         except tweepy.TweepError as twerror:
             print("Error {} tweeting {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
-    if verbose > 0:
+    if verbose > 2:
         if twcounter == 1:
             print("No expandable content found")
         print("=================")
@@ -105,70 +108,75 @@ api = tweepy.API(auth)
 # setup database
 sql = sqlite3.connect('info.db')
 sqlcursor = sql.cursor()
-git.notify_new_version(sqlcursor, api, readwrite)
+git.notify_new_version(sqlcursor, api, readwrite, verbose)
 
 highest_id = since.get_since_id(sqlcursor)
 seen_ids = {}
 seen_ids[highest_id] = 1
 
-if verbose > 0:
+if verbose > 1:
     print("####### Processing mentions")
 for tweet in tweepy.Cursor(api.mentions_timeline,
                            tweet_mode='extended',
                            since_id=highest_id
                           ).items():
     if tweet.id in seen_ids:
-        if verbose > 0:
+        if verbose > 2:
             print("Have seen tweet {} already:\n{}".format(tweet.id, tweet.full_text))
         continue
     seen_ids[tweet.id] = 1
-    react.process_commands(tweet, api, readwrite)
+    react.process_commands(tweet, api, readwrite, verbose)
     process_tweet(tweet, api, sqlcursor, readwrite, 'mention')
     if tweet.author.screen_name == '_ds_100':
-        print("Not processing my own tweets")
+        if verbose > 2:
+            print("Not processing my own tweets")
         continue
     # if this tweet quotes another, not-yet-seen tweet, process that quoted tweet.
     if 'quoted_status_id' in vars(tweet) and tweet.quoted_status_id not in seen_ids:
-        if verbose > 0:
+        if verbose > 1:
             print("Processing quoted tweet {}:\n{}".format(tweet.quoted_status_id, "?"))
         seen_ids[tweet.quoted_status_id] = 1
         try:
             quoted_tweet = api.get_status(tweet.quoted_status_id,
                 tweet_mode='extended')
-            print("Quoted is >>>{}<<<".format(quoted_tweet.full_text))
+            if verbose > 2:
+                print("Quoted is >>>{}<<<".format(quoted_tweet.full_text))
             process_tweet(quoted_tweet, api, sqlcursor, readwrite, 'quoted')
         except tweepy.TweepError as twerror:
             print("Error {} receiving quoted tweet {}: {}".format(twerror.api_code, tweet.quoted_status_id, twerror.reason))
             print("Quotee was >>>{}<<<".format(tweet.full_text))
     if tweet.in_reply_to_status_id != None and tweet.in_reply_to_status_id not in seen_ids:
-        print("Processing referenced Tweet")
+        if verbose > 1:
+            print("Processing referenced Tweet")
         seen_ids[tweet.in_reply_to_status_id] = 1
         try:
             referenced_tweet = api.get_status(tweet.in_reply_to_status_id,
                 tweet_mode='extended')
-            print("Referenced is >>>{}<<<".format(referenced_tweet.full_text))
+            if verbose > 2:
+                print("Referenced is >>>{}<<<".format(referenced_tweet.full_text))
             process_tweet(referenced_tweet, api, sqlcursor, readwrite, 'referenced')
         except tweepy.TweepError as twerror:
             print("Error {} receiving referenced tweet {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
             print("Referee was >>>{}<<<".format(tweet.full_text))
-if verbose > 0:
+if verbose > 1:
     print("####### Processing timeline")
 for tweet in tweepy.Cursor(api.home_timeline,
                            tweet_mode='extended',
                            since_id=highest_id
                            ).items():
     if tweet.id in seen_ids:
-        if verbose > 0:
+        if verbose > 2:
             print("Have seen tweet {} already:\n{}".format(tweet.id, tweet.full_text))
         continue
     seen_ids[tweet.id] = 1
     if tweet.author.screen_name == '_ds_100':
-        print("Not processing my own tweets")
+        if verbose > 2:
+            print("Not processing my own tweets")
         continue
     process_tweet(tweet, api, sqlcursor, readwrite, 'timeline')
     
 
-if verbose > 0:
+if verbose > 1:
     print("####### Processing #DS100-tweets")
 for tweet in tweepy.Cursor(api.search,
                            q='#DS100',

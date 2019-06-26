@@ -1,19 +1,29 @@
-def process_commands(tweet, api, readwrite):
+import tweepy
+
+def process_commands(tweet, api, readwrite, verbose):
     myself = api.me()
     for ht in tweet.entities['hashtags']:
+        text = ht['text'].lower()
         try:
-            api.create_friendship(id=tweet.author.id)
-            if ht['text'].lower() == 'folgenbitte':
+            if text == 'folgenbitte':
                 friendship = api.show_friendship(myself.id, target_id=tweet.author.id)
-                print ("folgenbitte von @{}; folge schon: {}".format(tweet.author.screen_name, friendship[0].following))
+                if verbose > 0:
+                    print ("folgenbitte from @{}:".format(tweet.author.screen_name), end='')
+                    if friendship[0].following:
+                        print (" already following")
+                    else:
+                        print (" not yet following")
                 if readwrite and not friendship[0].following:
-                    print ("Following user @{}".format(tweet.author.screen_name))
                     api.create_friendship(id=tweet.author.id)
-            if ht['text'].lower() == 'entfolgen':
+            if text == 'entfolgen':
                 friendship = api.show_friendship(myself.id, target_id=tweet.author.id)
-                print ("entfolgen von @{}; folge schon: {}".format(tweet.author.screen_name, friendship[0].following))
+                if verbose > 0:
+                    print ("entfolgen from @{}:".format(tweet.author.screen_name), end='')
+                    if friendship[0].following:
+                        print(" still following so far")
+                    else:
+                        print(" not even following yet")
                 if readwrite and friendship[0].following:
-                    print ("Defollow user".format(tweet.author.screen_name))
                     api.destroy_friendship(id=tweet.author.id)
         except tweepy.TweepError as twerror:
             print("Error {} (de-)following @{}: {}".format(twerror.api_code, tweet.author.screen_name, twerror.reason))
