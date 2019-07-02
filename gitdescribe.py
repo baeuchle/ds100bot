@@ -62,6 +62,8 @@ def notify_new_version(sqlcursor, api, readwrite, verbose):
     if readwrite:
         try:
             api.update_status(status)
+        except tweepy.RateLimitError as rateerror:
+            print("Rate limit violated: {}".format(rateerror.reason))
         except tweepy.TweepError as twerror:
             print("Error {} tweeting new version: {}".format(twerror.api_code, twerror.reason))
     elif verbose > 0:

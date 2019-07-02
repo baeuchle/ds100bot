@@ -70,6 +70,9 @@ def process_tweet(tweet, api, sqlcursor, readwrite, modus):
                               auto_populate_reply_metadata=True
                              )
             reply_id = new_tweet.id
+        except tweepy.RateLimitError as rateerror:
+            print("Rate limit violated: {}".format(rateerror.reason))
+            print_rate_limit(api)
         except tweepy.TweepError as twerror:
             print("Error {} tweeting {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
     if verbose > 2:
@@ -142,6 +145,9 @@ for tweet in tweepy.Cursor(api.mentions_timeline,
             if verbose > 2:
                 print("Quoted is >>>{}<<<".format(quoted_tweet.full_text))
             process_tweet(quoted_tweet, api, sqlcursor, readwrite, 'quoted')
+        except tweepy.RateLimitError as rateerror:
+            print("Rate limit violated: {}".format(rateerror.reason))
+            print_rate_limit(api)
         except tweepy.TweepError as twerror:
             print("Error {} receiving quoted tweet {}: {}".format(twerror.api_code, tweet.quoted_status_id, twerror.reason))
             print("Quotee was >>>{}<<<".format(tweet.full_text))
@@ -155,6 +161,9 @@ for tweet in tweepy.Cursor(api.mentions_timeline,
             if verbose > 2:
                 print("Referenced is >>>{}<<<".format(referenced_tweet.full_text))
             process_tweet(referenced_tweet, api, sqlcursor, readwrite, 'referenced')
+        except tweepy.RateLimitError as rateerror:
+            print("Rate limit violated: {}".format(rateerror.reason))
+            print_rate_limit(api)
         except tweepy.TweepError as twerror:
             print("Error {} receiving referenced tweet {}: {}".format(twerror.api_code, tweet.in_reply_to_status_id, twerror.reason))
             print("Referee was >>>{}<<<".format(tweet.full_text))
@@ -197,4 +206,3 @@ if readwrite:
 sqlcursor.close()
 sql.commit()
 sql.close()
-print_rate_limit(api)

@@ -25,5 +25,7 @@ def process_commands(tweet, api, readwrite, verbose):
                         print(" not even following yet")
                 if readwrite and friendship[0].following:
                     api.destroy_friendship(id=tweet.author.id)
+        except tweepy.RateLimitError as rateerror:
+            print("Rate limit violated: {}".format(rateerror.reason))
         except tweepy.TweepError as twerror:
             print("Error {} (de-)following @{}: {}".format(twerror.api_code, tweet.author.screen_name, twerror.reason))
