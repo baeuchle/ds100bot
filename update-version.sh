@@ -26,7 +26,7 @@ git log \
   | perl -pe 's/^\s+CHANGELOG/•/'
 echo '"""'
 
-exec 1> &3
+exec 1>&3
 cd html/
 . create.sh
 

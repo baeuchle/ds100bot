@@ -2,8 +2,7 @@ DS-100-Bot
 ==========
 
 Diese Seite beschreibt den
-[DS100-Twitterbot](https://twitter.com/_ds_100) in der Version
-VERSION.
+[DS100-Twitterbot](https://twitter.com/_ds_100).
 
 Zweck des Bots
 --------------

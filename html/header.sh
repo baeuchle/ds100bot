@@ -7,7 +7,7 @@ cat <<EOF
  <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="bot.css"/>
-  <link rel="shortcut icon" type="image/svg+xml" href="../avatar.svg" />
+  <link rel="shortcut icon" type="image/svg+xml" href="http://avatar.frankfurtium.de/ds100.svg" />
   <title>$1</title>
  </head>
  <body>
