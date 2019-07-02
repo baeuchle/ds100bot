@@ -1,0 +1,66 @@
+h1::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../avatar.svg);
+  background-size: 100% 100%;
+  height: 25px;
+  width: 25px;
+}
+
+ul.flat {
+  padding-left: 0;
+}
+
+ul.flat li::before {
+  content: " | ";
+}
+
+ul.flat li:first-child::before {
+  content: "";
+}
+
+ul.flat li {
+  display: inline;
+  list-style-type: none;
+}
+
+blockquote {
+  border: thin blue solid;
+  font-family: sans-serif;
+  padding: .5em;
+  border-radius: 1em;
+}
+
+blockquote.antwort {
+  margin-left: 6em;
+}
+
+blockquote.antwort2 {
+  margin-left: 9em;
+}
+
+blockquote.antwort3 {
+  margin-left: 12em;
+}
+
+blockquote::before {
+  display: block;
+  margin-bottom: .5em;
+  color: #888;
+}
+
+blockquote.tweet_nofollow::before {
+  content: "@ungefolgter twittert:";
+}
+
+blockquote.tweet_irgendwer::before {
+  content: "@irgendwer twittert:";
+}
+
+blockquote.tweet_follower::before {
+  content: "@gefolgter twittert:";
+}
+
+blockquote.tweet_bot::before {
+  content: "@_ds_100 twittert:";
+}

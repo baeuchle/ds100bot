@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exec > version.py
+exec 3>&1 1>version.py
 
 echo "gitdescribe='$(git describe --always --dirty)'"
 echo "githash='$(git log --pretty=%H -1)'"
@@ -26,14 +26,18 @@ git log \
   | perl -pe 's/^\s+CHANGELOG/•/'
 echo '"""'
 
+exec 1> &3
+cd html/
+. create.sh
+
 tdir=/var/www/ds100
 if [ -d "$tdir" ]; then
-    for html in html/*.html; do
-        perl -pe "s/VERSION/$(git describe --always --dirty)/g;" $html > $tdir/${html/html/}
-    done
+    rsync *.html *.css $tdir/
+    chmod 664 $tdir/*.html
 fi
 
 adir=/var/www/avatar
 if [ -d "$adir" ]; then
-    cp avatar.svg $adir/ds100.svg
+    cp ../avatar.svg $adir/ds100.svg
+    chmod 664 $adir/ds100.svg
 fi
