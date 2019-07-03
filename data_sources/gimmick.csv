@@ -1,15 +1,15 @@
-Abk;Name;Kurzname;Typ;Betr-Zust;Primary location code;UIC;RB;gültig von;gültig bis;Netz-Key;Fpl-rel;Fpl-Gr
-RKRSN;Rekursion: #DS100 #RKRSN (aber ich antworte mir nicht selbst);Rekursion;;;;;;00000000;;;;
-RKRSV;Rekursiv:  #DS100 #RKRSV (aber ich antworte mir nicht selbst);Rekursiv ;;;;;;00000000;;;;
-RCRSN;Recursion: #DS100 #RCRSN (but I don't answer myself);Rekursion;;;;;;00000000;;;;
-RCRSV;Recursive: #DS100 #RCRSV (but I don't answer myself);Recursive;;;;;;00000000;;;;
-RTFM;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000;;;;
-MAN; Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000;;;;
-HELP;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000;;;;
-HILF;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000;;;;
-HILFE;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000;;;;
-USAGE;Expansion von DS100-Kürzeln.\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000;;;;
-NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt;Nazis Raus;;;;;;00000000;;;;
+Abk;Name;Kurzname;Typ;Betr-Zust;Primary location code;UIC;RB;gültig von
+RKRSN;Rekursion: #DS100 #RKRSN (aber ich antworte mir nicht selbst);Rekursion;;;;;;00000000
+RKRSV;Rekursiv:  #DS100 #RKRSV (aber ich antworte mir nicht selbst);Rekursiv ;;;;;;00000000
+RCRSN;Recursion: #DS100 #RCRSN (but I don't answer myself);Rekursion;;;;;;00000000
+RCRSV;Recursive: #DS100 #RCRSV (but I don't answer myself);Recursive;;;;;;00000000
+RTFM; Expansion von DS100-Kürzeln.\nSiehe https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000
+MAN;  Expansion von DS100-Kürzeln.\nSiehe https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000
+HELP; Expansion von DS100-Kürzeln.\nSiehe https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000
+HILF; Expansion von DS100-Kürzeln.\nSiehe https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000
+HILFE;Expansion von DS100-Kürzeln.\nSiehe https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000
+USAGE;Expansion von DS100-Kürzeln.\nSiehe https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF möglich (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW,;Siehe Webseite;;;;;;00000000
+NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt;Nazis Raus;;;;;;00000000
 NAZIS;Alle Raus! Die Benutzung dieses Bots ist Nazis untersagt;Nazis Raus;;;;;;00000000;;;;
 TOS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.;Terms of Service;;;;;;00000000;;;;
 TERMS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.;Terms of Service;;;;;;00000000;;;;
