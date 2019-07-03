@@ -11,8 +11,8 @@ def compose_answer(tweet, cursor, readwrite, modus):
     markers = [
         re.compile(r'#_?([A-Z_]+\d*)\b'),
         re.compile(r'#_?([a-z_]+\d*)\b'),
-        re.compile(r'\b([A-Z_]+\d*)\b')
-        re.compile(r'\b\$(\d+)\b'),
+        re.compile(r'\b([A-Z_]+\d*)\b'),
+        re.compile(r'\$(\d+)\b')
     ]
     marker_indices = []
     if modus == 'hashtag':
@@ -38,8 +38,8 @@ def compose_answer(tweet, cursor, readwrite, modus):
                 continue
             if normalized[0] == '_':
                 continue
-            if normalized[0].isdigit():
-                continue
+            # if normalized[0].isdigit():
+            #     continue
             if normalized in short_list:
                 continue
             short_list.append(normalized)
@@ -75,7 +75,7 @@ def compose_answer(tweet, cursor, readwrite, modus):
                   , ))
         if row == None:
             continue
-        explain = "{}: {}\n".format(row[0], row[1]).replace('.','\u2024').replace('\\n', '\n')
+        explain = "{}: {}\n".format(row[0], row[1]).replace('\\n', '\n')
         if charcount + len(explain) > max_tweet_length:
             all_answers.append(generated_content.strip())
             generated_content = ""
