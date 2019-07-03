@@ -40,14 +40,6 @@ Hallo #FF #fkw HG @_ds_100
 <blockquote class="tweet_bot antwort">
 FF: Frankfurt (Main) Hbf<br/>
 FKW: Kassel-Wilhelmshöhe<br/>
-  <h3>Output</h3>
-  <p>
-    Mehrere gefundene Abkürzungen werden in der Reihenfolge der Erwähnung im
-    Tweet erweitert; eine Erweiterung wird dabei nicht wiederholt. Wenn alle
-    Erweiterungen nicht in einen Tweet passen, werden mehrere Tweets
-    gesendet, die aufeinander antworten. Innerhalb einer solchen Gruppe
-    von Tweets werden Erweiterungen auch nicht wiederholt.
-  </p>
 HG: Göttingen
 </blockquote>
 
