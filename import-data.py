@@ -31,63 +31,60 @@ for f in os.listdir(directory):
     quelle = f[:-4]
     print("Processing source", quelle)
     with open('{}/{}'.format(directory, f)) as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=';')
+        sqlcursor.execute("""
+            SELECT
+                abk_col,
+                name_col,
+                kurz_col,
+                valid_from_col,
+                replace_links,
+                flag,
+                delimiter
+            FROM
+                sources
+            WHERE
+                source_name = ?
+        """,
+            (quelle, )
+        )
+        headers = sqlcursor.fetchone()
+        if headers == None:
+            headers = ['Abk', 'Name', None, 'valid_from', 1, None, ';']
+        print(headers)
+        reader = csv.DictReader(csvfile, delimiter=headers[6])
         for datum in reader:
-            abk = ' '.join(datum['Abk'].split())
-            name = ' '.join(datum['Name'].split()).replace('.', '\u2024')
-            kurzname = ' '.join(datum['Kurzname'].split())
+            abk = ' '.join(datum[headers[0]].split())
+            name = ' '.join(datum[headers[1]].split())
+            kurzname = ''
+            if headers[2] != None:
+                kurzname = ' '.join(datum[headers[2]].split())
+            valid_from = '00000000'
+            if headers[3] != None:
+                valid_from = datum[headers[3]]
+            if headers[4] == 1:
+                name = name.replace('.', '\u2024')
+            primkey = '{}::{}'.format(quelle, abk)
             sqlcursor.execute("""
-                SELECT
-                    *
-                FROM
-                    shortstore
-                WHERE
-                    Abk = ?
-                  AND
-                    source = ?
-                """,
-                (abk, quelle, )
+                INSERT OR REPLACE
+                INTO shortstore(
+                    id,
+                    Abk,
+                    Name,
+                    Kurzname,
+                    gueltigvon,
+                    source
+                )
+                VALUES
+                (?,?,?,?,?,?)
+            """,
+                 (primkey
+                , abk
+                , name
+                , kurzname
+                , valid_from
+                , quelle
+                , )
             )
-            if sqlcursor.fetchone() == None:
-                sqlcursor.execute("""
-                    INSERT INTO
-                        shortstore(
-                            Abk,
-                            Name,
-                            Kurzname,
-                            gueltigvon,
-                            source
-                        )
-                        VALUES
-                        (?,?,?,?,?)
-                    """,
-                    (abk
-                   , name
-                   , kurzname
-                   , datum['gültig von']
-                   , quelle
-                   , )
-                )
-            else:
-                sqlcursor.execute("""
-                    UPDATE
-                        shortstore
-                    SET
-                        Name = ?,
-                        Kurzname = ?,
-                        gueltigvon = ?
-                    WHERE
-                        Abk = ?
-                      AND
-                        source = ?
-                    """,
-                    (name
-                   , kurzname
-                   , datum['gültig von']
-                   , abk
-                   , quelle
-                   , )
-                )
 sqlcursor.close()
 sql.commit()
 sql.close()
