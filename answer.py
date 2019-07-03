@@ -12,12 +12,13 @@ def compose_answer(tweet, cursor, readwrite, modus):
         re.compile(r'#_?([A-Z_]+\d*)\b'),
         re.compile(r'#_?([a-z_]+\d*)\b'),
         re.compile(r'\b([A-Z_]+\d*)\b')
+        re.compile(r'\b\$(\d+)\b'),
     ]
     marker_indices = []
     if modus == 'hashtag':
-        marker_indices = [0, 1]
+        marker_indices = [0, 1, 3]
     elif modus == 'mention' or modus == 'quoted' or modus == 'referenced':
-        marker_indices = [0, 1, 2]
+        marker_indices = [0, 1, 2, 3]
     elif modus == 'timeline':
         marker_indices = [0]
     else:
