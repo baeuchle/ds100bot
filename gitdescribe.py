@@ -50,22 +50,18 @@ def get_changelog(sqlcursor):
         return version.changelog[last_hash]
     return ""
 
-def notify_new_version(sqlcursor, api, readwrite, verbose):
+def notify_new_version(sqlcursor, twapi, readwrite, verbose):
     if is_same_version(sqlcursor):
         return
     status = "Ich twittere nun von Version {}".format(get_version())
     cl = get_changelog(sqlcursor)
-    if not cl == "":
+    if not cl.strip() == "":
         status += ":" + cl
     if len(status) > 280:
         status = status[0:280]
     if readwrite:
-        try:
-            api.update_status(status)
-        except tweepy.RateLimitError as rateerror:
-            print("Rate limit violated: {}".format(rateerror.reason))
-        except tweepy.TweepError as twerror:
-            print("Error {} tweeting new version: {}".format(twerror.api_code, twerror.reason))
+        if twapi.tweet(status) > 0:
+            store_version(sqlcursor)
     elif verbose > 0:
         print("NOT TWEETING:")
     if verbose > 0:

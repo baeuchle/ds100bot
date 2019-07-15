@@ -38,7 +38,6 @@ for f in os.listdir(directory):
                 kurz_col,
                 valid_from_col,
                 replace_links,
-                flag,
                 delimiter
             FROM
                 sources
@@ -49,9 +48,9 @@ for f in os.listdir(directory):
         )
         headers = sqlcursor.fetchone()
         if headers == None:
-            headers = ['Abk', 'Name', None, 'valid_from', 1, None, ';']
+            headers = ['Abk', 'Name', None, 'valid_from', 1, ';']
         print(headers)
-        reader = csv.DictReader(csvfile, delimiter=headers[6])
+        reader = csv.DictReader(csvfile, delimiter=headers[5])
         for datum in reader:
             abk = ' '.join(datum[headers[0]].split())
             name = ' '.join(datum[headers[1]].split())

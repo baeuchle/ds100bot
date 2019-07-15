@@ -1,65 +1,92 @@
 import datetime
-import re
+import regex as re
 
 max_tweet_length = 280
 
-def compose_answer(tweet, cursor, readwrite, modus):
+def compose_answer(tweet, cursor, readwrite, verbose, modus):
     all_answers = []
+    short_list = []
     # generate answer
     charcount = 0
     generated_content = ""
-    markers = [
-        re.compile(r'#_?([A-Z_]+\d*)\b'),
-        re.compile(r'#_?([a-z_]+\d*)\b'),
-        re.compile(r'\b([A-Z_]+\d*)\b'),
-        re.compile(r'\$(\d+)\b')
-    ]
-    marker_indices = []
-    if modus == 'hashtag':
-        marker_indices = [0, 1, 3]
-    elif modus == 'mention' or modus == 'quoted' or modus == 'referenced':
-        marker_indices = [0, 1, 2, 3]
-    elif modus == 'timeline':
-        marker_indices = [0]
-    else:
-        print("UNKNOWN MODUS", modus)
-    short_list = []
-    # get unique abbreviations, but keep them in order:
-    for mi in marker_indices:
-        for abbr in markers[mi].findall(tweet):
-            abbr = abbr.replace('_', ' ')
-            normalized = ' '.join(abbr.split())
-            normalized = normalized.upper()
-            if len(normalized) == 0:
-                continue
-            if len(normalized) > 5:
-                continue
-            if normalized == 'DS100':
-                continue
-            if normalized[0] == '_':
-                continue
-            # if normalized[0].isdigit():
-            #     continue
-            if normalized in short_list:
-                continue
-            short_list.append(normalized)
-    for abbr in short_list:
+    finder = re.compile(r"""
+        (?p)                # find longest match
+        (?:^|\W)            # either at the beginning of the text or after a non-alphanumeric character, but don't find this
+        (?:                 # Select source
+            (\$|\#)         # Special character to find something: # or $
+            (?:(\p{Lu}+):)? # Optional prefix, e.g. "DS:" or "VGF:"
+        )
+        (                   # Payload
+            [\p{Lu}\p{N}_]+ # All uppercase letters plus all kinds of numbers plus _
+          | [\p{Ll}_]+\d*   # All lowercase letters plus trailing normal digits
+          | \d+             # All numbers
+        )
+        (?:$|\W)            # either end of string or non-\w character
+        """, re.X)
+    tokens = finder.findall(tweet, overlapped=True)
+    if len(tokens) == 0 and modus == 'all':
+        finder2 = re.compile(r"""
+            (?p)            # find longest match
+            (?:^|\W)        # either at the beginning of the text or after a non-alphanumeric character, but don't find this
+            ()
+            ()
+            (
+                [\p{Lu}\p{N}_]+)
+                            # All uppercase letters plus all kinds of numbers plus _
+            (?:$|\W)        # either end of string or non-\w character
+            """, re.X)
+        tokens = finder2.findall(tweet, overlapped=True)
+    for match in tokens:
+        sigil = match[0] if not match[0] == "" else '#'
+        source = match[1]
+        payload = match[2]
+        payload = payload.replace('_', ' ')
+        payload = ' '.join(payload.split())
+        payload = payload.upper()
+        parameters = (payload, sigil, source if source != "" else 'DS', source if source != "" else 'BOT', )
         cursor.execute("""
             SELECT
                 Abk,
-                Name,
-                gueltigvon
+                Name
             FROM
                 shortstore
+            JOIN
+                sourceflags
+            ON
+                sourceflags.sourcename = shortstore.source
             WHERE
                 Abk = ?
+            AND
+                gueltigvon < strftime('%Y%m%d', 'now')
+            AND
+                sourceflags.sigil = ?
+            AND
+                (sourceflags.abbr = ? OR sourceflags.abbr = ?)
             ORDER BY gueltigvon DESC
             LIMIT 1
             """,
-            (abbr, )
+            parameters
         )
         row = cursor.fetchone()
+        normalized = '{}{}:{}'.format(sigil, source, payload)
+        if verbose > 2:
+            print ("{}: {}→{}".format(normalized, parameters, row))
+        if normalized in short_list:
+            continue
+        short_list.append(normalized)
         if readwrite:
+            # failures are always written if the source is not empty, and...
+            if row == None and source == "":
+                if len(payload) == 0:
+                    continue
+                if len(payload) > 5:
+                    continue
+                if payload == 'DS100':
+                    continue
+                if payload[0] == '_':
+                    continue
+                if sigil == '#' and payload[0].isdigit():
+                    continue
             cursor.execute("""
                 INSERT INTO
                     requests(
@@ -69,7 +96,7 @@ def compose_answer(tweet, cursor, readwrite, modus):
                         )
                     VALUES (?,?,?)
                 """,
-                   (abbr
+                   (normalized
                   , datetime.datetime.today().strftime('%Y%m%d')
                   , row != None
                   , ))
