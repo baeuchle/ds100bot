@@ -119,7 +119,8 @@ for id, tweet in tweet_list.items():
 
 if readwrite:
     git.store_version(sqlcursor)
-    since.store_since_id(sqlcursor, max(tweet_list.keys()))
+    if tweet_list:
+        since.store_since_id(sqlcursor, max(tweet_list.keys()))
 
 sqlcursor.close()
 sql.commit()
