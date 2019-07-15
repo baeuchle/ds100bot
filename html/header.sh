@@ -20,8 +20,8 @@ cat <<EOF
   <hr/>
   <ul class="flat">
    <li><a href="index.html">DS100-bot</a></li>
-   <li><a href="bedienung.html">Bedienung</a></li>
-   <li><a href="beispiele.html">Beispiele</a></li>
+   <li><a href="finderegeln.html">Finden von Tweets</a></li>
+   <li><a href="schreibweisen.html">Schreibweisen</a></li>
    <li><a href="contribute.html">Beitragen</a></li>
    <li><a href="haftung.html">Haftungsausschluss</a></li>
    <li><a href="copyright.html">Daten / Urheberrecht</a></li>

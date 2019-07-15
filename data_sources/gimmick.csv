@@ -1,46 +1,46 @@
-Abk;Name;Kurzname;Typ;Betr-Zust;Primary location code;UIC;RB;gültig von
-RKRSN;Rekursion: #DS100 #RKRSN (aber ich antworte mir nicht selbst);Rekursion;;;;;;00000000
-RKRSV;Rekursiv:  #DS100 #RKRSV (aber ich antworte mir nicht selbst);Rekursiv ;;;;;;00000000
-RCRSN;Recursion: #DS100 #RCRSN (but I don't answer myself);Rekursion;;;;;;00000000
-RCRSV;Recursive: #DS100 #RCRSV (but I don't answer myself);Recursive;;;;;;00000000
-RTFM; Expansion von DS100-Kürzeln.https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW;Siehe Webseite;;;;;;00000000
-MAN;  Expansion von DS100-Kürzeln.https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW;Siehe Webseite;;;;;;00000000
-HELP; Expansion von DS100-Kürzeln.https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW;Siehe Webseite;;;;;;00000000
-HILF; Expansion von DS100-Kürzeln.https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW;Siehe Webseite;;;;;;00000000
-HILFE;Expansion von DS100-Kürzeln.https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW;Siehe Webseite;;;;;;00000000
-USAGE;Expansion von DS100-Kürzeln.https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren: #FF oder #ff, nicht #Ff.\nBei Mentions (@_ds_100) auch FF (nicht ff), dann werden auch zitierte / beantwortete Tweets durchsucht. Siehe auch #FOLLW, #DFLLW;Siehe Webseite;;;;;;00000000
-NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt;Nazis Raus;;;;;;00000000
-NAZIS;Alle Raus! Die Benutzung dieses Bots ist Nazis untersagt;Nazis Raus;;;;;;00000000;;;;
-TOS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.;Terms of Service;;;;;;00000000;;;;
-TERMS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.;Terms of Service;;;;;;00000000;;;;
-EULA;Durch die Benutzung entstehen auf Seiten des Bots und des Benutzers keine Verpflichtungen;EULA;;;;;;00000000;;;;
-WHOIS;Das ist der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle.;Wer ist das;;;;;;00000000;;;;
-WHORU;Ich bin der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle.;Wer bist du;;;;;;00000000;;;;
+Abk;Name
+RKRSN;Rekursion: #DS100 #RKRSN (aber ich antworte mir nicht selbst)
+RKRSV;Rekursiv:  #DS100 #RKRSV (aber ich antworte mir nicht selbst)
+RCRSN;Recursion: #DS100 #RCRSN (but I don't answer myself)
+RCRSV;Recursive: #DS100 #RCRSV (but I don't answer myself)
+RTFM; Expansion von DS100-Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
+MAN;  Expansion von DS100-Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
+HELP; Expansion von DS100-Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
+HILF; Expansion von DS100-Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
+HILFE;Expansion von DS100-Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
+USAGE;Expansion von DS100-Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
+NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt
+NAZIS;Alle Raus! Die Benutzung dieses Bots ist Nazis untersagt
+TOS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.
+TERMS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.
+EULA;Durch die Benutzung entstehen auf Seiten des Bots und des Benutzers keine Verpflichtungen
+WHOIS;Das ist der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle. https://ds100.frankfurtium.de/impressum.html
+WHORU;Ich bin der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle. https://ds100.frankfurtium.de/impressum.html
 COPY;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.;Copyright;;;;;;00000000;;;;
-KOPIE;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.;Copyright;;;;;;00000000;;;;
-URHBR;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.;Copyright;;;;;;00000000;;;;
-WIESO;Wieso dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.;Wieso;;;;;;00000000;;;;
-WARUM;Warum dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.;Warum;;;;;;00000000;;;;
-WIE;Dieser Bot ist ein Python-Script, das alle zwei Minuten läuft und nach beantwortbaren Tweets sucht.;Wie;;;;;;00000000;;;;
-KI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.;KI;;;;;;00000000;;;;
-AI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.;AI;;;;;;00000000;;;;
-FOLLO;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW;Folgen;;;;;;00000000;;;;
-FOLLW;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW;Folgen;;;;;;00000000;;;;
-FOLGN;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW;Folgen;;;;;;00000000;;;;
-FOLGE;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW;Folgen;;;;;;00000000;;;;
-DFLLW;Wenn der Bit nicht mehr ohne extra Erwähnung (siehe #FOLLW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.;Entfolgen;;;;;;00000000;;;;
+KOPIE;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt. https://ds100.frankfurtium.de/copyright.html
+URHBR;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt. https://ds100.frankfurtium.de/copyright.html
+WIESO;Wieso dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen. https://ds100.frankfurtium.de/motivation.html
+WARUM;Warum dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.
+WIE;Dieser Bot ist ein Python-Script, das alle zwei Minuten läuft und nach beantwortbaren Tweets sucht.
+KI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
+AI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
+FOLLO;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW
+FOLLW;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW
+FOLGN;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW
+FOLGE;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DFLLW
+DFLLW;Wenn der Bit nicht mehr ohne extra Erwähnung (siehe #FOLLW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
 SOURC;Der Quelltext des Bots ist aktuell nicht veröffentlicht. Das liegt vor allem an fehlender Zeit, nicht am Unwillen. Wenn sich das ändert, wird der Bot darüber berichten.;Quelltext;;;;;;00000000;;;;
 SRCCD;Der Quelltext des Bots ist aktuell nicht veröffentlicht. Das liegt vor allem an fehlender Zeit, nicht am Unwillen. Wenn sich das ändert, wird der Bot darüber berichten.;Quelltext;;;;;;00000000;;;;
 QUELL;Der Quelltext des Bots ist aktuell nicht veröffentlicht. Das liegt vor allem an fehlender Zeit, nicht am Unwillen. Wenn sich das ändert, wird der Bot darüber berichten.;Quelltext;;;;;;00000000;;;;
-HAFT;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.;Haftungsausschluss;;;;;;00000000;;;;
-HFTNG;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.;Haftungsausschluss;;;;;;00000000;;;;
-DSGVO;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.;Datenschutz;;;;;;00000000;;;;
-DATEN;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nDaten: © DB OpenData, CC-BY. Siehe Webseite.;Datenschutz;;;;;;00000000;;;;
-DATA;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nDaten: © DB OpenData, CC-BY. Siehe Webseite.;Datenschutz;;;;;;00000000;;;;
-L10N;Localization: This bot serves data in German except very few exceptions (as this one). There is no way for the user to change that.;Localization;;;;;;00000000;;;;
-SPAM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.;Spam;;;;;;00000000;;;;
-NSPM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.;Spam;;;;;;00000000;;;;
-NOSPM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.;Spam;;;;;;00000000;;;;
-NSPAM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.;Spam;;;;;;00000000;;;;
-XXX;This bot is not x-rated;No Problem;;;;;;00000000;;;;
-NSFW;Dieser Bot ist Safe for Work;SFW;;;;;;00000000;;;;
+HAFT ;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld. https://ds100.frankfurtium.de/haftung.html
+HFTNG;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld. https://ds100.frankfurtium.de/haftung.html
+DSGVO;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig. https://ds100.frankfurtium.de/datenschutz.html
+DATEN;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nDaten: © DB OpenData, CC-BY. https://ds100.frankfurtium.de/copyright.html
+DATA;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nDaten: © DB OpenData, CC-BY. https://ds100.frankfurtium.de/copyright.html
+L10N;Localization: This bot serves data in German except very few exceptions (as this one). There is no way for the user to change that.
+SPAM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.
+NSPM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.
+NOSPM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.
+NSPAM;Spam: Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #DFLLW.
+XXX;This bot is not x-rated
+NSFW;Dieser Bot ist Safe for Work
