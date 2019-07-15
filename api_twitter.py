@@ -27,7 +27,7 @@ class TwitterApi:
                     ))
 
     def tweet(self, text, *args, **kwargs):
-        if verbose > 1:
+        if self.verbose > 1:
             print("Tweet:")
             print(text)
         return 0
@@ -75,11 +75,11 @@ class TwitterApi:
         return None
 
     def follow(self, user):
-        if verbose > 2:
+        if self.verbose > 2:
             print("Follow @{}".format(user.screen_name))
 
     def defollow(self, user):
-        if verbose > 2:
+        if self.verbose > 2:
             print("Defollow @{}".format(user.screen_name))
 
     def is_followed(self, user):

@@ -60,7 +60,10 @@ def notify_new_version(sqlcursor, twapi, readwrite, verbose):
     if len(status) > 280:
         status = status[0:280]
     if readwrite:
-        if twapi.tweet(status) > 0:
+        if twapi.tweet(
+                status,
+                auto_populate_reply_metadata=True
+                ) > 0:
             store_version(sqlcursor)
     elif verbose > 0:
         print("NOT TWEETING:")

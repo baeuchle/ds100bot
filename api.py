@@ -24,10 +24,11 @@ class ReadWriteApi(TwitterApi):
 
     # Return new tweet id, 0 if RateLimit (= try again), -1 if other
     # error (fix before trying again).
-    def tweet(self, text, *args, **kwargs):
-        super().tweet(text, *args, **kwargs)
+    def tweet(self, text, **kwargs):
+        super().tweet(text, **kwargs)
+        print(kwargs)
         try:
-            new_tweet = self.twit.update_status(text, args, kwargs)
+            new_tweet = self.twit.update_status(text, kwargs)
             return new_tweet.id
         except tweepy.RateLimitError as rateerror:
             warn_rate_error(rateerror, "tweeting")
