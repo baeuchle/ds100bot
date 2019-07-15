@@ -9,9 +9,7 @@ import since
 import argparse
 import sys
 
-parser = argparse.ArgumentParser(description="""
-        Bot zur DS100-Expansion auf Twitter
-        """)
+parser = argparse.ArgumentParser(description='Bot zur DS100-Expansion auf Twitter')
 parser.add_argument('--readwrite',
                     dest='rw',
                     help='equivalent to --api readwrite --db readwrite',
@@ -97,7 +95,7 @@ for id, tweet in tweet_list.items():
                         print("Not processing other tweet because it already has the magic hashtag")
                         print("=================")
                 else:
-                    react.process_tweet(other_tweet, twapi, sql, args.verbose)
+                    react.process_tweet(other_tweet, twapi, sql, args.verbose, modus='all' if tweet.is_explicit_mention(twapi.myself) else None)
 
 git.store_version(sql)
 if tweet_list:

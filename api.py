@@ -30,7 +30,7 @@ class ReadWriteApi(TwitterApi):
         super().tweet(text, **kwargs)
         print(kwargs)
         try:
-            new_tweet = self.twit.update_status(text, kwargs)
+            new_tweet = self.twit.update_status(text, **kwargs)
             return new_tweet.id
         except tweepy.RateLimitError as rateerror:
             warn_rate_error(rateerror, "tweeting")
