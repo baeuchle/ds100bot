@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import answer
 import api
 import gitdescribe as git
 import react
@@ -9,31 +8,6 @@ import since
 import argparse
 import sqlite3
 import sys
-
-def process_tweet(tweet, twapi, sqlcursor, readwrite, modus=None):
-    if verbose > 2:
-        print("Processing tweet {}:".format(tweet.id))
-        print(tweet)
-        print("+++++++++++++++++")
-    reply_id = tweet.id
-    twcounter = 1
-    for reply in answer.compose_answer(tweet.text, sqlcursor, readwrite, verbose, modus):
-        if verbose > 0:
-            print("I tweet {} ({} chars):".format(twcounter, len(reply)))
-            print(reply)
-        twcounter += 1
-        if not readwrite:
-            continue
-        new_reply_id = twapi.tweet(reply,
-                in_reply_to_status_id=reply_id,
-                auto_populate_reply_metadata=True
-            )
-        if new_reply_id > 0:
-            reply_id = new_reply_id
-    if verbose > 2:
-        if twcounter == 1:
-            print("No expandable content found")
-        print("=================")
 
 parser = argparse.ArgumentParser(description="""
         Bot zur DS100-Expansion auf Twitter
@@ -96,7 +70,7 @@ for id, tweet in tweet_list.items():
     if tweet.is_explicit_mention(twapi.myself):
         react.process_commands(tweet, twapi, readwrite, verbose)
     # Process this tweet
-    process_tweet(tweet, twapi, sqlcursor, readwrite)
+    react.process_tweet(tweet, twapi, sqlcursor, readwrite, verbose)
     # Process quoted or replied-to tweets, only for explicit mentions and #DS100.
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
@@ -115,7 +89,7 @@ for id, tweet in tweet_list.items():
                         print("Not processing other tweet because it already has the magic hashtag")
                         print("=================")
                 else:
-                    process_tweet(other_tweet, twapi, sqlcursor, readwrite)
+                    react.process_tweet(other_tweet, twapi, sqlcursor, readwrite, verbose)
 
 if readwrite:
     git.store_version(sqlcursor)
