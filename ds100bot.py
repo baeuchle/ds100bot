@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 import api
+from database import Database
 import gitdescribe as git
 import react
 import since
 
 import argparse
-import sqlite3
 import sys
 
 parser = argparse.ArgumentParser(description="""
@@ -14,63 +14,71 @@ parser = argparse.ArgumentParser(description="""
         """)
 parser.add_argument('--readwrite',
                     dest='rw',
-                    help='Do tweet or alter database',
+                    help='equivalent to --api readwrite --db readwrite',
                     required=False,
                     action='store_true',
                     default=False)
 parser.add_argument('--api',
                     dest='api',
-                    help='Use given API: readwrite, readonly, mock',
+                    help='API to use: readwrite, readonly, mock',
                     required=False,
                     action='store',
-                    default='readwrite')
+                    default=None)
+parser.add_argument('--db',
+                    dest='db',
+                    help='Database to use: readwrite, readonly',
+                    required=False,
+                    action='store',
+                    default=None)
 parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',
                     required=False,
                     action='count')
 args = parser.parse_args()
-readwrite = args.rw
-verbose = args.verbose
-if verbose == None:
-    verbose = 0
 
-if not readwrite:
-    print("READONLY mode: Not tweeting or changing the database")
-if args.api != 'readwrite':
-    print("API mode", args.api)
+if args.db == None:
+    if args.rw:
+        args.db = 'readwrite'
+    else:
+        args.db = 'readonly'
+if args.api == None:
+    if args.rw:
+        args.api = 'readwrite'
+    else:
+        args.api = 'readonly'
+if args.verbose == None:
+    args.verbose = 0
 
 # setup twitter API
-twapi = api.get_api_object(args.api, verbose)
-
+twapi = api.get_api_object(args.api, args.verbose)
 # setup database
-sql = sqlite3.connect('info.db')
-sqlcursor = sql.cursor()
-git.notify_new_version(sqlcursor, twapi, readwrite, verbose)
+sql = Database(args.db, args.verbose)
+git.notify_new_version(sql, twapi, args.verbose)
 
-highest_id = since.get_since_id(sqlcursor)
+highest_id = since.get_since_id(sql)
 
 tweet_list = twapi.all_relevant_tweets(highest_id, '#DS100')
 for id, tweet in tweet_list.items():
-    if verbose > 1:
+    if args.verbose > 1:
         print(tweet)
     # exclude some tweets:
     if tweet.author().screen_name == twapi.myself.screen_name:
-        if verbose > 2:
+        if args.verbose > 2:
             print("Not replying to my own tweets")
             print("=================")
         continue
     if tweet.is_retweet():
-        if verbose > 0:
+        if args.verbose > 0:
             print("Not processing pure retweets")
             print("=================")
         continue
     # handle #folgenbitte and #entfolgen and possibly other meta commands, but
     # only for explicit mentions.
     if tweet.is_explicit_mention(twapi.myself):
-        react.process_commands(tweet, twapi, readwrite, verbose)
+        react.process_commands(tweet, twapi, args.verbose)
     # Process this tweet
-    react.process_tweet(tweet, twapi, sqlcursor, readwrite, verbose)
+    react.process_tweet(tweet, twapi, sql, args.verbose)
     # Process quoted or replied-to tweets, only for explicit mentions and #DS100.
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
@@ -81,21 +89,18 @@ for id, tweet in tweet_list.items():
                 # don't process the other tweet if we should have seen it before (this
                 # also prevents recursion via this branch):
                 if other_tweet.is_mention(twapi.myself):
-                    if verbose > 1:
+                    if args.verbose > 1:
                         print("Not processing other tweet because it already mentions me")
                         print("=================")
                 if other_tweet.has_hashtag('DS100'):
-                    if verbose > 1:
+                    if args.verbose > 1:
                         print("Not processing other tweet because it already has the magic hashtag")
                         print("=================")
                 else:
-                    react.process_tweet(other_tweet, twapi, sqlcursor, readwrite, verbose)
+                    react.process_tweet(other_tweet, twapi, sql, args.verbose)
 
-if readwrite:
-    git.store_version(sqlcursor)
-    if tweet_list:
-        since.store_since_id(sqlcursor, max(tweet_list.keys()))
+git.store_version(sql)
+if tweet_list:
+    since.store_since_id(sql, max(tweet_list.keys()))
 
-sqlcursor.close()
-sql.commit()
-sql.close()
+sql.close_sucessfully()

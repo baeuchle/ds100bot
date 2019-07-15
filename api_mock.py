@@ -1,15 +1,18 @@
+from api_twitter import TwitterApi
 from tweet import Tweet
 import tweepy # for exceptions
 import re
 
 from tweet_mock import *
 
-class MockApi:
+class MockApi(TwitterApi):
     def __init__(self, verbose):
         self.verbose = verbose + 1
         self.running_id = 108
         self.myself = User(id='@_ds_100', screen_name='_ds_100')
         self.mock = mocked_tweets(verbose)
+        if self.verbose > 0:
+            print('Running from Mock API (faked tweets)')
 
     def get_tweet(self, tweet_id):
         for t in self.mock:
@@ -17,23 +20,10 @@ class MockApi:
                 return t
         raise tweepy.TweepError("Kein solcher Tweet vorhanden")
 
-    def tweet(self, text, *args, **kwargs):
-        if self.verbose > 1:
-            lines = text.splitlines()
-            length = max([len(l) for l in lines])
-            print("+{}+".format('-'*(length+2)))
-            for l in lines:
-                print(("| {{:{}}} |".format(length)).format(l))
-            print("+{}+".format('-'*(length+2)))
+    def tweet(self, text, **kwargs):
+        super().tweet(text, **kwargs)
         self.running_id += 1
         return self.running_id
-
-    def all_relevant_tweets(self, highest_id, tag):
-        results = {}
-        for tl in self.mentions(highest_id), self.timeline(highest_id), self.hashtag(tag, highest_id):
-            for t in tl:
-                results[t.id] = t
-        return results
 
     def mentions(self, highest_id):
         mention_list = []
@@ -59,3 +49,6 @@ class MockApi:
                     hashtag_list.append(t)
                     break
         return hashtag_list
+
+    def is_followed(self, user):
+        return True

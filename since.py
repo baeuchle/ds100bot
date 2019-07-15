@@ -1,5 +1,5 @@
-def get_since_id(cursor):
-    cursor.execute("""
+def get_since_id(sql):
+    sql.cursor.execute("""
         SELECT
             content
         FROM
@@ -7,7 +7,7 @@ def get_since_id(cursor):
         WHERE
             subject = 'since_id'
         """)
-    row = cursor.fetchone()
+    row = sql.cursor.fetchone()
     if row == None:
         return 0
     try:
@@ -15,9 +15,11 @@ def get_since_id(cursor):
     except:
         return 0
 
-def store_since_id(cursor, highest_id):
+def store_since_id(sql, highest_id):
+    if sql.readonly:
+        return
     # store last answer time
-    cursor.execute("""
+    sql.cursor.execute("""
         UPDATE 
             last
         SET

@@ -3,20 +3,18 @@ import regex as re
 
 max_tweet_length = 280
 
-def process_tweet(tweet, twapi, sqlcursor, readwrite, verbose, modus=None):
+def process_tweet(tweet, twapi, sql, verbose, modus=None):
     if verbose > 2:
         print("Processing tweet {}:".format(tweet.id))
         print(tweet)
         print("+++++++++++++++++")
     reply_id = tweet.id
     twcounter = 1
-    for reply in compose_answer(tweet.text, sqlcursor, readwrite, verbose, modus):
+    for reply in compose_answer(tweet.text, sql, verbose, modus):
         if verbose > 0:
             print("I tweet {} ({} chars):".format(twcounter, len(reply)))
             print(reply)
         twcounter += 1
-        if not readwrite:
-            continue
         new_reply_id = twapi.tweet(reply,
                 in_reply_to_status_id=reply_id,
                 auto_populate_reply_metadata=True
@@ -28,7 +26,7 @@ def process_tweet(tweet, twapi, sqlcursor, readwrite, verbose, modus=None):
             print("No expandable content found")
         print("=================")
 
-def process_commands(tweet, twapi, readwrite, verbose):
+def process_commands(tweet, twapi, verbose):
     author = tweet.author()
     if tweet.has_hashtag('folgenbitte', case_sensitive=False):
         is_followed = twapi.is_followed(author)
@@ -38,7 +36,7 @@ def process_commands(tweet, twapi, readwrite, verbose):
                 print (" already following")
             else:
                 print (" not yet following")
-        if readwrite and not is_followed:
+        if not is_followed:
             twapi.follow(id=author)
     if tweet.has_hashtag('entfolgen', case_sensitive=False):
         is_followed = twapi.is_followed(author)
@@ -48,11 +46,10 @@ def process_commands(tweet, twapi, readwrite, verbose):
                 print(" still following so far")
             else:
                 print(" not even following yet")
-        if readwrite and is_followed:
+        if is_followed:
             twapi.defollow(author)
 
-
-def compose_answer(tweet, cursor, readwrite, verbose, modus):
+def compose_answer(tweet, sql, verbose, modus):
     all_answers = []
     short_list = []
     # generate answer
@@ -102,7 +99,7 @@ def compose_answer(tweet, cursor, readwrite, verbose, modus):
         payload = ' '.join(payload.split())
         payload = payload.upper()
         parameters = (payload, sigil, source if source != "" else 'DS', source if source != "" else 'BOT', )
-        cursor.execute("""
+        sql.cursor.execute("""
             SELECT
                 Abk,
                 Name
@@ -125,27 +122,27 @@ def compose_answer(tweet, cursor, readwrite, verbose, modus):
             """,
             parameters
         )
-        row = cursor.fetchone()
+        row = sql.cursor.fetchone()
         normalized = '{}{}:{}'.format(sigil, source, payload)
         if verbose > 2:
             print ("{}: {}→{}".format(normalized, parameters, row))
         if normalized in short_list:
             continue
         short_list.append(normalized)
-        if readwrite:
-            # failures are always written if the source is not empty, and...
-            if row == None and source == "":
-                if len(payload) == 0:
-                    continue
-                if len(payload) > 5:
-                    continue
-                if payload == 'DS100':
-                    continue
-                if payload[0] == '_':
-                    continue
-                if sigil == '#' and payload[0].isdigit():
-                    continue
-            cursor.execute("""
+        # failures are always written if the source is not empty, and...
+        if row == None and source == "":
+            if len(payload) == 0:
+                continue
+            if len(payload) > 5:
+                continue
+            if payload == 'DS100':
+                continue
+            if payload[0] == '_':
+                continue
+            if sigil == '#' and payload[0].isdigit():
+                continue
+        if not sql.readonly:
+            sql.cursor.execute("""
                 INSERT INTO
                     requests(
                         ds100_id

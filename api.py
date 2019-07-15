@@ -13,6 +13,8 @@ def get_api_object(mode, verbose):
 class ReadOnlyApi(TwitterApi):
     def __init__(self, verbose):
         super().__init__(verbose + 1)
+        if self.verbose > 0:
+            print('Running from readonly twitter API (read real tweets, do not actually post answers)')
 
 class ReadWriteApi(TwitterApi):
     def __init__(self, verbose):

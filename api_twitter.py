@@ -26,10 +26,14 @@ class TwitterApi:
                         rrl['limit']
                     ))
 
-    def tweet(self, text, *args, **kwargs):
+    def tweet(self, text, **kwargs):
         if self.verbose > 1:
-            print("Tweet:")
-            print(text)
+            lines = text.splitlines()
+            length = max([len(l) for l in lines])
+            print("+{}+".format('-'*(length+2)))
+            for l in lines:
+                print(("| {{:{}}} |".format(length)).format(l))
+            print("+{}+".format('-'*(length+2)))
         return 0
 
     def all_relevant_tweets(self, highest_id, tag):
@@ -91,4 +95,3 @@ class TwitterApi:
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error("is_followed @{}".format(user.screen_name))
             return False
-
