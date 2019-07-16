@@ -64,3 +64,16 @@ blockquote.tweet_follower::before {
 blockquote.tweet_bot::before {
   content: "@_ds_100 twittert:";
 }
+
+table, th, td {
+  border-collapse: collapse;
+  border: thin black solid;
+}
+
+table tbody th {
+  text-align: left;
+}
+
+table tbody td {
+  text-align: center;
+}
