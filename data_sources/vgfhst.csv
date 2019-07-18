@@ -1,37 +1,216 @@
 Abk;Name
-HD;Heddernheim
-HWD;Hauptwache (D-Ebene)
-HWC;Hauptwache (C-Ebene)
+ABBH;Abstellanlage Bommersheim
+ABBW;Abstellanlage Bockenheimer Warte
+ABEC;Abstellanlage Eckenheim
+ABET;Abstellanlage Eschenheimer Tor
+ABHE;Abstellanlage Heerstraße
+ABRS;Abstellanlage Römerstadt
+ABSB;Abstellanlage Südbahnhof
+ABSL;Abstellanlage Seckbacher Landstraße
+ABZO;Abstellanlage Zoo
+AKA;Abzweig Kalbach
+ANW;Abzweig Nordwest (veraltet)
+AO;Alte Oper
+BBHD;Betriebsbahnhof Heddernheim
+BBGU;Betriebsbahnhof Gutleut
+BH;Bommersheim
+BM;Bonames Mitte
+BO;Bornheim Mitte
+BOS;Betriebsbahnhof Ost
 BW;Bockenheimer Warte
 BWC;Bockenheimer Warte (C-Ebene)
 BWD;Bockenheimer Warte (D-Ebene)
-WB;Willy-Brandt-Platz
+DN;Deutsche Nationalbibliothek
+DNW;Dreieck Nordwest
+DO;Dornbusch (Hessischer Rundfunk)
+EH;Eissporthalle/Festplatz
+EN;Enkheim
+ET;Eschenheimer Tor
+FM;Festhalle/Messe
+FS;Fischstein
+FT;Fritz-Tarnow-Straße
+FW;Friedhof Westhausen
+GB;Glauburgstraße
+GW;Grüneburgweg
+GL;Glöcknerwiese
+GI;Ginnheim
+351;Große Nelkenstraße
+GO;Gonzenheim
+GP;Gewerbegebiet Praunheim (in Planung)
+GS;Gießener Straße
+GR;Gwinnerstraße
+HA;Habsburgerallee
+HB;Hauptbahnhof
+HC;Hessencenter
+HD;Heddernheim
+HE;Heerstraße
+HF;Hauptfriedhof
+HG;Hügelstraße
+HL;Heddernheimer Landstraße
+HM;Hohemark
+353;Hausen
+HO;Holzhausenstraße
+HS;Höhenstraße
+HU;Hausener Weg
+HWC;Hauptwache (C-Ebene)
+HWD;Hauptwache (D-Ebene)
+HW:Hauptwache
+IH;Industriehof
+JT;Johanna-Tesch-Platz
+KA;Kalbach
+KI;Kirchplatz
+KR;Kruppstraße
+KU;Kupferhammer
+KWC;Konstablerwache (C-Ebene)
+KWD;Konstablerwache (D-Ebene)
+KW;Konstablerwache
+LA;Lahnstraße
+LB;Lindenbaum
+LE;Leipziger Straße
+ME;Merianplatz
+MI;Miquel-/Adickesallee/Polizeipräsidium
+MS;Musterschule
+MZ;Marbachweg/Sozialzentrum
+NE;Nieder-Eschbach
+NI;Niddapark
+NJ;Neuer Jüdischer Friedhof (aktuell nicht in Betrieb)
+NU;Niederursel
+NW;Nordwestzentrum
+OA;Oberursel Altstadt
+OB;Ostbahnhof
+OE;Ober-Eschbach
+OS;Oberursel Stadtmitte
+OU;Oberursel Bf
+PH;Preungesheim
+PP;Parlamentsplatz
+RB;Riedberg
+RG;Rosengarten
+RM;Dom/Römer
+RO;Ronneburgstraße
+RS;Römerstadt
+RW;Riedwiese/Mertonviertel
+SB;Südbahnhof
+SC;Schäfflestraße
+SF;Sigmund-Freud-Straße
+SH;Stephan-Heise-Straße
+SL;Seckbacher Landstraße
+SM;Sandelmühle
+SP;Schweizer Platz
+STZW;Stadtbahnzentralwerkstatt
+TZ;Theobald-Ziegler-Straße
+UR;Uni Campus Riedberg
+WA;Waldlust
 WBC;Willy-Brand-Platz (C-Ebene)
 WBD;Willy-Brand-Platz (D-Ebene)
-BBO;BB Ost
-ABBH;Abstellanlage Bommersheim
-SB;Südbahnhof
-SP;Schweizer Platz
-ET;Eschenheimer Tor
-GW;Grüneburgweg
-HO;Holzhausenstraße
-MI;Miquel-/Adickesallee/Polizeipräsidium
-DO;Dornbusch (Hessischer Rundfunk)
-FT;Fritz-Tarnow-Straße
-HG;Hügelstraße
-LB;Lindenbaum
+WB;Willy-Brandt-Platz
+WD;Westend
+WI;Wiesenau
+WK;Weißkirchen Ost
 WS;Weißer Stein
+ZO;Zoo
 ZW;Zeilweg
-ANW;Abzweig Nordwest
-HL;Heddernheimer Landstraße
-NW;Nordwestzentrum
-RS;Römerstadt
-NI;Niddapark
-GI;Ginnheim
-SM;Sandelmühle
-RW;Riedwiese/Mertonviertel
-KA;Kalbach
-BM;Bonames Mitte
-NE;Nieder-Eschbach
-OE;Ober-Eschbach
-GO;Gonzenheim
+211;Hauptbahnhof
+212;Güterplatz (in Bau)
+213;Emser Brücke (in Bau)
+214;Europapark (in Bau)
+215;Wohnpark (in Bau)
+251;Festhalle/Messe
+291;Betriebsbahnhof Gutleut
+311;Hauptwache (C-Ebene)
+312;Alte Oper
+313;Westend
+314;Bockenheimer Warte (C-Ebene)
+315;Leipziger Straße
+316;Kirchplatz
+317;Industriehof
+321;Fischstein
+322;Hausener Weg
+323;Stephan-Heise-Straße
+324;Friedhof Westhausen
+327;Gewerbegebiet Praunheim (in Planung)
+327;Heerstraße
+351;Große Nelkenstraße
+353;Hausen
+410;Grüneburgpark (projektiert)
+411;Bockenheimer Warte (D-Ebene)
+412;Bundesbank (projektiert)
+413;Platenstraße (projektiert)
+414;Ginnheim
+415;Niddapark
+421;Römerstadt
+422;Nordwestzentrum
+423;Heddernheimer Landstraße
+424;Uni Campus Riedberg
+425;Riedberg
+502;Dreieck Nordwest
+511;Hauptwache (D-Ebene)
+512;Eschenheimer Tor
+513;Grüneburgweg
+514;Holzhausenstraße
+515;Miquel-/Adickesallee/Polizeipräsidium
+521;Dornbusch (Hessischer Rundfunk)
+522;Fritz-Tarnow-Straße
+523;Hügelstraße
+524;Lindenbaum
+525;Weißer Stein
+526;Heddernheim
+527;Zeilweg
+551;Wiesenau
+552;Niederursel
+554;Weißkirchen Ost
+555;Bommersheim
+556;Oberursel Bf
+557;Oberursel Stadtmitte
+558;Oberursel Altstadt
+561;Lahnstraße
+562;Glöcknerwiese
+563;Kupferhammer
+564;Rosengarten
+565;Waldlust
+566;Hohemark
+611;Willy-Brand-Platz (D-Ebene)
+612;Dom/Römer
+613;Konstablerwache (C-Ebene)
+614;Musterschule
+615;Glauburgstraße
+616;Deutsche Nationalbibliothek
+617;Hauptfriedhof
+621;Neuer Jüdischer Friedhof (aktuell nicht in Betrieb)
+623;Marbachweg/Sozialzentrum
+624;Gießener Straße
+625;Theobald-Ziegler-Straße
+626;Ronneburgstraße
+631;Sigmund-Freud-Straße
+632;Preungesheim
+633;August-Schanz-Straße (geplant)
+634;Berkersheimer Weg (geplant)
+635;Frankfurter Berg (geplant)
+641;Sandelmühle
+642;Riedwiese/Mertonviertel
+651;Kalbach
+652;Bonames Mitte
+653;Nieder-Eschbach
+655;Ober-Eschbach
+656;Gonzenheim
+657;Bad Homburg Bahnhof (geplant)
+691;Abstellanlage Eckenheim
+711;Merianplatz
+712;Höhenstraße
+713;Bornheim Mitte
+714;Seckbacher Landstraße
+792;Betriebsbahnhof Ost
+811;Konstablerwache (D-Ebene)
+812;Zoo
+813;Habsburgerallee
+814;Parlamentsplatz
+815;Eissporthalle/Festplatz
+851;Ostbahnhof
+911;Willy-Brand-Platz (C-Ebene)
+912;Schweizer Platz
+913;Südbahnhof
+826;Enkheim
+823;Gwinnerstraße
+825;Hessencenter
+821;Johanna-Tesch-Platz
+824;Kruppstraße
+822;Schäfflestraße
