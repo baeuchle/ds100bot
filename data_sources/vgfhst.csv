@@ -24,9 +24,10 @@ DN;Deutsche Nationalbibliothek
 DNW;Dreieck Nordwest
 DO;Dornbusch (Hessischer Rundfunk)
 EH;Eissporthalle/Festplatz
+EM;Eckenheimer Landstraße / Marbachweg (veraltet)
 EN;Enkheim
 ET;Eschenheimer Tor
-FM;Festhalle/Messe
+MS;Festhalle/Messe
 FS;Fischstein
 FT;Fritz-Tarnow-Straße
 FW;Friedhof Westhausen
@@ -34,9 +35,9 @@ GB;Glauburgstraße
 GW;Grüneburgweg
 GL;Glöcknerwiese
 GI;Ginnheim
-351;Große Nelkenstraße
+GN;Große Nelkenstraße
 GO;Gonzenheim
-GP;Gewerbegebiet Praunheim (in Planung)
+GP;Gravensteiner-Platz
 GS;Gießener Straße
 GR;Gwinnerstraße
 HA;Habsburgerallee
@@ -48,7 +49,7 @@ HF;Hauptfriedhof
 HG;Hügelstraße
 HL;Heddernheimer Landstraße
 HM;Hohemark
-353;Hausen
+HN;Hausen
 HO;Holzhausenstraße
 HS;Höhenstraße
 HU;Hausener Weg
@@ -69,7 +70,7 @@ LB;Lindenbaum
 LE;Leipziger Straße
 ME;Merianplatz
 MI;Miquel-/Adickesallee/Polizeipräsidium
-MS;Musterschule
+MU;Musterschule
 MZ;Marbachweg/Sozialzentrum
 NE;Nieder-Eschbach
 NI;Niddapark
@@ -96,6 +97,7 @@ SH;Stephan-Heise-Straße
 SL;Seckbacher Landstraße
 SM;Sandelmühle
 SP;Schweizer Platz
+ST;Stadion
 STZW;Stadtbahnzentralwerkstatt
 TZ;Theobald-Ziegler-Straße
 UR;Uni Campus Riedberg
@@ -109,6 +111,7 @@ WK;Weißkirchen Ost
 WS;Weißer Stein
 ZO;Zoo
 ZW;Zeilweg
+ZWI;Zentrale Werkstätten Infrastruktur
 211;Hauptbahnhof
 212;Güterplatz (in Bau)
 213;Emser Brücke (in Bau)
@@ -214,3 +217,10 @@ ZW;Zeilweg
 821;Johanna-Tesch-Platz
 824;Kruppstraße
 822;Schäfflestraße
+2613;Gravensteiner-Platz
+3102;Lokalbahnhof
+3305:Nauheimer Straße
+3400;Oberforsthaus
+3600;Rebstockbad
+3713;Stadion
+4000;Varrentrapstraße
