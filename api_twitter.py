@@ -58,7 +58,8 @@ class TwitterApi:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
                 result.append(Tweet(t, self.verbose))
-            print ("{} tweets found".format(len(result)))
+            if self.verbose > 1:
+                print ("{} tweets found".format(len(result)))
             return result
         except tweepy.RateLimitError as rateerror:
             warn_rate_error(rateerror, "cursoring")
