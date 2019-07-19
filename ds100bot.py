@@ -67,7 +67,7 @@ for id, tweet in tweet_list.items():
             print("=================")
         continue
     if tweet.is_retweet():
-        if args.verbose > 0:
+        if args.verbose > 1:
             print("Not processing pure retweets")
             print("=================")
         continue

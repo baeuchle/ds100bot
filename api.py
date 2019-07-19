@@ -28,7 +28,6 @@ class ReadWriteApi(TwitterApi):
     # error (fix before trying again).
     def tweet(self, text, **kwargs):
         super().tweet(text, **kwargs)
-        print(kwargs)
         try:
             new_tweet = self.twit.update_status(text, **kwargs)
             return new_tweet.id
