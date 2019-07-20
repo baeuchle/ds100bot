@@ -27,7 +27,7 @@ git log \
 echo '"""'
 
 exec 1>&3
-cd html/
+cd doc/
 . create.sh
 
 tdir=/var/www/ds100
@@ -38,6 +38,6 @@ fi
 
 adir=/var/www/avatar
 if [ -d "$adir" ]; then
+    chmod 664 ../avatar.svg
     cp ../avatar.svg $adir/ds100.svg
-    chmod 664 $adir/ds100.svg
 fi
