@@ -37,7 +37,7 @@ def process_commands(tweet, twapi, verbose):
             else:
                 print (" not yet following")
         if not is_followed:
-            twapi.follow(id=author)
+            twapi.follow(author)
     if tweet.has_hashtag('entfolgen', case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if verbose > 0:
