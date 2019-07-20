@@ -22,6 +22,7 @@ cat <<EOF
    <li><a href="index.html">DS100-bot</a></li>
    <li><a href="finderegeln.html">Finden von Tweets</a></li>
    <li><a href="contribute.html">Beitragen</a></li>
+   <li><a href="motivation.html">Motivation</a></li>
    <li><a href="haftung.html">Haftungsausschluss</a></li>
    <li><a href="copyright.html">Daten / Urheberrecht</a></li>
    <li><a href="datenschutz.html">Datenschutz</a></li>

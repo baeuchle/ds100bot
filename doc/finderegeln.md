@@ -101,13 +101,14 @@ Finden von Kürzeln
 
 Ein findbares Kürzel besteht aus
 
-- einem '\#' oder '$' (fließt in die Auswahl der Quelle ein)
+- einem ‚\#‘ oder ‚$‘ (fließt in die Auswahl der Quelle ein: \# für
+  Orte, $ für Strecken)
 - einem Bezeichner für die Quelle: Wenn nicht vorhanden, wird entweder
-  die Quelle 'DS:' oder 'BOT:' benutzt. Besteht immer aus
+  die Quelle ‚DS:‘ oder ‚BOT:‘ benutzt. Besteht immer aus
   Großbuchstaben.
 - dem Kürzel selbst. Hier werden aus den Originalquellen
   aufeinanderfolgende Leerzeichen durch einen Unterstrich ersetzt (aus
-  '`AA  G`' wird also '`AA_G`'). Das Kürzel kann entweder aus
+  ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann entweder aus
   Großbuchstaben und Zahlen bestehen oder aus Kleinbuchstaben und
   Zahlen; eine Mischung ist nicht möglich.
 
