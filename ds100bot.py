@@ -76,7 +76,10 @@ for id, tweet in tweet_list.items():
     if tweet.is_explicit_mention(twapi.myself):
         react.process_commands(tweet, twapi, args.verbose)
     # Process this tweet
-    react.process_tweet(tweet, twapi, sql, args.verbose)
+    mode = None
+    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
+        mode = 'all'
+    react.process_tweet(tweet, twapi, sql, args.verbose, mode)
     # Process quoted or replied-to tweets, only for explicit mentions and #DS100.
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():

@@ -5,7 +5,7 @@ max_tweet_length = 280
 
 def process_tweet(tweet, twapi, sql, verbose, modus=None):
     if verbose > 2:
-        print("Processing tweet {}:".format(tweet.id))
+        print("Processing tweet {} mode {}:".format(tweet.id, modus))
         print(tweet)
         print("+++++++++++++++++")
     reply_id = tweet.id
