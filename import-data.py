@@ -2,6 +2,7 @@
 
 import argparse
 import csv
+from datetime import date
 import os
 import sqlite3
 
@@ -24,6 +25,7 @@ if args.purge:
         DELETE FROM shortstore
     """)
 
+today = date.today().strftime("%Y%m%d")
 directory = 'data_sources'
 for f in os.listdir(directory):
     if f[-4:] != '.csv':
@@ -37,6 +39,7 @@ for f in os.listdir(directory):
                 name_col,
                 kurz_col,
                 valid_from_col,
+                valid_until_col,
                 replace_links,
                 delimiter
             FROM
@@ -48,9 +51,9 @@ for f in os.listdir(directory):
         )
         headers = sqlcursor.fetchone()
         if headers == None:
-            headers = ['Abk', 'Name', None, 'valid_from', 1, ';']
+            headers = ['Abk', 'Name', None, 'valid_from', 'valid_until', 1, ';']
         print(headers)
-        reader = csv.DictReader(csvfile, delimiter=headers[5])
+        reader = csv.DictReader(csvfile, delimiter=headers[6])
         for datum in reader:
             abk = ' '.join(datum[headers[0]].split())
             name = ' '.join(datum[headers[1]].split())
@@ -58,9 +61,16 @@ for f in os.listdir(directory):
             if headers[2] != None:
                 kurzname = ' '.join(datum[headers[2]].split())
             valid_from = '00000000'
+            valid_until = '99999999'
             if headers[3] != None:
                 valid_from = datum[headers[3]]
-            if headers[4] == 1:
+                if valid_from > today:
+                    continue
+            if headers[4] != None:
+                valid_until = datum[headers[4]]
+                if valid_until < today:
+                    continue
+            if headers[5] == 1:
                 name = name.replace('.', '\u2024')
             primkey = '{}::{}'.format(quelle, abk)
             sqlcursor.execute("""
