@@ -1,115 +1,879 @@
-Abk;Name
-ABBH;Abstellanlage Bommersheim
-ABBW;Abstellanlage Bockenheimer Warte
-ABEC;Abstellanlage Eckenheim
-ABET;Abstellanlage Eschenheimer Tor
-ABHE;Abstellanlage Heerstraße
-ABRS;Abstellanlage Römerstadt
-ABSB;Abstellanlage Südbahnhof
-ABSL;Abstellanlage Seckbacher Landstraße
-ABZO;Abstellanlage Zoo
+Kurzbezeichnung;Name mit Ort
+_BER;WA Berkersheim
+_BHA;WP Ober-Erlenbach Ahlweg
+_BM;WA Bornheim Mitte
+_BOP;WA Bolongaropalast
+_BOS;WA Bergen-Ost
+_BW;WA Bockenheimer Warte
+_DUE;Düsseldorfer Straße
+_EH;WA Eissporthalle
+_ESW;Wartepos. Eschborn West
+_FRH;WA Friedhof Höchst
+_FRI;Wartepos. Friedberger Warte
+_GGM;WP Gateway Gardens Mitte
+_GI;WA Ginnheim
+_HAR;WA Haardtwaldplatz
+_HB;WA Hauptbahnhof
+_HOB;WA Höchst Bahnhof
+_IH;WA Industriehof
+_ITW;WA Industriepark T. West
+_KA;WA Kalbach
+_LOU;WA Louisa
+_LYO;Warteposition Lyoner Straße
+_MOE;WA Mönchhofstraße
+_NE;WA Nieder-Eschbach
+_NIK;WA Nied Kirche
+_NW;WA Nordwestzentrum
+_OBS;Wartepos. Ostbf./Sonnem.str.
+_OU;WA Oberursel Bahnhof
+_RB;WA Riedberg
+_SB;WA Südbahnhof
+_SC;WA Schäfflestraße
+_SHI;WA Schießhüttenstraße
+_SL;WA Seckbacher Ldstr.
+_TEM;WA Tempelhof
+_ZO;WA Zoo
+ABBH;AB Bommersheim
+ABBW;AB Bockenheimer Warte
+ABEC;AB Eckenheim
+ABET;AB Eschenheimer Tor
+ABHE;AB Heerstraße
+ABKW;AB Konstablerwache
+ABOT;AB Osttribüne
+ABRO;AB Rödelheim Bahnhof
+ABRS;AB Römerstadt
+ABSB;AB Südbahnhof
+ABSL;AB Seckbacher Landstraße
+ABSO;AB Schloßstraße
+ABST;AB Stadion
+ABZO;AB Zoo
+ACHE;Achenbachstraße
+ADAL;Adalbert-/Schloßstr.
+ADBH;An der Bornhohl
+ADDH;An der Dammheide
+ADFP;Adlerflychtplatz
+ADHO;An den Drei Hohen
+ADKR;An der Kreuzheck
+ADOP;Adam-Opel-Straße
+ADSB;Auf dem Schafberg
+AEAB;Ärztehaus am Bügel
+AFFE;Affentorplatz
+AFRS;Anne-Frank-Siedlung
+AFSH;Alter Friedhof Schwanheim
+AGAB;Am Gabelacker
 AKA;Abzweig Kalbach
+AKLB;Am Klingelborn
+ALBO;Altebornstraße
+ALEM;Alemannenweg
+ALES;Allesinastraße
+ALFA;Alte Falterstraße
+ALGA;Alte Gasse
+ALIS;Astrid-Lindgren-Schule
+ALKM;Alkmenestraße
+ALLE;Alleehaus
+ALTB;Alt-Bonames
+ALTF;Alt-Fechenheim
+ALTK;Altkönigstraße
+ALTN;Alt-Niederursel
+ALTP;Alt-Praunh./Krankenh. Nordw.
+ALTR;Alt-Rödelheim
+ALTS;Alt-Schwanheim
+AMAS;Am alten Schloß
+AMBA;Am Bächelchen
+AMES;Am Eschbachtal
+AMGG;Am Grünen Graben
+AMHA;Am Hang
+AMHC;Am Hessen-Center
+AMKB;Am Kapellenberg
+AMRB;Am Rebenborn
+ANDR;Andreaskirche
+ANEU;Am Neuenberg
+ANKO;Annette-Kolb-Weg
+ANNA;Annabergstraße
+ANTO;Antoninusstraße
 ANW;Abzweig Nordwest (veraltet)
 AO;Alte Oper
-BBHD;Betriebsbahnhof Heddernheim
+APRI;Adolph-Prior-Straße
+ARBR;Am Römerbrunnen
+ARIE;Alte Riedbergstraße
+ARIS;Am Riedsteg
+ATOR;Allerheiligentor
+ATZM;Atzelberg Mitte
+ATZO;Atzelberg Ost
+ATZW;Atzelberg West
+AUER;Auerstraße
+AUGD;August-Schanz-Str./Dachsberg
+AUGU;August-Schanz-Straße
+AVWS;Arthur-von-Weinberg-Steg
+AWKB;Am Weißkirchener Berg
+BALD;Balduinstraße
+BARB;Barbarossastraße/Riedschule
+BASP;Baseler Platz
+BATE;Battelle-Institut
+BAUM;Baumertstraße
+BBAK;Betriebshof Alpina Kalbach
+BBAL;BH Alpina Flinschstraße
+BBAN;Betriebshof Alpina
+BBBU;Betriebshof Bus
 BBGU;Betriebsbahnhof Gutleut
-BH;Bommersheim
-BO;Bonames Mitte
-BM;Bornheim Mitte
+BBHD;Betriebsbahnhof Heddernheim
+BBHO;Betriebsbahnhof Höchst
+BBMA;Betriebsbahnhof Mainmobil
 BBOS;Betriebsbahnhof Ost
+BBRE;Betriebsbahnhof Rebstock
+BBRI;Betriebshof Riederwald
+BBSR;Betriebshof Sippel Rebstock
+BEBF;Berkersheim Bahnhof
+BECH;Bechtenwaldstraße
+BEDO;Bernadottestraße
+BEGR;Berner Str./Ben-Gurion-R.
+BEPL;Bettinaplatz
+BERK;Berkersheim Mitte
+BERN;Berner Straße
+BERT;Bertramstraße
+BEUT;Beuthener Straße
+BGRN;Ben-Gurion-Ring Nord
+BGRS;Ben-Gurion-Ring Süd
+BGRW;Ben-Gurion-Ring West
+BH;Bommersheim
+BHEH;Ober-Erlenbach Erlenbach-Halle
+BHHO;Ober-Erlenbach Holzweg
+BHSC;Ober-Erlenbach Schmaler Weg
+BING;Bingelsweg
+BIRK;Birkenweg
+BIRM;Birminghamstraße
+BIRS;Birsteiner Straße
+BLEI;Bleiweißstraße
+BLUT;H.-Hoffmann-Str./Blutsp.dst.
+BM;Bornheim Mitte
+BO;Bonames Mitte
+BOBR;Am Bonifatiusbrunnen
+BODE;Bodenseestraße
+BODW;Bodenweg
+BOER;Börneplatz
+BOES;Börneplatz/Stoltzestraße
+BOHA;Bonameser Hainstraße
+BONI;Bonifatiusstraße
+BOPA;Bolongaropalast
+BOST;Bergen Ost
+BOWI;Bornwiesenweg
+BRAU;Brauerei
+BREM;Bremer Platz
+BRES;Breslauer Straße
+BRGL;Bürgeler Straße
+BRIF;Briefzentrum
+BRST;Bremer Straße
+BRUE;Brücken-/Textorstraße
+BRUN;Brüningstraße
+BUCH;Buchrainplatz
+BUCS;Buchrainstraße
+BUDG;Budge-Heim (Lohrberg)
+BUED;Büdinger Straße
+BUER;Bürostadt Niederrad
+BUHO;Burgholzer Straße
+BULA;Burgenlandweg
+BURG;Burgstraße
+BURN;Burnitzstraße
+BUWE;Burgunderweg
+BVAF;Bad Vilbel Alte Frankf. Str.
+BVBE;Bad Vilbel Berliner Straße
+BVBF;Bad Vilbel Bahnhof
+BVDI;Bad Vilbel Dieselstraße
+BVEL;Bad Vilbel Elisabethenstraße
+BVHA;Massenheim Hainstraße
+BVIG;Bad Vilbel Iglauer Weg
+BVKA;Bad Vilbel Kasseler Straße
+BVKE;Bad Vilbel Kennedy-Schule
+BVKU;Bad Vilbel Kurhaus
+BVNP;Bad Vilbel Niddaplatz
+BVRA;Bad Vilbel Altes Rathaus
+BVSB;Bad Vilbel Südbahnhof
+BVST;Bad Vilbel Stadtgr./Schneekop.
+BVZI;Massenheim Ziegelei
 BW;Bockenheimer Warte
 BWC;Bockenheimer Warte (C-Ebene)
 BWD;Bockenheimer Warte (D-Ebene)
+CAMB;Camberger Straße
+CASO;Carl-Sonnenschein-Str.
+CASS;Cassellastraße
+CBSN;Carl-Benz-Straßen Nord
+CBSS;Carl-Benz-Straße Süd
+CHEM;Chemisches Werk
+CHER;Cheruskerweg
+COHA;Cohausenstraße
+COME;Comeniusstraße
+CRON;Cronstettenstraße
+DACH;Dachsberg
+DAIM;Daimlerstraße
+DAMI;Darmstädter Landstraße Mitte
+DBUB;Deutsche Bundesbank
+DIBU;Dieburger Straße
+DIES;Dieselstraße
+DITM;Ditmarstraße
 DN;Deutsche Nationalbibliothek
 DNW;Dreieck Nordwest
 DO;Dornbusch (Hessischer Rundfunk)
+DOAG;Dornbusch/Am Grünhof
+DRAI;Draisbornstraße
+DREI;Dreihäusergasse
+DUER;Dürkheimer Straße
+DUNA;Dunantring
+ECFR;Friedhof Eckenheim
+EDUA;Eduard-Bernstein-Weg
 EH;Eissporthalle/Festplatz
-EM;Eckenheimer Landstraße / Marbachweg (veraltet)
+EIFE;Eifelstraße
+EINB;Einbiglerweg
+ELIS;Elisabethenstraße
+ELLE;Ellerfeld
+ELST;Eleonore-Sterling-Straße
+ELTR;Elektronstraße
+ELTV;Eltviller Straße
+EM;Eckenheimer Landstraße / Marbachweg
+EMJO;Emmerich-Josef-Straße
+EMPL;Ernst-May-Platz
+EMSE;Emser Straße
 EN;Enkheim
+ENGR;Engelsruhe
+ENGT;Engelthaler Straße
+EPPS;Eppsteiner Straße
+ERLE;Erlenhof
+ERLS;Erlenseer Straße
+ERNS;Ernst-Kahn-Straße
+ERNT;Erntestraße
+ERZB;Erzbergerstraße
+ESAH;Eschb. Alfred-Herrhausen-Allee
+ESBA;Eschborn Bahnhofstraße
+ESBF;Eschborn Bahnhof
+ESBH;Eschb. Berliner-/Hamburger Str
+ESBS;Eschborn Südbahnhof
+ESCB;Eschersheim Bahnhof
+ESCH;Eschweger Straße
+ESEP;Eschborn Eschenplatz
+ESFS;Eschborn Frankfurter Straße
+ESGO;Eschb. Gew Ost/Ndurseler Allee
+ESIS;Eschborn Industriestraße
+ESLU;Eschborn Ludwig-Erhard-Straße
+ESMA;Eschborn Mergenthalerallee
+ESRH;Eschborn Rathaus
+ESSB;Eschborn Schwimmbad
+ESSO;Eschborn Sossenheimer Straße
+ESSW;Eschborn Schwalbacher Straße
+ESTE;Eschborn Tennisplatz
+ESWE;Eschborn West
 ET;Eschenheimer Tor
-MS;Festhalle/Messe
+EUCK;Euckenstraße
+EURO;Europaturm
+EVBS;Emil-von-Behring-Straße
+FAFR;Farbenstraße/Friedhof
+FALK;Falkstraße
+FALL;Fallerslebenstraße
+FBAD;Farbwerksbad/Ballsporthalle
+FBBF;Frankfurter Berg Bahnhof
+FBMU;Feldbahnmuseum
+FEDI;Ferdinand-Dirichs-Weg
+FELD;Feldbergstraße
+FENK;Friedhof Enkheim
+FHLB;Flughafen Lufthansabasis
+FHT3;Flughafen Tor 3
+FLAS;Flaschenburgstraße
+FLIE;Fliederweg
+FLOR;Florianweg
+FMIT;Francois-Mitterrand-Platz
+FRAH;Frauenhofstraße
+FRAL;Friedberger Anlage
+FRAN;Frankensteiner Platz
+FRAU;Frauenfriedenskirche
+FRAW;Franz-Werfel-Straße
+FRBO;Friedhof Bornheim
+FREI;Freiligrathstraße
+FREß;Freßgass
+FRFE;Friedhof Fechenheim
+FRHO;Friedhof Höchst
+FRIP;Friedberger Platz
+FRIS;Frischezentrum
+FRIW;Friedberger Warte
+FRKA;Friedrich-Kahl-Str.
+FRKU;Friedhof Kurmainzer Straße
+FRSI;Friedhof Sindlingen
+FRSO;Friedhof Sossenheim
 FS;Fischstein
 FT;Fritz-Tarnow-Straße
+FULD;Fuldaer Straße
+FULO;Im Fuchsloch
 FW;Friedhof Westhausen
+GABL;Gablonzer Str.
+GAGM;Gateway Gardens Mitte
+GAGN;Gateway Gardens Nord
+GAGO;Gateway Gardens Ost
+GALL;Galluswarte
+GAUG;Gaugrafenstraße
 GB;Glauburgstraße
-GW;Grüneburgweg
-GL;Glöcknerwiese
+GBFE;Griesheim Bf./Eichenstraße
+GEBU;Georg-Büchner-Schule
+GEIH;Geisenheimer Straße
+GEIW;Geiselwiesen
+GELA;Gelastraße
+GEOR;Georg-Treser-Straße
+GERA;Gerauer Straße
+GERL;Gerlachstraße
+GFST;Genfer Straße
+GHRI;G.-Hauptmann-Ring/Praunh. W.
 GI;Ginnheim
+GIWA;Ginnheimer Waldgasse
+GL;Oberursel Glöcknerwiese
+GLOC;Glockengasse
+GLOG;Glogauer Straße
 GN;Große Nelkenstraße
 GO;Gonzenheim
 GP;Gravensteiner-Platz
-GS;Gießener Straße
+GOBE;Goldbergweg
+GOLD;Goldsteinstraße
 GR;Gwinnerstraße
+GRAE;Graebestr./Pflegeheim
+GRAV;Gravensteiner-Platz
+GRAZ;Grazer Weg
+GRBF;Griesheim Bahnhof
+GRMI;Gwinnerstraße/Mitte
+GRUE;Grüneburgpark
+GS;Gießener Straße
+GUEA;Günthersburgallee
+GUEP;Günthersburgpark
+GUER;Guerickestraße
+GUET;Güterplatz
+GUND;Gundelandstraße
+GUTH;Gutleut-/Heilbronner Str.
+GW;Grüneburgweg
+GWNE;Gewerbegebiet Nd.-Eschbach
+H831;Industriepark Höchst Tor H831
 HA;Habsburgerallee
-HB;Hauptbahnhof
-HC;Hessencenter
+HAAR;Haardtwaldplatz
+HABE;Habelstraße
+HADR;Hadrianstraße
+HAFS;Hafenstraße
+HAGA;Haingasse
+HAGE;Hagebuttenweg
+HAHN;Hahnstraße
+HAIB;Hartmann-Ibach-Straße
+HAIG;Haigerer Straße
+HAIN;Hainer Weg
+HALM;Halmstraße
+HAMW;Hafenmühlenweg
+HANI;Haus Nidda
+HANS;Hansenweg
+HART;Harthweg
+HARW;Harheimer Weg
+HAWI;Habsburger-/Wittelsb.allee
+HB;Frankfurt Hauptbahnhof
+HBKA;Hauptbahnhof/Karlstraße
+HBMU;Hauptbahnhof/Münchener Str.
+HBSU;Hauptbahnhof Südseite
+HC;Hessen-Center
 HD;Heddernheim
+HDKI;Heddernheim Kirche
+HDUL;Hinter den Ulmen
 HE;Heerstraße
+HEBE;Heinrich-Becker-Straße
+HEBI;Heinrich-Bingemer-Weg
+HEFU;Henriette-Fürth-Straße
+HEHA;Heinrich-Hardt-Straße
+HEHO;Heinrich-Hopf-Straße
+HEIB;Heilbronner Straße
+HEIF;Heidenfeld
+HEIL;Heiligenstock/Lohrberg
+HEIS;Heister-/Seehofstraße
+HEIZ;Heizkraftwerk Niederrad
+HEKR;Heinrich-Kromer-Schule
+HELA;Heinrich-Lanz-Allee
+HESI;Heister-/Siemensstraße
+HESS;Hessendenkmal
+HEUS;Heusingerstraße
 HF;Hauptfriedhof
 HG;Hügelstraße
+HJSL;Hugo-Junkers-Straße/Schleife
 HL;Heddernheimer Landstraße
-HM;Hohemark
+HM;Oberursel Hohemark
+HMMU;Heimatmusem Bergen-Enkheim
 HN;Hausen
 HO;Holzhausenstraße
+HOBF;Höchst Bahnhof
+HOBN;Höchst Bahnhof Nordseite
+HOBR;Hopfenbrunnen
+HOFG;Hofgut
+HOFH;Hofheimer Straße
+HOHE;Hohe Brück
+HOHG;Hospital zum Hl. Geist
+HOHO;Homburger Hohl
+HOHS;Hohe Straße
+HOKA;Homburger Landstraße/Kaserne
+HOMA;Homburger Landstr./Marbachweg
+HOMT;Höchster Markt
+HOPA;Holzhausen-Park
+HOSS;Hohenstaufenstraße
+HOST;Hostatostraße
 HS;Höhenstraße
+HSCH;Holbein-Schule
+HTTN;Hoechst AG Tor Nord
+HTTW;Hoechst AG Tor West
 HU;Hausener Weg
+HUFE;Hufeland-Haus
+HUGO;Hugo-Eckener-Ring
+HUJU;Hugo-Junkers-Straße
+HUMP;Humperdinckstraße
+HVKS;Eschborn H.-von-Kleist-Schule
+HW;Hauptwache
 HWC;Hauptwache (C-Ebene)
 HWD;Hauptwache (D-Ebene)
-HW;Hauptwache
+HYNS;Hynspergstraße
 IH;Industriehof
+IMSB;Im Steinbügel
+IMUH;Im Uhrig
+IMWO;Im Wörth
+INDA;In der Au
+INTZ;Intzestraße
+IPTN;Industriepark Höchst Tor Nord
+IPTO;Industriepark Höchst Tor Ost
+IPTS;Industriepark Höchst Tor Süd
+IPTW;Industriepark Höchst Tor West
+JAEG;Jägerallee
+JAHR;Jahrhunderthalle
+JAKO;Jakobsbrunnenstraße
+JOBA;Josef-Bautz-Straße
+JOBE;Johann-Beyer-Weg
+JOKI;Johanna-Kirchner-AHZ
 JT;Johanna-Tesch-Platz
+JUGE;Jugenheimer Straße
+JULB;Julius-Brecht-Straße
+JULI;Juliusstraße
+JUNG;Jungmannstraße
+K801;Industriepark Höchst Tor K801
 KA;Kalbach
+KABR;Kaiserleibrücke
+KAET;Käthchen-Paulus-Straße
+KAIS;Kaiserkronenweg
+KAKR;Käthe-Kruse-Straße
+KALT;Kaltmühlstraße
+KARB;Karlsbader Straße
+KARI;Karl-Ritscher-Anlage
+KASE;Kasernenstraße
+KASI;Kaiser-Sigmund-Straße
+KATK;Katharinenkreisel
+KDWE;Konrad-Duden-Weg
+KEBA;Kelsterbach Bahnhof
+KEGS;Kelsterbach Gesamtschule
+KEKG;Kelsterbach Kelstergrund
+KELS;Kelsterbacher Weg
+KEMA;Kelsterbach Mauerstraße
+KERA;Kelsterbach Rathaus
+KESW;Kelsterbach Schloßweg
+KETT;Kettenhofweg
+KHNW;Krankenhaus Nordwest
 KI;Kirchplatz
+KIBA;Kirschbaumweg
+KIES;Kiesschneise
+KIGA;Kirchgasse
+KIZE;Kirche Zeilsheim
+KLHO;Klinikum Höchst
+KOEN;Königsteiner Straße
+KOGL;Konrad-Glatt-Straße
+KOLB;Kolberger Weg
 KR;Kruppstraße
-KU;Kupferhammer
+KREU;Kreuzstraße
+KRON;Kronberger Straße
+KU;Oberursel Kupferhammer
+KUFU;Kurfürstenplatz
+KUHW;Kuhwaldstraße
+KUNT;Kreisel Unterschweinstiege
+KURH;Kurhessenstraße
+KURM;Kurmarkstraße
+KVDS;Karl-von-Drais-Straße
+KW;Konstablerwache
 KWC;Konstablerwache (C-Ebene)
 KWD;Konstablerwache (D-Ebene)
-KW;Konstablerwache
-LA;Lahnstraße
-LB;Lindenbaum
+KWES;Karl-Wessendorft-Straße
+LA;Oberursel Lahnstraße
+LABO;Langenselbolder Straße
+LACH;Lachegraben
+LAHM;Lahmeyerstraße
+LAUT;Lauterbacher Straße
+LAWE;Lachweg
+LBRI;Lerchesbergring
 LE;Leipziger Straße
+LEGA;Leo-Gans-Straße
+LEGY;Lessing-Gymnasium
+LENZ;Lenzenbergstraße
+LEON;Leonhard-Heißwolf-Straße
+LERA;Leuchte/Rangenbergstraße
+LERB;Lerchesberg
+LETT;Lettigkautweg
+LEUC;Leuchte
+LEVI;Leonardo-da-Vinci-Allee
+LEVK;Leverkuser Straße
+LHAC;Lufthansa-Aviation-Center
+LI;Lindenbaum
+LIND;Lindenhag
+LINH;Lindenhof
+LINN;Linnegraben
+LODA;Lokalbf./Darmstädter Ldstr.
+LOEW;Löwengasse
+LOKA;Lokalbahnhof
+LORS;Lorscher Straße
+LOTE;Lokalbahnhof/Textorstraße
+LOUI;Louisa Bahnhof
+LUEB;Lübecker Straße
+LUER;Ludwig-Erhard-Anlage
+LUES;Ludwig-Erhard-Schule
+LUSC;Ludwig-Scriba-Straße
+LUTH;Luthmerstraße
+LUWI;Ludwigshafener Straße
+LYON;Lyoner Straße
+MABE;Mainberg
+MAIN;Mainkur Bahnhof
+MAKI;Martinskirchstraße
+MALA;Marktstraße/Landgraben
+MANE;Main-Neckar-Brücke
+MARK;Markus-Krankenhaus
+MASI;Märchensiedlung
+MATH;Mathildenstraße
+MAUR;Mauritiusstraße
 ME;Merianplatz
+MECK;Mecklenburger Straße
+MEHO;Meerholzer Straße
+MELA;Melanchthonplatz
+MELI;Melibocusstraße
+MEPH;Messeparkhaus
+MEYT;Max-Eyth-Straße
+MGRS;Michael-Grzimek-Schule
+MH3O;Messe Halle 3 Ost
 MI;Miquel-/Adickesallee/Polizeipräsidium
+MICH;Michlersbrunnen
+MIHA;Miquel-/Hansaallee
+MISE;Mittelseestraße
+MITH;Mithrasstraße
+MLUS;Mainluststraße
+MOEN;Mönchhofstraße
+MORZ;Morgenzeile
+MPBE;Marktplatz Bergen
+MPOR;Messe Portalhaus
+MS;Festhalle/Messe
 MU;Musterschule
+MUEB;Mühlberg
+MUEH;Mühlheimer Straße
+MUEN;Münzenberger Straße
+MUEW;Mühlenwerke
+MV;Riedwiese/Mertonviertel
 MZ;Marbachweg/Sozialzentrum
+NAUH;Nauheimer Straße
+NBFR;Nied Bahnhof/Friedhof
+NBLO;Nied Bahnhof/Lotzstraße
+NBRU;Niederräder Brücke
 NE;Nieder-Eschbach
+NEST;Niedereschbacher Straße
+NEUF;Neufeld
+NEUM;Neumarkt
+NEUZ;Neu-Zeilsheim
+NHFR;Niederhöchstadt Friedhof
+NHGB;Niederhöchst Georg-Büchner-Str
+NHGO;Niederhöchstadt Goethestraße
+NHLI;Niederhöchstadt Ligusterweg
+NHLW;Niederhöchstadt Langer Weg
+NHST;Niederhöchst. Steinbacher Str.
 NI;Niddapark
+NIBE;Nibelungenplatz FH
+NIBR;Nied Brücke
+NIDL;Niederräder Landstraße
+NIED;Niederbornstraße
+NIKA;Nidda-Kampfbahn
+NIKI;Nied Kirche
+NINA;Niedenau
+NISG;Neu-Isenburg Stadtgrenze
+NIWI;Niedwiesenstraße
 NJ;Neuer Jüdischer Friedhof (aktuell nicht in Betrieb)
+NOHA;Nordring/Haingasse
+NOLA;Nordring/Landgraben
+NOPA;Nordpark
+NRBF;Niederrad Bahnhof
 NU;Niederursel
 NW;Nordwestzentrum
 OA;Oberursel Altstadt
-OB;Ostbahnhof
+OB;F Ostbahnhof
+OBER;Oberschelder Weg
+OBFE;Oberfeldstraße
+OBFO;Oberforsthaus
+OBHO;Ostbahnhof/Honsellstraße
+OBLI;Oberlindau
+OBSO;Ostbahnhof/Sonnemannstraße
+OBSS;Oberschweinstiege
+ODEN;Odenwaldstraße
+ODPL;Ostbahnhof/Danziger Platz
 OE;Ober-Eschbach
+OFAB;OF August-Bebel-Ring
+OFHB;Offenbach Hauptbahnhof
+OFMA;OF Marktplatz
+OFMB;OF Marktplatz/Berliner Straße
+OFMW;OF Max-Willner-Platz
+OFRA;OF Rathaus
+OFSG;OF Offenbach Stadtgrenze
+OFSL;OF S-Bahn-Station Ledermuseum
+OFTM;OF Theater/Messehallen
+OFWI;OF Wilhelmsplatz
+OHAS;Otto-Hahn-Schule
+OPEL;Opel-Rondell
+OPPE;Oppenheimer Landstraße
+OPPL;Oppenheimer Platz
 OS;Oberursel Stadtmitte
-OU;Oberursel Bf
+OSTE;Ostendstraße
+OSTH;Osthafenplatz
+OTTO;Otto-Hahn-Platz
+OU;Oberursel Bahnhof
+PAAP;Paul-Apel-Straße
+PALM;Palmengarten
+PALS;Palmengartenstraße
+PANO;Panoramabad
+PAQU;Paquetstraße
+PARK;Parkweg
+PEBI;Peter-Bied-Straße
+PETK;Peterskirche
+PFAF;Pfaffenwiese/Kolberger Weg
+PFAN;Pflanzländer
+PFEI;Pfeiferstraße
+PFER;Pferdskopfweg
+PFHE;Parkfriedhof Heiligenstock
+PFIN;Pfingstbornstraße
+PFOR;Pforzheimer Straße
+PFTS;Pfortenstraße
 PH;Preungesheim
+PHRE;Philipp-Reis-Straße
+PLDR;Platz der Republik
+PLET;Heinrich-Plett-Straße
+PLIN;Plieningerstraße
+PLTA;Platanenstraße
+PLTE;Platenstraße
+POSI;Postsiedlung
 PP;Parlamentsplatz
+PRBR;Praunheimer Brücke
+PRUE;Prüfling
+PRWM;Praunheimer Weg Mitte
+PWSZ;Praunheimer Weg/Schulzentrum
+RADI;Radilostraße
+RAHA;Rathaus Harheim
+RAKA;Rathaus Kalbach
+RAKO;Rabenkopfweg
+RANG;Rangenbergstraße/Riedschule
+RANI;Rathaus Nieder-Erlenbach
+RAUS;Rauschenberger Straße
 RB;Riedberg
-RG;Rosengarten
+REBS;Rebstockbad
+REBS;Rebstockbad
+REIF;Reifenbg. Str./Sozialzentrum
+REIN;Reinhardstraße
+RENN;Rennbahn
+RENO;Renoirallee
+REST;Rebstöcker Straße
+RG;Oberursel Rosengärtchen
+RHEI;Rheinlandstraße
+RHON;Rhonestraße
+RIBA;Riedbad
+RIED;Riedschule
+RIEH;Riederhöfe
+RIWA;Richard-Wagner-Straße
 RM;Dom/Römer
+RMPA;Römer/Paulskirche
 RO;Ronneburgstraße
+ROBF;Rödelheim Bahnhof
+ROBO;Robert-Bosch-Straße
+ROEM;Römerhof
+ROFE;Rotfeder-Ring
+ROHR;Rohrbachstr./Friedberg. Ldstr.
+ROLA;Rödelheimer Landstraße
+ROMA;Roßmarkt
+ROSS;Roßkopfstraße
+ROTD;Rotdornweg
+ROTH;Rothschildallee
+ROTT;Rottweiler Platz
 RS;Römerstadt
+RTHW;Rauenthaler Weg
+RUHE;Ruhestein
 RW;Riedwiese/Mertonviertel
+SAUS;Schöne Aussicht
+SAWA;Sachsenhäuser Warte
+SAWI;Saalburg-/Wittelsbacherallee
 SB;Südbahnhof
+SBKS;Sebastian-Kneipp-Straße
+SBMO;Südbahnhof/Mörfelder Ldstr.
+SBSW;Südbahnhof/Schweizer Straße
+SBWE;Schwalbenweg
 SC;Schäfflestraße
+SCAH;Schule am Hang
+SCBA;Schwalbach Badener Straße
+SCBE;Schwalbach Berliner Straße
+SCBW;Schwalb.Bremer Str/Waldfriedhf
+SCEV;Schwalb. Limes Bf./Ev. Kirche
+SCFE;Schwalbach Friedr-Ebert-Schule
+SCFK;Schwalbach Friedenskirche
+SCFU;Schwalbach Fußgängerbrücke
+SCHA;Schafheckstraße
+SCHB;Schönbornstraße
+SCHC;Schmickstraße
+SCHE;Scheffeleck
+SCHF;Schöffenstraße
+SCHH;Schönhof
+SCHI;Schießhüttenstraße
+SCHM;Schmidtstraße
+SCHS;Schwalbach Hessenstraße
+SCHU;Schubertstraße
+SCHW;Schönberger Weg
+SCKA;Schule Kalbach
+SCLB;Schwalbach Limes Bahnhof
+SCNI;Schule Nieder-Erlenbach
+SCNP;Schwalbach Niederhöchst. Pfad
+SEBU;Seniorenwohnanlage Bügel
+SELE;Leonhardsgasse
+SENC;Senckenbergmuseum
 SF;Sigmund-Freud-Straße
 SH;Stephan-Heise-Straße
+SIBF;Sindlingen Bahnhof
+SIES;Siesmayerstraße
+SIFB;Siedlung Frankfurter Berg
+SILM;Silostraße Mitte
+SILO;Silobad/Ballsporthalle
+SIMO;Simon-Bolivar-Anlage
+SITB;Siedlung Taunusblick
+SIWE;Siemens-Werk
 SL;Seckbacher Landstraße
+SLIT;Schlitzer Straße
 SM;Sandelmühle
+SOBF;Sossenheim Bahnhof
+SOKI;Sossenheimer Kirchberg
+SONN;Sonnenweg
+SONT;Sontraer Straße
+SOPH;Sophienstraße
+SOVH;Sossenheim Volkshaus
 SP;Schweizer Platz
+SPEY;Speyerer Straße
+SPHA;Sparkasse Harheim
+SPHA;Sportanlage Harheim
+SPIT;Spitzenstraße
+SPRE;Sportanlage Rebstock
+SPZK;Sportzentrum Kalbach
 ST;Stadion
+STAD;Stadion/Straßenbahn
+STAO;Staustufe Ost
+STAR;Starkenburger Straße
+STAU;Staustufe Griesheim
+STBA;Stadionbad
+STBF;Stresemannallee
+STEI;Steinauer Straße
+STER;Sternbrücke
+STEZ;Stefan-Zweig-Straße
+STKE;Stadion/Kunsteisbahn
+STOT;Stadion/Osttribüne
+STRG;Stresemannallee/Gartenstraße
+STRM;Stresemannall./Mörf. Ldstr.
+STZH;Stadthalle Zeilsheim
 STZW;Stadtbahnzentralwerkstatt
+SUFR;Südfriedhof West
+SULS;Schulstraße
+SWAB;Schwabstraße
+SWAL;Schwalbacher Straße
+SWAN;Schwanthalerstraße
+SWBA;Schwarzbachmühle
+SWED;Schwedlerstraße
+SWGA;Schweizer-/Gartenstraße
+SWMO;Schweizer Str./Mörf. Ldstr.
+SWWA;Schwarzwaldstraße
+SWWD;Schwanheimer Wald
+TACI;Tacitusstraße
+TAKO;Tannenkopfweg
+TAUB;Taunusblick
+TAUN;Taunusanlage
+TEMP;Tempelhof
+TER1;Flughafen Terminal 1
+TER2;Flughafen Terminal 2
+TEXO;Textorschule
+THEA;Thea-Rasche-Straße
+THEF;Theodor-Fischer-Weg
+THES;Theodor-Storm-Straße
+THOM;Thomas-Mann-Straße
+TILL;Tillystraße
+TRAE;Tränkweg
+TRBA;Trieb-/Barbarossastraße
+TRIF;Trift-/Frauenhofstraße
+TRIS;Triftstraße
+TTOR;Taunustor
 TZ;Theobald-Ziegler-Straße
+UBNW;U-Bahn-Stat. Nordwestzentrum
+UCWE;Uni Campus Westend
+UNB3;Unfallklinik/B3
+UNFA;Unfallklinik
+UNGE;Union Gelände
+UNIK;Universitätsklinikum
+UNIV;Universitätssportanlagen
+UNTE;Unterweg
+UNTM;Unterliederbach Markt
+UNTW;Unterliederbach West
 UR;Uni Campus Riedberg
-WA;Waldlust
+USIN;Usinger Straße
+USWG;Urseler Weg
+UTSW;Unterschweinstiege
+VARR;Varrentrappstraße
+VICT;Victor-Slotosch-Straße
+VILA;Vilbeler Landstraße
+VOWE;Vogelweidstraße
+W;Westkreuz (Messe-Shuttle)
+WA;Oberursel Waldlust
+WAFR;Waldfriedhof Goldstein
+WAGA;Wasgaustraße
+WAGO;Waldau/Goldsteinstraße
+WAKO;Walter-Kolb-Schule
+WALD;Waldau
+WASM;Waldschmidtstraße
+WASS;Wasserpark
+WASU;Waldschulstraße
+WAWE;Wasserweg
+WB;Willy-Brandt-Platz
 WBC;Willy-Brand-Platz (C-Ebene)
 WBD;Willy-Brand-Platz (D-Ebene)
-WB;Willy-Brandt-Platz
 WD;Westend
+WEBA;Westerbachsiedlung
+WEBE;Westenbergerstraße
+WEBF;Westbahnhof
+WEBO;Weidenbornstraße
+WEIL;Weilbrunnstraße
+WEIS;Weißkirchener Weg
+WEMU;Weser-/Münchener Straße
+WEND;Wendelsweg
+WEPL;Wendelsplatz
+WESE;Weserstraße
+WEST;Westkreuz (Messe Shuttle)
+WETZ;Wetzlarer Straße
+WEWA;Westerwaldstraße
+WFRI;Wilhelm-Flögel-Ring
+WFRO;Waldfriedhof Oberrad
+WHEI;Wolf-Heidenheim-Straße
 WI;Wiesenau
+WICK;Wickerer Straße
+WIEN;Wiener Straße
+WIES;Wiesenhüttenstift
+WIFA;Wilhelm-Fay-Straße
+WIFN;Wilhelm-Fay-Straße Nord
+WIHO;Windthorststraße
 WK;Weißkirchen Ost
+WKSI;Walter-Kolb-Siedlung
+WOHL;Wöhlerstraße
 WS;Weißer Stein
+WSPL;Waldspielpark Louisa
+XAVE;Xaver-Fendt-Straße
+ZAND;Zanderstraße
+ZEBF;Zeilsheim Bahnhof
+ZEKO;Zeilsheim Kolonie
+ZEMO;Zehnmorgenstraße
+ZENT;Zentgrafenschule
+ZIHA;Ziegenhainer Straße
 ZO;Zoo
+ZOBE;Zobelstraße
+ZREB;Zum Rebstockbad
+ZUBA;Zuckschwerdt-/Bauhofstraße
+ZUCK;Zuckschwerdtstraße
 ZW;Zeilweg
 ZWI;Zentrale Werkstätten Infrastruktur
 211;Hauptbahnhof
