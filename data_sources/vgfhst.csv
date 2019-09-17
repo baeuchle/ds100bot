@@ -111,18 +111,18 @@ BARB;Barbarossastraße/Riedschule
 BASP;Baseler Platz
 BATE;Battelle-Institut
 BAUM;Baumertstraße
-BBAK;Betriebshof Alpina Kalbach
+BBAK;BH Alpina Kalbach
 BBAL;BH Alpina Flinschstraße
-BBAN;Betriebshof Alpina
-BBBU;Betriebshof Bus
-BBGU;Betriebsbahnhof Gutleut
-BBHD;Betriebsbahnhof Heddernheim
-BBHO;Betriebsbahnhof Höchst
-BBMA;Betriebsbahnhof Mainmobil
-BBOS;Betriebsbahnhof Ost
-BBRE;Betriebsbahnhof Rebstock
-BBRI;Betriebshof Riederwald
-BBSR;Betriebshof Sippel Rebstock
+BBAN;BH Alpina
+BBBU;BH Bus
+BBGU;BB Gutleut
+BBHD;BB Heddernheim
+BBHO;BB Höchst
+BBMA;BB Mainmobil
+BBOS;BB Ost
+BBRE;BB Rebstock
+BBRI;BH Riederwald
+BBSR;BH Sippel Rebstock
 BEBF;Berkersheim Bahnhof
 BECH;Bechtenwaldstraße
 BEDO;Bernadottestraße
@@ -519,6 +519,7 @@ LOKA;Lokalbahnhof
 LORS;Lorscher Straße
 LOTE;Lokalbahnhof/Textorstraße
 LOUI;Louisa Bahnhof
+LS;Leipziger Straße
 LUEB;Lübecker Straße
 LUER;Ludwig-Erhard-Anlage
 LUES;Ludwig-Erhard-Schule
@@ -566,6 +567,7 @@ NAUH;Nauheimer Straße
 NBFR;Nied Bahnhof/Friedhof
 NBLO;Nied Bahnhof/Lotzstraße
 NBRU;Niederräder Brücke
+ND;Niebelungenallee / Deutsche Nationalbibliothek
 NE;Nieder-Eschbach
 NEST;Niedereschbacher Straße
 NEUF;Neufeld
@@ -662,7 +664,6 @@ RANG;Rangenbergstraße/Riedschule
 RANI;Rathaus Nieder-Erlenbach
 RAUS;Rauschenberger Straße
 RB;Riedberg
-REBS;Rebstockbad
 REBS;Rebstockbad
 REIF;Reifenbg. Str./Sozialzentrum
 REIN;Reinhardstraße
@@ -894,8 +895,8 @@ ZWI;Zentrale Werkstätten Infrastruktur
 322;Hausener Weg
 323;Stephan-Heise-Straße
 324;Friedhof Westhausen
+326;Heerstraße
 327;Gewerbegebiet Praunheim (in Planung)
-327;Heerstraße
 351;Große Nelkenstraße
 353;Hausen
 410;Grüneburgpark (projektiert)
@@ -932,7 +933,7 @@ ZWI;Zentrale Werkstätten Infrastruktur
 561;Lahnstraße
 562;Glöcknerwiese
 563;Kupferhammer
-564;Rosengarten
+564;Rosengärtchen
 565;Waldlust
 566;Hohemark
 611;Willy-Brand-Platz (D-Ebene)
@@ -987,4 +988,5 @@ ZWI;Zentrale Werkstätten Infrastruktur
 3400;Oberforsthaus
 3600;Rebstockbad
 3713;Stadion
+3716;Stresemannallee/Gartenstraße
 4000;Varrentrapstraße
