@@ -17,7 +17,8 @@ def get_last_hash(sql):
     return row[0]
 
 def get_hash():
-    return version.githash
+    git = GitVersion.Git()
+    return git.hash()
 
 def is_same_version(sql):
     return get_last_hash(sql) == get_hash()
@@ -44,13 +45,13 @@ def store_version(sql):
             )
 
 def get_version():
-    return version.gitdescribe
+    git = GitVersion.Git()
+    return git.describe()
 
 def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)
-    if last_hash in version.changelog:
-        return version.changelog[last_hash]
-    return ""
+    git = GitVersion.Git()
+    return git.changelog(last_hash)
 
 def notify_new_version(sql, twapi, verbose):
     if is_same_version(sql):
