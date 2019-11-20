@@ -1,9 +1,9 @@
-import credentials
 from tweet import Tweet
 import tweepy
 
 class TwitterApi:
     def __init__(self, verbose):
+        import credentials
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.twit = tweepy.API(auth)
