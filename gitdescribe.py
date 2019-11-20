@@ -1,7 +1,8 @@
 import datetime
 import tweepy
-import version
+from GitVersion import Git
 
+git_object = Git()
 def get_last_hash(sql):
     sql.cursor.execute("""
         SELECT
@@ -16,19 +17,15 @@ def get_last_hash(sql):
         return '0000000000000000000000000000000000000000'
     return row[0]
 
-def get_hash():
-    git = GitVersion.Git()
-    return git.hash()
-
 def is_same_version(sql):
-    return get_last_hash(sql) == get_hash()
+    return get_last_hash(sql) == git_object.hash()
 
 def store_version(sql):
     if sql.readonly:
         return
     for subj, cont in (
-        ('gitdescribe', get_version()),
-        ('githash', get_hash())
+        ('gitdescribe', git_object.describe()),
+        ('githash', git_object.hash())
         ):
         # store last answer time
         sql.cursor.execute("""
@@ -44,19 +41,14 @@ def store_version(sql):
             )
             )
 
-def get_version():
-    git = GitVersion.Git()
-    return git.describe()
-
 def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)
-    git = GitVersion.Git()
-    return git.changelog(last_hash)
+    return git_object.changelog(last_hash)
 
 def notify_new_version(sql, twapi, verbose):
     if is_same_version(sql):
         return
-    status = "Ich twittere nun von Version {}".format(get_version())
+    status = "Ich twittere nun von Version {}".format(git_object.describe())
     cl = get_changelog(sql)
     if not cl.strip() == "":
         status += ":" + cl
