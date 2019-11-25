@@ -105,25 +105,39 @@ def compose_answer(tweet, sql, verbose, modus):
         payload = payload.replace('_', ' ')
         payload = ' '.join(payload.split())
         payload = payload.upper()
-        parameters = (payload, sigil, source if source != "" else 'DS', source if source != "" else 'BOT', )
+        parameters = (payload,
+            sigil,
+            source if source != "" else 'DS',
+            source if source != "" else 'BOT',
+            # if no source has been given, then the search is subject to
+            # blacklisting. (The relevant part is 'NO', the other string
+            # is arbitrary.)
+            'BLACKLIST' if source != "" else 'NO',
+        )
         sql.cursor.execute("""
             SELECT
-                Abk,
-                Name
+                shortstore.Abk,
+                shortstore.Name
             FROM
                 shortstore
             JOIN
                 sourceflags
             ON
                 sourceflags.sourcename = shortstore.source
+            LEFT OUTER JOIN
+                blacklist
+            ON
+                (blacklist.Abk = shortstore.Abk AND blacklist.source = shortstore.source)
             WHERE
-                Abk = ?
+                shortstore.Abk = ?
             AND
                 gueltigvon < strftime('%Y%m%d', 'now')
             AND
                 sourceflags.sigil = ?
             AND
                 (sourceflags.abbr = ? OR sourceflags.abbr = ?)
+            AND
+                (blacklist.source IS NULL OR ? <> 'NO')
             ORDER BY gueltigvon DESC
             LIMIT 1
             """,
