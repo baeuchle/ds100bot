@@ -29,7 +29,7 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Tweets mit #DS100</th>
    <td>Ja</td>
-   <td>Ja</td>
+   <td><strong>Nein</strong></td>
    <td>Ja, wenn kein Treffer bei Hashtags</td>
    <td>Wie Timeline</td>
    <td>Wie Timeline</td>
@@ -38,7 +38,7 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Explizite Erwähnung</th>
    <td>Ja</td>
-   <td>Ja</td>
+   <td><strong>Nein</strong></td>
    <td>Ja, wenn kein Treffer bei Hashtags</td>
    <td>Wie #DS100 (keine Rekursion)</td>
    <td>Wie #DS100 (keine Rekursion)</td>
@@ -47,7 +47,7 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Implizite Erwähnung</th>
    <td>Ja</td>
-   <td>Ja</td>
+   <td><strong>Nein</strong></td>
    <td>Nein</td>
    <td>Ignoriert</td>
    <td>Ignoriert</td>
@@ -56,7 +56,7 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Timeline</th>
    <td>Ja</td>
-   <td>Ja</td>
+   <td><strong>Nein</strong></td>
    <td>Nein</td>
    <td>Ignoriert</td>
    <td>Ignoriert</td>
@@ -108,19 +108,19 @@ Ein findbares Kürzel besteht aus
   Großbuchstaben.
 - dem Kürzel selbst. Hier werden aus den Originalquellen
   aufeinanderfolgende Leerzeichen durch einen Unterstrich ersetzt (aus
-  ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann entweder aus
-  Großbuchstaben und Zahlen bestehen oder aus Kleinbuchstaben und
-  Zahlen; eine Mischung ist nicht möglich.
+  ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann aus
+  Großbuchstaben und Zahlen bestehen. Kleinbuchstaben sind nicht (mehr)
+  möglich.
 
 Beispiele
 ---------
 
-- \#FKW, \#fkw, \#DS:FKW, \#DS:fkw
+- \#FKW, <del>\#fkw,</del> \#DS:FKW<del>, \#DS:fkw</del>
 - $1234, $DS:1234
 - $KRM, $VDE8¹, $VDE8\_1
 - $VGF:A, $VGF:DⅣ, $VGF:Dⅱ (bei Unicode-römischen Ziffern sind
   Groß-/Kleinschreibung egal, aber $VGF:Dii geht nicht!)
-- \#VGF:BM, \#VGF:wbd
+- \#VGF:BM<del>, \#VGF:wbd</del>
 
 Code
 ====
@@ -136,9 +136,6 @@ matches gesucht, damit "#FKW #FF" auch gefunden werden kann):
         )
         (                   # Payload
             [\p{Lu}\p{N}_]+ # All uppercase letters plus all kinds of numbers plus _
-          | [\p{Ll}_]+\d*   # All lowercase letters plus trailing normal digits
-          | \d+             # All numbers
         )
         (?:$|\W)            # either end of string or non-\w character
-
 

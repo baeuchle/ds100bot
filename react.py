@@ -56,6 +56,15 @@ def compose_answer(tweet, sql, verbose, modus):
     charcount = 0
     generated_content = ""
     finder = re.compile(r"""
+                            # this RE finds
+                            # #AB:CD
+                            # #AB
+                            # #1234
+                            # #AB_12_CD
+                            # $AB:CD
+                            # $AB
+                            # $AB_12_CD
+                            # $1234
         (?p)                # find longest match
         (?:^|\W)            # either at the beginning of the text or after a non-alphanumeric character, but don't find this
         (?:                 # Select source
@@ -64,8 +73,6 @@ def compose_answer(tweet, sql, verbose, modus):
         )
         (                   # Payload
             [\p{Lu}\p{N}_]+ # All uppercase letters plus all kinds of numbers plus _
-          | [\p{Ll}_]+\d*   # All lowercase letters plus trailing normal digits
-          | \d+             # All numbers
         )
         (?:$|\W)            # either end of string or non-\w character
         """, re.X)
