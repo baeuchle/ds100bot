@@ -14,7 +14,7 @@ def get_last_hash(sql):
         """)
     row = sql.cursor.fetchone()
     if row == None:
-        return '0000000000000000000000000000000000000000'
+        return None
     return row[0]
 
 def is_same_version(sql):
@@ -51,7 +51,7 @@ def notify_new_version(sql, twapi, verbose):
     status = "Ich twittere nun von Version {}".format(git_object.describe())
     cl = get_changelog(sql)
     if not cl.strip() == "":
-        status += ":" + cl
+        status += ":\n" + cl
     if len(status) > 280:
         status = status[0:280]
     if twapi.tweet(
