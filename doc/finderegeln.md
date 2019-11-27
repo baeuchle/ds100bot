@@ -111,6 +111,8 @@ Ein findbares Kürzel besteht aus
   ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann aus
   Großbuchstaben und Zahlen bestehen. Kleinbuchstaben sind nicht (mehr)
   möglich.
+- Einträge in der [Schwarzliste](blacklist.html) können durch benutzen
+  der Quelle angezeigt werden.
 
 Beispiele
 ---------

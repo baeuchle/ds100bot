@@ -21,6 +21,7 @@ cat <<EOF
   <ul class="flat">
    <li><a href="index.html">DS100-bot</a></li>
    <li><a href="finderegeln.html">Finden von Tweets</a></li>
+   <li><a href="blacklist.html">Schwarzliste (blacklist)</a></li>
    <li><a href="contribute.html">Beitragen</a></li>
    <li><a href="motivation.html">Motivation</a></li>
    <li><a href="haftung.html">Haftungsausschluss</a></li>
