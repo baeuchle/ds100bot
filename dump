@@ -27,21 +27,32 @@ sql.cursor.execute("""
         source
 """)
 sources = sql.cursor.fetchall()
-sources_list = """
-  <ul class="flat">
-   <li>Andere Quellen:</li>
+sources_list = """  <ul class="flat">
+   <li>Alle Quellen:</li>
+   <li><a href="blacklist">Blacklist</a></li>
 """
 for s in sources:
-    sources_list += """
-   <li><a href="{}.html">{}</a></li>
+    sources_list += """   <li><a href="{}">{}</a></li>
 """.format(s[0], s[0])
-sources_list += """
-  </ul>
-"""
+sources_list += """  </ul>"""
+with open("doc/output/dumps/index.html", 'w') as dfl:
+    print("""<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="/bot.css" />
+  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
+  <title>DS100-Daten-Dump Liste</title>
+ </head>
+ <body>
+  <h1>Liste der Datenquellen:</h1>
+{}
+ </body>
+</html>""".format(sources_list), file=dfl)
 for row in sources:
     number_of_entries = int(row[1])
     print("Dumping source", row[0], "with", row[1], "entries")
-    with open("dumps/" + row[0] + ".html", 'w') as df:
+    with open("doc/output/dumps/" + row[0] + ".html", 'w') as df:
         sql.cursor.execute("""
             SELECT
                 Abk,
@@ -52,25 +63,22 @@ for row in sources:
                 source = ?
         """, (row[0], )
         )
-        print("""
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+        print("""<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <html>
  <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="../doc/bot.css" />
+  <link rel="stylesheet" type="text/css" href="/bot.css" />
   <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
   <title>DS100-Daten-Dump {}</title>
  </head>
  <body>
   <h1>Daten aus Quelle {}</h1>
-  {}
+{}
   <hr/>
   <table class="dumptable">
-   <tbody>
-""".format(row[0], row[0], sources_list), file=df)
+   <tbody>""".format(row[0], row[0], sources_list), file=df)
         for entry_row in sql.cursor.fetchall():
-            print("""
-    <tr>
+            print("""    <tr>
      <th id="{}">{}</th>
      <td>{}</td>
     </tr>""".format(entry_row[0], entry_row[0], entry_row[1].replace('\\n', '<br/>')), file=df)
@@ -78,18 +86,43 @@ for row in sources:
   </table>
  </body>
 </html>""", file=df)
-#     if number_of_entries > args.max_entries:
-#         sql.cursor.execute("""
-#             SELECT
-#                 substr(Abk, 0, 2) AS first_char,
-#                 count(substr(Abk, 0, 2)) AS count
-#             FROM
-#                 shortstore
-#             WHERE
-#                 source = ?
-#             GROUP BY first_char
-#         """, (row[0], ))
-#         for letter_row in sql.cursor.fetchall():
-#             print("Blabla", list(letter_row))
-#         print("  Zuviele Einträge", row[1])
 print("Dumping blacklist")
+with open("doc/output/dumps/blacklist.html", 'w') as blf:
+    sql.cursor.execute("""
+            SELECT
+                blacklist.source || ':' || blacklist.Abk,
+                shortstore.Kurzname
+            FROM
+                blacklist
+            JOIN
+                shortstore
+            ON
+                blacklist.source = shortstore.source
+            AND
+                blacklist.Abk = shortstore.Abk
+        """)
+    print("""<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="/bot.css" />
+  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
+  <title>DS100-Daten-Dump {}</title>
+ </head>
+ <body>
+  <h1>Daten aus Quelle {}</h1>
+{}
+  <hr/>
+  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:')
+  beantwortet:</p>
+  <table class="dumptable">
+   <tbody>""".format("Blacklist", "Blacklist", sources_list), file=blf)
+    for entry_row in sql.cursor.fetchall():
+        print("""    <tr>
+     <th>{}</th>
+     <td>{}</td>
+    </tr>""".format(entry_row[0], entry_row[1].replace('\\n', '<br/>')), file=blf)
+    print("""   </tbody>
+  </table>
+ </body>
+</html>""", file=blf)

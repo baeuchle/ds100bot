@@ -15,3 +15,6 @@ for md in *.md; do
   echo "$(bot_footer $version)"
   exec 1>&3
 done
+
+mkdir _output/
+mv *.html output/

@@ -5,8 +5,9 @@ cd doc/
 
 tdir=/var/www/ds100
 if [ -d "$tdir" ]; then
-    rsync *.html *.css $tdir/
-    chmod 664 $tdir/*.html
+    rsync -via output/ $tdir/
+    chmod 664 $tdir/*.*
+    chmod 664 $tdir/*/*.*
 fi
 
 adir=/var/www/avatar
