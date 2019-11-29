@@ -30,6 +30,7 @@ cat <<EOF
    <li><a href="datenschutz.html">Datenschutz</a></li>
    <li><a href="impressum.html">Impressum</a></li>
    <li>Version: $1</li>
+  </ul>
  </body>
 </html>
 EOF
