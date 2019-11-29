@@ -77,3 +77,12 @@ table tbody th {
 table tbody td {
   text-align: center;
 }
+
+table.dumptable tbody td {
+  text-align: left;
+}
+
+table.dumptable tbody th {
+  text-align: left;
+  font-family: monospace;
+}

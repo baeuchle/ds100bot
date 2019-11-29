@@ -1,0 +1,95 @@
+#!/usr/bin/python3
+
+from database import Database
+import argparse
+
+parser = argparse.ArgumentParser(description='Hilfsprogramm zum Export der Bot-Datenbank')
+parser.add_argument('--verbose', '-v',
+                    dest='verbose',
+                    help='Output lots of stuff',
+                    required=False,
+                    default=0,
+                    action='count')
+parser.add_argument('--max-entries',
+                    help='Maximale Anzahl von Einträgen, bevor die Tabelle aufgeteilt wird.',
+                    required=False,
+                    default=2000,)
+args = parser.parse_args()
+
+sql = Database('readonly', args.verbose)
+sql.cursor.execute("""
+    SELECT
+        source,
+        COUNT(source)
+    FROM
+        shortstore
+    GROUP BY
+        source
+""")
+sources = sql.cursor.fetchall()
+sources_list = """
+  <ul class="flat">
+   <li>Andere Quellen:</li>
+"""
+for s in sources:
+    sources_list += """
+   <li><a href="{}.html">{}</a></li>
+""".format(s[0], s[0])
+sources_list += """
+  </ul>
+"""
+for row in sources:
+    number_of_entries = int(row[1])
+    print("Dumping source", row[0], "with", row[1], "entries")
+    with open("dumps/" + row[0] + ".html", 'w') as df:
+        sql.cursor.execute("""
+            SELECT
+                Abk,
+                Name
+            FROM
+                shortstore
+            WHERE
+                source = ?
+        """, (row[0], )
+        )
+        print("""
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="../doc/bot.css" />
+  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
+  <title>DS100-Daten-Dump {}</title>
+ </head>
+ <body>
+  <h1>Daten aus Quelle {}</h1>
+  {}
+  <hr/>
+  <table class="dumptable">
+   <tbody>
+""".format(row[0], row[0], sources_list), file=df)
+        for entry_row in sql.cursor.fetchall():
+            print("""
+    <tr>
+     <th id="{}">{}</th>
+     <td>{}</td>
+    </tr>""".format(entry_row[0], entry_row[0], entry_row[1].replace('\\n', '<br/>')), file=df)
+        print("""   </tbody>
+  </table>
+ </body>
+</html>""", file=df)
+#     if number_of_entries > args.max_entries:
+#         sql.cursor.execute("""
+#             SELECT
+#                 substr(Abk, 0, 2) AS first_char,
+#                 count(substr(Abk, 0, 2)) AS count
+#             FROM
+#                 shortstore
+#             WHERE
+#                 source = ?
+#             GROUP BY first_char
+#         """, (row[0], ))
+#         for letter_row in sql.cursor.fetchall():
+#             print("Blabla", list(letter_row))
+#         print("  Zuviele Einträge", row[1])
+print("Dumping blacklist")
