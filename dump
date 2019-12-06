@@ -29,10 +29,10 @@ sql.cursor.execute("""
 sources = sql.cursor.fetchall()
 sources_list = """  <ul class="flat">
    <li>Alle Quellen:</li>
-   <li><a href="blacklist">Blacklist</a></li>
+   <li><a href="blacklist.html">Blacklist</a></li>
 """
 for s in sources:
-    sources_list += """   <li><a href="{}">{}</a></li>
+    sources_list += """   <li><a href="{}.html">{}</a></li>
 """.format(s[0], s[0])
 sources_list += """  </ul>"""
 with open("doc/output/dumps/index.html", 'w') as dfl:
