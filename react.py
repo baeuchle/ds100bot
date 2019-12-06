@@ -12,7 +12,7 @@ def process_tweet(tweet, twapi, sql, verbose, modus=None):
     reply_id = tweet.id
     twcounter = 1
     for reply in compose_answer(tweet.text, sql, verbose, modus):
-        if verbose > 0:
+        if verbose > 1:
             print("I tweet {} ({} chars):".format(twcounter, len(reply)))
             print(reply)
         twcounter += 1
