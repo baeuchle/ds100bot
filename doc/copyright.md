@@ -98,6 +98,18 @@ Folgende Datenquellen werden vom Bot benutzt:
     lateinischen Buchstaben oder den Unicode-Zeichen für römische Zahlen
     geschrieben werden: ‚$VGF:DIV‘ = ‚$VGF:DⅣ‘ = ‚$VGF:Dⅳ‘.
    </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/vgfstrecken.html">vgfhst</a>
+   </td>
+  </tr>
+  <tr>
+   <th>#ÖBB</th>
+   <td>DB 640 der ÖBB</td>
+   <td><a href="http://www.bahnnews-austria.at/downloads/sonstiges/DB640.pdf">Bahnnews-Austria</a></td>
+   <td>© ÖBB-Infrastruktur Betrieb AG</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
+   </td>
   </tr>
   <tr>
    <th>#BOT</th>
