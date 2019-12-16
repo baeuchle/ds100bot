@@ -44,6 +44,9 @@ Folgende Datenquellen werden vom Bot benutzt:
      <li>Mehrere Leerzeichen zusammengefasst</li>
     </ul>
    </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/ds100.html">ds100</a>
+   </td>
   </tr>
   <tr>
    <th>$DS</th>
@@ -57,6 +60,10 @@ Folgende Datenquellen werden vom Bot benutzt:
      <li>Nicht-numerische Einträge in Eigenarbeit zusammengestellt (Bsp.
      ‚$DS:KRM‘)</li>
     </ul>
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/benannte_strecken.html">benannte_strecken</a>
+    <a href="https://ds100.frankfurtium.de/dumps/strecken.html">strecken</a>
    </td>
   </tr>
   <tr>
@@ -74,6 +81,9 @@ Folgende Datenquellen werden vom Bot benutzt:
     Kürzel. Alle Stadtbahnhaltestellen haben dreistellige Nummern,
     Straßenbahnhaltestellen haben vierstellige Nummern (diese sind
     allerdings nur lückenhaft bekannt).
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/vgfhst.html">vgfhst</a>
    </td>
   </tr>
   <tr>
@@ -94,7 +104,9 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
    <td>Gemeinfrei</td>
-   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/gimmick.html">gimmick</a>
+   </td>
   </tr>
  <tbody>
 </table>
