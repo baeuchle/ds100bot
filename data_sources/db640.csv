@@ -139,7 +139,7 @@ Aw S42;Sbl Aw 4
 Aw U2;Üst Aw 2
 Ax;Saxen
 Az;Liesing-Nord
-Az H1                         Liesing Wien Atzgersdorf Hst
+Az H1;Liesing Wien Atzgersdorf Hst
 B;Bludenz
 B G;Grenze ÖBB-MBS Km 135,650
 B H1;Nüziders Hst
@@ -281,7 +281,7 @@ Bvs H1;Kottingbrunn Hst
 Bvs S11;Sbl Bvs 1
 Bvs S12;Sbl Bvs 1
 Bw;Wien Nordwestbf
-Bz;Braz24
+Bz;Braz
 Bz S11;Sbl Bz 1
 Bz S12;Sbl Bz 1
 Cf;Zentralfriedhof
@@ -573,7 +573,7 @@ Fws A4L;AB
 Fws A5;AB
 Fws A6;AB
 Fws E1;EK km 17.388
-Fws E2;EK km 22,29726
+Fws E2;EK km 22,297
 Fws F1;ES Y
 Fws L1;Fischamend StEG Lst
 Fws L2;Klein Neusiedl Lst
@@ -795,7 +795,6 @@ Gun;Gunskirchen
 Gun S11;Sbl Gun 1
 Gun S12;Sbl Gun 1
 Gur;Gurten
-27
 Gur A1;AB (Awanst)
 Gur H1;Geinberg Hst
 Gw;Gratwein-Gratkorn
@@ -1014,35 +1013,35 @@ Itz;Salzburg Itzling
 Itz G;Grenze ÖBB - SLB
 Iz;Inzersdorf Ort
 Izo;Inzersdorf Ort-Ost
-J;Floridsdorf-Jedlersdorf;
-J Langenzersdorf Hst;H1
-J Bisamberg Hst;H2
-J Sbl J 1;S11
-J Sbl J 1;S12
-JbJenbach;
-JbStans bei Schwaz Hst;H1
-JbSbl Jb 1;S11
-JbSbl Jb 1;S12
-JbSbl Jb 3;S31
-JbSbl Jb 3;S32
-JbÜst Jb 2;U2
-JdJennersdorf;
-JdStaatsgrenze nächst Jennersdorf;G
-JdWeichselbaum a.d.Raab Hst;H1
-JgJudenburg;
-JhSt.Johann i.d.Haide H-Lst (Awanst);
-JpSt.Johann im Pongau;
-JpSbl Jp 1;S11
-JpSbl Jp 1;S12
-JpSbl Jp 2;S21
-JpSbl Jp 2;S22
-JsJesenice;
-JtSt.Johann in Tirol;i
-JtAB (Awanst);i A1
-JtAB (Awanst);i A2
-JtOberndorf in Tirol Hst;i H1
-JtSbl Jti 1;i S11
-JtSbl Jti 1;i S12;
+J;Floridsdorf-Jedlersdorf
+J H1;Langenzersdorf Hst
+J H2;Bisamberg Hst
+J S11;Sbl J 1
+J S12;Sbl J 1
+Jb;Jenbach
+Jb H1;Stans bei Schwaz Hst
+Jb S11;Sbl Jb 1
+Jb S12;Sbl Jb 1
+Jb S31;Sbl Jb 3
+Jb S32;Sbl Jb 3
+Jb U2;Üst Jb 2
+Jd;Jennersdorf
+Jd G;Staatsgrenze nächst Jennersdorf
+Jd H1;Weichselbaum a.d.Raab Hst
+Jg;Judenburg
+Jh;St.Johann i.d.Haide H-Lst (Awanst)
+Jp;St.Johann im Pongau
+Jp S11;Sbl Jp 1
+Jp S12;Sbl Jp 1
+Jp S21;Sbl Jp 2
+Jp S22;Sbl Jp 2
+Js;Jesenice
+Jti;St.Johann in Tirol
+Jti A1;AB (Awanst)
+Jti A2;AB (Awanst)
+Jti H1;Oberndorf in Tirol Hst
+Jti S11;Sbl Jti 1
+Jti S12;Sbl Jti 1
 K;Kufstein
 K A1;AB (Awanst)
 K G;Staatsgrenze nächst Kufstein
@@ -1384,78 +1383,78 @@ Lx A1;AB (Awanst)
 Lx A2;AB
 Lz;Linz Hbf
 Lz G;Grenze ÖBB-LILO
-Lz H1Leonding Hst;;
-Lz H1Untergaumberg Hst;S;
-Lz H1Linz Oed Hst;W;
-Lz H2Pasching Hst;
-Lz H2Gaumberg Hst;S;
-Lz S1Sbl Lz 1;1;
-Lz S1Sbl Lz 1;2;
-Lz S3Sbl Lz 3;1;
-Lz S3Sbl Lz 3;2;
-Lz U2Üst Lz 2;;
+Lz H1;Leonding Hst
+Lz H1S;Untergaumberg Hst
+Lz H1W;Linz Oed Hst
+Lz H2;Pasching Hst
+Lz H2S;Gaumberg Hst
+Lz S11;Sbl Lz 1
+Lz S12;Sbl Lz 1
+Lz S31;Sbl Lz 3
+Lz S32;Sbl Lz 3
+Lz U2;Üst Lz 2
 M;St.Michael
 M A1;AB (Awanst)
 M H1;Traboch-Timmersdorf Hst
-M S11Sbl M 1;
-M S12Sbl M 1;
-M S13Sbl M 1K;
-M S14Sbl M 1K;
+M S11;Sbl M 1
+M S12;Sbl M 1
+M S13;Sbl M 1K
+M S14;Sbl M 1K
 Ma;Mallnitz-Obervellach
-Ma H1Oberfalkenstein Hst;
-Ma S1Sbl Ma 1;1
-Ma S1Sbl Ma 1;2
-Ma S3Sbl Ma 3;1
-Ma S3Sbl Ma 3;2
-Ma U2Üst Ma 2;
+Ma H1;Oberfalkenstein Hst
+Ma S11;Sbl Ma 1
+Ma S12;Sbl Ma 1
+Ma S31;Sbl Ma 3
+Ma S32;Sbl Ma 3
+Ma U2;Üst Ma 2
 Mac;Marchegg
-Mac GStaatsgrenze nächst Marchegg;
+Mac G;Staatsgrenze nächst Marchegg
 Mae;Maria Ellend
 Maf;Wien Matzleinsdorf (Maf)
 Mag;St.Martin am Grimming
-Mag HNiederöblarn Hst;1
+Mag H1;Niederöblarn Hst
 Mah;Mariahof-St.Lambrecht
 Mai;Maidorf
 Mak;Marchtrenk
-Mak AAB (Awanst);1
-Mak AAB (Awanst);2
-Mak SSbl Mak 1P;13
-Mak SSbl Mak 1P;14
-Mak SSbl Mak 2;21
-Mak SSbl Mak 2;22
-Mak ZAbzw Mak 1;1
+Mak A1;AB (Awanst)
+Mak A2;AB (Awanst)
+Mak S13;Sbl Mak 1P
+Mak S14;Sbl Mak 1P
+Mak S21;Sbl Mak 2
+Mak S22;Sbl Mak 2
+Mak Z1;Abzw Mak 1
 Mal;Maria Saal
-Mal AAB (Awanst);1
-Mal HKlagenfurt Annabichl Hst;1
-Mal SSbl Mal 1;11
-Mal SSbl Mal 1;12
-Mal SSbl Mal 2;21
-Mal SSbl Mal 2;22
+Mal A1;AB (Awanst)
+Mal H1;Klagenfurt Annabichl Hst
+Mal S11;Sbl Mal 1
+Mal S12;Sbl Mal 1
+Mal S21;Sbl Mal 2
+Mal S22;Sbl Mal 2
 Man;Mank
-Man HLehenleiten Hst;1
+Man H1;Lehenleiten Hst
 Mar;Maria Lanzendorf
 Mas;Marein-St.Lorenzen
-Mas AAB (Awanst);1
-Mas HKapfenberg Fachhochschule Hst;1
-Mas SSbl Mas 1;11
-Mas SSbl Mas 1;12
+Mas A1;AB (Awanst)
+Mas H1;Kapfenberg Fachhochschule Hst
+Mas S11;Sbl Mas 1
+Mas S12;Sbl Mas 1
 Mat;Wien Matzleinsdorf
-Mat HW.Mat. Wien Matzleinsdorfer Platz Hst;1S
-Mat HWien Südtiroler Platz Hst;2S
-Mat HWien Südbahnhof Hst;3S
-Mat SSbl Mat 1;11
-Mat SSbl Mat 1;12
-Mat SSbl Mat 1SB;13
-Mat SSbl Mat 1SB;14
-Mat SSbl Mat 2;21
-Mat SSbl Mat 2;22
-Mat SSbl Mat 2SB;23
-Mat SSbl Mat 2SB;24
-Mat SSbl Mat 3SB;33
-Mat SSbl Mat 3SB;34
-Mat UÜst Mat 4SB;4S
+Mat H1S;W.Mat. Wien Matzleinsdorfer Platz Hst
+Mat H2S;Wien Südtiroler Platz Hst
+Mat H3S;Wien Südbahnhof Hst
+Mat S11;Sbl Mat 1
+Mat S12;Sbl Mat 1
+Mat S13;Sbl Mat 1SB
+Mat S14;Sbl Mat 1SB
+Mat S21;Sbl Mat 2
+Mat S22;Sbl Mat 2
+Mat S23;Sbl Mat 2SB
+Mat S24;Sbl Mat 2SB
+Mat S33;Sbl Mat 3SB
+Mat S34;Sbl Mat 3SB
+Mat U4S;Üst Mat 4SB
 Mau;Mauerkirchen
-Mau AAB;1
+Mau A1;AB
 Mau H1;St.Georgen a.d.Mattig Hst
 Maw;Martinswand
 Maz;Mariazell
@@ -1677,76 +1676,76 @@ Nst S12;Sbl Nst 1
 Nst S31;Sbl Nst 3
 Nst S32;Sbl Nst 3
 Nst U2;Üst Nst 2
-Nw Wien Praterstern
-Nw Traisengasse Hst;H1
-Nw Vienna Biocenter-St.Marx Hst;H1H
-Nw Handelskai Hst;H2
-Nw Strandbäder Hst;H3
-Nw Sbl Nw 1;S11
-Nw Sbl Nw 1;S12
-Nw Sbl Nw 2;S21
-Nw Sbl Nw 2;S22
-Nw Sbl Nw 3;S31
-Nw Sbl Nw 3;S32
-Nw Sbl Nw 4;S41
-Nw Sbl Nw 4;S42
-Nw Üst Nw 11;U11
+Nw;Wien Praterstern
+Nw H1;Traisengasse Hst
+Nw H1H;Vienna Biocenter-St.Marx Hst
+Nw H2;Handelskai Hst
+Nw H3;Strandbäder Hst
+Nw S11;Sbl Nw 1
+Nw S12;Sbl Nw 1
+Nw S21;Sbl Nw 2
+Nw S22;Sbl Nw 2
+Nw S31;Sbl Nw 3
+Nw S32;Sbl Nw 3
+Nw S41;Sbl Nw 4
+Nw S42;Sbl Nw 4
+Nw U11;Üst Nw 11
 O;Floridsdorf-Fbf
 Oa;Obertraun-Dachsteinhöhlen
-Oa Hallstatt Hst;H1
-Oa Obersee Hst;H2
+Oa H1;Hallstatt Hst
+Oa H2;Obersee Hst
 Ob;Oberland
-Ob Gaflenz H-Lst;K1
-ObdObdach;
-ObdTaxwirt H-Lst (Awanst);K1
-ObwOberwart;
-ObwAB;A1A
-ObwAB;A2
-ObwAB;A3
-ObwGrenze ÖBB - SRB;G
-ObwOberwart Einkaufszentrum Hst;H1
+Ob K1;Gaflenz H-Lst
+Obd;Obdach
+Obd K1;Taxwirt H-Lst (Awanst)
+Obw;Oberwart
+Obw A1A;AB
+Obw A2;AB
+Obw A3;AB
+Obw G;Grenze ÖBB - SRB
+Obw H1;Oberwart Einkaufszentrum Hst
 Od;Oberdrauburg
-Od Irschen Hst;H1
-OdfObersdorf;
-OdfPillichsdorf Hst;H1
-OebOeblarn;
-OebStein a.d.Enns H-Lst (Awanst);K1
-OedOed;
-OedMiesenbach-Waidmannsfeld Hst;H1
-OepOepping;
-OepSchlägl Hst;H1
+Od H1;Irschen Hst
+Odf;Obersdorf
+Odf H1;Pillichsdorf Hst
+Oeb;Oeblarn
+Oeb K1;Stein a.d.Enns H-Lst (Awanst)
+Oed;Oed
+Oed H1;Miesenbach-Waidmannsfeld Hst
+Oep;Oepping
+Oep H1;Schlägl Hst
 Of;Wien Südbf-Fbf
-OgrOber Grafendorf;
-OgrSt.Margarethen-Rammersdorf Hst;H1
+Ogr;Ober Grafendorf
+Ogr H1;St.Margarethen-Rammersdorf Hst
 Oh;Hollabrunn
 Oi;Ossiach-Bodensdorf
-Oi St.Urban am Ossiachersee Hst;H1
+Oi H1;St.Urban am Ossiachersee Hst
 Ok;Ottakring
-Ok Breitensee Hst;H1
-OlaOberlaa;
-OlaAB (Awanst, UW);A1
+Ok H1;Breitensee Hst
+Ola;Oberlaa
+Ola A1;AB (Awanst, UW)
 On;Oberweiden
 Op;Ober Piesting
-Op AB (Awanst);A1
-Op AB (Awanst);A2
-Op AB (Awanst);A3
-Op AB (Awanst);A4
-Op Wopfing Hst;H1
-OpaOpel Austria;
-OpzOpponitz (Gf);
-OpzMirenau Hst;H1
-OpzGaissulz Hst;H2
-OrtOrtmann;
-OrtPernitz Wipfelhofstraße Hst;H1
-OssWien Südbf-Spitz;
-OswW.Mat.-Oswaldgasse;
+Op A1;AB (Awanst)
+Op A2;AB (Awanst)
+Op A3;AB (Awanst)
+Op A4;AB (Awanst)
+Op H1;Wopfing Hst
+Opa;Opel Austria
+Opz;Opponitz (Gf)
+Opz H1;Mirenau Hst
+Opz H2;Gaissulz Hst
+Ort;Ortmann
+Ort H1;Pernitz Wipfelhofstraße Hst
+Oss;Wien Südbf-Spitz
+Osw;W.Mat.-Oswaldgasse
 Ot;Ottenschlag
-Ot EK km 57,283;E1
-OtgOttnang-Wolfsegg;
-OtgBergern Hst;H1
-OthOrth a.d.Donau Lst;
-OttOttensheim;
-OttWalding Hst;H1
+Ot E1;EK km 57,283
+Otg;Ottnang-Wolfsegg
+Otg H1;Bergern Hst
+Oth;Orth a.d.Donau Lst
+Ott;Ottensheim
+Ott H1;Walding Hst
 Ow;Wien Westbf-Fbf
 Oz;Ötztal
 P;Perg
@@ -2042,7 +2041,7 @@ Saf H1;Annenheim Hst
 Sag;Schützen am Gebirge
 Sah;Simmering Aspangbahn
 Sah H1;Simmering Aspang-Geiselbergstr Hst
-San;Sarmingstein
+San;Sarmingstein;
 Sas;Schwanenstadt
 Sas S11;Sbl Sas 1
 Sas S12;Sbl Sas 1
@@ -2271,7 +2270,7 @@ Stu A1;AB (Awanst)
 Stu H1;Rohr Hst
 Stu H2;Gniebing Hst
 Stv;St.Veit a.d.Glan-Süd
-Stw;Straßwalchen
+Stw;Straßwalchenen
 Su;Stockerau
 Su A1;AB (Awanst)
 Su H1;Ober Olberndorf Hst
@@ -2483,7 +2482,7 @@ Vl;Völs
 Vl K1;Kematen in Tirol H-Lst (Awanst)
 Vl S11;Sbl Vl 1
 Vl S12;Sbl Vl 1
-Vm;Vöcklamarkt;
+Vm;Vöcklamarkt
 Vn;Viehofen
 Vn A1;AB (Awanst)
 Vn H1;St.Pölten Traisenpark Hst
@@ -2630,7 +2629,7 @@ Win;Windischgarsten
 Wit;Wittmannsdorf
 Wj;Weins-Isperdorf
 Wj H1;Hirschenau-Nöchling Hst
-Wk;Groß Weikersdorf40
+Wk;Groß Weikersdorf
 Wk H1;Glaubendorf-Wetzdorf Hst
 Wk S11;Sbl Wk 1
 Wk S12;Sbl Wk 1
