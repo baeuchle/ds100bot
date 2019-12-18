@@ -1,3 +1,3 @@
 [submodule "GitVersion"]
 	path = GitVersion
-	url = git@frankfurtium.de:pylib/gitversion.git
+	url = git@github.com:baeuchle/gitversion.git
