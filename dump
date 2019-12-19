@@ -2,6 +2,57 @@
 
 from database import Database
 import argparse
+from pathlib import Path
+from GitVersion import Git
+
+def html_header(title=""):
+    return """<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="/bot.css" />
+  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
+  <title>DS100-Daten-Dump {}</title>
+ </head>
+ <body>""".format(title)
+
+def html_footer():
+    return " </body>\n</html>"
+
+def table_header():
+    return """  <table class="dumptable">\n   <tbody>"""
+
+def table_footer():
+    return "   </tbody>\n  </table>"
+
+def get_links_list():
+    with open("doc/links.snip", 'r') as links:
+        return links.read().replace('VERSION', Git().describe('--dirty'))
+
+def get_sources(sql):
+    sql.cursor.execute("""
+        SELECT
+            source,
+            COUNT(source)
+        FROM
+            shortstore
+        GROUP BY
+            source
+    """)
+    return sql.cursor.fetchall()
+
+def create_sources_list(sources):
+    ul = """  <ul class="flat">
+   <li>Alle Quellen:</li>
+   <li><a href="/dumps/blacklist.html">Blacklist</a></li>
+"""
+    for s in sources:
+        ul += """   <li><a href="/dumps/{}.html">{}</a></li>
+""".format(s[0], s[0])
+    ul += """  </ul>"""
+    with open("doc/dumps.snip", 'w') as dsnip:
+        print(ul, file=dsnip)
+    return ul
 
 parser = argparse.ArgumentParser(description='Hilfsprogramm zum Export der Bot-Datenbank')
 parser.add_argument('--verbose', '-v',
@@ -16,113 +67,65 @@ parser.add_argument('--max-entries',
                     default=2000,)
 args = parser.parse_args()
 
-sql = Database('readonly', args.verbose)
-sql.cursor.execute("""
-    SELECT
-        source,
-        COUNT(source)
-    FROM
-        shortstore
-    GROUP BY
-        source
-""")
-sources = sql.cursor.fetchall()
-sources_list = """  <ul class="flat">
-   <li>Alle Quellen:</li>
-   <li><a href="blacklist.html">Blacklist</a></li>
-"""
-for s in sources:
-    sources_list += """   <li><a href="{}.html">{}</a></li>
-""".format(s[0], s[0])
-sources_list += """  </ul>"""
-with open("doc/output/dumps/index.html", 'w') as dfl:
-    print("""<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="/bot.css" />
-  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
-  <title>DS100-Daten-Dump Liste</title>
- </head>
- <body>
-  <h1>Liste der Datenquellen:</h1>
-{}
- </body>
-</html>""".format(sources_list), file=dfl)
-for row in sources:
-    number_of_entries = int(row[1])
-    print("Dumping source", row[0], "with", row[1], "entries")
-    with open("doc/output/dumps/" + row[0] + ".html", 'w') as df:
-        sql.cursor.execute("""
-            SELECT
-                Abk,
-                Name
-            FROM
-                shortstore
-            WHERE
-                source = ?
-        """, (row[0], )
-        )
-        print("""<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="/bot.css" />
-  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
-  <title>DS100-Daten-Dump {}</title>
- </head>
- <body>
-  <h1>Daten aus Quelle {}</h1>
-{}
-  <hr/>
-  <table class="dumptable">
-   <tbody>""".format(row[0], row[0], sources_list), file=df)
+def write_dump_list(sql, target_path, name, **kwargs):
+    with (target_path / (name + ".html")).open(mode='w') as df:
+        print(html_header("{}".format(name)), file=df)
+        print("""  <h1>Daten aus Quelle {}</h1>""".format(name), file=df)
+        print(sources_list, file=df)
+        print("  <hr/>", file=df)
+        print(links_list, file=df)
+        print("  <hr/>", file=df)
+        if (kwargs.get('before_table', False)):
+            print(kwargs['before_table'], file=df)
+        print(table_header(), file=df)
         for entry_row in sql.cursor.fetchall():
             print("""    <tr>
      <th id="{}">{}</th>
      <td>{}</td>
     </tr>""".format(entry_row[0], entry_row[0], entry_row[1].replace('\\n', '<br/>')), file=df)
-        print("""   </tbody>
-  </table>
- </body>
-</html>""", file=df)
-print("Dumping blacklist")
-with open("doc/output/dumps/blacklist.html", 'w') as blf:
+        print(table_footer(), file=df)
+        print(html_footer(), file=df)
+
+sql = Database('readonly', args.verbose)
+sources = get_sources(sql)
+sources_list = create_sources_list(sources)
+links_list = get_links_list()
+target_path = Path("doc/output/dumps/")
+target_path.mkdir(parents=True, exist_ok=True)
+with (target_path / "index.html").open(mode='w') as dfl:
+    print(html_header("Liste"), file=dfl)
+    print("""  <h1>Liste der Datenquellen</h1>""", file=dfl)
+    print(sources_list, file=dfl)
+    print("  <hr/>", file=dfl)
+    print(links_list, file=dfl)
+    print(html_footer(), file=dfl)
+for row in sources:
+    number_of_entries = int(row[1])
+    print("Dumping source", row[0], "with", row[1], "entries")
     sql.cursor.execute("""
-            SELECT
-                blacklist.source || ':' || blacklist.Abk,
-                shortstore.Kurzname
-            FROM
-                blacklist
-            JOIN
-                shortstore
-            ON
-                blacklist.source = shortstore.source
-            AND
-                blacklist.Abk = shortstore.Abk
-        """)
-    print("""<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="/bot.css" />
-  <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
-  <title>DS100-Daten-Dump {}</title>
- </head>
- <body>
-  <h1>Daten aus Quelle {}</h1>
-{}
-  <hr/>
-  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:')
-  beantwortet:</p>
-  <table class="dumptable">
-   <tbody>""".format("Blacklist", "Blacklist", sources_list), file=blf)
-    for entry_row in sql.cursor.fetchall():
-        print("""    <tr>
-     <th>{}</th>
-     <td>{}</td>
-    </tr>""".format(entry_row[0], entry_row[1].replace('\\n', '<br/>')), file=blf)
-    print("""   </tbody>
-  </table>
- </body>
-</html>""", file=blf)
+        SELECT
+            Abk,
+            Name
+        FROM
+            shortstore
+        WHERE
+            source = ?
+    """, (row[0], )
+    )
+    write_dump_list(sql, target_path, row[0])
+print("Dumping blacklist")
+sql.cursor.execute("""
+        SELECT
+            blacklist.source || ':' || blacklist.Abk,
+            shortstore.Kurzname
+        FROM
+            blacklist
+        JOIN
+            shortstore
+        ON
+            blacklist.source = shortstore.source
+        AND
+            blacklist.Abk = shortstore.Abk
+    """)
+bl_explain = """  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:') beantwortet:</p>"""
+write_dump_list(sql, target_path, 'blacklist', before_table=bl_explain)

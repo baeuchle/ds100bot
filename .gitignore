@@ -3,3 +3,5 @@ version.py
 __pycache__
 info.db
 *.html
+doc/output 
+doc/dumps.snip

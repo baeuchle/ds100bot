@@ -14,23 +14,16 @@ cat <<EOF
 EOF
 }
 
-function bot_footer {
+function link_liste {
+    sed "s/VERSION/$1/" links.snip
+}
 
+function bot_footer {
 cat <<EOF
   <hr/>
-  <ul class="flat">
-   <li><a href="index.html">DS100-bot</a></li>
-   <li><a href="finderegeln.html">Finden von Tweets</a></li>
-   <li><a href="blacklist.html">Schwarzliste (blacklist)</a></li>
-   <li><a href="contribute.html">Beitragen</a></li>
-   <li><a href="motivation.html">Motivation</a></li>
-   <li><a href="haftung.html">Haftungsausschluss</a></li>
-   <li><a href="copyright.html">Daten / Urheberrecht</a></li>
-   <li><a href="dumps/">Dumps</a></li>
-   <li><a href="datenschutz.html">Datenschutz</a></li>
-   <li><a href="impressum.html">Impressum</a></li>
-   <li>Version: $1</li>
-  </ul>
+EOF
+link_liste $1
+cat <<EOF
  </body>
 </html>
 EOF

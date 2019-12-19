@@ -107,6 +107,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>DB 640 der ÖBB</td>
    <td><a href="http://www.bahnnews-austria.at/downloads/sonstiges/DB640.pdf">Bahnnews-Austria</a></td>
    <td>© ÖBB-Infrastruktur Betrieb AG</td>
+   <td>Quelle ist nicht offiziell und scheint veraltet (von 2007)</td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
    </td>
@@ -116,6 +117,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
    <td>Gemeinfrei</td>
+   <td></td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/gimmick.html">gimmick</a>
    </td>

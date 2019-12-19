@@ -16,5 +16,7 @@ for md in *.md; do
   exec 1>&3
 done
 
-mkdir _output/
+if [ ! -d output/ ]; then
+  mkdir output/
+fi
 mv *.html output/
