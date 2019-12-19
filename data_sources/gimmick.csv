@@ -28,18 +28,19 @@ FOLGEN;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accoun
 FOLGE; Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
 DEFLLOW;  Wenn der Bot nicht mehr ohne extra Erwähnung (siehe #FOLLOW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
 ENTFOLGEN;Wenn der Bot nicht mehr ohne extra Erwähnung (siehe #FOLLOW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
-SOURCE;    Der Quelltext des Bots ist aktuell nicht veröffentlicht. Das liegt vor allem an fehlender Zeit, nicht am Unwillen. Wenn sich das ändert, wird der Bot darüber berichten.;Quelltext;;;;;;00000000;;;;    
-SOURCECODE;Der Quelltext des Bots ist aktuell nicht veröffentlicht. Das liegt vor allem an fehlender Zeit, nicht am Unwillen. Wenn sich das ändert, wird der Bot darüber berichten.;Quelltext;;;;;;00000000;;;;
-QUELLCODE; Der Quelltext des Bots ist aktuell nicht veröffentlicht. Das liegt vor allem an fehlender Zeit, nicht am Unwillen. Wenn sich das ändert, wird der Bot darüber berichten.;Quelltext;;;;;;00000000;;;;
+SOURCE;    Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
+SOURCECODE;Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
+QUELLCODE; Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
+GITHUB;    Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
 HAFT;   Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.\nhttps://ds100.frankfurtium.de/haftung.html
 HAFTUNG;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.\nhttps://ds100.frankfurtium.de/haftung.html
 DSGVO;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nhttps://ds100.frankfurtium.de/datenschutz.html
 DATENSCHUTZ;       Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nhttps://ds100.frankfurtium.de/datenschutz.html
-DATEN;Datenschutz: Siehe #DSGVO\nDaten: © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html
-DATA; Datenschutz: Siehe #DSGVO\nDaten: © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html 
+DATEN;Datenschutz: Siehe #DSGVO\nDaten: v.a. © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html
+DATA; Datenschutz: Siehe #DSGVO\nDaten: v.a. © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html
 L10N;Localization: This bot serves data in German except very few exceptions (as this one). There is no way for the user to change that.
-SPAM;  Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.  
+SPAM;  Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.
 NOSPAM;Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.
 XXX;This bot is not x-rated
 NSFW;Dieser Bot ist Safe for Work
-BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN).
+BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN). Siehe https://ds100.frankfurtium.de/dumps/blacklist.html

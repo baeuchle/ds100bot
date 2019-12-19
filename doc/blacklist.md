@@ -6,7 +6,9 @@ Sprachgebrauch ebenfalls benutzt und werden daher vom Bot nicht
 standardmäßig übersetzt. Beispiele sind __\#DBL__, was insbesondere im
 Eisenbahn-Twitter benutzt wird, um den [Den DB
 Locator](https://twitter.com/dblocator) anzusprechen, und so profane
-Dinge wie __\#WLAN__.
+Dinge wie __\#WLAN__. Bei [den anderen Dumps](/dumps/) gibt es eine
+vollständige [Liste der aktuellen
+Blacklist](/dumps/blacklist.html).
 
 Die Einträge auf der Blacklist werden nicht gefunden, wenn nicht die
 Quelle angegeben ist: __\#WLAN__ wird nicht beantwortet, __\#DS:WLAN__

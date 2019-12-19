@@ -29,6 +29,7 @@ cat <<EOF
    <li><a href="dumps/">Dumps</a></li>
    <li><a href="datenschutz.html">Datenschutz</a></li>
    <li><a href="impressum.html">Impressum</a></li>
+   <li><a href="https://github.com/baeuchle/ds100bot/">Der Bot auf github</a></li>
    <li>Version: $1</li>
   </ul>
  </body>

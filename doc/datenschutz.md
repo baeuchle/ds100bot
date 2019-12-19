@@ -6,7 +6,7 @@ des Bots sind nur auf Twitter abrufbar; für die Daten, die Twitter erhebt,
 besteht von Seiten des Bots keine Verantwortung.
 
 Der Bot speichert die letzte Tweet-ID, die er gesehen hat, damit er nicht
-zweimal auf den gleichen Tweet antwortet, sowie jede DS100-Abkürzung, die
+zweimal auf den gleichen Tweet antwortet, sowie jede Abkürzung, die
 er in einem Tweet zu erkennen glaubte. Diese werden zusammen mit dem
 Erkennungsdatum und der Information, ob die Abkürzung einem Langnamen
 zugeordnet werden konnte, gespeichert. Es wird dabei nicht gespeichert,
