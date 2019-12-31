@@ -180,6 +180,7 @@ AEC;Eckernförde;Eckernförde;Bf;;DE12678;0080;2;20100801;;013920;J;N
 AECH;Echem;Echem;Hp;;DE12671;0080;2;20081214;;011593;J;N
 AECX;Lindaunis ESTW-Z;Lindaunis ESTW;BZ;a.B.;;0080;2;20171210;;106208;N;N
 AEF;Einfeld;Einfeld;Hp;;DE12777;0080;2;20081214;;012997;J;N
+AEGG;Hamburg Gutenbergstraße DB-Grenze;;;;;;;;;;;
 AEGS;Hamburg Elbgaustraße;Elbgaustraße;Bf;;DE14386;0080;9;20081214;;012773;J;N
 AEGT;Hamburg Gutenbergstraße Abzw;Gutenbergst Abzw;Bft Abzw;Planung;DE21690;0080;9;20151022;;109658;N;N
 AEI;Eidersperrwerk;Eidersperrwerk;Slst;;;0080;;19990101;;;;
@@ -197,7 +198,9 @@ AENZ;Hamburg-Eidelstedt Zentrum;Hmb-Eidelst Zent;NE-Bf;;;0080;;20081214;;404947;
 AEOF;Edendorf;Edendorf;Bf;a.B.;DE12683;0080;2;20030101;;014399;N;N
 AEQ;Hamburg-Eidelstedt Bedienstandort;Hmb-Eidelst BSO;BSO;Planung;;0080;2;20180301;;110483;N;N
 AERI;Hamburg Ericus;Ericus;Abzw;;DE14388;0080;2;20081214;;070219;J;N
+AESA;Stell (AKN);;;;;;;;;;;;
 AESG;Hamburg-Eidelstedt/Stellingen DB-Gr;Hmb-Eidelst Gr;Gp;;DE14445;0080;9;20081214;;913375;N;N
+AESGW;Stellingen AKN-Grenze;;;;;;;;;;;;
 AESL;Essel (Kr Stade);Essel (Kr Stade);NE-Hp;;;0080;;20081214;;585760;J;N
 AESQ;Hamburg-Eidelstedt S-Bahn Bedienstandort;Hmb-Eidel SB BSO;BSO;Planung;;0080;9;20180301;;110484;N;N
 AEST;Hamburg-Eidelstedt              (S-Bahn);Eidelst (S-Bahn);Bft;;DE14439;0080;9;20111211;;012799;J;N
@@ -3618,6 +3621,8 @@ EGVF;Gevelsberg-Haufe;Gevelsberg-Haufe;NE-Bf;;;0080;;20081214;;080333;J;N
 EGVG;Gevelsberg-Vogelsang DB-Grenze;Gev-Vogels DB-Gr;Gp;;DE13735;0080;3;20081214;;852913;J;J
 EGVH;Gevelsberg Hbf;Gevelsberg Hbf;Hp;;DE13731;0080;3;20081214;;080432;J;N
 EGVHB;Gevelsberg Busbf;Gevelsberg Busbf;Bush;;;0080;;19990101;;;;
+EGVN;Gevelsberg-Nirgena;;;;;;;;;;;;
+EGVP;Gevelsberg-Poeten;;;;;;;;;;;;
 EGVV;Gevelsberg-Vogelsang;Gev-Vogelsang;NE-Bf;;;0080;;20081214;;080317;J;N
 EGW;Gelsenkirchen-Wattenscheid;Ge-Wattenscheid;Bft;;DE13631;0080;3;20060201;;101634;N;N
 EGZO;Gelsenkirchen Zoo;Gelsenk Zoo;Bft;;DE13621;0080;3;20081214;;100404;J;N
@@ -5839,6 +5844,7 @@ HBTE;Barntrup (Extertalbahn);Barntrup (Exter);NE-Bf;;;0080;;20081214;;520064;J;N
 HBTF;Bantorf;Bantorf;Bf;;DE10622;0080;2;20081214;;135285;J;N
 HBTG;Bad Bentheim DB-Grenze;Bentheim DB-Gr;Gp;;DE21719;0080;2;20181209;;110107;J;N
 HBTH;Bad Bentheim;Bad Bentheim;Bf;;DE10401;0080;2;20081214;;211565;J;J
+HBTK;Bad Bentheim Kur;;;;;;;;;;;;
 HBTM;Bettmar ESTW-A;Bettmar ESTW;BZ;Planung;;0080;2;20120105;;132662;N;N
 HBTN;Bad Bentheim Nord;Bad Bentheim Nrd;NE-Bft;;;0080;;20181209;;410084;J;N
 HBTP;Barntrup;Barntrup;NE-Anst;a.B.;;0080;;20090127;;134783;N;N
@@ -5870,6 +5876,7 @@ HBWL;Bodenwerder-Linse;Bodenwerd-Linse;NE-Bf;a.B.;;0080;;20090127;;564112;N;N
 HBWM;Bodenwerder Mittelweser;Bodenwerder Mwes;Slst;;;0080;;19990101;;;;
 HBWR;Rühle;Rühle;Slst;;;0080;;19990101;;;;
 HBWS;Beverungen-Wehrden;Beverungen-Wehrd;Slst;;;0080;;19990101;;;;
+HBWT;Börßum WTB;;;;;;;;;;;;
 HBWU;Bremerhaven-Wulsdorf;Brh-Wulsdorf;Bft;;DE11678;0080;2;20081214;;137810;J;J
 HBWW;Benitz-Wiswedel;Benitz-Wiswedel;NE-Bf;;;0080;;20090401;;518084;J;N
 HBX;Bremen ESTW-UZ;Bremen ESTW;BZ;;;0080;2;20110812;;106665;N;N
@@ -5891,6 +5898,7 @@ HCOP;Coppenbrügge;Coppenbrügge;Hp;;DE11982;0080;2;20081214;;134254;J;N
 HCOR;Cordingen;Cordingen;Bf;;DE11983;0080;2;20081214;;136739;J;N
 HCRA;Croya;Croya;NE-Bf;;;0080;;20090401;;518118;J;N
 HCV;Coevorden BE;Coevorden BE;NE-Bf;;;0080;;20081214;;410274;J;N
+HCVGO;Coevorden BE (Gr O);;;;;;;;;;;;
 HCVO;Celle Vorstadt;Celle Vorstadt;NE-Bf;;;0080;;20081214;;516039;J;N
 HCWB;Wietzenbruch;Wietzenbruch;Anst;;DE21131;0080;2;20081214;;136630;J;N
 HCX;Celle ESTW-UZ;Celle ESTW;BZ;;;0080;2;20171114;;106674;N;N
@@ -5987,6 +5995,7 @@ HER;Emden Rbf;Emden Rbf;Bft;;DE12869;0080;2;20081214;;116228;J;N
 HERH;Erichshof;Erichshof;NE-Bf;;;0080;;20081214;;424069;J;N
 HERT;Erbstorf;Erbstorf;NE-Bf;;;0080;;20090401;;521005;J;N
 HERZ;Erbstorf Ziegelei;Erbstorf Ziegel;NE-Bf;;;0080;;20090401;;520023;J;N
+HESC;Esche;;;;;;;;;;;;
 HESD;Eschede;Eschede;Bf;;DE13008;0080;2;20081214;;136291;J;N
 HESG;Emden Südkai DB-Grenze;Emd Südkai DB-Gr;Gp;;DE21573;0080;2;20141214;;109039;J;N
 HESH;Ibbenbüren-Esch;Ibbenbüren-Esch;Bf;;DE15173;0080;2;20081214;;211607;J;N
@@ -6061,6 +6070,7 @@ HGIP;Groß Ippener;Groß Ippener;NE-Hp;;;0080;;20081214;;432096;J;N
 HGIS;Gifhorn Stadt;Gifhorn Stadt;Bf;;DE13757;0080;2;20081214;;131730;J;N
 HGISB;Gifhorn Stadt BLM;Gifhorn St BLM;Museum;;;0080;;20000415;;;N;N
 HGKE;Ganderkesee;Ganderkesee;Hp;;DE13553;0080;2;20081214;;216010;J;N
+HGLD;Gielde;;;;;;;;;;;;
 HGLI;Braunschweig-Gliesmarode;Brg-Gliesmarode;Bf;;DE11591;0080;2;20081214;;131961;J;N
 HGLIB;Braunschweig-Gliesmarode           (Bus);Brg-Gliesmar   B;Bush;;;0080;;19990101;;;;
 HGLS;Garrel;Garrel;NE-Bf;;;0080;;20161211;;109871;J;N
@@ -6260,6 +6270,8 @@ HKLG;Kirchlengern;Kirchlengern;Bf;;DE15540;0080;2;20081214;;211755;J;N
 HKLH;Klosterheide;Klosterheide;Museum;;;0080;;20000415;;;N;N
 HKLI;Kirchlinteln;Kirchlinteln;Hp;Planung;DE21692;0080;2;20151110;;101002;N;N
 HKM;Bokeloh (Kr Meppen);Bokeloh (Meppen);NE-Bf;;;0080;;20161001;;500066;J;N
+HKMH;Klein Mahner;;;;;;;;;;;;
+HKNA;Knesebeck Awanst;;;;;;;;;;;;
 HKNE;Knesebeck;Knesebeck;Hp Anst;;DE15646;0080;2;20081214;;131680;J;N
 HKNH;Rheine Kanalhafen;Kanalhafen;NE-Anst;;;0080;;20081214;;557041;J;N
 HKOE;Kloster Oesede;Kloster Oesede;vp-Hp;;DE15626;0080;2;20081214;;214791;J;N
@@ -6883,6 +6895,7 @@ HWKD;Walkenried;Walkenried;Bf;;DE20721;0080;4;20081214;;130831;J;N
 HWKDB;Walkenried Bahnhof;Walkenried Bf;Bush;;;0080;;19990101;;;;
 HWKP;Wiehe Kurpark;Wiehe Kurpark;Museum;;;0080;;20000416;;;N;N
 HWKS;Wickensen;Wickensen;NE-Bf;a.B.;;0080;;20090127;;564054;N;N
+HWLD;Werlaburgdorf;;;;;;;;;;;;
 HWLI;Wolfenbüttel-Linden;Linden (Wolfb);Awanst;;DE21260;0080;2;20081214;;012088;J;N
 HWLL;Wellendorf (Kr Osnabrück);Wellendorf/Osnbr;vp-Bf;;DE20960;0080;2;20081214;;214809;J;N
 HWM;Wiesmoor Markt;Wiesmoor Markt;Bush;;;0080;;20010427;;;N;N
@@ -8236,6 +8249,7 @@ KEST;Erftstadt;Erftstadt;Bf;;DE12939;0080;3;20081214;;154542;J;N
 KET;Eschweiler Talbahnhof;Eschweiler Talbf;NE-Bf;;;0080;;20081214;;152546;J;N
 KETD;Eschweiler Dalli;Dalli;NE-Anst;;;0080;;20081214;;698332;J;N
 KEU;Euskirchen;Euskirchen;Bf;;DE13111;0080;3;20081214;;154278;J;N
+KEUG;Euskirchen DB-Grenze;;;;;;;;;;;;
 KEVS;Eversael;Eversael;NE-Bf;;;0080;;20081214;;488262;J;N
 KEW;Eschweiler West;Eschweiler West;NE-Hp;;;0080;;20081214;;698316;J;N
 KFA;Fahr-Irlich;Fahr-Irlich;Tp;;;0080;;19990101;;;;
@@ -9473,9 +9487,11 @@ LHFS;Hakelforst;Hakelforst;Bf;a.B.;DE14295;0080;4;20060301;;244277;N;N
 LHFT;Helfta;Helfta;Bk;;DE21629;0080;4;20081214;;230524;J;N
 LHG;Halle (Saale) Gbf;Halle Gbf;Bft;;DE14325;0080;4;20160109;;230011;J;N
 LHG D;Halle (Saale) Gbf Hg 3;Halle Gbf Hg 3;Bft;a.B.;DE14329;0080;4;20151128;;909055;N;N
+LHG H;Halle (Saale) Gbf Nordost;;;;;;;;;;;;
 LHG M;Halle (Saale) Gbf Nord;Halle Gbf Nord;Bft;;DE14326;0080;4;20151128;;910003;J;N
 LHG N;Halle Nordberg;Halle Gbf Nordbg;Bft;;DE14343;0080;4;20030101;;910288;N;N
 LHG O;Halle (Saale) Gbf Ost;Halle (S) Gbf O;Bft;;DE14331;0080;4;20140801;;913558;J;N
+LHG P;Halle (Saale) Pbf Kurzv;;;;;;;;;;;;
 LHG S;Halle Südberg;Halle Gbf Südbg;Bft;;DE14347;0080;4;20030101;;910289;N;N
 LHG U;Halle (Saale) Gbf Kurzverbindung;Halle Gbf Kurzv;Bft;;DE14330;0080;4;20161127;;909678;J;N
 LHG W;Halle (Saale) Gbf Hg 18;Halle Gbf Hg 18;Bft;a.B.;DE14328;0080;4;20151128;;910651;N;N
@@ -9561,7 +9577,10 @@ LK;Köthen;Köthen;Bf;;DE15837;0080;4;20081214;;241372;J;N
 LK  B;Köthen Stw B 4;Köthen Stw B 4;Bft;;DE15841;0080;4;20081214;;909654;J;N
 LK  C;Köthen Stw B 6;Köthen Stw B 6;Bft;;DE15842;0080;4;20081214;;909655;J;N
 LK  D;Köthen Stw W 3;Köthen Stw W 3;Bft;;DE15843;0080;4;20081214;;909656;J;N
+LK  M;Köthen Mitte;;;;;;;;;;;;
 LK  R;Köthen Gbf Stw W 7;Köthen Stw W 7;Bft;;DE15840;0080;4;20081214;;909657;J;N
+LK  S;Köthen Süd;;;;;;;;;;;;
+LK  W;Köthen West;;;;;;;;;;;;
 LKAN;Halle-Kanena;Kanena;Abzw;;DE14356;0080;4;20171127;;329169;J;N
 LKAP;Kapen;Kapen;vp-Awanst;a.B.;DE15364;0080;4;20090614;;237123;N;N
 LKAPC;Kapen Chemische Werke;Kapen Chemiewerk;Anst;;DE15366;0080;4;20081214;;911568;J;N
@@ -10258,7 +10277,9 @@ LWP;Lutherstadt Wittenberg-Piesteritz;Lu Wb-Piesteritz;Bf;;DE16630;0080;4;201512
 LWPN;Wölpern;Wölpern;Hp;a.B.;DE21290;0080;4;20131215;;234476;N;N
 LWPW;Lutherstadt Wittenberg-Piesteritz Werkbf;Lu Wb-Pieste Wbf;Bf;;DE16633;0080;4;20151213;;232496;J;N
 LWPWN;Lu Wittenberg-Piesteritz Werkbf Nordwerk;Pieste Wbf Nord;Bft;Planung;DE21715;0080;4;20161215;;110001;N;N
+LWPWO;Lu Wittenberg-Piesteritz Werkbf Ost;;;;;;;;;;;;
 LWPWS;Lu Wittenberg-Piesteritz Werkbf Südwerk;Pieste Wbf Süd;Bft;Planung;DE21716;0080;4;20161215;;110002;N;N
+LWPWW;Lu Wittenberg-Piesteritz Werkbf West;;;;;;;;;;;;
 LWQ;Lutherstadt Wittenberg Bedienstandort;Lu Wittenbg BSO;BSO;Planung;;0080;4;20180301;;110521;N;N
 LWR;Wasserleben;Wasserleben;Bf;a.B.;DE20811;0080;4;20080101;;245001;N;N
 LWRH;Wiershorst;Wiershorst;NE-Hp;a.B.;;0080;;20060701;;105891;N;N
@@ -10715,6 +10736,7 @@ MHUF;Hufschlag;Hufschlag;Hp;;DE15158;0080;7;20081214;;201236;J;N
 MHUG;Huglfing;Huglfing;Bf;;DE15160;0080;7;20081214;;203034;J;N
 MHUS;Huldsessen;Huldsessen;Awanst;;DE12708;0080;7;20181209;;339408;J;N
 MHWG;Hochwang;Hochwang;Hp;;DE14962;0080;7;20081214;;020933;J;N
+MIA;Ingolstadt Audi;;;;;;;;;;;;
 MHXB;München Hbf ESTW ICE BW;Mü Hbf ESTW BW;BZ;;;0080;7;20150528;;109202;N;N
 MIC;Icking;Icking;Bf;;DE15178;0080;7;20081214;;205104;J;N
 MIDR;Markt Indersdorf;Markt Indersdorf;Hp;;DE16821;0080;7;20141117;;204602;J;N
@@ -14733,6 +14755,7 @@ TET K;Eutingen im Gäu Kurve;Eutingen Kurve;Bft;;DE13119;0080;6;20081214;;911837
 TET N;Eutingen im Gäu Em Nord;Eutingen Em Nord;Bft;;DE13117;0080;6;20081214;;909721;J;N
 TET S;Eutingen im Gäu Em Süd;Eutingen Em Süd;Bft;;DE13118;0080;6;20081214;;911839;J;N
 TETD;Echterdingen;Echterdingen;Hp;;DE12673;0080;6;20081214;;297242;J;N
+TETN;Eutingen im Gäu Nord;;;;;;;;;;;TET N?;
 TEU;Eubigheim;Eubigheim;Bf;;DE13107;0080;6;20081214;;297473;J;N
 TEW;Enzweihingen;Enzweihingen;NE-Bf;;;0080;;20090401;;562025;J;N
 TEY;Eyach;Eyach;Bf;;DE13124;0080;6;20081214;;293258;J;J
@@ -17780,6 +17803,7 @@ XAVW;Villach Westbf;Villach Westbf;Bf;;;0081;;20111124;;;;
 XAWA;Wald am Schoberpaß;Wald Schoberpaß;Bf;;;0081;;19990101;;;;
 XAWAL;Wallersee;Wallersee;Hp;;;0081;;20171107;;;;
 XAWAT;Wachtl (Tirol);Wachtl (Tirol);Museum;;;0081;;20100214;;;N;N
+XAWAU;Üst Wachtl-7;;;;;;;;;;;;
 XAWB;Wartberg im Mürztal;Wartberg i.Mürz.;Bf;;;0081;;19990101;;;;
 XAWBK;Wartberg a d Krems;Wartberg a d Kr;Bf;;;0081;;20090317;;;;
 XAWD;Westendorf                          (AT);Westendorf    AT;Bf;;;0081;;20090601;;;;
@@ -19488,6 +19512,7 @@ XIBAR;Bologna Arcoveggio;Bologna Arcoveg.;Bf;;;0083;;19990101;;;;
 XIBB;Brunico / Bruneck;Brunico/Bruneck;Bf;;;0083;;19990101;;;;
 XIBC;Bologna Centrale;Bologna C;Bf;;;0083;;19990101;;;;
 XIBCA;Brescia;Brescia;Bf;;;0083;;19990101;;;;
+XIBCE;Brescia Est Bin;;;;;;;;;;;;
 XIBCO;Bologna Corticella;Bologna Cortic;Bf;;;0083;;20010530;;;;
 XIBCS;Brescia Scalo;Brescia Scalo;Bf;;;0083;;20081214;;;J;N
 XIBD;Bordighera;Bordighera;Bf;;;0083;;19990101;;;;
@@ -20491,6 +20516,8 @@ XNBO;Born;Born;Bf;;;0084;;19990101;;;;
 XNBP;Buitenpost;Buitenpost;Bf;;;0084;;20080926;;;;
 XNBR;Breda;Breda;Bf;;;0084;;19990101;;;;
 XNBZ;Bergen op Zoom;Bergen op Zoom;Bf;;;0084;;20091204;21000101;;;
+XNCGN;Coev BE (Gr N);;;;;;;;;;;;
+XNCGS;Coev BE (Gr S);;;;;;;;;;;;
 XNCV;Coevorden;Coevorden;Bf;;;0084;;19990101;;;;
 XNDD;Delden;Delden;Bf;;;0084;;20081115;21000101;;;
 XNDE;De Eschmarke;De Eschmarke;Hp;;;0084;;20081214;;;J;N
@@ -21549,6 +21576,7 @@ XSNE;Neuhausen                           (CH);Neuhausen     CH;Bf;;;0085;;200906
 XSNI;Niederglatt;Niederglatt;Bf;;;0085;;19990101;;;;
 XSNK;Neukirch-Egnach;Neukirch-Egnach;Bf;;;0085;;20040930;;;;
 XSOB;Oberglatt;Oberglatt;Bf;;;0085;;20040507;;;;
+XSOBI;Oberbipp;;;;;;;;;;;;
 XSOE;Oensingen;Oensingen;Bf;;;0085;;20150922;;;;
 XSOG;Oberburg;Oberburg;Bf;;;0085;;20080809;;;;
 XSOL;Olten;Olten;Bf;;;0085;;19990101;;;;
@@ -21620,6 +21648,7 @@ XSSP;Spiez;Spiez;Bf;;;0085;;19990101;;;;
 XSSR;Sargans;Sargans;Bf;;;0085;;19990101;;;;
 XSST;Scuol-Tarasp;Scuol-Tarasp;Bf;;;0085;;19990101;;;;
 XSSTA;Staad;Staad;Bf;;;0085;;20040930;;;;
+XSSTR;St-Triphon;;;;;;;;;;;;
 XSSU;Steinebrunn;Steinebrunn;Bf;;;0085;;20040930;;;;
 XSSUS;Sursee;Sursee;Bf;;;0085;;20081008;;;;
 XSSV;Sevelen;Sevelen;Bf;;;0085;;20040930;;;;
@@ -21651,7 +21680,9 @@ XSWS;Wallisellen;Wallisellen;Bf;;;0085;;20031030;;;;
 XSWT;Winterthur;Winterthur;Bf;;;0085;;19990101;;;;
 XSWW;Wädenswil;Wädenswil;Bf;;;0085;;19990101;;;;
 XSWY;Wengi-ey;Wengi-ey;Bf;;;0085;;20081214;;;J;N
+XSXBG;Brig Gr IT;;;;;;;;;;;;
 XSXCH;Chiasso Grenze IT;Chiasso Gr IT;Gp;;;0085;;20120324;;;N;N
+XSXGE;Geneve Gr FR
 XSXPT;Pino Grenze IT;Pino Grenze IT;Gp;;;0085;;20111108;;;N;N
 XSY;Yverdon;Yverdon;Bf;;;0085;;19990101;;;;
 XSZA;Zürich-Altstetten;Zürich-Altst.;Bf;;;0085;;19990101;;;;
@@ -21983,6 +22014,7 @@ XTSV;Svatava;Svatava;Bf;;;0054;;19990101;;;;
 XTSVD;Varnsdorf stare nadrazi;Varns stare nad;Bf;;;0054;;20131215;;;;
 XTSVO;Svor;Svor;Bf;;;0054;;20081115;;;;
 XTSVZ;Svatava zastavka;Svatava zast;Bf;;;0054;;20000316;;;;
+XTSW;Stradov;;;;;;;;;;;;
 XTSZ;Sezimovo Usti;Sezimovo Usti;Bf;;;0054;;20081115;;;;
 XTT;Tabor;Tabor;Bf;;;0054;;19990101;;;;
 XTTA;Tanvald;Tanvald;Bf;;;0054;;20051001;;;;
@@ -21998,6 +22030,7 @@ XTTV;Teplice v Cechach;Teplic v Cechach;Bf;;;0054;;19990101;;;;
 XTTVS;Trutnov stred;Trutnov stred;Bf;;;0054;;20081118;;;;
 XTTZ;Tanvald zastavka;Tanvald zastavka;Bf;;;0054;;20101026;;;;
 XTU;Usti nad Labem Hlavni Nadrazi;Usti n.L. hl.n.;Bf;;;0054;;19990101;;;;
+XTUH;Usti zapad;;;;;;;;;;;;
 XTUO;Usti nad Orlici;Usti nad Orlici;Bf;;;0054;;20060802;;;;
 XTUS;Usti nad Labem-Strekov;Usti n L-Strekov;Bf;;;0054;;19990105;;;;
 XTUZ;Usti nad Labem zapad;Usti n.L. zapad;Bf;;;0054;;19990101;;;;
@@ -22250,6 +22283,7 @@ XVHY;Högsby;Högsby;Hp;;;0074;;20091213;;;J;N
 XVIG;Iggesund;Iggesund;Bf;;;0074;;20161210;;;N;N
 XVIT;Ingatorp;Ingatorp;Bf;;;0074;;20090317;;;;
 XVJ;Jönköpings Central;Jönköping C;Bf;;;0074;;20080312;;;;
+XVJB;Jordbro;;;;;;;;;;;;
 XVJG;Jonkopings Godsbangard;Jonkoping Gb;Bf;;;0074;;20060905;;;;
 XVJK;Jonkoping Kombi;Jonkoping Kombi;Bf;;;0074;;20060905;;;;
 XVJO;Jonsered;Jonsered;Hp;;;0074;;20090130;;;J;N
