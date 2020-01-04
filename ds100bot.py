@@ -35,17 +35,17 @@ parser.add_argument('--verbose', '-v',
                     action='count')
 args = parser.parse_args()
 
-if args.db == None:
+if args.db is None:
     if args.rw:
         args.db = 'readwrite'
     else:
         args.db = 'readonly'
-if args.api == None:
+if args.api is None:
     if args.rw:
         args.api = 'readwrite'
     else:
         args.api = 'readonly'
-if args.verbose == None:
+if args.verbose is None:
     args.verbose = 0
 
 # setup twitter API
@@ -83,9 +83,9 @@ for id, tweet in tweet_list.items():
     # Process quoted or replied-to tweets, only for explicit mentions and #DS100.
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
-            if other_id != None and other_id not in tweet_list:
+            if (not other_id is None) and other_id not in tweet_list:
                 other_tweet = twapi.get_tweet(other_id)
-                if other_tweet == None:
+                if other_tweet is None:
                     continue
                 # don't process the other tweet if we should have seen it before (this
                 # also prevents recursion via this branch):

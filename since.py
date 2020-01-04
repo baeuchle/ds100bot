@@ -8,7 +8,7 @@ def get_since_id(sql):
             subject = 'since_id'
         """)
     row = sql.cursor.fetchone()
-    if row == None:
+    if row is None:
         return 0
     try:
         return int(row[0])
