@@ -18,7 +18,6 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th></th>
    <th>#FF</th>
-   <th>#ff</th>
    <th>FF</th>
    <th>Kommentiert retweetete Tweets</th>
    <th>Beantwortete Tweets</th>
@@ -29,7 +28,6 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Tweets mit #DS100</th>
    <td>Ja</td>
-   <td><strong>Nein</strong></td>
    <td>Ja, wenn kein Treffer bei Hashtags</td>
    <td>Wie Timeline</td>
    <td>Wie Timeline</td>
@@ -38,7 +36,6 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Explizite Erwähnung</th>
    <td>Ja</td>
-   <td><strong>Nein</strong></td>
    <td>Ja, wenn kein Treffer bei Hashtags</td>
    <td>Wie #DS100 (keine Rekursion)</td>
    <td>Wie #DS100 (keine Rekursion)</td>
@@ -47,7 +44,6 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Implizite Erwähnung</th>
    <td>Ja</td>
-   <td><strong>Nein</strong></td>
    <td>Nein</td>
    <td>Ignoriert</td>
    <td>Ignoriert</td>
@@ -56,7 +52,6 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
   <tr>
    <th>Timeline</th>
    <td>Ja</td>
-   <td><strong>Nein</strong></td>
    <td>Nein</td>
    <td>Ignoriert</td>
    <td>Ignoriert</td>
@@ -66,14 +61,12 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
    <th>Retweets (ohne Kommentar)</th>
    <td>Nein</td>
    <td>Nein</td>
-   <td>Nein</td>
    <td>Ignoriert</td>
    <td>Ignoriert</td>
    <td>Ignoriert</td>
   </tr>
   <tr>
    <th>Tweets vom Bot selbst</th>
-   <td>Nein</td>
    <td>Nein</td>
    <td>Nein</td>
    <td>Ignoriert</td>
@@ -111,18 +104,21 @@ Ein findbares Kürzel besteht aus
   ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann aus
   Großbuchstaben und Zahlen bestehen. Kleinbuchstaben sind nicht (mehr)
   möglich.
+  - Leerzeichen (bzw. Unterstriche) sind wichtig; es gibt eine <a
+    href="/leerzeichen_ds100.html">Liste mit den Betriebsstellen</a>,
+    bei denen es einen Unterschied macht,
 - Einträge in der [Schwarzliste](blacklist.html) können durch benutzen
   der Quelle angezeigt werden.
 
 Beispiele
 ---------
 
-- \#FKW, <del>\#fkw,</del> \#DS:FKW<del>, \#DS:fkw</del>
+- \#FKW, \#DS:FKW
 - $1234, $DS:1234
 - $KRM, $VDE8¹, $VDE8\_1
 - $VGF:A, $VGF:DⅣ, $VGF:Dⅱ (bei Unicode-römischen Ziffern sind
   Groß-/Kleinschreibung egal, aber $VGF:Dii geht nicht!)
-- \#VGF:BM<del>, \#VGF:wbd</del>
+- \#VGF:BM
 
 Code
 ====
