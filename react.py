@@ -4,14 +4,14 @@ import sqlite3
 
 max_tweet_length = 280
 
-def process_tweet(tweet, twapi, sql, verbose, modus=None):
+def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None):
     if verbose > 2:
         print("Processing tweet {} mode {}:".format(tweet.id, modus))
         print(tweet)
         print("+++++++++++++++++")
     reply_id = tweet.id
     twcounter = 1
-    for reply in compose_answer(tweet.text, sql, verbose, modus):
+    for reply in compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus):
         if verbose > 1:
             print("I tweet {} ({} chars):".format(twcounter, len(reply)))
             print(reply)
@@ -29,7 +29,7 @@ def process_tweet(tweet, twapi, sql, verbose, modus=None):
 
 def process_commands(tweet, twapi, verbose):
     author = tweet.author()
-    if tweet.has_hashtag('folgenbitte', case_sensitive=False):
+    if tweet.has_hashtag(('folgenbitte'), case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if verbose > 0:
             print ("folgenbitte from @{}:".format(author.screen_name), end='')
@@ -39,7 +39,7 @@ def process_commands(tweet, twapi, verbose):
                 print (" not yet following")
         if not is_followed:
             twapi.follow(author)
-    if tweet.has_hashtag('entfolgen', case_sensitive=False):
+    if tweet.has_hashtag(('entfolgen'), case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if verbose > 0:
             print ("entfolgen from @{}:".format(author.screen_name), end='')
@@ -50,7 +50,7 @@ def process_commands(tweet, twapi, verbose):
         if is_followed:
             twapi.defollow(author)
 
-def find_tokens(tweet, modus):
+def find_tokens(tweet, modus, magic_tag):
     finder = re.compile(r"""
                             # this RE finds
                             # #AB:CD
@@ -76,7 +76,7 @@ def find_tokens(tweet, modus):
     # if modus isn't 'all', then that's all already.
     if modus != 'all' or len(tokens) > 1:
         return tokens
-    if len(tokens) == 1 and str.join('', tokens[0][0]) != '#DS100':
+    if len(tokens) == 1 and str.join('', tokens[0][0]) == magic_tag:
         return tokens
         
     finder2 = re.compile(r"""
@@ -102,7 +102,7 @@ def find_entry(sql, parameters):
                 WHEN (
                     blacklist.Abk IS NOT NULL
                     AND
-                    :abbr1 <> :abbr2
+                    sourceflags.magictag <> :abbr2
                 ) THEN 'blacklist'
                 ELSE 'found'
             END
@@ -124,7 +124,7 @@ def find_entry(sql, parameters):
         AND
             sourceflags.sigil = :sigil
         AND
-            (sourceflags.abbr = :abbr1 OR sourceflags.abbr = :abbr2)
+            (sourceflags.magictag = :magic_tag OR sourceflags.abbr = :abbr2)
         ORDER BY gueltigvon DESC
         LIMIT 1
         """,
@@ -142,13 +142,48 @@ def find_entry(sql, parameters):
         ))
     return row, normalized
 
-def compose_answer(tweet, sql, verbose, modus):
+def find_source(sql, tag):
+    sql.cursor.execute("""
+        SELECT
+            abbr
+        FROM
+            sourceflags
+        WHERE
+            magictag = :magic
+        LIMIT 1
+        """,
+        ({'magic': tag,})
+    )
+    row = sql.cursor.fetchone()
+    if row is None:
+        return tag
+    return row['abbr']
+
+def process_magic(magic_tags, length):
+    if len(magic_tags) == 0:
+        # no magic tag: Only magic is in DS100.
+        magic_tags = [['DS100', [0, 0]]]
+    else:
+        # the first magic tag is valid from the beginning, no matter
+        # where it is!
+        magic_tags[0][1] = [0, 0]
+    magic_tags.append(['__', [length, length]])
+    return magic_tags
+
+def compose_answer(tweet, sql, verbose, magic_tags, modus):
     all_answers = []
     short_list = []
     # generate answer
     charcount = 0
     generated_content = ""
-    for match in find_tokens(tweet, modus):
+    magic_tags = process_magic(magic_tags, len(tweet))
+    for mt, nextmt in zip(magic_tags[:-1], magic_tags[1:]):
+      tweetpart = tweet[mt[1][1]:nextmt[1][0]]
+      tag = mt[0]
+      tagsource = find_source(sql, tag)
+      if verbose > 1:
+        print("Part: '{}' mt '{}'".format(tweetpart, tag))
+      for match in find_tokens(tweetpart, modus, tag):
         sigil = match[0] if not match[0] == "" else '#'
         source = match[1]
         payload = match[2]
@@ -157,7 +192,8 @@ def compose_answer(tweet, sql, verbose, modus):
         payload = payload.upper()
         parameters = { 'abk': payload,
             'sigil': sigil,
-            'abbr1': source if source != "" else 'DS',
+            'magic_tag': source if source != "" else tag,
+            'abbr1': source if source != "" else tagsource,
             'abbr2': source if source != "" else 'BOT',
         }
         row, normalized = find_entry(sql, parameters)
@@ -173,7 +209,7 @@ def compose_answer(tweet, sql, verbose, modus):
                 continue
             if len(payload) > 5:
                 continue
-            if payload == 'DS100':
+            if '#' + payload in magic_tags:
                 continue
             if payload[0] == '_':
                 continue
