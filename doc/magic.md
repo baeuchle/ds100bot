@@ -24,7 +24,9 @@ Suchbegriffe benutzt.
 ### Beispiel:
 
 Im Tweet:
+
 > Text \#HB Text \#\_FFM \#SB \#DS:FFW
+
 wird der Magic Hashtag __\#\_FFM__ erkannt, daher werden \#HB und \#SB
 als \#FFM:HB (Hauptbahnhof) und \#FFM:SB (Südbahnhof) erkannt. \#DS:FFW
 bleibt aber der Quelle DS zugeordnet und wird aus dieser als Frankfurt
@@ -39,13 +41,17 @@ Hashtag ist von Beginn an gültig.
 
 ### Beispiele:
 Tweet 1:
+
 > \#\_FFM \#HB \#DS100 \#FFS \#\_FFM \#OB \#DS100 \#FFM:WEBF \#FFLF
+
 expandiert zu \#FFM:HB (Hauptbahnhof), \#DS:FFS (Frankfurt Süd),
 \#FFM:OB (Ostbahnhof), \#FFM:WEBF (Westbahnhof) und \#DS:FFLF (Frankfurt
 Flughafen Fernbahnhof).
 
 Tweet 2:
+
 > \#KDWE \#BO \$A \#WBC \#\_FFM \#WBD \$B \#DS100 \#FF \#FKW
+
 expandiert zu \#FFM:KDWE (Konrad-Duden-Weg), \#FFM:BO (Bonames Mitte),
 \$FFM:A (A-Strecke), \#FFM:WBC (Willy-Brandt-Platz C-Ebene), \#FFM:WBD
 (Willy-Brandt-Platz D-Ebene), \$FFM:B (B-Strecke), \#DS:FF (Frankfurt
