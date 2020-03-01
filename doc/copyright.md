@@ -15,9 +15,9 @@ Verwendete Daten
 Der Bot greift auf verschiedene Datenquellen zurück. Die Auswahl der
 Datenquelle geschieht auf Grund des ersten Teils des Suchbegriffs, etwa
 bei ‚\#DS:FF‘ der Teil ‚__\#DS:__‘. Ist kein solcher Teil vorhanden
-(‚FF‘) oder besteht er nur aus ‚__\#__‘ (‚\#FF‘), werden die Quellen
-__\#DS__ oder __\#BOT__ benutzt; ist dieser Teil ‚__$__‘, so wird die
-Quelle __$DS__ benutzt.
+(‚FF‘) oder besteht er nur aus ‚__\#__‘ oder ‚__\$__‘ (‚\#FF‘), werden
+die Quellen aus dem aktuellen __[Magic Hashtag](magic.html)__ oder
+__\#BOT__ (nur bei ‚__\#__‘) benutzt.
 
 Folgende Datenquellen werden vom Bot benutzt:
 
@@ -30,6 +30,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <th>Lizenz</th>
    <th>Anmerkungen</th>
    <th>Dump</th>
+   <th>Magic Hashtag</th>
   </tr>
  </thead>
  <tbody>
@@ -46,6 +47,9 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/ds100.html">ds100</a>
+   </td>
+   <td>
+    #DS100
    </td>
   </tr>
   <tr>
@@ -64,6 +68,9 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/benannte_strecken.html">benannte_strecken</a>
     <a href="https://ds100.frankfurtium.de/dumps/strecken.html">strecken</a>
+   </td>
+   <td>
+    #DS100
    </td>
   </tr>
   <tr>
@@ -85,6 +92,9 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfhst.html">vgfhst</a>
    </td>
+   <td>
+    #_FFM
+   </td>
   </tr>
   <tr>
    <th>$VGF</th>
@@ -101,6 +111,9 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfstrecken.html">vgfhst</a>
    </td>
+   <td>
+    #_FFM
+   </td>
   </tr>
   <tr>
    <th>#ÖBB</th>
@@ -110,6 +123,9 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>Quelle ist nicht offiziell und scheint veraltet (von 2007)</td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
+   </td>
+   <td>
+    #DB640
    </td>
   </tr>
   <tr>

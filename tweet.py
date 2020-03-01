@@ -67,16 +67,24 @@ class Tweet:
                     and um['indices'][1] <= self.original.display_text_range[1])
         return False
 
-    def has_hashtag(self, tag, **kwargs):
+    def has_hashtag(self, tag_list, **kwargs):
         """
-        Checks if the given hashtag is in the tweet.
+        Checks if one of the given hashtags is in the tweet.
         """
-        lowtag = tag.lower()
+        lowlist = [tag.lower() for tag in tag_list]
         alllower = ('case_sensitive' in kwargs and not kwargs['case_sensitive'])
         for ht in self.original.entities['hashtags']:
+            lowht = ht['text'].lower()
             if (
-                (alllower and ht['text'].lower() == lowtag)
-                or ht['text'] == tag
+                (alllower and lowht in lowlist)
+                or ht['text'] in tag_list
                ):
                 return True
         return False
+
+    def hashtags(self, candidate_list):
+        """
+        Returns a list of all the entries in candidate_list that are
+        present as hashtag in the tweet.
+        """
+        return [[ht['text'], ht['indices']] for ht in self.original.entities['hashtags'] if '#' + ht['text'] in candidate_list]

@@ -3,8 +3,7 @@ Finden von Tweets
 
 Der Bot findet Tweets auf vier verschiedenen Wegen:
 
-- Markierung durch Hashtag
-  [\#DS100](https://twitter.com/search?q=%23DS100&f=tweets)
+- Markierung durch [Magic Hashtag](magic.html)
 - Explizites Erwähnen des Bots durch
   [@\_ds\_100](https://twitter.com/_ds_100) im Text
 - Implizites Erwähnen des Bots durch Antworten auf einen Tweet des Bots
@@ -26,7 +25,7 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
  </thead>
  <tbody>
   <tr>
-   <th>Tweets mit #DS100</th>
+   <th>Tweets mit Magic Hashtag</th>
    <td>Ja</td>
    <td>Ja, wenn kein Treffer bei Hashtags</td>
    <td>Wie Timeline</td>
@@ -37,8 +36,8 @@ Der Bot reagiert in den vier Fällen jeweils unterschiedlich:
    <th>Explizite Erwähnung</th>
    <td>Ja</td>
    <td>Ja, wenn kein Treffer bei Hashtags</td>
-   <td>Wie #DS100 (keine Rekursion)</td>
-   <td>Wie #DS100 (keine Rekursion)</td>
+   <td>Wie Magic Hashtag (keine Rekursion)</td>
+   <td>Wie Magic Hashtag (keine Rekursion)</td>
    <td>Erkannt</td>
   </tr>
   <tr>
@@ -97,8 +96,8 @@ Ein findbares Kürzel besteht aus
 - einem ‚\#‘ oder ‚$‘ (fließt in die Auswahl der Quelle ein: \# für
   Orte, $ für Strecken)
 - einem Bezeichner für die Quelle: Wenn nicht vorhanden, wird entweder
-  die Quelle ‚DS:‘ oder ‚BOT:‘ benutzt. Besteht immer aus
-  Großbuchstaben.
+  die dem aktuellen [Magic Hashtag](magic.html) entsprechende Quelle
+  oder ‚BOT:‘ benutzt. Besteht immer aus Großbuchstaben.
 - dem Kürzel selbst. Hier werden aus den Originalquellen
   aufeinanderfolgende Leerzeichen durch einen Unterstrich ersetzt (aus
   ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann aus
