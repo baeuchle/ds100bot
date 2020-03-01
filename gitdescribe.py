@@ -13,7 +13,7 @@ def get_last_hash(sql):
             subject = 'githash'
         """)
     row = sql.cursor.fetchone()
-    if row == None:
+    if row is None:
         return None
     return row[0]
 

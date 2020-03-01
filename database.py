@@ -14,3 +14,15 @@ class Database:
         self.cursor.close()
         self.sql.commit()
         self.sql.close()
+
+    def magic_hashtags(self):
+        self.cursor.execute("""
+            SELECT
+                distinct(magictag)
+            FROM
+                sourceflags
+            WHERE
+                magictag IS NOT NULL
+        """)
+        results = ["#" + row[0] for row in self.cursor.fetchall()]
+        return "(" + (" OR ".join(results)) + ")", results

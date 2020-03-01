@@ -50,7 +50,7 @@ for f in os.listdir(directory):
             (quelle, )
         )
         headers = sqlcursor.fetchone()
-        if headers == None:
+        if headers is None:
             headers = ['Abk', 'Name', None, 'valid_from', 'valid_until', 1, ';']
         print(headers)
         reader = csv.DictReader(csvfile, delimiter=headers[6])
@@ -58,15 +58,17 @@ for f in os.listdir(directory):
             abk = ' '.join(datum[headers[0]].split())
             name = ' '.join(datum[headers[1]].split())
             kurzname = ''
-            if headers[2] != None:
-                kurzname = ' '.join(datum[headers[2]].split())
+            if not headers[2] is None:
+                if datum[headers[2]] is None:
+                    kurzname = ''
+                else: 
+                    kurzname = ' '.join(datum[headers[2]].split())
             valid_from = '00000000'
             valid_until = '99999999'
-            if headers[3] != None:
-                valid_from = datum[headers[3]]
+            if not (headers[3] is None or datum[headers[3]] is None):
                 if valid_from > today:
                     continue
-            if headers[4] != None:
+            if not (headers[4] is None or datum[headers[4]] is None):
                 valid_until = datum[headers[4]]
                 if valid_until < today:
                     continue

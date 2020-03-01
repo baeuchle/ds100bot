@@ -35,17 +35,17 @@ parser.add_argument('--verbose', '-v',
                     action='count')
 args = parser.parse_args()
 
-if args.db == None:
+if args.db is None:
     if args.rw:
         args.db = 'readwrite'
     else:
         args.db = 'readonly'
-if args.api == None:
+if args.api is None:
     if args.rw:
         args.api = 'readwrite'
     else:
         args.api = 'readonly'
-if args.verbose == None:
+if args.verbose is None:
     args.verbose = 0
 
 # setup twitter API
@@ -56,7 +56,9 @@ git.notify_new_version(sql, twapi, args.verbose)
 
 highest_id = since.get_since_id(sql)
 
-tweet_list = twapi.all_relevant_tweets(highest_id, '#DS100')
+tagsearch, magic_tags = sql.magic_hashtags()
+
+tweet_list = twapi.all_relevant_tweets(highest_id, tagsearch)
 for id, tweet in tweet_list.items():
     if args.verbose > 1:
         print(tweet)
@@ -77,15 +79,15 @@ for id, tweet in tweet_list.items():
         react.process_commands(tweet, twapi, args.verbose)
     # Process this tweet
     mode = None
-    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
+    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
         mode = 'all'
-    react.process_tweet(tweet, twapi, sql, args.verbose, mode)
-    # Process quoted or replied-to tweets, only for explicit mentions and #DS100.
-    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag('DS100'):
+    react.process_tweet(tweet, twapi, sql, args.verbose, magic_tags, mode)
+    # Process quoted or replied-to tweets, only for explicit mentions and magic tags
+    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
-            if other_id != None and other_id not in tweet_list:
+            if (not other_id is None) and other_id not in tweet_list:
                 other_tweet = twapi.get_tweet(other_id)
-                if other_tweet == None:
+                if other_tweet is None:
                     continue
                 # don't process the other tweet if we should have seen it before (this
                 # also prevents recursion via this branch):
@@ -93,12 +95,16 @@ for id, tweet in tweet_list.items():
                     if args.verbose > 1:
                         print("Not processing other tweet because it already mentions me")
                         print("=================")
-                if other_tweet.has_hashtag('DS100'):
+                if other_tweet.has_hashtag(magic_tags):
                     if args.verbose > 1:
                         print("Not processing other tweet because it already has the magic hashtag")
                         print("=================")
                 else:
-                    react.process_tweet(other_tweet, twapi, sql, args.verbose, modus='all' if tweet.is_explicit_mention(twapi.myself) else None)
+                    react.process_tweet(other_tweet, twapi,
+                        sql, args.verbose, magic_tags,
+                        modus='all'
+                            if tweet.is_explicit_mention(twapi.myself)
+                            else None)
 
 git.store_version(sql)
 if tweet_list:
