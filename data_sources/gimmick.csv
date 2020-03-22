@@ -10,6 +10,7 @@ HILFE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\
 USAGE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finderegeln.html
 NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt
 NAZIS;Alle Raus! Die Benutzung dieses Bots ist Nazis untersagt
+FCKNZS;Nazis Raus! Die Benutzung dieses Bots ist Nazis untersagt
 TOS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.
 TERMS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. Nazis dürfen diesen Bot nicht benutzen.
 EULA;Durch die Benutzung entstehen auf Seiten des Bots und des Benutzers keine Verpflichtungen
@@ -47,3 +48,6 @@ BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werde
 POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Komatibel. Siehe #HELP.
 PEOPLE;Der echte Mensch hinter dem Bot ist @baeuchle. @fips_schneider hilft manchmal aus.
 ANTIGNOSE;Der Vorhersagealgorithmus für Verspätungen der Deutschen Bahn. *Pro*gnose kann man das nämlich nicht nennen.
+COVID19;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
+SARS_COV_2;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
+CORONA;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
