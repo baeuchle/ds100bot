@@ -76,7 +76,12 @@ for id, tweet in tweet_list.items():
     # handle #folgenbitte and #entfolgen and possibly other meta commands, but
     # only for explicit mentions.
     if tweet.is_explicit_mention(twapi.myself):
+        if args.verbose > 3:
+            print("Tweet explicitly mentions me")
         react.process_commands(tweet, twapi, args.verbose)
+    if tweet.has_hashtag(magic_tags):
+        if args.verbose > 3:
+            print("Tweet has magic hashtag")
     # Process this tweet
     mode = None
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
@@ -85,6 +90,10 @@ for id, tweet in tweet_list.items():
     # Process quoted or replied-to tweets, only for explicit mentions and magic tags
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
+            if (args.verbose > 2 and not other_id is None) or args.verbose > 3:
+                print("Looking for other tweet", other_id)
+                if other_id in tweet_list:
+                    print("...already in tweet_list")
             if (not other_id is None) and other_id not in tweet_list:
                 other_tweet = twapi.get_tweet(other_id)
                 if other_tweet is None:
@@ -100,11 +109,15 @@ for id, tweet in tweet_list.items():
                         print("Not processing other tweet because it already has the magic hashtag")
                         print("=================")
                 else:
+                    if args.verbose > 2:
+                        print("Processing tweet {} mode {}:".format(tweet.id, modus))
+                        print(tweet)
                     react.process_tweet(other_tweet, twapi,
                         sql, args.verbose, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
                             else None)
+    print("█"*80 + '\n')
 
 git.store_version(sql)
 if tweet_list:
