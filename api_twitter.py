@@ -30,10 +30,10 @@ class TwitterApi:
         if self.verbose > 1:
             lines = text.splitlines()
             length = max([len(l) for l in lines])
-            print("+{}+".format('-'*(length+2)))
+            print("▄{}┓".format('━'*(length+2)))
             for l in lines:
-                print(("| {{:{}}} |".format(length)).format(l))
-            print("+{}+".format('-'*(length+2)))
+                print(("█ {{:{}}} ┃".format(length)).format(l))
+            print("▀{}┛".format('━'*(length+2)))
         return 0
 
     def all_relevant_tweets(self, highest_id, tag):

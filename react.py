@@ -5,10 +5,6 @@ import sqlite3
 max_tweet_length = 280
 
 def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None):
-    if verbose > 2:
-        print("Processing tweet {} mode {}:".format(tweet.id, modus))
-        print(tweet)
-        print("+++++++++++++++++")
     reply_id = tweet.id
     twcounter = 1
     for reply in compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus):
@@ -25,11 +21,11 @@ def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None):
     if verbose > 2:
         if twcounter == 1:
             print("No expandable content found")
-        print("=================")
+        print("▀"*60)
 
 def process_commands(tweet, twapi, verbose):
     author = tweet.author()
-    if tweet.has_hashtag(('folgenbitte'), case_sensitive=False):
+    if tweet.has_hashtag(['folgenbitte'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if verbose > 0:
             print ("folgenbitte from @{}:".format(author.screen_name), end='')
@@ -39,7 +35,7 @@ def process_commands(tweet, twapi, verbose):
                 print (" not yet following")
         if not is_followed:
             twapi.follow(author)
-    if tweet.has_hashtag(('entfolgen'), case_sensitive=False):
+    if tweet.has_hashtag(['entfolgen'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if verbose > 0:
             print ("entfolgen from @{}:".format(author.screen_name), end='')
@@ -181,7 +177,7 @@ def compose_answer(tweet, sql, verbose, magic_tags, modus):
       tweetpart = tweet[mt[1][1]:nextmt[1][0]]
       tag = mt[0]
       tagsource = find_source(sql, tag)
-      if verbose > 1:
+      if verbose > 4:
         print("Part: '{}' mt '{}'".format(tweetpart, tag))
       for match in find_tokens(tweetpart, modus, tag):
         sigil = match[0] if not match[0] == "" else '#'

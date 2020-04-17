@@ -1,0 +1,631 @@
+Abk;Name;UIC
+A;Augsburg Hbf;8000013
+AA;Aalen;8000002
+AB;Aschaffenburg Hbf;8000010
+ABG;Altenburg;8010003
+AC;Aachen Hbf;8000001
+ACGR;Aachen Süd(Gr);8000403
+ADE;Adelebsen;8000418
+ADO;Adorf(Vogtl);8010001
+ALT;Altenbeken;8000004
+AN;Ansbach;8000009
+AND;Andernach;8000331
+ANG;Angermünde;8010004
+APO;Apolda;8011051
+ARD;Arnsdorf(Dresden);8010006
+ARN;Arnstadt Hbf;8010007
+ASCH;Ascheberg(Holst);8000011
+ASL;Aschersleben;8010009
+AU;Aue(Sachs);8010010
+AUL;Aulendorf;8000014
+AUS;Au(Sieg);8000012
+AZ;Alzey;8000007
+B;BERLIN = (innerhalb Ring + Lichtenberg);8096003
+BA;Bamberg;8000025
+BAAL;Baalberge;8010013
+BAB;Babenhausen(Hess);8000015
+BACK;Backnang;8000016
+BAD;Baden-Baden;8000774
+BALI;Bad Liebenwerda;8011078
+BAS;Basel Bad Bf;8000026
+BB;Böblingen;8001055
+BBG;Bernburg;8010043
+BCH;Berlin-Eichkamp;8089328
+BEB;Bebra;8000029
+BED;Bedburg(Erft);8000030
+BEGR;Bad Bentheim;8000879
+BELZ;Belzig;8010031
+BENS;Bensheim;8000031
+BER;Bernau(b Berlin);8013470
+BETZ;Betzdorf(Sieg);8000034
+BF;Burgsteinfurt;8000062
+BHV;Bremerhaven Hbf;8000051
+BI;Bielefeld Hbf;8000036
+BIET;Bietigheim-Bissingen;8000038
+BILL;Billerbeck;8000970
+BIN;Bingen(Rhein) Hbf;8000039
+BIW;Bischofswerda;8010049
+BIZ;Biederitz;8010047
+BKH;Berlin-Karlshorst;8010035
+BKL;Bad Kleinen;8010018
+BLAM;Blankenberg(Meckl);8010051
+BLF;Blankenf(Teltow-Fl);8010053
+BLG;Bad Blankenburg(Th);8010014
+BLH;Blankenheim(Sangerh);8010054
+BLI;Berlin-Lichtenberg;8010036
+BLUM;Blumenberg;8010056
+BN;Bonn Hbf;8000044
+BNG;Burg-u.Ndr Gemünden;8000061
+BO;Bochum Hbf;8000041
+BOB;Berlin Ostbahnhof;8010255
+BOH;Bocholt;8000040
+BOP;Boppard;8000045
+BOR;Borken(Westf);8000346
+BORS;Borsdorf(Sachs);8010059
+BOT;Bottrop Hbf;8000047
+BR;Bruchsal;8000055
+BRAC;Brackwede;8000048
+BRB;Brandenburg Hbf;8010060
+BRE;Bretleben;8010061
+BRI;Brilon Wald;8000054
+BRIT;Britz;8010064
+BRT;Bretten;8000053
+BS;Braunschweig Hbf;8000049
+BSFL;Berlin-Schönef.Flug;8010109
+BSP;Berhin-Spandau;8010404
+BST;Ballenstedt Ost;8013441
+BSU;Bad Schandau;8010022
+BT;Bayreuth Hbf;8000028
+BTF;Bitterfeld;8010050
+BUCH;Buchholz(Nordheide);8000056
+BUE;Büchen;8000058
+BUEN;Bünde(Westf);8000059
+BUEZ;Bützow;8010066
+BULO;Buchloe;8000057
+BUNA;Buna Werke;8013473
+BUT;Buttstädt;8011304
+BWA;Berlin Warschauer St;8089045
+BY;Barby;8010024
+BZ;Bautzen;8010026
+BZG;Berlin Zoolg. Garten;8010406
+C;Chemnitz Hbf;8010184
+CA;Calau(NL);8010069
+CALO;Calbe(Saale) Ost;8010070
+CALW;Calbe(Saale) West;8010071
+CAMB;Camburg(Saale);8013474
+CB;Cottbus;8010073
+CE;Celle;8000064
+COE;Coesfeld(Westf);8000066
+COEL;Cölbe;8000065
+COS;Coswig(Anh);8011322
+COSD;Coswig(Dresden) = Coswig od Neucoswig;8010072
+CR;Crailsheim;8000067
+CW;Calw;8000063
+D;Düsseldorf Hbf;8000085
+DA;Darmstadt Hbf;8000068
+DBN;Bad Düben(Mulde);8011070
+DD;Dresden Hbf;8010085
+DDN;Dresden-Neustadt;8010089
+DE;Dessau Hbf;8010077
+DEL;Delmenhorst;8000070
+DERN;Derneburg(Han);8000071
+DIL;Dillenburg;8000074
+DILL;Dillingen(Saar);8000075
+DL;Döbeln Hbf;8010080
+DN;Düren;8000084
+DO;Dortmund Hbf;8000080
+DOD;Dortmund-Dorstfeld;8000081
+DOKI;Doberlug-Kirchhain;8010079
+DON;Donauwörth;8000078
+DS;Donaueschingen;8000077
+DU;Duisburg Hbf;8000086
+DUEL;Dülmen;8000083
+DZ;DELITZSCH;8096001
+E;Essen Hbf;8000098
+EB;Eilenburg;8010095
+EBB;Eberbach;8000369
+EF;Erfurt Hbf;8010101
+EGE;Egeln;8011454
+EGID;St Egidien;8010331
+EICH;Eichenberg;8000090
+EIL;Lutherstadt Eisleben;8012279
+EILS;Eilsleben(Magdeb);8010096
+ELMS;Elmshorn;8000092
+ELW;Elsterwerda;8010099
+ELXL;Elxleben;8011489
+ELZE;Elze(Han);8000093
+EMM;Emmerich;8001773
+ENG;Engers;8000094
+ER;Erlangen;8001844
+ESA;Eisenach;8010097
+ESW;Eschwege West;8000097
+EU;Euskirchen;8000100
+EUTG;Eutingen im Gäu;8000101
+EW;Eberswalde Hbf;8010093
+F;Frankfurt(Main)Hbf;8000105
+FB;Friedberg(Hess);8000111
+FBE;Falkenberg(Elster);8010103
+FD;Fulda;8000115
+FDS;Freudenstadt Hbf;8000110
+FF;Frankfurt(Oder);8010113
+FFMF;Frankfurt(M)Flughafen;8000281
+FFMN;Frankfurt-Niederrad;8002050
+FFMS;Frankfurt(Main)Süd;8002041
+FG;Freiberg(Sachs);8010115
+FH;Frankfurt-Höchst;8000106
+FIN;Finnentrop;8000102
+FIW;Finsterwalde(Nl);8011542
+FKB;Frankenberg(Eder);8000104
+FL;Flensburg;8000103
+FLOE;Flöha;8010108
+FN;Friedrichshafen St.;8000112
+FOER;Förderstedt;8011549
+FOR;Forst(Lausitz);8010111
+FR;Freiburg(Brsg)Hbf;8000107
+FREI;Freilassing;8000108
+FRIJ;Bad Friedrichshall-J;8000017
+FROE;Fröndenberg;8000113
+FROS;Frose;8010119
+FRT;Frankenthal Hbf;8000332
+FRW;Bad Freienwalde;8010017
+FUB;Fürstenberg(Havel);8010399
+FUE;Fürth(Bay)Hbf;8000114
+FUGR;Furth i Wald;8002159
+FW;Fürstenwalde(Spree);8010120
+G;Gera Hbf;8010125
+GAP;Garmisch-Partenk.;8002187
+GC;Glauchau(Sachs);8010129
+GE;Gelsenkirchen Hbf;8000118
+GEES;Geestgottberg;8010121
+GELN;Gelnhausen;8000117
+GELT;Geltendorf;8000119
+GEM;Gemünden(Main);8000120
+GER;Germersheim;8000376
+GERO;Gerolstein;8000123
+GERS;Gerstungen;8011629
+GF;Gifhorn;8000185
+GG;Groß Gerau;8000136
+GHA;Geithain;8010122
+GHCB;Großenhain Cottb Bf = Großenhain;8011749
+GHW;Gensingen-Horrweiler;8000121
+GI;Gießen;8000124
+GLA;Gladbeck West;8000125
+GNT;Genthin;8010123
+GODE;Goddelau-Erfelden;8000126
+GOE;Göttingen;8000128
+GOES;Gößnitz;8010134
+GOLM;Golm;8013481
+GP;Göppingen;8000127
+GR;Görlitz;8010131
+GRAB;Graben-Neudorf;8000131
+GRAG;Grambow;8011689
+GRB;Großbothen;8010144
+GRD;Gernrode(Harz);8010127
+GREV;Grevenbroich;8000133
+GRIM;Grimmenthal;8010142
+GRK;Großkorbetha;8010146
+GRS;Gransee;8011691
+GRSS;Großschönau(Sachs);8011761
+GRUE;Grünstadt;8000137
+GRUI;Gruiten;8000138
+GRUN;Grunow(Nl);8010150
+GRZ;Greiz;8010140
+GS;Goslar;8000130
+GSN;Güsen(b Genthin);8010151
+GTH;Gotha;8010136
+GUE;Güstrow;8010153
+GUET;Güterglück;8010154
+GUNT;Guntershausen;8000140
+GUS;Güsten;8010152
+GUT;Gutenfürst;8011790
+GWZ;Göschwitz(Saale);8010133
+GZ;Günzburg;8000139
+H;Hannover Hbf;8000152
+HA;Hagen Hbf;8000142
+HAG;Hagenwerder;8011799
+HAGL;Hagenow Land;8010156
+HAL;Halle(Saale)Hbf;8010159
+HALA;Halle-Ammendorf;8010162
+HALN;Halle-Neustadt;8010160
+HALT;Haltern(Westf);8000145
+HAM;Hamm(Westf);8000149
+HAR;Hamburg-Harburg;8000147
+HARZ;Bad Harzburg;8000019
+HAST;Haste;8002634
+HAUS;Hausach;8000333
+HB;Bremen Hbf;8000050
+HBO;Hohenbocka;8010171
+HBS;Halberstadt;8010157
+HD;Heidelberg Hbf;8000156
+HDL;Haldensleben;8010158
+HDO;Holzdorf(Elster);8011909
+HE;Helmstedt;8000159
+HEBO;Herborn(Dillkr);8000161
+HEI;Heide(Holst);8000155
+HENN;Hennigsdorf(Berlin);8013483
+HER;Herne;8000164
+HERB;Herbertingen;8000160
+HERL;Herlasgrün;8010166
+HERP;Hersbruck(r Pegnitz);8002794
+HERS;Bad Hersfeld;8000020
+HERV;Hervest-Dorsten;8000165
+HESE;Hesepe;8000167
+HETT;Hettstedt;8010168
+HF;Herford;8000162
+HH;HAMBURG;8096009
+HHH;Hamburg Hbf;8002549
+HI;Hildesheim Hbf;8000169
+HL;Lübeck Hbf;8000237
+HM;Hameln;8000148
+HML;HannoverMesseLaatzen;8003487
+HN;Heilbronn Hbf;8000157
+HNB;Herrnburg;8011864
+HO;Hof Hbf;8002924
+HOCK;Hockeroda;8010170
+HOE;Höchst(Odenw);8000172
+HOLT;Holthusen;8010173
+HOLZ;Holzminden;8000391
+HOM;Homburg(Saar)Hbf;8000176
+HOR;Horb;8000177
+HORK;Horka;8010174
+HORR;Horrem;8000178
+HOSP;Hochspeyer;8002875
+HRB;Herrenberg;8002785
+HRO;Rostock Hbf;8010304
+HST;Stralsund;8010338
+HU;Hanau Hbf;8000150
+HUS;Husum;8000181
+HWIN;Heldenbergen-Wind.;8000158
+HY;Hoyerswerda;8010177
+HZ;Herzberg(Harz);8000166
+IGGR;Igel = Igel(Gr);8003042
+IMM;Immendingen;8000182
+IN;Ingolstadt Hbf;8000183
+IS;Iserlohn;8000186
+IZ;Itzehoe;8003102
+JB;Jüterbog;8010182
+JE;Jessen(Elster);8011960
+JS;JENA;8096004
+JUEB;Jübek;8000334
+K;Köln Hbf;8000207
+KA;Karlsruhe Hbf;8000191
+KALD;Kaldenkirchen;8000190
+KAM;Kamen;8003168
+KAMZ;Kamenz(Sachs);8011988
+KARO;Karow(Meckl);8010188
+KAUF;Kaufering;8000195
+KB;Korbach;8000210
+KBR;Königsbrück;8012067
+KE;Kempten(Allgäu)Hbf;8000197
+KEGR;Kehl(Gr);8000008
+KEHL;Kehl;8003218
+KEHR;Köln-Ehrenfeld;8000208
+KF;Kaufbeuren;8000194
+KH;Bad Kreuznach;8000021
+KI;Kiel Hbf;8000199
+KL;Kaiserslautern Hbf;8000189
+KLB;Kirchenlaibach;8000201
+KLE;Kleve;8000205
+KLG;Kißlegg;8000203
+KNR;Knappenrode;8010192
+KO;Koblenz Hbf;8000206
+KOET;Köthen;8010195
+KON;Könnern;8010194
+KR;Krefeld Hbf;8000211
+KREI;Kreiensen;8000213
+KREU;Kreuztal;8000214
+KS;Kassel-Wilhelmshöhe;8003200
+KTW;Kettwig;8000198
+KUF;Kufstein;8003475
+KW;Königs Wusterhausen;8010193
+L;LEIPZIG;8096008
+LA;Landshut(Bay)Hbf;8000217
+LAA;Laage(Meckl);8012143
+LAGE;Lage(Lippe);8000215
+LAHA;Langhagen;8010201
+LANG;Langmeil(Pfalz);8000219
+LAUD;Lauda;8000221
+LAUT;Lauterbach(Hess)Nord;8000222
+LAWL;Langwedel;8000586
+LB;Ludwigsburg;8000235
+LBB;Lübbenau(Spreew);8010220
+LBG;Langenberg(Rheinl);8003529
+LCH;Laucha(Unstrut);8012167
+LD;Landau(Pfalz)Hbf;8000216
+LEES;Leese-Stolzenau;8000335
+LEHR;Lehrte;8000226
+LEIF;Leinefelde;8010203
+LER;Leer(Ostfriesl);8000225
+LETM;Letmathe;8000227
+LEUT;Leutkirch;8000336
+LEVM;Leverkusen Mitte;8006713
+LG;Lüneburg;8000238
+LI;Lindau Hbf;8000230
+LIF;Lichtenfels;8000228
+LLEU;Leipzig-Leutzsch;8010207
+LM;Limburg(Lahn);8000229
+LN;Lübben(Spreewald);8010217
+LOEB;Löbau(Sachs);8010212
+LOEH;Löhne(Westf);8000233
+LOH;Lohmen;8012249
+LOLL;Lollar;8000234
+LOW;Löwenberg(Mark);8010214
+LPLA;Leipzig-Plagwitz;8010209
+LSZ;Bad Langensalza;8010020
+LU;Ludwigshafen(Rh)Hbf;8000236
+LUEN;Lünen Hbf;8000239
+LUF;Ludwigsfelde;8010215
+LWL;Ludwigslust;8010216
+M;München Hbf;8000261
+MA;Mannheim Hbf;8000244
+MAK;Marktredwitz;8000247
+MALS;Malsfeld;8000243
+MARG;Markkleeberg;8012308
+MCK;Mühlacker;8000339
+MD;Magdeburg Hbf;8010224
+MDHK;Magdeburg Herrenkrug;8013455
+MDR;Magdeburg-Rothensee;8010086
+MEHL;Mehltheuer;8010229
+MEI;Meißen;8012326
+MELL;Mellingen(Thür);8012332
+MER;Merseburg;8010232
+MET;Mellrichstadt Bf;8003959
+MG;Mönchengladbach Hbf;8000253
+MH;Mülheim(Ruhr)Hbf;8000259
+MI;Minden(Westf);8000252
+MIDO;Michendorf;8010233
+MIL;Miltenberg;8000640
+MIN;Mindelheim;8000338
+MIW;Mittweida;8012369
+MM;Memmingen;8000249
+MOST;München Ost;8000262
+MPAS;München-Pasing;8004158
+MR;Marburg(Lahn);8000337
+MS;Münster(Westf)Hbf;8000263
+MUE;Mühldorf(Oberbay);8000258
+MY;Mayen Ost = MAYEN;8000248
+MZ;Mainz Hbf;8000240
+MZBI;Mainz-Bischofsheim;8000241
+N;Nürnberg Hbf;8000284
+NAU;Nauen;8010239
+NB;Neubrandenburg;8010241
+NDD;Neudietendorf;8010242
+NDF;Narsdorf;8010238
+NDH;Nordhausen;8010256
+NE;Neuss Hbf;8000274
+NEA;Neustadt(Aisch)Bahnh;8004323
+NECK;Neckarelz;8000264
+NENN;Bad Nenndorf;8000022
+NEUD;Neustadt(Dosse);8010248
+NEUF;Neufahrn(Niederbay);8000688
+NEUK;Neukieritzsch;8010243
+NEUS;Neustadt(Sachs);8010249
+NEUZ;Neuzelle;8012479
+NGM;Neckargemünd;8000265
+NI;Nienburg(Weser);8000279
+NIDD;Nidda;8000277
+NILA;Niederlahnstein;8000278
+NK;Neunkirchen(Saar)Hbf;8000272
+NKN;Neukirchen(b Sulzb);8000269
+NMB;Naumburg(Saale)Hbf;8010240
+NMK;Neumark(Sachs);8010244
+NMS;Neumünster;8000271
+NMV;Neumarkt-St Veit;8000720
+NMW;Neuenmarkt-Wirsberg;8000267
+NOE;Nördlingen;8000280
+NOEL;Neuoelsnitz;8010245
+NOM;Northeim(Han);8000283
+NP;Neuruppin;8010246
+NR;Neuwied;8000276
+NST;Nordstemmen;8000282
+NW;Neustadt(Weinstr)Hbf;8000275
+NWAL;Niederwalgern;8004417
+NZ;Neustrelitz Hbf;8010250
+OB;Oberhausen Hbf;8000286
+OBRO;Rödermark-Ob.Roden;8000285
+OD;Bad Oldesloe;8000023
+OEB;Oebisfelde;8010261
+OERL;Oerlinghausen;8004630
+OF;Offenbach(Main)Hbf;8000349
+OG;Offenburg;8000290
+OHA;Osterode(Harz);8004704
+OKZ;Oberkotzau;8000287
+OL;Oldenburg(Oldb);8000291
+OLD;Oldenburg(Holst);8004669
+OO;Oberoderwitz;8010259
+ORTR;Ortrand;8012565
+OS;Osnabrück Hbf;8000294
+OST;Osterburken;8000295
+P;Potsdam Hauptbahnhof = Potsdam Stadt;8012666
+PA;Passau Hbf;8000298
+PB;Paderborn Hbf;8000297
+PEG;Pegnitz;8004759
+PEGA;Pegau;8010269
+PEI;Peitz;8012620
+PEN;Penig;8013488
+PF;Pforzheim Hbf;8000299
+PIR;Pirna;8010272
+PL;PLAUEN;8096005
+PLAT;Plattling;8000301
+PLO;Plochingen;8000302
+PLTH;Plaue(Thür);8010274
+PPIR;Potsdam Pirschheide;8010279
+PRIB;Priemerburg;8010284
+PRIE;Priestewitz;8010285
+PRO;Probstzella;8010288
+PRWK;Pritzwalk;8010287
+PS;Pirmasens Nord;8000876
+PULS;Pulsnitz;8012685
+PUMS;Puttgarden(MS);8000079
+PUTT;Puttgarden;8004903
+PW;Pasewalk;8010268
+PZ;Prenzlau;8010282
+QFT;Querfurt;8010291
+QLB;Quedlinburg;8010290
+R;Regensburg Hbf;8000309
+RA;Rastatt;8000306
+RCOL;Reichenbach(Ol);8012738
+RD;Rendsburg;8000312
+RDW;Radebeul West;8010293
+RE;Recklinghausen Hbf;8000307
+REM;Remagen;8000310
+RENN;Renningen;8000313
+RHED;Rheda-Wiedenbrück;8000315
+RHEI;Rheine;8000316
+RHH;Rheinhausen;8000317
+RIE;Riesa;8010297
+RL;Rochlitz(Sachs);8010298
+RN;Rathenow;8010296
+RO;Rosenheim;8000320
+ROBL;Röblingen am See;8010299
+ROHR;Rohrbach(Saar);8000319
+RONN;Ronneburg(Thür);8010301
+ROTT;Rottenbach;8010305
+ROW;Rotenburg(Wümme);8000321
+RS;Remscheid Hbf;8005033
+RSL;Roßlau(Elbe);8010302
+RSW;Roßwein;8010303
+RT;Reutlingen Hbf;8000314
+RU;Rudolstadt(Thür);8010306
+RUHL;Ruhland;8010308
+RW;Rottweil;8000322
+RY;Rheydt Hbf;8000318
+S;Stuttgart Hbf;8000096
+SAD;Schwandorf;8000027
+SALZ;Salzburg Hbf;8005263
+SAW;Salzwedel;8010310
+SB;Saarbrücken Hbf;8000323
+SBG;Strasburg(Uckerm);8010339
+SBK;Schönebeck(Elbe);8010318
+SCHG;Schöna(Gr);8010316
+SCHH;Schaffhausen;8000024
+SCHM;Schwelm;8000033
+SCHW;Schwerte(Ruhr);8000037
+SDH;Sondershausen;8010329
+SDL;Stendal;8010334
+SECK;Seckach;8000042
+SEES;Seesen;8000043
+SFB;Senftenberg;8010327
+SFT;Staßfurt;8010332
+SG;Solingen-Ohligs;8000087
+SGH;Sangerhausen;8010312
+SGM;Schwäbisch Gmünd;8000329
+SHA;Schwäb.Hall-Hessent;8000330
+SHL;Suhl;8010345
+SHS;Schönhausen(Elbe);8010321
+SI;Siegen;8000046
+SIF;Schifferstadt;8000326
+SIG;Sigmaringen;8000069
+SIHA;Siershahn;8000060
+SIMB;Simbach(Inn);8000072
+SIN;Singen(Hohentwiel);8000073
+SINS;Sinsheim(Elsenz);8005578
+SLB;Sandersleben(Anh);8010311
+SLF;Saalfeld(Saale);8010309
+SLN;Schmölln(Thür);8012889
+SLZ;Bad Salzungen;8010021
+SM;Schmalkalden;8010315
+SN;Schwerin Hbf;8010324
+SO;Soest;8000076
+SOEM;Sömmerda;8010328
+SOL;Soltau(Han);8000088
+SON;Sonneberg(Thür)Hbf;8013008
+SPB;Spremberg;8010330
+SR;Straubing;8000095
+SSW;Seelingst(Werdau);8012971
+STD;Stade;8000089
+STEI;Steinach(b Rothenb);8000091
+STF;Straußfurt;8010342
+STHM;Stockheim(Oberhess);8000347
+STLB;Stollberg(Sachs);8010337
+STOL;Stolpen;8013057
+SUL;Sulingen(Han);8000109
+SW;Schweinfurt Hbf;8000032
+SWAA;Schwaan;8010322
+SWB;Schwarzenberg(Erzg);8010323
+SZRI;Salzgitter-Ringelh.;8000325
+TANG;Tantow(Gr);8010346
+TBZ;Treuenbrietzen;8013145
+TEU;Teuchern;8010349
+THEM;Themar;8010350
+THH;Thalheim(Erzgeb);8013113
+TP;Templin;8010347
+TR;Trier Hbf;8000134
+TREU;Treuchtlingen;8000122
+TREY;Treysa;8000129
+TRIP;Triptis;8010352
+TROI;Troisdorf;8000135
+TS;Traunstein;8000116
+TUE;Tübingen Hbf;8000141
+TUEH;Türkheim(Bay)Bf;8000144
+TUEM;Türkismühle;8000154
+TUT;Tuttlingen;8000163
+UCKR;Luckau-Uckro;8010353
+UE;Uelzen;8000168
+UL;Ulm Hbf;8000170
+UN;Unna;8000171
+VIBG;Vitzenburg;8010356
+VIE;Viersen;8000174
+VIEN;Vienenburg;8000364
+VK;Völklingen;8000175
+VS;Villingen(Schwarzw);8000366
+W;Wuppertal Hbf;8000266
+WAB;Wabern(Bz Kassel);8000368
+WAF;Warendorf;8006206
+WAL;Wallau(Lahn);8000187
+WALK;Walkenried;8006172
+WAN;Wanne-Eickel Hbf;8000192
+WAR;Warburg(Westf);8000196
+WB;Lutherst Wittenberg;8010222
+WBE;Wittenberge;8010382
+WBG;Wiesenburg(Mark);8010376
+WBR;Wüstenbrand;8010388
+WDA;Werdau;8010372
+WDH;Waldheim;8010359
+WE;Weimar;8010366
+WEB;Westerburg;8000245
+WEBG;Wechselburg;8010363
+WEET;Weetzen;8000342
+WEID;Weida;8010365
+WEIL;Weil der Stadt;8006271
+WEL;Weilburg;8000218
+WELI;Weischlitz;8010367
+WEN;Weiden(Oberpf);8000204
+WERH;Werder(Havel);8010373
+WERN;Werneuchen;8013285
+WERT;Wertheim;8000231
+WES;Wesel;8000242
+WEST;Westerland(Sylt);8006369
+WETZ;Wetzlar;8000383
+WF;Wolfenbüttel;8000255
+WHSN;Wernshausen;8010375
+WI;Wiesbaden Hbf;8000250
+WIBI;Wiesbaden-Biebrich;8000288
+WIT;Witten Hbf;8000251
+WITT;Wittingen;8000344
+WK;Wittstock(Dosse);8010384
+WM;Weilheim(Oberbay);8000220
+WN;Waiblingen;8000180
+WO;Worms Hbf;8000257
+WOB;Wolfsburg;8006552
+WOE;Wörth(Rhein);8000254
+WRN;Waren(Müritz);8010361
+WSF;Weißenfels;8010368
+WTH;Wilthen;8010380
+WTU;Wethau;8013296
+WUE;Würzburg Hbf;8000260
+WUED;Wünschendorf;8010387
+WUM;Wustermark;8010389
+WUN;Wunsiedel-Holenbrunn;8000173
+WUNS;Wunstorf;8000268
+WW;Weißwasser(Ol);8010370
+WZB;Wolnzach Bahnhof;8000256
+WZN;Wriezen;8010386
+Z;Zwickau(Sachs)Hbf;8010397
+ZBG;Zörbig;8013417
+ZE;Zerbst;8013389
+ZEUL;Zeulenroda unt Bf;8013396
+ZI;Zittau;8010393
+ZME;Zella-Mehlis;8010391
+ZS;Zossen;8010395
+ZZ;Zeitz;8010390
