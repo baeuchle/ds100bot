@@ -70,12 +70,12 @@ class Tweet:
         """
         lowlist = [tag.lower() for tag in tag_list]
         alllower = ('case_sensitive' in kwargs and not kwargs['case_sensitive'])
+        print(tag_list, [ht['text'] for ht in self.original.entities['hashtags']])
         for ht in self.original.entities['hashtags']:
             lowht = ht['text'].lower()
-            if (
-                (alllower and lowht in lowlist)
-                or ht['text'] in tag_list
-               ):
+            if alllower and lowht in lowlist or '#' + lowht in lowlist:
+                return True
+            if ht['text'] in tag_list or '#' + ht['text'] in taglist:
                 return True
         return False
 
