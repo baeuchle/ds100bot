@@ -100,11 +100,15 @@ for id, tweet in tweet_list.items():
                         print("Not processing other tweet because it already has the magic hashtag")
                         print("=================")
                 else:
+                    if args.verbose > 2:
+                        print("Processing tweet {} mode {}:".format(tweet.id, modus))
+                        print(tweet)
                     react.process_tweet(other_tweet, twapi,
                         sql, args.verbose, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
                             else None)
+    print("█"*80 + '\n')
 
 git.store_version(sql)
 if tweet_list:
