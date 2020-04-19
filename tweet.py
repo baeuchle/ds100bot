@@ -74,7 +74,7 @@ class Tweet:
             lowht = ht['text'].lower()
             if alllower and lowht in lowlist or '#' + lowht in lowlist:
                 return True
-            if ht['text'] in tag_list or '#' + ht['text'] in taglist:
+            if ht['text'] in tag_list or '#' + ht['text'] in tag_list:
                 return True
         return False
 
