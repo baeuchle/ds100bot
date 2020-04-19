@@ -110,14 +110,15 @@ for id, tweet in tweet_list.items():
                         print("=================")
                 else:
                     if args.verbose > 2:
-                        print("Processing tweet {} mode {}:".format(tweet.id, modus))
+                        print("Processing tweet {} mode 'all':".format(tweet.id))
                         print(tweet)
                     react.process_tweet(other_tweet, twapi,
                         sql, args.verbose, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
                             else None)
-    print("█"*80 + '\n')
+    if args.verbose > 3:
+        print("█"*80 + '\n')
 
 git.store_version(sql)
 if tweet_list:
