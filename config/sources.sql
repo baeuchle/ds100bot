@@ -19,4 +19,5 @@ INSERT INTO sources VALUES('vgfstrecken','Abk','Weg',NULL,NULL,1,';',NULL);
 INSERT INTO sources VALUES('benannte_strecken','Abk','Beschreibung','Nummer',NULL,1,';',NULL);
 INSERT INTO sources VALUES('db640','Abk','Name',NULL,NULL,1,';',NULL);
 INSERT INTO sources VALUES('leitpunkte','Abk','Name',NULL,NULL,0,';',NULL);
+INSERT INTO sources VALUES('banenor','Fork','Navn','Strekninger',NULL,1,';',NULL);
 COMMIT;
