@@ -117,7 +117,8 @@ for id, tweet in tweet_list.items():
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
                             else None)
-    print("█"*80 + '\n')
+    if args.verbose > 3:
+        print("█"*80 + '\n')
 
 git.store_version(sql)
 if tweet_list:
