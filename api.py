@@ -35,6 +35,8 @@ class ReadWriteApi(TwitterApi):
             warn_rate_error(rateerror, "tweeting")
             return 0
         except tweepy.TweepError as twerror:
+            if twerror.api_code == 187: # duplicate tweet
+                return 0
             print("Error {} tweeting: {}".format(twerror.api_code, twerror.reason))
             return -1
 
