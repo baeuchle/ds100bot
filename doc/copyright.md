@@ -129,6 +129,19 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#NOR</th>
+   <td>Betriebsstellen des norwegischen Eisenbahnnetzes</td>
+   <td><a href="https://www.banenor.no/kundeportal/ruter-og-sportilgang/grafiske-togruter1/">Grafische Fahrpläne</a> (Stand 2020)</td>
+   <td>Gemeinfrei</td>
+   <td>Selbst abgetippt</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/banenor.html">banenor</a>
+   </td>
+   <td>
+    #_NSB
+   </td>
+  </tr>
+  <tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
