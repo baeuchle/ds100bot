@@ -8,9 +8,10 @@ from tweet_mock import *
 class MockApi(TwitterApi):
     def __init__(self, verbose):
         self.verbose = verbose + 1
-        self.running_id = 108
-        self.myself = User(id='@_ds_100', screen_name='_ds_100')
+        self.running_id = 10001
+        self.myself = User.theBot
         self.mock = mocked_tweets(verbose)
+        self.replies = {}
         if self.verbose > 0:
             print('Running from Mock API (faked tweets)')
 
@@ -22,6 +23,15 @@ class MockApi(TwitterApi):
 
     def tweet(self, text, **kwargs):
         super().tweet(text, **kwargs)
+        if 'in_reply_to_status_id' in kwargs:
+            reply_id = kwargs['in_reply_to_status_id']
+            # don't track thread answers:
+            if reply_id != self.running_id:
+                if reply_id in self.replies:
+                    print("Tweet {} was replied to twice!")
+                    self.double_replies.append(reply_id)
+                else:
+                    self.replies[reply_id] = text
         self.running_id += 1
         return self.running_id
 
@@ -35,20 +45,59 @@ class MockApi(TwitterApi):
         return mention_list
 
     def timeline(self, highest_id):
-        timeline_list = []
-        for t in self.mock:
-            if 'in_timeline' in t.original.raw and t.original.raw['in_timeline']:
-                timeline_list.append(t)
-        return timeline_list
+        return [t for t in self.mock if t.author().follows]
 
     def hashtag(self, q, highest_id):
-        hashtag_list = []
-        for t in self.mock:
-            for ht in t.original.raw['entities']['hashtags']:
-                if ht['text'] == 'DS100':
-                    hashtag_list.append(t)
-                    break
-        return hashtag_list
+        return [t for t in self.mock if t.has_hashtag(q)]
 
     def is_followed(self, user):
-        return True
+        return user.follows
+
+    def follow(self, user):
+        super().follow(user)
+        user.follows = True
+
+    def defollow(self, user):
+        super().defollow(user)
+        user.follows = False
+
+    def statistics(self):
+        all_ok = 0
+        wrongs = 0
+        badrpl = 0
+        print("━"*120)
+        print("    RESULTS")
+        for t in self.mock:
+            print("Tweet", t.id, end=' ')
+            was_replied_to = t.id in self.replies
+            if t.original.expected_answer is None:
+                if was_replied_to:
+                    print("falsely answered")
+                    wrongs += 1
+                else:
+                    all_ok += 1
+                    print("correcly unanswered")
+                continue
+            # expected answer is not None:
+            if not was_replied_to:
+                wrongs += 1
+                print("falsely unanswered")
+                continue
+            # correctly answered: is it the correct answer?
+            if t.original.expected_answer == self.replies[t.id]:
+                all_ok += 1
+                print("correctly answered with correct answer")
+                continue
+            badrpl += 1
+            print("correctly answered, but with wrong answer")
+        print()
+        print("ALL GOOD:               ", all_ok)
+        print("INCORRECT TEXT:         ", badrpl)
+        print("WRONG ANSWER/NOT ANSWER:", wrongs)
+        for l in User.followers, User.nonfollowers:
+            for u in l:
+                print("User @{}".format(u.screen_name), end=' ')
+                if u.follows == u.follow_after:
+                    print("has correct following behaviour {}".format(u.follows))
+                else:
+                    print("doesn't follow correctly (should {}, does {})".format(u.follow_after, u.follows))
