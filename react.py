@@ -4,10 +4,10 @@ import sqlite3
 
 max_tweet_length = 280
 
-def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None):
+def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None, default_magic_tag='DS100'):
     reply_id = tweet.id
     twcounter = 1
-    for reply in compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus):
+    for reply in compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus, default_magic_tag):
         if verbose > 1:
             print("I tweet {} ({} chars):".format(twcounter, len(reply)))
             print(reply)
@@ -155,10 +155,10 @@ def find_source(sql, tag):
         return tag
     return row['abbr']
 
-def process_magic(magic_tags, length):
+def process_magic(magic_tags, length, default='DS100'):
     if len(magic_tags) == 0:
         # no magic tag: Only magic is in DS100.
-        magic_tags = [['DS100', [0, 0]]]
+        magic_tags = [[default, [0, 0]]]
     else:
         # the first magic tag is valid from the beginning, no matter
         # where it is!
@@ -166,13 +166,13 @@ def process_magic(magic_tags, length):
     magic_tags.append(['__', [length, length]])
     return magic_tags
 
-def compose_answer(tweet, sql, verbose, magic_tags, modus):
+def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS100'):
     all_answers = []
     short_list = []
     # generate answer
     charcount = 0
     generated_content = ""
-    magic_tags = process_magic(magic_tags, len(tweet))
+    magic_tags = process_magic(magic_tags, len(tweet), default_magic_tag)
     for mt, nextmt in zip(magic_tags[:-1], magic_tags[1:]):
       tweetpart = tweet[mt[1][1]:nextmt[1][0]]
       tag = mt[0]

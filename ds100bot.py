@@ -118,7 +118,9 @@ for id, tweet in tweet_list.items():
                         sql, args.verbose, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
-                            else None)
+                            else None,
+                        default_magic_tag=[t[0] for t in tweet.hashtags(magic_tags)][0]
+                    )
     if args.verbose > 3:
         print("█"*80 + '\n')
 
