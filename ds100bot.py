@@ -57,6 +57,8 @@ git.notify_new_version(sql, twapi, args.verbose)
 highest_id = since.get_since_id(sql)
 
 tagsearch, magic_tags = sql.magic_hashtags()
+if args.verbose > 1:
+    print("Magic tags:", magic_tags)
 
 tweet_list = twapi.all_relevant_tweets(highest_id, tagsearch)
 for id, tweet in tweet_list.items():
@@ -116,12 +118,16 @@ for id, tweet in tweet_list.items():
                         sql, args.verbose, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
-                            else None)
+                            else None,
+                        default_magic_tag=[t[0] for t in tweet.hashtags(magic_tags)][0]
+                    )
     if args.verbose > 3:
         print("█"*80 + '\n')
 
 git.store_version(sql)
 if tweet_list:
     since.store_since_id(sql, max(tweet_list.keys()))
+if args.api == 'mock':
+    twapi.statistics()
 
 sql.close_sucessfully()

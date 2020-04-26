@@ -111,7 +111,7 @@ DRU;Dallerud Bp;10
 DSU;Drolsum;20
 DUN;Dunderland;15
 DVT;Drevvatn;15
-EBE;Røstad:14
+EBE;Røstad;14
 EBG;Eidsberg;4
 ED;Ed;3
 EGS;Egersund;19
@@ -184,7 +184,7 @@ GRI;Grimsrud Bp.;3
 GRØ;Grønvollsfoss s.sp;21b
 GRO;Grorud;9,9b
 GRU;Grua;5
-GRV:Grovane;18
+GRV;Grovane;18
 GUD;Greverud;3
 GU;Gudå;14c
 GUL;Gulskogen;17
@@ -221,7 +221,7 @@ HG;Haug;3
 HGM;Helgemo Bp;11
 HGS;Haugenstua Bp.;9
 HIN;Hinna Bp.A;19
-HIS;Hovdmoen s.sp:13
+HIS;Hovdmoen s.sp;13
 HJN;Hjerkinn;11
 HLD;Halden;3
 HLL;Helleland;19
@@ -275,7 +275,7 @@ JEN;Jensrud;5
 JES;Jessnes;10
 JEV;Jevnaker;5b
 JØR;Jørstad;14
-KÅL:Kvål Bp;11
+KÅL;Kvål Bp;11
 KAM;Kambo;3
 KAT;Katterat;16
 KBG;Kongsberg;17
@@ -321,7 +321,7 @@ LBG;Lindeberg;9
 LBU;Liabru Bp.A;3
 LBY;Lisleby;3
 LDL;Lurudal Bp;14
-LDN:Langodden Bp;10
+LDN;Langodden Bp;10
 LDN;Lilleby;14
 LEA;Leangen;14,14b
 LER;Ler;11
@@ -650,7 +650,7 @@ UST;Ustaoset;7
 VAD;Vaksdal;7
 VÆR;Værnes;14
 VAK;Vakås;8b
-VÅL;Vålåsjø:11
+VÅL;Vålåsjø;11
 VAL;Valnesfjord;15
 VAR;Varingskollen;5
 VÅS;Vakås Bp.;8b
