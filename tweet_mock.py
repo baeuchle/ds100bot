@@ -258,9 +258,26 @@ def mocked_tweets(verbose):
         entities={'hashtags': [], 'user_mentions': [User.notfollowed.mention(0), User.theBot.mention(11)]},
         in_reply_to_status_id=202,
         in_reply_to_user_id=User.notfollowed.id,
-        in_reply_to_screen_name='followee',
-        user=User.followed,
-        lang='de'), verbose))
+        in_reply_to_screen_name=User.notfollowed.screen_name,
+        user=User.followed
+        ), verbose))
+
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet is replied to with magic hashtag _FFM. bot%nl%ns%203 #FW',
+        expected_answer='FFM#FW Friedhof Westhausen',
+        id=203,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.notfollowed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet replies with magic hashtag #_FFM. bot%nl%me%re[203]%223',
+        id=223,
+        entities={'hashtags': [{'text': '_FFM', 'indices':[39,43]}], 'user_mentions': []},
+        user=User.notfollowed,
+        in_reply_to_status_id=203,
+        in_reply_to_user_id=User.notfollowed.id,
+        in_reply_to_screen_name=User.notfollowed.screen_name
+        ), verbose))
 #     list_of_tweets.append(Tweet(TweepyMock(
 #         id=1146760076478308352,
 #         full_text='@followee FF: Frankfurt (Main) Hbf',
