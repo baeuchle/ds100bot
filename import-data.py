@@ -1,15 +1,9 @@
 #!/usr/bin/python3
 
-import argparse
 import csv
 from datetime import date
 import os
 import sqlite3
-
-parser = argparse.ArgumentParser(description="""
-        Liest Abkürzungslisten und schreibt sie in die Datenbank
-        """)
-args = parser.parse_args()
 
 sql = sqlite3.connect('info.db')
 sqlcursor = sql.cursor()
