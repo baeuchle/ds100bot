@@ -9,21 +9,14 @@ import sqlite3
 parser = argparse.ArgumentParser(description="""
         Liest Abkürzungslisten und schreibt sie in die Datenbank
         """)
-parser.add_argument('--purge',
-                    dest='purge',
-                    help='Lösche erst alle alten Daten',
-                    required=False,
-                    action='store_true',
-                    default=False)
 args = parser.parse_args()
 
 sql = sqlite3.connect('info.db')
 sqlcursor = sql.cursor()
-if args.purge:
-    print("Purging old data...")
-    sqlcursor.execute("""
-        DELETE FROM shortstore
-    """)
+print("Purging old data...")
+sqlcursor.execute("""
+    DELETE FROM shortstore
+""")
 
 today = date.today().strftime("%Y%m%d")
 directory = 'data_sources'
