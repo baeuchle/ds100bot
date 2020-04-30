@@ -114,12 +114,16 @@ for id, tweet in tweet_list.items():
                     if args.verbose > 2:
                         print("Processing tweet {} mode 'all':".format(tweet.id))
                         print(tweet)
+                    dmt_list = [t[0] for t in tweet.hashtags(magic_tags)]
+                    dmt = 'DS100'
+                    if len(dmt_list) > 0:
+                        dmt = dmt_list[0]
                     react.process_tweet(other_tweet, twapi,
                         sql, args.verbose, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
                             else None,
-                        default_magic_tag=[t[0] for t in tweet.hashtags(magic_tags)][0]
+                        default_magic_tag=dmt
                     )
     if args.verbose > 3:
         print("█"*80 + '\n')

@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS "sources" (
 	`valid_until_col`	TEXT,
 	PRIMARY KEY(`source_name`,`source_name`)
 );
+DELETE FROM sources;
 INSERT INTO sources VALUES('ds100','Abk','Name','Kurzname','gültig von',1,';',NULL);
 INSERT INTO sources VALUES('gimmick','Abk','Name',NULL,NULL,0,';',NULL);
 INSERT INTO sources VALUES('strecken','STRNR','STRKURZN','STRNAME',NULL,1,';',NULL);

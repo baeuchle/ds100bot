@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS "sourceflags" (
 	`sourcename`	TEXT NOT NULL,
 	`magictag`	TEXT
 );
+DELETE FROM sourceflags;
 INSERT INTO sourceflags VALUES('#','DS','ds100','DS100');
 INSERT INTO sourceflags VALUES('$','DS','strecken','DS100');
 INSERT INTO sourceflags VALUES('#','VGF','vgfhst',NULL);
