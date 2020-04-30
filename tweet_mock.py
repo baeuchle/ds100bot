@@ -165,6 +165,12 @@ def mocked_tweets(verbose):
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet is ignored because of #NOBOT #FF bot%tl%me%301',
+        id=107,
+        entities={'hashtags': [{'text': 'NOBOT', 'indices':[34,39]}, {'text': 'FF', 'indices': [41,43]}], 'user_mentions': []},
+        user=User.followed,
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
         full_text='#entfolgen bot%tl%fe%151',
         id=151,
         entities={'hashtags': [{'text': 'entfolgen', 'indices': [1, 10]}], 'user_mentions': []},
@@ -264,7 +270,7 @@ def mocked_tweets(verbose):
 
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet is replied to with magic hashtag _FFM. bot%nl%ns%203 #FW',
-        expected_answer='FFM#FW Friedhof Westhausen',
+        expected_answer='FFM#FW: Friedhof Westhausen',
         id=203,
         entities={'hashtags': [], 'user_mentions': []},
         user=User.notfollowed

@@ -90,6 +90,9 @@ class MockApi(TwitterApi):
                 continue
             badrpl += 1
             print("correctly answered, but with wrong answer")
+            if self.verbose > 2:
+                print(t.original.expected_answer)
+                print(self.replies[t.id])
         print()
         print("ALL GOOD:               ", all_ok)
         print("INCORRECT TEXT:         ", badrpl)
