@@ -270,7 +270,7 @@ def mocked_tweets(verbose):
 
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet is replied to with magic hashtag _FFM. bot%nl%ns%203 #FW',
-        expected_answer='FFM#FW Friedhof Westhausen',
+        expected_answer='FFM#FW: Friedhof Westhausen',
         id=203,
         entities={'hashtags': [], 'user_mentions': []},
         user=User.notfollowed
