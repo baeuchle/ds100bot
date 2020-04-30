@@ -40,7 +40,8 @@ class TwitterApi:
         results = {}
         for tl in self.mentions(highest_id), self.timeline(highest_id), self.hashtag(tag, highest_id):
             for t in tl:
-                results[t.id] = t
+                if not t.has_hashtag(['NOBOT'], case_sensitive=False):
+                    results[t.id] = t
         return results
 
     def mentions(self, highest_id):
