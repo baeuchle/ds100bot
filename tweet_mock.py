@@ -527,3 +527,7 @@ def mocked_tweets(verbose):
 #         retweeted=False,
 #         lang='en'), verbose))
     return list_of_tweets
+
+def mocked_source():
+    from tweet_details import list_of_tweets
+    return list_of_tweets

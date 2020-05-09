@@ -5,3 +5,4 @@ info.db
 *.html
 doc/output 
 doc/dumps.snip
+tweet_details.py

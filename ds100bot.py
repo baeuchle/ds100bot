@@ -33,6 +33,13 @@ parser.add_argument('--verbose', '-v',
                     help='Output lots of stuff',
                     required=False,
                     action='count')
+parser.add_argument('--external',
+                    dest='external',
+                    help='(Mock API only) Read mocked tweet objects not from the internal list, but from tweet_details.py. That file may be created with get_tweet.py.',
+                    required=False,
+                    action='store_true',
+                    default=False
+                   )
 args = parser.parse_args()
 
 if args.db is None:
@@ -49,7 +56,7 @@ if args.verbose is None:
     args.verbose = 0
 
 # setup twitter API
-twapi = api.get_api_object(args.api, args.verbose)
+twapi = api.get_api_object(args.api, args.verbose, external=args.external)
 # setup database
 sql = Database(args.db, args.verbose)
 git.notify_new_version(sql, twapi, args.verbose)

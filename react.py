@@ -70,11 +70,14 @@ def find_tokens(tweet, modus, magic_tag):
         """, re.X)
     tokens = finder.findall(tweet, overlapped=True)
     # if modus isn't 'all', then that's all already.
+    # if modus *is* 'all', and we have more than one result: great, too!
     if modus != 'all' or len(tokens) > 1:
         return tokens
-    if len(tokens) == 1 and str.join('', tokens[0][0]) == magic_tag:
+    # if modus is 'all' and we have only one token and it's not the magic_tag, fine!
+    if len(tokens) == 1 and str.join('', tokens[0][0]) != magic_tag:
         return tokens
-        
+    # now: If modus is all and we have at found nothing but maybe the magic_tag,
+    # we'll look for more.
     finder2 = re.compile(r"""
         (?p)            # find longest match
         (?:^|\W)        # either at the beginning of the text or after a non-alphanumeric character, but don't find this
