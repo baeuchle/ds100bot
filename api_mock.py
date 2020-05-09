@@ -6,11 +6,15 @@ import re
 from tweet_mock import *
 
 class MockApi(TwitterApi):
-    def __init__(self, verbose):
+    def __init__(self, verbose, **kwargs):
         self.verbose = verbose + 1
         self.running_id = 10001
         self.myself = User.theBot
-        self.mock = mocked_tweets(verbose)
+        self.external = kwargs.get('external', False)
+        if self.external:
+            self.mock = mocked_source()
+        else:
+            self.mock = mocked_tweets(verbose)
         self.replies = {}
         if self.verbose > 0:
             print('Running from Mock API (faked tweets)')
@@ -62,6 +66,8 @@ class MockApi(TwitterApi):
         user.follows = False
 
     def statistics(self):
+        if self.external:
+            return
         all_ok = 0
         wrongs = 0
         badrpl = 0

@@ -3,9 +3,9 @@ from api_mock import MockApi
 from tweet import Tweet
 import tweepy
 
-def get_api_object(mode, verbose):
+def get_api_object(mode, verbose, **kwargs):
     if mode == "mock":
-        return MockApi(verbose)
+        return MockApi(verbose, **kwargs)
     if mode == "readonly":
         return ReadOnlyApi(verbose)
     return ReadWriteApi(verbose)
