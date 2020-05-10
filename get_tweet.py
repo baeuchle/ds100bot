@@ -4,14 +4,24 @@ import api
 import argparse
 import pprint
 from textwrap import dedent
+from urllib.parse import urlparse
+from pathlib import Path
 
 parser = argparse.ArgumentParser(description='Helper program for dumping tweet details')
-parser.add_argument('--id',
-                    dest='id',
-                    help='ID of the tweet that will be downloaded',
-                    type=int,
-                    required=True,
-                    action='store'
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument('--id',
+                   dest='id',
+                   help='ID of the tweet that will be downloaded',
+                   type=int,
+                   required=False,
+                   action='store'
+                   )
+group.add_argument('--url',
+                   dest='url',
+                   help='URL of the tweet that will be downloaded',
+                   type=str,
+                   required=False,
+                   action='store'
                    )
 parser.add_argument('--mode',
                     dest='mode',
@@ -23,7 +33,14 @@ parser.add_argument('--mode',
 args = parser.parse_args()
 
 twapi = api.get_api_object('readonly', 1000)
-tweet = twapi.get_tweet(args.id)
+
+tid = args.id
+if tid is None:
+    try:
+        tid = int(Path(urlparse(args.url).path).name)
+    except:
+        parser.error("Cannot extract tweet id from URL {}".format(args.url))
+tweet = twapi.get_tweet(tid)
 
 pp = pprint.PrettyPrinter(indent=2, width=80)
 if args.mode == 'dump':
