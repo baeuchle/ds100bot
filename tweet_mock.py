@@ -284,6 +284,16 @@ def mocked_tweets(verbose):
         in_reply_to_user_id=User.notfollowed.id,
         in_reply_to_screen_name=User.notfollowed.screen_name
         ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='Hallo @_ds_100, do you know $1733? bot%tl%xm%ab[1,$]%issue[8]%301',
+        expected_answer='1733: Hannover --Kassel-- - Würzburg',
+        id=301,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': [ User.theBot.mention(6) ]},
+        user=User.followed
+        ), verbose))
 #     list_of_tweets.append(Tweet(TweepyMock(
 #         id=1146760076478308352,
 #         full_text='@followee FF: Frankfurt (Main) Hbf',
