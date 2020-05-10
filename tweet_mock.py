@@ -79,7 +79,7 @@ User.followers = []
 for i in range(21,26):
     User.followers.append(User(id=i, name='Follower', screen_name='follower{}'.format(i), follows=True))
 User.nonfollowers = []
-for i in range(31,36):
+for i in range(31,37):
     User.nonfollowers.append(User(id=i, name='Nonfollower', screen_name='otherone{}'.format(i), follows=False))
 
 class TweepyMock:
@@ -235,6 +235,19 @@ def mocked_tweets(verbose):
         user=User.nonfollowers[4]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
+        full_text='@_ds_100 This tweet xm @_ds_100 in a reply #folgenbitte bot%nl%xm%im%fs%issue[9]%204',
+        display_text_range=[9,75],
+        id=166,
+        entities={'hashtags': [
+            {'text': 'folgenbitte', 'indices': [43,55]}
+        ], 'user_mentions': [
+            User.theBot.mention(0),
+            User.theBot.mention(23)
+        ]},
+        user=User.nonfollowers[5]
+        ), verbose))
+    User.nonfollowers[5].follow_after = True
+    list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet is quoted with explicit mention. bot%ns%nl%201 FF FK FM FW',
         expected_answer='FF: Frankfurt (Main) Hbf\nFK: Kassel Hbf\nFW: Wiesbaden Hbf',
         id=201,
@@ -267,7 +280,6 @@ def mocked_tweets(verbose):
         in_reply_to_screen_name=User.notfollowed.screen_name,
         user=User.followed
         ), verbose))
-
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet is replied to with magic hashtag _FFM. bot%nl%ns%203 #FW',
         expected_answer='FFM#FW: Friedhof Westhausen',
@@ -283,6 +295,16 @@ def mocked_tweets(verbose):
         in_reply_to_status_id=203,
         in_reply_to_user_id=User.notfollowed.id,
         in_reply_to_screen_name=User.notfollowed.screen_name
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='Hallo @_ds_100, do you know $1733? bot%tl%xm%ab[1,$]%issue[8]%301',
+        expected_answer='1733: Hannover --Kassel-- - Würzburg',
+        id=301,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': [ User.theBot.mention(6) ]},
+        user=User.followed
         ), verbose))
 #     list_of_tweets.append(Tweet(TweepyMock(
 #         id=1146760076478308352,

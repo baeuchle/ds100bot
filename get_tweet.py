@@ -4,18 +4,65 @@ import api
 import argparse
 import pprint
 from textwrap import dedent
+from urllib.parse import urlparse
+from pathlib import Path
+
+def print_tweet_details(tw, target):
+    print(dedent('''\
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text={},
+        id={},
+        display_text_range={},
+        in_reply_to_user_id={},
+        in_reply_to_status_id={},
+        in_reply_to_screen_name={},
+        entities=
+            {},
+        user=User(
+            screen_name={},
+            name={},
+            id={},
+            follows={}
+        )
+        ), 8))
+    ''').format(
+        repr(tw.full_text),
+        repr(tw.id),
+        pp.pformat(tw.display_text_range),
+        repr(tw.in_reply_to_user_id),
+        repr(tw.in_reply_to_status_id),
+        repr(tw.in_reply_to_screen_name),
+        pp.pformat(tw.entities),
+        repr(tw.user.screen_name),
+        repr(tw.user.name),
+        repr(tw.user.id),
+        repr(twapi.is_followed(tw.user))
+    ), file=target)
 
 parser = argparse.ArgumentParser(description='Helper program for dumping tweet details')
-parser.add_argument('--id',
-                    dest='id',
-                    help='ID of the tweet that will be downloaded',
-                    type=int,
-                    required=True,
-                    action='store'
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument('--id',
+                   dest='id',
+                   help='ID of the tweet that will be downloaded',
+                   type=int,
+                   required=False,
+                   action='store'
+                   )
+group.add_argument('--url',
+                   dest='url',
+                   help='URL of the tweet that will be downloaded',
+                   type=str,
+                   required=False,
+                   action='store'
                    )
 parser.add_argument('--mode',
                     dest='mode',
-                    choices=['dump', 'mock', 'recursive'],
+                    choices=['dump', 'mock'],
+                    help=dedent('''\
+                    dump: Just dump the tweet and be done with it.
+                    mock: Prepare TweepyMock objects from this tweet and
+                          referenced tweets that can be used in test cases.
+                    '''),
                     required=False,
                     default='mock',
                     action='store'
@@ -23,7 +70,14 @@ parser.add_argument('--mode',
 args = parser.parse_args()
 
 twapi = api.get_api_object('readonly', 1000)
-tweet = twapi.get_tweet(args.id)
+
+tid = args.id
+if tid is None:
+    try:
+        tid = int(Path(urlparse(args.url).path).name)
+    except:
+        parser.error("Cannot extract tweet id from URL {}".format(args.url))
+tweet = twapi.get_tweet(tid)
 
 pp = pprint.PrettyPrinter(indent=2, width=80)
 if args.mode == 'dump':
@@ -42,32 +96,8 @@ else:
         from tweet_mock import TweepyMock
         from tweet_mock import User
         list_of_tweets = []
-        list_of_tweets.append(Tweet(TweepyMock(
-            full_text={},
-            id={},
-            display_text_range={},
-            in_reply_to_user_id={},
-            in_reply_to_status_id={},
-            in_reply_to_screen_name={},
-            entities=
-                {},
-            user=User(
-                screen_name={},
-                name={},
-                id={},
-                follows={}
-            )
-            ), 8))
-        ''').format(
-            repr(tweet.original.full_text),
-            repr(tweet.original.id),
-            pp.pformat(tweet.original.display_text_range),
-            repr(tweet.original.in_reply_to_status_id),
-            repr(tweet.original.in_reply_to_user_id),
-            repr(tweet.original.in_reply_to_screen_name),
-            pp.pformat(tweet.original.entities),
-            repr(tweet.original.user.screen_name),
-            repr(tweet.original.user.name),
-            repr(tweet.original.user.id),
-            repr(twapi.is_followed(tweet.original.user))
-        ), file=target)
+        '''), file=target)
+        print_tweet_details(tweet.original, target)
+        if tweet.original.in_reply_to_status_id is not None:
+            replied_to_tweet = twapi.get_tweet(tweet.original.in_reply_to_status_id)
+            print_tweet_details(replied_to_tweet.original, target)

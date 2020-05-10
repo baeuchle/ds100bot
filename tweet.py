@@ -55,13 +55,16 @@ class Tweet:
         within the displayed text, then we assume that the original author
         meant to explicitly include the bot.
         
-        It is not clear yet how this behaves if someone explicitly mentions the
-        bot in a tweet that would also have implicitly mentioned it.
+        If the bot is explicitl mentioned in a reply, then there are two
+        user_mentions in the tweet's entities, so we cannot only look at
+        the first one.
         """
         for um in self.original.entities['user_mentions']:
             if um['screen_name'] == bot.screen_name:
-                return (um['indices'][0] >= self.original.display_text_range[0]
-                    and um['indices'][1] <= self.original.display_text_range[1])
+                this_is_an_xm = um['indices'][0] >= self.original.display_text_range[0]
+                this_is_an_xm &= um['indices'][1] <= self.original.display_text_range[1]
+                if this_is_an_xm:
+                    return True
         return False
 
     def has_hashtag(self, tag_list, **kwargs):
