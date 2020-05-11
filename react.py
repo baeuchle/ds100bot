@@ -74,7 +74,7 @@ def find_tokens(tweet, modus, magic_tag):
     if modus != 'all' or len(tokens) > 1:
         return tokens
     # if modus is 'all' and we have only one token and it's not the magic_tag, fine!
-    if len(tokens) == 1 and str.join('', tokens[0][0]) != magic_tag:
+    if len(tokens) == 1 and str.join('', tokens[0][-1]) != magic_tag:
         return tokens
     # now: If modus is all and we have at found nothing but maybe the magic_tag,
     # we'll look for more.

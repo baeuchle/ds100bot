@@ -8,6 +8,9 @@ from urllib.parse import urlparse
 from pathlib import Path
 
 def print_tweet_details(tw, target):
+    quoted_status_id = None
+    if 'quoted_status_id' in tw.__dict__:
+        quoted_status_id = tw.quoted_status_id
     print(dedent('''\
     list_of_tweets.append(Tweet(TweepyMock(
         full_text={},
@@ -16,6 +19,7 @@ def print_tweet_details(tw, target):
         in_reply_to_user_id={},
         in_reply_to_status_id={},
         in_reply_to_screen_name={},
+        quoted_status_id={},
         entities=
             {},
         user=User(
@@ -32,6 +36,7 @@ def print_tweet_details(tw, target):
         repr(tw.in_reply_to_user_id),
         repr(tw.in_reply_to_status_id),
         repr(tw.in_reply_to_screen_name),
+        repr(quoted_status_id),
         pp.pformat(tw.entities),
         repr(tw.user.screen_name),
         repr(tw.user.name),
@@ -101,3 +106,7 @@ else:
         if tweet.original.in_reply_to_status_id is not None:
             replied_to_tweet = twapi.get_tweet(tweet.original.in_reply_to_status_id)
             print_tweet_details(replied_to_tweet.original, target)
+        if 'quoted_status_id' in tweet.original.__dict__:
+            if tweet.original.quoted_status_id is not None:
+                quoted_tweet = twapi.get_tweet(tweet.original.quoted_status_id)
+                print_tweet_details(quoted_tweet.original, target)
