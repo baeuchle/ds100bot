@@ -24,10 +24,8 @@ class ReadWriteApi(TwitterApi):
         print ("Rate limit violated at {}: {}".format(description, rate_err.reason))
         super().print_rate_limit()
 
-    # Return new tweet id, 0 if RateLimit (= try again), -1 if other
-    # error (fix before trying again).
-    def tweet(self, text, **kwargs):
-        super().tweet(text, **kwargs)
+    def tweet_single(self, text, **kwargs):
+        super().tweet_single(text, **kwargs)
         try:
             new_tweet = self.twit.update_status(text, **kwargs)
             return new_tweet.id

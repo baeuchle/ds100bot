@@ -25,8 +25,8 @@ class MockApi(TwitterApi):
                 return t
         raise tweepy.TweepError("Kein solcher Tweet vorhanden")
 
-    def tweet(self, text, **kwargs):
-        super().tweet(text, **kwargs)
+    def tweet_single(self, text, **kwargs):
+        super().tweet_single(text, **kwargs)
         if 'in_reply_to_status_id' in kwargs:
             reply_id = kwargs['in_reply_to_status_id']
             # don't track thread answers:
@@ -35,7 +35,7 @@ class MockApi(TwitterApi):
                     print("Tweet {} was replied to twice!")
                     self.double_replies.append(reply_id)
                 else:
-                    self.replies[reply_id] = text
+                    self.replies[reply_id] = text.strip()
         self.running_id += 1
         return self.running_id
 

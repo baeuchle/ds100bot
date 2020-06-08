@@ -2,25 +2,18 @@ import datetime
 import regex as re
 import sqlite3
 
-max_tweet_length = 280
-
 def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None, default_magic_tag='DS100'):
-    reply_id = tweet.id
-    twcounter = 1
-    for reply in compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus, default_magic_tag):
-        if verbose > 1:
-            print("I tweet {} ({} chars):".format(twcounter, len(reply)))
-            print(reply)
-        twcounter += 1
-        new_reply_id = twapi.tweet(reply,
-                in_reply_to_status_id=reply_id,
-                auto_populate_reply_metadata=True
-            )
-        if new_reply_id > 0:
-            reply_id = new_reply_id
-    if verbose > 2:
-        if twcounter == 1:
+    reply = compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus, default_magic_tag)
+    if len(reply.strip()) == 0:
+        if verbose > 2:
             print("No expandable content found")
+            print("▀"*60)
+        return
+    twapi.tweet(reply,
+        in_reply_to_status_id=tweet.id,
+        auto_populate_reply_metadata=True
+    )
+    if verbose > 2:
         print("▀"*60)
 
 def process_commands(tweet, twapi, verbose):
@@ -170,10 +163,8 @@ def process_magic(magic_tags, length, default='DS100'):
     return magic_tags
 
 def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS100'):
-    all_answers = []
     short_list = []
     # generate answer
-    charcount = 0
     generated_content = ""
     magic_tags = process_magic(magic_tags, len(tweet), default_magic_tag)
     for mt, nextmt in zip(magic_tags[:-1], magic_tags[1:]):
@@ -230,7 +221,7 @@ def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS
                   , ))
         if row['status'] != 'found':
             continue
-        explain = "{}: {}\n".format(
+        explain = "{}: {}​\n".format(
             row['abk'],
             row['name']
         )
@@ -241,12 +232,5 @@ def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS
                 explain
             )
         explain = explain.replace('\\n', '\n')
-        if charcount + len(explain) > max_tweet_length:
-            all_answers.append(generated_content.strip())
-            generated_content = ""
-            charcount = 0
-        charcount += len(explain)
         generated_content += explain
-    if len(generated_content.strip()) > 0:
-        all_answers.append(generated_content.strip())
-    return all_answers
+    return generated_content

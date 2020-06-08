@@ -1,5 +1,6 @@
 from tweet import Tweet
 import tweepy
+from measure import split_text
 
 class TwitterApi:
     def __init__(self, verbose):
@@ -26,7 +27,23 @@ class TwitterApi:
                         rrl['limit']
                     ))
 
+    # Return new tweet id, 0 if RateLimit (= try again), -1 if other
+    # error (fix before trying again).
     def tweet(self, text, **kwargs):
+        reply_id = kwargs.get('in_reply_to_status_id', None)
+        for part in split_text(text):
+            new_reply_id = self.tweet_single(part,
+                in_reply_to_status_id=reply_id,
+                auto_populate_reply_metadata=True
+            )
+            if new_reply_id > 0:
+                reply_id = new_reply_id
+        return reply_id
+
+    def tweet_single(self, text, **kwargs):
+        if len(text) == 0:
+            print("Empty tweet?")
+            return -1
         if self.verbose > 1:
             lines = text.splitlines()
             length = max([len(l) for l in lines])
