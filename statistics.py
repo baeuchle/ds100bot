@@ -42,8 +42,7 @@ if args.verbose is None:
 
 since = None
 since_text = None
-print(args.since, args.since == 0)
-if args.since == 0:
+if args.since == 0 or args.since == "0":
     since = 0
     since_text = 'Beginn'
 elif args.since == 'month':
