@@ -326,6 +326,16 @@ def mocked_tweets(verbose):
         entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet blacklist #DBL #DS:WLAN bot%tl%bl%403',
+        expected_answer='WLAN: Langen',
+        id=403,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
 #     list_of_tweets.append(Tweet(TweepyMock(
 #         id=1146760076478308352,
 #         full_text='@followee FF: Frankfurt (Main) Hbf',

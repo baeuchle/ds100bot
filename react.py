@@ -94,7 +94,7 @@ def find_entry(sql, parameters):
                 WHEN (
                     blacklist.Abk IS NOT NULL
                     AND
-                    sourceflags.magictag <> :abbr2
+                    sourceflags.abbr <> :abbr2
                 ) THEN 'blacklist'
                 ELSE 'found'
             END
