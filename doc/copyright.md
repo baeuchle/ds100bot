@@ -39,10 +39,11 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>DS100 der Deutschen Bahn</td>
    <td><a href="https://data.deutschebahn.com/dataset/data-betriebsstellen">Betriebsstellenverzeichnis der Deutschen Bahn AG</a></td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
-   <td>
+   <td style="text-align: left;">
     <ul>
      <li>Punkte durch ONE DOT LEADER U+2024 ‚&#x2024;‘ ersetzt</li>
      <li>Mehrere Leerzeichen zusammengefasst</li>
+     <li>Einzelne Einträge korrigiert</li>
     </ul>
    </td>
    <td>
@@ -57,7 +58,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>Streckennummern der Deutschen Bahn</td>
    <td><a href="https://data.deutschebahn.com/dataset/geo-strecke">Geo-Streckennetz</a></td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
-   <td>
+   <td style="text-align: left;">
     <ul>
      <li>Punkte durch ONE DOT LEADER U+2024 ‚&#x2024;‘ ersetzt</li>
      <li>Mehrere Leerzeichen zusammengefasst</li>
@@ -118,9 +119,9 @@ Folgende Datenquellen werden vom Bot benutzt:
   <tr>
    <th>#ÖBB</th>
    <td>DB 640 der ÖBB</td>
-   <td><a href="http://www.bahnnews-austria.at/downloads/sonstiges/DB640.pdf">Bahnnews-Austria</a></td>
+   <td>Zusammenstellung von <a href="https://bahn.hauptsignal.at/">Christoph Schönweiler</a> (Stand 2020)</td>
    <td>© ÖBB-Infrastruktur Betrieb AG</td>
-   <td>Quelle ist nicht offiziell und scheint veraltet (von 2007)</td>
+   <td>Quelle ist nicht offiziell. Groß-/Kleinschreibung muss beachtet werden, es sind auch Kleinbuchstaben erlaubt!</td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
    </td>
@@ -142,6 +143,58 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#VOR</th>
+   <td>Betriebsstellen der Wiener Linien</td>
+   <td><a href="https://bahn.hauptsignal.at/">Christoph Schönweilers hauptsignal.at</a> (Stand 2020)</td>
+   <td></td>
+   <td>Datenbanksuche auf <a href="https://bahn.hauptsignal.at/bsb.php">hauptsignal.at</a></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/wien_vor.html">wien_vor</a>
+   </td>
+   <td>
+    #_VOR
+   </td>
+  </tr>
+  <tr>
+   <th>#NL</th>
+   <td>Betriebsstellen in den Niederlanden</td>
+   <td><a href="https://wetten.overheid.nl/BWBR0017707/2020-04-01/#Bijlage6">Anhang 6 zu Regeling spoorverkeer</a> (Stand 2020)</td>
+   <td>Gemeinfrei, da Gesetz</td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/nederlands.html">nederlands</a>
+   </td>
+   <td>
+    #_NL
+   </td>
+  </tr>
+  <tr>
+   <th>#UK</th>
+   <td>Haltestellen und Bahnhöfe der Rail Delivery Group</td>
+   <td><a href="http://data.atoc.org/how-to">Rail Delivery Group</a> (Stand 2020)</td>
+   <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
+   <td>Aus Fixed-width-Text extrahiert und Namen mit Kleinbuchstaben
+   versehen</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/raildeliverygroup.html">raildeliverygroup</a>
+   </td>
+   <td>
+    #_UK
+   </td>
+  </tr>
+  <tr>
+   <th>#HHE</th>
+   <td>Hamburger U-Bahn-Haltestellen</td>
+   <td><a href="http://www.hamburger-bahnhoefe.de/">Hamburger-Bahnhöfe.de</a></td>
+   <td></td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/hhe.html">hhe</a>
+   </td>
+   <td>
+    #_HHE
+   </td>
+  </tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
@@ -150,6 +203,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/gimmick.html">gimmick</a>
    </td>
+   <td></td>
   </tr>
  <tbody>
 </table>

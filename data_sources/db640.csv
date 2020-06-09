@@ -1,2755 +1,2701 @@
 Abk;Name
-A;Aggsbach Markt
-A H1;Grimsing Hst
-AA;W.Mat.-Altmannsdorf
-AA G;Grenze ÖBB-WLB im km 7,610
-AA Z9;Wr. Neudorf
-AB;Aschbach
-AB S11;Sbl Ab 1
-AB S12;Sbl Ab 1
-AB S21;Sbl Ab 2
-AB S22;Sbl Ab 2
-ABF;Abfaltersbach
-ABF K1;Mittewald a.d.Drau H-Lst
-ABN;AB (Fahrwegende)
-ABZ;Maxing
-ACH;Achau
-AD;Admont
-AF;Andorf
-AF S11;Sbl Af 1
-AF S12;Sbl Af 1
-AG;Angern
-AG H1;Stillfried Hst
-AH;Absdorf-Hippersdorf
-AH A1;AB
-AH B11;Bl Ah 1
-AH B12;Bl Ah 1
-AH H1;Absberg Hst
-AH H1K;Königsbrunn-Unterstockstall Hst
-AH H2;Großwiesendorf-Tiefenthal Hst
-AI;Aigen-Schlägl
-AJ;Salzburg Aigen
-AJ H1;Salzburg Süd Hst
-AJ H2;Elsbethen Hst
-AJ H3A;Puch Urstein Hst
-AJ H4;Puch bei Hallein Hst
-AJ H5;Oberalm Hst
-AJ S11;Sbl Aj 1
-AJ S12;Sbl Aj 1
-AJ S21;Sbl Aj 2
-AJ S22;Sbl Aj 2
-AJ S61;Sbl Aj 6
-AJ S62;Sbl Aj 6
-AJ S71;Sbl Aj 7
-AJ S72;Sbl Aj 7
-AJ U5;Üst Aj 5
-AK;Aurachkirchen
-AK H1;Wankham Hst
-AL;Angertal
-AL Z1;Abzw Al 1
-ALB;Schwechat-Wien Albern Hafen Lst
-ALL;Allentsteig
-ALP;Altpinkafeld
-ALP A1;AB
-ALP H1;Riedlingsdorf Hst
-ALT;Alt Nagelberg
-ALT L1;Brand Lst (Awanst)
-ALU;AB Aluminiumwerk
-AM;Altenmarkt-Thenneberg (Gf)
-AMO;St Anton i M
-AMO A1;AB Vandans
-AMO A2;AB Rodund
-AMO A3;AB Tschagguns
-AMO H1;Vandans Hst
-AMO H2;Kaltenbrunnen Hst
-AMO K1;Tschagguns H-Lst
-AMS;Amstetten
-AMS A1;AB (Awanst)
-AMS A2;AB (Awanst)
-AMS A3;AB (Awanst)
-AMS H1;Mauer-Öhling Hst
-AMS H1U;Greinsfurth Hst
-AMS H2;Aschbach Hst
-AMS H3;Krenstetten-Biberbach Hst
-AMS S11;Sbl Ams 1
-AMS S12;Sbl Ams 1
-AMS S31;Sbl Ams 3
-AMS S32;Sbl Ams 3
-AMS S81;Sbl Ams 12
-AMS S82;Sbl Ams 12
-AMS S83;Sbl Ams 13
-AMS S84;Sbl Ams 13
-AMS S85;Sbl Ams 15
-AMS S86;Sbl Ams 15
-AMS S87;Sbl Ams 16
-AMS S88;Sbl Ams 16
-AMS U14;Üst Ams 14
-AMS U2;Üst Ams 2
-AMS Z1;Abzw Ams 11
-AN;St.Andrä im Lavanttal
-AN H1;Mühldorf im Lavanttal Hst
-ANT;Antiesenhofen
-ANT A2;AB
-ANT H1;Dietrichshofen Hst
-ANT K1;Suben H-Lst (Awanst)
-AO;St.Anton am Arlberg
-AO S11;Sbl Ao 1
-AO S12;Sbl Ao 1
-AO U2;Üst Ao 2
-AP;Aspang
-APL;St.Pölten Alpenbf
-APO;Abzw Bl 1
-APO H1;Parndorf Ort Hst
-APO H1H;Parndorf Ort Hst
-AR;Ardning
-ARB;Arbing
-ARB H1;Perg Schulzentrum Hst
-ASD;Aschach a.d.Donau
-ASO;Abzw Sopron Rendezö
-ASP;Asparn a.d.Zaya
-AST;Asten-St Florian
-AST H1;Linz Pichling Hst
-AST H2;Linz Ebelsberg Hst
-AST H2H;Linz Ebelsberg Hst
-AST Z1;Abzw Ast 1
-AST Z2;Abzww Str 20814
-AST Z3;Anschluss Voest Alpine Linz III
-AST Z4;Anschluss Voest Alpine Linz II
-AST Z5;Anschluss Voest Alpine Linz I
-AT;Attnang-Puchheim
-AT H1;Lehen-Altensam Hst
-AT H2;Wolfshütte Hst
-AT S11;Sbl At 1
-AT S12;Sbl At 1
-ATH;Obernberg-Altheim
-ATH H1;Mühlheim Hst
-AU;Bad Aussee
-AU H1;Obertraun-Koppenbrüllerhöhle Hst
-AUZ;Ausschlag-Zöbern
-AW;St.Andrä-Wördern
-AW H1;Zeiselmauer-Königstetten Hst
-AW H2;Muckendorf-Wipfing Hst
-AW H3;Langenlebarn Hst
-AW S11;Sbl Aw 1
-AW S12;Sbl Aw 1
-AW S31;Sbl Aw 3
-AW S32;Sbl Aw 3
-AW S41;Sbl Aw 4;
-AW S42;Sbl Aw 4
-AW U2;Üst Aw 2
-AX;Saxen
-AZ;Liesing-Nord
-AZ H1;Liesing Wien Atzgersdorf Hst
+Aa G;Grenze ÖBB-WLB im km 7,610
+Aa;W.Mat.-Altmannsdorf (in Wbf)
+Aa Z9;Wr. Neudorf
+Ab;Aschbach
+Abf A1;AB (Awanst)
+Abf;Abfaltersbach
+Abf K1;Mittewald a.d.Drau
+Ab S11;Sbl Ab 1
+Ab S12;Sbl Ab 1
+Ab S21;Sbl Ab 2
+Ab S22;Sbl Ab 2
+Abz;Maxing
+Ach;Achau
+Ach S11;Sbl Ach 1
+Ach S12;Sbl Ach 1
+Ach S21;Sbl Ach 2
+Ach S22;Sbl Ach 2
+Ad;Admont
+Af;Andorf
+Af S11;Sbl Af 1
+Af S12;Sbl Af 1
+Ag;Angern
+Ag H1;Stillfried
+Ah A1;AB
+Ah;Absdorf-Hippersdorf (in Ah)
+Ah H1;Hst außer Betrieb
+Ah H1K;Hst außer Betrieb
+Ah H2;Hst außer Betrieb
+Aho;Absdorf-Hippersdorf Ost (in Ah)
+Ah S11;Sbl Ah 1
+Ah S12;Sbl Ah 1
+Ahs;Absdorf-Hippersdorf Süd (in Ah)
+Ai;Aigen-Schlägl
+Aj H1;Salzburg Süd
+Aj H2;Elsbethen
+Aj H3A;Puch Urstein
+Aj H4;Puch bei Hallein
+Aj H5;Oberalm
+Aj S11;Sbl Aj 1
+Aj S12;Sbl Aj 1
+Aj S21;Sbl Aj 2
+Aj S22;Sbl Aj 2
+Aj S61;Sbl Aj 6
+Aj S62;Sbl Aj 6
+Aj S71;Sbl Aj 7
+Aj S72;Sbl Aj 7
+Aj;Salzburg Aigen
+Aj U5;Üst Aj 5
+Ak;Aurachkirchen
+Ak H1;Wankham
+Alb;Wien Albern Hafen (in Kls)
+All;Allentsteig
+Alp A1;AB
+Alp;Altpinkafeld
+Alp H1;Riedlingsdorf
+Als;Wien Albern Süd (in Kls)
+Alt;Alt Nagelberg
+Alt L1;Brand Lst (Awanst)
+Alu;AB Aluminiumwerk
+Amo A2A;AB Naturwärme Montafon
+Amo A2;AB Rodund
+Amo H1;Vandans
+Amo H2;Kaltenbrunnen
+Amo K1;Tschagguns H-Lst
+Amo S11;Sbl Amo1
+Amo S12;Sbl Amo1
+Amo;St. Anton im Montafon
+Ams A1;AB (Awanst)
+Ams A2;AB (Awanst)
+Ams A3;AB (Awanst)
+Ams;Amstetten (in Ams)
+Ams H1;Mauer-Öhling
+Ams H1U;Greinsfurth
+Ams H2;Aschbach Haltestelle
+Ams H3;Krenstetten-Biberbach
+Ams S11;Sbl Ams 1
+Ams S12;Sbl Ams 1
+Ams S31;Sbl Ams 3
+Ams S32;Sbl Ams 3
+Ams S81;Sbl Ams 12
+Ams S82;Sbl Ams 12
+Ams S83;Sbl Ams 13
+Ams S84;Sbl Ams 13
+Ams S85;Sbl Ams 15
+Ams S86;Sbl Ams 15
+Ams S87;Sbl Ams 16
+Ams S88;Sbl Ams 16
+Ams U14;Üst Ams 14
+Ams U2;Üst Ams 2
+Ams Z1;Abzw Ams 11
+An A1A;AB (Awanst)
+An A1;AB (Awanst)
+An;St.Andrä im Lavanttal
+Ant A1;AB
+Ant;Antiesenhofen
+Ant H1;Dietrichshofen
+Ant H2;Suben
+Ant H3;Gopperding
+Ao S11;Sbl Ao 1
+Ao S12;Sbl Ao 1
+Ao S21;Sbl Ao 2
+Ao S22;Sbl Ao 2
+Ao S31;Sbl Ao 3
+Ao S32;Sbl Ao 3
+Aos;Amstetten Ost (in Ams)
+Ao;St.Anton am Arlberg
+Ap;Aspang
+Apl;St.Pölten Alpenbf
+Apo;Abzw Bl 1
+Apo H1;Parndorf Ort
+Ar;Ardning
+Arb;Arbing
+Arb H1;Perg Schulzentrum
+Asd;Aschach a.d.Donau (Gf)
+Aso;Abzw Sopron Rendezö
+Ast;Asten-St Florian
+Ast H1;Linz Pichling
+Ast H2;Linz Ebelsberg
+Ast Z1;Abzw Ast 1
+At;Attnang-Puchheim
+At H1;Lehen-Altensam
+At H2;Wolfshütte
+Ath H1;Mühlheim
+Ath;Obernberg-Altheim
+At S11;Sbl At 1
+At S12;Sbl At 1
+Au;Bad Aussee
+Au H1;Obertraun-Koppenbrüllerhöhle
+Aut;Autal
+Auz;Ausschlag-Zöbern
+Aw H1;Zeiselmauer-Königstetten
+Aw H2;Muckendorf-Wipfing
+Aw H3;Langenlebarn
+Aw S11;Sbl Aw 1
+Aw S12;Sbl Aw 1
+Aw S31;Sbl Aw 3
+Aw S32;Sbl Aw 3
+Aw S41;Sbl Aw 4
+Aw S42;Sbl Aw 4
+Aw;St.Andrä-Wördern
+Aw U2;Üst Aw 2
+Ax;Saxen
+B A1M;AB Unterwerk
+Ba;Breclav
+Bag;Bad Gastein
+Bal A1;AB (Awanst)
+Bal A2;AB (Awanst)
+Bal;Bad St.Leonhard
+Bal H1;Wiesenau
+Bal H2;Preblau-Sauerbrunn
+Bal K1;Twimberg (Awanst)
+Bam;Bad Mitterndorf
+Bam H1;Bad Mitterndorf-Heilbrunn
+Bau;Baumgartner
+Bb;Baumgartenberg
+Bbg;Bramberg
+Bbg H1A;Steinach
+Bbg H3;Vorstadl
 B;Bludenz
+Bc;Buchs (SG)
+Bch;Bichlbach-Berwang
+Bch H1H;Bichlbach-Almkopfbahn
+Bch H2H;Heiterwang-Plansee
+Bch H3;Hst außer Betrieb
+Bch H4;Reutte in Tirol Schulzentrum
+Bde;Bad Deutsch Altenburg
+Be;Brennero/Brenner
+Beh;Bernhardsthal (in Bel)
+Bel;Bernhardsthal Fbf (in Bel)
+Bel G;Staatsgrenze nächst Bernhardsthal Fbf
+Bf H1;Baden
+Bf;Pfaffstätten
+Bf S21;Sbl Bf 2
+Bf S22;Sbl Bf 2
+Bf U1;Üst Bf 1
+Bg;Bregenz (in Bg)
 B G;Grenze ÖBB-MBS Km 135,650
-B H1;Nüziders Hst
-B H1M;Bludenz Moos Hst
-B H2M;Brunnenfeld Hst
+Bg H1;Bregenz Hafen (in Bg)
+Bgl A1;AB (Awanst)
+Bgl H1;Dietmannsdorf
+Bgl H2;Wies Markt
+Bgl K1;Pölfing-Brunn
+Bgl L1;Lst (Awanst)
+Bgl;St. Martin i. S. - Bergla
+Bgt;Baumgarten
+Bgt G;Staatsgrenze nächst Baumgarten
+B H1M;Bludenz-Moos
+B H1;Nüziders
+B H2M;Brunnenfeld-Stallehr
+Bh;Böheimkirchen
+Bh H1;Hst außer Betrieb
+Bh S11;Sbl Bh 1
+Bh S12;Sbl Bh 1
+Bhs;Berghaus Hochschneeberg
+Bib;Bierbaum
+Bk;Bruck a.d.Mur-Fbf (in Bm)
+Bl;Bruck a.d.Leitha (in Bl)
+Ble A1;AB (Awanst)
+Ble;Bleiburg
+Ble G;Staatsgrenze nächst Bleiburg
+Ble H1;St.Michael ob Bleiburg
+Ble H2;Mittlern
+Bl G;Streckenende 19301
+Bls A1;AB
+Bls A2;AB
+Bls A4A;AB
+Bls;Bruck a.d.Leitha-West (in Bl)
+Bls E1;EK km 1,605
+Bls E2;EK km 2,093
+Bm;Bruck a.d.Mur (in Bm)
+Bm S11;Sbl Bm 1G
+Bm S12;Sbl Bm 1G
+Bm S13;Sbl Bm 1L
+Bm S14;Sbl Bm 1L
+Bm S21;Sbl Bm 2G
+Bm S22;Sbl Bm 2G
+Bm S33;Sbl Bm 3L
+Bm S34;Sbl Bm 3L
+Bm U2L;Üst Bm 2L
+Bns;Bad Neusiedl am See
+Bns H1;Weiden am See
+Bns H2;Gols
+Bns S11;Sbl Bns 1
+Bns S12;Sbl Bns 1
+Bob;Bischofshofen Fbf (in Bo)
+Bo;Bischofshofen (in Bo)
+Bof;Bockfließ
+Bof H2;Raggendorf Markt
+Bof K1;Auersthal (Awanst)
+Bo H1;Mitterberghütten
+Bo S11;Sbl Bo 1
+Bo S12;Sbl Bo 1
+Bo S31;Sbl Bo 3
+Bo S32;Sbl Bo 3
+Bo U2;Üst Bo 2
+Boz;Fertöboz
+Bpa;Breclav pred
+Brd;Brunnenfeld
+Brd H1;Lorüns
+Bre;Breitenschützing
+Brf;Bruck-Fusch
+Bri;Brixlegg
+Bri H1;Münster-Wiesing
+Bri S11;Sbl Bri 1
+Bri S12;Sbl Bri 1
+Bri S31;Sbl Bri 3
+Bri S32;Sbl Bri 3
+Bri U2;Üst Bri 2
+Brl;Brückl
+Bro;Braunau am Inn-Ost (in Bru)
+Bru;Braunau am Inn (in Bru)
+Bru G;Staatsgrenze nächst Braunau am Inn
 B S11;Sbl B 1
 B S12;Sbl B 1
-B Z9;St.Anton i.M
-BA;Breclav
-BAG;Bad Gastein
-BAH;Bad Hall
-BAL;Bad St.Leonhard
-BAL A1;AB (Awanst)
-BAL A2;AB (Awanst)
-BAL H1;Wiesenau Hst
-BAL H2;Preblau-Sauerbrunn Hst
-BAM;Bad Mitterndorf
-BAM H1;Bad Mitterndorf-Heilbrunn Hst
-BAU;Baumgartner
-BB;Baumgartenberg
-BBA;Bärnbach H-Lst
-BBG;Bramberg
-BBG H1A;Bramberg-St. Hst
-BBG H2;Habachtal Hst
-BBG H3;Neukirchen Vorst. Hst
-BC;Buchs (SG)
-BCH;Bichlbach-Berwang (Gf)
-BCH H1H;Bichlbach-Almkopfbahn Hst
-BCH H2H;Heiterwang-Plansee Hst
-BCH H3;Bad Krekelmoos Hst
-BCH H4;Reutte in Tirol Schulzentrum Hst
-BDE;Bad Deutsch Altenburg
-BE;Brennero/Brenner
-BEH;Bernhardsthal Fbf Bernhardsthal Hst
-BEL;Bernhardsthal Fbf
-BEL G;Staatsgrenze nächst Bernhardsthal Fbf
-BF;Baden Fbf, Pfaffstätten Hst
-BF H1;Baden Hst
-BF S21;Sbl Bf 2
-BF S22;Sbl Bf 2
-BF U1;Üst Bf 1
-BG;Bregenz
-BG H1;Bregenz Hafen Hst
-BGL;Bergla
-BGL A1;AB Gleinstätten
-BGL H1;St Martin-Welsberg Hst
-BGT;Baumgarten
-BGT F1;ES J
-BGT F2;AS H
-BGT G;Staatsgrenze nächst Baumgarten
-BH;Böheimkirchen
-BH H1;Schildberg Hst
-BH S11;Sbl Bh 1
-BH S12;Sbl Bh 1
-BHS;Berghaus Hochschneeberg
-BI;Bischofstetten
-BI H1;Teufelsdorf Hst
-BIB;Bierbaum
-BK;Bruck a.d.Mur-Fbf
-BL;Bruck a.d.Leitha
-BLE;Bleiburg
-BLE A1;AB (Awanst)
-BLE G;Staatsgrenze nächst Bleiburg
-BLE H1;St.Michael ob Bleiburg Hst
-BLE H2;Mittlern Hst
-BLE Z9;Prevalje
-BLI;Blindenmarkt
-BLI S11;Sbl Bli 1
-BLI S12;Sbl Bli 1
-BLI S21;Sbl Bli 2
-BLI S22;Sbl Bli 2
-BLN;Blumau-Neurißhof Lst (AB)
-BLS;Bruck a.d.Leitha-West
-BLS A1;AB
-BLS A2;AB
-BLS A3;AB
-BLS A4A;AB
-BLS A5;AB
-BLS E1;EK km 1,605
-BLS L1;Rohrau Lst
-BM;Bruck a.d.Mur
-BM H1;Oberaich Hst
-BM S11;Sbl Bm 1G
-BM S12;Sbl Bm 1G
-BM S13;Sbl Bm 1L
-BM S14;Sbl Bm 1L
-BM S33;Sbl Bm 3L
-BM S34;Sbl Bm 3L
-BM U2L;Üst Bm 2L
-BNS;Bad Neusiedl am See
-BO;Bischofshofen
-BO A1;AB (Awanst)
-BO H1;Mitterberghütten Hst
-BO S11;Sbl Bo 1
-BO S12;Sbl Bo 1
-BO S31;Sbl Bo 3
-BO S32;Sbl Bo 3
-BO U2;Üst Bo 2
-BOF;Bockfließ
-BOF H2;Raggendorf Markt Hst
-BOF K1;Auersthal H-Lst (Awanst)
-BOZ;Fertöboz
-BPA;Breclav pred
-BRE;Breitenschützing
-BRF;Bruck-Fusch
-BRH;Bruckhäusl H-Lst (Awanst)
-BRI;Brixlegg
-BRI H1;Münster-Wiesing Hst
-BRI S11;Sbl Bri 1
-BRI S12;Sbl Bri 1
-BRI S31;Sbl Bri 3
-BRI S32;Sbl Bri 3
-BRI U2;Üst Bri 2
-BRN;Breitenbrunn
-BRS;Breitstetten
-BRS A1;AB
-BRS H1;Straudorf Hst
-BRS K2;Haringsee H-Lst
-BRS K3;Kopfstetten-Eckartsau H-Lst
-BRS K4;Loimersdorf H-Lst
-BRU;Braunau am Inn
-BRU G;Staatsgrenze nächst Braunau am Inn
-BS;Böckstein
-BS S11;Sbl Bs 1
-BS S12;Sbl Bs 1
-BS S21;Sbl Bs 2
-BS S22;Sbl Bs 2
-BS S31;Sbl Bs 3
-BS S32;Sbl Bs 3
-BS S41;Sbl Bs 4
-BS S42;Sbl Bs 4
-BT;Breitenstein
-BT H1;Wolfsbergkogel Hst
-BT S11;Sbl Bt 1
-BT S12;Sbl Bt 1
-BU;Brunn-Maria Enzersdorf
-BVS;Bad Vöslau
-BVS H1;Kottingbrunn Hst
-BVS S11;Sbl Bvs 1
-BVS S12;Sbl Bvs 1
-BW;Wien Nordwestbf
-BZ;Braz
-BZ S11;Sbl Bz 1
-BZ S12;Sbl Bz 1
-CF;Zentralfriedhof
-CF U1;Üst Cf 1
-CHS;Schönau a.d.Enns
-CV;Ceske Velenice
-CV Z9;Ceske Velenice
-D;Schwadorf (Gf)
-DA;Dalaas
-DE;Dellach im Drautal
-DE H1;Berg im Drautal Hst
-DF;Drosendorf (Gf)
-DG;Dorfgastein
-DGT;Dellach im Gailtal
-DGT H1;St.Daniel Hst
-DK;Deutschkreutz
-DK A1A;AB
-DK A2A;AB
-DK L1;Neckenmarkt-Horitschon Lst
-DK L2;Raiding-Lackendorf Lst
-DK L3;Lackenbach Lst
-DK L4;Markt St.Martin Lst
-DK L5;Stoob Lst
-DK L6;Oberpullendorf Lst
-DK L7;Oberloisdorf Lst
-DL;Wien Donaukaibf
-DL A1;AB km 9,884
-DL A2;AB km 10,742
-DL A3;AB km 10,830
-DL L1;Wien Freudenau Hafen Lst
-DLB;Deutschlandsberg
-DLB H1;Hollenegg Hst
-DN;Dorneralpe
-DNV;Devinska Nova Ves
-DO;Dornbirn
-DO H1;Haselstauden Hst
-DO H2;Schwarzach in Vorarlberg Hst
-DO S11;Sbl Do 1
-DO S12;Sbl Do 1
-DOB;Dobermannsdorf
-DOE;Dölsach
-DOE H1;Nikolsdorf Hst
-DR;Arnoldstein
-DR A1;AB (Awanst)
-DR A2;AB (Awanst)
-DR A3;AB (Awanst)
-DRG;Drösing
-DU;Dürnstein-Oberloiben
-DUE;Dürnkrut
-DUE H1;Jedenspeigen Hst
-DUE H2;Sierndorf a.d.March Hst
-DV;Leoben Donawitz
-E;Eisenstadt
-E G;Grenze ÖBB-ROeEE
-E H1;Wulkaprodersdorf Haltestelle Hst
-EBN;Eben im Pongau
-EBN H1;Niedernfritz-St.Martin Hst
-EBR;Ebreichsdorf
-EBR H1;Weigelsdorf Hst
-EBS;Eberstein H-Lst
-EBS A1;AB
-EBS H1;St.Walburgen Hst
-EBS K1;Brückl H-Lst
-ECO;Eco Plus
-ED;Obereggendorf
-ED H1;Wiener Neustadt Civitas Nova Hst
-ED Z1;Abzw Ed 1
-EDB;Ederbauer
-EDB H1;Oberhofen-Zell am Moos Hst
-EDB S11;Sbl Edb 1
-EDB S12;Sbl Edb 1
-EDL;Edlitz-Grimmenstein
-EDL A1;AB (Awanst)
-EDL A2;AB (Awanst)
-EDO;Etsdorf-Straß
-EF;Ebenfurth
-EF A1;AB (Awanst)
-EF G;Grenze ÖBB-RoeEE Km 115,331
-EF H1;Untereggendorf Hst
-EFD;Eferding
-EFD A1;AB
-EFD H2;Leumühle Hst
-EFD H3;Pupping Hst
-EFD H4;Karling Hst
-EG;St.Egyden
-EG S11;Sbl Eg 1
-EG S12;Sbl Eg 1
-EGG;Eggenburg
-EGG H1;Kl.Meiseldorf-M.Dreieichen Hst
-EGG S11;Sbl Egg 1
-EGG S12;Sbl Egg 1
-EH;Ehrwald-Zugspitzbahn
-EIB;Eichberg
-EIB S11;Sbl Eib 1
-EIB S12;Sbl Eib 1
-EIH;Eichhorn
-EIS;Eisenerz
-EIS A1A;AB
-EL;Wien Erdbergerlände
-EL H1;Praterkai Hst
-EL H2;Lobau Hst
-EL S11;Sbl El 1
-EL S12;Sbl El 1
-EL S21;Sbl El 2
-EL S22;Sbl El 2
-ELA;Erlach
-ELA H1;Brunn a.d.Pitten Hst
-EM;Fertöszentmiklos
-EMD;Emmersdorf a.d.Donau
-EN;Ebensee
-EN H1;Ebensee Landungsplatz Hst
-EN H2;Traunkirchen Ort Hst
-EN S11;Sbl En 1
-EN S12;Sbl En 1
-ENG;Engelhartstetten
-ENH;Engelhof
-ENH H1A;Lembergweg Hst
-ENH H2;Gmunden Traundorf Hst
-ENS;Enns
-ENS H1;Asten-Fisching Hst
-ENS S11;Sbl Ens 1
-ENS S12;Sbl Ens 1
-ENZ;Enzersdorf bei Staatz
-ENZ H1;Kottingneusiedl Hst
-ENZ K1;Staatz H-Lst
-ER;Altmünster am Traunsee
-ERB;Ernstbrunn
-ERB E1;EK km 30,064
-ERF;Erlauf
-ERF A1;AB
-ERF A2;AB
-ERF H1;Petzenkirchen Hst
-ERN;Ernsthofen
-ERN H1;Dorf a.d.Enns Hst
-ERN S11;Sbl Ern 1
-ERN S12;Sbl Ern 1
-ES;Eis-Ruden
-ES H1;Aich im Jauntal Hst
-ES K1;Bleiburg Stadt H-Lst
-ESU;Eisenstadt Schule Hst
-EW;Eberschwang
-EW A1;AB
-EW H1;Oberbrunn Hst
-EWE;Eisenwerk Welser
-EY;St.Aegyd am Neuwalde
-EZ;Enzesfeld-Lindabrunn
-EZ A1;AB
-EZ H1;Hirtenberg Hst
-EZ H2;St.Veit a.d.Triesting Hst
-F;Floridsdorf
-F H1;Floridsdorf Siemensstraße Hst
-F H1S;Floridsdorf Brünner Straße Hst
-FA;Frastanz
-FA S11;Sbl Fa 1
-FA S12;Sbl Fa 1
-FAM;Fischamend
-FAS;Faak am See
-FB;Feldbach
-FB G;Grenze ÖBB-STLB Km 197,818
-FB H1;Lödersdorf Hst
-FB Z9;Bad Gleichenberg
-FCH;Flirsch
-FCH A1;AB (Awanst, UW)
-FCH H1;Schnann Hst
-FCH H2;Pettneu Hst
-FCH S31;Sbl Fch 3
-FCH S32;Sbl Fch 3
-FCH U2;Üst Fch 2
-FCH Z1;Abzw Fch 1
-FD;Friedberg
-FD A1;AB
-FD H1;Pinggau Freiz. Hst
-FD H1H;Dechantskirchen Hst
-FE;St.Peter-Freienstein
-FE H1;St.Peter-Fr. Ort Hst
-FEG;Fehring
-FEG H1;Hohenbrugg a.d.Raab Hst
-FEI;Feistritz im Rosental (Gf)
-FEI A1;AB
-FEI H1;Feistritz im Rosental West Hst
-FEI H2;Suetschach Hst
-FEI H3;Ladinach Hst
-FEI H4;Maria Elend im Rosental Hst
-FEL;Feldkirchen in Kärnten
-FEL H1;Tiffen Hst
-FER;Ferlach Lst
-FES;Fentsch-St.Lorenzen
-FH;Furth-Palt
-FH H1;Furth-Göttweig Hst
-FH H2;Klein Wien Hst
-FI;Friesach
-FI A1;AB (Awanst)
-FI H1;Micheldorf-Hirt Hst
-FI L2;Hirt Lst (Awanst)
-FI S11;Sbl Fi 1
-FI S12;Sbl Fi 1
-FIB;Bad Fischau-Brunn
-FIB H1;Brunn/Schneebergbahn Hst
-FIE;Fieberbrunn
-FIE H1;Grieswirt Hst
-FIE S11;Sbl Fie 1
-FIE S12;Sbl Fie 1
-FK;Feldkirch
-FK A1;AB (Awanst)
-FK A2;AB (Awanst)
-FK G;Staatsgrenze nächst Feldkirch
-FK H1;Feldkirch-Amberg Hst
-FK H1N;Altenstadt Hst
-FK H2N;Gisingen Hst
-FK H3N;Tisis Hst
-FK H4N;Schaanwald Hst
-FK S11;Sbl Fk 1
-FK S12;Sbl Fk 1
-FK S91;Sbl Fk 1N
-FK S92;Sbl Fk 1N
-FK S93;Sbl Fk 2N
-FK S94;Sbl Fk 2N
-FLB;Feldbach Landesbahn
-FLD;Felixdorf
-FLD A1;AB
-FLD A2;AB
-FLD A3;AB
-FLD E1;EK km 0,269
-FLD H1;Theresienfeld Hst
-FLD H2;Wiener Neustadt Nord Hst
-FLD S11;Sbl Fld 1
-FLD S12;Sbl Fld 1
-FLD S31;Sbl Fld 3
-FLD S32;Sbl Fld 3
-FLD U2;Üst Fld 2
-FM;Frankenmarkt
-FM H1;Pöndorf Hst
-FM S11;Sbl Fm 1
-FM S12;Sbl Fm 1
-FM S31;Sbl Fm 3
-FM S32;Sbl Fm 3
-FM U2;Üst Fm 2
-FN;Villach Süd Gvbf-Fürnitz
-FN H1;Neuhaus a.d.Gail Hst
-FOE;Föderlach
-FOE H1;Villach Seebach Hst
-FOE S11;Sbl Foe 1
-FOE S12;Sbl Foe 1
-FR;Freistadt
-FR S11;Sbl Fr 1
-FR S12;Sbl Fr 1
-FRA;Frantschach-St.Gertraud
-FRA A1;AB
-FRD;Freiland
-FRF;Frankenfels (Gf)
-FRF H1;Boding Hst
-FRK;Frauenkirchen
-FRO;Frohnleiten
-FRO S11;Sbl Fro 1
-FRO S12;Sbl Fro 1
-FRT;Frauental-Bad Gams
-FS;Fels
-FS H1;Wagram-Grafenegg Hst
-FS L1;Wagram-Grafenegg Lst (Awanst)
-FT;Frättingsdorf
-FU;Frauenberg a.d.Enns
-FUE;Fürstenfeld
-FUE A1;AB (Awanst)
-FUE H1;Übersbach Hst
-FUK;Fürth-Kaprun
-FUK A1;AB
-FUR;Furthof
-FUR A1;AB
-FUR H1;Innerfahrafeld Hst
-FW;Fritzens-Wattens
-FW H1;Volders-Baumkirchen Hst
-FW S11;Sbl Fw 1
-FW S12;Sbl Fw 1
-FW S33;Sbl Fw 13
-FW S34;Sbl Fw 13
-FW S53;Sbl Fw 15
-FW S54;Sbl Fw 15
-FW U14;Üst Fw 14
-FW U3;Üst Fw 3
-FW Z2;Abzw Fw 2
-FWA;Feuerwerksanstalt
-FWA H1;Bad Fischau Hst
-FWS;Flughafen Wien-Schwechat
-FWS A1;AB
-FWS A1A;AB
-FWS A2;AB
-FWS A3;AB
-FWS A4L;AB
-FWS A5;AB
-FWS A6;AB
-FWS E1;EK km 17.388
-FWS E2;EK km 22,297
-FWS F1;ES Y
-FWS L1;Fischamend StEG Lst
-FWS L2;Klein Neusiedl Lst
-FWS L3;Schwadorf a.d.Fischa Lst
-FWS Z1;Abzww Str 192
-G;Graz Hbf
+Bs;Böckstein
+Bse;Wien Brünner Straße (in F)
+Bs S11;Sbl Bs 1
+Bs S12;Sbl Bs 1
+Bs S21;Sbl Bs 2
+Bs S22;Sbl Bs 2
+Bs S31;Sbl Bs 3
+Bs S32;Sbl Bs 3
+Bs S41;Sbl Bs 4
+Bs S42;Sbl Bs 4
+Bst;Brennersee Terminal
+Bt;Breitenstein
+Bt H1;Wolfsbergkogel
+Bt S11;Sbl Bt 1
+Bt S12;Sbl Bt 1
+Bt S21;Sbl Bt 2
+Bt S22;Sbl Bt 2
+Bu;Brunn-Maria Enzersdorf (in Bu)
+Bun;Brunn-Maria Enzersdorf Nord (in Bu)
+Bvs;Bad Vöslau
+Bvs H1;Kottingbrunn
+Bvs S11;Sbl Bvs 1
+Bvs S12;Sbl Bvs 1
+Bw;Wien Nordwestbf
+Bz;Braz
+Bz H1;Hst außer Betrieb
+BZI;Betriebsführungszentrale Innsbruck
+BZL;Betriebsführungszentrale Linz
+Bz S11;Sbl Bz 1
+Bz S12;Sbl Bz 1
+BZS;Betriebsführungszentrale Salzburg
+BZV;Betriebsführungszentrale Villach
+BZW;Betriebsführungszentrale Wien
+Cat;Wien Mitte - CAT (in Nw)
+Cf Z1;Abzw Cf 1
+Cf;Zentralfriedhof
+Cv;Ceske Velenice
+Cv Z9;Ceske Velenice
+Da;Dalaas
+De;Dellach im Drautal
+De H1;Berg im Drautal
+Df;Drosendorf
+Dg;Dorfgastein
+Dk;Deutschkreutz
+Dk G;Streckenende 17001 nächst Deutschkreutz
+Dl A1;AB km 9,886
+Dl A2;AB km 10,742
+Dl A3;AB km 10,830
+Dlb A1;AB (Awanst)
+Dlb A2;AB (Awanst)
+Dlb;Deutschlandsberg
+Dlb H1;Hollenegg Hst
+Dlb H2;Schwanberg
+Dlb H3;St.Peter i. Sulmtal
+Dlr;Rennbahn Freudenau (in Dl)
+Dlt;Terminal Wien Freudenau Hafen (in Dl)
+Dl;Wien Donaukaibf (in Dl)
+Dnv;Devinska Nova Ves
+Do;Dornbirn (in Do)
+Doe;Dölsach
+Doe H1;Nikolsdorf
+Do H1;Haselstauden
+Do H2;Schwarzach in Vorarlberg
+Dok;Wien Praterstern-Donaukanal (in Nw)
+Do S11;Sbl Do 1
+Do S12;Sbl Do 1
+Dpt;Dorf-Paßthurn
+Dr A1;AB (Awanst)
+Dr A2;AB (Awanst)
+Dr A3;AB (Awanst)
+Dr;Arnoldstein
+Drg;Drösing
+Dr S13;Sbl Dr 1H
+Dr S14;Sbl Dr 1H
+D;Schwadorf
+DUB;Donauuferbahn Fernsteuerzentrale
+Due;Dürnkrut
+Due H1;Jedenspeigen
+Due H2;Sierndorf a.d.March
+Dv;Leoben Donawitz
+Ebn;Eben im Pongau
+Ebn H1;Niedernfritz-St.Martin
+Ebr;Ebreichsdorf
+Ebr H1;Weigelsdorf
+Ebs;Eberstein Lst
+Eco;Eco Plus
+Edb;Ederbauer
+Edb H1;Oberhofen-Zell am Moos
+Edb S11;Sbl Edb 1
+Edb S12;Sbl Edb 1
+Ed H1;Wiener Neustadt Civitas Nova
+Edl A1;AB (Awanst)
+Edl A2;AB (Awanst)
+Edl;Edlitz-Grimmenstein
+Ed;Obereggendorf
+Edo;Etsdorf-Straß
+E;Eisenstadt (in E)
+Efd A1;AB
+Efd;Eferding
+Efd H2;Leumühle
+Efd H3;Pupping
+Efd H4;Karling
+Ef;Ebenfurth (in Ef)
+Ef G;Grenze ÖBB - ROeEE
+Ef H1;Untereggendorf
+Ef W1;Abzww Ebenfurth Nord (in Ef)
+Ef W2;Abzww Ebenfurth Süd (in Ef)
+Egg;Eggenburg
+Egg H1;Hst außer Betrieb
+Egg S11;Sbl Egg 1
+Egg S12;Sbl Egg 1
+Eh;Ehrwald-Zugspitzbahn
+Eib;Eichberg
+Eib H1;Klamm-Schottwien
+Eib S11;Sbl Eib 1
+Eib S12;Sbl Eib 1
+Eib S21;Sbl Eib 2
+Eib S22;Sbl Eib 2
+Eib S41;Sbl Eib 4
+Eib S42;Sbl Eib 4
+Eib U3;Üst Eib 3
+Eis A1A;AB (Awanst)
+Eis;Eisenerz
+Ela;Bad Erlach
+Ela H1;Brunn a.d.Pitten
+El H1;Wien Praterkai
+El H3;Wien Stadlau (in St)
+El S11;Sbl El 1
+El S12;Sbl El 1
+El S21;Sbl El 2
+El S22;Sbl El 2
+El;Wien Erdbergerlände (in El)
+Em;Fertöszentmiklos
+En;Ebensee
+En H1;Ebensee Landungsplatz
+En H2;Traunkirchen Ort
+Ens;Enns
+Ens H1;Asten-Fisching
+Ens S91;Sbl Ens 1
+Ens S92;Sbl Ens 1
+Enz;Enzersdorf bei Staatz
+Enz H1;Kottingneusiedl
+Enz K1;Staatz
+Er;Altmünster am Traunsee
+Erb E1;EK km 30,064
+Erb;Ernstbrunn
+Erb G;Streckenende 18101 nächst Ernstbrunn
+Erf A1;AB
+Erf A2;AB
+Erf;Erlauf
+Erf H1;Petzenkirchen
+Ern;Ernsthofen
+Ern H1;Dorf a.d.Enns
+Ern S11;Sbl Ern 1
+Ern S12;Sbl Ern 1
+Es;Eis-Ruden
+Es H1;Aich im Jauntal
+Es K1;Bleiburg Stadt
+Esu;Eisenstadt Schule (in E)
+Ez;Enzesfeld-Lindabrunn
+Ez H1;Hirtenberg
+Ez H2;St.Veit a.d.Triesting
+Fa;Frastanz
+Fam;Fischamend
+Fa S11;Sbl Fa 1
+Fa S12;Sbl Fa 1
+Fas;Faak am See
+Fas H1;Ledenitzen
+Fb;Feldbach
+Fb G;Grenze ÖBB-STLB Km 197,818
+Fb H1;Lödersdorf
+Fb Z9;Feldbach Landesbahn
+Fch A1;AB (Awanst)
+Fch;Flirsch
+Fch H1;Hst außer Betrieb
+Fch H2;Hst außer Betrieb
+Fch S31;Sbl Fch 3
+Fch S32;Sbl Fch 3
+Fch U2;Üst Fch 2
+Fch Z1;Abzw Fch 1
+Fd A1;AB
+Fd;Friedberg
+Fd H1H;Dechantskirchen
+Fd H1;Pinggau Freizeitzentrum
+Feg;Fehring
+Feg H1;Hohenbrugg a.d.Raab
+Fe H1;St.Peter-Fr. Ort
+Fel;Feldkirchen in Kärnten
+Fel H1;Tiffen
+Fer;Ferlach Lst
+Fes;Fentsch-St.Lorenzen
+Fe;St.Peter-Freienstein
+F;Floridsdorf (in F)
+F H1;Siemensstraße (in F)
+F H2S;Langenzersdorf
+F H3S;Bisamberg
+Fh;Furth-Palt
+Fh H1;Furth-Göttweig
+Fh H2;Hst außer Betrieb
+Fi A1;AB (Awanst)
+Fib;Bad Fischau-Brunn
+Fib H1;Brunn/Schneebergbahn
+Fi;Friesach
+Fi H1;Micheldorf-Hirt
+Fi L2;Hirt Lst (Awanst)
+Fi S11;Sbl Fi 1
+Fi S12;Sbl Fi 1
+Fk;Feldkirch
+Fk H1;Feldkirch-Amberg
+Fk H1N;Altenstadt
+Fk H2N;Gisingen
+Fk S11;Sbl Fk 1
+Fk S12;Sbl Fk 1
+Fld;Felixdorf
+Fld H1;Theresienfeld
+Fld H2;Wiener Neustadt Nord
+Fld S11;Sbl Fld 1
+Fld S12;Sbl Fld 1
+Fld S31;Sbl Fld 3
+Fld S32;Sbl Fld 3
+Fld U2;Üst Fld 2
+Fm;Frankenmarkt
+Fm H1;Pöndorf
+Fm S11;Sbl Fm 1
+Fm S12;Sbl Fm 1
+Fm S31;Sbl Fm 3
+Fm S32;Sbl Fm 3
+Fm U2;Üst Fm 2
+Fn;Fürnitz (in Vsv)
+Fn H1;Neuhaus a.d.Gail (in Vsv)
+Foe;Föderlach
+Foe H1;Villach Seebach
+Foe S11;Sbl Foe 1
+Foe S12;Sbl Foe 1
+Fra;Frantschach-St.Gertraud
+Frd;Freiland
+Frf;Frankenfels (Gf)
+Frf H1;Boding
+Fr;Freistadt
+Frk;Frauenkirchen
+Fro;Frohnleiten (in Fro)
+Fro S11;Sbl Fro 1
+Fro S12;Sbl Fro 1
+Fr S11;Sbl Fr 1
+Fr S12;Sbl Fr 1
+Frs;Frohnleiten Süd (in Fro)
+Frt;Frauental-Bad Gams
+F S11;Sbl F 1
+F S12;Sbl F 1
+F S21;Sbl F 2
+F S22;Sbl F 2
+Fs;Fels
+Fs H1;Wagram-Grafenegg
+Ft;Frättingsdorf
+Fue A1;AB (Awanst)
+Fue;Fürstenfeld
+Fue H1;Übersbach
+Fu;Frauenberg a.d.Enns
+Fuk A1;AB
+Fuk;Fürth-Kaprun
+Fwa;Feuerwerksanstalt
+Fwa H1;Bad Fischau
+Fw;Fritzens-Wattens
+Fw H1;Volders-Baumkirchen
+Fw S11;Sbl Fw 1
+Fw S12;Sbl Fw 1
+Fw S33;Sbl Fw 13
+Fw S34;Sbl Fw 13
+Fw S53;Sbl Fw 15
+Fw S54;Sbl Fw 15
+Fws A1A;AB
+Fws A1;AB
+Fws A2;AB
+Fws A3;AB
+Fws A3L;AB
+Fws A4L;AB
+Fws A5;AB
+Fws A6;AB
+Fws E1;EK km 17.388
+Fws E2E;EK km 19,681
+Fws E3;EK km 20,120
+Fws E4;EK km 20,843
+Fws E5;EK km 21,530
+Fws E6;EK km 22,297
+Fws;Flughafen Wien (in Fws)
+Fws L2;Klein Neusiedl Lst
+Fws L3;Schwadorf a.d.Fischa Lst
+Fws Z1;Abzww Str 19201 (in Fws)
+Fw U14;Üst Fw 14
+Fw U3;Üst Fw 3
+Fw Z2;Abzw Fw 2
 G A2;AB (Awanst)
+Gae A1;AB (Awanst)
+Gae;Gänserndorf
+Gae H1M;Weikendorf
+Gae H1;Weikendorf-Dörfles
+Gae H2A;Matzen
+Gae H2M;Hst außer Betrieb
+Gae H2;Tallesbrunn
+Gae H3A;Raggendorf
+Gae K1A;Prottes (Awanst, AB)
+Gae S91;Sbl Gae 1S
+Gae S92;Sbl Gae 1S
+Ga;Gaisbach-Wartberg
+Ga H1;Schloß Haus
+Gai;Gaishorn
+Gas;Gars-Thunau
+Gas H1;Buchberg
+Gbg;Bad Gleichenberg
+Gb;Gstatterboden im Nationalpark
+Gb H1;Johnsbach im Nationalpark
+Gbk;Grein-Bad Kreuzen
+Gbk H1;Dornach
+Gdf;Großendorf
+Gdf H1;Wiesmühle
+Gd;Grafendorf
+Gd H1;St.Johann i.d.Haide
+Gdo;Graz-Kärntner Straße (in G)
+Ged;Groß Engersdorf
+Gef;Gerasdorf
+Gef H1;Kapellerfeld
+Gef H2;Seyring
+Gef H3;Obersdorf Haltestelle
+Gef S11;Sbl Gef 1
+Gef S12;Sbl Gef 1
+Gef S31;Sbl Gef 3
+Gef S32;Sbl Gef 3
+Gef U2;Üst Gef 2
+Ges;Grein Stadt
+Gf A1;AB (Awanst)
+Gf;Göpfritz
+Gfl;Groß St Florian
+Gg A1;AB (Awanst)
+Gg;Golling-Abtenau
 G G;Grenze ÖBB-GKB im km 211,617
-G H2;Graz Don Bosco Hst
-G L1;Graz Hart Lst (Awanst)
-G Z1;Abzw G 1
-GA;Gaisbach-Wartberg
-GA H1;Schloß Haus Hst
-GAE;Gänserndorf
-GAE A1;AB (Awanst)
-GAE H1;Weikendorf-Dörfles Hst
-GAE H1M;Weikendorf Hst
-GAE H2;Tallesbrunn Hst
-GAE H2A;Matzen Hst
-GAE H2M;Stripfing Hst
-GAE H3A;Raggendorf Hst
-GAE K1A;Prottes H-Lst (Awanst, AB)
-GAE S91;Sbl Gae 1S
-GAE S92;Sbl Gae 1S
-GAI;Gaishorn
-GAS;Gars-Thunau
-GAS H1;Buchberg Hst
-GAW;Gaweinstal H-Lst (Awanst)
-GB;Gstatterboden im Nationalpark
-GB H1;Johnsbach im Nationalpark Hst
-GBG;Bad Gleichenberg
-GBK;Grein-Bad Kreuzen
-GBK H1;Dornach Hst
-GD;Grafendorf
-GDF;Großendorf
-GDF H1;Wiesmühle Hst
-GDN;Gladen Hst
-GDN H1;Hafning Hst
-GDN H2;Friedauwerk Hst
-GE;Gesäuse Eingang
-GED;Groß Engersdorf
-GEF;Gerasdorf
-GEF H1;Kapellerfeld Hst
-GEF H2;Seyring Hst
-GEF H3;Obersdorf Hst
-GEF S11;Sbl Gef 1
-GEF S12;Sbl Gef 1
-GEF S32;Sbl Gef 3
-GEF S91;Sbl Gef 3
-GEF U2;Üst Gef 2
-GER;Gerichtsberg (Gf)
-GES;Grein Stadt
-GF;Göpfritz
-GF A1;AB (Awanst)
-GF L1;Groß Siegharts Lst (AB)
-GF L2;Raabs Lst
-GFL;Groß St Florian
-GG;Golling-Abtenau
-GG A1;AB (Awanst)
-GG A1A;AB (Awanst)
-GG K2;Tenneck H-Lst (Awanst)
-GG L1;Sulzau Lst (Awanst)
-GG S11;Sbl Gg 1
-GG S12;Sbl Gg 1
-GG S31;Sbl Gg 3
-GG S32;Sbl Gg 3
-GG S51;Sbl Gg 5
-GG S52;Sbl Gg 5
-GG U2;Üst Gg 2
-GG U4;Üst Gg 4
-GH;Szentgotthard
-GH Z9;Szombathely
-GI;Graz-Vbf
-GJ;Goisern Jodschwefelbad
-GJ H1;Lauffen Hst
-GK;Grieskirchen-Gallspach
-GK A1;AB (Awanst)
-GK H1;Obertrattnach-M Hofk Hst
-GK S11;Sbl Gk 1
-GK S12;Sbl Gk 1
-GK S31;Sbl Gk 3
-GK S32;Sbl Gk 3
-GK U2;Üst Gk 2
-GKF;Graz Köflacherbf
-GKF F1;Graz Köflacherbf Vorbf
-GKF H1;Graz Wetzelsdorf Hst
-GKF H2;Graz Webling Hst
-GKF S1;Sbl Sgg 1
-GKN;W.Mat.-Gleiskreuzung Nord
-GL;Linz Vbf-Gleisdreieck
-GL Z1;Abzww 1 Ch
-GLA;Glanegg
-GLA H1;Mautbrücken Hst
-GLD;Gleisdorf
-GLD A1;AB (Awanst)
-GLD A2;AB (Awanst)
-GLD A3;AB (Awanst)
-GLD B11;Bl Gld 1
-GLD B12;Bl Gld 1
-GLD G;Grenze ÖBB-STLB Km 221,449
-GLD H1;Kroisbach-Zöbing Hst
-GLD K1;Takern-St.Margarethen H-Lst
-GLD Z9;Weiz
-GLO;Gloggnitz
-GLO A1;AB (Awanst, UW, AB)
-GLO H1;Schlöglmühl Hst
-GLO S11;Sbl Glo 1
-GLO S12;Sbl Glo 1
-GLO S21;Sbl Glo 2
-GLO S22;Sbl Glo 2
-GM;Gmünd N.Ö.
-GM A1N;AB (Awanst)
-GM E1;Km 2.093
-GM G;Staatsgrenze nächst Gmünd N.Ö.
-GM H1;Ehrendorf Hst
-GM H2;Dietmanns Hst
-GM H3;Eichberg bei Weitra Hst
-GM K1;Alt-Weitra H-Lst (Awanst)
-GMI;Graz-Fbf
-GMS;Gmunden Seebf
-GN;Gramatneusiedl
-GN H1;Reisenberg-Marienthal Hst
-GN S11;Sbl Gn 1
-GN S12;Sbl Gn 1
-GNG;Gösing (Gf)
-GNG H1;Wienerbruck-Josefsberg Hst
-GNG H2;Erlaufklause Hst
-GNG K1;Annaberg H-Lst
-GO;Gols
-GO H1;Mönchhof Hst
-GOB;Graz Ostbf
-GOB A1;AB (Awanst)
-GOE;Götzendorf
-GOE H1;Sarasdorf Hst
-GOE H1A;Trautmannsdorf a.d.L. Hst
-GOE H2;Wilfleinsdorf Hst
-GOE L1;Gleisende km 29,074
-GOE S11;Sbl Goe 1
-GOE S12;Sbl Goe 1
-GOE S31;Sbl Goe 3
-GOE S32;Sbl Goe 3
-GOE U2;Üst Goe 2
-GOF;Gosdorf
-GOF H1;Diepersdorf Hst
-GOF H2;Weixelbaum a.d.Mur Hst
-GOF H3;Purkla Hst
-GOI;Bad Goisern
-GOL;Bruckberg Golfplatz
-GOR;St.Georgen am Reith
-GOR H1;Obereinöd Hst
-GOR H2;Königsberg Hst
-GOR K1;Blamau H-Lst
-GOS;Göstling a.d.Ybbs
-GOS H1;Kogelsbach Hst
-GOT;Götzis
-GOT A1;AB (Awanst)
-GOT H1;Altach Hst
-GP;Garmisch-Partenkirchen
-GP H1;Untergrainau Hst
-GR;Göllersdorf
-GR H1;Breitenwaida Hst
-GR S11;Sbl Gr 1
-GR S12;Sbl Gr 1
-GRA;Grafenstein
-GRA H1;Klagenfurt Ebenthal Hst
-GRB;Gröbming
-GRB H1;Pruggern Hst
-GRB H2;Aich-Assach Hst
-GRE;Greifenburg-Weißensee
-GRF;Grafenschlag
-GRF E1;EK km 41,098
-GRG;Groß Gerungs
-GRH;Großhollenstein
-GRH H1;Saimannslehen Hst
-GRH H2;Kleinhollenstein Hst
-GRH H3;Hohenlehen Hst
-GRH H4;Seeburg Hst
-GRL;Gralla
-GRL H1;Kaindorf a.d.Sulm Hst
-GRM;Großraming
-GRM H1;Küpfern Hst
-GRN;Gresten-Gleisgr 101
-GRO;Griesen (Oberbay)
-GRO G;Staatsgrenze nächst Erwald-Zugspitzbahn
-GRR;Großreifling
-GRS;Groß Schweinbarth
-GRU;Grünbach am Schneeberg
-GRU A1;AB
-GRU H1;Grünbach Schule Hst
-GRU H2;Grünbach Kohlenwerk Hst
-GRU H3;Pfennigbach Hst
-GS;Klein Schwechat-Groß Schwechat
-GST;Garsten
-GST H1;Sand Hst
-GSY;Gstadt
-GSY H1;Kreilhof Hst
-GSY H2;Vogelsang Hst
-GT;Gutenstein
-GTF;Görtschach-Förolach
-GTF H1;Pressegger See Hst
-GTF H2;Vellach-Khünburg Hst
-GTT;Gattendorf
-GTT H1;Pama Hst
-GTT L1;Pama Lst (Awanst)
-GU;Gummern
-GU A1;AB (Awanst)
-GU S11;Sbl Gu 1
-GU S12;Sbl Gu 1
-GU Z2;Abzw Gu 2
-GUD;Guntersdorf
-GUD H1;Zellerndorf Platt Hst
-GUE;Grünau im Almtal
-GUH;Gundersheim
-GUK;Guntramsdorf-Kaiserau
-GUK A1;AB
-GUK H1;Guntramsdorf-Kaiserau Hst
-GUK H2;Möllersdorf Aspangbahn Hst
-GUN;Gunskirchen
-GUN S11;Sbl Gun 1
-GUN S12;Sbl Gun 1
-GUR;Gurten
-GUR A1;AB (Awanst)
-GUR H1;Geinberg Hst
-GW;Gratwein-Gratkorn
-GW H1;Judendorf-Straßengel Hst
-GW S11;Sbl Gw 1
-GW S12;Sbl Gw 1
-GWB;Gaweinstal Brünnerstraße
-GZ;Gmunden
-GZ H1;Pinsdorf Hst
-H;Hall in Tirol
+Gg K2;Tenneck (Awanst)
+Gg L1;Sulzau Lst (Awanst)
+G;Graz Hbf (in G)
+Gg S11;Sbl Gg 1
+Gg S12;Sbl Gg 1
+Gg S31;Sbl Gg 3
+Gg S32;Sbl Gg 3
+Gg S51;Sbl Gg 5
+Gg S52;Sbl Gg 5
+Gg U2;Üst Gg 2
+Gg U4;Üst Gg 4
+G H1;Graz Don Bosco (in G)
+Gh;Szentgotthard
+Gh Z9;Szombathely
+Gi;Graz-Vbf (in G)
+Gk A1;AB (Awanst)
+Gkf;Graz Köflacherbf
+Gkf H1;Graz Wetzelsdorf
+Gkf H2;Graz Webling Hst
+Gkf S11;Sbl Gkf 1
+Gkf S12;Sbl Gkf 1
+Gkf S1;Sbl Sgg 1
+Gk;Grieskirchen-Gallspach
+Gk H1;Obertrattnach-M Hofk
+Gk S11;Sbl Gk 1
+Gk S12;Sbl Gk 1
+Gk S31;Sbl Gk 3
+Gk S32;Sbl Gk 3
+Gk U2;Üst Gk 2
+Gla;Glanegg
+Gla H1;Mautbrücken
+Gld A1;AB (Awanst)
+Gld A2A;AB (Awanst)
+Gld A2;AB (Awanst)
+Gld A3;AB (Awanst)
+Gld G;Grenze ÖBB-STLB Km 221,449
+Gld;Gleisdorf
+Gld H1;Hst außer Betrieb
+Gld Z9;Weiz Stadt
+Gli;Graz Stadion Liebenau (in Gob)
+Gl;Linz Vbf-Gleisdreieck (in Lzv)
+Glo;Gloggnitz
+Glo H1;Schlöglmühl
+Glo S11;Sbl Glo 1A
+Glo S12;Sbl Glo 1A
+Glo S21;Sbl Glo 2A
+Glo S22;Sbl Glo 2A
+Gm A1N;AB (Awanst)
+Gm E1;Km 2.093
+Gm;Gmünd N.Ö.
+Gm G;Staatsgrenze nächst Gmünd N.Ö.
+Gm H1;Ehrendorf
+Gm H2;Dietmanns
+Gm H3;Eichberg bei Weitra
+Gmi;Graz-Fbf (in G)
+Gm K1;Alt-Weitra (Awanst)
+Gng;Gösing (Gf)
+Gng H1;Wienerbruck-Josefsberg
+Gng H2;Erlaufklause
+Gng K1;Annaberg
+Gn;Gramatneusiedl
+Gn H1;Reisenberg-Marienthal
+Gn S11;Sbl Gn 1
+Gn S12;Sbl Gn 1
+Gob A1;AB (Awanst)
+Gob;Graz Ostbf-Messe (in Gob)
+Gob H1;Graz Liebenau-Murpark (in Gob)
+Goe;Götzendorf (in Goe)
+Goe H1A;Trautmannsdorf a.d.L.
+Goe H1;Sarasdorf
+Goe H2;Wilfleinsdorf
+Goe L1;Gleisende km 29,074
+Goe S11;Sbl Goe 1
+Goe S12;Sbl Goe 1
+Goe S31;Sbl Goe 3
+Goe S32;Sbl Goe 3
+Goe U2;Üst Goe 2
+Goe W1;Abzww Str 11815 (in Goe)
+Gof;Gosdorf
+Gof H3;Purkla
+Go H1;Mönchhof Hst
+Goi;Bad Goisern
+Goi H1;Goisern Jodschwefelbad
+Goi H2;Lauffen
+Gol;Bruckberg Golfplatz
+Got A1;AB (Awanst)
+Got;Götzis
+Got H1;Altach
+Gp;Garmisch-Partenkirchen
+Gp H1;Garmisch-Partenkirchen Hausberg
+Gp H2;Untergrainau
+Gra;Grafenstein
+Gra H1;Klagenfurt Ebenthal (in Kt)
+Grb;Gröbming
+Grb H1;Pruggern
+Grb H2;Aich-Assach
+Gre;Greifenburg-Weißensee
+Grg;Groß Gerungs
+Gr;Göllersdorf
+Gr H1;Breitenwaida
+Grn;Gresten-Gleisgr 101
+Gro;Griesen (Oberbay)
+Gro G;Staatsgrenze nächst Ehrwald-Zugspitzbahn
+Grr;Großreifling
+Gr S11;Sbl Gr 1
+Gr S12;Sbl Gr 1
+Grs;Groß Schweinbarth
+Gru A1;AB
+Gru;Grünbach am Schneeberg
+Gru H1;Grünbach Schule
+Gru H2;Grünbach Kohlenwerk
+Gru H3;Pfennigbach
+Gs;Schwechat (in Kls)
+Gst;Garsten
+Gsy;Gstadt
+Gsy H1;Kreilhof
+Gsy H2;Vogelsang
+Gt;Gutenstein
+Gtt;Gattendorf
+Gtt H1;Pama
+Gtt L1;Pama Lst (Awanst)
+Gu A1;AB (Awanst)
+Gud;Guntersdorf
+Gud H1;Platt (in Zd)
+Gue;Grünau im Almtal
+Gu;Gummern
+Guk;Guntramsdorf-Kaiserau (in Guk)
+Guk H1;Guntramsdorf-Kaiserau Haltestelle (in Guk)
+Guk H2;Möllersdorf Aspangbahn
+Gun;Gunskirchen
+Gun S11;Sbl Gun 1
+Gun S12;Sbl Gun 1
+Gur A1;AB (Awanst)
+Gur;Gurten
+Gur H1;Geinberg
+Gu S11;Sbl Gu 1
+Gu S12;Sbl Gu 1
+Gu Z2;Abzw Gu 2
+Gw;Gratwein-Gratkorn
+Gw H1;Judendorf-Straßengel
+Gw S11;Sbl Gw 1
+Gw S12;Sbl Gw 1
+Gz;Gmunden
+Gz H1;Pinsdorf
+Gzs;Graz-Süd (in G)
 H A1;AB (Awanst)
-H H1;Rum Hst
+Had A1;AB (Awanst)
+Had H1;Breitwiesen
+Had H2;Finklham
+Had H3;Breitenaich
+Had H4;Kalköfen-Daxberg
+Had H5;Lahöfen
+Had;Haiding
+Had S11;Sbl Had 1
+Had S12;Sbl Had 1
+Had U2;Üst Had 2
+Haf;Haugsdorf
+Hah;Haslach
+Hai H1;Hainburg a.d.Donau Personenbf
+Hai H2;Hainburg a.d.Donau Ungartor
+Hai;Hainburg a.d.Donau Kulturfabrik
+Hak;Handelskai (in Wv)
+Hal;Halbenrain
+Har;Hartberg
+Hat;Habachtal-Weyerhof
+Hau;Haus
+Hau S11;Sbl Hau 1
+Hau S12;Sbl Hau 1
+Haz H1;Hengsthütte
+Haz;Hauslitzsattel
+Hba;Hollersbach
+Hbb;Heiligenkreuz-Businesspark
+Hbp;Hollersbach Panoramabahn
+Hch H1;Pfaffenschwendt
+Hch H2;Fieberbrunn
+Hch H3;Grieswirt
+Hch;Hochfilzen
+Hch S11;Sbl Hch 1
+Hch S12;Sbl Hch 1
+Hch S31;Sbl Hch 3
+Hch S32;Sbl Hch 3
+Hch U2;Üst Hch 2
+Hdd;Abzw Knoten Hadersdorf
+Hdd S21;Sbl Hdd 2
+Hdd S22;Sbl Hdd 2
+Hdd S31;Sbl Hdd 3
+Hdd S32;Sbl Hdd 3
+Hdd U1;Üst Hdd 1
+Hdv;Horni Dvoriste
+Hdv Z9;Horni Dvoriste
+He;Hegyeshalom
+Hen;Hengsberg
+Hen S11;Sbl Hen 1
+Hen S12;Sbl Hen 1
+Her;Hermagor
+Het;Wien Hetzendorf (in Wbf)
+Hez;Abzw Knoten Hetzendorf
+Hez S21;Sbl Hez 2
+Hez S22;Sbl Hez 2
+Hez S31;Sbl Hez 3
+Hez S32;Sbl Hez 3
+Hez S91;Sbl Hez 1DL
+Hez S92;Sbl Hez 1DL
+Hez U1;Üst Hez 1
+Hez U4;Üst Hez 4
+Hfa H1H;Gedersdorf
+Hfa H1;Rohrendorf
+Hfa;Hadersdorf am Kamp
+Hfa S11;Sbl Hfa 1
+Hfa S12;Sbl Hfa 1
+Hfg;Wien Hütteldorf Güterzuggruppe (in Hf)
+Hf H1A;Wien Speising
+Hf H1;Wien Wolf in der Au
+Hf H2;Wien Hadersdorf
+Hf H3;Wien Weidlingau
+Hf H4;Purkersdorf Sanatorium
+Hf S11;Sbl Hf 1
+Hf S12;Sbl Hf 1
+Hf S13;Sbl Hf 21
+Hf S14;Sbl Hf 21
+Hf S25;Sbl Hf 2
+Hf S26;Sbl Hf 2
+Hf U22;Üst Hf 22
+Hf;Wien Hütteldorf (in Hf)
+Hf Z1;Abzw Hf 1
+Hg;Bad Hofgastein
+Hgr;Hötzelsdorf-Geras
+Hgr S11;Sbl Hgr 1
+Hgr S12;Sbl Hgr 1
+Hg S31;Sbl Hg 3
+Hg S32;Sbl Hg 3
+Hg Z1;Abzw Hg 1
+Hg Z2;Abzw Hg 2
+Hg Z4;Abzw Hg 4
+H H1H;Hall-Thaur
+H H2;Rum
+H;Hall in Tirol
+Hi;Hieflau (in Hi)
+Him;Himberg
+Him S11;Sbl Him 1
+Him S12;Sbl Him 1
+Hin;Hintergasse
+Hi W1;Abzww Hieflau (in Hi)
+Hk A1;AB (Awanst)
+Hka G;Staatsgrenze nächst Deutschkreutz
+Hka;Harka
+Hk H1;Rosenau
+Hk H2;Sonntagberg
+Hk H3;Böhlerwerk a.d.Ybbs
+Hk;Hilm-Kematen
+Hl H1A;Hallein Burgfried
+Hl H2A;Bad Vigaun
+Hl H3;Kuchl Garnei
+Hl H5;Kuchl
+Hl;Hallein
+Hl L4;Kuchl Lst (Awanst)
+Hl S11;Sbl Hl 1
+Hl S12;Sbl Hl 1
+Hl S21;Sbl Hl 2
+Hl S22;Sbl Hl 2
+Hl S41;Sbl Hl 4
+Hl S42;Sbl Hl 4
+Hl S51;Sbl Hl 5
+Hl S52;Sbl Hl 5
+Hl U3;Üst Hl 3
+Hlu;Haslau an der Donau (in Mae)
+Hm;Hetzmannsdorf-Wullersdorf
+Hna;Horn
+Hnd;Hennersdorf (in Id)
+Hnf;Hernals-Fbf (in Hns)
+Hn H2;Rainfeld-Klein Zell
+Hn;Hainfeld
+Hns;Hernals (in Hns)
+Hoe H1;Oftering
+Hoe;Hörsching
+Hoe S11;Sbl Hoe 1
+Hoe S12;Sbl Hoe 1
+Hoe S21;Sbl Hoe 2
+Hoe S22;Sbl Hoe 2
+Hog H1;Mainburg
+Hog;Hofstetten-Grünau (Gf)
+Ho H1;Ober Radlberg
+Ho;Herzogenburg (in Ho)
+Hoh;Herzogenburg-Süd (in Ho)
+Hol H1;Leithen
+Hol;Hochzirl
+Hom H1;Hst außer Betrieb
+Hom H2;Hst außer Betrieb
+Hom;Hörmanns
+Hor;Unter Radlberg (in Ho)
+Hos H1;Hatlerdorf
+Hos H2;Dornbirn-Schoren (in Do)
+Hos;Hohenems
+Hos Z1;Abzw Hos 1
+Hp H1;Wörgl Süd - Bruckhäusl
+Hp;Hopfgarten
+Hp U1;Üst Hp 1
+Hr;Hieflau Vbf (in Hi)
 H S11;Sbl H 1
 H S12;Sbl H 1
 H S31;Sbl H 3
 H S32;Sbl H 3
+Hsc;Hochschneeberg
+Hst;Hinterstoder
+Ht H1;Wien Oberdöbling
+Ht H2;Krottenbachstraße
+Ht H3;Gersthof
+Ht S11;Sbl Ht 1
+Ht S12;Sbl Ht 1
+Ht S21;Sbl Ht 2
+Ht S22;Sbl Ht 2
+Ht U3;Üst Ht 3
+Ht;Wien Heiligenstadt
 H U2;Üst H 2
-HA;Haag
-HA H1;Stadt Haag Hst
-HA S11;Sbl Ha 1
-HA S12;Sbl Ha 1
-HA S31;Sbl Ha 3
-HA S32;Sbl Ha 3
-HA U2;Üst Ha 2
-HAD;Haiding
-HAD A1;AB (Awanst)
-HAD H1;Breitwiesen Hst
-HAD H2;Finklham Hst
-HAD H3;Breitenaich Hst
-HAD H4;Kalköfen-Daxberg Hst
-HAD H5;Lahöfen Hst
-HAD S11;Sbl Had 1
-HAD S12;Sbl Had 1
-HAD U2;Üst Had 2
-HAF;Haugsdorf
-HAH;Haslach
-HAI;Hainburg a.d.Donau Fbf
-HAI A1;AB (Awanst)
-HAI H1;Hainburg a.d.Donau Personenbf Hst
-HAI H2;Hainburg a.d.Donau Ungartor Hst
-HAK;Wien Brigittenau Handelskai Hst
-HAL;Halbenrain
-HAR;Hartberg
-HAR H1;Buch Hst
-HAR H2;Geiseldorf Hst
-HAU;Haus
-HAZ;Hauslitzsattel
-HAZ H1;Hengsthütte Hst
-HB;Hüttenberg H-Lst
-HB H1;Wieting Hst
-HB K1;Mösel H-Lst
-HBA;Hollersbach
-HBA H1;Dorf Paßthurn Hst
-HBA L1;Hollersbach Lst
-HBP;Heiligenkreuz-Businesspark
-HCH;Hochfilzen
-HCH H1;Pfaffenschwendt Hst
-HCH S11;Sbl Hch 1
-HCH S12;Sbl Hch 1
-HDV;Horni Dvoriste
-HDV Z9;Horni Dvoriste
-HE;Hegyeshalom
-HER;Hermagor
-HER H1;Postran Hst
-HER H2;Watschig Hst
-HER H3;Tröpolach Hst
-HET;W.Mat.-Wien Hetzendorf
-HF;Wien Hütteldorf
-HF H1A;Wien Speising Hst
-HF H1H;Wien Hadersdorf Hst
-HF H2H;Wien Weidlingau Hst
-HF H3H;Purkersdorf Sanatorium Hst
-HF S11;Sbl Hf 1
-HF S12;Sbl Hf 1
-HF S13;Sbl Hf 21
-HF S14;Sbl Hf 21
-HF S21;Sbl Hf 2
-HF S22;Sbl Hf 2
-HF S25;Sbl Hf 2
-HF S26;Sbl Hf 2
-HF U22;Üst Hf 22
-HF Z1;Abzw Hf 1
-HFA;Hadersdorf am Kamp
-HFA H1;Rohrendorf Hst
-HFA K1;Gedersdorf H-Lst (Awanst)
-HFA S11;Sbl Hfa 1
-HFA S12;Sbl Hfa 1
-HFS;Wien Hausfeldstraße Hst
-HG;Bad Hofgastein
-HG H1;Bad Hofgastein Hst
-HG Z1;Abzw Hg 1
-HGR;Hötzelsdorf-Geras
-HGR S11;Sbl Hgr 1
-HGR S12;Sbl Hgr 1
-HI;Hieflau
-HI W1;Hieflau Abzweigweiche
-HIM;Himberg
-HIM S11;Sbl Him 1
-HIM S12;Sbl Him 1
-HIN;Hintergasse
-HK;Hilm-Kematen
-HK A1;AB (Awanst)
-HK H1;Rosenau Hst
-HK H2;Sonntagberg Hst
-HK H3;Böhlerwerk a.d.Ybbs Hst
-HKA;Harka
-HKA G;Staatsgrenze nächst Deutschkreutz
-HL;Hallein
-HL H1A;Hallein Burgfried Hst
-HL H2A;Bad Vigaun Hst
-HL H3;Kuchl Garnei Hst
-HL H5;Kuchl Hst
-HL L4;Kuchl Lst (Awanst)
-HL S11;Sbl Hl 1
-HL S12;Sbl Hl 1
-HL S21;Sbl Hl 2
-HL S22;Sbl Hl 2
-HL S41;Sbl Hl 4
-HL S42;Sbl Hl 4
-HL S51;Sbl Hl 5
-HL S52;Sbl Hl 5
-HL U3;Üst Hl 3
-HLU;Maria Ellend-Haslau
-HM;Hetzmannsdorf-Wullersdorf
-HN;Hainfeld (Gf)
-HN H1;Rohrbach a.d.Gölsen Hst
-HN H2;Rainfeld-Klein Zell Hst
-HNA;Horn
-HND;Hennersdorf
-HNS;Hernals
-HO;Herzogenburg
-HO A2;AB (Awanst)
-HO H1;Ober Radlberg Hst
-HO K1;Unter Radlberg H-Lst (Awanst)
-HOB;Hohenberg
-HOE;Hörsching
-HOE H1;Oftering Hst
-HOE S11;Sbl Hoe 1
-HOE S12;Sbl Hoe 1
-HOE S21;Sbl Hoe 2
-HOE S22;Sbl Hoe 2
-HOG;Hofstetten-Grünau (Gf)
-HOG H1;Mainburg Hst
-HOH;Herzogenburg-Süd
-HOL;Hochzirl
-HOL H1;Leithen Hst
-HOM;Hörmanns
-HOM H1;Groß Haslau Hst
-HOM H1A;Groß Globnitz Hst
-HOM H2;Gerotten Hst
-HON;Holzleithen
-HOS;Hohenems
-HOS A1;AB (Awanst)
-HOS H1;Hatlerdorf Hst
-HOS H2;Dornbirn-Schoren Hst
-HOS S11;Sbl Hos 1
-HOS S12;Sbl Hos 1
-HP;Hopfgarten
-HP U1;Üst Hp 1
-HR;Hieflau Vbf
-HRD;Hohenruppersdorf H-Lst
-HS;Hausruck (Gf)
-HSC;Hochschneeberg
-HST;Hinterstoder
-HT;Heiligenstadt
-HT H1;Oberdöbling Hst
-HT H2;Krottenbachstraße Hst
-HT H3;Gersthof Hst
-HT S11;Sbl Ht 1
-HT S12;Sbl Ht 1
-HT S21;Sbl Ht 2
-HT S22;Sbl Ht 2
-HT U3;Üst Ht 3
-HU;Hutten
-HU H1;Unter Oberndorf Hst
-HU H2;Maria Anzbach Hst
-HU H3;Hofstatt Hst
-HU H4;Neulengbach Stadt Hst
-HU S11;Sbl Hu 1
-HU S12;Sbl Hu 1
-HU S21;Sbl Hu 2
-HU S22;Sbl Hu 2
-HUE;Hüttau Terminal
-HW;Hallwang-Elixhausen
-HW H1;Salzburg Kasern Hst
-HW S11;Sbl Hw 1
-HW S12;Sbl Hw 1
-HW U2;Üst Hw 2
-HW Z3;Abzw Hw 3
-HZ;Wien Praterstern-Wien Mitte
-I;Innsbruck Hbf
-I A1;AB (Awanst, UW)
+Hue;Hüttau Terminal
+Hu H1;Unter Oberndorf
+Hu H2;Maria Anzbach
+Hu H3;Hofstatt
+Hu H4;Neulengbach Stadt
+Hu;Hutten
+Hui H1;Gaisruck
+Hui;Hausleiten
+Hu S11;Sbl Hu 1
+Hu S12;Sbl Hu 1
+Hu S21;Sbl Hu 2
+Hu S22;Sbl Hu 2
+Hw H1;Salzburg Kasern
+Hw;Hallwang-Elixhausen
+Hw S11;Sbl Hw 1
+Hw S12;Sbl Hw 1
+Hw U2;Üst Hw 2
+Hw Z3;Abzw Hw 3
+Hz;Wien Mitte (in Nw)
+I A1;AB (Awanst)
 I A2;AB (Awanst)
-I H1;Unterberg-Stefansbrücke Hst
-I H2;Patsch Hst
+Id S11;Sbl Id 1
+Id S12;Sbl Id 1
+Ids;Wien Süd Güterzentrum Einfahrt Süd (in Id)
+Idt;Wien Süd Güterzentrum (in Id)
+Id;Wien Blumental (in Id)
+If;Bad Ischl Frachtenbf
+I H1;Unterberg-Stefansbrücke
+I H2;Patsch
+Ih H1;Allerheiligenhöfe
+Ih H2;Kranebitten
+Ih;Innsbruck Hötting (in I)
+I;Innsbruck Hbf (in I)
+Il A1;AB (Awanst)
+Il;Bad Ischl
+Im H1;Imsterberg
+Im;Imst-Pitztal
+Im S11;Sbl Im 1
+Im S12;Sbl Im 1
+Irn;Irnfritz
+Irn S11;Sbl Irn 1
+Irn S12;Sbl Irn 1
+Itz G;Grenze ÖBB - SLB
+Itz;Salzburg Itzling
 I U2;Üst I 2
 I U3;Üst I 3
+I W1;Abzww Innsbruck Hbf Süd (in I)
 I Z1;Abzw I 1
-ID;Blumental
-IDB;In der Bruck
-IF;Bad Ischl Frachtenbf
-IH;Innsbruck Hbf-Hötting
-IH H1;Allerheiligenhöfe Hst
-IH H2;Kranebitten Hst
-IL;Bad Ischl
-IL A1;AB (Awanst)
-IM;Imst-Pitztal
-IM A1;AB
-IM B11;Bl Im 1
-IM B12;Bl Im 1
-IM H1;Imsterberg Hst
-IRN;Irnfritz
-IRN S11;Sbl Irn 1
-IRN S12;Sbl Irn 1
-ITZ;Salzburg Itzling
-ITZ G;Grenze ÖBB - SLB
-IZ;Inzersdorf Ort
-IZO;Inzersdorf Ort-Ost
-J;Floridsdorf-Jedlersdorf
-J H1;Langenzersdorf Hst
-J H2;Bisamberg Hst
-J S11;Sbl J 1
-J S12;Sbl J 1
-JB;Jenbach
-JB H1;Stans bei Schwaz Hst
-JB S11;Sbl Jb 1
-JB S12;Sbl Jb 1
-JB S31;Sbl Jb 3
-JB S32;Sbl Jb 3
-JB U2;Üst Jb 2
-JD;Jennersdorf
-JD G;Staatsgrenze nächst Jennersdorf
-JD H1;Weichselbaum a.d.Raab Hst
-JG;Judenburg
-JH;St.Johann i.d.Haide H-Lst (Awanst)
-JP;St.Johann im Pongau
-JP S11;Sbl Jp 1
-JP S12;Sbl Jp 1
-JP S21;Sbl Jp 2
-JP S22;Sbl Jp 2
-JS;Jesenice
-JTI;St.Johann in Tirol
-JTI A1;AB (Awanst)
-JTI A2;AB (Awanst)
-JTI H1;Oberndorf in Tirol Hst
-JTI S11;Sbl Jti 1
-JTI S12;Sbl Jti 1
-K;Kufstein
-K A1;AB (Awanst)
+Iz;Inzersdorf Ort (in Iz)
+Izo;Inzersdorf Ort-Ost (in Iz)
+Jb;Jenbach
+Jb S12;Sbl Jb 1
+Jd G;Staatsgrenze nächst Jennersdorf
+Jd H1;Hst außer Betrieb
+Jd;Jennersdorf
+Jg;Judenburg
+J;Jedlersdorf (in F)
+Jn;Jedlersdorf-Gleisgr 300 (in F)
+Jp S11;Sbl Jp 1
+Jp S12;Sbl Jp 1
+Jp S21;Sbl Jp 2
+Jp S22;Sbl Jp 2
+Jp;St.Johann im Pongau
+Js;Jesenice
+Jti A1;AB (Awanst)
+Jti A2;AB (Awanst)
+Jti H1;Oberndorf in Tirol
+Jti S11;Sbl Jti 1
+Jti S12;Sbl Jti 1
+Jti;St.Johann in Tirol
+Kag;Kalwang
+Kag S11;Sbl Kag 1
+Kag S12;Sbl Kag 1
+Kai A1;AB (Awanst)
+Kai;Kainisch
+Ka;Kapfenberg
+Kal;Kalsdorf (in Kal)
+Kam E1;EK km 148,691
+Kam E2;EK km 155,742
+Kam;Kadolz-Mailberg
+Kap A1;AB
+Kar A1;AB (Awanst)
+Kar;Abzw Knoten Karlsbach
+Kar H1;Neumarkt a.d.Y-Karlsbach
+Kar H2;Blindenmarkt
+Kar S11;Sbl Kar 1
+Kar S12;Sbl Kar 1
+Kar S21;Sbl Kar 2
+Kar S22;Sbl Kar 2
+Kar S31;Sbl Kar 3
+Kar S32;Sbl Kar 3
+Kar S41;Sbl Kar 4
+Kar S42;Sbl Kar 4
+Kar S51;Sbl Kar 5
+Kar S52;Sbl Kar 5
+Kar S91;Sbl Kar 11
+Kar S92;Sbl Kar 11
+Kar S93;Sbl Kar 12
+Kar S94;Sbl Kar 12
+Kar S95;Sbl Kar 14
+Kar S96;Sbl Kar 14
+Kar S97;Sbl Kar 15
+Kar S98;Sbl Kar 15
+Kar U3;Üst Kar 13
+Kas;Kalsdorf-Süd (in Kal)
+Kat;Kalsdorf-Terminal (in Kal)
+Kch;Kirchberg am Wagram
+Kd A1;AB (Awanst)
+Kd H1;Spielberg
+Kd;Knittelfeld
+Kd S11;Sbl Kd 1
+Kd S12;Sbl Kd 1
+Kek;Kematen-Piberbach
+Ke;Krieglach
+Kel A1;AB (Awanst)
+Kel H1;Markt Sachsenburg
+Kel;Kleblach-Lind
+Ken H1;Klosterneuburg-Kierling
+Ken H2;Unter Kritzendorf
+Ken;Klosterneuburg-Weidling
+Ken S11;Sbl Ken 1
+Ken S12;Sbl Ken 1
+Kf H1;Lasberg-St.Oswald
+Kf H2;Hst außer Betrieb
+Kf;Kefermarkt
+Kfl;Köflach
+Kf S11;Sbl Kf 1
+Kf S12;Sbl Kf 1
+Kft;Krift
+Kg;Kleinreifling
+Kg S11;Sbl Kg 1
+Kg S12;Sbl Kg 1
 K G;Staatsgrenze nächst Kufstein
-K H1;Schaftenau Hst
-K H2;Langkampfen Hst
+K H1;Schaftenau
+K H2;Langkampfen
+Ki H1;Allerheiligen-Mürzhofen
+Ki;Kindberg
+Kik;Kirchdorf a.d.Krems
+Kip H1;Schwerbach
+Kip;Kirchberg/P.
+Kir;Kirchbichl
+Kir S11;Sbl Kir 1
+Kir S12;Sbl Kir 1
+Ki S11;Sbl Ki 1
+Ki S12;Sbl Ki 1
+Kit H1;Brixen im Thale
+Kit H2;Windau
+Kit H3;Hopfgarten Berglift
+Kit K1;Westendorf
+Kit;Kirchberg in Tirol
+Kit S11;Sbl Kit 1
+Kit S12;Sbl Kit 1
+Kit S31;Sbl Kit 3
+Kit S32;Sbl Kit 3
+Kit S41;Sbl Kit 4
+Kit S42;Sbl Kit 4
+Kit U2;Üst Kit 2
+K;Kufstein
+Kla;Klais
+Klg H1;Weinburg
+Klg H2;Kammerhof
+Klg;Klangen
+Kl H1;Mühldorf-Möllbrücke
+Kl;Kolbnitz
+Kln;Klein Schönau
+Kl S11;Sbl Kl 1
+Kl S12;Sbl Kl 1
+Kls;Kaiserebersdorf (in Kls)
+Kls S11;Sbl Kls 1
+Kls S12;Sbl Kls 1
+Kls S21;Sbl Kls 2
+Kls S22;Sbl Kls 2
+Kl U2;Üst Kl 2
+Kms;Kammer-Schörfling
+Kn;Wörgl Kundl (in W)
+Ko A1A;AB (Awanst)
+Ko A1;AB
+Ko A2;AB
+Ko A3;AB
+Ko A4;AB
+Ko H1;Leobendorf-Burg Kreuzenstein
+Ko H2;Spillern
+Ko;Korneuburg
+Ko S21;Sbl Ko 2
+Ko S22;Sbl Ko 2
+Ko S31;Sbl Ko 3
+Ko S32;Sbl Ko 3
+Ko U1;Üst Ko 1
+Kra A1;AB (Awanst)
+Kra;Kraubath
+Kra U1;Üst Kra 1
+Krd H1;Pritschitz
+Krd;Krumpendorf
+Kre A1;AB (Awanst)
+Kre;Kremsmünster
+Kr;Krems a.d.Donau (in Kr)
+Krl;Krimml
+Krn;Krems a.d.Donau-Nord (in Kr)
+Kro H1;Gaisfeld
+Kro K2;Krems in Steiermark H-Lst
+Kro;Krottendorf-Ligist
+Kro L1;Lst (Awanst)
+Krt;Kirchstetten
+Krt S11;Sbl Krt 1
+Krt S12;Sbl Krt 1
+Krv;Krems a.d.Donau-Vorbf (in Kr)
 K S11;Sbl K 1
 K S12;Sbl K 1
 K S31;Sbl K 3
 K S32;Sbl K 3
+Ksp H1;Hst außer Betrieb
+Ksw;Schwechat West (in Kls)
+Ktf;Klagenfurt Fbf (in Kt)
+Kt H1;Klagenfurt Lend
+Kt H2;Klagenfurt West
+Kt H3A;Maria Rain
+Kt;Klagenfurt Hbf (in Kt)
+Kto;Klagenfurt Ostbf (in Kt)
+Kt S11;Sbl Kt 1
+Kt S12;Sbl Kt 1
+Kts;Klagenfurt Süd (in Kt)
+Ktt G;Staatsgrenze nächst Kittsee
+Ktt;Kittsee
 K U2;Üst K 2
-KA;Kapfenberg
-KAG;Kalwang
-KAG S11;Sbl Kag 1
-KAG S12;Sbl Kag 1
-KAI;Kainisch
-KAI A1;AB
-KAL;Kalsdorf
-KAM;Kadolz-Mailberg
-KAM E1;EK km 148,691
-KAP;Kapellen
-KAP A1;AB
-KAP H1;Hirschbachbrücke Hst
-KAP H2;Arzbach Hst
-KAS;Kalsdorf-Süd
-KAT;Kalsdorf-Terminal
-KB;Kaumberg
-KB H1;Kaumberg Markt Hst
-KBN;Kaltenbrunn (Oberbay)
-KCH;Kirchberg am Wagram
-KD;Knittelfeld
-KD A1;AB (Awanst)
-KD A2;AB (Awanst)
-KD H1;Spielberg Hst
-KD S11;Sbl Kd 1
-KD S12;Sbl Kd 1
-KE;Krieglach
-KEK;Kematen a. d. Krems
-KEL;Kleblach-Lind
-KEL A1;AB (Awanst)
-KEL H1;Markt Sachsenburg Hst
-KEN;Klosterneuburg-Weidling
-KEN H1;Klosterneuburg-Kierling Hst
-KEN H2;Unter Kritzendorf Hst
-KEN S11;Sbl Ken 1
-KEN S12;Sbl Ken 1
-KF;Kefermarkt
-KF H1;Lasberg-St.Oswald Hst
-KF S11;Sbl Kf 1
-KF S12;Sbl Kf 1
-KFL;Köflach
-KFT;Krift
-KG;Kleinreifling
-KI;Kindberg
-KI H1;Allerheiligen-Mürzhofen Hst
-KI S11;Sbl Ki 1
-KI S12;Sbl Ki 1
-KIE;Kienberg-Gaming
-KIG;Kirchbach im Gailtal
-KIG H1;Reisach Hst
-KIK;Kirchdorf a. d. Krems
-KIL;Kilb
-KIL H1;Heinrichsberg Hst
-KIP;Kirchberg/P.
-KIP H1;Schwerbach Hst
-KIR;Kirchbichl
-KIR S11;Sbl Kir 1
-KIR S12;Sbl Kir 1
-KIT;Kirchberg in Tirol
-KIT B11;Bl Kit 1
-KIT B12;Bl Kit 1
-KIT H1;Brixen im Thale Hst
-KIT H1A;Westendorf Hst
-KIT H2;Windau Hst
-KIT H3;Hopfgarten Berglift Hst
-KIT S31;Sbl Kit 3
-KIT S32;Sbl Kit 3
-KIT S41;Sbl Kit 4
-KIT S42;Sbl Kit 4
-KIT Z2;Abzw Kit 2
-KL;Kolbnitz
-KL H1;Mühldorf-Möllbrücke Hst
-KL S11;Sbl Kl 1
-KL S12;Sbl Kl 1
-KL Z2;Abzw Kl 2
-KLA;Klais
-KLE;Klein Pöchlarn
-KLF;Klein Schwechat Kaiserebersdorf Hst
-KLG;Klangen (Gf)
-KLG H1;Weinburg Hst
-KLG H2;Kammerhof Hst
-KLN;Klein Schönau
-KLS;Klein Schwechat
-KLS H2;Klein Schwechat Mannswörth Hst
-KLS S11;Sbl Kls 1
-KLS S12;Sbl Kls 1
-KLS S21;Sbl Kls 2
-KLS S22;Sbl Kls 2
-KMS;Kammer-Schörfling
-KN;Wörgl Kundl
-KO;Korneuburg
-KO A1;AB
-KO A1A;AB (Awanst)
-KO A2;AB
-KO A3;AB
-KO A4;AB
-KO B11;Bl Ko 1
-KO B12;Bl Ko 1
-KO H1;Leobendorf-Burg Kreuzenstein Hst
-KO H2;Spillern Hst
-KOM;Kötschach-Mauthen
-KR;Krems a.d.Donau
-KR H1;Campus Krems-Kunstmeile Krems Hst
-KRA;Kraubath
-KRA A1;AB
-KRA H1;Preg Hst
-KRA U1;Üst Kra 1
-KRD;Krumpendorf
-KRD H1;Pritschitz Hst
-KRE;Kremsmünster
-KRE A1;AB (Awanst)
-KRL;Krimml
-KRN;Krems a.d.Donau-Nord
-KRO;Krottendorf-Ligist
-KRO H1;Gaisfeld Hst
-KRO K1;Krems in Steiermark H-Lst
-KRT;Kirchstetten
-KRT S11;Sbl Krt 1
-KRT S12;Sbl Krt 1
-KRV;Krems a.d.Donau-Vorbf
-KS;Klamm-Schottwien
-KS S11;Sbl Ks 1
-KS S12;Sbl Ks 1
-KSP;Klein St.Paul Hst
-KSP H1;Hornburg Hst
-KT;Klagenfurt Hbf
-KT H1;Klagenfurt Lend Hst
-KT H2;Viktring Hst
-KT S11;Sbl Kt 1
-KT S12;Sbl Kt 1
-KTO;Klagenfurt Hbf-Ostbf
-KTT;Kittsee
-KTT G;Staatsgrenze nächst Kittsee
-KU;Tauplitz
-KU H1;Schiflugschanze Kulm Hst
-KUE;Linz Kleinmünchen
-KUE S11;Sbl Kue 1
-KUE S12;Sbl Kue 1
-KUN;Küpfern
-KUS;Klaus
-KW;Klein Wolkersdorf
-KZ;Kritzendorf
-KZ H1;Höflein a.d.Donau Hst
-KZ H2;Greifenstein-Altenberg Hst
-KZ S11;Sbl Kz 1
-KZ S12;Sbl Kz 1
-KZ S21;Sbl Kz 2
-KZ S22;Sbl Kz 2
-KZB;Kitzbühel
-KZB H1;Kitzbühel Hahnenkamm Hst
-KZB H2;Schwarzsee Hst
-KZB S11;Sbl Kzb 1
-KZB S12;Sbl Kzb 1
+Kue;Linz Kleinmünchen
+Kue S11;Sbl Kue 1
+Kue S12;Sbl Kue 1
+Kue S21;Sbl Kue 2
+Kue S22;Sbl Kue 2
+Ku H1;Schiflugschanze Kulm
+Kun;Küpfern (in Kun)
+Kus;Klaus
+Ku;Tauplitz
+Kw;Lanzenkirchen
+Kzb H1;Kitzbühel Hahnenkamm
+Kzb H2;Schwarzsee
+Kzb;Kitzbühel
+Kzb S11;Sbl Kzb 1
+Kzb S12;Sbl Kzb 1
+Kz H1;Höflein a.d.Donau
+Kz H2;Greifenstein-Altenberg
+Kz;Kritzendorf
+Kz S11;Sbl Kz 1
+Kz S12;Sbl Kz 1
+Kz S21;Sbl Kz 2
+Kz S22;Sbl Kz 2
+La A1S;AB (Awanst)
+Laa A1;AB
+Laa;Laa a.d.Thaya
+Lad H1;St.Georgen am Längsee
+Lad;Launsdorf-Hochosterwitz
+Lad S11;Sbl Lad 1
+Lad S12;Sbl Lad 1
+Lae H1;Unter Buchberg
+Lae K1;Winterbach
+Lae K2;Puchenstuben
+Lae;Laubenbachmühle
+Lag H1;Harruck
+Lag;Langschlag
+La H1;Lambach Markt (in La)
+La H2;Neukirchen bei Lambach
+Lah;Laßnitzhöhe
+Lak;Laakirchen (Gf)
+La;Lambach (in La)
+Lan;Langen am Arlberg
+Lan Z1;Abzw Lan 1
+La S11;Sbl La 1
+La S12;Sbl La 1
+La S21;Sbl La 2
+La S22;Sbl La 2
+Las E1;EK km 133,662
+Las H1;Hst außer Betrieb
+Las;Laa a.d.Thaya Stadt
+La W1;Abzww Lambach-Ost (in La)
+La W2;Abzww Lambach-West (in La)
+Law A1;AB (Awanst)
+Law A2A;AB (Awanst)
+Law A3;AB
+Law H1;Lahnstein
+Law H2;Steinkogl
+Law;Langwies
+Laz;Laßnitzthal
+Lb H1;Sollenau
+Lb;Leobersdorf
+Lbo A1;AB (Awanst)
+Lbo A2;AB (Awanst)
+Lbo H1;Lieboch Schadendorf
+Lbo;Lieboch
+Lb S11;Sbl Lb 1
+Lb S12;Sbl Lb 1
+Lb S21;Sbl Lb 2
+Lb S22;Sbl Lb 2
+Lca;Linz Chemie
+Lc G;Staatsgrenze nächst Lochau-Hörbranz
+Lc;Lochau-Hörbranz
+Lcr;Linz Vbf-Logistikcenter (in Lzv)
+Lc S12;Sbl Lc 1
+Ldf H1;Paasdorf
+Ldf;Ladendorf
+Ldf S11;Sbl Ldf 1
+Ldf S12;Sbl Ldf 1
+Ld H1;Eschenau
+Ld;Lend
+Ld S11;Sbl Ld 1
+Ld S92;Sbl Ld 1
+Leb;Leoben Hbf (in Leb)
+Leb S21;Sbl Leb 2
+Leb S22;Sbl Leb 2
+Leb U1;Üst Leb 1
+Leg;Leoben Göss
+Lei;Leibnitz
+Le;Landeck-Zams
+Ler H1;Lähn
+Ler;Lermoos
+Le S11;Sbl Le 1
+Le S12;Sbl Le 1
+Lew;Leoben West (in Leb)
+Lez H1;Winkl im Rosental
+Lez;Ledenitzen Ost
+Lez S11;Sbl Lez 1
+Lez S12;Sbl Lez 1
+Lfg;Salzburg Liefering (in Sb)
+Lf H1;Dürnbach
+Lf;Lahrndorf
+Lfs;Franckstraße (in Lzv)
+Lga;Wien Atzgersdorf (in Lg)
+Lgf;Liesing-Fbf (in Lg)
+Lg H1;Perchtoldsdorf
+Lg;Liesing (in Lg)
+Lha E2;EK Stadlbauerstraße
+Lha;Linz Vbf-Stadthafen (in Lzv)
+Lhs;Linzerhaus
+Lie A1A;AB (Awanst)
+Lie A1;AB (Awanst)
+Lie A2;AB (Awanst)
+Lie A3;AB (Awanst)
+Lie H1;Lienz-Peggetz
+Lie;Lienz
+Lif H1;Tauchendorf-Haidensee
+Lif;Liebenfels
+Lil A1;AB
+Lil A2;AB
+Lil H1;Marktl
+Lil H2;Traisen Markt
+Lil;Lilienfeld
+Lim B11;Bl Lim 1
+Lim B12;Bl Lim 1
+Lim H1;Hst außer Betrieb
+Lim H2;Hst außer Betrieb
+Lim;Limberg-Maissau
+Lir;Lindau-Reutin
+Lis H1;Gobelsburg
+Lis;Langenlois
+Lit;Litschau
+Ll A1;AB (Awanst)
+Llb;Leonding Lokalbahn
+Llg;Gaumberg
 L;Lindau Hbf
+Ll;Landl
+Lma;Linz Vbf Abrollstellwerk
+Lm;Linz Vbf-Ost Einfahrgr (in Lzv)
+Ln A1;AB (Awanst)
+Ln A2;AB (Awanst)
+Lna H1;Riedenburg
+Lna;Wolfurt-Lauterach Nord (in Wo)
+Lng G;Streckenende 26001
+Lng H1;Lenzing Ort
+Lng H2;Siebenmühlen-Rosenau
+Lng;Lenzing
+Ln H1;Wörschach Schwefelbad
+Ln;Liezen
+Lnn H1;Oisnitz-St.Josef
+Lnn H2;Alling-Tobisegg
+Lnn;Lannach
+Ln Z1;Abzw Ln 1
+Lof;Loifarn (in Lof)
+Lof S21;Sbl Lof 2
+Lof S22;Sbl Lof 2
+Lof Z1;Abzw Lof 1
+Loi;Loich (Gf)
+Lo;Linz Vbf-Ost Reihungsgr (in Lzv)
+Lon H1;Hst außer Betrieb
+Lon;Losenstein
+Los H1;Melk
+Los;Loosdorf
+Los S11;Sbl Los 1
+Los S12;Sbl Los 1
+Los S21;Sbl Los 2
+Los S22;Sbl Los 2
+Los S41;Sbl Los 4
+Los S42;Sbl Los 4
+Los S51;Sbl Los 5
+Los S52;Sbl Los 5
+Los U3;Üst Los 3
+Lp;Leopoldau
+Lr;Linz Vbf-West (in Lzv)
+Lsa H1;Lauterach (in Wo)
+Lsa;Wolfurt-Lauterach Süd (in Wo)
+Lsf;Loifarn-Süd (in Lof)
+Ls G;Staatsgrenze nächst Loipersbach-Schattendorf
+Ls;Loipersbach-Schattendorf
+Lt A1;AB (Awanst)
+Lt H2;Schlins-Beschling
+Lt K1;Nenzing (Awanst)
+Lt;Ludesch
+Lt U1;Üst Lt 1
+Lu H1;Katsdorf
+Lu;Lungitz
+Lu S11;Sbl Lu 1
+Lu S12;Sbl Lu 1
+Lva;Linz Vbf-Ausfahrgr (in Lzv)
+Lv;Linz Vbf-Durchfahrgr (in Lzv)
+Lwa;Wolfurt-Lauterach West (in Wo)
+Lx A1;AB (Awanst)
+Lx A2;AB
+Lx;Laxenburg-Biedermannsdorf (Gf)
 L Z9;Lindau-Aeschach
-LA;Lambach
-LA A1S;AB (Awanst)
-LA H1;Lambach Markt Hst
-LA H2;Neukirchen bei Lambach Hst
-LAA;Laa a.d.Thaya
-LAA A1;AB
-LAD;Launsdorf-H.
-LAD H1;St.Georgen am Längsee Hst
-LAD S11;Sbl Lad 1
-LAD S12;Sbl Lad 1
-LAE;Laubenbachmühle
-LAE H1;Unter Buchberg Hst
-LAE K1;Winterbach H-Lst
-LAE K2;Puchenstuben H-Lst
-LAG;Langschlag
-LAG H1;Harruck Hst
-LAH;Laßnitzhöhe
-LAH B11;Bl Lah 1
-LAH B12;Bl Lah 1
-LAH H1;Laßnitzthal Hst
-LAK;Laakirchen
-LAK A1;AB
-LAM;Lavamünd H-Lst
-LAN;Langen am Arlberg
-LAN Z1;Abzw Lan 1
-LAS;Laa a.d.Thaya Stadt
-LAS E1;EK km 133,662
-LAU;Langau
-LAU H1;Geras-Kottaun Hst
-LAW;Langwies
-LAW A1;AB (Awanst)
-LAW A2;AB
-LAW H1;Lahnstein Hst
-LAW H2;Steinkogl Hst
-LB;Leobersdorf
-LB H1;Sollenau Hst
-LB H1H;Sollenau Hst
-LB S11;Sbl Lb 1
-LB S12;Sbl Lb 1
-LB S21;Sbl Lb 2
-LB S22;Sbl Lb 2
-LBO;Lieboch
-LBO A1;AB
-LBO A2;AB
-LBO H1;Lieboch Schadendorf Hst
-LC;Lochau-Hörbranz
-LC G;Staatsgrenze nächst Lochau-Hörbranz
-LC S12;Sbl Lc 1
-LCA;Linz Chemie
-LCR;Linz Vbf-Logistikcenter
-LD;Lend
-LD H1;Eschenau Hst
-LD S11;Sbl Ld 1
-LD S12;Sbl Ld 1
-LDF;Ladendorf
-LDF H1;Paasdorf Hst
-LDF S11;Sbl Ldf 1
-LDF S12;Sbl Ldf 1
-LE;Landeck - Zams
-LE S11;Sbl Le 1
-LE S12;Sbl Le 1
-LEB;Leoben Hbf
-LEB U1;Üst Leb 1
-LEB Z2;Abzw Leb 2
-LEG;Leoben Göss
-LEG S11;Sbl Leg 1
-LEG S12;Sbl Leg 1
-LEH;Leoben Hinterberg
-LEH S11;Sbl Leh 1
-LEH S12;Sbl Leh 1
-LEI;Leibnitz
-LEO;St.Leonhard/F.
-LEO A1;AB
-LER;Lermoos (Gf)
-LER H1;Lähn Hst
-LEZ;Ledenitzen
-LEZ H1;Winkl im Rosent. Hst
-LEZ S11;Sbl Lez 1
-LEZ S12;Sbl Lez 1
-LF;Lahrndorf
-LF H1;Dürnbach Hst
-LFG;Liefering
-LFS;Linz Vbf-Franckstraße
-LG;Liesing
-LG A1;AB
-LG H1;Perchtoldsdorf Hst
-LG W1;Weiche 6Z
-LGF;Liesing-Fbf
-LHA;Linz Vbf-Stadthafen
-LHA E1;EK Hauptstraße
-LHA E2;EK Stadlbauerstraße
-LHA F1;Donaubrücke
-LHA F2;Donaubrücke
-LHA Z1;Anschluß Wirtschaftshof
-LIE;Lienz
-LIE A1;AB (Awanst)
-LIE A1A;AB (Awanst)
-LIE A2;AB (Awanst)
-LIE A3;AB (Awanst)
-LIF;Liebenfels
-LIF H1;Tauchendorf-Haidensee Hst
-LIL;Lilienfeld
-LIL A1;AB
-LIL A2;AB
-LIL H1;Marktl Hst
-LIL H2;Traisen Markt Hst
-LIM;Limberg-Maissau
-LIM B11;Bl Lim 1
-LIM B12;Bl Lim 1
-LIM H1;Straning Hst
-LIR;Lindau-Reutin
-LIS;Langenlois
-LIS H1;Gobelsburg Hst
-LIT;Litschau
-LIW;Awanst Liefering West
-LL;Landl
-LL A1;AB
-LM;Linz Vbf-Ost Einfahrgr
-LM H1;Linz Vbf Stw 11 Hst
-LM H2;Linz Vbf Stw 13 Hst
-LN;Liezen
-LN A1;AB (Awanst)
-LN A2;AB (Awanst)
-LN H1;Wörschach Schwefelbad Hst
-LN Z1;Abzw Ln 1
-LNA;Wolfurt-Lauterach Nord
-LNA H1;Riedenburg Hst
-LNG;Lenzing
-LNG A1;AB
-LNG H1;Lenzing Ort Hst
-LNG H2;Siebenmühlen-Rosenau Hst
-LNN;Lannach
-LNN H1;Alling-Tobisegg Hst
-LNN K1;Oisnitz-St Josef H-Lst
-LO;Linz Vbf-Ost Reihungsgr
-LO H1;Linz Vbf Stw 19 Hst
-LOF;Loifarn
-LOF S21;Sbl Lof 2
-LOF S22;Sbl Lof 2
-LOF Z1;Abzw Lof 1
-LOI;Loich (Gf)
-LON;Losenstein
-LOR;AB Zementwerk
-LOR H1;Lorüns Hst
-LOS;Loosdorf
-LOS S11;Sbl Los 1
-LOS S12;Sbl Los 1
-LP;Leopoldau
-LR;Linz Vbf-West
-LR H1;Linz Vbf Stw 4 Hst
-LRE;Lehenrotte
-LS;Loipersbach-Schattendorf
-LS G;Staatsgrenze nächst Loipersbach-Schattendorf
-LSA;Wolfurt-Lauterach Süd
-LSA H1;Wolfurt Lauterach Hst
-LSF;Loifarn-Süd
-LT;Ludesch
-LT A1;AB (Awanst)
-LT H2;Schlins Hst
-LT K1;Nenzing H-Lst (Awanst)
-LT U1;Üst Lt 1
-LU;Lungitz
-LU H1;Katsdorf Hst
-LU S11;Sbl Lu 1
-LU S12;Sbl Lu 1
-LUZ;Lunz am See
-LUZ H1;Kasten Hst
-LUZ H2;Stiegengraben-Ybbstalerhütte Hst
-LV;Linz Vbf-Durchfahrgr
-LV H1H;Linz Vbf Stw 21 Hst
-LVA;Linz Vbf-Ausfahrgr
-LWA;Wolfurt-Lauterach West
-LX;Laxenburg-Biedermannsd (Gf)
-LX A1;AB (Awanst)
-LX A2;AB
-LZ;Linz Hbf
-LZ G;Grenze ÖBB-LILO
-LZ H1;Leonding Hst
-LZ H1S;Untergaumberg Hst
-LZ H1W;Linz Oed Hst
-LZ H2;Pasching Hst
-LZ H2S;Gaumberg Hst
-LZ S11;Sbl Lz 1
-LZ S12;Sbl Lz 1
-LZ S31;Sbl Lz 3
-LZ S32;Sbl Lz 3
-LZ U2;Üst Lz 2
-M;St.Michael
+Lz G;Grenze ÖBB-LILO
+Lzg;Linz Gaumberg (in Lz)
+Lz H1;Leonding
+Lz H1S;Untergaumberg (in Lz)
+Lz H1W;Linz Oed
+Lz H2;Pasching
+Lz;Linz Hbf (in Lz)
+Lz S11;Sbl Lz 1
+Lz S12;Sbl Lz 1
+Lz S31;Sbl Lz 3
+Lz S32;Sbl Lz 3
+Lz U2;Üst Lz 2
+Lzv G;Grenze ÖBB - Voest Anschluss I
+Lzv;Linz Vbf (in Lzv)
+Lzv W1;Abzww Str 20814 (in Lzv)
+Lzv W2;Anschluss Voest Alpine Linz III (in Lzv)
+Lzv W3;Anschluss Voest Alpine Linz I (in Lzv)
+Lzw;Linz Hbf Westbrücke (in Lz)
 M A1;AB (Awanst)
-M H1;Traboch-Timmersdorf Hst
+Mac G;Staatsgrenze nächst Marchegg
+Mac;Marchegg
+Mae;Maria Ellend (in Mae)
+Mag H1;Niederöblarn
+Mag;St.Martin am Grimming
+Ma H1;Oberfalkenstein
+Mah;Mariahof-St.Lambrecht
+Mak A1;AB (Awanst)
+Mak A2;AB (Awanst)
+Mak;Marchtrenk
+Mak S13;Sbl Mak 1P
+Mak S14;Sbl Mak 1P
+Mak S21;Sbl Mak 2
+Mak S22;Sbl Mak 2
+Mak Z1;Abzw Mak 1
+Mal A1;AB (Awanst)
+Mal A2;AB (Awanst)
+Mal H1H;Hst außer Betrieb
+Mal H1;Klagenfurt Annabichl
+Mal;Maria Saal
+Mal S11;Sbl Mal 1
+Mal S12;Sbl Mal 1
+Mal S21;Sbl Mal 2
+Mal S22;Sbl Mal 2
+Ma;Mallnitz-Obervellach (in Ma)
+Man;Mannersdorf (in Goe)
+Mar;Maria Lanzendorf
+Ma S11;Sbl Ma 1
+Ma S12;Sbl Ma 1
+Ma S31;Sbl Ma 3
+Ma S32;Sbl Ma 3
+Mas A1A;AB (Awanst)
+Mas A1;AB (Awanst)
+Mas H1H;Kapfenberg Fachhochschule
+Mas S11;Sbl Mas 1
+Mas S12;Sbl Mas 1
+Mas;St.Marein-St.Lorenzen
+Mat;Wien Matzleinsdorf (in Wbf)
+Ma U2;Üst Ma 2
+Mau H1;St.Georgen a.d.Mattig
+Mau;Mauerkirchen
+Maw;Martinswand
+Maz;Mariazell (Gf)
+Mb H1H;Mistelbach Stadt
+Mb H2H;Siebenhirten
+Mb H3;Hörersdorf
+Mb;Mistelbach
+Mbo;Maribor
+Mdg;Mandling
+Md H1;Guntramsdorf-Thallern
+Md H2;Gumpoldskirchen
+Md;Mödling
+Md S11;Sbl Md 1
+Md S12;Sbl Md 1
+Md S31;Sbl Md 3
+Md S32;Sbl Md 3
+Md U2;Üst Md 2
+Mei;Matrei
+Mes H1;Raaba
+Mes H2;Hart bei Graz
+Mes;Messendorf
+Mfl;Freilassing
+M H1;Traboch-Timmersdorf
+Mh A1A;AB (Awanst)
+Mh A1;AB (Awanst)
+Mhf;Mönchhof-Halbturn
+Mh H1;St.Pantaleon
+Mh;Mauthausen
+Mho H1;Furth
+Mho K1;Uttendorf-Helpfau
+Mho;Mattighofen
+Mh Z1;Abzw Mh 1
+Mib;Mitterweißenbach
+Mid A1;AB (Awanst)
+Mid A2;AB (Awanst)
+Mid;Micheldorf
+Mig H1;Hagenau im Innkreis
+Mig;Mining
+Mig W1;Abzww Str 26101 (in Bru)
+Mil;Mittersill
+Mim K1;Unter Waltersdorf (Awanst)
+Mim;Mitterndorf-Moosbrunn
+Mim S11;Sbl Mim 1
+Mim S12;Sbl Mim 1
+Mis E1;EK km 51,252
+Mis G;Streckenende 18101 nächst Mistelbach Lokalbahn
+Mis L1;ÖBH Rampe Mistelbach
+Mis;Mistelbach Lokalbahn
+Mit;Mitterbach (Gf)
+Mi;Wien Meidling (in Wbf)
+Mld;Müllendorf
+Mld S11;Sbl Mld 1
+Mld S12;Sbl Mld 1
+Mlx;W.Mat.-Laxenburg (in Wbf)
+Mn A1;AB (Awanst)
+Mn A1H;AB
+Mn H1;Hart im Innkreis
+Mn;St.Martin im Innkreis
+Mog;Mogersdorf
+Mos A1;AB (Awanst)
+Mos H1;Trasdorf
+Mos H2H;Sitzenberg-Reidling
+Mos H3;Gemeinlebarn
+Mos;Moosbierbaum-Heiligeneich
+Mos S11;Sbl Mos 1
+Mos S12;Sbl Mos 1
+Mot;St.Michael-Ost (in M)
+Mp H1;Wenns
+Mp;Mühlbach im Pinzgau
+Mr H1;Marz-Rohrbach
+Mr;Mattersburg (in Mr)
+Mro Z9;Rosenheim
 M S11;Sbl M 1
 M S12;Sbl M 1
 M S13;Sbl M 1K
 M S14;Sbl M 1K
-MA;Mallnitz-Obervellach
-MA H1;Oberfalkenstein Hst
-MA S11;Sbl Ma 1
-MA S12;Sbl Ma 1
-MA S31;Sbl Ma 3
-MA S32;Sbl Ma 3
-MA U2;Üst Ma 2
-MAC;Marchegg
-MAC G;Staatsgrenze nächst Marchegg
-MAE;Maria Ellend
-MAF;Wien Matzleinsdorf (Maf)
-MAG;St.Martin am Grimming
-MAG H1;Niederöblarn Hst
-MAH;Mariahof-St.Lambrecht
-MAI;Maidorf
-MAK;Marchtrenk
-MAK A1;AB (Awanst)
-MAK A2;AB (Awanst)
-MAK S13;Sbl Mak 1P
-MAK S14;Sbl Mak 1P
-MAK S21;Sbl Mak 2
-MAK S22;Sbl Mak 2
-MAK Z1;Abzw Mak 1
-MAL;Maria Saal
-MAL A1;AB (Awanst)
-MAL H1;Klagenfurt Annabichl Hst
-MAL S11;Sbl Mal 1
-MAL S12;Sbl Mal 1
-MAL S21;Sbl Mal 2
-MAL S22;Sbl Mal 2
-MAN;Mank
-MAN H1;Lehenleiten Hst
-MAR;Maria Lanzendorf
-MAS;Marein-St.Lorenzen
-MAS A1;AB (Awanst)
-MAS H1;Kapfenberg Fachhochschule Hst
-MAS S11;Sbl Mas 1
-MAS S12;Sbl Mas 1
-MAT;Wien Matzleinsdorf
-MAT H1S;W.Mat. Wien Matzleinsdorfer Platz Hst
-MAT H2S;Wien Südtiroler Platz Hst
-MAT H3S;Wien Südbahnhof Hst
-MAT S11;Sbl Mat 1
-MAT S12;Sbl Mat 1
-MAT S13;Sbl Mat 1SB
-MAT S14;Sbl Mat 1SB
-MAT S21;Sbl Mat 2
-MAT S22;Sbl Mat 2
-MAT S23;Sbl Mat 2SB
-MAT S24;Sbl Mat 2SB
-MAT S33;Sbl Mat 3SB
-MAT S34;Sbl Mat 3SB
-MAT U4S;Üst Mat 4SB
-MAU;Mauerkirchen
-MAU A1;AB
-MAU H1;St.Georgen a.d.Mattig Hst
-MAW;Martinswand
-MAZ;Mariazell
-MB;Mistelbach
-MB H1H;Mistelbach Stadt Hst
-MB H2H;Siebenhirten Hst
-MB H3;Hörersdorf Hst
-MBA;Marbach-Maria Taferl
-MBA L1;Loja Lst
-MBO;Maribor
-MBS;Mistelbach Stadt Hst
-MD;Mödling
-MD H1;Guntramsdorf Südbahn Hst
-MD H2;Gumpoldskirchen Hst
-MD S11;Sbl Md 1
-MD S12;Sbl Md 1
-MD S31;Sbl Md 3
-MD S32;Sbl Md 3
-MD U2;Üst Md 2
-MDG;Mandling
-ME;Michelhausen
-ME H1;Atzenbrugg Hst
-MEI;Matrei
-MES;Messendorf
-MES H1;Raaba Hst
-MES H2;Authal Hst
-MES S11;Sbl Mes 1
-MES S12;Sbl Mes 1
-MFL;Freilassing
-MFL H1;Salzburg Taxham Europapark Hst
-MFL S11;Sbl Mfl 1
-MFL S12;Sbl Mfl 1
-MFL S31;Sbl Mfl 3
-MFL S32;Sbl Mfl 3
-MFL Z2;Abzw Mfl 2
-MG;Martinsberg-Gutenbrunn
-MH;Mauthausen
-MH A1;AB (Awanst)
-MH A1A;AB (Awanst)
-MH H1;St.Pantaleon Hst
-MH Z1;Abzw Mh 1
-MHF;Mönchhof-Halbturn
-MHO;Mattighofen
-MHO H1;Furth Hst
-MHO K1;Uttendorf-Helpfau H-Lst
-MI;W.Mat.-Wien Meidling
-MIB;Mitterweißenbach
-MID;Micheldorf
-MID A1;AB (Awanst)
-MID A2;AB (Awanst)
-MIG;Mining
-MIG H1;Hagenau im Innkreis Hst
-MIG Z1;Abzw Mig 1
-MIL;Mittersill
-MIL H1;Rettenbach Hst
-MIM;Mitterndorf-Moosbrunn
-MIM K1;Unter Waltersdorf H-Lst (Awanst)
-MIM S11;Sbl Mim 1
-MIM S12;Sbl Mim 1
-MIS;Mistelbach Lokalbahn
-MIS A1;AB
-MIS L1;Wilfersdorf-Hobersdorf Lst
-MIS L2;Bullendorf Lst
-MIS L3;Prinzendorf-Rannersdorf Lst
-MIS L4;Neusiedl-St.Ulrich Lst
-MIT;Mitterbach (Gf)
-ML;Melk
-ML S11;Sbl Ml 1
-ML S12;Sbl Ml 1
-ML S21;Sbl Ml 2
-ML S22;Sbl Ml 2
-MLD;Müllendorf
-MN;St.Martin im Innkreis
-MN A1;AB
-MN A1H;AB
-MN H1;Hart im Innkreis Hst
-MOG;Mogersdorf Hst
-MOS;Moosbierbaum-Heiligeneich
-MOS A1;AB (Awanst, UW)
-MOS B11;Bl Mos 1
-MOS B12;Bl Mos 1
-MOS H1;Trasdorf Hst
-MOS H2;Gemeinlebarn Hst
-MOS K1;Sitzenberg-Reidling H-Lst (Awanst, AB)
-MOT;St.Michael-Ost
-MP;Mühlbach im Pinzgau
-MP H1;Wenns Hst
-MR;Mattersburg
-MR H1;Marz-Rohrbach Hst
-MRN;Maria Rain (Gf)
-MRO Z9;Rosenheim
-MS;Voest Alpine Linz
-MSN;Markt St.Aegyd a.N.
-MT;St.Margrethen
-MT G;Staatsgrenze nächst Lustenau
-MT H1;Lustenau Markt Hst
-MTH;Mallnitz-Hintertal
-MTN;Mallnitz-Nord
-MU;Mautern
-MU S11;Sbl Mu 1
-MU S12;Sbl Mu 1
-MUE;Münchendorf
-MUG;Mureck
-MUN;Munderfing
-MV;Mitterdorf-Veitsch
-MW;Mittenwald
-MWT;St.Michael-West
-MX;Mixnitz-Bärenschützklamm
-MX A1;AB (Awanst)
-MX S11;Sbl Mx 1
-MX S12;Sbl Mx 1
-MX S21;Sbl Mx 2
-MX S22;Sbl Mx 2
-MZ;Mürzzuschlag
-MZ A1;AB (Awanst)
-MZ H1;Hönigsberg Hst
-MZ H1K;Kohleben Hst
-MZ K1;Langenwang H-Lst (Awanst)
-MZ L1;Eichhorntal Lst
-MZ S11;Sbl Mz 1
-MZ S12;Sbl Mz 1
-MZ U2;Üst Mz 2
-MZG;Mürzzuschlag-Güterbf
+M;St.Michael (in M)
+Ms;Voest Alpine Linz
+Msw;Mannswörth (in Kls)
+Mt G;Staatsgrenze nächst Lustenau
+Mth;Mallnitz-Hintertal (in Ma)
+Mtn;Mallnitz-Nord (in Ma)
+Mt;St.Margrethen
+Mue;Münchendorf
+Mue S11;Sbl Mue 1
+Mue S12;Sbl Mue 1
+Mug;Mureck
+Mu;Mautern
+Mun H1;Schalchen-Mattighofen
+Mun;Munderfing
+Mu S11;Sbl Mu 1
+Mu S12;Sbl Mu 1
+Mv;Mitterdorf-Veitsch
+Mw;Mittenwald
+Mwt;St.Michael-West (in M)
+Mx;Mixnitz-Bärenschützklamm
+Mx S11;Sbl Mx 1
+Mx S12;Sbl Mx 1
+Mx S31;Sbl Mx 3
+Mx S32;Sbl Mx 3
+Mx U2;Üst Mx 2
+Mzg;Mürzzuschlag-Güterbf (in Mz)
+Mz H1;Hönigsberg
+Mz H2;Langenwang
+Mz;Mürzzuschlag (in Mz)
+Mz S11;Sbl Mz 1
+Mz S12;Sbl Mz 1
+Mzs;Mürzzuschlag Süd (in Mz)
+Mz U2;Üst Mz 2
+Nbb;Wiener Neustadt Hbf-Schleppbf (in Nb)
+Nbf;Wiener Neustadt Hbf-Gleisgr 600 (in Nb)
+Nb H1A;Wiener Neustadt Anemonensee
+Nb H1;Katzelsdorf
+Nb H1S;St.Egyden
+Nbn;Wiener Neustadt Hbf-Gleisgr 200 (in Nb)
+Nb S11;Sbl Nb 1
+Nb S12;Sbl Nb 1
+Nb S13;Sbl Nb 1P
+Nb S14;Sbl Nb 1P
+Nb S31;Sbl Nb 3
+Nb S32;Sbl Nb 3
+Nbs;Wiener Neustadt Hbf-Gleisgr 700 (in Nb)
+Nb U2;Üst Nb 2
+Nb W1;Abzww Ne (in Nb)
+Nb;Wiener Neustadt Hbf (in Nb)
+Nd G;Staatsgrenze nächst Nendeln
+Nd H1;Forst Hilti
+Nd H1H;Schaan-Vaduz
+Nd;Nendeln
+Nef H1;Hst außer Betrieb
+Nef H2;Iglmühle
+Nef;Neufelden
+Nek;Neunkirchen N.Ö.
+Nel;Neudörfl
+Nen H1;Kleinzell
+Nen;Neuhaus-Niederwaldkirchen
+Ner H2;Rosental
+Ner;Neukirchen am Großvenediger
+Nes L1;Wildbad-Einöd Lst (Awanst)
+Nes;Neumarkt in Steiermark
+Nes U1;Üst Nes 1
+Net H1;Nöstlbach-St.Marien
+Net;Nettingsdorf
+Neu H1;Kimpling
+Neu H1P;Wendling
+Neu H2;Kumpfmühl
+Neu;Neumarkt-Kallham (in Neu)
+Neu S21;Sbl Neu 2
+Neu S22;Sbl Neu 2
+Neu U1;Üst Neu 1
+Ne;Wiener Neustadt Hbf-Einfahrbf (in Nb)
+New;Neumarkt-Kallham West (in Neu)
+Nfl A1;AB
+Nfl;Neufeld a d Leitha
+Nfl S11;Sbl Nfl 1
+Nfl S11;Sbl Nfl 1
+Nf;Nußdorf
+Nf S11;Sbl Nf 1
+Nf S12;Sbl Nf 1
+Ngg;Wiener Neustadt Hbf-Gleisgr 500 (in Nb)
+Ng;Wien Praterstern-Fbf (in Nw)
+Nh H1;Rabensburg
+Nh;Hohenau
+Ni A1;AB (Awanst)
+Nie;Nieder Fladnitz
+Nif G;Staatsgrenze nächst Nickelsdorf
+Nif;Nickelsdorf
+Ni;Niklasdorf
+Ni S11;Sbl Ni 1
+Ni S12;Sbl Ni 1
+Nkr;Neuhofen a.d.Krems
+Nk;St.Nikola-Struden
+Nl H1;Ollersbach
+Nl;Neulengbach
+Nl S11;Sbl Nl 1
+Nl S12;Sbl Nl 1
 N;Neubau-Kreuzstetten
-NA;Niederabsdorf
-NB;Wiener Neustadt Hbf
-NB H1;Katzelsdorf Hst
-NB H1A;Anemonensee Hst
-NB S11;Sbl Nb 1
-NB S12;Sbl Nb 1
-NB S13;Sbl Nb 1P
-NB S14;Sbl Nb 1P
-NB W1;Abzww Ne
-NBN;Wiener Neustadt Hbf-Gleisgr 300
-NBO;Neuberg Ort
-NBS;Wiener Neustadt Hbf-Gleisgr 100
-ND;Nendeln
-ND G;Staatsgrenze nächst Nendeln
-ND H1;Forst Hilti Hst
-ND K1;Schaan-Vaduz H-Lst (Awanst)
-NE;Wiener Neustadt Hbf-Einfahrbf
-NEB;Neubruck
-NEB A1;AB
-NEB H1;Peutenburg Hst
-NEF;Neufelden
-NEF H1;Pürnstein Hst
-NEF H2;Iglmühle Hst;
-NEK;Neunkirchen N.Ö.
-NEL;Neudörfl
-NEN;Neuhaus-Niederw.
-NEN H1;Kleinzell Hst
-NER;Neukirchen am Großvenediger
-NER H1;Sulzbachtäler Hst
-NER H2;Rosental-Großvenediger Hst
-NES;Neumarkt in Steiermark
-NES U1;Üst Nes 1
-NET;Nettingsdorf
-NET H1;Nöstlbach-St.Marien Hst
-NEU;Neumarkt-Kallham
-NEU H1;Kimpling Hst
-NEU H1P;Wendling Hst
-NEU H2;Kumpfmühl Hst
-NEU S21;Sbl Neu 2
-NEU S22;Sbl Neu 2
-NEU U1;Üst Neu 1
-NF;Nußdorf
-NF H1;Kahlenbergerdorf Hst
-NF S11;Sbl Nf 1
-NF S12;Sbl Nf 1
-NFL;Neufeld a d Leitha
-NFL A1;AB
-NFL S1;Sbl Nfl 1
-NG;Wien Praterstern-Fbf
-NG A1;AB (Awanst, ST)
-NGG;Wiener Neustadt Hbf-Gleisgr 500
-NH;Hohenau
-NH H1;Rabensburg Hst
-NI;Niklasdorf
-NI A1;AB (Awanst)
-NI S11;Sbl Ni 1
-NI S12;Sbl Ni 1
-NIE;Nieder Fladnitz (Gf)
-NIE K1;Pleißing-Waschbach H-Lst
-NIF;Nickelsdorf
-NIF G;Staatsgrenze nächst Nickelsdorf
-NIZ;Niederwölz - Oberwölz
-NIZ H1;Lind-Scheifling Hst
-NK;St.Nikola-Struden
-NKL;Abzw La 1
-NKR;Neuhofen a. d. Krems
-NL;Neulengbach
-NL H1;Ollersbach Hst
-NL S11;Sbl Nl 1
-NL S12;Sbl Nl 1
-NN;Neu Nagelberg
-NOE;Nötsch
-NOE H1;Emmersdorf Hst
-NR;Wiener Neustadt Hbf-Ausfahrbf
-NRG;Neuberg
-NS;Neusiedl am See
-NS G;Grenze ÖBB-RoeEE Km 102,154
-NS H1;Jois Hst
-NS H2;Winden Hst
-NSF;Steindorf-Friedburg
-NSI;Niedernsill
-NSI A1;AB
-NSI H1;Lengdorf Hst
-NSL;Steindorf-Lagermax
-NST;Steindorf bei Straßwalchen
-NST H1;Weng Hst
-NST H1A;Lengau Hst
-NST H2;Wallersee Hst
-NST H2A;Teichstätt Hst
-NST H3A;Achenlohe Hst
-NST H4A;Munderfing Dampfsäge Hst
-NST K1;Neumarkt-Köstendorf H-Lst (Awanst)
-NST S11;Sbl Nst 1
-NST S12;Sbl Nst 1
-NST S31;Sbl Nst 3
-NST S32;Sbl Nst 3
-NST U2;Üst Nst 2
-NW;Wien Praterstern
-NW H1;Traisengasse Hst
-NW H1H;Vienna Biocenter-St.Marx Hst
-NW H2;Handelskai Hst
-NW H3;Strandbäder Hst
-NW S11;Sbl Nw 1
-NW S12;Sbl Nw 1
-NW S21;Sbl Nw 2
-NW S22;Sbl Nw 2
-NW S31;Sbl Nw 3
-NW S32;Sbl Nw 3
-NW S41;Sbl Nw 4
-NW S42;Sbl Nw 4
-NW U11;Üst Nw 11
-O;Floridsdorf-Fbf
-OA;Obertraun-Dachsteinhöhlen
-OA H1;Hallstatt Hst
-OA H2;Obersee Hst
-OB;Oberland
-OB K1;Gaflenz H-Lst
-OBD;Obdach
-OBD K1;Taxwirt H-Lst (Awanst)
-OBW;Oberwart
-OBW A1A;AB
-OBW A2;AB
-OBW A3;AB
-OBW G;Grenze ÖBB - SRB
-OBW H1;Oberwart Einkaufszentrum Hst
-OD;Oberdrauburg
-OD H1;Irschen Hst
-ODF;Obersdorf
-ODF H1;Pillichsdorf Hst
-OEB;Oeblarn
-OEB K1;Stein a.d.Enns H-Lst (Awanst)
-OED;Oed
-OED H1;Miesenbach-Waidmannsfeld Hst
-OEP;Oepping
-OEP H1;Schlägl Hst
-OF;Wien Südbf-Fbf
-OGR;Ober Grafendorf
-OGR H1;St.Margarethen-Rammersdorf Hst
-OH;Hollabrunn
-OI;Ossiach-Bodensdorf
-OI H1;St.Urban am Ossiachersee Hst
-OK;Ottakring
-OK H1;Breitensee Hst
-OLA;Oberlaa
-OLA A1;AB (Awanst, UW)
-ON;Oberweiden
-OP;Ober Piesting
-OP A1;AB (Awanst)
-OP A2;AB (Awanst)
-OP A3;AB (Awanst)
-OP A4;AB (Awanst)
-OP H1;Wopfing Hst
-OPA;Opel Austria
-OPZ;Opponitz (Gf)
-OPZ H1;Mirenau Hst
-OPZ H2;Gaissulz Hst
-ORT;Ortmann
-ORT H1;Pernitz Wipfelhofstraße Hst
-OSS;Wien Südbf-Spitz
-OSW;W.Mat.-Oswaldgasse
-OT;Ottenschlag
-OT E1;EK km 57,283
-OTG;Ottnang-Wolfsegg
-OTG H1;Bergern Hst
-OTH;Orth a.d.Donau Lst
-OTT;Ottensheim
-OTT H1;Walding Hst
-OW;Wien Westbf-Fbf
-OZ;Ötztal
-P;Perg
-P A1;AB
+Nn;Neu Nagelberg
+Noe H1;Emmersdorf
+Noe;Nötsch
+Nrr;Ladestelle Neukirchen
+Nr;Wiener Neustadt Hbf-Ausfahrbf (in Nb)
+ns A1;AB (Awanst)
+Nsf;Friedburg (in Nst)
+Ns G;Grenze ÖBB-RoeEE Km 102,154
+Nsi A1;AB
+Nsi H1;Lengdorf
+Nsi;Niedernsill
+Nsl;Steindorf-Lagermax (in Nst)
+Ns;Neusiedl am See
+Nst H1H;Straßwalchen West (in Nst)
+Nst H1;Weng
+Nst H2H;Lengau
+Nst H2;Wallersee
+Nst H3H;Teichstätt
+Nst H4H;Achenlohe
+Nst H5H;Munderfing Dampfsäge
+Nst K1;Neumarkt-Köstendorf (Awanst)
+Nst S11;Sbl Nst 1
+Nst S12;Sbl Nst 1
+Nst S31;Sbl Nst 3
+Nst S32;Sbl Nst 3
+Nst;Steindorf bei Straßwalchen (in Nst)
+Nst U2;Üst Nst 2
+Nw H1H;Vienna Biocenter-St.Marx
+Nw H1;Wien Traisengasse
+Nw H2;Handelskai
+Nw H3;Hst außer Betrieb
+Nwi;Wien Praterstern-Innstraße (in Nw)
+Nw S11;Sbl Nw 1
+Nw S12;Sbl Nw 1
+Nw S21;Sbl Nw 2
+Nw S22;Sbl Nw 2
+Nw S31;Sbl Nw 3
+Nw S32;Sbl Nw 3
+Nw S41;Sbl Nw 4
+Nw S42;Sbl Nw 4
+Nw U11;Üst Nw 11
+Nw;Wien Praterstern (in Nw)
+Oa H1;Hallstatt
+Oa H2;Obersee
+Oa;Obertraun-Dachsteinhöhlen
+Obd A1;AB (Awanst)
+Obd L1;Taxwirt Lst (Awanst)
+Obd;Obdach
+Ob H1H;Oberland Haltestelle (in Ob)
+Ob H2;Gaflenz
+Ob;Oberland (in Ob)
+Obw A1A;AB
+Obw A2;AB
+Obw A3;AB
+Obw G;Grenze ÖBB - SRB
+Obw;Oberwart
+Odf H1;Pillichsdorf
+Odf;Obersdorf
+Od H1;Irschen
+Od;Oberdrauburg
+Oeb H1;Stein a.d.Enns
+Oeb;Öblarn
+Oed H1;Miesenbach-Waidmannsfeld
+Oed;Oed
+Oep H1;Schlägl
+Oep;Oepping
+O;Floridsdorf-Fbf (in F)
+Of;Wien Hauptbahnhof Autoreisezug (in Wbf)
+Ogr;Ober Grafendorf
+Oh;Hollabrunn
+Oi H1;St.Urban am Ossiachersee
+Oi;Ossiach-Bodensdorf
+Ok H1;Breitensee
+Ok;Ottakring
+Ola A1;AB (Awanst)
+Ola;Oberlaa
+On;Oberweiden
+Op A1;AB (Awanst)
+Op A2;AB (Awanst)
+Op A3;AB (Awanst)
+Op A4;AB (Awanst)
+Opa;Opel Austria
+Op H1;Wopfing
+Op;Ober Piesting
+Ort H1;Pernitz Wipfelhofstraße
+Ort;Ortmann
+Ost;Wien Hbf-Südosttangente (in Wbf)
+Osw;W.Mat.-Oswaldgasse (in Wbf)
+Otg A1;AB
+Otg H1;Bergern
+Otg H2;Holzleithen
+Otg H3;Hausruck
+Otg H4;Eberschwang
+Otg H5;Oberbrunn
+Otg;Ottnang-Wolfsegg
+Ott H1;Walding
+Ott;Ottensheim
+Ow;Wien Westbf-Fbf (in Ws)
+Oz;Ötztal
+P A1;AB (Awanst)
 P A2;AB (Awanst)
-P K1;Aisthofen H-Lst
-PA;Passau Hbf
-PAG;Passau Gbf
-PAM;Pamhagen
-PAM G;Staatsgrenze nächst Pamhagen
-PAM K1;Fertöujlak mrh
-PAM K2;Fertöszeplak-Fertöd mrh
-PAR;Parndorf
-PAR A1;AB (Awanst)
-PAR H1;Neudorf Hst
-PAR L1;Neudorf Lst (AWANST)
-PAR S11;Sbl Par 1
-PAR S12;Sbl Par 1
-PAU;Paudorf
-PAU A1;AB (Awanst)
-PAU A2;AB (Awanst)
-PAU H1;Meidling im Tal Hst
-PB;St.Pölten Hbf
-PB S21;Sbl Pb 2
-PB S22;Sbl Pb 2
-PB S91;Sbl Pb 12
-PB S92;Sbl Pb 12
-PB Z1;Abzw Pb 1
-PD;Prinzersdorf
-PD H1;Markersdorf a.d.Pielach Hst
-PD S11;Sbl Pd 1
-PD S12;Sbl Pd 1
-PD U2;Üst Pd 2
-PEB;Pettenbach
-PEG;Persenbeug
-PEM;Pernitz-Muggendorf
-PEM H1;Pernitz Raimundviertel Hst
-PET;Petronell-Carnuntum
-PET A1;AB (Awanst)
-PEW;Pernhofen-Wulzeshofen
-PF;Paternion-Feistritz
-PF A1;AB (Awanst)
-PF H1;Weissenstein-Kellerberg Hst
-PF H2;Puch Hst
-PF S11;Sbl Pf 1
-PF S12;Sbl Pf 1
-PFB;Pölfing-Brunn H-Lst
-PFB H1;Wies Markt Hst
-PFS;Pfronten-Steinach
-PG;Peggau-Deutschfeistritz
-PG K1;Stübing H-Lst (Awanst)
-PG S11;Sbl Pg 1
-PG S12;Sbl Pg 1
-PH;Pöham
-PH S11;Sbl Ph 1
-PH S12;Sbl Ph 1
-PI;Pians
-PIC;Pichl
-PIE;Piesting
-PIE H1;Dreistetten Hst
-PIV;Pießling-Vorderstoder
-PIV B11;Bl Piv 1
-PIV B12;Bl Piv 1
-PIV K1;Roßleithen H-Lst
-PK;Penk
-PK S11;Sbl Pk 1
-PK S12;Sbl Pk 1
-PKF;Pinkafeld
-PKS;Pinkafeld Schule
-PKS A1;AB
-PL;St.Pölten Alpenbf
-PLK;Plank am Kamp
-PLK H1;Altenhof Hst
-PLS;Pöls (Gf)
-PM;Tullnerbach-Pressbaum
-PM H1;Pressbaum Hst
-PM H2;Dürrwien Hst
-PM S11;Sbl Pm 1
-PM S12;Sbl Pm 1
-PMS;Premstätten-Tobelbad
-PN;Pernegg
-POE;Pöchlarn
-POE A1H;AB (Awanst)
-POE A1W;AB
-POE H1;Krummnußbaum Hst
-POE H2;Säusenstein Hst
-POE S12;Sbl Poe 1
-POE S13;Sbl Poe 1
-POE S31;Sbl Poe 3
-POE S32;Sbl Poe 3
-POE S91;Sbl Poe 11
-POE S92;Sbl Poe 11
-POE S93;Sbl Poe 13
-POE S94;Sbl Poe 13
-POE U12;Üst Poe 12
-POE U2;Üst Poe 2
-POW;Pörtschach am Wörthersee
-POW H1;Töschling Hst
-POW S11;Sbl Pow 1
-POW S12;Sbl Pow 1
-POY;Poysdorf Lst
-POY A1;AB
-POY E1;EK km 20,089
-POY L1;Großkrut-Althöflein Lst
-POY L2;Alt Lichtenwarth Lst
-POY L3;Hausbrunn Lst
-PR;Payerbach-Reichenau
-PR H1;Küb Hst
-PR S11;Sbl Pr 1
-PR S12;Sbl Pr 1
-PR S21;Sbl Pr 2
-PR S22;Sbl Pr 2
-PRA;Pram-Haag
-PRA A1;AB
-PRA H2;Peterskirchen Hst
-PRE;Pregarten
-PRE H1;Selker Hst
-PRE S11;Sbl Pre 1
-PRE S12;Sbl Pre 1
-PRV;Prevalje
-PS;Piesendorf
-PS H1;Piesendorf Bad Hst
-PS H3;Jesdorf-Bergfr. Hst
-PS K1;Walchen im Pinzgau H-Lst
-PT;Pottenstein a.d.Triesting (Gf)
-PT H1;Fahrafeld Hst
-PTA;Bratislava-Petrzalka
-PTT;Pitten
-PTT A1;AB (Awanst)
-PTT H1;Sautern-Schiltern Hst
-PU;Graz Puntigam
-PU H1;Flughafen Graz Feldkirchen Hst
-PU H1A;Feldkirchen-Seiersberg Hst
-PU S11;Sbl Pu 1
-PU S12;Sbl Pu 1
-PUB;Puchberg am Schneeberg
-PUB E1;EK km 0,279
-PUB H1;Schneebergdörfl Hst
-PUE;Pürbach-Schrems
-PUR;Purbach am Neusiedlersee
-PUR H1;Donnerskirchen Hst
-PUR H2;Schützen Haltestelle Hst
-PUS;Purgstall
-PUS H1;Sölling Hst
-PUS H2;Saffen Hst
-PUW;Puchenau West
-PUW H1;Dürnberg Hst
-PUW H1A;Achleitnersiedlung Hst
-PW;St.Pölten-Fbf
-PWD;Preding-Wieselsdorf;
-PWD H1;Gussendorf Hst
-PWD K1;Wettmannstätten H-Lst
-PY;Bad Pirawarth
-PY A1;AB (Awanst)
-PY A1A;AB
-PY A2A;AB (Awanst)
-PY H1;Pirawarth Hst
-PY H1H;Klein Harras Hst
-PY H2;Kollnbrunn Hst
-PZ;Penzing
-PZ F1;Lützowgasse
-PZ U1;Üst Pz 1
-R;Retz
+Pag;Passau Gbf
+Pam G;Staatsgrenze nächst Pamhagen
+Pam K1;Fertöujlak mrh
+Pam K2;Fertöszeplak-Fertöd mrh
+Pam;Pamhagen
+Pa;Passau Hbf
+Par A1;AB (Awanst)
+Par H1;Neudorf
+Par L1;Neudorf Lst (AWANST)
+Par;Parndorf
+Par S11;Sbl Par 1
+Par S12;Sbl Par 1
+Pau A1;AB (Awanst)
+Pau H1;Hst außer Betrieb
+Pau;Paudorf
+Pb S21;Sbl Pb 2
+Pb S22;Sbl Pb 2
+Pb S91;Sbl Pb 12
+Pb S92;Sbl Pb 12
+Pb;St.Pölten Hbf (in Pb)
+Pb Z1;Abzw Pb 1
+Pd H1;Markersdorf a.d.Pielach
+Pd;Prinzersdorf
+Pd S11;Sbl Pd 1
+Pd S92;Sbl Pd 1
+Pd U2;Üst Pd 2
+Peb H1;Hst außer Betrieb
+Peb;Pettenbach
+Pem H1;Pernitz Raimundviertel
+Pem;Pernitz-Muggendorf
+Pet;Petronell-Carnuntum
+Pew;Pernhofen-Wulzeshofen
+Pf A1;AB (Awanst)
+Pf H1A;Paternion-Feistritz Haltestelle (in Pf)
+Pf H2A;Weissenstein-Kellerberg
+Pf H3;Puch
+Pf;Paternion-Feistritz (in Pf)
+Pf S11;Sbl Pf 1
+Pf S12;Sbl Pf 1
+Pfs;Pfronten-Steinach
+Pfs Z9;Pfs Z9
+Pg G;Grenze ÖBB-STLB Km 190,945
+Pg H1;Stübing
+Pg;Peggau-Deutschfeistritz
+Pg S11;Sbl Pg 1
+Pg S12;Sbl Pg 1
+Pg S31;Sbl Pg 3
+Pg S32;Sbl Pg 3
+Pg U2;Üst Pg 2
+Pg Z9;Deutschfeistritz
+P H1;Aisthofen
+Ph;Pöham
+Ph S11;Sbl Ph 1
+Ph S12;Sbl Ph 1
+Pic;Pichl
+Pie H1;Dreistetten
+Pie;Piesting
+Pi;Pians
+Piv H1;Roßleithen
+Piv;Pießling-Vorderstoder
+Piv S11;Sbl Piv 1
+Piv S12;Sbl Piv 1
+Pkf;Pinkafeld
+Pk;Penk
+Pk S11;Sbl Pk 1
+Pk S12;Sbl Pk 1
+Pks A1;AB
+Pks;Pinkafeld Schule
+Plk H1;Altenhof
+Plk;Plank am Kamp
+Pls;Pöls
+Pl;St.Pölten-Kaiserwald
+Pm H1;Pressbaum
+Pm H2;Dürrwien
+Pm S11;Sbl Pm 1
+Pm S12;Sbl Pm 1
+Pms;Premstätten-Tobelbad
+Pm;Tullnerbach-Pressbaum
+Pn;Pernegg
+Poe A1H;AB (Awanst)
+Poe A1W;AB
+Poe H1;Krummnußbaum
+Poe H2;Säusenstein
+Poe;Pöchlarn
+Poe S12;Sbl Poe 1
+Poe S13;Sbl Poe 1
+Poe S21;Sbl Poe 2
+Poe S22;Sbl Poe 2
+Poe S31;Sbl Poe 3
+Poe S32;Sbl Poe 3
+Poe S91;Sbl Poe 11
+Poe S92;Sbl Poe 11
+Poe S94;Sbl Poe 13
+Poe S95;Sbl Poe 13
+Poe U12;Üst Poe 12
+Pow H1;Töschling
+Pow;Pörtschach am Wörthersee
+Pow S11;Sbl Pow 1
+Pow S12;Sbl Pow 1
+P;Perg
+Pra A1;AB (Awanst)
+Pra H2;Peterskirchen
+Pra;Pram-Haag
+Pre;Pregarten
+Pre S11;Sbl Pre 1
+Pre S12;Sbl Pre 1
+Pr H1;Küb
+Pr;Payerbach-Reichenau
+Pr S11;Sbl Pr 1
+Pr S12;Sbl Pr 1
+Pr S21;Sbl Pr 2
+Pr S22;Sbl Pr 2
+Prv;Prevalje
+Psb;Piesendorf Bad
+Ps H3;Jesdorf-Bergfried
+Ps;Piesendorf
+Pta;Bratislava-Petrzalka
+Pt;Pottenstein a.d.Triesting
+Ptt A1;AB (Awanst)
+Ptt H1;Sautern-Schiltern
+Ptt;Pitten
+Pub E1;EK km 0,279
+Pub H1;Hengsttal
+Pub;Puchberg am Schneeberg
+Pue;Pürbach-Schrems
+Pu;Graz Puntigam
+Pu H1A;Feldkirchen-Seiersberg
+Pu H1;Flughafen Graz Feldkirchen
+Pur H1H;Breitenbrunn
+Pur H2H;Winden
+Pur H3H;Jois
+Pur;Purbach am Neusiedlersee
+Pur S11;Sbl Pur 1
+Pur S12;Sbl Pur 1
+Pu S11;Sbl Pu 1
+Pu S12;Sbl Pu 1
+Pus H1;Sölling
+Pus H2;Saffen
+Pus;Purgstall
+Puw H1A;Achleitnersiedlung
+Puw H1;Dürnberg
+Puw;Puchenau West
+Pwd;Preding-Wieselsdorf
+Pw;St.Pölten-Fbf (in Pb)
+Py;Bad Pirawarth
+Pz F1;Lützowgasse (in Pz)
+Pz U1;Üst Pz 1
+Pz;Wien Penzing (in Pz)
 R A1;AB (Awanst)
-R A1A;AB (Awanst)
+Ra;Bad Radkersburg
+Rab H1;Steinklamm
+Rab K1;Steinschal-Tradigist
+Rab;Rabenstein N.Ö. (Gf)
+Rad K1;Altenmarkt im Pongau (Awanst)
+Rad;Radstadt
+Raf H1;Glinzendorf
+Raf;Raasdorf
+Ran;Randegg
+Rb H1;Stallegg
+Rb H2;Kamegg
+Rb;Rosenburg
+Rd A2;AB (Awanst)
+Rd A3;AB (Awanst)
+Rd A4;AB (Awanst)
+Rd A5;AB (Awanst)
+Rdf;Abzw Knoten Radfeld
+Rdf H1;Rattenberg-Kramsach
+Rdf S11;Sbl Rdf 1
+Rdf S81;Sbl Rdf 1N
+Rdf S83;Sbl Rdf 2N
+Rdf S84;Sbl Rdf 2N
+Rdf S85;Sbl Rdf 3N
+Rdf S86;Sbl Rdf 3N
+Rdf S87;Sbl Rdf 4N
+Rdf S88;Sbl Rdf 4N
+Rdf S90;Sbl Rdf 5N
+Rdf U2;Üst Rdf 2
+Rd H1M;Bad Ried
+Rd H2M;Aurolzmünster
+Rd H3;Neuratting
+Rd;Ried im Innkreis
+Re A1;AB (Awanst)
+Reg H1;Wildungsmauer
+Reg;Regelsbrunn
+Rei H1;Großraming Kraftwerk
+Rei H2;Großraming
+Rei H3;Küpfern Haltestelle (in Kun)
+Rei;Reichraming
+Rei S11;Sbl Rei 1
+Rei S12;Sbl Rei 1
+Ren;Rennweg (in Nw)
+Re;Reith
+Ret;Rettenbach
+Rf H1;Pfarrwerfen
+Rf S11;Sbl Rf 1
+Rf S12;Sbl Rf 1
+Rf S21;Sbl Rf 2
+Rf S22;Sbl Rf 2
+Rf;Werfen
+Rg H1K;Pürgg
 R G;Staatsgrenze nächst Retz
-R H1;Hofern Hst
-RA;Bad Radkersburg
-RAB;Rabenstein N.Ö. (Gf)
-RAB H1;Steinklamm Hst
-RAB K1;Steinschal-Tradigist H-Lst
-RAD;Radstadt
-RAD K1;Altenmarkt im Pongau H-Lst (Awanst)
-RAF;Raasdorf
-RAF H1;Glinzendorf Hst
-RAN;Randegg
-RB;Rosenburg
-RB H1;Stallegg Hst
-RB H2;Kamegg Hst
-RD;Ried im Innkreis
-RD A1H;AB
-RD A2;AB
-RD A3;AB
-RD A4;AB
-RD H1M;Bad Ried Hst
-RD H2M;Aurolzmünster Hst
-RD H3;Neuratting Hst
-RD L1;Aurolzmünster Lst
-RDJ;Rattendorf-Jenig
-RDJ H1;Waidegg Hst
-RE;Reith
-REG;Regelsbrunn
-REG H1;Wildungsmauer Hst
-REI;Reichraming
-REI H1;Großraming Kraftwerk Hst
-REN;Wien Praterstern-Rennweg
-RF;Werfen
-RF H1;Pfarrwerfen Hst
-RF S11;Sbl Rf 1
-RF S12;Sbl Rf 1
-RF S21;Sbl Rf 2
-RF S22;Sbl Rf 2
-RG;Stainach-Irdning
-RG H1K;Pürgg Hst
-RH;Steyr Ramingdorf-Haidershofen
-RI;Riedau
-RI H1;Zell a.d.Pram Hst
-RI S11;Sbl Ri 1
-RI S12;Sbl Ri 1
-RI S31;Sbl Ri 3
-RI S32;Sbl Ri 3
-RI U2;Üst Ri 2
-RIN;Ringelsdorf
-RK;Rankweil
-RK A1;AB (Awanst)
-RK H1;Sulz-Röthis Hst
-RK K1;Klaus in Vorarlberg H-Lst (Awanst)
-RK S11;Sbl Rk 1
-RK S12;Sbl Rk 1
-RM;Rottenmann
-RM H1;Stadt Rottenmann Hst
-RM S11;Sbl Rm 1
-RM S12;Sbl Rm 1
-RN;Rosenbach
-RN G;Staatsgrenze nächst Rosenbach
-RO;Rothenthurn
-RO A1;AB (Awanst)
-RO H1;Ferndorf Hst
-RO H2;Markt Paternion Hst
-RO S11;Sbl Ro 1
-RO S12;Sbl Ro 1
-ROB;Rohrbach-Berg
-ROG;Rottenegg
-ROG A1;AB
-ROG H1;Lacken Hst
-ROG H2;Gerling OÖ Hst
-ROH;Knoten Rohr
-ROH S11;Sbl Roh 1
-ROH S12;Sbl Roh 1
-ROH S21;Sbl Roh 2
-ROH S22;Sbl Roh 2
-ROH S41;Sbl Roh 4
-ROH S42;Sbl Roh 4
-ROH S51;Sbl Roh 5
-ROH S52;Sbl Roh 5
-ROH S71;Sbl Roh 7
-ROH S72;Sbl Roh 7
-ROH S81;Sbl Roh 8
-ROH S82;Sbl Roh 8
-ROH U3;Üst Roh 3
-ROH U6;Üst Roh 6
-ROP;Roppen
-RP;Reichenfels-St.Peter
-RP A1;AB (Awanst)
-RR;Rohr-Bad Hall
-RT;Reutte in Tirol
-RT H1;Pflach Hst
-RT H2;Musau Hst
-RT H3;Ulrichsbrücke-Füssen Hst
-RU;Villach St.Ruprecht
-RUE;Rückersdorf-Harmannsdorf
-RUP;Ruprechtshofen
-RUP H1;Grabenegg-Rainberg Hst
-RUP H2;Reisenhof-Lehen Hst
-RUP H3;Breiteneich Hst
-RUT;Rutzing
-RUT S11;Sbl Rut 1
-RUT S12;Sbl Rut 1
-RV;Rohrbach-Vorau
-RW;Rekawinkel
-RW H1;Eichgraben-Altlengbach Hst
-RW S11;Sbl Rw 1
-RW S12;Sbl Rw 1
-RZ;Redl-Zipf
-RZN;Retznei
-RZN H1;Ehrenhausen Hst
+Rg;Stainach-Irdning
+R H1H;Unterretzbach
+Rh;Ramingdorf-Haidershofen (in Stb)
+Ri H1;Zell a.d.Pram
+Ri;Riedau
+Ri S11;Sbl Ri 1
+Ri S12;Sbl Ri 1
+Ri S31;Sbl Ri 3
+Ri S32;Sbl Ri 3
+Ri U2;Üst Ri 2
+Rk A1;AB (Awanst)
+Rk H1;Sulz-Röthis
+Rk K1;Klaus in Vorarlberg (Awanst)
+Rk;Rankweil
+Rk S11;Sbl Rk 1
+Rk S12;Sbl Rk 1
+Rm H1;Stadt Rottenmann (in Rm)
+Rm;Rottenmann (in Rm)
+Rm S11;Sbl Rm 1
+Rm S12;Sbl Rm 1
+Rn G;Staatsgrenze nächst Rosenbach
+Rn;Rosenbach
+Ro A1;AB (Awanst)
+Rob;Rohrbach-Berg
+Rog A1;AB
+Rog H1;Lacken
+Rog H2;Gerling OÖ
+Rog;Rottenegg
+Ro H1;Ferndorf
+Ro H2;Markt Paternion
+Roh;Knoten Rohr (in Roh)
+Roh S11;Sbl Roh 1
+Roh S12;Sbl Roh 1
+Roh S21;Sbl Roh 2
+Roh S22;Sbl Roh 2
+Roh S41;Sbl Roh 4
+Roh S42;Sbl Roh 4
+Roh S51;Sbl Roh 5
+Roh S52;Sbl Roh 5
+Roh S71;Sbl Roh 7
+Roh S72;Sbl Roh 7
+Roh S81;Sbl Roh 8
+Roh S82;Sbl Roh 8
+Roh U3;Üst Roh 3
+Roh U6;Üst Roh 6
+Roh W1;Abzww Knoten Rohr Ost (in Roh)
+Roh W2;Abzww Knoten Rohr West (in Roh)
+Rop;Roppen
+Ro;Rothenthurn
+Ror;Rohrbach a.d.Gölsen
+Ro S12;Sbl Ro 1
+Ro S91;Sbl Ro 1
+R;Retz
+Rr;Rohr-Bad Hall
+Rt H1;Pflach
+Rt H2;Musau
+Rt H3;Ulrichsbrücke-Füssen
+Rt;Reutte in Tirol
+Rue;Rückersdorf-Harmannsdorf
+Ru H1;Villach Landskron
+Rut;Rutzing
+Rut S11;Sbl Rut 1
+Rut S12;Sbl Rut 1
+Ru;Villach St.Ruprecht
+Rv;Rohrbach-Vorau
+Rw H1;Eichgraben-Altlengbach
+Rw;Rekawinkel
+Rw S11;Sbl Rw 1
+Rw S12;Sbl Rw 1
+Rzn H1;Ehrenhausen
+Rzn;Retznei
+Rz;Redl-Zipf
+Saa H1;Leogang-Steinberge
+Saa H2;Leogang
+Saa H3;Hst außer Betrieb
+Saa S11;Sbl Saa 1
+Saa S12;Sbl Saa 1
+Saa S31;Sbl Saa 3
+Saa S32;Sbl Saa 3
+Saa;Saalfelden
+Saa U2;Üst Saa 2
+Sad;Sattledt
+Saf H1;Annenheim
+Saf;Sattendorf
+Sag H1;Schützen Haltestelle
+Sag H2;Donnerskirchen
+Sag;Schützen am Gebirge
+Sah H1;Geiselbergstraße (in Sah)
+Sah;Simmering Aspangbahn (in Sah)
+San;Sarmingstein
+Sas S11;Sbl Sas 1
+Sas S12;Sbl Sas 1
+Sas;Schwanenstadt
+Sau;Bad Sauerbrunn
+Sau H1;Wiesen-Sigleß
+Sau H2;Mattersburg Nord (in Mr)
+Saz;St. Andrä am Zicksee
+Sba;Salzburg Aiglhof (in Sb)
+Sbb;Steinbachbrücke
+Sbe;Salzburg Taxham Europark (in Sb)
+Sbf;Salzburg Hbf-Glanbachbrücke (in Sb)
+Sb G;Staatsgrenze nächst Liefering
+Sbj;Salzburg Mülln-Altstadt (in Sb)
+Sbk H1;Zöbing
+Sbk;Schönberg am Kamp
+Sbl A1;AB (Awanst)
+Sbl H1;Untersiebenbrunn
+Sbl;Siebenbrunn-Leopoldsdorf
+Sbm H1;Salzburg Sam (in Sb)
+Sbm;Salzburg-Mitte (in Sb)
+Sb;Salzburg Hbf (in Sb)
+Sbs;Scheibbs
+Sbw H1;Steyr Münichholz (in Stb)
+Sbw;Steyr-BMW Werk (in Stb)
+Sc A1;AB (Awanst)
+Scb;Schauersberg
+Sce;Schärding Einfahrbf (in Sch)
+Scg;Schärding Granitwerk (in Sch)
+Sc G;Staatsgrenze nächst Sillian
+Sc H1;Versciaco/Vierschach
+Sc H3;Weitlanbrunn
+Sch G;Staatsgrenze nächst Schärding
+Sch H1;Wernstein
+Sch S11;Sbl Sch 1
+Sch S12;Sbl Sch 1
+Sch S21;Sbl Sch 2
+Sch S22;Sbl Sch 2
+Sch S41;Sbl Sch 4
+Sch S42;Sbl Sch 4
+Sch S51;Sbl Sch 5
+Sch S52;Sbl Sch 5
+Sch;Schärding (in Sch)
+Sch U3;Üst Sch 3
+Sc;San Candido/Innichen
+Scs;Schärding Süd (in Sch)
+Scs W1;Abzww Str 20602 (in Sch)
+Sdf;Wien Strebersdorf (in F)
+Sdg;Schladming
+Sd G;Staatsgrenze nächst Spielfeld-Straß
+Sd H1;Schwarza
+Sd H2;Lichendorf
+Sdn;Stadlau-Nord (in St)
+Sd;Spielfeld-Straß
+Seb H1;Bad Waltersdorf
+Seb H3;Bad Blumau
+Seb;Sebersdorf
+See H1;Eugendorf
+See S11;Sbl See 1
+See S12;Sbl See 1
+See;Seekirchen am Wallersee
+Sei H1;Kammern
+Sei S11;Sbl Sei 1
+Sei S12;Sbl Sei 1
+Sei;Seiz
+Sej;Sentilj
+Sem H1;Steinhaus
+Sem S11;Sbl Sem 1
+Sem S12;Sbl Sem 1
+Sem;Semmering (in Sem)
+Sen;Strengen
+Ses H1;Gleißenfeld
+Ses;Seebenstein
+Set H1;Hst außer Betrieb
+Set K1;Gießenbach
+Set;Seefeld in Tirol
+Seu;Semmering Unterwerk (in Sem)
+Sfl H1;Breitensee N.Ö.
+Sfl;Schönfeld-Lassee
+Sf;Scheifling
+Sfs;Schäffernsteg
+Sge H1;St.Georgen a.d.Gusen Haltestelle
+Sge;St.Georgen a.d.Gusen
+Sgg;Graz Straßgang
+Sg;Grillgasse (in Zur)
+Sgk A1;AB (Awanst)
+Sgk H1;Petersbaumgarten
+Sgk;Scheiblingkirchen-Warth
+Sgp H1;Abschlag Fassldorf
+Sgp H2;Betriebs-Hst
+Sgp H3;Bruderndorf
+Sgp;Steinbach-Groß Pertholz
+Sh H1H;Breiteneich bei Horn
+Shr H1;Lilienfeld Krankenhaus
+Shr;Schrambach
+Sh S11;Sbl Sh 1
+Sh S12;Sbl Sh 1
+Sh;Sigmundsherberg
+Sie;Groß Sierning (in Roh)
+Si H1;Höbersdorf
+Si H2;Schönborn-Mallebarn
+Sil A1;AB (Awanst)
+Sil H1H;Heinfels
+Sil H2;Tassenbach
+Sil;Sillian
+Sim;Hasenleiten (in El)
+Sin;Sinnersdorf
+Si S11;Sbl Si 1
+Si S12;Sbl Si 1
+Si;Sierndorf
+Siz H1;Haiming
+Siz S11;Sbl Siz 1
+Siz S12;Sbl Siz 1
+Siz;Silz
+Sk A1;AB
+Sk E2;EK km 19,682
+Sk L1;Wang Lst
+Skn;Stöcken
+Sk;Steinakirchen/F.
+Slf A1;AB
+Slf H1;Heilbad Burgwies
+Slf H2;Burk
+Slf;Stuhlfelden
+Sln;Selzthal-Nord (in Sl)
+Sl;Selzthal (in Sl)
+Sls;Selzthal-Süd (in Sl)
+Slz;Sulzbachtäler
+Smk H1;Köppling
+Smk;Söding-Mooskirchen
+Smr G;Staatsgrenze nächst Summerau
+Smr;Summerau
+Sm;Simbach (Inn)
+Sms;St.Martin-Sittich
+Snb H1;Hautzendorf
+Snb H2;Niederkreuzstetten
+Snb S11;Sbl Snb 1
+Snb S12;Sbl Snb 1
+Snb;Schleinbach
+Sng;Steyrling
+Sns;Abzw Knoten Stans
+Sns H1;Stans
+Sns S11;Sbl Sns 1
+Sns S21;Sbl Sns 2
+Sns S22;Sbl Sns 2
+Sns S81;Sbl Sns 1N
+Sns S83;Sbl Sns 2N
+Sns S84;Sbl Sns 2N
+Sns S85;Sbl Sns 3N
+Sns S86;Sbl Sns 3N
+Sns S87;Sbl Sns 4N
+Sns S88;Sbl Sns 4N
+Sns S89;Sbl Sns 5N
+Sns S90;Sbl Sns 5N
+Snz G;Staatsgrenze nächst Scharnitz
+Snz;Scharnitz
+Sop;Sopron (in Sop)
+Sor;Sopron Rendezö pu
+Sos;Steindorf am Ossiachersee
+Sot;Sopron Terminal
+Sou H2;Hatzendorf
+Sou;Söchau
+Spa H1;St.Paul Bad
+Spa H2;Granitztal
+Spa;St.Paul
+Spi;Spital am Pyhrn
+Spr H1;Hst außer Betrieb
+Spr H2;St.Pölten-Porschestraße
+Spr;Spratzern
+Sp S11;Sbl Sp 1
+Sp S12;Sbl Sp 1
+Sps S11;Sbl Sps 1
+Sps S12;Sbl Sps 1
+Sps;Spital am Semmering
+Sp;St.Peter-Seitenstetten (in Sp)
+Sp W1;Abzww St.Peter-Seitenstetten Ost (in Sp)
+Spw;Abzw Knoten St.Peter-Seitenstetten West
+Spw H1;St.Johann-Weistrach
+Spw H2;Stadt Haag
+Spw S11;Sbl Spw 1
+Spw S12;Sbl Spw 1
+Spw S21;Sbl Spw 2
+Spw S22;Sbl Spw 2
+Spw S31;Sbl Spw 3
+Spw S32;Sbl Spw 3
+Spw S41;Sbl Spw 4
+Spw S42;Sbl Spw 4
+Spw S51;Sbl Spw 5
+Spw S52;Sbl Spw 5
+Spw S91;Sbl Spw 11
+Spw S92;Sbl Spw 11
+Spw S93;Sbl Spw 12
+Spw S94;Sbl Spw 12
+Spw S97;Sbl Spw 14
+Spw S98;Sbl Spw 14
+Spw U95;Üst Spw 13
+Srb;Schlierbach
+Sre;Salzburg Gnigl-Einfgr (in Sb)
+Sr H1;Salzburg Gnigl (in Sb)
+Sr H2;Salzburg Parsch
+Sr;Salzburg Gnigl-Vbf (in Sb)
+Srs;Schruns
+Ss A1;AB (Awanst)
 S;Satov
-SA;Schafbergalpe
-SAA;Saalfelden
-SAA H1;Leogang-Steinberge Hst
-SAA H2;Leogang Hst
-SAA H3;Hütten Hst
-SAA S11;Sbl Saa 1
-SAA S12;Sbl Saa 1
-SAA S31;Sbl Saa 3
-SAA S32;Sbl Saa 3
-SAA U2;Üst Saa 2
-SAD;Sattledt
-SAE;St.Aegyd Eisenwerk
-SAE H1;Amt Mitterbach Hst
-SAF;Sattendorf
-SAF H1;Annenheim Hst
-SAG;Schützen am Gebirge
-SAH;Simmering Aspangbahn
-SAH H1;Simmering Aspang-Geiselbergstr Hst
-SAN;Sarmingstein;
-SAS;Schwanenstadt
-SAS S11;Sbl Sas 1
-SAS S12;Sbl Sas 1
-SAU;Bad Sauerbrunn
-SAU H2;Mattersburg Nord Hst
-SAU K1;Wiesen-Sigleß H-Lst (Awanst, AB)
-SAZ;St. Andrä am Zicksee
-SB;Salzburg Hbf
-SB G;Staatsgrenze nächst Liefering
-SB L1;Awanst Salzburg Lehen
-SBB;Steinbachbrücke
-SBG;Schafbergspitze
-SBK;Schönberg am Kamp
-SBK H1;Zöbing Hst
-SBL;Siebenbrunn-Leopoldsdorf
-SBL A1;AB (Awanst)
-SBL H1;Untersiebenbrunn Hst
-SBL H1E;Leopoldsdorf Hst
-SBM;Salzburg-Mitte
-SBM H1;Salzburg Sam Hst
-SBS;Scheibbs
-SBS A1;AB
-SBS H1;Neustift Hst
-SBW;Steyr-BMW Werk
-SBW H1;Steyr Münichholz Hst
-SC;San Candido/Innichen
-SC A1;AB (Awanst)
-SC G;Staatsgrenze nächst Sillian
-SC H1;Versciaco/Vierschach Hst
-SC H2;Prato alla Drava/Winnebach Hst
-SC H3;Weitlanbrunn Hst
-SCB;Schauersberg
-SCH;Schärding
-SD;Spielfeld-Straß
-SD G;Staatsgrenze nächst Spielfeld-Straß
-SD H1;Schwarza Hst
-SD H2;Lichendorf Hst
-SD Z9;Sentilji (Ausland)
-SDF;Floridsdorf-Wien Strebersdorf
-SDG;Schladming
-SDN;Stadlau-Nord
-SEB;Sebersdorf
-SEB H1;Bad Waltersdorf Hst
-SEB H2;Leitersdorf Hst
-SEB H3;Bad Blumau Hst
-SEE;Seekirchen am Wallersee
-SEE H1;Eugendorf Hst
-SEE S11;Sbl See 1
-SEE S12;Sbl See 1
-SEI;Seiz
-SEI H1;Kammern Hst
-SEI S11;Sbl Sei 1
-SEI S12;Sbl Sei 1
-SEJ;Sentilji
-SEM;Semmering
-SEM H1;Steinhaus Hst
-SEM S11;Sbl Sem 1
-SEM S12;Sbl Sem 1
-SEN;Strengen
-SES;Seebenstein
-SES H1;Gleißenfeld Hst
-SET;Seefeld in Tirol
-SET H1;Seefeld PlayCastle Hst
-SET K1;Gießenbach H-Lst
-SF;Scheifling
-SFL;Schönfeld-Lassee
-SFL H1;Breitensee N.Ö. Hst
-SFS;Schäffernsteg
-SG;Wien Zvbf-Grillgasse
-SGE;St.Georgen a.d.Gusen
-SGE H1;St.Georgen a.d.Gusen Hst
-SGG;Straßgang
-SGK;Scheiblingkirchen-Warth
-SGK A1;AB (Awanst)
-SGK H1;Petersbaumgarten Hst
-SGP;Steinbach-Groß Pertholz
-SGP H1;Abschlag Fassldorf Hst
-SGP H2;Betriebs-Hst
-SGP H3;Bruderndorf Hst
-SH;Sigmundsherberg
-SH H1H;Breiteneich bei Horn Hst
-SH S11;Sbl Sh 1
-SH S12;Sbl Sh 1
-SHR;Schrambach
-SHR H1;Lilienfeld Krankenhaus Hst
-SI;Sierndorf
-SI H1;Höbersdorf Hst
-SI H2;Schönborn-Mallebarn Hst
-SI S11;Sbl Si 1
-SI S12;Sbl Si 1
-SIE;Knoten Rohr-Groß Sierning Hst
-SIL;Sillian
-SIL H1;Tassenbach Hst
-SIM;Wien Erdbergerlände-Simmering
-SIN;Sinnersdorf
-SIZ;Silz
-SIZ H1;Haiming Hst
-SIZ S11;Sbl Siz 1
-SIZ S12;Sbl Siz 1
-SK;Steinakirchen/F.
-SL;Selzthal
-SL A1;AB
-SLF;Stuhlfelden
-SLF A1;AB
-SLF H1;Heilbad Burgwies Hst
-SLF H2;Burk Hst
-SLN;Selzthal-Nord
-SLS;Selzthal-Süd
-SM;Simbach (Inn)
-SMK;Söding-Mooskirchen
-SMK H1;Köppling Hst
-SMR;Summerau
-SMR G;Staatsgrenze nächst Summerau
-SMS;St.Martin-Sittich
-SMT;Stein-Mautern
-SMT H1;Unterloiben Hst
-SN;Sulz Museumsdorf
-SNB;Schleinbach
-SNB H1;Hautzendorf Hst
-SNB H2;Niederkreuzstetten Hst
-SNB S11;Sbl Snb 1
-SNB S12;Sbl Snb 1
-SNG;Steyrling
-SNS;Schruns
-SNZ;Scharnitz
-SNZ G;Staatsgrenze nächst Scharnitz
-SOP;Sopron
-SOR;Sopron Rendezö pu
-SOS;Steindorf am Ossiachersee
-SOT;Sopron Terminal
-SOU;Söchau
-SOU H1;Tiefenbach Hst
-SOU H2;Hatzendorf Hst
-SP;St.Peter-Seitenstetten
-SP H1;St.Johann-Weistrach Hst
-SP S11;Sbl Sp 1
-SP S12;Sbl Sp 1
-SP S13;Sbl Sp W 1
-SP S14;Sbl Sp W 1
-SP S23;Sbl Sp W 2
-SP S24;Sbl Sp W 2
-SP S33;Sbl Sp W 3
-SP S34;Sbl Sp W 3
-SP S43;Sbl Sp W 4
-SP S44;Sbl Sp W 4
-SP S53;Sbl Sp W 5
-SP S54;Sbl Sp W 5
-SP Z2;Abzw Sp 2;
-SPA;St.Paul
-SPA A1;AB
-SPA H1;St.Paul Bad Hst
-SPA H1L;St.Georgen im Lavanttal Hst
-SPA H2;Granitztal Hst
-SPA H2L;Altacherwirt Hst
-SPA H3L;Ettendorf Hst
-SPA H4L;Lavamünd Markt Hst
-SPI;Spital am Pyhrn
-SPR;Spratzern
-SPR A1;AB
-SPR H1;Spratzern Hst
-SPR H2;St.Pölten-Porschestraße Hst
-SPR H3;HW St.Pölten Betr.Hst
-SPS;Spital am Semmering
-SPS S11;Sbl Sps 1
-SPS S12;Sbl Sps 1
-SR;Salzburg Gnigl-Vbf
-SR H1;Salzburg Gnigl Hst
-SR H2;Salzburg Parsch Hst
-SRE;Salzburg Gnigl-Einfgr
-SS;Schönwies
-SS A1;AB (Awanst)
-SS Z1;Abzw Ss 1
-SSL;St.Stefan im Lavanttal
-SSL A2;AB
-SSM;Scharnstein-Mühldorf
-SSM H1;Kothmühle Hst
-SSN;Möllbrücke-Sachsenburg
-SSN H1;Lendorf Hst
-SSV;St.Stefan-Vorderberg
-ST;Stadlau
-ST A1;AB (Awanst)
-ST A1S;AB (Awanst)
-ST A2;AB (Awanst)
-ST H2S;Wien Breitenleer Straße Hst
-ST Z1;Abzw St 1
-STA;Steinabrückl Lst
-STA A1;AB
-STB;Steyr
-STC;Stadlau-Wien Hirschstetten
-STD;Steinfeld im Drautal
-STE;Stetten
-STF;Statzendorf
-STF H1;Herzogenburg-Wielandsthal Hst
-STG;Steeg-Gosau
-STH;Steinhaus bei Wels
-STH A1;AB
-STH H1;Oberhart Hst
-STI;Steinach in Tirol
-STI G;Staatsgrenze nächst Steinach in Tirol
-STI H1;St.Jodok Hst
-STI H2;Brennersee Hst
-STI K1;Gries H-Lst (Awanst, UW)
-STI S31;Sbl Sti 3
-STI S32;Sbl Sti 3
-STI U1;Üst Sti 1
-STI U2;Üst Sti 2
-STI Z4;Abzw Sti 4 (Brennersee)
-STK;Stadlau Wien Erzherzog Karl-Straße Hst
-STL;Bruck a.d.Mur-Stadtwald
-STM;Steyrermühl
-STN;Stiefern
-STP;Stadl-Paura
-STP G;Grenze ÖBB-STH Km 3,777
-STP L1;Roitham Lst
-STR;Strasshof
-STR H1;Silberwald Hst
-STR S11;Sbl Str 1
-STR S12;Sbl Str 1
-STS;Stams
-STS H1;Mötz Hst
-STT;Spittal-Millstättersee
-STT S11;Sbl Stt 1
-STT S12;Sbl Stt 1
-STU;Studenzen-Fladnitz
-STU A1;AB (Awanst)
-STU H1;Rohr Hst
-STU H2;Gniebing Hst
-STV;St.Veit a.d.Glan-Süd
-STW;Straßwalchenen
-SU;Stockerau
-SU A1;AB (Awanst)
-SU H1;Ober Olberndorf Hst
-SU H2A;Gaisruck Hst
-SU K1;Hausleiten H-Lst (Awanst, AB)
-SUE;Wien Süßenbrunn
-SUE S11;Sbl Sue 1
-SUE S12;Sbl Sue 1
-SUM;Wien Süßenbrunn-Mitte
-SUN;Stockerau Nord
-SUW;Wien Süßenbrunn-West
-SV;St.Valentin
-SV A1;AB (Awanst)
-SV H1;Ennsdorf Hst
-SV H1E;Herzograd Hst
-SV S11;Sbl Sv 1
-SV S12;Sbl Sv 1
-SV S13;Sbl Sv 1E
-SV S14;Sbl Sv 1E
-SV S21;Sbl Sv 2
-SV S22;Sbl Sv 2
-SV S41;Sbl Sv 4
-SV S42;Sbl Sv 4
-SV S51;Sbl Sv 5
-SV S52;Sbl Sv 5
-SV S93;Sbl Sv 12
-SV S94;Sbl Sv 12
-SV U3;Üst Sv 3
-SV Z91;Abzw Sv 11
-SVE;St.Valentin-Ennskanalbrücke
-SW;Schwaz
-SW H1;Terfens-Weer Hst
-SW K1;Pill-Vomperbach H-Lst (Awanst)
-SW S11;Sbl Sw 1
-SW S12;Sbl Sw 1
-SW S41;Sbl Sw 4
-SW S42;Sbl Sw 4
-SW U2;Üst Sw 2
-SW U3;Üst Sw 3
-SWA;Schwarzach-St.Veit
-SWA S11;Sbl Swa 1W
-SWA S12;Sbl Swa 1W
-SWA S91;Sbl Swa 1T
-SWA S92;Sbl Swa 1T
-SWB;Schwertberg
-SWB A1;AB (Awanst)
-SWG;Schwanberg H-Lst
-SWG H1;St Peter im Sulmtal Hst
-SWP;Schwarzenbach/P. (Gf)
-SWS;St.Wolfgang Schafbergbf
-SWU;Schwarzenau
-SWU H1Z;Ganz Hst
-SWU K1;Bernschlag H-Lst
-SY;Steyregg
-SY H1;Pulgarn Hst
-SY S11;Sbl Sy 1
-SY S12;Sbl Sy 1
-SZ;Spitz a.d.Donau
-SZ H1;Schwallenbach Hst
-SZ H2;Willendorf i.d.W. Hst
-T;Traun
-T A1;AB
-T K1;Ansfelden H-Lst (Awanst)
-TA;Taxenbach-Rauris
-TA A1;AB (Awanst)
-TA B11;Bl Ta 1
-TA B12;Bl Ta 1
-TA H1;Gries im Pinzgau Hst
-TAS;Tainach-Stein
-TAT;Tattendorf (Gf)
-TAT A1;AB (Awanst)
-TAT A2;AB (Awanst)
-TAU;Tauchen-Schaueregg
-TAU H1;Pinggau Markt Hst
-TB;Trieben
-TB A1;AB (Awanst)
-TB S11;Sbl Tb 1
-TB S12;Sbl Tb 1
-TB S21;Sbl Tb 2
-TB S22;Sbl Tb 2
-TBV;Tarvisio Boscoverde
-TDF;Teesdorf Hst
-TE;Ternberg
-TE H1;Trattenbach Hst
-TEL;Thalheim-Pöls
-TEL H1;St.Georgen ob Judenburg Hst
-TEL S11;Sbl Tel 1
-TEL S12;Sbl Tel 1
-TF;Berndorf Fabrik (Gf)
-TF H1;Berndorf Stadt Hst
-TH;Thörl-Maglern
-TH G;Staatsgrenze nächst Thörl-Maglern
-TI;Traiskirchen Aspangbahn (Gf)
-TI A1;AB
-TI K1;Trumau H-Lst
-TI K2;Ober Waltersdorf H-Lst
-TIH;Tischlerhäusl
-TIH H1;Kitzsteinhornstraße Hst
-TIH H2;Bruckberg Hst
-TIH H3;Zellermoos Hst
-TK;Traunkirchen
-TL;Thal
-TM;Timelkam
-TM H1;Neukirchen-Gampern Hst
-TM S11;Sbl Tm 1
-TM S12;Sbl Tm 1
-TN;Ternitz
-TN A1;AB (Awanst)
-TN H1;Pottschach Hst
-TN S11;Sbl Tn 1
-TN S12;Sbl Tn 1
-TP;Taufkirchen a d Pram
-TP A1;AB (Awanst)
-TP A2;AB (Awanst)
-TP H2H;Gopperding Hst
-TP S11;Sbl Tp 1
-TP S12;Sbl Tp 1
-TP S21;Sbl Tp 2
-TP S22;Sbl Tp 2
-TR;Treibach-Althofen
-TR H1;Kappel am Krappfeld Hst
-TR H2;Passering Hst
-TR S11;Sbl Tr 1
-TR S12;Sbl Tr 1
-TR S21;Sbl Tr 2
-TR S22;Sbl Tr 2
-TRA;Traismauer
-TRA H1;Getzersdorf Hst
-TRA H2;Herzogenburg Stadt Hst
-TRN;Traisen
-TRN H1;Rotheau-Eschenau Hst
-TRN H2;Göblasbruck Hst
-TRN H3;Kreisbach Hst
-TRO;Trofaiach
-TS;Telfs-Pfaffenhofen
-TS H1;Rietz Hst
-TS S11;Sbl Ts 1
-TS S12;Sbl Ts 1
-TU;Tulln
-TU B11;Bl Tu 1
-TU B12;Bl Tu 1
-TUB;Tulln-Donaubrücke
-TUE;Türnitz
-TUE H1;Dickenau Hst
-TUE H2;Moosbach Hst
-TUF;Tulln-Tullnerfeldstraße
-TUS;Tulln-Tulln Stadt
-TUS B11;Bl Tu Z 1
-TUS B12;Bl Tu Z 1
-TUS H1;Pixendorf Hst
-TUS K1;Judenau-Sieghartskirchen H-Lst (Awanst, AB)
-TW;Twimberg
-TX;Traxenbichl
-UB;Wien Donauuferbf
-UE;Bruck a.d.Mur-Übelstein
-UEB;Übelbach
-UF;Linz Urfahr
-UF H1;Puchenau Hst
-UH;Unterhart
-UH A1;AB
-UL;Ulmerfeld-Hausmening
-UL A1;AB (Awanst)
-UL A2;AB (Awanst)
-UL H1;Kröllendorf Hst
-UM;Unzmarkt
-UP;Unter Purkersdorf
-UP H1;Purkersdorf Gablitz Hst
-UP H2;Unter Tullnerbach Hst
-UP S11;Sbl Up 1
-UP S12;Sbl Up 1
-UP U2;Üst Up 2
-UR;Bruck a.d.Leitha-Ost
-UR A1;AB (Awanst, UW)
-US;Lustenau
-US K1;Hard-Fussach H-Lst (Awanst, AB)
-UT;Uttendorf-Stubachtal
-UT H1;Pirtendorf Hst
-UZ;Pusarnitz
-UZ S21;Sbl Uz 2
-UZ S22;Sbl Uz 2
-UZ Z1;Abzw Uz 1
-VA;Villach Süd Gvbf-Ausfgr
-VB;Villach Hbf
-VBA;Villach Hbf-Autoverladestelle
-VBD Z1;Abzw Villach Hbf-Draubrücke
-VBO;Villach Hbf-Ostbf
-VD;Vordernberg
-VE;Villach Süd Gvbf-Einfgr
-VEL;Velden am Wörthersee
-VEL A1;AB (Awanst)
-VEL H1;Lind-Rosegg Hst
-VEL S11;Sbl Vel 1
-VEL S12;Sbl Vel 1
-VF;Villach Hbf-Villach Westbf
-VF A1;AB (Awanst)
-VF H1;Villach Warmbad Hst
-VG;St.Veit a.d.Gölsen (Gf)
-VG H1;Wiesenfeld-Schwarzenbach Hst
-VI;Vils
-VI G;Staatsgrenze nächst Vils
-VI H1;Schönbichl Hst
-VIT;Vitis
-VIT H1;Hirschbach Hst
-VIW;Viechtwang
-VK;Vöcklabruck
-VK H1;Oberthalheim-Timelkam Hst
-VK Z1;Abzw Vk 1
-VL;Völs
-VL K1;Kematen in Tirol H-Lst (Awanst)
-VL S11;Sbl Vl 1
-VL S12;Sbl Vl 1
-VM;Vöcklamarkt
-VN;Viehofen
-VN A1;AB (Awanst)
-VN H1;St.Pölten Traisenpark Hst
-VO;Villach Süd Gvbf-Ost
-VO G;Grenze ÖBB-STH Km 24,868
-VO H1;Gödersdorf Hst
-VO H2;Finkenstein Hst
-VO Z9;Vorchdorf-E.
-VOB;Voitsberg
-VOI;Voitsdorf
-VOI H2;Wilfling Hst
-VOI H3;Diensthubersiedlung Hst
-VOK;Völkermarkt-Kühnsdorf
-VPS;St.Veit a.d.Glan
-VPS A1;AB (Awanst)
-VPS H1;Glandorf Hst
-VPS S11;Sbl Vps 1
-VPS S12;Sbl Vps 1
-VPS S21;Sbl Vps 2
-VPS S22;Sbl Vps 2
-VR;Vordernberg Markt Hst
-VS;St.Veit a.d.Glan-West
-VS H2;Liebenfels Hst
-VU;Villach Süd Gvbf-Auen
-VW;Villach Süd Gvbf-West
-VW H2;Pöckau Hst
-W;Wörgl Hbf
-W H1;Rattenberg-Kramsach Hst
-W S11;Sbl W 1
+Ssl;St.Stefan im Lavanttal
+Ssm H1;Kothmühle
+Ssm;Scharnstein-Mühldorf
+Ssn H1;Lendorf
+Ssn;Möllbrücke-Sachsenburg
+Ss;Schönwies
+Ssv H1;Görtschach-Förolach
+Ssv H2;Pressegger See
+Ssv H3;Vellach-Khünburg
+Ssv S11;Sbl Ssv 1
+Ssv S11;Sbl Ssv 1
+Ssv;St.Stefan-Vorderberg
+Ss Z1;Abzw Ss 1
+St A1S;AB (Awanst)
+Sta A1;AB
+Sta A2;AB
+Sta E1;EK km 7,826
+Sta G;Streckenende 16201 nächst Wöllersdorf
+Stb;Steyr (in Stb)
+Stc;Wien Hirschstetten (in St)
+Std;Steinfeld im Drautal
+Ste;Stetten
+Stf H1;Herzogenburg-Wielandsthal (in Ho)
+Stf;Statzendorf
+Stg;Steeg-Gosau
+Sth A1;AB
+Sth H1;Oberhart
+Sth;Steinhaus bei Wels
+Sti G;Staatsgrenze nächst Steinach in Tirol
+Sti H1;St.Jodok
+Sti K1;Gries (Awanst)
+Sti S31;Sbl Sti 3
+Sti S32;Sbl Sti 3
+Sti;Steinach in Tirol
+Sti U1;Üst Sti 1
+Sti U2;Üst Sti 2
+Sti Z4;Abzw Sti 4
+Stk;Wien Erzherzog Karl-Straße (in St)
+Stl;Bruck a.d.Mur-Stadtwald (in Bm)
+Stm;Steyrermühl
+Stn;Stiefern
+Stp G;Grenze ÖBB-STH Km 3,777
+Stp;Stadl-Paura
+Str H1;Silberwald
+Str S12;Sbl Str 1
+Str S21;Sbl Str 2
+Str S22;Sbl Str 2
+Str S91;Sbl Str 1
+Str;Strasshof (in Str)
+Sts H1;Mötz
+Sts;Stams
+St;Stadlau Fbf (in St)
+Stt S11;Sbl Stt 1
+Stt S12;Sbl Stt 1
+Stt;Spittal-Millstättersee
+Stu A1;AB (Awanst)
+Stu H1;Rohr
+Stu H2;Gniebing
+Stu;Studenzen-Fladnitz
+Stv;St.Veit a.d.Glan-Süd (in Vps)
+St W1;Abzww Str 11701 (in St)
+Stw;Straßwalchen
+Sty;Wien Aspern Nord (in St)
+Sue S11;Sbl Sue 1
+Sue S12;Sbl Sue 1
+Sue S21;Sbl Sue 2
+Sue S22;Sbl Sue 2
+Sue W1;Abzww Süßenbrunn-West (in Sue)
+Sue W2;Abzww Süßenbrunn-Nord (in Sue)
+Sue W3;Abzww Süßenbrunn-Ost (in Sue)
+Sue;Wien Süßenbrunn (in Sue)
+Su H1;Ober Olberndorf
+Sum;Wien Süßenbrunn-Mitte (in Sue)
+Sun;Stockerau Nord (in Su)
+Su;Stockerau (in Su)
+Suw;Wien Süßenbrunn-West (in Sue)
+Sv A1;AB (Awanst)
+Sve;St.Valentin-Ennskanalbrücke (in Sv)
+Sv H1E;Herzograd
+Sv H1;Ennsdorf
+Sv S11;Sbl Sv 1
+Sv S12;Sbl Sv 1
+Sv S13;Sbl Sv 1E
+Sv S14;Sbl Sv 1E
+Sv S21;Sbl Sv 2
+Sv S22;Sbl Sv 2
+Sv S41;Sbl Sv 4
+Sv S42;Sbl Sv 4
+Sv S51;Sbl Sv 5
+Sv S52;Sbl Sv 5
+Sv S93;Sbl Sv 12
+Sv S94;Sbl Sv 12
+Sv;St.Valentin (in Sv)
+Sv U3;Üst Sv 3
+Sv Z91;Abzw Sv 11
+Swa S11;Sbl Swa 1W
+Swa S12;Sbl Swa 1W
+Swa S91;Sbl Swa 1T
+Swa S92;Sbl Swa 1T
+Swa;Schwarzach-St.Veit
+Swb A1;AB (Awanst)
+Swb;Schwertberg
+Sw H1H;Pill-Vomperbach
+Sw H2;Terfens-Weer
+Swp;Schwarzenbach/P. (Gf)
+Sw S11;Sbl Sw 1
+Sw S12;Sbl Sw 1
+Sw S41;Sbl Sw 4
+Sw S42;Sbl Sw 4
+Sw;Schwaz
+Sw U2;Üst Sw 2
+Sw U3;Üst Sw 3
+Swu G;Streckenende 17601 nächst Schwarzenau
+Swu H1Z;Hst außer Betrieb
+Swu L1;Bernschlag Lst
+Swu;Schwarzenau
+Sy H1;Pulgarn
+Sy S11;Sbl Sy 1
+Sy S12;Sbl Sy 1
+Sy;Steyregg
+Ta H1;Gries im Pinzgau
+Tak H1;Hst außer Betrieb
+Tak;Takern-St.Margarethen
+Tam Z9;Niederwölz
+Ta S11;Sbl Ta 1
+Ta S12;Sbl Ta 1
+Tas;Tainach-Stein
+Tat A1A;AB (Awanst)
+Tat A1;AB (Awanst)
+Tat A2;AB (Awanst)
+Ta;Taxenbach-Rauris
+Tat H1;Teesdorf
+Tat;Tattendorf (Gf)
+Tau H1;Pinggau Markt
+Tau;Tauchen-Schaueregg
+Tb A1;AB (Awanst)
+Tb S11;Sbl Tb 1
+Tb S12;Sbl Tb 1
+Tb S21;Sbl Tb 2
+Tb S22;Sbl Tb 2
+Tb;Trieben
+Tbv;Tarvisio Boscoverde
+Te H1;Trattenbach
+Tel H1;St.Georgen ob Judenburg
+Tel S11;Sbl Tel 1
+Tel S12;Sbl Tel 1
+Tel;Thalheim-Pöls
+Te;Ternberg
+Tf;Berndorf Fabrik
+Tfd H1;Michelhausen
+Tfd H2;Atzenbrugg
+Tfd S11;Sbl Tfd 1
+Tfd S12;Sbl Tfd 1
+Tfd S31;Sbl Tfd 3
+Tfd S32;Sbl Tfd 3
+Tfd S81;Sbl Tfd 21
+Tfd S82;Sbl Tfd 21
+Tfd S83;Sbl Tfd 22
+Tfd S84;Sbl Tfd 22
+Tfd;Tullnerfeld (in Tfd)
+Tfd U2;Üst Tfd 2
+Tfd U4;Üst Tfd 4
+Tf H1;Berndorf Stadt
+Tfn;Tullnerfeld-Nord (in Tfd)
+Tfo;Tullnerfeld-Ost (in Tfd)
+T H1;Ansfelden
+Th G;Staatsgrenze nächst Thörl-Maglern
+Th;Thörl-Maglern
+Ti A1;AB
+Ti H1;Ober Waltersdorf
+Tih H1H;Areitbahn
+Tih H1;Kitzsteinhornstraße
+Tih H2;Bruckberg
+Tih H3;Zellermoos
+Tih;Tischlerhäusl
+Ti K1;Trumau
+Ti;Traiskirchen Aspangbahn
+Tk;Traunkirchen
+Tl;Thal
+Tm H1;Neukirchen-Gampern
+Tm S11;Sbl Tm 1
+Tm S12;Sbl Tm 1
+Tm;Timelkam
+Tn H1;Pottschach
+Tn S11;Sbl Tn 1
+Tn S12;Sbl Tn 1
+Tn;Ternitz
+To G;Staatsgrenze nächst Tosters
+To H1;Tisis
+To;Tosters (in To)
+Tow;Tosters-West (in To)
+Tp;Taufkirchen a d Pram
+Tra H1;Getzersdorf
+Tra H2;Herzogenburg Stadt
+Tra S11;Sbl Tra 1
+Tra S12;Sbl Tra 1
+Tra;Traismauer
+Tr H1;Kappel am Krappfeld
+Tr H2;Passering
+Trn H1;Hst außer Betrieb
+Trn H2;Hst außer Betrieb
+Trn H3;Kreisbach
+Trn;Traisen
+Tro;Trofaiach
+Tr S11;Sbl Tr 1
+Tr S12;Sbl Tr 1
+Tr S21;Sbl Tr 2
+Tr S22;Sbl Tr 2
+Tr;Treibach-Althofen
+Ts H1;Rietz
+Ts S11;Sbl Ts 1
+Ts S12;Sbl Ts 1
+Ts;Telfs-Pfaffenhofen
+T;Traun (in T)
+Tub;Tulln-Donaubrücke (in Tu)
+Tue H2;Moosbach
+Tu S11;Sbl Tu 1
+Tu S12;Sbl Tu 1
+Tus;Tulln Stadt (in Tu)
+Tu;Tulln an der Donau (in Tu)
+T W1;Abzww Traun Nord (in T)
+T W2;Abzww Traun Süd (in T)
+T W3;Abzww Traun West (in T)
+Tx;Traxenbichl
+Ub;Wien Donauuferbf (in Wv)
+Ue;Bruck a.d.Mur-Übelstein (in Bm)
+Ueb;Übelbach
+Uf H1;Puchenau
+Uf;Linz Urfahr
+Uh A1;AB
+Uh;Unterhart
+Ul A1;AB (Awanst)
+Ul A2;AB (Awanst)
+Ul H1;Kröllendorf
+Ul;Ulmerfeld-Hausmening
+Um;Unzmarkt
+Up H1;Purkersdorf Zentrum
+Up H2;Unter Tullnerbach
+Up S11;Sbl Up 1
+Up S12;Sbl Up 1
+Up S31;Sbl Up 3
+Up S32;Sbl Up 3
+Up U2;Üst Up 2
+Up;Unter Purkersdorf
+Ur A1;AB (Awanst)
+Ur;Bruck a.d.Leitha Fbf (in Bl)
+Us H1;Hard-Fussach
+Us;Lustenau
+Ut H1;Pirtendorf
+Ut;Uttendorf-Stubachtal
+Uz;Pusarnitz (in Uz)
+Uz S11;Sbl Uz 1
+Uz S12;Sbl Uz 1
+Uzs;Pusarnitz-Süd (in Uz)
+Uz W1;Abzww Str 40701 (in Uz)
+Va;Villach Süd Gvbf-Ausfgr (in Vsv)
+Vba;Villach Hbf-Autoverladestelle (in Vb)
+Vbd;Villach Hbf-Draubrücke (in Vb)
+Vbo;Villach Hbf-Ostbf (in Vb)
+Vb;Villach Hbf (in Vb)
+Vel A1;AB (Awanst)
+Vel H1;Lind-Rosegg
+Vel S12;Sbl Vel 1
+Vel S91;Sbl Vel 1
+Vel;Velden am Wörthersee
+Ve;Villach Süd Gvbf-Einfgr (in Vsv)
+Vf H1;Villach Warmbad
+Vf;Villach Westbf (in Vb)
+Vg H1;Wiesenfeld-Schwarzenbach
+Vg;St.Veit a.d.Gölsen
+Vi G;Staatsgrenze nächst Vils
+Vi H1A;Vils Stadt
+Vi H2;Hst außer Betrieb
+Vik;Viktring (in Kt)
+Vit H1;Hirschbach
+Vit;Vitis
+Vi;Vils
+Viw;Viechtwang
+Vk H1;Oberthalheim-Timelkam
+Vk;Vöcklabruck
+Vk Z1;Abzw Vk 1
+Vl H1;Kematen in Tirol
+Vl S11;Sbl Vl 1
+Vl S12;Sbl Vl 1
+Vl;Völs
+VLZ;Verkehrsleitzentrale
+Vm;Vöcklamarkt
+Vn A1;AB (Awanst)
+Vn H1;St.Pölten Traisenpark
+Vn;Viehofen
+Vob A1;AB (Awanst)
+Vob A2;AB (Awanst)
+Vob K3;Bärnbach H-Lst
+Vob;Voitsberg
+Voi H2;Wilfling
+Voi H3;Diensthubersiedlung
+Voi;Voitsdorf
+Vok;Völkermarkt-Kühnsdorf
+Vo Z9;Vorchdorf-E.
+Vps A1;AB (Awanst)
+Vps H1;Glandorf
+Vps S11;Sbl Vps 1
+Vps S12;Sbl Vps 1
+Vps S21;Sbl Vps 2
+Vps S22;Sbl Vps 2
+Vps;St.Veit a.d.Glan (in Vps)
+Vs H2;Liebenfels Haltestelle
+Vs;St.Veit a.d.Glan-West (in Vps)
+Vsv;Villach Süd Gvbf (in Vsv)
+Vu H1;Gödersdorf (in Vsv)
+Vu H2;Finkenstein
+Vu;Villach Süd Gvbf-Auen (in Vsv)
+Vu W1;Abzww Villach Süd Gvbf-Ost (in Vsv)
+Vw H2;Pöckau
+Vw;Villach Süd Gvbf-West (in Vsv)
+Waa;Wald am Arlberg
+Wa;Bad Schallerbach-Wallern
+Wac;Walchen im Pinzgau
+Wag H1;Waldegg-Dürnbach
+Wag;Waldegg
+Wa H1;Schlüßlberg
+Wah H1;Ternitzerhütte
+Wah;Wasserstelle am Hengst
+Wak H1;Nußbach
+Wak S21;Sbl Wak 2
+Wak S22;Sbl Wak 2
+Wak U1;Üst Wak 1
+Wak;Wartberg a.d.Krems
+Wak Z3;Abzw Wak 3
+Wal;Wallern im Burgenland
+Wap H2;Lahnsiedlung
+Wap;Wald im Pinzgau
+War;Wartberg im Mürztal
+Wa S21;Sbl Wa 2
+Wa S22;Sbl Wa 2
+Was H1;Treglwang
+Was S11;Sbl Was 1
+Was S12;Sbl Was 1
+Was S31;Sbl Was 3
+Was S32;Sbl Was 3
+Was U2;Üst Was 2
+Was;Wald am Schoberpaß
+Wat;Knoten Wagram (in Wat)
+Wat S11;Sbl Wat 11
+Wat S12;Sbl Wat 11
+Wat S13;Sbl Wat 1
+Wat S14;Sbl Wat 1
+Wat S33;Sbl Wat 3
+Wat S34;Sbl Wat 3
+Wat S43;Sbl Wat 4
+Wat S44;Sbl Wat 4
+Wat S53;Sbl Wat 5
+Wat S54;Sbl Wat 5
+Wat S63;Sbl Wat 6
+Wat S64;Sbl Wat 6
+Wat S83;Sbl Wat 8
+Wat S84;Sbl Wat 8
+Wat S95;Sbl Wat 21
+Wat S96;Sbl Wat 21
+Wat U2;Üst Wat 2
+Wat U7;Üst Wat 7
+Wat W1;Abzww Knoten Wagram Nord (in Wat)
+Wat W2;Abzww Knoten Wagram Süd (in Wat)
+Wa U1;Üst Wa 1
+Wau;Waldhausen
+Wbb;W.Mat.-Wienerbergbrücke (in Wbf)
+Wbf H1;Simmering (in El)
+Wbf H1S;Wien Matzleinsdorfer Platz (in Wbf)
+Wbf H2;Wien Haidestraße (in El)
+Wbf S11;Sbl Wbf 1
+Wbf S12;Sbl Wbf 1
+Wbf S21;Sbl Wbf 2
+Wbf S22;Sbl Wbf 2
+Wbf;Wien Hauptbahnhof (in Wbf)
+Wd H1;St.Martin bei Traun
+Wd;Linz Wegscheid
+Web;Weissenbach-Neuhaus
+Wed;Wetzleinsdorf
+Wef;Weizelsdorf
+Weg S11;Sbl Weg 1
+Weg S12;Sbl Weg 1
+Weg;Weißenbach-St.Gallen
+Wei;Wels Vbf-Einfgr (in Wev)
+Wek;Wels Vbf-Terminal (in Wev)
+Wem;Weitersfeld a.d.Mur
+Wen A1;AB (Awanst)
+Wen A2;AB (Awanst)
+Wen L1;Eppenstein Lst (Awanst)
+Wen L2;Kathal Lst (Awanst)
+Wen;Weißkirchen
+We S11;Sbl We 1
+We S12;Sbl We 1
+We S21;Sbl We 2
+We S22;Sbl We 2
+We S91;Sbl We 1H
+We S92;Sbl We 1H
+We S93;Sbl We 2H
+We S94;Sbl We 2H
+Wet;Weitersfeld N.Ö.
+Wev;Wels Vbf (in Wev)
+We;Wels Hbf
+Wew;Wies-Eibiswald
+Wey H1;Kastenreith
+Wey;Weyer
+Wey Z1;Abzw Wey 1
+Wez;Weiz
+Wfg;Wien Franz-Josefs-Bf-Gürtelbrücke (in Wf)
+Wf H1;Wien Spittelau (in Wf)
+Wf;Wien Franz-Josefs-Bf (in Wf)
+Wg;Deutsch Wagram
+Wg H1;Helmahof
+Wg H2;Strasshof Haltestelle (in Str)
+Wgm;Pottenbrunn (in Wat)
+Wg S21;Sbl Wg 2
+Wg S22;Sbl Wg 2
+Wg S91;Sbl Wg 1
+Wg S92;Sbl Wg 1
+Whf H1;Waidhofen a.d.Ybbs Schillerp.
+Whf;Waidhofen a.d.Ybbs Lb (Gf)
+Wh H1;Stadt Waidhofen a.d.Ybbs
+Wh;Waidhofen a.d.Ybbs
+Wie A1A;AB
+Wie A1;AB
+Wie A2A;AB
+Wie H1;Mühling
+Wie H2;Mühling-Plaika
+Wie H3;Schauboden
+Wie;Wieselburg a.d.Erlauf
+Wif;Abzw Knoten Weitendorf
+Wi H1;Lebring
+Wi H2;Kaindorf a.d.Sulm
+Wil H1A;Rothengrub
+Wil H1;Unter Höflein
+Wil;Willendorf
+Win S11;Sbl Win 1
+Win S12;Sbl Win 1
+Win;Windischgarsten
+Wi S21;Sbl Wi 2
+Wi S22;Sbl Wi 2
+Wit;Wittmannsdorf
+Wi U3;Üst Wi 3
+Wi;Wildon
+Wi Z1;Abzw Wi 1
+Wk;Groß Weikersdorf
+Wk H1;Hst außer Betrieb
+Wk S11;Sbl Wk 1
+Wk S12;Sbl Wk 1
+Wl A1;AB
+Wl H1;Wels Messe (in Wl)
+Wlh;Wien Lobau Hafen
+Wl;Wels Lokalbahn (in Wl)
+Wm H1;St.Georgen am Steinfelde
+Wm H2;Hart-Wörth
+Wm;Wilhelmsburg a.d.Traisen
+Woe H1A;Wöllersdorf Marchgraben
+Woe H2;Piesting Harzwerk
+Woe;Wöllersdorf
+Wof;Wolfsthal
+Wog H1;Wolfsberg Reding
+Wog S11;Sbl Wog 1
+Wog S12;Sbl Wog 1
+Wog;Wolfsberg
+Wol H1;Ulrichskirchen
+Wol;Wolkersdorf
+Wo S11;Sbl Wo 1
+Wo S12;Sbl Wo 1
+Wo;Wolfurt (in Wo)
+Wp H1;Pottendorf-Landegg
+Wp S11;Sbl Wp 1
+Wp S12;Sbl Wp 1
+Wp;Wampersdorf
+Wr A2;AB (Awanst)
+Wra H1;Langfeld
+Wra H2;Schöllbüchl
+Wra K1;St.Martin bei Weitra (Awanst)
+Wra;Weitra
+Wr;Werndorf
 W S12;Sbl W 1
-W S31;Sbl W 3
-W S32;Sbl W 3
-W U2;Üst W 2
-WA;Bad Schallerbach-Wallern
-WA H1;Schlüßlberg Hst
-WA S21;Sbl Wa 2
-WA S22;Sbl Wa 2
-WA U1;Üst Wa 1
-WAA;Wald am Arlberg
-WAB;Wasserburg
-WAG;Waldegg
-WAG H1;Waldegg-Dürnbach Hst
-WAH;Wasserstelle am Hengst
-WAH H1;Ternitzerhütte Hst
-WAK;Wartberg a. d. Krems
-WAK A1;AB (Awanst)
-WAK H1;Nußbach Hst
-WAL;Wallern im Burgenland
-WAM;Waldmühle Lst
-WAN;Wang Lst
-WAN A1;AB
-WAN E1;EK km 19,682
-WAP;Wald im Pinzgau
-WAP H1A;Kreilsiedlung Hst
-WAP H2;Lahnsiedlung Hst
-WAR;Wartberg im Mürztal
-WAS;Wald am Schoberpaß
-WAS K1;Treglwang H-Lst (Awanst)
-WAS S11;Sbl Was 1
-WAS S12;Sbl Was 1
-WAS S31;Sbl Was 3
-WAS S32;Sbl Was 3
-WAS U2;Üst Was 2
-WAT;Knoten Wagram
-WAT S11;Sbl Wat 11
-WAT S12;Sbl Wat 11
-WAT S95;Sbl Wat 21
-WAT S96;Sbl Wat 21
-WAU;Waldhausen
-WB;Wien Südbf
-WBB;W.Mat.-Wienerbergbrücke
-WBO;Wien Südbf
-WBO H2;Wien Erdbergerlände Wien Haidestraße Hst
-WBS;Wien Süd-Gleisgruppe 600
-WD;Linz Wegscheid
-WD H1;St.Martin bei Traun Hst
-WDS;Weiden am See
-WE;Wels Hbf
-WE S11;Sbl We 1
-WE S12;Sbl We 1
-WE S21;Sbl We 2
-WE S22;Sbl We 2
-WE S91;Sbl We 1H
-WE S92;Sbl We 1H
-WE S93;Sbl We 2H
-WE S94;Sbl We 2H
-WEA;Wels Vbf-Aus-/Durchfahr-/Vorstellgruppe Terminal
-WEB;Weißenbach-Neuhaus
-WEB H2;Altenmarkt a.d.Triesting Hst
-WED;Wetzleinsdorf
-WEF;Weizelsdorf
-WEF H1;Weizelsdorf Ort Hst
-WEF H2;St.Johann im Rosental Hst
-WEG;Weißenbach-St.Gallen
-WEG S11;Sbl Weg 1
-WEG S12;Sbl Weg 1
-WEI;Wels Vbf-Einfgr
-WEK;Wels Vbf-Terminal
-WEM;Weitersfeld a.d.Mur
-WEN;Weißkirchen
-WEN A1;AB (Awanst)
-WEN A2;AB (Awanst)
-WEN K1;Eppenstein H-Lst (Awanst)
-WEN K2;Kathal H-Lst (Awanst)
-WER;Wernstein
-WER G;Staatsgrenze nächst Wernstein
-WER S11;Sbl Wer 1
-WER S12;Sbl Wer 1
-WET;Weitersfeld N.Ö.
-WET H1;Anglerparadies Hessendorf Hst
-WET H1A;Ober Höflein Hst
-WET H2;Hessendorf Hst
-WEW;Wies-Eibiswald
-WEY;Weyer
-WEY Z1;Abzw Wey 1 Kastenreith Hst
-WEZ;Weiz
-WF;Wien Franz-Josefs-Bf
-WF H1;Wien Franz-Josefs-Bf Spittelau Hst
-WFG;Wien Franz-Josefs-Bf-Gürtelbrücke
-WG;Deutsch Wagram
-WG H1;Helmahof Hst
-WG H2;Strasshof Hst
-WG S11;Sbl Wg 1
-WG S12;Sbl Wg 1
-WGM;Knoten Wagram-Pottenbrunn
-WH;Waidhofen a.d.Ybbs
-WH H1;Stadt Waidhofen a.d.Ybbs Hst
-WHF;Waidhofen a.d.Ybbs Lb (Gf)
-WHF H1;Waidhofen a.d.Ybbs Schillerp. Hst
-WI;Wildon
-WI A1;AB (Awanst)
-WI H1;Lebring Hst
-WIE;Wieselburg a.d.Erlauf
-WIE A1;AB
-WIE H1;Mühling Hst
-WIE H2;Mühling-Plaika Hst
-WIE H3;Schauboden Hst
-WIG;Weitenegg
-WIG H1;Lehen-Ebersdorf Hst
-WIL;Willendorf
-WIL H1;Unter Höflein Hst
-WIL H1A;Rothengrub Hst
-WIN;Windischgarsten
-WIT;Wittmannsdorf
-WJ;Weins-Isperdorf
-WJ H1;Hirschenau-Nöchling Hst
-WK;Groß Weikersdorf
-WK H1;Glaubendorf-Wetzdorf Hst
-WK S11;Sbl Wk 1
-WK S12;Sbl Wk 1
-WKI;Weißenkirchen i.d.Wachau
-WKI H1;Wösendorf-Joching Hst
-WKN;Waldkirchen a.d.Thaya Lst
-WKN E1;EK km 25.014
-WKN E2;EK km 24,676
-WKN L1;Dobersberg Lst
-WKN L2;Thaya Lst
-WL;Wels Lokalbahn
-WL A1;AB
-WL H1;Wels Messe Hst
-WLH;Wien Lobau Hafen
-WM;Wilhelmsburg a.d.Traisen
-WM H1;St.Georgen am Steinfeld Hst
-WM H2;Hart-Wörth Hst
-WN;Waidhofen a.d.Thaya (Gf)
-WN A1;AB
-WN H1;Kottschallings Hst
-WN H2;Windigsteig Hst
-WO;Wolfurt
-WO S11;Sbl Wo 1
-WO S12;Sbl Wo 1
-WOE;Wöllersdorf
-WOE H1A;Wöllersdorf Marchgraben Hst
-WOE H2;Piesting Harzwerk Hst
-WOF;Wolfsthal
-WOG;Wolfsberg
-WOG H1;Priel Hst
-WOL;Wolkersdorf
-WOL H1;Ulrichskirchen Hst
-WP;Wampersdorf
-WP A1;AB (Awanst)
-WP H1;Pottendorf-Landegg Hst
-WP S11;Sbl Wp 1
-WP S12;Sbl Wp 1
-WR;Werndorf
-WR A2;AB (Awanst)
-WRA;Weitra
-WRA H1;Langfeld Hst
-WRA H2;Schöllbüchl Hst
-WRA K1;St.Martin bei Weitra H-Lst (Awanst)
-WS;Wien Westbf
-WT;Innsbruck Hbf-Westbf
-WTF;Wietersdorf Hst
-WTF A1;AB
-WTF A2;AB
-WTN;Wörgl-Terminal Nord
-WTS;Wörgl-Terminal Süd
-WUE;Würnitz-Hetzmannsdorf
-WUE E1;EK km 21,922
-WUL;Wulkaprodersdorf
-WUL H1;Draßburg Hst
-WUL S21;Sbl Wul 2
-WUL S22;Sbl Wul 2
-WUL Z1;Abzw Wul 1
-WV;Wien Brigittenau
-WVN;Wien Brigittenau-Nord
-WVS;Wien Brigittenau-Süd
-WZ;Winzendorf
-WZ H1;Urschendorf Hst
+W S92;Sbl W 1B
+Wsp;Wien Hauptbahnhof Südtiroler Platz (in Wwb)
+Ws;Wien Westbf (in Ws)
+Wtf A1A;AB (Awanst)
+Wt;Innsbruck Westbf (in I)
+Wtn;Wörgl Hbf-Terminal Nord (in W)
+Wts;Wörgl Hbf-Terminal Süd (in W)
+Wtt H1;Gussendorf
+Wtt;Wettmannstätten
+Wtw;Wörgl West (in W)
+Wue E1;EK km 21,922
+Wue;Würnitz-Hetzmannsdorf
+Wul G;Grenze ÖBB-ROeEE
+Wul H1;Draßburg Hst
+Wul H1H;Wulkaprodersdorf Haltestelle
+Wul S11;Sbl Wul S11
+Wul S12;Sbl Wul S12
+Wul S21;Sbl Wul 2
+Wul S22;Sbl Wul 2
+Wul;Wulkaprodersdorf
+Wvn;Wien Brigittenau-Nord (in Wv)
+Wvs;Wien Brigittenau-Süd (in Wv)
+Wv;Wien Brigittenau (in Wv)
+Wwb U1;Üst Wwb 1
+Wwb;Wien Quartier Belvedere (in Wwb)
+W;Wörgl Hbf (in W)
+W Z2;Abzw W 2
+Wz H1;Urschendorf
+Wz;Winzendorf
+Yb H1;Gurhof
 Y;Ybbs a.d.Donau
-Y A1;AB (Awanst)
-Y H1;Neumarkt a.d.Y-Karlsbach Hst
-Y H2;Hubertendorf Hst
-Y S91;Sbl Y 12
-Y S92;Sbl Y 13
-Y S93;Sbl Y 13
-Y S94;Sbl Y 13
-Y U11;Üst Y 11
-YB;Ybbsitz
-YB H1;Gurhof Hst
-YB H2;Ederlehen Hst
-YB H3;Schütt Hst
-YB K1;Steinmühl H-Lst
-Z;Zell am See
 Z A1;AB (Awanst)
-Z H1;Gerling im Pinzgau Hst
-Z K1;Maishofen-Saalbach H-Lst (Awanst)
+Zab;Wien Zvbf Abzww Felixdorf (in Zur)
+Za;Kledering (in Zur)
+Zd F1;Zellerndorf-Ost (Ri1) (in Zd)
+Zd F2;Zellerndorf-Ost (Ri2) (in Zd)
+Zd;Zellerndorf (in Zd)
+Ze W1;Abzww Zur (in Zur)
+Ze;Wien Zvbf-Einfgr (in Zur)
+Zf H1;Hst außer Betrieb
+Zf;Ziersdorf
+Zg A2;AB (Awanst)
+Zg A5;AB Fohnsdorf
+Zg A7;AB
+Zg;Zeltweg
+Z H1;Gerling im Pinzgau
+Zia;Zistersdorf
+Z K1;Maishofen-Saalbach (Awanst)
+Zl H1;Inzing
+Zl H2;Hatting
+Zl H3;Oberhofen im Inntal
+Zl K1;Flaurling (Awanst)
+Zl S11;Sbl Zl 1
+Zl S12;Sbl Zl 1
+Zl S31;Sbl Zl 3
+Zl S32;Sbl Zl 3
+Zl U2;Üst Zl 2
+Zl;Zirl
+Zno;Znojmo
+Zn;Wien Zvbf-Nord (in Zur)
+Zo;Wien Zvbf-Ost (in Zur)
 Z S21;Sbl Z 2
 Z S22;Sbl Z 2
+Zs;Lanzendorf-Rannersdorf (in Zur)
 Z U1;Üst Z 1
-ZA;Wien Zvbf-Ausfgr Kledering
-ZAB;Wien Zvbf Abzww Felixdorf
-ZD;Zellerndorf
-ZD F1;Zellerndorf-Ost (Ri1)
-ZD F2;Zellerndorf-Ost (Ri2)
-ZD L1;Röschitz Lst
-ZD L2;Pulkau Lst
-ZE;Wien Zvbf-Einfgr
-ZF;Ziersdorf
-ZF K1;Ravelsbach H-Lst (Awanst, AB)
-ZG;Zeltweg
-ZG A2;AB (Awanst)
-ZG A3;AB (Awanst)
-ZG A4;AB (Awanst)
-ZG A5;AB
-ZG A6;AB
-ZG A7;AB
-ZI;Zissersdorf H-Lst
-ZIS;Zistersdorf
-ZL;Zirl
-ZL H1;Inzing Hst
-ZL H2;Hatting Hst
-ZL H3;Oberhofen im Inntal Hst
-ZL K1;Flaurling H-Lst (Awanst)
-ZL S11;Sbl Zl 1
-ZL S12;Sbl Zl 1
-ZL S31;Sbl Zl 3
-ZL S32;Sbl Zl 3
-ZL U2;Üst Zl 2
-ZN;Wien Zvbf-Nord
-ZNO;Znojmo
-ZO;Wien Zvbf-Ost
-ZS;Wien Zvbf-Süd Lanzendorf-R.
-ZSS;Zistersdorf Stadt
-ZU;Zurndorf
-ZUR;Wien Zvbf
-ZUR S11;Sbl Zur 1
-ZUR S12;Sbl Zur 1
-ZW;Zwettl (Gf)
-ZWS;Zwettl Stadt
+Zur S11;Sbl Zur 1
+Zur S12;Sbl Zur 1
+Zur;Wien Zvbf (in Zur)
+Zu;Zurndorf
+Zws;Zwettl Stadt
+Zw;Zwettl
+Z;Zell am See

@@ -43,7 +43,7 @@ def store_version(sql):
 
 def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)
-    return git_object.changelog(last_hash)
+    return git_object.changelog(last_hash).replace('•', '​•')
 
 def notify_new_version(sql, twapi, verbose):
     if is_same_version(sql):
@@ -52,8 +52,6 @@ def notify_new_version(sql, twapi, verbose):
     cl = get_changelog(sql)
     if not cl.strip() == "":
         status += ":\n" + cl
-    if len(status) > 280:
-        status = status[0:280]
     if twapi.tweet(
             status,
             auto_populate_reply_metadata=True
