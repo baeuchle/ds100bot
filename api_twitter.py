@@ -30,12 +30,10 @@ class TwitterApi:
     # Return new tweet id, 0 if RateLimit (= try again), -1 if other
     # error (fix before trying again).
     def tweet(self, text, **kwargs):
-        reply_id = kwargs.get('in_reply_to_status_id', None)
+        reply_id = kwargs.get('in_reply_to_status_id', 0)
+        kwargs['auto_populate_reply_metadata'] = True
         for part in split_text(text):
-            new_reply_id = self.tweet_single(part,
-                in_reply_to_status_id=reply_id,
-                auto_populate_reply_metadata=True
-            )
+            new_reply_id = self.tweet_single(part, **kwargs)
             if new_reply_id > 0:
                 reply_id = new_reply_id
         return reply_id

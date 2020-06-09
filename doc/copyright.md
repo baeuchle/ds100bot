@@ -118,9 +118,9 @@ Folgende Datenquellen werden vom Bot benutzt:
   <tr>
    <th>#ÖBB</th>
    <td>DB 640 der ÖBB</td>
-   <td><a href="http://www.bahnnews-austria.at/downloads/sonstiges/DB640.pdf">Bahnnews-Austria</a></td>
+   <td>Zusammenstellung von <a href="https://bahn.hauptsignal.at/">Christoph Schönweiler</a> (Stand 2020)</td>
    <td>© ÖBB-Infrastruktur Betrieb AG</td>
-   <td>Quelle ist nicht offiziell und scheint veraltet (von 2007)</td>
+   <td>Quelle ist nicht offiziell</td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
    </td>
@@ -142,6 +142,19 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#VOR</th>
+   <td>Betriebsstellen der Wiener Linien</td>
+   <td><a href="https://bahn.hauptsignal.at/">Christoph Schönweilers hauptsignal.at</a> (Stand 2020)</td>
+   <td></td>
+   <td>Datenbanksuche auf <a href="https://bahn.hauptsignal.at/bsb.php">hauptsignal.at</a></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/wien_vor.html">wien_vor</a>
+   </td>
+   <td>
+    #_VOR
+   </td>
+  </tr>
+  <tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
@@ -150,6 +163,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/gimmick.html">gimmick</a>
    </td>
+   <td></td>
   </tr>
  <tbody>
 </table>
