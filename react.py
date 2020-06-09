@@ -57,7 +57,7 @@ def find_tokens(tweet, modus, magic_tag):
             (?:(\p{Lu}+):)? # Optional prefix, e.g. "DS:" or "VGF:"
         )
         (                   # Payload
-            [\p{Lu}\p{N}_]+ # All uppercase letters plus all kinds of numbers plus _
+            [\p{L}\p{N}_]+ # All uppercase letters plus all kinds of numbers plus _
         )
         (?:$|\W)            # either end of string or non-\w character
         """, re.X)
@@ -70,7 +70,7 @@ def find_tokens(tweet, modus, magic_tag):
     if len(tokens) == 1 and str.join('', tokens[0][-1]) != magic_tag:
         return tokens
     # now: If modus is all and we have at found nothing but maybe the magic_tag,
-    # we'll look for more.
+    # we'll look for more. This can only be uppercase.
     finder2 = re.compile(r"""
         (?p)            # find longest match
         (?:^|\W)        # either at the beginning of the text or after a non-alphanumeric character, but don't find this
@@ -105,6 +105,10 @@ def find_entry(sql, parameters):
             sourceflags
         ON
             sourceflags.sourcename = shortstore.source
+        JOIN
+            sources
+        ON
+            sources.source_name = shortstore.source
         LEFT OUTER JOIN
             blacklist
         ON
@@ -179,7 +183,6 @@ def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS
         payload = match[2]
         payload = payload.replace('_', ' ')
         payload = ' '.join(payload.split())
-        payload = payload.upper()
         parameters = { 'abk': payload,
             'sigil': sigil,
             'magic_tag': source if source != "" else tag,

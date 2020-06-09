@@ -316,6 +316,16 @@ def mocked_tweets(verbose):
         entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet different cases #DS:FF #DS:Fkw #ÖBB:Aa #ÖBB:AB bot%tl%xs%402',
+        expected_answer='FF: Frankfurt (Main) Hbf\nÖBB#Aa: W․Mat․-Altmannsdorf (in Wbf)',
+        id=402,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
 #     list_of_tweets.append(Tweet(TweepyMock(
 #         id=1146760076478308352,
 #         full_text='@followee FF: Frankfurt (Main) Hbf',
