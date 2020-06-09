@@ -163,6 +163,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/gimmick.html">gimmick</a>
    </td>
+   <td></td>
   </tr>
  <tbody>
 </table>
