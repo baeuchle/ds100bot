@@ -39,10 +39,11 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>DS100 der Deutschen Bahn</td>
    <td><a href="https://data.deutschebahn.com/dataset/data-betriebsstellen">Betriebsstellenverzeichnis der Deutschen Bahn AG</a></td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
-   <td>
+   <td style="text-align: left;">
     <ul>
      <li>Punkte durch ONE DOT LEADER U+2024 ‚&#x2024;‘ ersetzt</li>
      <li>Mehrere Leerzeichen zusammengefasst</li>
+     <li>Einzelne Einträge korrigiert</li>
     </ul>
    </td>
    <td>
@@ -57,7 +58,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>Streckennummern der Deutschen Bahn</td>
    <td><a href="https://data.deutschebahn.com/dataset/geo-strecke">Geo-Streckennetz</a></td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
-   <td>
+   <td style="text-align: left;">
     <ul>
      <li>Punkte durch ONE DOT LEADER U+2024 ‚&#x2024;‘ ersetzt</li>
      <li>Mehrere Leerzeichen zusammengefasst</li>
@@ -120,7 +121,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>DB 640 der ÖBB</td>
    <td>Zusammenstellung von <a href="https://bahn.hauptsignal.at/">Christoph Schönweiler</a> (Stand 2020)</td>
    <td>© ÖBB-Infrastruktur Betrieb AG</td>
-   <td>Quelle ist nicht offiziell</td>
+   <td>Quelle ist nicht offiziell. Groß-/Kleinschreibung muss beachtet werden, es sind auch Kleinbuchstaben erlaubt!</td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
    </td>
