@@ -156,6 +156,19 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#NL</th>
+   <td>Betriebsstellen in den Niederlanden</td>
+   <td><a href="https://wetten.overheid.nl/BWBR0017707/2020-04-01/#Bijlage6">Anhang 6 zu Regeling spoorverkeer</a> (Stand 2020)</td>
+   <td>Gemeinfrei, da Gesetz</td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/nederlands.html">nederlands</a>
+   </td>
+   <td>
+    #_NL
+   </td>
+  </tr>
+  <tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
