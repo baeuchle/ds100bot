@@ -34,6 +34,7 @@ class TwitterApi:
         kwargs['auto_populate_reply_metadata'] = True
         for part in split_text(text):
             new_reply_id = self.tweet_single(part, **kwargs)
+            kwargs['in_reply_to_status_id'] = new_reply_id
             if new_reply_id > 0:
                 reply_id = new_reply_id
         return reply_id
