@@ -169,6 +169,20 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#UK</th>
+   <td>Haltestellen und Bahnhöfe der Rail Delivery Group</td>
+   <td><a href="http://data.atoc.org/how-to">Rail Delivery Group</a> (Stand 2020)</td>
+   <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
+   <td>Aus Fixed-width-Text extrahiert und Namen mit Kleinbuchstaben
+   versehen</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/raildeliverygroup.html">raildeliverygroup</a>
+   </td>
+   <td>
+    #_UK
+   </td>
+  </tr>
+  <tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>

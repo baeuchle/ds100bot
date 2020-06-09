@@ -21,4 +21,5 @@ INSERT INTO sourceflags VALUES('#','LP','leitpunkte','_LP');
 INSERT INTO sourceflags VALUES('#','NOR','banenor','_NSB');
 INSERT INTO sourceflags VALUES('#','VOR','wien_vor','_VOR');
 INSERT INTO sourceflags VALUES('#','NL','nederlands','_NL');
+INSERT INTO sourceflags VALUES('#','UK','raildeliverygroup','_UK');
 COMMIT;
