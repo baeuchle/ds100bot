@@ -25,4 +25,5 @@ INSERT INTO sources VALUES('banenor','Fork','Navn','Strekninger',NULL,1,';',NULL
 INSERT INTO sources VALUES('wien_vor','Abk','Name',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('nederlands','Abk','Name',NULL,NULL,0,';',NULL,0);
 INSERT INTO sources VALUES('raildeliverygroup','Abbr','Name',NULL,NULL,0,';',NULL,0);
+INSERT INTO sources VALUES('hhe','Abk','Name',NULL,NULL,0,';',NULL,0);
 COMMIT;

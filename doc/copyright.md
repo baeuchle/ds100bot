@@ -183,6 +183,18 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#HHE</th>
+   <td>Hamburger U-Bahn-Haltestellen</td>
+   <td><a href="http://www.hamburger-bahnhoefe.de/">Hamburger-Bahnhöfe.de</a></td>
+   <td></td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/hhe.html">hhe</a>
+   </td>
+   <td>
+    #_HHE
+   </td>
+  </tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
