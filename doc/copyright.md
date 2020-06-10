@@ -192,6 +192,23 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#FR</th>
+   <td>Französische Bahnhöfe</a></td>
+   <td><a href="https://ressources.data.sncf.com/explore/dataset/lexique-des-acronymes-sncf/">Lexique des abréviations SNCF</a></td>
+   <td><a href="https://opendatacommons.org/licenses/odbl/">ODbL</a></td>
+   <td>
+    Scheinbar war die Originalquelle früher all-caps und wird langsam
+    umgestellt. Das ist aber nur bis C oder D gekommen, danach wird's etwas
+    uneinheitlich.
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/sncf.html">sncf</a>
+   </td>
+   <td>
+    #_FR
+   </td>
+  </tr>
+  <tr>
    <th>#CH</th>
    <td>Schweizer <a href="https://opendata.swiss/de/dataset/haltestellen-des-offentlichen-verkehrs">Haltestellen des öffentlichen Verkehrs</a></td>
    <td><a href="https://data.sbb.ch/explore/dataset/dienststellen-gemass-opentransportdataswiss/information/">data.sbb.ch</a></td>
