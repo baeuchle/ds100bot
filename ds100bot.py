@@ -40,6 +40,13 @@ parser.add_argument('--external',
                     action='store_true',
                     default=False
                    )
+parser.add_argument('--parse_one',
+                    dest='parse_one',
+                    help='(Mock API only) Parse only mocked tweet with this ID',
+                    required=False,
+                    action='store',
+                    default=None
+                   )
 args = parser.parse_args()
 
 if args.db is None:
@@ -56,7 +63,8 @@ if args.verbose is None:
     args.verbose = 0
 
 # setup twitter API
-twapi = api.get_api_object(args.api, args.verbose, external=args.external)
+twapi = api.get_api_object(args.api, args.verbose,
+external=args.external, parse_one=args.parse_one)
 # setup database
 sql = Database(args.db, args.verbose)
 git.notify_new_version(sql, twapi, args.verbose)
