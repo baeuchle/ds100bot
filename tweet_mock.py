@@ -336,6 +336,26 @@ def mocked_tweets(verbose):
         entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet do not find CH = Chur #_CH #BS bot%tl%ab%mt%411',
+        expected_answer='CH#BS: Basel SBB',
+        id=411,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [{'text': '_CH', 'indices': [34,37]}], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet make sure 411 works: #CH:CH bot%tl%xs%issue[13]%412',
+        expected_answer='CH#CH: Chur',
+        id=412,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
 #     list_of_tweets.append(Tweet(TweepyMock(
 #         id=1146760076478308352,
 #         full_text='@followee FF: Frankfurt (Main) Hbf',
