@@ -169,17 +169,26 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
-   <th>#UK</th>
-   <td>Haltestellen und Bahnhöfe der Rail Delivery Group</td>
+   <th rowspan="2">#UK</th>
+   <td rowspan="2">Haltestellen und Bahnhöfe in England/Vereinigtes Königreich</td>
    <td><a href="http://data.atoc.org/how-to">Rail Delivery Group</a> (Stand 2020)</td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
    <td>Aus Fixed-width-Text extrahiert und Namen mit Kleinbuchstaben
-   versehen</td>
+   versehen<br/>
+   4- bis 7-stellige Kürzel</td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/raildeliverygroup.html">raildeliverygroup</a>
    </td>
-   <td>
+   <td rowspan="2">
     #_UK
+   </td>
+  </tr>
+  <tr>
+   <td><a href="https://www.nationalrail.co.uk/stations_destinations/48541.aspx">National Rail Enquiries</a> (Stand 2018)</td>
+   <td><em>unbekannt</em></td>
+   <td>Dreistellige Kürzel</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/nationalrail.html">nationalrail</a>
    </td>
   </tr>
   <tr>
