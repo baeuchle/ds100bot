@@ -21,7 +21,7 @@ KOPIE;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das re
 URHBR;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.\nhttps://ds100.frankfurtium.de/copyright.html
 WIESO;Wieso dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.\nhttps://ds100.frankfurtium.de/motivation.html
 WARUM;Warum dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.\nhttps://ds100.frankfurtium.de/motivation.html
-WIE;Dieser Bot ist ein Python-Script, das alle zwei Minuten läuft und nach beantwortbaren Tweets sucht.
+WIE;Dieser Bot ist ein Python-Script, das alle drei Minuten läuft und nach beantwortbaren Tweets sucht.
 KI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
 AI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
 FOLLOW;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
