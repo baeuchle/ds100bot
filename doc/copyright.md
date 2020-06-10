@@ -217,6 +217,7 @@ Folgende Datenquellen werden vom Bot benutzt:
     #_HHE
    </td>
   </tr>
+  <tr>
    <th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
