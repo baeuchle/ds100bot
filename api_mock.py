@@ -15,6 +15,9 @@ class MockApi(TwitterApi):
             self.mock = mocked_source()
         else:
             self.mock = mocked_tweets(verbose)
+            p_id = kwargs.get('parse_one', None)
+            if p_id is not None:
+                self.mock = [self.get_tweet(int(p_id))]
         self.replies = {}
         if self.verbose > 0:
             print('Running from Mock API (faked tweets)')

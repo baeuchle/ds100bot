@@ -308,7 +308,7 @@ def mocked_tweets(verbose):
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet plain tags #FF #_FH #DS:FFU #DS:_FKW #DS:HG_ bot%tl%ab%ns%401',
-        expected_answer='FF: Frankfurt (Main) Hbf\nFH: Hanau Hbf\nFFU: Fulda\nFKW: Kassel-Wilhelmshöhe\nHG: Göttingen',
+        expected_answer='FF: Frankfurt (Main) Hbf\nFFU: Fulda\nHG: Göttingen',
         id=401,
         in_reply_to_user_id=None,
         in_reply_to_status_id=None,
@@ -330,6 +330,140 @@ def mocked_tweets(verbose):
         full_text='This tweet blacklist #DBL #DS:WLAN bot%tl%bl%403',
         expected_answer='WLAN: Langen',
         id=403,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet mixes sources #MS #_FFM #WBC #_NO #OSL #DS:FF #BRG #DS100 #FKW bot%tl%ab%xs%is%mt%me%404',
+        expected_answer='FFM#MS: Festhalle/Messe\nFFM#WBC: Willy-Brandt-Platz (C-Ebene)\nNO#OSL: Oslo S\nFF: Frankfurt (Main) Hbf\nNO#BRG: Bergen\nFKW: Kassel-Wilhelmshöhe',
+        id=404,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [
+            {'text': '_FFM', 'indices': [30,34]},
+            {'text': '_NO', 'indices': [41,37]},
+            {'text': 'DS100', 'indices': [63,68]}
+        ], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet do not find CH = Chur #_CH #BS bot%tl%ab%mt%issue[13]%411',
+        expected_answer='CH#BS: Basel SBB',
+        id=411,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [{'text': '_CH', 'indices': [34,37]}], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet make sure 411 works: #CH:CH bot%tl%xs%issue[13]%412',
+        expected_answer='CH#CH: Chur',
+        id=412,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅰ: #NO:249 #NO:ÅBY bot%tl%xs%unusual%420',
+        expected_answer='NO#249: H-sign 249\nNO#ÅBY: Åneby',
+        id=420,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅱ: $DS:VDE8¹ #CH:600133 #CH:ALT94 bot%tl%xs%unusual%421',
+        expected_answer='VDE8¹: Nürnberg-Erfurt\nCH#600133: UNO Linie 600, km 133.179\nCH#ALT94: Altstätten SG 94',
+        id=421,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅲ: #AT:Aa_G #AT:Aa_Z9 #AT:Z bot%tl%xs%unusual%422',
+        expected_answer='AT#Aa G: Grenze ÖBB-WLB im km 7,610\nAT#Aa Z9: Wr․ Neudorf\nAT#Z: Zell am See',
+        id=422,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅳ: #DS:AA_G #DS:AAG #DS:EM302 bot%tl%xs%unusual%423',
+        expected_answer='AA G: Hamburg-Altona Gbf\nAAG: Ascheberg (Holst)\nEM302: Oberhausen Sbk M302',
+        id=423,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅴ: #BOT:SARS_COV_2 #BOT:REKURSION #BOT:toggle bot%tl%xs%unusual%424',
+        expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).\nREKURSION: Siehe bitte #REKURSION',
+        id=424,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅵ: #HH:HX #LP:K;#LP:KA+#LP:KALD bot%tl%xs%unusual%425',
+        expected_answer='HH#HX: Hauptbahnhof-Nord\nLP#K: Köln Hbf\nLP#KA: Karlsruhe Hbf\nLP#KALD: Kaldenkirchen',
+        id=425,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅶ: #UK:ABE #UK:ABER #NL:Ah;#NL:Ahg/#NL:Apn #NL:APD bot%tl%xs%unusual%426',
+        expected_answer='UK#ABE: Aber\nUK#ABER: Aber\nNL#Ah: Arnhem\nNL#Ahg: Arnhem Goederenstation\nNL#Apn: Alphen aan den Rijn',
+        id=426,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅷ: #FR:A?#FR:AA!#FR:AAA bot%tl%xs%unusual%427',
+        expected_answer='FR#A: Angouleme\nFR#AA: Aire sur l\'Adour\nFR#AAA: Allassac',
+        id=427,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅸ: $3640 #FFM:HB #FFM:_HB #FFM:211 #W:J $FFM:A3 bot%tl%xs%unusual%428',
+        expected_answer='3640: Frankfurt-Höchst - Bad Soden\nFFM#HB: Frankfurt Hauptbahnhof\nFFM#_HB: WA Hauptbahnhof\nFFM#211: Hauptbahnhof\nW#J: Jedlersdorf (in F)\nFFM$A3: Anschlussstrecke A3: Abzweig Nordwest - Oberursel Hohemark',
+        id=428,
+        in_reply_to_user_id=None,
+        in_reply_to_status_id=None,
+        in_reply_to_screen_name=None,
+        entities={'hashtags': [], 'user_mentions': []},
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol Ⅹ: $FFM:A $FFM:Aⅰ $FFM:AⅡ $FFM:AIII bot%tl%xs%unusual%429',
+        expected_answer='FFM$A: A-Strecke: Südbahnhof - Heddernheim - (Ginnheim/Bad Homburg/Oberursel)\nFFM$Aⅰ: A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache\nFFM$AⅡ: A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz\nFFM$AIII: A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein',
+        id=429,
         in_reply_to_user_id=None,
         in_reply_to_status_id=None,
         in_reply_to_screen_name=None,
