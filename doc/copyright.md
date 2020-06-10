@@ -192,6 +192,19 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
   </tr>
   <tr>
+   <th>#CH</th>
+   <td>Schweizer <a href="https://opendata.swiss/de/dataset/haltestellen-des-offentlichen-verkehrs">Haltestellen des öffentlichen Verkehrs</a></td>
+   <td><a href="https://data.sbb.ch/explore/dataset/dienststellen-gemass-opentransportdataswiss/information/">data.sbb.ch</a></td>
+   <td><a href="https://opendata.swiss/de/dataset?q=haltestelle&organization=bundesamt-fur-verkehr-bav&res_rights=NonCommercialAllowed-CommercialAllowed-ReferenceRequired">ähnlich CC-BY</a></td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/ch.html">ch</a>
+   </td>
+   <td>
+    #_CH
+   </td>
+  </tr>
+  <tr>
    <th>#HHE</th>
    <td>Hamburger U-Bahn-Haltestellen</td>
    <td><a href="http://www.hamburger-bahnhoefe.de/">Hamburger-Bahnhöfe.de</a></td>
