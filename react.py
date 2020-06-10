@@ -181,7 +181,7 @@ def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS
         sigil = match[0] if not match[0] == "" else '#'
         source = match[1]
         payload = match[2]
-        payload = payload.replace('_', ' ')
+        payload = payload[0] + payload[1:].replace('_', ' ')
         payload = ' '.join(payload.split())
         parameters = { 'abk': payload,
             'sigil': sigil,
