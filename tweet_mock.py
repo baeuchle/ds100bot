@@ -308,7 +308,7 @@ def mocked_tweets(verbose):
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet plain tags #FF #_FH #DS:FFU #DS:_FKW #DS:HG_ bot%tl%ab%ns%401',
-        expected_answer='FF: Frankfurt (Main) Hbf\nFH: Hanau Hbf\nFFU: Fulda\nFKW: Kassel-Wilhelmshöhe\nHG: Göttingen',
+        expected_answer='FF: Frankfurt (Main) Hbf\nFFU: Fulda\nHG: Göttingen',
         id=401,
         in_reply_to_user_id=None,
         in_reply_to_status_id=None,
