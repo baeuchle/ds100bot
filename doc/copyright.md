@@ -34,8 +34,7 @@ Folgende Datenquellen werden vom Bot benutzt:
   </tr>
  </thead>
  <tbody>
-  <tr>
-   <th>#DS</th>
+  <tr><th>#DS</th>
    <td>DS100 der Deutschen Bahn</td>
    <td><a href="https://data.deutschebahn.com/dataset/data-betriebsstellen">Betriebsstellenverzeichnis der Deutschen Bahn AG</a></td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
@@ -49,12 +48,11 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/ds100.html">ds100</a>
    </td>
-   <td>
-    #DS100
+   <td rowspan="2">
+    #DS100, #_DE
    </td>
   </tr>
-  <tr>
-   <th>$DS</th>
+  <tr><th>$DS</th>
    <td>Streckennummern der Deutschen Bahn</td>
    <td><a href="https://data.deutschebahn.com/dataset/geo-strecke">Geo-Streckennetz</a></td>
    <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
@@ -70,12 +68,93 @@ Folgende Datenquellen werden vom Bot benutzt:
     <a href="https://ds100.frankfurtium.de/dumps/benannte_strecken.html">benannte_strecken</a>
     <a href="https://ds100.frankfurtium.de/dumps/strecken.html">strecken</a>
    </td>
+  </tr>
+  <tr><th>#AT</th>
+   <td>DB 640 der ÖBB</td>
+   <td>Zusammenstellung von <a href="https://bahn.hauptsignal.at/">Christoph Schönweiler</a> (Stand 2020)</td>
+   <td>© ÖBB-Infrastruktur Betrieb AG</td>
+   <td>Quelle ist nicht offiziell. Groß-/Kleinschreibung muss beachtet werden, es sind auch Kleinbuchstaben erlaubt!</td>
    <td>
-    #DS100
+    <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
+   </td>
+   <td>
+    #DB640, #_AT
    </td>
   </tr>
-  <tr>
-   <th>#VGF</th>
+  <tr><th>#CH</th>
+   <td>Schweizer Bahnhöfe</td>
+   <td><a href="https://opendata.swiss/de/dataset/haltestellen-des-offentlichen-verkehrs">Haltestellen des öffentlichen Verkehrs</a> via <a href="https://data.sbb.ch/explore/dataset/dienststellen-gemass-opentransportdataswiss/information/">data.sbb.ch</a></td>
+   <td><a href="https://opendata.swiss/de/dataset?q=haltestelle&organization=bundesamt-fur-verkehr-bav&res_rights=NonCommercialAllowed-CommercialAllowed-ReferenceRequired">ähnlich CC-BY</a></td>
+   <td>Aus der Orignalquelle sind nur diejenigen Einträge übernommen, die wirklich eine Abkürzung haben.</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/ch.html">ch</a>
+   </td>
+   <td>
+    #_CH
+   </td>
+  </tr>
+  <tr><th>#FR</th>
+   <td>Französische Bahnhöfe</a></td>
+   <td><a href="https://ressources.data.sncf.com/explore/dataset/lexique-des-acronymes-sncf/">Lexique des abréviations SNCF</a></td>
+   <td><a href="https://opendatacommons.org/licenses/odbl/">ODbL</a></td>
+   <td>
+    Scheinbar war die Originalquelle früher all-caps und wird langsam
+    umgestellt. Das ist aber nur bis C oder D gekommen, danach wird's etwas
+    uneinheitlich.
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/sncf.html">sncf</a>
+   </td>
+   <td>
+    #_FR
+   </td>
+  </tr>
+  <tr><th>#NL</th>
+   <td>Betriebsstellen in den Niederlanden</td>
+   <td><a href="https://wetten.overheid.nl/BWBR0017707/2020-04-01/#Bijlage6">Anhang 6 zu Regeling spoorverkeer</a> (Stand 2020)</td>
+   <td>Gemeinfrei, da Gesetz</td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/nederlands.html">nederlands</a>
+   </td>
+   <td>
+    #_NL
+   </td>
+  </tr>
+  <tr><th>#NO</th>
+   <td>Betriebsstellen des norwegischen Eisenbahnnetzes</td>
+   <td><a href="https://www.banenor.no/kundeportal/ruter-og-sportilgang/grafiske-togruter1/">Grafische Fahrpläne</a> (Stand 2020)</td>
+   <td>Gemeinfrei</td>
+   <td>Selbst abgetippt</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/banenor.html">banenor</a>
+   </td>
+   <td>
+    #_NO
+   </td>
+  </tr>
+  <tr><th rowspan="2">#UK</th>
+   <td rowspan="2">Haltestellen und Bahnhöfe in England/Vereinigtes Königreich</td>
+   <td><a href="http://data.atoc.org/how-to">Rail Delivery Group</a> (Stand 2020)</td>
+   <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
+   <td>Aus Fixed-width-Text extrahiert und Namen mit Kleinbuchstaben
+   versehen<br/>
+   4- bis 7-stellige Kürzel</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/raildeliverygroup.html">raildeliverygroup</a>
+   </td>
+   <td rowspan="2">
+    #_UK
+   </td>
+  </tr>
+  <tr><td><a href="https://www.nationalrail.co.uk/stations_destinations/48541.aspx">National Rail Enquiries</a> (Stand 2018)</td>
+   <td><em>unbekannt</em></td>
+   <td>Dreistellige Kürzel</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/nationalrail.html">nationalrail</a>
+   </td>
+  </tr>
+  <tr><th>#FFM</th>
    <td>Haltestellen der <a href="https://vgf-ffm.de">VGF</a></td>
    <td>Eigene Zusammenstellung, Hilfe aus privaten Nachrichten und dem
    <a
@@ -93,12 +172,11 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfhst.html">vgfhst</a>
    </td>
-   <td>
+   <td rowspan="2">
     #_FFM
    </td>
   </tr>
-  <tr>
-   <th>$VGF</th>
+  <tr><th>$FFM</th>
    <td>Stadtbahnstrecken der <a href="https://vgf-ffm.de">VGF</a></td>
    <td>Eigene Zusammenstellung aus <a
    href="https://de.wikipedia.org/wiki/Vorlage:Krakies/Nagel">Krakies /
@@ -107,43 +185,25 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     Alle Bauabschnitte der Stadtbahnstrecken können mit großen
     lateinischen Buchstaben oder den Unicode-Zeichen für römische Zahlen
-    geschrieben werden: ‚$VGF:DIV‘ = ‚$VGF:DⅣ‘ = ‚$VGF:Dⅳ‘.
+    geschrieben werden: ‚$FFM:DIV‘ = ‚$FFM:DⅣ‘ = ‚$FFM:Dⅳ‘.
    </td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfstrecken.html">vgfhst</a>
    </td>
+  </tr>
+  <tr><th>#HH</th>
+   <td>Hamburger U-Bahn-Haltestellen</td>
+   <td><a href="http://www.hamburger-bahnhoefe.de/">Hamburger-Bahnhöfe.de</a></td>
+   <td><em>unbekannt</em></td>
+   <td>Privat zusammengestellte Liste</td>
    <td>
-    #_FFM
+    <a href="https://ds100.frankfurtium.de/dumps/hhe.html">hhe</a>
+   </td>
+   <td>
+    #_HH
    </td>
   </tr>
-  <tr>
-   <th>#ÖBB</th>
-   <td>DB 640 der ÖBB</td>
-   <td>Zusammenstellung von <a href="https://bahn.hauptsignal.at/">Christoph Schönweiler</a> (Stand 2020)</td>
-   <td>© ÖBB-Infrastruktur Betrieb AG</td>
-   <td>Quelle ist nicht offiziell. Groß-/Kleinschreibung muss beachtet werden, es sind auch Kleinbuchstaben erlaubt!</td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/db640.html">db640</a>
-   </td>
-   <td>
-    #DB640
-   </td>
-  </tr>
-  <tr>
-   <th>#NOR</th>
-   <td>Betriebsstellen des norwegischen Eisenbahnnetzes</td>
-   <td><a href="https://www.banenor.no/kundeportal/ruter-og-sportilgang/grafiske-togruter1/">Grafische Fahrpläne</a> (Stand 2020)</td>
-   <td>Gemeinfrei</td>
-   <td>Selbst abgetippt</td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/banenor.html">banenor</a>
-   </td>
-   <td>
-    #_NSB
-   </td>
-  </tr>
-  <tr>
-   <th>#VOR</th>
+  <tr><th>#W</th>
    <td>Betriebsstellen der Wiener Linien</td>
    <td><a href="https://bahn.hauptsignal.at/">Christoph Schönweilers hauptsignal.at</a> (Stand 2020)</td>
    <td></td>
@@ -152,90 +212,10 @@ Folgende Datenquellen werden vom Bot benutzt:
     <a href="https://ds100.frankfurtium.de/dumps/wien_vor.html">wien_vor</a>
    </td>
    <td>
-    #_VOR
+    #_W
    </td>
   </tr>
-  <tr>
-   <th>#NL</th>
-   <td>Betriebsstellen in den Niederlanden</td>
-   <td><a href="https://wetten.overheid.nl/BWBR0017707/2020-04-01/#Bijlage6">Anhang 6 zu Regeling spoorverkeer</a> (Stand 2020)</td>
-   <td>Gemeinfrei, da Gesetz</td>
-   <td></td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/nederlands.html">nederlands</a>
-   </td>
-   <td>
-    #_NL
-   </td>
-  </tr>
-  <tr>
-   <th rowspan="2">#UK</th>
-   <td rowspan="2">Haltestellen und Bahnhöfe in England/Vereinigtes Königreich</td>
-   <td><a href="http://data.atoc.org/how-to">Rail Delivery Group</a> (Stand 2020)</td>
-   <td><a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></td>
-   <td>Aus Fixed-width-Text extrahiert und Namen mit Kleinbuchstaben
-   versehen<br/>
-   4- bis 7-stellige Kürzel</td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/raildeliverygroup.html">raildeliverygroup</a>
-   </td>
-   <td rowspan="2">
-    #_UK
-   </td>
-  </tr>
-  <tr>
-   <td><a href="https://www.nationalrail.co.uk/stations_destinations/48541.aspx">National Rail Enquiries</a> (Stand 2018)</td>
-   <td><em>unbekannt</em></td>
-   <td>Dreistellige Kürzel</td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/nationalrail.html">nationalrail</a>
-   </td>
-  </tr>
-  <tr>
-   <th>#FR</th>
-   <td>Französische Bahnhöfe</a></td>
-   <td><a href="https://ressources.data.sncf.com/explore/dataset/lexique-des-acronymes-sncf/">Lexique des abréviations SNCF</a></td>
-   <td><a href="https://opendatacommons.org/licenses/odbl/">ODbL</a></td>
-   <td>
-    Scheinbar war die Originalquelle früher all-caps und wird langsam
-    umgestellt. Das ist aber nur bis C oder D gekommen, danach wird's etwas
-    uneinheitlich.
-   </td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/sncf.html">sncf</a>
-   </td>
-   <td>
-    #_FR
-   </td>
-  </tr>
-  <tr>
-   <th>#CH</th>
-   <td>Schweizer <a href="https://opendata.swiss/de/dataset/haltestellen-des-offentlichen-verkehrs">Haltestellen des öffentlichen Verkehrs</a></td>
-   <td><a href="https://data.sbb.ch/explore/dataset/dienststellen-gemass-opentransportdataswiss/information/">data.sbb.ch</a></td>
-   <td><a href="https://opendata.swiss/de/dataset?q=haltestelle&organization=bundesamt-fur-verkehr-bav&res_rights=NonCommercialAllowed-CommercialAllowed-ReferenceRequired">ähnlich CC-BY</a></td>
-   <td></td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/ch.html">ch</a>
-   </td>
-   <td>
-    #_CH
-   </td>
-  </tr>
-  <tr>
-   <th>#HHE</th>
-   <td>Hamburger U-Bahn-Haltestellen</td>
-   <td><a href="http://www.hamburger-bahnhoefe.de/">Hamburger-Bahnhöfe.de</a></td>
-   <td></td>
-   <td></td>
-   <td>
-    <a href="https://ds100.frankfurtium.de/dumps/hhe.html">hhe</a>
-   </td>
-   <td>
-    #_HHE
-   </td>
-  </tr>
-  <tr>
-   <th>#BOT</th>
+  <tr><th>#BOT</th>
    <td>Informationen über den Bot</td>
    <td>Eigene Zusammenstellung</td>
    <td>Gemeinfrei</td>
