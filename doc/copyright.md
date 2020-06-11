@@ -69,6 +69,18 @@ Folgende Datenquellen werden vom Bot benutzt:
     <a href="https://ds100.frankfurtium.de/dumps/strecken.html">strecken</a>
    </td>
   </tr>
+  <tr><th>#LP</th>
+   <td>Leitpunkte (Fahrkartencodes)</td>
+   <td><a href="https://www.bahn.de/p/view/mdb/bahnintern/agb/entfernungswerk/mdb_305971_teil_2-3_tarifpunkte_anstobahnhfe_regionen.pdf">Tarifpunkte</a> via <a href="https://www.bahn.de/p/view/home/agb/agb.shtml">Beförderungsbedingungen der DB</a></td>
+   <td>© DB</td>
+   <td>Aus der Liste extrahiert</td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/leitpunkte.html">leitpunkte</a>
+   </td>
+   <td>
+    #_LP
+   </td>
+  </tr>
   <tr><th>#AT</th>
    <td>DB 640 der ÖBB</td>
    <td>Zusammenstellung von <a href="https://bahn.hauptsignal.at/">Christoph Schönweiler</a> (Stand 2020)</td>

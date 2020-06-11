@@ -28,3 +28,47 @@ steht bei der [Übersicht der Daten](copyright.html).
 
 __Sind mehrere Magic Hashtags vorhanden__, so gilt jeder davon bis zum
 nächsten; der erste gilt schon ab Anfang.
+
+Namensgebung der Magic Hashtags
+===============================
+
+Magic Hashtags beginnen mit einem Unterstrich \_, um von anderen Tags
+unterschieden werden zu können.
+
+Ausnahmen dafür sind \#DS100 und \#DB640, die eindeutig genug die
+jeweiligen Dokumente bezeichnen, aus denen die (Haupt-)Listen hinter
+diesen Quellen stammen.
+
+Bei nationalen Listen besteht der Magic Hashtag dann aus dem Unterstrich
+und dem 2-Buchstaben-Code für das Land (vgl. Internet-Domains), also
+\_DE, \_AT, \_FR, \_UK etc.
+
+Bei lokalen Listen (gegenwärtig Frankfurt, Hamburg, Wien) wird ein
+möglichst sinnvolles Kürzel für die Stadt gewählt: \_FFM, \_HH, \_W.
+
+Beispiel für die Benutzung von Magic Hashtags
+=============================================
+
+> ### Tweet 1
+> Variante 1: Quelle direkt im Suchbegriff: \#FFM:HWC<br/>
+> Variante 2: Magic Hashtag benutzen, dann gilt die dazugehörige
+> Quelle für alle Suchbegriffe ohne explizite Quelle nach Variante 1:
+> \#OSL \#\_NO \#BRG<br/>
+> Variante 2b: Der Magic Hashtag aus 2 gilt bis zum nächsten: \#TND
+> \#\_AT \#Lz
+>
+>> #### Antwort
+>> FFM#HWC: Hauptwache (C-Ebene)<br/>
+>> NO#OSL: Oslo S<br/>
+>> NO#BRG: Bergen<br/>
+>> NO#TND: Trondheim S<br/>
+>> AT#Lz: Linz Hbf (in Lz)<br/>
+
+und
+> ### Tweet 2
+> Lemma: Ohne Magic Hashtag ist so, als wäre DS100 der MHT; der erste
+> MHT gilt vom Tweetbeginn an (siehe \#OSL \#\_NO im Beispiel-Tweet 1
+> und hier).
+>
+>> #### Antwort
+>> NO#OSL: Oslo S

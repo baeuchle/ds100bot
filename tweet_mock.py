@@ -1,5 +1,6 @@
 import datetime
 import copy
+import re
 from tweet import Tweet
 
 class User:
@@ -92,7 +93,7 @@ class TweepyMock:
         self.add_to_raw('in_reply_to_screen_name', None)
         self.id = self.raw['id']
         self.full_text = self.raw['full_text']
-        self.entities = self.raw['entities']
+        self.create_entities()
         self.author = self.raw['user']
         self.display_text_range = self.raw['display_text_range']
         if 'quoted_status_id' in self.raw:
@@ -106,6 +107,20 @@ class TweepyMock:
         if key not in self.raw:
             self.raw[key] = val
 
+    def create_entities(self):
+        self.add_to_raw('entities', {})
+        if 'hashtags' not in self.raw['entities']:
+            # create your own hashtag list
+            ht = re.compile(r"""\#(\w+)""")
+            self.raw['entities']['hashtags'] = []
+            for t in ht.finditer(self.full_text):
+                self.raw['entities']['hashtags'].append({
+                    'text': t.group(1),
+                    'indices': [t.start(1), t.end(1)]
+                })
+        if 'user_mentions' not in self.raw['entities']:
+            self.raw['entities']['user_mentions'] = []
+        self.entities = self.raw['entities']
 
     def __str__(self):
         lines = self.full_text.splitlines()
@@ -131,61 +146,54 @@ def mocked_tweets(verbose):
         full_text='This tweet should never been seen nor processed by the Bot. bot%nl%na%101',
         expected_answer=None,
         id=101,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet should appear in the Bot’s timeline, but should be ignored. bot%tl%na%102',
         id=102,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet explicitly mentions @_ds_100, but no other tweet. bot%tl%xm%na%103',
         id=103,
-        entities={'hashtags': [], 'user_mentions': [User.theBot.mention(31)]},
+        entities={'user_mentions': [User.theBot.mention(31)]},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet explicitly mentions @_ds_100, but no other tweet. bot%nl%xm%na%104',
         id=104,
-        entities={'hashtags': [], 'user_mentions': [User.theBot.mention(31)]},
+        entities={'user_mentions': [User.theBot.mention(31)]},
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet includes magic hashtag #DS100, but no other tweet. bot%tl%md%na%105',
         id=105,
-        entities={'hashtags': [{'text': 'DS100', 'indices': [35, 40]}], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet includes magic hashtag #DB640, but no other tweet. bot%nl%mt%na%106',
         id=106,
-        entities={'hashtags': [{'text': 'DB640', 'indices': [35, 40]}], 'user_mentions': []},
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet is ignored because of #NOBOT #FF bot%tl%me%301',
         id=107,
-        entities={'hashtags': [{'text': 'NOBOT', 'indices':[34,39]}, {'text': 'FF', 'indices': [41,43]}], 'user_mentions': []},
         user=User.followed,
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#entfolgen bot%tl%fe%151',
         id=151,
-        entities={'hashtags': [{'text': 'entfolgen', 'indices': [1, 10]}], 'user_mentions': []},
         user=User.followers[0]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#entfolgen bot%nl%fe%152',
         id=152,
-        entities={'hashtags': [{'text': 'entfolgen', 'indices': [1, 10]}], 'user_mentions': []},
         user=User.followers[1]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#entfolgen @_ds_100 bot%xm%fe%153',
         id=153,
-        entities={'hashtags': [{'text': 'entfolgen', 'indices': [1, 10]}], 'user_mentions': [User.theBot.mention(12)]},
+        entities={'user_mentions': [User.theBot.mention(12)]},
         user=User.followers[2]
         ), verbose))
     User.followers[2].follow_after = False
@@ -193,31 +201,28 @@ def mocked_tweets(verbose):
         full_text='@_ds_100 #entfolgen bot%im%fe%154',
         id=154,
         display_text_range=[10,52],
-        entities={'hashtags': [{'text': 'entfolgen', 'indices': [11, 20]}], 'user_mentions': [User.theBot.mention(0)]},
+        entities={'user_mentions': [User.theBot.mention(0)]},
         user=User.followers[3]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#DS100 #entfolgen bot%mt%fe%155',
         id=155,
-        entities={'hashtags': [{'text': 'DS100', 'indices': [1,8] }, {'text': 'entfolgen', 'indices': [11, 20]}], 'user_mentions': []},
         user=User.followers[4]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#folgenbitte bot%tl%fs%161',
         id=161,
-        entities={'hashtags': [{'text': 'folgenbitte', 'indices': [1, 12]}], 'user_mentions': []},
         user=User.nonfollowers[0]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#folgenbitte bot%nl%fs%162',
         id=162,
-        entities={'hashtags': [{'text': 'folgenbitte', 'indices': [1, 12]}], 'user_mentions': []},
         user=User.nonfollowers[1]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#folgenbitte @_ds_100 bot%xm%fs%163',
         id=163,
-        entities={'hashtags': [{'text': 'folgenbitte', 'indices': [1, 12]}], 'user_mentions': [User.theBot.mention(12)]},
+        entities={'user_mentions': [User.theBot.mention(12)]},
         user=User.nonfollowers[2]
         ), verbose))
     User.nonfollowers[2].follow_after = True
@@ -225,22 +230,20 @@ def mocked_tweets(verbose):
         full_text='@_ds_100 #folgenbitte bot%im%fs%164',
         id=164,
         display_text_range=[10,62],
-        entities={'hashtags': [{'text': 'folgenbitte', 'indices': [11, 22]}], 'user_mentions': [User.theBot.mention(0)]},
+        entities={'user_mentions': [User.theBot.mention(0)]},
         user=User.nonfollowers[3]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='#DS100 #folgenbitte bot%mt%fs%165',
         id=165,
-        entities={'hashtags': [{'text': 'DS100', 'indices': [1,8] }, {'text': 'folgenbitte', 'indices': [11, 22]}], 'user_mentions': []},
+        entities={'user_mentions': []},
         user=User.nonfollowers[4]
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='@_ds_100 This tweet xm @_ds_100 in a reply #folgenbitte bot%nl%xm%im%fs%issue[9]%204',
         display_text_range=[9,75],
         id=166,
-        entities={'hashtags': [
-            {'text': 'folgenbitte', 'indices': [43,55]}
-        ], 'user_mentions': [
+        entities={'user_mentions': [
             User.theBot.mention(0),
             User.theBot.mention(23)
         ]},
@@ -251,16 +254,13 @@ def mocked_tweets(verbose):
         full_text='This tweet is quoted with explicit mention. bot%ns%nl%201 FF FK FM FW',
         expected_answer='FF: Frankfurt (Main) Hbf\nFK: Kassel Hbf\nFW: Wiesbaden Hbf',
         id=201,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet explicitly mentions @_ds_100 and quotes tweet bot%xm%rt[201]%221: https://t.co/f4k3url_12',
         expected_answer=None,
         id=221,
-        entities={'hashtags': [],
-                  'user_mentions': [User.theBot.mention(31)]
-                  },
+        entities={ 'user_mentions': [User.theBot.mention(31)] },
         user=User.notfollowed,
         quoted_status_id=201
         ), verbose))
@@ -268,13 +268,12 @@ def mocked_tweets(verbose):
         full_text='This tweet is replied-to with explicit mention. bot%nl%ns%202 FF FK FM FW',
         expected_answer='FF: Frankfurt (Main) Hbf\nFK: Kassel Hbf\nFW: Wiesbaden Hbf',
         id=202,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='@followee @_ds_100 This tweet: bot%xm%re[202]%222',
         id=222,
-        entities={'hashtags': [], 'user_mentions': [User.notfollowed.mention(0), User.theBot.mention(11)]},
+        entities={'user_mentions': [User.notfollowed.mention(0), User.theBot.mention(11)]},
         in_reply_to_status_id=202,
         in_reply_to_user_id=User.notfollowed.id,
         in_reply_to_screen_name=User.notfollowed.screen_name,
@@ -284,13 +283,11 @@ def mocked_tweets(verbose):
         full_text='This tweet is replied to with magic hashtag _FFM. bot%nl%ns%203 #FW',
         expected_answer='FFM#FW: Friedhof Westhausen',
         id=203,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.notfollowed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet replies with magic hashtag #_FFM. bot%nl%me%re[203]%223',
         id=223,
-        entities={'hashtags': [{'text': '_FFM', 'indices':[39,43]}], 'user_mentions': []},
         user=User.notfollowed,
         in_reply_to_status_id=203,
         in_reply_to_user_id=User.notfollowed.id,
@@ -300,418 +297,166 @@ def mocked_tweets(verbose):
         full_text='Hallo @_ds_100, do you know $1733? bot%tl%xm%ab[1,$]%issue[8]%301',
         expected_answer='1733: Hannover --Kassel-- - Würzburg',
         id=301,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': [ User.theBot.mention(6) ]},
+        entities={'user_mentions': [ User.theBot.mention(6) ]},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet plain tags #FF #_FH #DS:FFU #DS:_FKW #DS:HG_ bot%tl%ab%ns%401',
         expected_answer='FF: Frankfurt (Main) Hbf\nFFU: Fulda\nHG: Göttingen',
         id=401,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet different cases #DS:FF #DS:Fkw #ÖBB:Aa #ÖBB:AB bot%tl%xs%402',
         expected_answer='FF: Frankfurt (Main) Hbf\nÖBB#Aa: W․Mat․-Altmannsdorf (in Wbf)',
         id=402,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet blacklist #DBL #DS:WLAN bot%tl%bl%403',
         expected_answer='WLAN: Langen',
         id=403,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet mixes sources #MS #_FFM #WBC #_NO #OSL #DS:FF #BRG #DS100 #FKW bot%tl%ab%xs%is%mt%me%404',
         expected_answer='FFM#MS: Festhalle/Messe\nFFM#WBC: Willy-Brandt-Platz (C-Ebene)\nNO#OSL: Oslo S\nFF: Frankfurt (Main) Hbf\nNO#BRG: Bergen\nFKW: Kassel-Wilhelmshöhe',
         id=404,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [
-            {'text': '_FFM', 'indices': [30,34]},
-            {'text': '_NO', 'indices': [41,37]},
-            {'text': 'DS100', 'indices': [63,68]}
-        ], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet do not find CH = Chur #_CH #BS bot%tl%ab%mt%issue[13]%411',
         expected_answer='CH#BS: Basel SBB',
         id=411,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [{'text': '_CH', 'indices': [34,37]}], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet make sure 411 works: #CH:CH bot%tl%xs%issue[13]%412',
         expected_answer='CH#CH: Chur',
         id=412,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅰ: #NO:249 #NO:ÅBY bot%tl%xs%unusual%420',
         expected_answer='NO#249: H-sign 249\nNO#ÅBY: Åneby',
         id=420,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅱ: $DS:VDE8¹ #CH:600133 #CH:ALT94 bot%tl%xs%unusual%421',
         expected_answer='VDE8¹: Nürnberg-Erfurt\nCH#600133: UNO Linie 600, km 133.179\nCH#ALT94: Altstätten SG 94',
         id=421,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅲ: #AT:Aa_G #AT:Aa_Z9 #AT:Z bot%tl%xs%unusual%422',
         expected_answer='AT#Aa G: Grenze ÖBB-WLB im km 7,610\nAT#Aa Z9: Wr․ Neudorf\nAT#Z: Zell am See',
         id=422,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅳ: #DS:AA_G #DS:AAG #DS:EM302 bot%tl%xs%unusual%423',
         expected_answer='AA G: Hamburg-Altona Gbf\nAAG: Ascheberg (Holst)\nEM302: Oberhausen Sbk M302',
         id=423,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅴ: #BOT:SARS_COV_2 #BOT:REKURSION #BOT:toggle bot%tl%xs%unusual%424',
         expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).\nREKURSION: Siehe bitte #REKURSION',
         id=424,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅵ: #HH:HX #LP:K;#LP:KA+#LP:KALD bot%tl%xs%unusual%425',
         expected_answer='HH#HX: Hauptbahnhof-Nord\nLP#K: Köln Hbf\nLP#KA: Karlsruhe Hbf\nLP#KALD: Kaldenkirchen',
         id=425,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅶ: #UK:ABE #UK:ABER #NL:Ah;#NL:Ahg/#NL:Apn #NL:APD bot%tl%xs%unusual%426',
         expected_answer='UK#ABE: Aber\nUK#ABER: Aber\nNL#Ah: Arnhem\nNL#Ahg: Arnhem Goederenstation\nNL#Apn: Alphen aan den Rijn',
         id=426,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅷ: #FR:A?#FR:AA!#FR:AAA bot%tl%xs%unusual%427',
         expected_answer='FR#A: Angouleme\nFR#AA: Aire sur l\'Adour\nFR#AAA: Allassac',
         id=427,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅸ: $3640 #FFM:HB #FFM:_HB #FFM:211 #W:J $FFM:A3 bot%tl%xs%unusual%428',
         expected_answer='3640: Frankfurt-Höchst - Bad Soden\nFFM#HB: Frankfurt Hauptbahnhof\nFFM#_HB: WA Hauptbahnhof\nFFM#211: Hauptbahnhof\nW#J: Jedlersdorf (in F)\nFFM$A3: Anschlussstrecke A3: Abzweig Nordwest - Oberursel Hohemark',
         id=428,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅹ: $FFM:A $FFM:Aⅰ $FFM:AⅡ $FFM:AIII bot%tl%xs%unusual%429',
         expected_answer='FFM$A: A-Strecke: Südbahnhof - Heddernheim - (Ginnheim/Bad Homburg/Oberursel)\nFFM$Aⅰ: A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache\nFFM$AⅡ: A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz\nFFM$AIII: A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein',
         id=429,
-        in_reply_to_user_id=None,
-        in_reply_to_status_id=None,
-        in_reply_to_screen_name=None,
-        entities={'hashtags': [], 'user_mentions': []},
         user=User.followed
         ), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1146760076478308352,
-#         full_text='@followee FF: Frankfurt (Main) Hbf',
-#         display_text_range=[10, 34],
-#         entities={'hashtags': [], 'user_mentions': [User.followed.mention(0,0)]},
-#         in_reply_to_status_id=1146759555579355141,
-#         in_reply_to_user_id=11,
-#         in_reply_to_screen_name='followee',
-#         author=User.theBot,
-#         user=User.theBot,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=1,
-#         favorited=False,
-#         retweeted=False,
-#         lang='de'), verbose))
-#     # list_of_tweets.append(Tweet(TweepyMock(
-#     #     id=1146759675398041601,
-#     #     full_text='Beispielretweet an @_ds_100 https://t.co/f4k3url_12',
-#     #     display_text_range=[0, 27],
-#     #     entities={'hashtags': [], 'user_mentions': [User.theBot.mention(0,0)]},
-#     #     in_reply_to_status_id=None,
-#     #     in_reply_to_user_id=None,
-#     #     in_reply_to_screen_name=None,
-#     #     author=User.followed,
-#     #     user=User.followed,
-#     #     geo=None,
-#     #     coordinates=None,
-#     #     place=None,
-#     #     contributors=None,
-#     #     quoted_status_id=1146759555579355141,
-#     #     quoted_status_permalink={'url': 'https://t.co/f4k3url_12', 'expanded': 'https://twitter.com/followee/status/1146759555579355141', 'display': 'twitter.com/followee/statu…'},
-#     #     quoted_status={'created_at': 'Thu Jul 04 12:35:58 +0000 2019', 'id': 1146759555579355141, 'id_str': '1146759555579355141', 'full_text': 'Beispieltweet zum einfacher Programmieren. FF', ''display_text_range': [0, 45], 'entities': {'hashtags': [], 'user_mentions': []}, 'in_reply_to_status_id': None, 'in_reply_to_status_id_str': None, 'in_reply_to_user_id': None, 'in_reply_to_user_id_str': None, 'in_reply_to_screen_name': None, 'user': {'id': 11, 'id_str': '11', 'name': 'Bjørn Bäuchle', 'screen_name': 'followee', 'location': '', 'description': 'Programmieren, Grün, Bahn, Norwegen, Physik, Gitarre. Kassel, Frankfurt, Göttingen. Linksgrünversifft, er/he/han.\nErsteller von @_ds_100.', 'url': 'https://t.co/f4k3url_12', 'entities': {'url': {}, 'description': {'urls': []}}, 'protected': False, 'followers_count': 211, 'friends_count': 276, 'listed_count': 11, 'created_at': 'Tue Jan 18 21:27:31 +0000 2011', 'favourites_count': 2, 'utc_offset': None, 'time_zone': None, 'geo_enabled': False, 'verified': False, 'statuses_count': 6729, 'lang': None, 'contributors_enabled': False, 'is_translator': False, 'is_translation_enabled': True, 'profile_background_color': '1BB00E', 'profile_background_image_url': 'http://abs.twimg.com/images/themes/theme1/bg.png', 'profile_background_image_url_https': 'https://abs.twimg.com/images/themes/theme1/bg.png', 'profile_background_tile': False, 'profile_image_url': 'http://pbs.twimg.com/profile_images/758220660825026560/hXxMnmts_normal.jpg', 'profile_image_url_https': 'https://pbs.twimg.com/profile_images/758220660825026560/hXxMnmts_normal.jpg', 'profile_link_color': '1FA12D', 'profile_sidebar_border_color': '14751A', 'profile_sidebar_fill_color': '68ED71', 'profile_text_color': '8C9926', 'profile_use_background_image': False, 'has_extended_profile': False, 'default_profile': False, 'default_profile_image': False, 'following': True, 'follow_request_sent': False, 'notifications': False, 'translator_type': 'none'}, 'geo': None, 'coordinates': None, 'place': None, 'contributors': None, 'is_quote_status': False, 'retweet_count': 0, 'favorite_count': 1, 'favorited': False, 'retweeted': False, 'lang': 'de'},
-#     #     retweet_count=0,
-#     #     favorite_count=0,
-#     #     favorited=False,
-#     #     retweeted=False,
-#     #     possibly_sensitive=False,
-#     #     lang='en'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1146759555579355141,
-#         full_text='Beispieltweet zum einfacher Programmieren. #FW',
-#         display_text_range=[0, 45],
-#         entities={'hashtags': [], 'user_mentions': []},
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.followed,
-#         user=User.followed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=1,
-#         favorited=False,
-#         retweeted=False,
-#         lang='de'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1146759312066392064,
-#         full_text='@_ds_100 Und darauf noch eine Beispielantwort. #FFBS',
-#         display_text_range=[9, 52],
-#         entities={'hashtags': [{'text': 'FFBS', 'indices': [47, 52]}], 'user_mentions': [User.theBot.mention(0,0)]},
-#         in_reply_to_status_id=1146759071560847360,
-#         in_reply_to_user_id=1065715403622617089,
-#         in_reply_to_screen_name='_ds_100',
-#         author=User.followed,
-#         user=User.followed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='de'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1146759071560847360,
-#         full_text='@followee FF: Frankfurt (Main) Hbf',
-#         display_text_range=[10, 34],
-#         entities={'hashtags': [], 'user_mentions': [User.followed.mention(0,0)]},
-#         in_reply_to_status_id=1146758717154746370,
-#         in_reply_to_user_id=11,
-#         in_reply_to_screen_name='followee',
-#         author=User.theBot,
-#         user=User.theBot,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='de'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1146758834448490496,
-#         full_text='Beispieltweet zum einfacher Programmieren. #FF @_ds_100',
-#         display_text_range=[0, 55],
-#         entities={
-#                 'hashtags': [{
-#                         'text': 'FF',
-#                         'indices': [43, 46]
-#                         }],
-#                 'user_mentions': [User.theBot.mention(0,0)],
-#         },
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.followed,
-#         user=User.followed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='de'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         full_text='Dieser Tweet wird zitiert mit #_FFM https://t.co/f4k3url_12',
-#         id=1146759891937300483,
-#         display_text_range=[0, 24],
-#         entities={'hashtags': [{'text': '_FFM', 'indices': [18, 24]}], 'user_mentions': []},
-#         metadata={'iso_language_code': 'de', 'result_type': 'recent'},
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.followed,
-#         user=User.followed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         quoted_status_id=1146759555579355141,
-#         quoted_status={'created_at': 'Thu Jul 04 12:35:58 +0000 2019', 'id': 1146759555579355141, 'id_str': '1146759555579355141', 'full_text': 'Beispieltweet zum einfacher Programmieren. FF', 'display_text_range': [0, 45], 'entities': {'hashtags': [], 'user_mentions': []}, 'metadata': {'iso_language_code': 'de', 'result_type': 'recent'}, 'in_reply_to_status_id': None, 'in_reply_to_status_id_str': None, 'in_reply_to_user_id': None, 'in_reply_to_user_id_str': None, 'in_reply_to_screen_name': None, 'user': {'id': 11, 'id_str': '11', 'name': 'Bjørn Bäuchle', 'screen_name': 'followee', 'location': '', 'description': 'Programmieren, Grün, Bahn, Norwegen, Physik, Gitarre. Kassel, Frankfurt, Göttingen. Linksgrünversifft, er/he/han.\nErsteller von @_ds_100.', 'url': 'https://t.co/f4k3url_12', 'entities': {'url': {}, 'description': {'urls': []}}, 'protected': False, 'followers_count': 211, 'friends_count': 276, 'listed_count': 11, 'created_at': 'Tue Jan 18 21:27:31 +0000 2011', 'favourites_count': 2, 'utc_offset': None, 'time_zone': None, 'geo_enabled': False, 'verified': False, 'statuses_count': 6729, 'lang': None, 'contributors_enabled': False, 'is_translator': False, 'is_translation_enabled': True, 'profile_background_color': '1BB00E', 'profile_background_image_url': 'http://abs.twimg.com/images/themes/theme1/bg.png', 'profile_background_image_url_https': 'https://abs.twimg.com/images/themes/theme1/bg.png', 'profile_background_tile': False, 'profile_image_url': 'http://pbs.twimg.com/profile_images/758220660825026560/hXxMnmts_normal.jpg', 'profile_image_url_https': 'https://pbs.twimg.com/profile_images/758220660825026560/hXxMnmts_normal.jpg', 'profile_link_color': '1FA12D', 'profile_sidebar_border_color': '14751A', 'profile_sidebar_fill_color': '68ED71', 'profile_text_color': '8C9926', 'profile_use_background_image': False, 'has_extended_profile': False, 'default_profile': False, 'default_profile_image': False, 'following': True, 'follow_request_sent': False, 'notifications': False, 'translator_type': 'none'}, 'geo': None, 'coordinates': None, 'place': None, 'contributors': None, 'is_quote_status': False, 'retweet_count': 0, 'favorite_count': 1, 'favorited': False, 'retweeted': False, 'lang': 'de'},
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         possibly_sensitive=False,
-#         lang='de'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1146758776227336192,
-#         full_text='Beispieltweet zum einfacher Programmieren. #FF #DS100 #FFM:BO #DS:WLAN #DBL #DS:FF',
-#         display_text_range=[0, 82],
-#         entities={'hashtags': [
-#             {'text': 'FF', 'indices': [43, 46]},
-#             {'text': 'DS100', 'indices': [47, 53]},
-#             {'text': 'FFM', 'indices': [54, 58]},
-#             {'text': 'DS', 'indices': [63, 66]},
-#             {'text': 'DBL', 'indices': [71, 75]}
-#         ], 'user_mentions': []},
-#         metadata={'iso_language_code': 'de', 'result_type': 'recent'},
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.followed,
-#         user=User.followed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='de'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1156084922941136896,
-#         full_text='Test\nFKNZH\n@_ds_100',
-#         display_text_range=[0, 16],
-#         entities={'hashtags': [], 'user_mentions': [User.theBot.mention(0,0)]},
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.notfollowed,
-#         user=User.notfollowed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='en'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1156084922941136897,
-#         full_text='Text #FF #DS100 #FW #_FFM #BM #DB640 #W #DS100 #FFES',
-#         display_text_range=[0, 52],
-#         entities={'hashtags': [
-#             {'text': 'DS100', 'indices': [9, 15]},
-#             {'text': '_FFM', 'indices': [20, 25]},
-#             {'text': 'DB640', 'indices': [30, 36]},
-#             {'text': 'DS100', 'indices': [40, 46]}
-#             # other hashtags without relevance here.
-#         ], 'user_mentions': []},
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.notfollowed,
-#         user=User.notfollowed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='en'), verbose))
-#     list_of_tweets.append(Tweet(TweepyMock(
-#         id=1156084922941136898,
-#         full_text='#FF starts at the beginning! #DS100 #FW #_FFM #BM #DB640 #W #DS100 #FFES',
-#         display_text_range=[0, 72],
-#         entities={'hashtags': [
-#             {'text': 'DS100', 'indices': [29, 35]},
-#             {'text': '_FFM', 'indices': [40, 45]},
-#             {'text': 'DB640', 'indices': [50, 56]},
-#             {'text': 'DS100', 'indices': [60, 66]}
-#             # other hashtags without relevance here.
-#         ], 'user_mentions': []},
-#         in_reply_to_status_id=None,
-#         in_reply_to_user_id=None,
-#         in_reply_to_screen_name=None,
-#         author=User.notfollowed,
-#         user=User.notfollowed,
-#         geo=None,
-#         coordinates=None,
-#         place=None,
-#         contributors=None,
-#         retweet_count=0,
-#         favorite_count=0,
-#         favorited=False,
-#         retweeted=False,
-#         lang='en'), verbose))
+
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅰ: #_NO #249 #ÅBY bot%tl%mt%unusual%430',
+        expected_answer='NO#249: H-sign 249\nNO#ÅBY: Åneby',
+        id=430,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅱ: #DS100 $VDE8¹ #_CH #600133 #ALT94 bot%tl%mt%unusual%431',
+        expected_answer='VDE8¹: Nürnberg-Erfurt\nCH#600133: UNO Linie 600, km 133.179\nCH#ALT94: Altstätten SG 94',
+        id=431,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅲ: #_AT #Aa_G #Aa_Z9 #_AT #Z bot%tl%mt%unusual%432',
+        expected_answer='AT#Aa G: Grenze ÖBB-WLB im km 7,610\nAT#Aa Z9: Wr․ Neudorf\nAT#Z: Zell am See',
+        id=432,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅳ: #_DS #AA_G #AAG #EM302 bot%tl%mt%unusual%433',
+        expected_answer='AA G: Hamburg-Altona Gbf\nAAG: Ascheberg (Holst)\nEM302: Oberhausen Sbk M302',
+        id=433,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅴ: #DS100 #SARS_COV_2 #REKURSION #toggle bot%tl%mt%unusual%434',
+        expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).\nREKURSION: Siehe bitte #REKURSION',
+        id=434,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅵ: #_HH #HX #_LP #K;#KA+#KALD bot%tl%mt%unusual%435',
+        expected_answer='HH#HX: Hauptbahnhof-Nord\nLP#K: Köln Hbf\nLP#KA: Karlsruhe Hbf\nLP#KALD: Kaldenkirchen',
+        id=435,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅶ: #_UK #ABE #ABER #_NL #Ah;#Ahg/#Apn #APD bot%tl%mt%unusual%436',
+        expected_answer='UK#ABE: Aber\nUK#ABER: Aber\nNL#Ah: Arnhem\nNL#Ahg: Arnhem Goederenstation\nNL#Apn: Alphen aan den Rijn',
+        id=436,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅷ: #_FR #A?#AA!#AAA bot%tl%mt%unusual%437',
+        expected_answer='FR#A: Angouleme\nFR#AA: Aire sur l\'Adour\nFR#AAA: Allassac',
+        id=437,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅸ: #_DE $3640 #_FFM #HB #_HB #211 #_W #J #_FFM $A3 bot%tl%mt%unusual%438',
+        expected_answer='3640: Frankfurt-Höchst - Bad Soden\nFFM#HB: Frankfurt Hauptbahnhof\nFFM#_HB: WA Hauptbahnhof\nFFM#211: Hauptbahnhof\nW#J: Jedlersdorf (in F)\nFFM$A3: Anschlussstrecke A3: Abzweig Nordwest - Oberursel Hohemark',
+        id=438,
+        user=User.followed
+        ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet unusual tags Vol ⅹ: #_FFM $A $Aⅰ $AⅡ $AIII bot%tl%mt%unusual%439',
+        expected_answer='FFM$A: A-Strecke: Südbahnhof - Heddernheim - (Ginnheim/Bad Homburg/Oberursel)\nFFM$Aⅰ: A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache\nFFM$AⅡ: A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz\nFFM$AIII: A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein',
+        id=439,
+        user=User.followed
+        ), verbose))
     return list_of_tweets
 
 def mocked_source():
