@@ -97,15 +97,17 @@ Ein findbares Kürzel besteht aus
   Orte, $ für Strecken)
 - einem Bezeichner für die Quelle: Wenn nicht vorhanden, wird entweder
   die dem aktuellen [Magic Hashtag](magic.html) entsprechende Quelle
-  oder ‚BOT:‘ benutzt. Besteht immer aus Großbuchstaben.
+  oder ‚BOT:‘ benutzt.
+- Groß- und Kleinschreibung der jeweiligen Quelle müssen beachtet
+  werden. Viele Quellen benutzen ausschließlich Großbuchstaben (und
+  Ziffern), einzelne nutzen auch Kleinbuchstaben.
 - dem Kürzel selbst. Hier werden aus den Originalquellen
   aufeinanderfolgende Leerzeichen durch einen Unterstrich ersetzt (aus
-  ‚`AA  G`‘ wird also ‚`AA_G`‘). Das Kürzel kann aus
-  Großbuchstaben und Zahlen bestehen. Kleinbuchstaben sind nicht (mehr)
-  möglich.
-  - Leerzeichen (bzw. Unterstriche) sind wichtig; es gibt eine <a
-    href="/leerzeichen_ds100.html">Liste mit den Betriebsstellen</a>,
-    bei denen es einen Unterschied macht,
+  ‚`AA  G`‘ wird also ‚`AA_G`‘).
+- Leerzeichen (bzw. Unterstriche) sind wichtig; es gibt eine <a
+  href="/leerzeichen_ds100.html">Liste mit den Betriebsstellen</a>,
+  bei denen es einen Unterschied macht,
+- Führende Unterstriche werden beibehalten. (Beispiel #FFM:\_HB)
 - Einträge in der [Schwarzliste](blacklist.html) können durch benutzen
   der Quelle angezeigt werden.
 
@@ -114,25 +116,8 @@ Beispiele
 
 - \#FKW, \#DS:FKW
 - $1234, $DS:1234
-- $KRM, $VDE8¹, $VDE8\_1
-- $VGF:A, $VGF:DⅣ, $VGF:Dⅱ (bei Unicode-römischen Ziffern sind
+- $KRM, $VDE8¹
+- $FFM:A, $FFM:DⅣ, $FFM:Dⅱ (bei Unicode-römischen Ziffern sind
   Groß-/Kleinschreibung egal, aber $VGF:Dii geht nicht!)
-- \#VGF:BM
-
-Code
-====
-
-Der Reguläre Ausdruck zum Finden der Kürzel ist (es werden überlappende
-matches gesucht, damit "#FKW #FF" auch gefunden werden kann):
-
-        (?p)                # find longest match
-        (?:^|\W)            # either at the beginning of the text or after a non-alphanumeric character, but don't find this
-        (?:                 # Select source
-            (\$|\#)         # Special character to find something: # or $
-            (?:(\p{Lu}+):)? # Optional prefix, e.g. "DS:" or "VGF:"
-        )
-        (                   # Payload
-            [\p{Lu}\p{N}_]+ # All uppercase letters plus all kinds of numbers plus _
-        )
-        (?:$|\W)            # either end of string or non-\w character
+- \#FFM:BM
 
