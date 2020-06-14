@@ -102,6 +102,8 @@ class TweepyMock:
             self.quoted_status_id = None
         self.in_reply_to_status_id = self.raw['in_reply_to_status_id']
         self.expected_answer = self.raw.get('expected_answer', None)
+        if 'extended_entities' in self.raw:
+            self.extended_entities = self.raw['extended_entities']
 
     def add_to_raw(self, key, val):
         if key not in self.raw:

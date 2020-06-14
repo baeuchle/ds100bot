@@ -9,8 +9,11 @@ from pathlib import Path
 
 def print_tweet_details(tw, target):
     quoted_status_id = None
+    ext = ''
     if 'quoted_status_id' in tw.__dict__:
         quoted_status_id = tw.quoted_status_id
+    if 'extended_entities' in tw.__dict__:
+        ext = 'extended_entities=\n{},'.format(pp.pformat(tw.extended_entities))
     print(dedent('''\
     list_of_tweets.append(Tweet(TweepyMock(
         full_text={},
@@ -22,6 +25,7 @@ def print_tweet_details(tw, target):
         quoted_status_id={},
         entities=
             {},
+        {}
         user=User(
             screen_name={},
             name={},
@@ -38,6 +42,7 @@ def print_tweet_details(tw, target):
         repr(tw.in_reply_to_screen_name),
         repr(quoted_status_id),
         pp.pformat(tw.entities),
+        ext,
         repr(tw.user.screen_name),
         repr(tw.user.name),
         repr(tw.user.id),

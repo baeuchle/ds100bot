@@ -71,6 +71,7 @@ class TwitterApi:
 
     def cursor(self, task, **kwargs):
         kwargs['tweet_mode'] = 'extended'
+        kwargs['include_ext_alt_text'] = True
         try:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
@@ -88,7 +89,8 @@ class TwitterApi:
         try:
             return Tweet(self.twit.get_status(
                 tweet_id,
-                tweet_mode='extended'
+                tweet_mode='extended',
+                include_ext_alt_text=True
             ), self.verbose)
         except tweepy.RateLimitError as rateerror:
             warn_rate_error(rateerror, "getting tweet")
