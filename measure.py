@@ -27,16 +27,16 @@ def is_short_enough(text):
     return measure_tweet_length(text) <= 0
 
 next_separator = {
-    '​': '\n',
+    '\u200b': '\n',
     '\n': '\t',
     '\t': ' ',
     ' ': ''
     }
 replaced_separator = {
-    '​': '',
+    '\u200b': '',
     }
 
-def split_text(text, separator='​'):
+def split_text(text, separator='\u200b'):
     # tweet candidates have zero-width space where they may be split sensibly:
     possible_parts = text.split(separator)
     status_list = []

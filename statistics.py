@@ -75,12 +75,12 @@ Die populärsten Kürzel waren:
 )
 
 for row in sql.popular_abbrs(since):
-    text += "• {} ({}×)\n​".format(row['S'], row['C'])
+    text += "• {} ({}×)\n\u200b".format(row['S'], row['C'])
 text += """
 Die populärsten Quellen waren:
 """
 for row in sql.popular_sources(since):
-    text += "• {} ({}×)\n​".format(row['S'], row['C'])
+    text += "• {} ({}×)\n\u200b".format(row['S'], row['C'])
 text += """
 (Keine Garantie für richtiges Zählen)"""
 

@@ -43,7 +43,7 @@ def store_version(sql):
 
 def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)
-    return git_object.changelog(last_hash).replace('•', '​•')
+    return git_object.changelog(last_hash).replace('•', '\u200b•')
 
 def notify_new_version(sql, twapi, verbose):
     if is_same_version(sql):

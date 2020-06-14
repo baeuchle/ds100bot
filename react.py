@@ -224,7 +224,7 @@ def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS
                   , ))
         if row['status'] != 'found':
             continue
-        explain = "{}: {}​\n".format(
+        explain = "{}: {}\u200b\n".format(
             row['abk'],
             row['name']
         )
