@@ -459,6 +459,18 @@ def mocked_tweets(verbose):
         id=439,
         user=User.followed
         ), verbose))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet media: #_FFM #HB #DS100 bot%tl%mt%mf%440',
+        expected_answer='FFM#HB: Frankfurt Hauptbahnhof\nRALP: Alpirsbach\nHE: Emden\nMS: München Süd',
+        extended_entities={'media': [ {'ext_alt_text': '#RALP' },
+                                      {'ext_alt_text': '#_CH #HE' },
+                                      {'ext_alt_text': '#MS' }
+                                    ]},
+        id=440,
+        user=User.followed
+        ), verbose))
+
+
     return list_of_tweets
 
 def mocked_source():
