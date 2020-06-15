@@ -86,3 +86,15 @@ table.dumptable tbody th {
   text-align: left;
   font-family: monospace;
 }
+
+th.yes, td.yes {
+  background-color: #00ff00;
+}
+
+th.note, td.note {
+  background-color: #ffd000;
+}
+
+th.no, td.no {
+  background-color: #ff8080;
+}

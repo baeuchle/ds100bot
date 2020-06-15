@@ -14,7 +14,7 @@ Warum antwortet mir der Bot nicht, obwohl er mir folgt?
   Antwort-Thread „sieht“ der Bot nur dann, wenn er allen beteiligten
   Personen im Thread folgt (oder wenn er selbst beteiligt ist). Das
   liegt daran, wie Twitter die Timeline (für jede Benutzerin)
-  zusammenstellt.  Wird ein [Magic Hashtag](magic.html) verwendet oder
+  zusammenstellt.  Wird ein [Magic Hashtag](/magic.html) verwendet oder
   der Bot im Tweet (oder im Thread) erwähnt, sollte er Tweets auch
   mitten in Threads sehen.
 
@@ -24,7 +24,7 @@ Warum antwortet der Bot mir, obwohl ich das nicht will?
 - Der Bot antwortet Benutzerinnen, denen er folgt, automatisch, aber er
   folgt nicht automatisch. Siehe unten.
 - Bei Tweets von nicht-gefolgten Benutzerinnen reagiert er auf
-  Erwähnungen und seine [Magic Hashtags](magic.html) – aber nur dann,
+  Erwähnungen und seine [Magic Hashtags](/magic.html) – aber nur dann,
   wenn auch eine erweiterbare Abkürzung im Tweet steckt. Wenn das nicht
   erwünscht ist, ist der Bot nicht beleidigt, wenn er geblockt wird. Da
   der Bot keine personalisierten Daten speichert, kann man ihm nicht
@@ -37,3 +37,12 @@ Warum antwortet der Bot mir, obwohl ich das nicht will?
   in dieser Antwort den Bot markiert oder einen der Magic Hashtags
   benutzt. Das kann für die Verfasserin des originalen Tweets verwirrend
   sein.
+
+Warum ist Groß-/Kleinschreibung so wichtig?
+-------------------------------------------
+
+Ein Grundprinzip bei der Entwicklung des Bots ist „Don’t Spam”. Dazu
+zählt, dass es möglichst wenige „Kollateralfunde“ geben sollte – Dinge,
+die gar nicht beantwortet werden sollten. Je genauer ein bestimmtes
+Kürzel angegeben werden muss, desto kleiner die Wahrscheinlichkeit, dass
+es gar nicht gemeint war.

@@ -1,33 +1,25 @@
-Magic Hashtags
-==============
+Festlegen der verwendeten Abkürzungslisten
+==========================================
 
-Ein Magic Hashtag ist einer, der eine bestimmte Quelle für die
-Abkürzungsexpansion auswählt. Vor Version 5 gab es nur den Magic Hashtag
-‚__\#DS100__‘.
+Standardmäßig werden gefundene Kürzel mithilfe der
+[DS100-](/dumps/ds100.html)/[STREDAX-](/dumps/strecken.html)Listen erweitert.
+Für jede Abkürzung kann eine Quelle explizit angefordert werden (siehe
+[die Regeln für Abkürzungen](/finde-lang.html)); man kann aber auch die
+„Standard-Liste“ für den Tweet verändern, in dem man einen Magic Hashtag
+benutzt:
 
-__Wer nur die DS100-Abkürzungen verwendet, für die ändert sich nichts.__
-
-Die Motivation ist aber, in einem Tweet mit vielen Abkürzungen aus einer
-_anderen_ Liste eben diese Liste als Standard auszuwählen, eben durch
-Inkludieren des jeweiligen Magic Hashtag.
-
-Der Bot durchsucht Twitter nach allen aktiven Magic Hashtags, wie in
-[Finden von Tweets](finderegeln.html) beschrieben.
-
-Verhalten
----------
-
-__Kein Magic Hashtag vorhanden__ bedeutet, dass alles beim alten bleibt
-und die DS100-/STREDAX-Listen benutzt werden, um Abkürzungen zu
-expandieren. Andere Listen können wie gehabt mit Quelle angegeben
-werden, etwa ‚\#FFM:HB‘.
-
-__Ist genau ein Magic Hashtag vorhanden__, so wird die dazugehörige
-Quelle für Abkürzungssuchen benutzt. Die Zuordnung Hashtag ↔ Quelle
-steht bei der [Übersicht der Daten](copyright.html).
-
-__Sind mehrere Magic Hashtags vorhanden__, so gilt jeder davon bis zum
-nächsten; der erste gilt schon ab Anfang.
+- __Kein Magic Hashtag vorhanden__ bedeutet, dass alles beim alten
+  bleibt, siehe oben.
+- __Ist genau ein Magic Hashtag vorhanden__, so wird die dazugehörige
+  Quelle für Abkürzungssuchen benutzt. Die Zuordnung Hashtag ↔ Quelle
+  steht bei der [Übersicht der Daten](/copyright.html).
+- __Sind mehrere Magic Hashtags vorhanden__, so gilt jeder davon bis zum
+  nächsten; der erste gilt schon ab Anfang.
+- __Alternativtexte zu Bildern__ werden so behandelt, als stünden sie am
+  Ende des Tweets, das heißt, sie werden mit dem letzten Magic Hashtag
+  des Tweets analysiert. In den Bildern selbst wird kein Magic Hashtag
+  erkannt.
+- __Die Quelle [BOT](/dumps/gimmick.html) wird immer beachtet.__
 
 Namensgebung der Magic Hashtags
 ===============================
