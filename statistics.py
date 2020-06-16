@@ -5,8 +5,9 @@ from database import Database
 import gitdescribe as git
 
 import argparse
-import sys
 import datetime
+import log
+import sys
 
 one_day = datetime.timedelta(days=1)
 today = datetime.date.today()
@@ -39,6 +40,12 @@ if args.rw:
     api_name = 'readwrite'
 if args.verbose is None:
     args.verbose = 1
+loglvl = 50 - args.verbose * 10
+if loglvl <= 0:
+    loglvl = 1
+
+log.basicConfig(level=loglvl, style='{')
+log_ = log.getLogger('statistics')
 
 since = None
 since_text = None
@@ -56,9 +63,9 @@ else:
     since_text = since
 
 # setup twitter API
-twapi = api.get_api_object(api_name, args.verbose, external=False)
+twapi = api.get_api_object(api_name, external=False)
 # setup database
-sql = Database('readonly', args.verbose)
+sql = Database('readonly')
 
 counts = sql.count_status(since=since)
 text = """Zeit für Statistik! Daten für die Zeit seit {}. Ich habe:

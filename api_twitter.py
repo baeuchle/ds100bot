@@ -1,18 +1,20 @@
 from tweet import Tweet
 import tweepy
 from measure import split_text
+import log
+log_ = log.getLogger(__name__)
+tweet_log_ = log.getLogger('tweet', '{message}')
 
 class TwitterApi:
-    def __init__(self, verbose):
+    def __init__(self):
         import credentials
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.twit = tweepy.API(auth)
         self.myself = self.twit.me()
-        self.verbose = verbose
-    
+
     def print_rate_limit(self):
-        if self.verbose <= 0:
+        if log_.getEffectiveLevel() > 49:
             return
         rls = self.twit.rate_limit_status()
         res = rls['resources']
@@ -21,7 +23,7 @@ class TwitterApi:
             for l in res[r]:
                 rrl = res[r][l]
                 if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
-                    print("Resource limit for {} low: {} of {} remaining".format(
+                    log_.critical("Resource limit for {} low: {} of {} remaining".format(
                         l,
                         rrl['remaining'],
                         rrl['limit']
@@ -41,15 +43,16 @@ class TwitterApi:
 
     def tweet_single(self, text, **kwargs):
         if len(text) == 0:
-            print("Empty tweet?")
+            log_.error("Empty tweet?")
             return -1
-        if self.verbose > 1:
+        if tweet_log_.isEnabledFor(log.WARNING):
             lines = text.splitlines()
             length = max([len(l) for l in lines])
-            print("▄{}┓".format('━'*(length+2)))
+            tt = "▄{}┓\n".format('━'*(length+2))
             for l in lines:
-                print(("█ {{:{}}} ┃".format(length)).format(l))
-            print("▀{}┛".format('━'*(length+2)))
+                tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
+            tt += "▀{}┛".format('━'*(length+2))
+            tweet_log_.warning(tt)
         return 0
 
     def all_relevant_tweets(self, highest_id, tag):
@@ -75,9 +78,8 @@ class TwitterApi:
         try:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
-                result.append(Tweet(t, self.verbose))
-            if self.verbose > 1:
-                print ("{} tweets found".format(len(result)))
+                result.append(Tweet(t))
+            log_.warning("{} tweets found".format(len(result)))
             return result
         except tweepy.RateLimitError as rateerror:
             warn_rate_error(rateerror, "cursoring")
@@ -91,7 +93,7 @@ class TwitterApi:
                 tweet_id,
                 tweet_mode='extended',
                 include_ext_alt_text=True
-            ), self.verbose)
+            ))
         except tweepy.RateLimitError as rateerror:
             warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:
@@ -99,12 +101,10 @@ class TwitterApi:
         return None
 
     def follow(self, user):
-        if self.verbose > 2:
-            print("Follow @{}".format(user.screen_name))
+        log_.warning("Follow @{}".format(user.screen_name))
 
     def defollow(self, user):
-        if self.verbose > 2:
-            print("Defollow @{}".format(user.screen_name))
+        log_.warning("Defollow @{}".format(user.screen_name))
 
     def is_followed(self, user):
         try:

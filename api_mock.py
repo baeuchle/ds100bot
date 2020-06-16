@@ -4,23 +4,23 @@ import tweepy # for exceptions
 import re
 
 from tweet_mock import *
+import log
+log_ = log.getLogger(__name__)
 
 class MockApi(TwitterApi):
-    def __init__(self, verbose, **kwargs):
-        self.verbose = verbose + 1
+    def __init__(self, **kwargs):
+        log_.setLevel(log_.getEffectiveLevel() - 10)
         self.running_id = 10001
         self.myself = User.theBot
         self.external = kwargs.get('external', False)
         if self.external:
             self.mock = mocked_source()
         else:
-            self.mock = mocked_tweets(verbose)
+            self.mock = mocked_tweets()
             p_id = kwargs.get('parse_one', None)
             if p_id is not None:
                 self.mock = [self.get_tweet(int(p_id))]
         self.replies = {}
-        if self.verbose > 0:
-            print('Running from Mock API (faked tweets)')
 
     def get_tweet(self, tweet_id):
         for t in self.mock:
@@ -35,7 +35,7 @@ class MockApi(TwitterApi):
             # don't track thread answers:
             if reply_id != self.running_id:
                 if reply_id in self.replies:
-                    print("Tweet {} was replied to twice!")
+                    log_.warning("Tweet %d was replied to twice!", reply_id)
                     self.double_replies.append(reply_id)
                 else:
                     self.replies[reply_id] = text.strip()
@@ -71,45 +71,47 @@ class MockApi(TwitterApi):
     def statistics(self):
         if self.external:
             return
+        stat_log = log.getLogger('statistics', '{message}')
         all_ok = 0
         wrongs = 0
         badrpl = 0
-        print("━"*120)
-        print("    RESULTS")
+        stat_log.debug("    RESULTS")
         for t in self.mock:
-            print("Tweet", t.id, end=' ')
             was_replied_to = t.id in self.replies
             if t.original.expected_answer is None:
                 if was_replied_to:
-                    print("falsely answered")
+                    stat_log.error("Tweet %d falsely answered", t.id)
                     wrongs += 1
                 else:
                     all_ok += 1
-                    print("correcly unanswered")
+                    stat_log.info("Tweet %d correcly unanswered", t.id)
                 continue
             # expected answer is not None:
             if not was_replied_to:
                 wrongs += 1
-                print("falsely unanswered")
+                stat_log.error("Tweet %d falsely unanswered", t.id)
                 continue
             # correctly answered: is it the correct answer?
             if t.original.expected_answer == self.replies[t.id]:
                 all_ok += 1
-                print("correctly answered with correct answer")
+                stat_log.info("Tweet %d correctly answered with correct answer", t.id)
                 continue
             badrpl += 1
-            print("correctly answered, but with wrong answer")
-            if self.verbose > 2:
-                print(t.original.expected_answer)
-                print(self.replies[t.id])
-        print()
-        print("ALL GOOD:               ", all_ok)
-        print("INCORRECT TEXT:         ", badrpl)
-        print("WRONG ANSWER/NOT ANSWER:", wrongs)
+            stat_log.error("Tweet %d correctly answered, but with wrong answer", t.id)
+            stat_log.warning(t.original.expected_answer)
+            stat_log.warning(self.replies[t.id])
+        bad_flw = 0
+        goodflw = 0
         for l in User.followers, User.nonfollowers:
             for u in l:
-                print("User @{}".format(u.screen_name), end=' ')
                 if u.follows == u.follow_after:
-                    print("has correct following behaviour {}".format(u.follows))
+                    stat_log.info("User @%s has correct following behaviour %s", u.screen_name, u.follows)
+                    goodflw += 1
                 else:
-                    print("doesn't follow correctly (should {}, does {})".format(u.follow_after, u.follows))
+                    stat_log.error("User @%s doesn't follow correctly (should %s, does %s)", u.screen_name, u.follow_after, u.follows)
+                    bad_flw += 1
+        stat_log.log(51, "ALL GOOD:               %2d", all_ok)
+        stat_log.log(51, "INCORRECT TEXT:         %2d", badrpl)
+        stat_log.log(51, "WRONG ANSWER/NOT ANSWER:%2d", wrongs)
+        stat_log.log(51, "CORRECT FOLLOWING:      %2d", goodflw)
+        stat_log.log(51, "WRONG FOLLOWING:        %2d", bad_flw)

@@ -1,16 +1,18 @@
+import log
+log_ = log.getLogger(__name__)
+
 class Tweet:
-    def __init__(self, tweepy_tweet, verbose):
+    def __init__(self, tweepy_tweet):
         self.id = tweepy_tweet.id
         self.text = tweepy_tweet.full_text
         self.original = tweepy_tweet
-        self.verbose = verbose
         if 'extended_entities' in tweepy_tweet.__dict__:
             ee = tweepy_tweet.extended_entities
             alt_text = '\u200b'.join([m['ext_alt_text'] for m in ee['media']])
             self.text = '\u200b'.join([self.text, alt_text])
 
     def __str__(self):
-        if self.verbose < 3:
+        if log_.getEffectiveLevel() < 30:
             return self.text
         text = "id = {}\n".format(self.id)
         if self.original is not None:

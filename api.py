@@ -2,26 +2,28 @@ from api_twitter import TwitterApi
 from api_mock import MockApi
 from tweet import Tweet
 import tweepy
+import log
+log_ = log.getLogger(__name__)
 
-def get_api_object(mode, verbose, **kwargs):
+def get_api_object(mode, **kwargs):
     if mode == "mock":
-        return MockApi(verbose, **kwargs)
+        return MockApi(**kwargs)
     if mode == "readonly":
-        return ReadOnlyApi(verbose)
-    return ReadWriteApi(verbose)
+        return ReadOnlyApi()
+    return ReadWriteApi()
 
 class ReadOnlyApi(TwitterApi):
-    def __init__(self, verbose):
-        super().__init__(verbose + 1)
-        if self.verbose > 0:
-            print('Running from readonly twitter API (read real tweets, do not actually post answers)')
+    def __init__(self):
+        super().__init__()
+        log_.setLevel(log_.getEffectiveLevel() - 10)
+        log_.warning('Running from readonly twitter API (read real tweets, do not actually post answers)')
 
 class ReadWriteApi(TwitterApi):
-    def __init__(self, verbose):
-        super().__init__(verbose)
+    def __init__(self):
+        super().__init__()
 
     def warn_rate_error(self, rate_err, description):
-        print ("Rate limit violated at {}: {}".format(description, rate_err.reason))
+        log_.critical("Rate limit violated at {}: {}".format(description, rate_err.reason))
         super().print_rate_limit()
 
     def tweet_single(self, text, **kwargs):
@@ -35,7 +37,7 @@ class ReadWriteApi(TwitterApi):
         except tweepy.TweepError as twerror:
             if twerror.api_code == 187: # duplicate tweet
                 return 0
-            print("Error {} tweeting: {}".format(twerror.api_code, twerror.reason))
+            log_.critical("Error {} tweeting: {}".format(twerror.api_code, twerror.reason))
             return -1
 
     def follow(self, user):

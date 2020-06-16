@@ -45,7 +45,7 @@ def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)
     return git_object.changelog(last_hash).replace('•', '\u200b•')
 
-def notify_new_version(sql, twapi, verbose):
+def notify_new_version(sql, twapi):
     if is_same_version(sql):
         return
     status = "Ich twittere nun von Version {}".format(git_object.describe())

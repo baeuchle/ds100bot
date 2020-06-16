@@ -7,6 +7,7 @@ import react
 import since
 
 import argparse
+import log
 import sys
 
 parser = argparse.ArgumentParser(description='Bot zur DS100-Expansion auf Twitter')
@@ -61,56 +62,55 @@ if args.api is None:
         args.api = 'readonly'
 if args.verbose is None:
     args.verbose = 0
+args.verbose = 50 - args.verbose * 10
+loglvl = 50 - args.verbose * 10
+if loglvl <= 0:
+    loglvl = 1
+
+log.basicConfig(level=loglvl, style='{')
+log_ = log.getLogger('ds100')
 
 # setup twitter API
-twapi = api.get_api_object(args.api, args.verbose,
-external=args.external, parse_one=args.parse_one)
+twapi = api.get_api_object(args.api,
+    external=args.external, parse_one=args.parse_one)
 # setup database
-sql = Database(args.db, args.verbose)
-git.notify_new_version(sql, twapi, args.verbose)
+sql = Database(args.db)
+git.notify_new_version(sql, twapi)
 
 highest_id = since.get_since_id(sql)
 
 tagsearch, magic_tags = sql.magic_hashtags()
-if args.verbose > 1:
-    print("Magic tags:", magic_tags)
+log_.info("Magic Tags: %s", magic_tags)
 
 tweet_list = twapi.all_relevant_tweets(highest_id, tagsearch)
 for id, tweet in tweet_list.items():
-    if args.verbose > 1:
-        print(tweet)
+    log_.info("Looking at tweet %d", id)
     # exclude some tweets:
     if tweet.author().screen_name == twapi.myself.screen_name:
-        if args.verbose > 2:
-            print("Not replying to my own tweets")
-            print("=================")
+        log_.debug("Not replying to my own tweets")
         continue
     if tweet.is_retweet():
-        if args.verbose > 1:
-            print("Not processing pure retweets")
-            print("=================")
+        log_.debug("Not processing pure retweets")
         continue
     # handle #folgenbitte and #entfolgen and possibly other meta commands, but
     # only for explicit mentions.
     if tweet.is_explicit_mention(twapi.myself):
-        if args.verbose > 3:
-            print("Tweet explicitly mentions me")
-        react.process_commands(tweet, twapi, args.verbose)
+        log_.info("Tweet explicitly mentions me")
+        react.process_commands(tweet, twapi)
     if tweet.has_hashtag(magic_tags):
-        if args.verbose > 3:
-            print("Tweet has magic hashtag")
+        log_.info("Tweet has magic hashtag")
     # Process this tweet
     mode = None
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
         mode = 'all'
-    react.process_tweet(tweet, twapi, sql, args.verbose, magic_tags, mode)
+    react.process_tweet(tweet, twapi, sql, magic_tags, mode)
     # Process quoted or replied-to tweets, only for explicit mentions and magic tags
     if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
         for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
-            if (args.verbose > 2 and not other_id is None) or args.verbose > 3:
-                print("Looking for other tweet", other_id)
-                if other_id in tweet_list:
-                    print("...already in tweet_list")
+            if other_id in tweet_list:
+                log_.debug("Other tweet %d already in tweet list", other_id)
+            else:
+                log_.info("Obtaining other tweet %s", other_id)
             if (not other_id is None) and other_id not in tweet_list:
                 other_tweet = twapi.get_tweet(other_id)
                 if other_tweet is None:
@@ -118,30 +118,22 @@ for id, tweet in tweet_list.items():
                 # don't process the other tweet if we should have seen it before (this
                 # also prevents recursion via this branch):
                 if other_tweet.is_mention(twapi.myself):
-                    if args.verbose > 1:
-                        print("Not processing other tweet because it already mentions me")
-                        print("=================")
+                    log_.info("Not processing other tweet because it already mentions me")
                 if other_tweet.has_hashtag(magic_tags):
-                    if args.verbose > 1:
-                        print("Not processing other tweet because it already has the magic hashtag")
-                        print("=================")
+                    log_.info("Not processing other tweet because it already has the magic hashtag")
                 else:
-                    if args.verbose > 2:
-                        print("Processing tweet {} mode 'all':".format(tweet.id))
-                        print(tweet)
+                    log_.info("Processing tweet %d mode 'all'", tweet.id)
                     dmt_list = [t[0] for t in tweet.hashtags(magic_tags)]
                     dmt = 'DS100'
                     if len(dmt_list) > 0:
                         dmt = dmt_list[0]
                     react.process_tweet(other_tweet, twapi,
-                        sql, args.verbose, magic_tags,
+                        sql, magic_tags,
                         modus='all'
                             if tweet.is_explicit_mention(twapi.myself)
                             else None,
                         default_magic_tag=dmt
                     )
-    if args.verbose > 3:
-        print("█"*80 + '\n')
 
 git.store_version(sql)
 if tweet_list:
