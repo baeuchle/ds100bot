@@ -45,15 +45,15 @@ def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)
     return git_object.changelog(last_hash).replace('•', '\u200b•')
 
-def notify_new_version(sql, twapi):
-    if is_same_version(sql):
+def notify_new_version(api):
+    if is_same_version(api.database):
         return
     status = "Ich twittere nun von Version {}".format(git_object.describe())
-    cl = get_changelog(sql)
+    cl = get_changelog(api.database)
     if not cl.strip() == "":
         status += ":\n" + cl
-    if twapi.tweet(
+    if api.twitter.tweet(
             status,
             auto_populate_reply_metadata=True
             ) > 0:
-        store_version(sql)
+        store_version(api.database)
