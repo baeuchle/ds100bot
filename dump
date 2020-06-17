@@ -29,7 +29,7 @@ def get_links_list():
     with open("doc/links.snip", 'r') as links:
         return links.read().replace('VERSION', Git().describe('--dirty'))
 
-def get_sources(sql):
+def get_sources(sql_):
     sql.cursor.execute("""
         SELECT
             source,
@@ -39,14 +39,14 @@ def get_sources(sql):
         GROUP BY
             source
     """)
-    return sql.cursor.fetchall()
+    return sql_.cursor.fetchall()
 
-def create_sources_list(sources):
+def create_sources_list(sources_):
     ul = """  <ul class="flat">
    <li>Alle Quellen:</li>
    <li><a href="/dumps/blacklist.html">Blacklist</a></li>
 """
-    for s in sources:
+    for s in sources_:
         ul += """   <li><a href="/dumps/{}.html">{}</a></li>
 """.format(s[0], s[0])
     ul += """  </ul>"""
@@ -67,8 +67,8 @@ parser.add_argument('--max-entries',
                     default=2000,)
 args = parser.parse_args()
 
-def write_dump_list(sql, target_path, name, **kwargs):
-    with (target_path / (name + ".html")).open(mode='w') as df:
+def write_dump_list(sql_, target_path_, name, **kwargs):
+    with (target_path_ / (name + ".html")).open(mode='w') as df:
         print(html_header("{}".format(name)), file=df)
         print("""  <h1>Daten aus Quelle {}</h1>""".format(name), file=df)
         print(sources_list, file=df)
@@ -78,7 +78,7 @@ def write_dump_list(sql, target_path, name, **kwargs):
         if (kwargs.get('before_table', False)):
             print(kwargs['before_table'], file=df)
         print(table_header(), file=df)
-        for entry_row in sql.cursor.fetchall():
+        for entry_row in sql_.cursor.fetchall():
             print("""    <tr>
      <th id="{}">{}</th>
      <td>{}</td>

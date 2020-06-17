@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from pathlib import Path
 import api
 
-def print_tweet_details(tw, target):
+def print_tweet_details(tw, targetfile):
     quoted_status_id = None
     ext = ''
     if 'quoted_status_id' in tw.__dict__:
@@ -47,7 +47,7 @@ def print_tweet_details(tw, target):
         repr(tw.user.name),
         repr(tw.user.id),
         repr(twapi.is_followed(tw.user))
-    ), file=target)
+    ), file=targetfile)
 
 parser = argparse.ArgumentParser(description='Helper program for dumping tweet details')
 group = parser.add_mutually_exclusive_group(required=True)

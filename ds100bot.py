@@ -49,22 +49,21 @@ def arguments():
                         action='store',
                         default=None
                        )
-    args = parser.parse_args()
-    
-    if args.db is None:
-        if args.rw:
-            args.db = 'readwrite'
+    args_ = parser.parse_args()
+    if args_.db is None:
+        if args_.rw:
+            args_.db = 'readwrite'
         else:
-            args.db = 'readonly'
-    if args.api is None:
-        if args.rw:
-            args.api = 'readwrite'
+            args_.db = 'readonly'
+    if args_.api is None:
+        if args_.rw:
+            args_.api = 'readwrite'
         else:
-            args.api = 'readonly'
-    if args.verbose is None:
-        args.verbose = 0
-    args.verbose = 50 - args.verbose * 10
-    return args
+            args_.api = 'readonly'
+    if args_.verbose is None:
+        args_.verbose = 0
+    args_.verbose = 50 - args_.verbose * 10
+    return args_
 
 def setup_log(verbosity):
     loglvl = 50 - verbosity * 10
@@ -74,22 +73,24 @@ def setup_log(verbosity):
     log.basicConfig(level=loglvl, style='{')
     return log.getLogger('ds100')
 
-def setup_apis(args):
-    api = namedtuple('Externals', ['twitter', 'database'])
+def setup_apis(args_):
+    api_ = namedtuple('Externals', ['twitter', 'database'])
     # setup twitter API
-    api.twitter = twitter_api.get_api_object(args.api, external=args.external, parse_one=args.parse_one)
+    api_.twitter = twitter_api.get_api_object(args_.api,
+                                              external=args_.external,
+                                              parse_one=args_.parse_one)
     # setup database
-    api.database = Database(args.db)
-    git.notify_new_version(api)
-    return api
+    api_.database = Database(args_.db)
+    git.notify_new_version(api_)
+    return api_
 
-def teardown_apis(api, apiname, max_id=0):
-    git.store_version(api.database)
+def teardown_apis(api_, apiname, max_id_=0):
+    git.store_version(api_.database)
     if max_id > 0:
-        since.store_since_id(api.database, max_id)
+        since.store_since_id(api_.database, max_id_)
     if apiname == 'mock':
-        api.twitter.statistics()
-    api.database.close_sucessfully()
+        api_.twitter.statistics()
+    api_.database.close_sucessfully()
     log_.info("Bot finished")
 
 if __name__ == "__main__":
