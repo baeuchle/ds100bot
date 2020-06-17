@@ -3,6 +3,9 @@ import copy
 import re
 from tweet import Tweet
 
+import log
+log_ = log.getLogger(__name__)
+
 class User:
     def __init__(self, **kwargs):
         self.screen_name = kwargs['screen_name']
@@ -483,5 +486,9 @@ def mocked_tweets():
     return list_of_tweets
 
 def mocked_source():
-    from tweet_details import list_of_tweets
+    try:
+        # pylint: disable=E0401,C0415
+        from tweet_details import list_of_tweets
+    except ModuleNotFoundError:
+        log_.critical("Keine Tweet-Details gefunden. Bitte get_tweet.py mit --mode mock ausführen.")
     return list_of_tweets
