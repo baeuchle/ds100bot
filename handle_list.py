@@ -3,8 +3,8 @@ import log
 log_ = log.getLogger(__name__)
 
 def handle_list(tweet_list, apis, magic_tags):
-  for id, tweet in tweet_list.items():
-    log_.info("Looking at tweet %d", id)
+  for tid, tweet in tweet_list.items():
+    log_.info("Looking at tweet %d", tid)
     # exclude some tweets:
     if tweet.author().screen_name == apis.twitter.myself.screen_name:
         log_.debug("Not replying to my own tweets")
