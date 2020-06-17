@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 
-import api
-from database import Database
-import gitdescribe as git
-
 import argparse
 import datetime
+import api
+from database import Database
+
 import log
-import sys
 
 one_day = datetime.timedelta(days=1)
 today = datetime.date.today()

@@ -1,5 +1,5 @@
-from tweet import Tweet
 import tweepy
+from tweet import Tweet
 from measure import split_text
 import log
 log_ = log.getLogger(__name__)

@@ -1,5 +1,3 @@
-import datetime
-import tweepy
 from GitVersion import Git
 
 git_object = Git()

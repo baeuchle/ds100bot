@@ -1,4 +1,3 @@
-import datetime
 import copy
 import re
 from tweet import Tweet

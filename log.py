@@ -1,4 +1,7 @@
 import logging
+#pylint: disable=W0611
+from logging import DEBUG, INFO, WARNING, ERROR, CRITICAL
+#pylint: enable=W0611
 
 # we wrap logging because I want more control in getLogger.
 
@@ -14,5 +17,3 @@ def getLogger(name, fmt=None):
 
 def basicConfig(*args, **kwargs):
     logging.basicConfig(*args, **kwargs)
-
-from logging import DEBUG, INFO, WARNING, ERROR, CRITICAL

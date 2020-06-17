@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-import api
 import argparse
 import pprint
 from textwrap import dedent
 from urllib.parse import urlparse
 from pathlib import Path
+import api
 
 def print_tweet_details(tw, target):
     quoted_status_id = None

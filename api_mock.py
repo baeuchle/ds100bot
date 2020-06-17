@@ -1,9 +1,7 @@
-from api_twitter import TwitterApi
-from tweet import Tweet
 import tweepy # for exceptions
-import re
+from api_twitter import TwitterApi
 
-from tweet_mock import *
+from tweet_mock import User, mocked_source, mocked_tweets
 import log
 log_ = log.getLogger(__name__)
 

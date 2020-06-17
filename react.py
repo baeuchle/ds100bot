@@ -1,6 +1,6 @@
 import datetime
-import regex as re
 import sqlite3
+import regex as re
 import log
 log_ = log.getLogger(__name__)
 follog_ = log.getLogger(__name__ + '.following', '{name} {message}')

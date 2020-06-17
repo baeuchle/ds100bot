@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 
+import argparse
+from collections import namedtuple
+import log
+
 import api as twitter_api
 from database import Database
 import gitdescribe as git
 from handle_list import handle_list
 import since
-
-import argparse
-import log
-from collections import namedtuple
-import sys
 
 def arguments():
     parser = argparse.ArgumentParser(description='Bot zur DS100-Expansion auf Twitter')

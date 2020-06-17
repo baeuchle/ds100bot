@@ -1,7 +1,6 @@
+import tweepy
 from api_twitter import TwitterApi
 from api_mock import MockApi
-from tweet import Tweet
-import tweepy
 import log
 log_ = log.getLogger(__name__)
 
