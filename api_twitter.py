@@ -23,7 +23,6 @@ class TwitterApi:
         rls = self.twit.rate_limit_status()
         res = rls['resources']
         for r in res:
-            rr = res[r]
             for l in res[r]:
                 rrl = res[r][l]
                 if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
@@ -45,7 +44,7 @@ class TwitterApi:
                 reply_id = new_reply_id
         return reply_id
 
-    def tweet_single(self, text, **kwargs):
+    def tweet_single(self, text, **_):
         if len(text) == 0:
             log_.error("Empty tweet?")
             return -1
