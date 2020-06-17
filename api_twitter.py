@@ -27,11 +27,11 @@ class TwitterApi:
             for l in res[r]:
                 rrl = res[r][l]
                 if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
-                    log_.critical("Resource limit for {} low: {} of {} remaining".format(
+                    log_.critical("Resource limit for %s low: %s of %s remaining",
                         l,
                         rrl['remaining'],
                         rrl['limit']
-                    ))
+                    )
 
     # Return new tweet id, 0 if RateLimit (= try again), -1 if other
     # error (fix before trying again).
@@ -83,7 +83,7 @@ class TwitterApi:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
                 result.append(Tweet(t))
-            log_.warning("{} tweets found".format(len(result)))
+            log_.warning("%d tweets found", len(result))
             return result
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "cursoring")
@@ -105,10 +105,10 @@ class TwitterApi:
         return None
 
     def follow(self, user):
-        log_.warning("Follow @{}".format(user.screen_name))
+        log_.warning("Follow @%s", user.screen_name)
 
     def defollow(self, user):
-        log_.warning("Defollow @{}".format(user.screen_name))
+        log_.warning("Defollow @%s", user.screen_name)
 
     def is_followed(self, user):
         try:

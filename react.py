@@ -19,20 +19,18 @@ def process_commands(tweet, twapi):
     author = tweet.author()
     if tweet.has_hashtag(['folgenbitte'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
-        follog_.log(45, "folgenbitte from @{}:".format(author.screen_name))
         if is_followed:
-            follog_.log(45, " already following")
+            follog_.log(45, "folgenbitte from @%s: already following", author.screen_name)
         else:
-            follog_.log(45, " not yet following")
+            follog_.log(45, "folgenbitte from @%s: not yet following", author.screen_name)
         if not is_followed:
             twapi.follow(author)
     if tweet.has_hashtag(['entfolgen'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
-        follog_.log(45, "entfolgen from @{}:".format(author.screen_name))
         if is_followed:
-            follog_.log(45, " still following so far")
+            follog_.log(45, "entfolgen from @%s: still following so far", author.screen_name)
         else:
-            follog_.log(45, " not even following yet")
+            follog_.log(45, "entfolgen from @%s: not even following yet", author.screen_name)
         if is_followed:
             twapi.defollow(author)
 
@@ -172,7 +170,7 @@ def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
       tweetpart = tweet[mt[1][1]:nextmt[1][0]]
       tag = mt[0]
       tagsource = find_source(sql, tag)
-      log_.debug("Part: '{}' mt '{}'".format(tweetpart, tag))
+      log_.debug("Part: '%s' mt '%s'", tweetpart, tag)
       for match in find_tokens(tweetpart, modus, tag):
         sigil = match[0] if not match[0] == "" else '#'
         source = match[1]
@@ -186,7 +184,7 @@ def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
             'abbr2': source if source != "" else 'BOT',
         }
         row, normalized = find_entry(sql, parameters)
-        log_.debug("{}: {}→{}".format(normalized, list(parameters.values()), list(row)))
+        log_.debug("%s: %s→%s", normalized, list(parameters.values()), list(row))
         if normalized in short_list:
             continue
         short_list.append(normalized)

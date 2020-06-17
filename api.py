@@ -29,7 +29,7 @@ class ReadWriteApi(TwitterApi):
         except tweepy.TweepError as twerror:
             if twerror.api_code == 187: # duplicate tweet
                 return 0
-            log_.critical("Error {} tweeting: {}".format(twerror.api_code, twerror.reason))
+            log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
             return -1
 
     def follow(self, user):
