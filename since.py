@@ -12,7 +12,7 @@ def get_since_id(sql):
         return 0
     try:
         return int(row[0])
-    except:
+    except ValueError:
         return 0
 
 def store_since_id(sql, highest_id):

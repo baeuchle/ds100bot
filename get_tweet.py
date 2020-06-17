@@ -85,7 +85,7 @@ tid = args.id
 if tid is None:
     try:
         tid = int(Path(urlparse(args.url).path).name)
-    except:
+    except ValueError:
         parser.error("Cannot extract tweet id from URL {}".format(args.url))
 tweet = twapi.get_tweet(tid)
 
