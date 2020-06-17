@@ -89,5 +89,3 @@ if not args.add is None:
     else:
         print("Schon eingetragen!")
         sys.exit(0)
-
-pass
