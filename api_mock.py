@@ -21,6 +21,7 @@ class MockApi(TwitterApi):
             if p_id is not None:
                 self.mock = [self.get_tweet(int(p_id))]
         self.replies = {}
+        self.double_replies = []
 
     def get_tweet(self, tweet_id):
         for t in self.mock:
