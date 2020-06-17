@@ -117,5 +117,5 @@ class TwitterApi:
                 target_id=user.id
             )[0].following
         except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error("is_followed @{}".format(user.screen_name))
+            self.warn_rate_error(rateerror, "is_followed @{}".format(user.screen_name))
             return False

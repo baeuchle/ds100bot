@@ -41,11 +41,11 @@ class ReadWriteApi(TwitterApi):
         try:
             self.twit.create_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error("follow @{}".format(user.screen_name))
+            self.warn_rate_error(rateerror, "follow @{}".format(user.screen_name))
 
     def defollow(self, user):
         super().defollow(user)
         try:
             self.twit.destroy_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error("defollow @{}".format(user.screen_name))
+            self.warn_rate_error(rateerror, "defollow @{}".format(user.screen_name))
