@@ -8,6 +8,7 @@ import since
 
 import argparse
 import log
+from collections import namedtuple
 import sys
 
 def arguments():
@@ -75,7 +76,7 @@ def setup_log(verbosity):
     return log.getLogger('ds100')
 
 def setup_apis(args):
-    api = type('', (), {})()
+    api = namedtuple('Externals', ['twitter', 'database'])
     # setup twitter API
     api.twitter = twitter_api.get_api_object(args.api, external=args.external, parse_one=args.parse_one)
     # setup database
