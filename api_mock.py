@@ -53,8 +53,8 @@ class MockApi(TwitterApi):
     def timeline(self, highest_id):
         return [t for t in self.mock if t.author().follows]
 
-    def hashtag(self, q, highest_id):
-        return [t for t in self.mock if t.has_hashtag(q)]
+    def hashtag(self, tag, highest_id):
+        return [t for t in self.mock if t.has_hashtag(tag)]
 
     def is_followed(self, user):
         return user.follows
