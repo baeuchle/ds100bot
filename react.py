@@ -167,65 +167,65 @@ def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
     generated_content = ""
     magic_tags = process_magic(magic_tags, len(tweet), default_magic_tag)
     for mt, nextmt in zip(magic_tags[:-1], magic_tags[1:]):
-      tweetpart = tweet[mt[1][1]:nextmt[1][0]]
-      tag = mt[0]
-      tagsource = find_source(sql, tag)
-      log_.debug("Part: '%s' mt '%s'", tweetpart, tag)
-      for match in find_tokens(tweetpart, modus, tag):
-        sigil = match[0] if not match[0] == "" else '#'
-        source = match[1]
-        payload = match[2]
-        payload = payload[0] + payload[1:].replace('_', ' ')
-        payload = ' '.join(payload.split())
-        parameters = { 'abk': payload,
-            'sigil': sigil,
-            'magic_tag': source if source != "" else tag,
-            'abbr1': source if source != "" else tagsource,
-            'abbr2': source if source != "" else 'BOT',
-        }
-        row, normalized = find_entry(sql, parameters)
-        log_.debug("%s: %s→%s", normalized, list(parameters.values()), list(row))
-        if normalized in short_list:
-            continue
-        short_list.append(normalized)
-        # failures are always written if the source is not empty, and...
-        if row['status'] == 'notfound' and source == "":
-            if len(payload) == 0:
+        tweetpart = tweet[mt[1][1]:nextmt[1][0]]
+        tag = mt[0]
+        tagsource = find_source(sql, tag)
+        log_.debug("Part: '%s' mt '%s'", tweetpart, tag)
+        for match in find_tokens(tweetpart, modus, tag):
+            sigil = match[0] if not match[0] == "" else '#'
+            source = match[1]
+            payload = match[2]
+            payload = payload[0] + payload[1:].replace('_', ' ')
+            payload = ' '.join(payload.split())
+            parameters = { 'abk': payload,
+                'sigil': sigil,
+                'magic_tag': source if source != "" else tag,
+                'abbr1': source if source != "" else tagsource,
+                'abbr2': source if source != "" else 'BOT',
+            }
+            row, normalized = find_entry(sql, parameters)
+            log_.debug("%s: %s→%s", normalized, list(parameters.values()), list(row))
+            if normalized in short_list:
                 continue
-            if len(payload) > 5:
+            short_list.append(normalized)
+            # failures are always written if the source is not empty, and...
+            if row['status'] == 'notfound' and source == "":
+                if len(payload) == 0:
+                    continue
+                if len(payload) > 5:
+                    continue
+                if '#' + payload in magic_tags:
+                    continue
+                if payload[0] == '_':
+                    continue
+                if sigil == '#' and payload[0].isdigit():
+                    continue
+            if not sql.readonly:
+                sql.cursor.execute("""
+                    INSERT INTO
+                        requests(
+                            ds100_id
+                          , request_date
+                          , status
+                            )
+                        VALUES (?,?,?)
+                    """,
+                       (normalized
+                      , datetime.datetime.today().strftime('%Y%m%d')
+                      , row['status']
+                      , ))
+            if row['status'] != 'found':
                 continue
-            if '#' + payload in magic_tags:
-                continue
-            if payload[0] == '_':
-                continue
-            if sigil == '#' and payload[0].isdigit():
-                continue
-        if not sql.readonly:
-            sql.cursor.execute("""
-                INSERT INTO
-                    requests(
-                        ds100_id
-                      , request_date
-                      , status
-                        )
-                    VALUES (?,?,?)
-                """,
-                   (normalized
-                  , datetime.datetime.today().strftime('%Y%m%d')
-                  , row['status']
-                  , ))
-        if row['status'] != 'found':
-            continue
-        explain = "{}: {}\u200b\n".format(
-            row['abk'],
-            row['name']
-        )
-        if not (row['source'] == 'DS' or row['source'] == 'BOT'):
-            explain = "{}{}{}".format(
-                row['source'],
-                row['sigil'],
-                explain
+            explain = "{}: {}\u200b\n".format(
+                row['abk'],
+                row['name']
             )
-        explain = explain.replace('\\n', '\n')
-        generated_content += explain
+            if not (row['source'] == 'DS' or row['source'] == 'BOT'):
+                explain = "{}{}{}".format(
+                    row['source'],
+                    row['sigil'],
+                    explain
+                )
+            explain = explain.replace('\\n', '\n')
+            generated_content += explain
     return generated_content
