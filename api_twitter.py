@@ -13,6 +13,10 @@ class TwitterApi:
         self.twit = tweepy.API(auth)
         self.myself = self.twit.me()
 
+    def warn_rate_error(self, rate_err, description):
+        log_.critical("Rate limit violated at %s: %s", description, rate_err.reason)
+        self.print_rate_limit()
+
     def print_rate_limit(self):
         if log_.getEffectiveLevel() > 49:
             return
@@ -82,7 +86,7 @@ class TwitterApi:
             log_.warning("{} tweets found".format(len(result)))
             return result
         except tweepy.RateLimitError as rateerror:
-            warn_rate_error(rateerror, "cursoring")
+            self.warn_rate_error(rateerror, "cursoring")
         except tweepy.TweepError as twerror:
             print("Error {} reading tweets: {}".format(twerror.api_code, twerror.reason))
         return []
@@ -95,7 +99,7 @@ class TwitterApi:
                 include_ext_alt_text=True
             ))
         except tweepy.RateLimitError as rateerror:
-            warn_rate_error(rateerror, "getting tweet")
+            self.warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:
             print("Error {} reading tweet {}: {}".format(twerror.api_code, tweet_id, twerror.reason))
         return None

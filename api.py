@@ -22,17 +22,13 @@ class ReadWriteApi(TwitterApi):
     def __init__(self):
         super().__init__()
 
-    def warn_rate_error(self, rate_err, description):
-        log_.critical("Rate limit violated at {}: {}".format(description, rate_err.reason))
-        super().print_rate_limit()
-
     def tweet_single(self, text, **kwargs):
         super().tweet_single(text, **kwargs)
         try:
             new_tweet = self.twit.update_status(text, **kwargs)
             return new_tweet.id
         except tweepy.RateLimitError as rateerror:
-            warn_rate_error(rateerror, "tweeting")
+            self.warn_rate_error(rateerror, "tweeting")
             return 0
         except tweepy.TweepError as twerror:
             if twerror.api_code == 187: # duplicate tweet
