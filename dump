@@ -86,7 +86,7 @@ def write_dump_list(sql, target_path, name, **kwargs):
         print(table_footer(), file=df)
         print(html_footer(), file=df)
 
-sql = Database('readonly', args.verbose)
+sql = Database('readonly')
 sources = get_sources(sql)
 sources_list = create_sources_list(sources)
 links_list = get_links_list()

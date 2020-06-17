@@ -18,7 +18,7 @@ args = parser.parse_args()
 if args.verbose is None:
     args.verbose = 0
 
-sql = Database('readwrite', args.verbose)
+sql = Database('readwrite')
 
 if args.list:
     sql.cursor.execute("""

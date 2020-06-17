@@ -79,7 +79,7 @@ parser.add_argument('--mode',
                    )
 args = parser.parse_args()
 
-twapi = api.get_api_object('readonly', 1000)
+twapi = api.get_api_object('readonly')
 
 tid = args.id
 if tid is None:
