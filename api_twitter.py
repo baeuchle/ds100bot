@@ -125,3 +125,10 @@ class TwitterApi:
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "is_followed @{}".format(user.screen_name))
             return False
+
+    def get_other_tweet(self, other_id, tlist):
+        if other_id is None:
+            return None
+        if other_id in tlist:
+            return None
+        return self.get_tweet(other_id)

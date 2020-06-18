@@ -1,5 +1,6 @@
 # pylint: disable=C0114
 
+import react
 import log
 log_ = log.getLogger(__name__)
 
@@ -97,3 +98,51 @@ class Tweet:
         return [[ht['text'], ht['indices']]
                 for ht in self.original.entities['hashtags']
                 if '#' + ht['text'] in candidate_list]
+
+    def is_eligible(self, myself):
+        """
+        Returns false if this is a tweet from the bot itself
+        or is a pure retweet
+        """
+        if self.author().screen_name == myself.screen_name:
+            log_.debug("Not replying to my own tweets")
+            return False
+        if self.is_retweet():
+            log_.debug("Not processing pure retweets")
+            return False
+        return True
+
+
+    def get_mode(self, myself, magic):
+        if self.is_explicit_mention(myself) or self.has_hashtag(magic):
+            return 'all'
+        return None
+
+    def process_other_tweets(self, tweet_list, myself, magic, apis):
+        for other_id in self.quoted_status_id(), self.in_reply_id():
+            other_tweet = apis.twitter.get_other_tweet(other_id, tweet_list)
+            if other_tweet is None:
+                continue
+            other_tweet.process_as_other(myself, magic, apis, self)
+
+    def default_magic_hashtag(self, magic):
+        dmt_list = [t[0] for t in self.hashtags(magic)]
+        dmt = 'DS100'
+        if len(dmt_list) > 0:
+            dmt = dmt_list[0]
+        return dmt
+
+    def process_as_other(self, myself, magic, apis, orig_tweet):
+        if not self.is_eligible(myself):
+            return
+        if self.is_mention(myself):
+            log_.info("Not processing other tweet because it already mentions me")
+            return
+        if self.has_hashtag(magic):
+            log_.info(
+            "Not processing other tweet because it already has the magic hashtag")
+            return
+        mode = orig_tweet.get_mode(myself, magic)
+        dmt = orig_tweet.default_magic_hashtag(magic)
+        log_.debug("Processing tweet %d mode '%s' default magic hash tag %s", self.id, mode, dmt)
+        react.process_tweet(self, apis, magic, modus=mode, default_magic_tag=dmt)
