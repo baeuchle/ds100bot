@@ -327,6 +327,19 @@ def mocked_tweets():
         in_reply_to_screen_name=User.notfollowed.screen_name
         )))
     list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet my own will be quoted #FF bot%tl%ab%204',
+        id=204,
+        user=User.theBot
+        )))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet quotes myself, @_ds_100! bot%tl%ab%pr%re[204]%224',
+        id=224,
+        entities={'user_mentions': [User.theBot.mention(26)]},
+        user=User.followed,
+        in_reply_to_status_id=204,
+        in_reply_to_screen_name=User.theBot.screen_name
+        )))
+    list_of_tweets.append(Tweet(TweepyMock(
         full_text='Hallo @_ds_100, do you know $1733? bot%tl%xm%ab[1,$]%issue[8]%301',
         expected_answer='1733: Hannover --Kassel-- - Würzburg',
         id=301,
