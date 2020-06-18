@@ -513,6 +513,15 @@ def mocked_tweets():
         id=440,
         user=User.followed
         )))
+    list_of_tweets.append(Tweet(TweepyMock(
+        full_text='This tweet media w/o ext_alt: #_FFM #HB bot%tl%mt%mf%441',
+        expected_answer='FFM#HB: Frankfurt Hauptbahnhof',
+        extended_entities={'media': [{},
+                                     {}
+                                    ]},
+        id=441,
+        user=User.followed
+        )))
     return list_of_tweets
 
 def mocked_source():
