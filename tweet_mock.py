@@ -92,11 +92,11 @@ User.notfollowed = User(id=12, id_str='12',
                         description='Fake: This user is not followed by the bot.',
                         follows=False)
 User.followers = []
-for i in range(21,26):
+for i in range(21, 26):
     User.followers.append(User(id=i, name='Follower', screen_name='follower{}'.format(i),
                                follows=True))
 User.nonfollowers = []
-for i in range(31,37):
+for i in range(31, 37):
     User.nonfollowers.append(User(id=i, name='Nonfollower', screen_name='otherone{}'.format(i),
                                   follows=False))
 
@@ -231,7 +231,7 @@ def mocked_tweets():
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='@_ds_100 #entfolgen bot%im%fe%154',
         id=154,
-        display_text_range=[10,52],
+        display_text_range=[10, 52],
         entities={'user_mentions': [User.theBot.mention(0)]},
         user=User.followers[3]
         )))
@@ -260,7 +260,7 @@ def mocked_tweets():
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='@_ds_100 #folgenbitte bot%im%fs%164',
         id=164,
-        display_text_range=[10,62],
+        display_text_range=[10, 62],
         entities={'user_mentions': [User.theBot.mention(0)]},
         user=User.nonfollowers[3]
         )))
@@ -272,7 +272,7 @@ def mocked_tweets():
         )))
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='@_ds_100 This tweet xm @_ds_100 in a reply #folgenbitte bot%nl%xm%im%fs%issue[9]%204',
-        display_text_range=[9,75],
+        display_text_range=[9, 75],
         id=166,
         entities={'user_mentions': [
             User.theBot.mention(0),
@@ -291,7 +291,7 @@ def mocked_tweets():
         full_text='This tweet explicitly mentions @_ds_100 and quotes tweet bot%xm%rt[201]%221: https://t.co/f4k3url_12',
         expected_answer=None,
         id=221,
-        entities={ 'user_mentions': [User.theBot.mention(31)] },
+        entities={'user_mentions': [User.theBot.mention(31)]},
         user=User.notfollowed,
         quoted_status_id=201
         )))
@@ -328,7 +328,7 @@ def mocked_tweets():
         full_text='Hallo @_ds_100, do you know $1733? bot%tl%xm%ab[1,$]%issue[8]%301',
         expected_answer='1733: Hannover --Kassel-- - Würzburg',
         id=301,
-        entities={'user_mentions': [ User.theBot.mention(6) ]},
+        entities={'user_mentions': [User.theBot.mention(6)]},
         user=User.followed
         )))
     list_of_tweets.append(Tweet(TweepyMock(
@@ -491,9 +491,9 @@ def mocked_tweets():
     list_of_tweets.append(Tweet(TweepyMock(
         full_text='This tweet media: #_FFM #HB #DS100 bot%tl%mt%mf%440',
         expected_answer='FFM#HB: Frankfurt Hauptbahnhof\nRALP: Alpirsbach\nHE: Emden\nMS: München Süd',
-        extended_entities={'media': [ {'ext_alt_text': '#RALP' },
-                                      {'ext_alt_text': '#_CH #HE' },
-                                      {'ext_alt_text': '#MS' }
+        extended_entities={'media': [{'ext_alt_text': '#RALP'},
+                                     {'ext_alt_text': '#_CH #HE'},
+                                     {'ext_alt_text': '#MS'}
                                     ]},
         id=440,
         user=User.followed

@@ -183,7 +183,7 @@ def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
             payload = match[2]
             payload = payload[0] + payload[1:].replace('_', ' ')
             payload = ' '.join(payload.split())
-            parameters = { 'abk': payload,
+            parameters = {'abk': payload,
                 'sigil': sigil,
                 'magic_tag': source if source != "" else tag,
                 'abbr1': source if source != "" else tagsource,
