@@ -50,7 +50,7 @@ def notify_new_version(api):
         return
     status = "Ich twittere nun von Version {}".format(git_object.describe())
     cl = get_changelog(api.database)
-    if not cl.strip() == "":
+    if cl.strip() != "":
         status += ":\n" + cl
     if api.twitter.tweet(
             status,
