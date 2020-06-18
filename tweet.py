@@ -47,7 +47,7 @@ class Tweet:
         Checks if this tweet is a pure retweet. It is not clear if this doesn't
         maybe find commented retweets.
         """
-        return 'retweeted_status' in self.original.raw and self.original.raw['retweeted_status']
+        return 'retweeted_status' in vars(self.original) and self.original.retweeted_status
 
     def is_mention(self, bot):
         """
