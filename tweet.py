@@ -11,10 +11,11 @@ class Tweet:
         self.original = tweepy_tweet
         if 'extended_entities' in tweepy_tweet.__dict__:
             ee = tweepy_tweet.extended_entities
-            alt_text = '\u200b'.join([m['ext_alt_text']
-                                      for m in ee['media']
-                                      if 'ext_alt_text' in m])
-            self.text = '\u200b'.join([self.text, alt_text])
+            if 'media' in ee:
+                alt_text = '\u200b'.join([m['ext_alt_text']
+                                          for m in ee['media']
+                                          if 'ext_alt_text' in m])
+                self.text = '\u200b'.join([self.text, alt_text])
 
     def __str__(self):
         if log_.getEffectiveLevel() < 30:
