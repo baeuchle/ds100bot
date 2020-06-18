@@ -60,7 +60,9 @@ class TwitterApi:
 
     def all_relevant_tweets(self, highest_id, tag):
         results = {}
-        for tl in self.mentions(highest_id), self.timeline(highest_id), self.hashtag(tag, highest_id):
+        for tl in (self.mentions(highest_id),
+                   self.timeline(highest_id),
+                   self.hashtag(tag, highest_id)):
             for t in tl:
                 if not t.has_hashtag(['NOBOT'], case_sensitive=False):
                     results[t.id] = t
@@ -100,7 +102,10 @@ class TwitterApi:
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:
-            print("Error {} reading tweet {}: {}".format(twerror.api_code, tweet_id, twerror.reason))
+            log_.critical("Error %s reading tweet %s: %s",
+                          twerror.api_code,
+                          tweet_id,
+                          twerror.reason)
         return None
 
     def follow(self, user):

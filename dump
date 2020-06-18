@@ -127,5 +127,5 @@ sql.cursor.execute("""
         AND
             blacklist.Abk = shortstore.Abk
     """)
-bl_explain = """  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:') beantwortet:</p>"""
+bl_explain = "  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:') beantwortet:</p>"
 write_dump_list(sql, target_path, 'blacklist', before_table=bl_explain)

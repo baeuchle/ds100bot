@@ -40,7 +40,8 @@ def handle_list(tweet_list, apis, magic_tags):
                     if other_tweet.is_mention(apis.twitter.myself):
                         log_.info("Not processing other tweet because it already mentions me")
                     if other_tweet.has_hashtag(magic_tags):
-                        log_.info("Not processing other tweet because it already has the magic hashtag")
+                        log_.info(
+                            "Not processing other tweet because it already has the magic hashtag")
                     else:
                         log_.info("Processing tweet %d mode 'all'", tweet.id)
                         dmt_list = [t[0] for t in tweet.hashtags(magic_tags)]

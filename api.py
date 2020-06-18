@@ -15,7 +15,8 @@ class ReadOnlyApi(TwitterApi):
     def __init__(self):
         super().__init__()
         log_.setLevel(log_.getEffectiveLevel() - 10)
-        log_.warning('Running from readonly twitter API (read real tweets, do not actually post answers)')
+        log_.warning(
+            'Running from readonly twitter API (read real tweets, do not actually post answers)')
 
 class ReadWriteApi(TwitterApi):
     def tweet_single(self, text, **kwargs):

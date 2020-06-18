@@ -6,7 +6,11 @@ log_ = log.getLogger(__name__)
 follog_ = log.getLogger(__name__ + '.following', '{name} {message}')
 
 def process_tweet(tweet, api, magic_tags, modus=None, default_magic_tag='DS100'):
-    reply = compose_answer(tweet.text, api.database, tweet.hashtags(magic_tags), modus, default_magic_tag)
+    reply = compose_answer(tweet.text,
+                           api.database,
+                           tweet.hashtags(magic_tags),
+                           modus,
+                           default_magic_tag)
     if len(reply.strip()) == 0:
         log_.info("No expandable content found")
         return

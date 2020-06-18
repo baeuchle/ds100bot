@@ -92,4 +92,6 @@ class Tweet:
         Returns a list of all the entries in candidate_list that are
         present as hashtag in the tweet.
         """
-        return [[ht['text'], ht['indices']] for ht in self.original.entities['hashtags'] if '#' + ht['text'] in candidate_list]
+        return [[ht['text'], ht['indices']]
+                for ht in self.original.entities['hashtags']
+                if '#' + ht['text'] in candidate_list]

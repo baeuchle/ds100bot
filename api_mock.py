@@ -104,10 +104,12 @@ class MockApi(TwitterApi):
         for l in User.followers, User.nonfollowers:
             for u in l:
                 if u.follows == u.follow_after:
-                    stat_log.info("User @%s has correct following behaviour %s", u.screen_name, u.follows)
+                    stat_log.info("User @%s has correct following behaviour %s",
+                                  u.screen_name, u.follows)
                     goodflw += 1
                 else:
-                    stat_log.error("User @%s doesn't follow correctly (should %s, does %s)", u.screen_name, u.follow_after, u.follows)
+                    stat_log.error("User @%s doesn't follow correctly (should %s, does %s)",
+                                   u.screen_name, u.follow_after, u.follows)
                     bad_flw += 1
         stat_log.log(51, "ALL GOOD:               %2d", all_ok)
         stat_log.log(51, "INCORRECT TEXT:         %2d", badrpl)

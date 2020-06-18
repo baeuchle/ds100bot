@@ -30,7 +30,8 @@ User.theBot = User(
         name='DS100-Bot',
         screen_name='_ds_100',
         location='',
-        description='Expandiert DS100-Abkürzungen. #DS100 und #$KURZ verwenden, oder den Bot taggen. #folgenbitte und der Bot findet #$KURZ ohne Aufforderung. Siehe Webseite.',
+        description='''Expandiert DS100-Abkürzungen. #DS100 und #$KURZ verwenden, oder den Bot
+        taggen. #folgenbitte und der Bot findet #$KURZ ohne Aufforderung. Siehe Webseite.''',
         url='https://t.co/s7A9JO049r',
         entities={
                 'url': {
@@ -61,8 +62,10 @@ User.theBot = User(
         profile_background_image_url=None,
         profile_background_image_url_https=None,
         profile_background_tile=False,
-        profile_image_url='http://pbs.twimg.com/profile_images/1140888262619385856/dODzmIW9_normal.png',
-        profile_image_url_https='https://pbs.twimg.com/profile_images/1140888262619385856/dODzmIW9_normal.png',
+        profile_image_url=
+            'http://pbs.twimg.com/profile_images/1140888262619385856/dODzmIW9_normal.png',
+        profile_image_url_https=
+            'https://pbs.twimg.com/profile_images/1140888262619385856/dODzmIW9_normal.png',
         profile_link_color='1DA1F2',
         profile_sidebar_border_color='C0DEED',
         profile_sidebar_fill_color='DDEEF6',
@@ -76,14 +79,24 @@ User.theBot = User(
         notifications=False,
         translator_type='none',
         follows=True)
-User.followed = User(id=11, id_str='11', name='Followee account', screen_name='followee', description='Fake: This user is followed by the bot.', follows=True)
-User.notfollowed = User(id=12, id_str='12', name='Some other Account', screen_name='someotheraccount', description='Fake: This user is not followed by the bot.', follows=False)
+User.followed = User(id=11, id_str='11',
+                     name='Followee account',
+                     screen_name='followee',
+                     description='Fake: This user is followed by the bot.',
+                     follows=True)
+User.notfollowed = User(id=12, id_str='12',
+                        name='Some other Account',
+                        screen_name='someotheraccount',
+                        description='Fake: This user is not followed by the bot.',
+                        follows=False)
 User.followers = []
 for i in range(21,26):
-    User.followers.append(User(id=i, name='Follower', screen_name='follower{}'.format(i), follows=True))
+    User.followers.append(User(id=i, name='Follower', screen_name='follower{}'.format(i),
+                               follows=True))
 User.nonfollowers = []
 for i in range(31,37):
-    User.nonfollowers.append(User(id=i, name='Nonfollower', screen_name='otherone{}'.format(i), follows=False))
+    User.nonfollowers.append(User(id=i, name='Nonfollower', screen_name='otherone{}'.format(i),
+                                  follows=False))
 
 class TweepyMock:
     def __init__(self, **kwargs):
@@ -138,6 +151,7 @@ class TweepyMock:
         return result
 
 def mocked_tweets():
+    # pylint: disable=C0301
     # signatures bot*:
     #  tl/nl: in timeline / not in timeline
     #  ab/ns/xs/na: abbreviation present (#FF, $123) / no sigil (FF) / explicit source (#DS:FF) / no abbreviation present

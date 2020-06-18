@@ -37,7 +37,9 @@ def arguments():
                         action='count')
     parser.add_argument('--external',
                         dest='external',
-                        help='(Mock API only) Read mocked tweet objects not from the internal list, but from tweet_details.py. That file may be created with get_tweet.py.',
+                        help='''(Mock API only) Read mocked tweet objects not from the internal
+                        list, but from tweet_details.py. That file may be created with
+                        get_tweet.py.''',
                         required=False,
                         action='store_true',
                         default=False
