@@ -58,5 +58,4 @@ def handle_list(tweet_list, apis, magic_tags):
                         )
     if len(tweet_list) > 0:
         return max(tweet_list.keys())
-    else:
-        return 0
+    return 0
