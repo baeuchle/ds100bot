@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+'''Helper for tweeting bot statistics'''
+
 import argparse
 import datetime
 import api
@@ -14,7 +16,7 @@ january_first = first.replace(month=1)
 first_last_month = (first - one_day).strftime("%Y%m01")
 first_last_year = (january_first - one_day).strftime("%Y0101")
 
-parser = argparse.ArgumentParser(description='Helper for tweeting bot statistics')
+parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--readwrite',
                     dest='rw',
                     help='Actually send tweets',

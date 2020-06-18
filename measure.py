@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import json
 import re
 import unicodedata

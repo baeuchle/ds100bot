@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Import abbreviation lists to the database"""
+
 import csv
 from datetime import date
 import os

@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import datetime
 import sqlite3
 import regex as re

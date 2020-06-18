@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+"""Helper program for management of the bot blacklist"""
+
 from database import Database
 import argparse
 import sys
 
-parser = argparse.ArgumentParser(description='Hilfsprogramm zur Verwaltung der DS100-Bot-Blackliste.')
+parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--list', action='store_true', required=False, default=False)
 parser.add_argument('--add', action='store', required=False)
 # parser.add_argument('--remove', action='store', required=False)

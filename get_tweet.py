@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""Helper program for dumping details of real tweets
+
+Use this to generate test cases from the actual representation of tweets from the twitter API"""
+
 import argparse
 import pprint
 from textwrap import dedent
@@ -49,7 +53,7 @@ def print_tweet_details(tw, targetfile):
         repr(twapi.is_followed(tw.user))
     ), file=targetfile)
 
-parser = argparse.ArgumentParser(description='Helper program for dumping tweet details')
+parser = argparse.ArgumentParser(description=__doc__)
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('--id',
                    dest='id',

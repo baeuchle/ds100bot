@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import logging
 #pylint: disable=W0611
 from logging import DEBUG, INFO, WARNING, ERROR, CRITICAL

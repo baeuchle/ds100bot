@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import log
 log_ = log.getLogger(__name__)
 

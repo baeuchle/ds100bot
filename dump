@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Helper program to dump the bot database"""
+
 from database import Database
 import argparse
 from pathlib import Path
@@ -54,7 +56,7 @@ def create_sources_list(sources_):
         print(ul, file=dsnip)
     return ul
 
-parser = argparse.ArgumentParser(description='Hilfsprogramm zum Export der Bot-Datenbank')
+parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
+
 import argparse
 from collections import namedtuple
 import log
@@ -11,7 +13,7 @@ from handle_list import handle_list
 import since
 
 def arguments():
-    parser = argparse.ArgumentParser(description='Bot zur DS100-Expansion auf Twitter')
+    parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--readwrite',
                         dest='rw',
                         help='equivalent to --api readwrite --db readwrite',

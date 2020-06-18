@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 from GitVersion import Git
 
 git_object = Git()

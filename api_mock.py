@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import tweepy # for exceptions
 from api_twitter import TwitterApi
 

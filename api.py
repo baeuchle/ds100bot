@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import tweepy
 from api_twitter import TwitterApi
 from api_mock import MockApi

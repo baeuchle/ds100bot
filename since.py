@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 def get_since_id(sql):
     sql.cursor.execute("""
         SELECT

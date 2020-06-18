@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import tweepy
 from tweet import Tweet
 from measure import split_text

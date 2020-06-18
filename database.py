@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import sqlite3
 import log
 log_ = log.getLogger(__name__)
