@@ -168,6 +168,7 @@ def process_magic(magic_tags, length, default='DS100'):
     return magic_tags
 
 def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
+    # pylint: disable=R0914
     short_list = []
     # generate answer
     generated_content = ""
