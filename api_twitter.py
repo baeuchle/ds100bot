@@ -9,7 +9,7 @@ tweet_log_ = log.getLogger('tweet', '{message}')
 
 class TwitterApi:
     def __init__(self):
-        import credentials
+        import credentials # pylint: disable=C0415
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.twit = tweepy.API(auth)
