@@ -77,7 +77,7 @@ def write_dump_list(sql_, target_path_, name, **kwargs):
         print("  <hr/>", file=df)
         print(links_list, file=df)
         print("  <hr/>", file=df)
-        if (kwargs.get('before_table', False)):
+        if kwargs.get('before_table', False):
             print(kwargs['before_table'], file=df)
         print(table_header(), file=df)
         for entry_row in sql_.cursor.fetchall():
