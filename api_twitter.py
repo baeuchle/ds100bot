@@ -46,7 +46,7 @@ class TwitterApi:
                 reply_id = new_reply_id
         return reply_id
 
-    def tweet_single(self, text, **_):
+    def tweet_single(self, text, **_): # pylint: disable=R0201
         if len(text) == 0:
             log_.error("Empty tweet?")
             return -1
@@ -110,10 +110,10 @@ class TwitterApi:
                           twerror.reason)
         return None
 
-    def follow(self, user):
+    def follow(self, user): # pylint: disable=R0201
         log_.warning("Follow @%s", user.screen_name)
 
-    def defollow(self, user):
+    def defollow(self, user): # pylint: disable=R0201
         log_.warning("Defollow @%s", user.screen_name)
 
     def is_followed(self, user):
