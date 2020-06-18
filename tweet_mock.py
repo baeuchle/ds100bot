@@ -8,6 +8,7 @@ import log
 log_ = log.getLogger(__name__)
 
 class User:
+    # pylint: disable=R0903
     def __init__(self, **kwargs):
         self.screen_name = kwargs['screen_name']
         self.id = kwargs['id']
@@ -101,6 +102,7 @@ for i in range(31, 37):
                                   follows=False))
 
 class TweepyMock:
+    # pylint: disable=R0902
     def __init__(self, **kwargs):
         self.raw = kwargs
         self.add_to_raw('expected_answer', None)
@@ -153,7 +155,7 @@ class TweepyMock:
         return result
 
 def mocked_tweets():
-    # pylint: disable=C0301
+    # pylint: disable=C0301, R0915
     # signatures bot*:
     #  tl/nl: in timeline / not in timeline
     #  ab/ns/xs/na: abbreviation present (#FF, $123) / no sigil (FF) / explicit source (#DS:FF) / no abbreviation present
