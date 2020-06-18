@@ -2,9 +2,9 @@
 
 """Helper program to dump the bot database"""
 
-from database import Database
 import argparse
 from pathlib import Path
+from database import Database
 from GitVersion import Git
 
 def html_header(title=""):

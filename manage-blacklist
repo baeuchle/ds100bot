@@ -2,9 +2,9 @@
 
 """Helper program for management of the bot blacklist"""
 
-from database import Database
 import argparse
 import sys
+from database import Database
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--list', action='store_true', required=False, default=False)
