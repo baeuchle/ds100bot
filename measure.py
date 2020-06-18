@@ -1,3 +1,5 @@
+# pylint: disable=C0114
+
 import json
 import re
 import unicodedata
@@ -5,7 +7,7 @@ import unicodedata
 weight_config = {}
 with open('config/api_weights.json') as js:
     weight_config = json.load(js)
-        
+
 def measure_tweet_length(text):
     normalized = unicodedata.normalize('NFC', text)
     # this isn't the correct RE for twitter URLs, but
@@ -27,16 +29,16 @@ def is_short_enough(text):
     return measure_tweet_length(text) <= 0
 
 next_separator = {
-    '​': '\n',
+    '\u200b': '\n',
     '\n': '\t',
     '\t': ' ',
     ' ': ''
     }
 replaced_separator = {
-    '​': '',
+    '\u200b': '',
     }
 
-def split_text(text, separator='​'):
+def split_text(text, separator='\u200b'):
     # tweet candidates have zero-width space where they may be split sensibly:
     possible_parts = text.split(separator)
     status_list = []

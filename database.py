@@ -1,14 +1,17 @@
+# pylint: disable=C0114
+
 import sqlite3
+import log
+log_ = log.getLogger(__name__)
 
 class Database:
-    def __init__(self, db, verbose):
-        self.verbose = verbose
+    def __init__(self, db):
         self.sql = sqlite3.connect('info.db')
         self.sql.row_factory = sqlite3.Row
         self.cursor = self.sql.cursor()
         self.readonly = (db == 'readonly')
-        if self.verbose >= 0 and self.readonly:
-            print('Running with readonly database')
+        if self.readonly:
+            log_.info('Running with readonly database')
 
     def close_sucessfully(self):
         self.cursor.close()

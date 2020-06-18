@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git commit --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score)
+
+pylint score: $(pylint --reports=n *.py dump manage-blacklist | grep has\ been\ rated | grep -o '[0-9]\+\.[0-9][0-9]' | head -n 1)"

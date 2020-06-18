@@ -1,31 +1,38 @@
-from tweet import Tweet
+# pylint: disable=C0114
+
 import tweepy
+from tweet import Tweet
 from measure import split_text
+import log
+log_ = log.getLogger(__name__)
+tweet_log_ = log.getLogger('tweet', '{message}')
 
 class TwitterApi:
-    def __init__(self, verbose):
-        import credentials
+    def __init__(self):
+        import credentials # pylint: disable=C0415
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.twit = tweepy.API(auth)
         self.myself = self.twit.me()
-        self.verbose = verbose
-    
+
+    def warn_rate_error(self, rate_err, description):
+        log_.critical("Rate limit violated at %s: %s", description, rate_err.reason)
+        self.print_rate_limit()
+
     def print_rate_limit(self):
-        if self.verbose <= 0:
+        if log_.getEffectiveLevel() > 49:
             return
         rls = self.twit.rate_limit_status()
         res = rls['resources']
         for r in res:
-            rr = res[r]
             for l in res[r]:
                 rrl = res[r][l]
                 if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
-                    print("Resource limit for {} low: {} of {} remaining".format(
+                    log_.critical("Resource limit for %s low: %s of %s remaining",
                         l,
                         rrl['remaining'],
                         rrl['limit']
-                    ))
+                    )
 
     # Return new tweet id, 0 if RateLimit (= try again), -1 if other
     # error (fix before trying again).
@@ -39,22 +46,25 @@ class TwitterApi:
                 reply_id = new_reply_id
         return reply_id
 
-    def tweet_single(self, text, **kwargs):
+    def tweet_single(self, text, **_): # pylint: disable=R0201
         if len(text) == 0:
-            print("Empty tweet?")
+            log_.error("Empty tweet?")
             return -1
-        if self.verbose > 1:
+        if tweet_log_.isEnabledFor(log.WARNING):
             lines = text.splitlines()
             length = max([len(l) for l in lines])
-            print("▄{}┓".format('━'*(length+2)))
+            tt = "▄{}┓\n".format('━'*(length+2))
             for l in lines:
-                print(("█ {{:{}}} ┃".format(length)).format(l))
-            print("▀{}┛".format('━'*(length+2)))
+                tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
+            tt += "▀{}┛".format('━'*(length+2))
+            tweet_log_.warning(tt)
         return 0
 
     def all_relevant_tweets(self, highest_id, tag):
         results = {}
-        for tl in self.mentions(highest_id), self.timeline(highest_id), self.hashtag(tag, highest_id):
+        for tl in (self.mentions(highest_id),
+                   self.timeline(highest_id),
+                   self.hashtag(tag, highest_id)):
             for t in tl:
                 if not t.has_hashtag(['NOBOT'], case_sensitive=False):
                     results[t.id] = t
@@ -71,15 +81,15 @@ class TwitterApi:
 
     def cursor(self, task, **kwargs):
         kwargs['tweet_mode'] = 'extended'
+        kwargs['include_ext_alt_text'] = True
         try:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
-                result.append(Tweet(t, self.verbose))
-            if self.verbose > 1:
-                print ("{} tweets found".format(len(result)))
+                result.append(Tweet(t))
+            log_.warning("%d tweets found", len(result))
             return result
         except tweepy.RateLimitError as rateerror:
-            warn_rate_error(rateerror, "cursoring")
+            self.warn_rate_error(rateerror, "cursoring")
         except tweepy.TweepError as twerror:
             print("Error {} reading tweets: {}".format(twerror.api_code, twerror.reason))
         return []
@@ -88,21 +98,23 @@ class TwitterApi:
         try:
             return Tweet(self.twit.get_status(
                 tweet_id,
-                tweet_mode='extended'
-            ), self.verbose)
+                tweet_mode='extended',
+                include_ext_alt_text=True
+            ))
         except tweepy.RateLimitError as rateerror:
-            warn_rate_error(rateerror, "getting tweet")
+            self.warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:
-            print("Error {} reading tweet {}: {}".format(twerror.api_code, tweet_id, twerror.reason))
+            log_.critical("Error %s reading tweet %s: %s",
+                          twerror.api_code,
+                          tweet_id,
+                          twerror.reason)
         return None
 
-    def follow(self, user):
-        if self.verbose > 2:
-            print("Follow @{}".format(user.screen_name))
+    def follow(self, user): # pylint: disable=R0201
+        log_.warning("Follow @%s", user.screen_name)
 
-    def defollow(self, user):
-        if self.verbose > 2:
-            print("Defollow @{}".format(user.screen_name))
+    def defollow(self, user): # pylint: disable=R0201
+        log_.warning("Defollow @%s", user.screen_name)
 
     def is_followed(self, user):
         try:
@@ -111,5 +123,12 @@ class TwitterApi:
                 target_id=user.id
             )[0].following
         except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error("is_followed @{}".format(user.screen_name))
+            self.warn_rate_error(rateerror, "is_followed @{}".format(user.screen_name))
             return False
+
+    def get_other_tweet(self, other_id, tlist):
+        if other_id is None:
+            return None
+        if other_id in tlist:
+            return None
+        return self.get_tweet(other_id)

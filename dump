@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-from database import Database
+"""Helper program to dump the bot database"""
+
 import argparse
 from pathlib import Path
+from database import Database
 from GitVersion import Git
 
 def html_header(title=""):
@@ -29,7 +31,7 @@ def get_links_list():
     with open("doc/links.snip", 'r') as links:
         return links.read().replace('VERSION', Git().describe('--dirty'))
 
-def get_sources(sql):
+def get_sources(sql_):
     sql.cursor.execute("""
         SELECT
             source,
@@ -39,14 +41,14 @@ def get_sources(sql):
         GROUP BY
             source
     """)
-    return sql.cursor.fetchall()
+    return sql_.cursor.fetchall()
 
-def create_sources_list(sources):
+def create_sources_list(sources_):
     ul = """  <ul class="flat">
    <li>Alle Quellen:</li>
    <li><a href="/dumps/blacklist.html">Blacklist</a></li>
 """
-    for s in sources:
+    for s in sources_:
         ul += """   <li><a href="/dumps/{}.html">{}</a></li>
 """.format(s[0], s[0])
     ul += """  </ul>"""
@@ -54,7 +56,7 @@ def create_sources_list(sources):
         print(ul, file=dsnip)
     return ul
 
-parser = argparse.ArgumentParser(description='Hilfsprogramm zum Export der Bot-Datenbank')
+parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',
@@ -67,18 +69,18 @@ parser.add_argument('--max-entries',
                     default=2000,)
 args = parser.parse_args()
 
-def write_dump_list(sql, target_path, name, **kwargs):
-    with (target_path / (name + ".html")).open(mode='w') as df:
+def write_dump_list(sql_, target_path_, name, **kwargs):
+    with (target_path_ / (name + ".html")).open(mode='w') as df:
         print(html_header("{}".format(name)), file=df)
         print("""  <h1>Daten aus Quelle {}</h1>""".format(name), file=df)
         print(sources_list, file=df)
         print("  <hr/>", file=df)
         print(links_list, file=df)
         print("  <hr/>", file=df)
-        if (kwargs.get('before_table', False)):
+        if kwargs.get('before_table', False):
             print(kwargs['before_table'], file=df)
         print(table_header(), file=df)
-        for entry_row in sql.cursor.fetchall():
+        for entry_row in sql_.cursor.fetchall():
             print("""    <tr>
      <th id="{}">{}</th>
      <td>{}</td>
@@ -86,7 +88,7 @@ def write_dump_list(sql, target_path, name, **kwargs):
         print(table_footer(), file=df)
         print(html_footer(), file=df)
 
-sql = Database('readonly', args.verbose)
+sql = Database('readonly')
 sources = get_sources(sql)
 sources_list = create_sources_list(sources)
 links_list = get_links_list()
@@ -127,5 +129,5 @@ sql.cursor.execute("""
         AND
             blacklist.Abk = shortstore.Abk
     """)
-bl_explain = """  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:') beantwortet:</p>"""
+bl_explain = "  <p>Die folgenden Einträge werden nicht ohne Quellangabe ('#DS:') beantwortet:</p>"
 write_dump_list(sql, target_path, 'blacklist', before_table=bl_explain)

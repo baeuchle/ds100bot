@@ -13,6 +13,7 @@ tdir=/var/www/ds100
 if [ -d "$tdir" ]; then
     echo "Copying data…"
     rsync -via output/ $tdir/
+    rsync -via bot.css $tdir/
     chmod 664 $tdir/*.*
     chmod 664 $tdir/*/*.*
 else

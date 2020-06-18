@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
-from database import Database
+"""Helper program for management of the bot blacklist"""
+
 import argparse
 import sys
+from database import Database
 
-parser = argparse.ArgumentParser(description='Hilfsprogramm zur Verwaltung der DS100-Bot-Blackliste.')
+parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--list', action='store_true', required=False, default=False)
 parser.add_argument('--add', action='store', required=False)
 # parser.add_argument('--remove', action='store', required=False)
@@ -18,7 +20,7 @@ args = parser.parse_args()
 if args.verbose is None:
     args.verbose = 0
 
-sql = Database('readwrite', args.verbose)
+sql = Database('readwrite')
 
 if args.list:
     sql.cursor.execute("""
@@ -89,5 +91,3 @@ if not args.add is None:
     else:
         print("Schon eingetragen!")
         sys.exit(0)
-
-pass

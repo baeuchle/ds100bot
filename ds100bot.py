@@ -1,152 +1,108 @@
 #!/usr/bin/python3
 
-import api
-from database import Database
-import gitdescribe as git
-import react
-import since
+"""Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
 
 import argparse
-import sys
+from collections import namedtuple
+import log
 
-parser = argparse.ArgumentParser(description='Bot zur DS100-Expansion auf Twitter')
-parser.add_argument('--readwrite',
-                    dest='rw',
-                    help='equivalent to --api readwrite --db readwrite',
-                    required=False,
-                    action='store_true',
-                    default=False)
-parser.add_argument('--api',
-                    dest='api',
-                    help='API to use: readwrite, readonly, mock',
-                    required=False,
-                    action='store',
-                    default=None)
-parser.add_argument('--db',
-                    dest='db',
-                    help='Database to use: readwrite, readonly',
-                    required=False,
-                    action='store',
-                    default=None)
-parser.add_argument('--verbose', '-v',
-                    dest='verbose',
-                    help='Output lots of stuff',
-                    required=False,
-                    action='count')
-parser.add_argument('--external',
-                    dest='external',
-                    help='(Mock API only) Read mocked tweet objects not from the internal list, but from tweet_details.py. That file may be created with get_tweet.py.',
-                    required=False,
-                    action='store_true',
-                    default=False
-                   )
-parser.add_argument('--parse_one',
-                    dest='parse_one',
-                    help='(Mock API only) Parse only mocked tweet with this ID',
-                    required=False,
-                    action='store',
-                    default=None
-                   )
-args = parser.parse_args()
+import api as twitter_api
+from database import Database
+import gitdescribe as git
+from handle_list import handle_list
+import since
 
-if args.db is None:
-    if args.rw:
-        args.db = 'readwrite'
-    else:
-        args.db = 'readonly'
-if args.api is None:
-    if args.rw:
-        args.api = 'readwrite'
-    else:
-        args.api = 'readonly'
-if args.verbose is None:
-    args.verbose = 0
+def arguments():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--readwrite',
+                        dest='rw',
+                        help='equivalent to --api readwrite --db readwrite',
+                        required=False,
+                        action='store_true',
+                        default=False)
+    parser.add_argument('--api',
+                        dest='api',
+                        help='API to use: readwrite, readonly, mock',
+                        required=False,
+                        action='store',
+                        default=None)
+    parser.add_argument('--db',
+                        dest='db',
+                        help='Database to use: readwrite, readonly',
+                        required=False,
+                        action='store',
+                        default=None)
+    parser.add_argument('--verbose', '-v',
+                        dest='verbose',
+                        help='Output lots of stuff',
+                        required=False,
+                        action='count')
+    parser.add_argument('--external',
+                        dest='external',
+                        help='''(Mock API only) Read mocked tweet objects not from the internal
+                        list, but from tweet_details.py. That file may be created with
+                        get_tweet.py.''',
+                        required=False,
+                        action='store_true',
+                        default=False
+                       )
+    parser.add_argument('--parse_one',
+                        dest='parse_one',
+                        help='(Mock API only) Parse only mocked tweet with this ID',
+                        required=False,
+                        action='store',
+                        default=None
+                       )
+    args_ = parser.parse_args()
+    if args_.db is None:
+        if args_.rw:
+            args_.db = 'readwrite'
+        else:
+            args_.db = 'readonly'
+    if args_.api is None:
+        if args_.rw:
+            args_.api = 'readwrite'
+        else:
+            args_.api = 'readonly'
+    if args_.verbose is None:
+        args_.verbose = 0
+    args_.verbose = 50 - args_.verbose * 10
+    return args_
 
-# setup twitter API
-twapi = api.get_api_object(args.api, args.verbose,
-external=args.external, parse_one=args.parse_one)
-# setup database
-sql = Database(args.db, args.verbose)
-git.notify_new_version(sql, twapi, args.verbose)
+def setup_log(loglvl):
+    if loglvl <= 0:
+        loglvl = 1
 
-highest_id = since.get_since_id(sql)
+    log.basicConfig(level=loglvl, style='{')
+    return log.getLogger('ds100')
 
-tagsearch, magic_tags = sql.magic_hashtags()
-if args.verbose > 1:
-    print("Magic tags:", magic_tags)
+def setup_apis(args_):
+    api_ = namedtuple('Externals', ['twitter', 'database'])
+    # setup twitter API
+    api_.twitter = twitter_api.get_api_object(args_.api,
+                                              external=args_.external,
+                                              parse_one=args_.parse_one)
+    # setup database
+    api_.database = Database(args_.db)
+    git.notify_new_version(api_)
+    return api_
 
-tweet_list = twapi.all_relevant_tweets(highest_id, tagsearch)
-for id, tweet in tweet_list.items():
-    if args.verbose > 1:
-        print(tweet)
-    # exclude some tweets:
-    if tweet.author().screen_name == twapi.myself.screen_name:
-        if args.verbose > 2:
-            print("Not replying to my own tweets")
-            print("=================")
-        continue
-    if tweet.is_retweet():
-        if args.verbose > 1:
-            print("Not processing pure retweets")
-            print("=================")
-        continue
-    # handle #folgenbitte and #entfolgen and possibly other meta commands, but
-    # only for explicit mentions.
-    if tweet.is_explicit_mention(twapi.myself):
-        if args.verbose > 3:
-            print("Tweet explicitly mentions me")
-        react.process_commands(tweet, twapi, args.verbose)
-    if tweet.has_hashtag(magic_tags):
-        if args.verbose > 3:
-            print("Tweet has magic hashtag")
-    # Process this tweet
-    mode = None
-    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
-        mode = 'all'
-    react.process_tweet(tweet, twapi, sql, args.verbose, magic_tags, mode)
-    # Process quoted or replied-to tweets, only for explicit mentions and magic tags
-    if tweet.is_explicit_mention(twapi.myself) or tweet.has_hashtag(magic_tags):
-        for other_id in tweet.quoted_status_id(), tweet.in_reply_id():
-            if (args.verbose > 2 and not other_id is None) or args.verbose > 3:
-                print("Looking for other tweet", other_id)
-                if other_id in tweet_list:
-                    print("...already in tweet_list")
-            if (not other_id is None) and other_id not in tweet_list:
-                other_tweet = twapi.get_tweet(other_id)
-                if other_tweet is None:
-                    continue
-                # don't process the other tweet if we should have seen it before (this
-                # also prevents recursion via this branch):
-                if other_tweet.is_mention(twapi.myself):
-                    if args.verbose > 1:
-                        print("Not processing other tweet because it already mentions me")
-                        print("=================")
-                if other_tweet.has_hashtag(magic_tags):
-                    if args.verbose > 1:
-                        print("Not processing other tweet because it already has the magic hashtag")
-                        print("=================")
-                else:
-                    if args.verbose > 2:
-                        print("Processing tweet {} mode 'all':".format(tweet.id))
-                        print(tweet)
-                    dmt_list = [t[0] for t in tweet.hashtags(magic_tags)]
-                    dmt = 'DS100'
-                    if len(dmt_list) > 0:
-                        dmt = dmt_list[0]
-                    react.process_tweet(other_tweet, twapi,
-                        sql, args.verbose, magic_tags,
-                        modus='all'
-                            if tweet.is_explicit_mention(twapi.myself)
-                            else None,
-                        default_magic_tag=dmt
-                    )
-    if args.verbose > 3:
-        print("█"*80 + '\n')
+def teardown_apis(api_, apiname, max_id_=0):
+    git.store_version(api_.database)
+    if max_id > 0:
+        since.store_since_id(api_.database, max_id_)
+    if apiname == 'mock':
+        api_.twitter.statistics()
+    api_.database.close_sucessfully()
+    log_.info("Bot finished")
 
-git.store_version(sql)
-if tweet_list:
-    since.store_since_id(sql, max(tweet_list.keys()))
-if args.api == 'mock':
-    twapi.statistics()
+if __name__ == "__main__":
+    args = arguments()
+    log_ = setup_log(args.verbose)
+    api = setup_apis(args)
 
-sql.close_sucessfully()
+    tagsearch, magic_tags = api.database.magic_hashtags()
+    max_id = handle_list(api.twitter.all_relevant_tweets(
+                            since.get_since_id(api.database), tagsearch
+                         ), apis=api, magic_tags=magic_tags)
+    teardown_apis(api, args.api, max_id)

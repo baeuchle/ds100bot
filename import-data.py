@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Import abbreviation lists to the database"""
+
 import csv
 from datetime import date
 import os
@@ -48,7 +50,7 @@ for f in os.listdir(directory):
             if not headers[2] is None:
                 if datum[headers[2]] is None:
                     kurzname = ''
-                else: 
+                else:
                     kurzname = ' '.join(datum[headers[2]].split())
             valid_from = '00000000'
             valid_until = '99999999'

@@ -1,41 +1,42 @@
-import datetime
-import regex as re
-import sqlite3
+# pylint: disable=C0114
 
-def process_tweet(tweet, twapi, sql, verbose, magic_tags, modus=None, default_magic_tag='DS100'):
-    reply = compose_answer(tweet.text, sql, verbose, tweet.hashtags(magic_tags), modus, default_magic_tag)
+import datetime
+import sqlite3
+import regex as re
+import log
+log_ = log.getLogger(__name__)
+follog_ = log.getLogger(__name__ + '.following', '{name} {message}')
+
+def process_tweet(tweet, api, magic_tags, modus=None, default_magic_tag='DS100'):
+    reply = compose_answer(tweet.text,
+                           api.database,
+                           tweet.hashtags(magic_tags),
+                           modus,
+                           default_magic_tag)
     if len(reply.strip()) == 0:
-        if verbose > 2:
-            print("No expandable content found")
-            print("▀"*60)
+        log_.info("No expandable content found")
         return
-    twapi.tweet(reply,
+    api.twitter.tweet(reply,
         in_reply_to_status_id=tweet.id,
         auto_populate_reply_metadata=True
     )
-    if verbose > 2:
-        print("▀"*60)
 
-def process_commands(tweet, twapi, verbose):
+def process_commands(tweet, twapi):
     author = tweet.author()
     if tweet.has_hashtag(['folgenbitte'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
-        if verbose > 0:
-            print ("folgenbitte from @{}:".format(author.screen_name), end='')
-            if is_followed:
-                print (" already following")
-            else:
-                print (" not yet following")
+        if is_followed:
+            follog_.log(45, "folgenbitte from @%s: already following", author.screen_name)
+        else:
+            follog_.log(45, "folgenbitte from @%s: not yet following", author.screen_name)
         if not is_followed:
             twapi.follow(author)
     if tweet.has_hashtag(['entfolgen'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
-        if verbose > 0:
-            print ("entfolgen from @{}:".format(author.screen_name), end='')
-            if is_followed:
-                print(" still following so far")
-            else:
-                print(" not even following yet")
+        if is_followed:
+            follog_.log(45, "entfolgen from @%s: still following so far", author.screen_name)
+        else:
+            follog_.log(45, "entfolgen from @%s: not even following yet", author.screen_name)
         if is_followed:
             twapi.defollow(author)
 
@@ -166,74 +167,72 @@ def process_magic(magic_tags, length, default='DS100'):
     magic_tags.append(['__', [length, length]])
     return magic_tags
 
-def compose_answer(tweet, sql, verbose, magic_tags, modus, default_magic_tag='DS100'):
+def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
+    # pylint: disable=R0914
     short_list = []
     # generate answer
     generated_content = ""
     magic_tags = process_magic(magic_tags, len(tweet), default_magic_tag)
     for mt, nextmt in zip(magic_tags[:-1], magic_tags[1:]):
-      tweetpart = tweet[mt[1][1]:nextmt[1][0]]
-      tag = mt[0]
-      tagsource = find_source(sql, tag)
-      if verbose > 4:
-        print("Part: '{}' mt '{}'".format(tweetpart, tag))
-      for match in find_tokens(tweetpart, modus, tag):
-        sigil = match[0] if not match[0] == "" else '#'
-        source = match[1]
-        payload = match[2]
-        payload = payload[0] + payload[1:].replace('_', ' ')
-        payload = ' '.join(payload.split())
-        parameters = { 'abk': payload,
-            'sigil': sigil,
-            'magic_tag': source if source != "" else tag,
-            'abbr1': source if source != "" else tagsource,
-            'abbr2': source if source != "" else 'BOT',
-        }
-        row, normalized = find_entry(sql, parameters)
-        if verbose > 2:
-            print ("{}: {}→{}".format(normalized,
-            list(parameters.values()), list(row)))
-        if normalized in short_list:
-            continue
-        short_list.append(normalized)
-        # failures are always written if the source is not empty, and...
-        if row['status'] == 'notfound' and source == "":
-            if len(payload) == 0:
+        tweetpart = tweet[mt[1][1]:nextmt[1][0]]
+        tag = mt[0]
+        tagsource = find_source(sql, tag)
+        log_.debug("Part: '%s' mt '%s'", tweetpart, tag)
+        for match in find_tokens(tweetpart, modus, tag):
+            sigil = match[0] if not match[0] == "" else '#'
+            source = match[1]
+            payload = match[2]
+            payload = payload[0] + payload[1:].replace('_', ' ')
+            payload = ' '.join(payload.split())
+            parameters = {'abk': payload,
+                'sigil': sigil,
+                'magic_tag': source if source != "" else tag,
+                'abbr1': source if source != "" else tagsource,
+                'abbr2': source if source != "" else 'BOT',
+            }
+            row, normalized = find_entry(sql, parameters)
+            log_.debug("%s: %s→%s", normalized, list(parameters.values()), list(row))
+            if normalized in short_list:
                 continue
-            if len(payload) > 5:
+            short_list.append(normalized)
+            # failures are always written if the source is not empty, and...
+            if row['status'] == 'notfound' and source == "":
+                if len(payload) == 0:
+                    continue
+                if len(payload) > 5:
+                    continue
+                if '#' + payload in magic_tags:
+                    continue
+                if payload[0] == '_':
+                    continue
+                if sigil == '#' and payload[0].isdigit():
+                    continue
+            if not sql.readonly:
+                sql.cursor.execute("""
+                    INSERT INTO
+                        requests(
+                            ds100_id
+                          , request_date
+                          , status
+                            )
+                        VALUES (?,?,?)
+                    """,
+                       (normalized
+                      , datetime.datetime.today().strftime('%Y%m%d')
+                      , row['status']
+                      , ))
+            if row['status'] != 'found':
                 continue
-            if '#' + payload in magic_tags:
-                continue
-            if payload[0] == '_':
-                continue
-            if sigil == '#' and payload[0].isdigit():
-                continue
-        if not sql.readonly:
-            sql.cursor.execute("""
-                INSERT INTO
-                    requests(
-                        ds100_id
-                      , request_date
-                      , status
-                        )
-                    VALUES (?,?,?)
-                """,
-                   (normalized
-                  , datetime.datetime.today().strftime('%Y%m%d')
-                  , row['status']
-                  , ))
-        if row['status'] != 'found':
-            continue
-        explain = "{}: {}​\n".format(
-            row['abk'],
-            row['name']
-        )
-        if not (row['source'] == 'DS' or row['source'] == 'BOT'):
-            explain = "{}{}{}".format(
-                row['source'],
-                row['sigil'],
-                explain
+            explain = "{}: {}\u200b\n".format(
+                row['abk'],
+                row['name']
             )
-        explain = explain.replace('\\n', '\n')
-        generated_content += explain
+            if not (row['source'] == 'DS' or row['source'] == 'BOT'):
+                explain = "{}{}{}".format(
+                    row['source'],
+                    row['sigil'],
+                    explain
+                )
+            explain = explain.replace('\\n', '\n')
+            generated_content += explain
     return generated_content

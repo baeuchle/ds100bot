@@ -1,16 +1,23 @@
 #!/usr/bin/python3
 
-import api
+"""Helper program for dumping details of real tweets
+
+Use this to generate test cases from the actual representation of tweets from the twitter API"""
+
 import argparse
 import pprint
 from textwrap import dedent
 from urllib.parse import urlparse
 from pathlib import Path
+import api
 
-def print_tweet_details(tw, target):
+def print_tweet_details(tw, targetfile):
     quoted_status_id = None
+    ext = ''
     if 'quoted_status_id' in tw.__dict__:
         quoted_status_id = tw.quoted_status_id
+    if 'extended_entities' in tw.__dict__:
+        ext = 'extended_entities=\n{},'.format(pp.pformat(tw.extended_entities))
     print(dedent('''\
     list_of_tweets.append(Tweet(TweepyMock(
         full_text={},
@@ -22,6 +29,7 @@ def print_tweet_details(tw, target):
         quoted_status_id={},
         entities=
             {},
+        {}
         user=User(
             screen_name={},
             name={},
@@ -38,13 +46,14 @@ def print_tweet_details(tw, target):
         repr(tw.in_reply_to_screen_name),
         repr(quoted_status_id),
         pp.pformat(tw.entities),
+        ext,
         repr(tw.user.screen_name),
         repr(tw.user.name),
         repr(tw.user.id),
         repr(twapi.is_followed(tw.user))
-    ), file=target)
+    ), file=targetfile)
 
-parser = argparse.ArgumentParser(description='Helper program for dumping tweet details')
+parser = argparse.ArgumentParser(description=__doc__)
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('--id',
                    dest='id',
@@ -74,13 +83,13 @@ parser.add_argument('--mode',
                    )
 args = parser.parse_args()
 
-twapi = api.get_api_object('readonly', 1000)
+twapi = api.get_api_object('readonly')
 
 tid = args.id
 if tid is None:
     try:
         tid = int(Path(urlparse(args.url).path).name)
-    except:
+    except ValueError:
         parser.error("Cannot extract tweet id from URL {}".format(args.url))
 tweet = twapi.get_tweet(tid)
 
