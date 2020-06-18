@@ -69,8 +69,7 @@ def arguments():
     args_.verbose = 50 - args_.verbose * 10
     return args_
 
-def setup_log(verbosity):
-    loglvl = 50 - verbosity * 10
+def setup_log(loglvl):
     if loglvl <= 0:
         loglvl = 1
 
