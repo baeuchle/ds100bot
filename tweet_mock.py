@@ -121,6 +121,7 @@ class TweepyMock:
             self.quoted_status_id = None
         self.in_reply_to_status_id = self.raw['in_reply_to_status_id']
         self.expected_answer = self.raw.get('expected_answer', None)
+        self.retweeted_status = self.raw.get('retweeted_status', False)
         if 'extended_entities' in self.raw:
             self.extended_entities = self.raw['extended_entities']
 
