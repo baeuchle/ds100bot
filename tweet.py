@@ -58,11 +58,11 @@ class Tweet:
         Checks if this tweet explicitly mentions the given bot.  This means
         that there hasn't only been a reply to something the bot tweeted or
         somthing that itself has mentioned the bot.
-        
+
         We distinguish these by the display_text_range: If the bot's mention is
         within the displayed text, then we assume that the original author
         meant to explicitly include the bot.
-        
+
         If the bot is explicitl mentioned in a reply, then there are two
         user_mentions in the tweet's entities, so we cannot only look at
         the first one.

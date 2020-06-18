@@ -7,7 +7,7 @@ import unicodedata
 weight_config = {}
 with open('config/api_weights.json') as js:
     weight_config = json.load(js)
-        
+
 def measure_tweet_length(text):
     normalized = unicodedata.normalize('NFC', text)
     # this isn't the correct RE for twitter URLs, but

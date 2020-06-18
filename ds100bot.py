@@ -73,7 +73,7 @@ def setup_log(verbosity):
     loglvl = 50 - verbosity * 10
     if loglvl <= 0:
         loglvl = 1
-    
+
     log.basicConfig(level=loglvl, style='{')
     return log.getLogger('ds100')
 
