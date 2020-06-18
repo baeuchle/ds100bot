@@ -14,7 +14,8 @@ class Tweet:
             if 'media' in ee:
                 alt_text = '\u200b'.join([m['ext_alt_text']
                                           for m in ee['media']
-                                          if 'ext_alt_text' in m])
+                                          if 'ext_alt_text' in m
+                                            and m['ext_alt_text'] is not None])
                 self.text = '\u200b'.join([self.text, alt_text])
 
     def __str__(self):
