@@ -7,7 +7,7 @@ import log
 log_ = log.getLogger(__name__)
 tweet_log_ = log.getLogger('tweet', '{message}')
 
-class TwitterApi:
+class TwitterBase():
     def __init__(self):
         import credentials # pylint: disable=C0415
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
@@ -20,15 +20,20 @@ class TwitterApi:
         self.print_rate_limit()
 
     def print_rate_limit(self):
-        if log_.getEffectiveLevel() > 49:
-            return
         rls = self.twit.rate_limit_status()
         res = rls['resources']
         for r in res:
             for l in res[r]:
                 rrl = res[r][l]
-                if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
-                    log_.critical("Resource limit for %s low: %s of %s remaining",
+                if rrl['limit'] == rrl['remaining']:
+                    continue
+                if rrl['remaining'] == 0:
+                    log_.critical("Resource limit for %s used up: limit %s",
+                        l,
+                        rrl['limit']
+                    )
+                elif rrl['remaining'] < 5:
+                    log_.warning("Resource limit for %s low: %s of %s remaining",
                         l,
                         rrl['remaining'],
                         rrl['limit']
@@ -91,7 +96,13 @@ class TwitterApi:
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "cursoring")
         except tweepy.TweepError as twerror:
-            print("Error {} reading tweets: {}".format(twerror.api_code, twerror.reason))
+            try:
+                if twerror.response.status_code == 429:
+                    self.warn_rate_error(twerror, "cursoring")
+                    return []
+            finally:
+                pass
+            log_.critical("Error %s reading tweets: %s", twerror.api_code, twerror.reason)
         return []
 
     def get_tweet(self, tweet_id):
@@ -104,6 +115,9 @@ class TwitterApi:
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:
+            if twerror.api_code == 136: # user has blocked the bot: chill out.
+                log_.debug("%s's Author has blocked us from reading their tweets.", tweet_id)
+                return None
             log_.critical("Error %s reading tweet %s: %s",
                           twerror.api_code,
                           tweet_id,

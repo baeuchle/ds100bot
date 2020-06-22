@@ -3,11 +3,9 @@
 """Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
 
 import argparse
-from collections import namedtuple
 import log
 
-import api as twitter_api
-from database import Database
+from Externals import get_externals
 import gitdescribe as git
 from handle_list import handle_list
 import since
@@ -77,13 +75,7 @@ def setup_log(loglvl):
     return log.getLogger('ds100')
 
 def setup_apis(args_):
-    api_ = namedtuple('Externals', ['twitter', 'database'])
-    # setup twitter API
-    api_.twitter = twitter_api.get_api_object(args_.api,
-                                              external=args_.external,
-                                              parse_one=args_.parse_one)
-    # setup database
-    api_.database = Database(args_.db)
+    api_ = get_externals(twmode=args_.api, dbmode=args_.db)
     git.notify_new_version(api_)
     return api_
 

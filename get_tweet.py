@@ -9,7 +9,7 @@ import pprint
 from textwrap import dedent
 from urllib.parse import urlparse
 from pathlib import Path
-import api
+from Externals import get_twitter_object
 
 def print_tweet_details(tw, targetfile):
     quoted_status_id = None
@@ -83,7 +83,7 @@ parser.add_argument('--mode',
                    )
 args = parser.parse_args()
 
-twapi = api.get_api_object('readonly')
+twapi = get_twitter_object('readonly')
 
 tid = args.id
 if tid is None:

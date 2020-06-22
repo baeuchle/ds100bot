@@ -1,26 +1,12 @@
 # pylint: disable=C0114
 
 import tweepy
-from api_twitter import TwitterApi
-from api_mock import MockApi
 import log
+from Externals.twitter.Api import TwitterBase as BaseApi
 log_ = log.getLogger(__name__)
 
-def get_api_object(mode, **kwargs):
-    if mode == "mock":
-        return MockApi(**kwargs)
-    if mode == "readonly":
-        return ReadOnlyApi()
-    return ReadWriteApi()
+class ReadWrite(BaseApi):
 
-class ReadOnlyApi(TwitterApi):
-    def __init__(self):
-        super().__init__()
-        log_.setLevel(log_.getEffectiveLevel() - 10)
-        log_.warning(
-            'Running from readonly twitter API (read real tweets, do not actually post answers)')
-
-class ReadWriteApi(TwitterApi):
     def tweet_single(self, text, **kwargs):
         super().tweet_single(text, **kwargs)
         try:

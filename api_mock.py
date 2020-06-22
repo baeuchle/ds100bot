@@ -1,13 +1,13 @@
 # pylint: disable=C0114
 
 import tweepy # for exceptions
-from api_twitter import TwitterApi
+from Externals import TwitterBase
 
 from tweet_mock import User, mocked_source, mocked_tweets
 import log
 log_ = log.getLogger(__name__)
 
-class MockApi(TwitterApi):
+class MockApi(TwitterBase):
     def __init__(self, **kwargs):
         log_.setLevel(log_.getEffectiveLevel() - 10)
         self.running_id = 10001

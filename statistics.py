@@ -4,9 +4,7 @@
 
 import argparse
 import datetime
-import api
-from database import Database
-
+from Externals import get_externals
 import log
 
 one_day = datetime.timedelta(days=1)
@@ -18,11 +16,12 @@ first_last_year = (january_first - one_day).strftime("%Y0101")
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--readwrite',
-                    dest='rw',
+                    dest='twmode',
                     help='Actually send tweets',
                     required=False,
-                    action='store_true',
-                    default=False)
+                    action='store_const',
+                    const='readwrite',
+                    default='readonly')
 parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',
@@ -35,9 +34,6 @@ parser.add_argument('--since',
                     default=0)
 args = parser.parse_args()
 
-api_name = 'mock'
-if args.rw:
-    api_name = 'readwrite'
 if args.verbose is None:
     args.verbose = 1
 loglvl = 50 - args.verbose * 10
@@ -62,10 +58,10 @@ else:
     since = int(args.since)
     since_text = since
 
-# setup twitter API
-twapi = api.get_api_object(api_name, external=False)
+api = get_externals(twmode=args.twmode, dbmode='readonly')
+twapi = api.twitter
 # setup database
-sql = Database('readonly')
+sql = api.database
 
 counts = sql.count_status(since=since)
 text = """Zeit für Statistik! Daten für die Zeit seit {}. Ich habe:
@@ -92,4 +88,3 @@ text += """
 (Keine Garantie für richtiges Zählen)"""
 
 twapi.tweet(text)
-sql.close_sucessfully()
