@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pylint \
+    --reports=n \
+    $(tools/find_all_pys)

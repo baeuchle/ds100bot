@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git ls-files | grep py$;
+grep -RIl '^../usr/bin/python3' | grep -v \.py$
