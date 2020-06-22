@@ -537,5 +537,5 @@ def mocked_source():
         # pylint: disable=E0401,C0415
         from tweet_details import list_of_tweets
     except ModuleNotFoundError:
-        log_.critical("Keine Tweet-Details gefunden. Bitte get_tweet.py mit --mode mock ausführen.")
+        log_.critical("Keine Tweet-Details gefunden. Bitte get_tweet mit --mode mock ausführen.")
     return list_of_tweets

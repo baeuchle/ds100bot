@@ -3,7 +3,7 @@
 echo "Dumping…"
 ./dump
 echo "Importing data…"
-./import-data.py
+./import-data
 
 echo "Creating doc…"
 cd doc/

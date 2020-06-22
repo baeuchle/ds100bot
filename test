@@ -20,7 +20,7 @@ def arguments():
                         dest='external',
                         help='''Read mocked tweet objects not from the internal
                         list, but from tweet_details.py. That file may be created with
-                        get_tweet.py.''',
+                        get_tweet.''',
                         required=False,
                         action='store_true',
                         default=False
