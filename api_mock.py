@@ -2,9 +2,10 @@
 
 import tweepy # for exceptions
 from Externals import TwitterBase
+from AnswerMachine.tweet import Tweet
 
 from tweet_mock import User, mocked_source, mocked_tweets
-import log
+import Persistence.log as log
 log_ = log.getLogger(__name__)
 
 class MockApi(TwitterBase):
@@ -46,17 +47,17 @@ class MockApi(TwitterBase):
     def mentions(self, highest_id):
         mention_list = []
         for t in self.mock:
-            for um in t.original.raw['entities']['user_mentions']:
+            for um in t.raw['entities']['user_mentions']:
                 if um['screen_name'] == self.myself.screen_name:
                     mention_list.append(t)
                     break
         return mention_list
 
     def timeline(self, highest_id):
-        return [t for t in self.mock if t.author().follows]
+        return [t for t in self.mock if t.author.follows]
 
     def hashtag(self, tag, highest_id):
-        return [t for t in self.mock if t.has_hashtag(tag)]
+        return [t for t in self.mock if Tweet(t).has_hashtag(tag)]
 
     def is_followed(self, user):
         return user.follows
@@ -79,7 +80,7 @@ class MockApi(TwitterBase):
         stat_log.debug("    RESULTS")
         for t in self.mock:
             was_replied_to = t.id in self.replies
-            if t.original.expected_answer is None:
+            if t.expected_answer is None:
                 if was_replied_to:
                     stat_log.error("Tweet %d falsely answered", t.id)
                     wrongs += 1
@@ -93,13 +94,13 @@ class MockApi(TwitterBase):
                 stat_log.error("Tweet %d falsely unanswered", t.id)
                 continue
             # correctly answered: is it the correct answer?
-            if t.original.expected_answer == self.replies[t.id]:
+            if t.expected_answer == self.replies[t.id]:
                 all_ok += 1
                 stat_log.info("Tweet %d correctly answered with correct answer", t.id)
                 continue
             badrpl += 1
             stat_log.error("Tweet %d correctly answered, but with wrong answer", t.id)
-            stat_log.warning(t.original.expected_answer)
+            stat_log.warning(t.expected_answer)
             stat_log.warning(self.replies[t.id])
         bad_flw = 0
         goodflw = 0

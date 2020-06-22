@@ -3,12 +3,11 @@
 """Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
 
 import argparse
-import log
 
+from AnswerMachine import handle_list
 from Externals import get_externals
-import gitdescribe as git
-from handle_list import handle_list
-import since
+import Persistence
+import Persistence.log as log
 
 def arguments():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -76,13 +75,13 @@ def setup_log(loglvl):
 
 def setup_apis(args_):
     api_ = get_externals(twmode=args_.api, dbmode=args_.db)
-    git.notify_new_version(api_)
+    Persistence.notify_new_version(api_)
     return api_
 
 def teardown_apis(api_, apiname, max_id_=0):
-    git.store_version(api_.database)
+    Persistence.store_version(api_.database)
     if max_id > 0:
-        since.store_since_id(api_.database, max_id_)
+        Persistence.store_since_id(api_.database, max_id_)
     if apiname == 'mock':
         api_.twitter.statistics()
     api_.database.close_sucessfully()
@@ -95,6 +94,6 @@ if __name__ == "__main__":
 
     tagsearch, magic_tags = api.database.magic_hashtags()
     max_id = handle_list(api.twitter.all_relevant_tweets(
-                            since.get_since_id(api.database), tagsearch
+                            Persistence.get_since_id(api.database), tagsearch
                          ), apis=api, magic_tags=magic_tags)
     teardown_apis(api, args.api, max_id)

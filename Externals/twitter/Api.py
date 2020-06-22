@@ -1,9 +1,8 @@
 # pylint: disable=C0114
 
 import tweepy
-from tweet import Tweet
-from measure import split_text
-import log
+from Externals.twitter.Measure import Measure
+import Persistence.log as log
 log_ = log.getLogger(__name__)
 tweet_log_ = log.getLogger('tweet', '{message}')
 
@@ -14,6 +13,7 @@ class TwitterBase():
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.twit = tweepy.API(auth)
         self.myself = self.twit.me()
+        self.measure = Measure()
 
     def warn_rate_error(self, rate_err, description):
         log_.critical("Rate limit violated at %s: %s", description, rate_err.reason)
@@ -44,7 +44,7 @@ class TwitterBase():
     def tweet(self, text, **kwargs):
         reply_id = kwargs.get('in_reply_to_status_id', 0)
         kwargs['auto_populate_reply_metadata'] = True
-        for part in split_text(text):
+        for part in self.measure.split(text):
             new_reply_id = self.tweet_single(part, **kwargs)
             kwargs['in_reply_to_status_id'] = new_reply_id
             if new_reply_id > 0:
@@ -66,13 +66,12 @@ class TwitterBase():
         return 0
 
     def all_relevant_tweets(self, highest_id, tag):
-        results = {}
+        results = []
         for tl in (self.mentions(highest_id),
                    self.timeline(highest_id),
                    self.hashtag(tag, highest_id)):
             for t in tl:
-                if not t.has_hashtag(['NOBOT'], case_sensitive=False):
-                    results[t.id] = t
+                results.append(t)
         return results
 
     def mentions(self, highest_id):
@@ -90,7 +89,7 @@ class TwitterBase():
         try:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
-                result.append(Tweet(t))
+                result.append(t)
             log_.warning("%d tweets found", len(result))
             return result
         except tweepy.RateLimitError as rateerror:
@@ -107,11 +106,11 @@ class TwitterBase():
 
     def get_tweet(self, tweet_id):
         try:
-            return Tweet(self.twit.get_status(
+            return self.twit.get_status(
                 tweet_id,
                 tweet_mode='extended',
                 include_ext_alt_text=True
-            ))
+            )
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:

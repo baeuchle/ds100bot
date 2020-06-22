@@ -1,7 +1,7 @@
 # pylint: disable=C0114
 
 import sqlite3
-import log
+import Persistence.log as log
 log_ = log.getLogger(__name__)
 
 class Database:

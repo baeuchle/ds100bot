@@ -5,7 +5,7 @@
 import argparse
 import datetime
 from Externals import get_externals
-import log
+import Persistence.log as log
 
 one_day = datetime.timedelta(days=1)
 today = datetime.date.today()

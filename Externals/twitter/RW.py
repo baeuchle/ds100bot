@@ -1,7 +1,7 @@
 # pylint: disable=C0114
 
 import tweepy
-import log
+import Persistence.log as log
 from Externals.twitter.Api import TwitterBase as BaseApi
 log_ = log.getLogger(__name__)
 

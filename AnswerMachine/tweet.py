@@ -1,7 +1,7 @@
 # pylint: disable=C0114
 
-import react
-import log
+import Persistence.log as log
+from .react import process_tweet
 log_ = log.getLogger(__name__)
 
 class Tweet:
@@ -127,7 +127,8 @@ class Tweet:
             other_tweet = apis.twitter.get_other_tweet(other_id, tweet_list)
             if other_tweet is None:
                 continue
-            other_tweet.process_as_other(myself, magic, apis, self)
+            bot_tweet = Tweet(other_tweet)
+            bot_tweet.process_as_other(myself, magic, apis, self)
 
     def default_magic_hashtag(self, magic):
         dmt_list = [t[0] for t in self.hashtags(magic)]
@@ -149,4 +150,4 @@ class Tweet:
         mode = orig_tweet.get_mode(myself, magic)
         dmt = orig_tweet.default_magic_hashtag(magic)
         log_.debug("Processing tweet %d mode '%s' default magic hash tag %s", self.id, mode, dmt)
-        react.process_tweet(self, apis, magic, modus=mode, default_magic_tag=dmt)
+        process_tweet(self, apis, magic, modus=mode, default_magic_tag=dmt)
