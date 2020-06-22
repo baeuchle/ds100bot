@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Dumping…"
-./dump
 echo "Importing data…"
 ./import-data
+echo "Dumping…"
+./dump
 
 echo "Creating doc…"
 cd doc/
