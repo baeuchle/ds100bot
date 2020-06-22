@@ -11,40 +11,18 @@ import Persistence.log as log
 
 def arguments():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--readwrite',
-                        dest='rw',
-                        help='equivalent to --api readwrite --db readwrite',
-                        required=False,
-                        action='store_true',
-                        default=False)
-    parser.add_argument('--api',
-                        dest='api',
-                        help='API to use: readwrite, readonly, mock',
-                        required=False,
-                        action='store',
-                        default=None)
-    parser.add_argument('--db',
-                        dest='db',
-                        help='Database to use: readwrite, readonly',
-                        required=False,
-                        action='store',
-                        default=None)
     parser.add_argument('--verbose', '-v',
                         dest='verbose',
                         help='Output lots of stuff',
                         required=False,
                         action='count')
+    parser.add_argument('--readwrite',
+                        dest='rw',
+                        help='Actually send tweets and store data in DB',
+                        required=False,
+                        action='store_true',
+                        default=False)
     args_ = parser.parse_args()
-    if args_.db is None:
-        if args_.rw:
-            args_.db = 'readwrite'
-        else:
-            args_.db = 'readonly'
-    if args_.api is None:
-        if args_.rw:
-            args_.api = 'readwrite'
-        else:
-            args_.api = 'readonly'
     if args_.verbose is None:
         args_.verbose = 0
     args_.verbose = 50 - args_.verbose * 10
@@ -58,7 +36,8 @@ def setup_log(loglvl):
     return log.getLogger('ds100')
 
 def setup_apis(args_):
-    api_ = get_externals(twmode=args_.api, dbmode=args_.db)
+    mode = 'readwrite' if args_.readwrite else 'readonly'
+    api_ = get_externals(mode=mode)
     Persistence.notify_new_version(api_)
     return api_
 
