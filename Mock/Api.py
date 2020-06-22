@@ -2,10 +2,10 @@
 
 import tweepy # for exceptions
 from Externals import TwitterBase
+from Externals.twitter.Measure import Measure
 from AnswerMachine.tweet import Tweet
-
-from tweet_mock import User, mocked_source, mocked_tweets
 import Persistence.log as log
+from .Tweet import User, mocked_source, mocked_tweets
 log_ = log.getLogger(__name__)
 
 class MockApi(TwitterBase):
@@ -23,6 +23,7 @@ class MockApi(TwitterBase):
                 self.mock = [self.get_tweet(int(p_id))]
         self.replies = {}
         self.double_replies = []
+        self.measure = Measure()
 
     def get_tweet(self, tweet_id):
         for t in self.mock:

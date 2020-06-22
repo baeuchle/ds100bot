@@ -5,6 +5,7 @@
 import argparse
 import datetime
 from Externals import get_externals
+import Mock
 import Persistence.log as log
 
 one_day = datetime.timedelta(days=1)
@@ -21,7 +22,7 @@ parser.add_argument('--readwrite',
                     required=False,
                     action='store_const',
                     const='readwrite',
-                    default='readonly')
+                    default='none')
 parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',
@@ -60,6 +61,8 @@ else:
 
 api = get_externals(twmode=args.twmode, dbmode='readonly')
 twapi = api.twitter
+if twapi is None:
+    twapi = Mock.MockApi()
 # setup database
 sql = api.database
 
