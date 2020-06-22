@@ -34,22 +34,6 @@ def arguments():
                         help='Output lots of stuff',
                         required=False,
                         action='count')
-    parser.add_argument('--external',
-                        dest='external',
-                        help='''(Mock API only) Read mocked tweet objects not from the internal
-                        list, but from tweet_details.py. That file may be created with
-                        get_tweet.py.''',
-                        required=False,
-                        action='store_true',
-                        default=False
-                       )
-    parser.add_argument('--parse_one',
-                        dest='parse_one',
-                        help='(Mock API only) Parse only mocked tweet with this ID',
-                        required=False,
-                        action='store',
-                        default=None
-                       )
     args_ = parser.parse_args()
     if args_.db is None:
         if args_.rw:
