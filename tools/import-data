@@ -2,15 +2,31 @@
 
 """Import abbreviation lists to the database"""
 
+import argparse
 import csv
 from datetime import date
 import os
-import sqlite3
+import parentdir # pylint: disable=W0611
+from Externals import get_database_object
+import Persistence.log as log
 
-sql = sqlite3.connect('info.db')
-sqlcursor = sql.cursor()
-print("Purging old data...")
-sqlcursor.execute("""
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--verbose', '-v',
+                    dest='verbose',
+                    help='Output lots of stuff',
+                    required=False,
+                    default=3,
+                    action='count')
+args = parser.parse_args()
+args.verbose = 50 - args.verbose * 10
+
+log.basicConfig(level=args.verbose, style='{')
+log_ = log.getLogger('import-data', fmt='{name}:{levelname} {message}')
+
+database = get_database_object('readwrite')
+
+log_.debug("Purging old data...")
+database.cursor.execute("""
     DELETE FROM shortstore
 """)
 
@@ -18,11 +34,12 @@ today = date.today().strftime("%Y%m%d")
 directory = 'data_sources'
 for f in os.listdir(directory):
     if f[-4:] != '.csv':
+        log_.debug("%s is not a csv file", f)
         continue
     quelle = f[:-4]
-    print("Processing source", quelle)
+    log_.info("Processing source %s", quelle)
     with open('{}/{}'.format(directory, f)) as csvfile:
-        sqlcursor.execute("""
+        database.cursor.execute("""
             SELECT
                 abk_col,
                 name_col,
@@ -38,10 +55,10 @@ for f in os.listdir(directory):
         """,
             (quelle, )
         )
-        headers = sqlcursor.fetchone()
+        headers = database.cursor.fetchone()
         if headers is None:
             headers = ['Abk', 'Name', None, 'valid_from', 'valid_until', 1, ';']
-        print(headers)
+        log_.debug(tuple(headers))
         reader = csv.DictReader(csvfile, delimiter=headers[6])
         for datum in reader:
             abk = ' '.join(datum[headers[0]].split())
@@ -64,7 +81,7 @@ for f in os.listdir(directory):
             if headers[5] == 1:
                 name = name.replace('.', '\u2024')
             primkey = '{}::{}'.format(quelle, abk)
-            sqlcursor.execute("""
+            database.cursor.execute("""
                 INSERT OR REPLACE
                 INTO shortstore(
                     id,
@@ -85,6 +102,4 @@ for f in os.listdir(directory):
                 , quelle
                 , )
             )
-sqlcursor.close()
-sql.commit()
-sql.close()
+database.close_sucessfully()
