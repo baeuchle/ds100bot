@@ -2,11 +2,13 @@
 
 import sqlite3
 import Persistence.log as log
+from GitVersion import Git
 log_ = log.getLogger(__name__)
 
 class Database:
     def __init__(self, mode):
-        self.sql = sqlite3.connect('info.db')
+        git_ = Git()
+        self.sql = sqlite3.connect(git_.topdir() + '/info.db')
         self.sql.row_factory = sqlite3.Row
         self.cursor = self.sql.cursor()
         self.readonly = (mode == 'readonly')
