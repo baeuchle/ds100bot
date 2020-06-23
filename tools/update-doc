@@ -25,8 +25,8 @@ fi
 adir=/var/www/avatar
 if [ -d "$adir" ]; then
     echo "Copying avatar…"
-    chmod 664 ../avatar.svg
-    cp ../avatar.svg $adir/ds100.svg
+    chmod 664 avatar.svg
+    cp avatar.svg $adir/ds100.svg
 else
     echo "Not copying avatar"
 fi
