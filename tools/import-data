@@ -31,7 +31,7 @@ database.cursor.execute("""
 """)
 
 today = date.today().strftime("%Y%m%d")
-directory = 'data_sources'
+directory = 'sources'
 for f in os.listdir(directory):
     if f[-4:] != '.csv':
         log_.debug("%s is not a csv file", f)
