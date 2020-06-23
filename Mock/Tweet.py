@@ -538,4 +538,5 @@ def mocked_source():
         from tweet_details import list_of_tweets
     except ModuleNotFoundError:
         log_.critical("Keine Tweet-Details gefunden. Bitte get_tweet mit --mode mock ausführen.")
+        return []
     return list_of_tweets

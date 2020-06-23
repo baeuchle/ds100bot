@@ -13,14 +13,16 @@ class MockApi(TwitterBase):
         log_.setLevel(log_.getEffectiveLevel() - 10)
         self.running_id = 10001
         self.myself = User.theBot
-        self.external = kwargs.get('external', False)
-        if self.external:
+        self.mode = kwargs.get('mode', 'testcases')
+        mocked_t = mocked_tweets()
+        if self.mode == 'external':
             self.mock = mocked_source()
+        elif self.mode == 'testcases':
+            self.mock = mocked_t
+        elif self.mode == 'id':
+            self.mock = [t for t in mocked_t if t.id in kwargs.get('id_list', [])]
         else:
-            self.mock = mocked_tweets()
-            p_id = kwargs.get('parse_one', None)
-            if p_id is not None:
-                self.mock = [self.get_tweet(int(p_id))]
+            raise ValueError("Invalid mode in {}: {}".format(__name__, self.mode))
         self.replies = {}
         self.double_replies = []
         self.measure = Measure()
@@ -72,8 +74,6 @@ class MockApi(TwitterBase):
         user.follows = False
 
     def statistics(self):
-        if self.external:
-            return
         stat_log = log.getLogger('statistics', '{message}')
         all_ok = 0
         wrongs = 0
