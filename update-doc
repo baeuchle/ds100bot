@@ -3,7 +3,7 @@
 echo "Importing data…"
 tools/import-data
 echo "Dumping…"
-./dump
+tools/dump
 
 echo "Creating doc…"
 cd doc/
