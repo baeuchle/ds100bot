@@ -1,5 +1,6 @@
 # pylint: disable=C0114
 
+from collections import namedtuple
 import tweepy # for exceptions
 from Externals import TwitterBase
 from Externals.twitter.Measure import Measure
@@ -73,50 +74,70 @@ class MockApi(TwitterBase):
         super().defollow(user)
         user.follows = False
 
-    def statistics(self):
+    def statistics(self, output='descriptive'):
         stat_log = log.getLogger('statistics', '{message}')
-        all_ok = 0
-        wrongs = 0
-        badrpl = 0
+        res_count = namedtuple('Results', ['tweet', 'follow'])
+        res_count.tweet = namedtuple('Tweets', ['correct', 'missed', 'bad_content'])
+        res_count.tweet.correct = 0
+        res_count.tweet.missed = 0
+        res_count.tweet.bad_content = 0
         stat_log.debug("    RESULTS")
         for t in self.mock:
             was_replied_to = t.id in self.replies
             if t.expected_answer is None:
                 if was_replied_to:
                     stat_log.error("Tweet %d falsely answered", t.id)
-                    wrongs += 1
+                    res_count.tweet.missed += 1
                 else:
-                    all_ok += 1
+                    res_count.tweet.correct += 1
                     stat_log.info("Tweet %d correcly unanswered", t.id)
                 continue
             # expected answer is not None:
             if not was_replied_to:
-                wrongs += 1
+                res_count.tweet.missed += 1
                 stat_log.error("Tweet %d falsely unanswered", t.id)
                 continue
             # correctly answered: is it the correct answer?
             if t.expected_answer == self.replies[t.id]:
-                all_ok += 1
+                res_count.tweet.correct += 1
                 stat_log.info("Tweet %d correctly answered with correct answer", t.id)
                 continue
-            badrpl += 1
+            res_count.tweet.wrong_answer += 1
             stat_log.error("Tweet %d correctly answered, but with wrong answer", t.id)
             stat_log.warning(t.expected_answer)
             stat_log.warning(self.replies[t.id])
-        bad_flw = 0
-        goodflw = 0
+        res_count.follow = namedtuple('Following', ['correct', 'wrong'])
+        res_count.follow.correct = 0
+        res_count.follow.wrong = 0
         for l in User.followers, User.nonfollowers:
             for u in l:
                 if u.follows == u.follow_after:
                     stat_log.info("User @%s has correct following behaviour %s",
                                   u.screen_name, u.follows)
-                    goodflw += 1
+                    res_count.follow.correct += 1
                 else:
                     stat_log.error("User @%s doesn't follow correctly (should %s, does %s)",
                                    u.screen_name, u.follow_after, u.follows)
-                    bad_flw += 1
-        stat_log.log(51, "ALL GOOD:               %2d", all_ok)
-        stat_log.log(51, "INCORRECT TEXT:         %2d", badrpl)
-        stat_log.log(51, "WRONG ANSWER/NOT ANSWER:%2d", wrongs)
-        stat_log.log(51, "CORRECT FOLLOWING:      %2d", goodflw)
-        stat_log.log(51, "WRONG FOLLOWING:        %2d", bad_flw)
+                    res_count.follow.wrong += 1
+        self.report_statisctics(stat_log, output, res_count)
+        return res_count.tweet.missed + res_count.tweet.bad_content + res_count.follow.wrong
+
+    def report_statisctics(self, stat_log, output, res_count): # pylint: disable=R0201
+        denominator = (res_count.tweet.correct + res_count.tweet.missed +
+                       res_count.tweet.bad_content + res_count.follow.correct +
+                       res_count.follow.wrong)
+        if denominator == 0:
+            stat_log.log(51, "No testcases found")
+        elif output == 'descriptive':
+            stat_log.log(51, "ALL GOOD:               %2d", res_count.tweet.correct)
+            stat_log.log(51, "INCORRECT TEXT:         %2d", res_count.tweet.bad_content)
+            stat_log.log(51, "WRONG ANSWER/NOT ANSWER:%2d", res_count.tweet.missed)
+            stat_log.log(51, "CORRECT FOLLOWING:      %2d", res_count.tweet.correct)
+            stat_log.log(51, "WRONG FOLLOWING:        %2d", res_count.tweet.wrong)
+        elif output == 'summary':
+            ratio = (res_count.tweet.correct + res_count.follow.correct) / (0.0 + denominator)
+            stat_log.log(51, "A %d/%d F %d/%d R %.1f%%",
+                         res_count.tweet.correct,
+                         res_count.tweet.bad_content + res_count.tweet.missed,
+                         res_count.follow.correct, res_count.follow.wrong,
+                         100.0 * ratio)

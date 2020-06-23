@@ -6,10 +6,12 @@ pylint_score=$(\
     grep -o '[0-9]\+\.[0-9][0-9]' | \
     head -n 1 \
     )
-echo "Adding pylint score $pylint_score to commit message:"
+test_result=$(./test --source testcases --output summary 2>&1)
+echo "Adding pylint score $pylint_score and test result $test_result to commit message:"
 
-git commit --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score)
+git commit --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score | grep -v test\ score)
 
-pylint score: $pylint_score"
+pylint score: $pylint_score
+test score: $test_result"
 
 git log --format=%B -n1

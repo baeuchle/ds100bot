@@ -3,6 +3,7 @@
 """Tester for the bot"""
 
 import argparse
+import sys
 
 from AnswerMachine import handle_list
 from Externals import get_externals
@@ -24,6 +25,11 @@ def arguments():
                         help='Output lots of stuff',
                         required=False,
                         action='count')
+    parser.add_argument('--quiet', '-q',
+                        dest='quiet',
+                        help='Output less stuff',
+                        required=False,
+                        action='count')
     parser.add_argument('--source',
                         choices=['testcases', 'id', 'external'],
                         default='testcases',
@@ -35,6 +41,11 @@ def arguments():
                         nargs='*',
                         help='''The ids of test tweets to look at. Only valid with --source id'''
                        )
+    parser.add_argument('--output',
+                        choices=['summary', 'descriptive'],
+                        default='descriptive',
+                        help='Kind of statistics output: One-line-summary or a little more verbose.'
+                       )
     args_ = parser.parse_args()
     if args_.source == 'id' and args_.id is None:
         parser.print_help()
@@ -44,6 +55,8 @@ def arguments():
         parser.exit("Error: --id given, but --source is not 'id'")
     if args_.verbose is None:
         args_.verbose = 0
+    if args_.quiet is not None:
+        args_.verbose -= args_.quiet
     args_.verbose = 50 - args_.verbose * 10
     return args_
 
@@ -56,7 +69,9 @@ def setup_log(loglvl):
 
 def setup_apis(args_):
     api_ = get_externals(twmode='none', dbmode='readonly')
-    api_.twitter = Mock.MockApi(mode=args_.source, id_list=args_.id)
+    id_list = args_.id if args_.id is not None else []
+    api_.twitter = Mock.MockApi(mode=args_.source,
+                                id_list=[int(x) for x in id_list])
     return api_
 
 if __name__ == "__main__":
@@ -69,4 +84,4 @@ if __name__ == "__main__":
                             0, tagsearch
                          ), apis=api, magic_tags=magic_tags)
     if args.source != 'external':
-        api.twitter.statistics()
+        sys.exit(api.twitter.statistics(args.output))
