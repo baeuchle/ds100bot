@@ -47,8 +47,10 @@ class TwitterBase():
         for part in self.measure.split(text):
             new_reply_id = self.tweet_single(part, **kwargs)
             kwargs['in_reply_to_status_id'] = new_reply_id
-            if new_reply_id > 0:
-                reply_id = new_reply_id
+            if new_reply_id == -187: # duplicate tweet: Don't tweet the others
+                return -1
+            if new_reply_id <= 0:
+                return new_reply_id
         return reply_id
 
     def tweet_single(self, text, **_): # pylint: disable=R0201

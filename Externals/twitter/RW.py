@@ -16,10 +16,12 @@ class ReadWrite(BaseApi):
             self.warn_rate_error(rateerror, "tweeting")
             return 0
         except tweepy.TweepError as twerror:
-            if twerror.api_code == 187: # duplicate tweet
-                return 0
-            log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
-            return -1
+            if twerror.api_code is None:
+                log_.critical("Unknown error while tweeting: %s", twerror.reason)
+                return -1
+            if twerror.api_code != 187: # duplicate tweet
+                log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
+            return -int(twerror.api_code)
 
     def follow(self, user):
         super().follow(user)
