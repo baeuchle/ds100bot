@@ -2,3 +2,4 @@
 
 from .Api import MockApi
 from .Tweet import TweepyMock
+from .Tweet import User

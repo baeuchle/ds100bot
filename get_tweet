@@ -19,7 +19,7 @@ def print_tweet_details(tw, targetfile):
     if 'extended_entities' in tw.__dict__:
         ext = 'extended_entities=\n{},'.format(pp.pformat(tw.extended_entities))
     print(dedent('''\
-    list_of_tweets.append(Tweet(TweepyMock(
+    list_of_tweets.append(TweepyMock(
         full_text={},
         id={},
         display_text_range={},
@@ -35,8 +35,7 @@ def print_tweet_details(tw, targetfile):
             name={},
             id={},
             follows={}
-        )
-        ), 8))
+        )))
     ''').format(
         repr(tw.full_text),
         repr(tw.id),
@@ -71,17 +70,22 @@ group.add_argument('--url',
                    )
 parser.add_argument('--mode',
                     dest='mode',
-                    choices=['dump', 'mock'],
+                    choices=['dump', 'mock', 'both'],
                     help=dedent('''\
                     dump: Just dump the tweet and be done with it.
                     mock: Prepare TweepyMock objects from this tweet and
                           referenced tweets that can be used in test cases.
                     '''),
-                    required=False,
+                    required=True,
                     default='mock',
                     action='store'
                    )
 args = parser.parse_args()
+do_mock = args.mode == 'mock'
+do_dump = args.mode == 'dump'
+if args.mode == 'both':
+    do_mock = True
+    do_dump = True
 
 twapi = get_twitter_object('readonly')
 
@@ -91,31 +95,29 @@ if tid is None:
         tid = int(Path(urlparse(args.url).path).name)
     except ValueError:
         parser.error("Cannot extract tweet id from URL {}".format(args.url))
-tweet = twapi.get_tweet(tid)
+tweepy_tweet = twapi.get_tweet(tid)
 
 pp = pprint.PrettyPrinter(indent=2, width=80)
-if args.mode == 'dump':
-    # promote inner objects so that pretty print also prints them
-    for key in ['user', 'author']:
-        tweet.original.__dict__[key] = tweet.original.__dict__[key].__dict__['_json']
-    del tweet.original.__dict__['_api']
-    del tweet.original.__dict__['_json']
-    print("tweetdict = ", end='')
-    pp.pprint(tweet.original.__dict__)
-else:
+if do_mock:
     with open('tweet_details.py', 'w') as target:
         print(dedent('''\
         import datetime
-        from tweet import Tweet
-        from tweet_mock import TweepyMock
-        from tweet_mock import User
+        from Mock import TweepyMock, User
         list_of_tweets = []
         '''), file=target)
-        print_tweet_details(tweet.original, target)
-        if tweet.original.in_reply_to_status_id is not None:
-            replied_to_tweet = twapi.get_tweet(tweet.original.in_reply_to_status_id)
-            print_tweet_details(replied_to_tweet.original, target)
-        if 'quoted_status_id' in tweet.original.__dict__:
-            if tweet.original.quoted_status_id is not None:
-                quoted_tweet = twapi.get_tweet(tweet.original.quoted_status_id)
-                print_tweet_details(quoted_tweet.original, target)
+        print_tweet_details(tweepy_tweet, target)
+        if tweepy_tweet.in_reply_to_status_id is not None:
+            replied_to_tweet = twapi.get_tweet(tweepy_tweet.in_reply_to_status_id)
+            print_tweet_details(replied_to_tweet, target)
+        if 'quoted_status_id' in tweepy_tweet.__dict__:
+            if tweepy_tweet.quoted_status_id is not None:
+                quoted_tweet = twapi.get_tweet(tweepy_tweet.quoted_status_id)
+                print_tweet_details(quoted_tweet, target)
+if do_dump:
+    # promote inner objects so that pretty print also prints them
+    for key in ['user', 'author']:
+        tweepy_tweet.__dict__[key] = tweepy_tweet.__dict__[key].__dict__['_json']
+    del tweepy_tweet.__dict__['_api']
+    del tweepy_tweet.__dict__['_json']
+    print("tweetdict = ", end='')
+    pp.pprint(tweepy_tweet.__dict__)
