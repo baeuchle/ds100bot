@@ -48,18 +48,18 @@ class Measure:
             if not self.is_short_enough(part):
                 # next part is too big: put into its own tweet, separated with next
                 # separator.
-                if len(text_so_far) > 0:
-                    status_list.append(text_so_far)
+                if len(text_so_far.strip()) > 0:
+                    status_list.append(text_so_far.strip())
                     text_so_far = ""
                 status_list.extend(self.split(part, self.next_separator[separator]))
                 continue
             if not self.is_short_enough(text_so_far, part,
                                         self.replaced_separator.get(separator, separator)):
                 # next part makes this too big: go on with what we have.
-                if len(text_so_far) > 0:
-                    status_list.append(text_so_far)
+                if len(text_so_far.strip()) > 0:
+                    status_list.append(text_so_far.strip())
                     text_so_far = ""
             text_so_far += self.replaced_separator.get(separator, separator) + part
-        if len(text_so_far) > 0:
-            status_list.append(text_so_far)
+        if len(text_so_far.strip()) > 0:
+            status_list.append(text_so_far.strip())
         return status_list

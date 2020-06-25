@@ -51,6 +51,7 @@ class TwitterBase():
                 return -1
             if new_reply_id <= 0:
                 return new_reply_id
+            reply_id = new_reply_id
         return reply_id
 
     def tweet_single(self, text, **_): # pylint: disable=R0201
