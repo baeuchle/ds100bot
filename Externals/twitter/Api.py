@@ -38,6 +38,12 @@ class TwitterBase():
                         rrl['remaining'],
                         rrl['limit']
                     )
+                elif rrl['remaining'] < rrl['limit']:
+                    log_.info("Resource limit for %s in use: %s of %s",
+                        l,
+                        rrl['remaining'],
+                        rrl['limit']
+                    )
 
     def tweet(self, text, **kwargs):
         """Tweet text, possibly split up into several separate tweets.
