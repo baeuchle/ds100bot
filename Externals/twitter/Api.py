@@ -39,22 +39,33 @@ class TwitterBase():
                         rrl['limit']
                     )
 
-    # Return new tweet id, 0 if RateLimit (= try again), -1 if other
-    # error (fix before trying again).
     def tweet(self, text, **kwargs):
+        """Tweet text, possibly split up into several separate tweets.
+
+        Returns:
+            - ID of the last tweet that was sent, if all tweets were sent successfully
+            - ID of the original tweet or last tweet that was sent if the last attempt ended in a
+              duplicate tweet-error.
+            - Negative API code if there was a different error.
+        """
         reply_id = kwargs.get('in_reply_to_status_id', 0)
         kwargs['auto_populate_reply_metadata'] = True
         for part in self.measure.split(text):
             new_reply_id = self.tweet_single(part, **kwargs)
-            kwargs['in_reply_to_status_id'] = new_reply_id
             if new_reply_id == -187: # duplicate tweet: Don't tweet the others
-                return -1
-            if new_reply_id <= 0:
+                return reply_id
+            if new_reply_id < 0: # other error: return error code.
                 return new_reply_id
+            # all ok: go on with new id
+            kwargs['in_reply_to_status_id'] = new_reply_id
             reply_id = new_reply_id
         return reply_id
 
     def tweet_single(self, text, **_): # pylint: disable=R0201
+        """General handling of actual tweet data. If log level is Warning or lower, then
+        pretty-print the text of the tweet.
+
+        Returns a negative value for empty strings, a positive value for else."""
         if len(text) == 0:
             log_.error("Empty tweet?")
             return -1
@@ -66,7 +77,7 @@ class TwitterBase():
                 tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
             tt += "▀{}┛".format('━'*(length+2))
             tweet_log_.warning(tt)
-        return 0
+        return 1
 
     def all_relevant_tweets(self, highest_id, tag):
         results = []
@@ -95,8 +106,6 @@ class TwitterBase():
                 result.append(t)
             log_.warning("%d tweets found", len(result))
             return result
-        except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error(rateerror, "cursoring")
         except tweepy.TweepError as twerror:
             try:
                 if twerror.response.status_code == 429:
@@ -114,9 +123,13 @@ class TwitterBase():
                 tweet_mode='extended',
                 include_ext_alt_text=True
             )
-        except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error(rateerror, "getting tweet")
         except tweepy.TweepError as twerror:
+            try:
+                if twerror.response.status_code == 429:
+                    self.warn_rate_error(twerror, "cursoring")
+                    return None
+            finally:
+                pass
             if twerror.api_code == 136: # user has blocked the bot: chill out.
                 log_.debug("%s's Author has blocked us from reading their tweets.", tweet_id)
                 return None
