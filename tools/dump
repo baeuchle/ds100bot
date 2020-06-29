@@ -118,6 +118,8 @@ for row in sources:
             shortstore
         WHERE
             source = ?
+        ORDER BY
+            Abk
     """, (row[0], )
     )
     write_dump_list(sql, target_path, row[0])
