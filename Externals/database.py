@@ -1,21 +1,24 @@
 # pylint: disable=C0114
 
 import sqlite3
-import log
+import Persistence.log as log
+from GitVersion import Git
 log_ = log.getLogger(__name__)
 
 class Database:
-    def __init__(self, db):
-        self.sql = sqlite3.connect('info.db')
+    def __init__(self, mode):
+        git_ = Git()
+        self.sql = sqlite3.connect(git_.topdir() + '/info.db')
         self.sql.row_factory = sqlite3.Row
         self.cursor = self.sql.cursor()
-        self.readonly = (db == 'readonly')
+        self.readonly = (mode == 'readonly')
         if self.readonly:
             log_.info('Running with readonly database')
 
     def close_sucessfully(self):
         self.cursor.close()
-        self.sql.commit()
+        if not self.readonly:
+            self.sql.commit()
         self.sql.close()
 
     def magic_hashtags(self):

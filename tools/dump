@@ -4,14 +4,17 @@
 
 import argparse
 from pathlib import Path
-from database import Database
+import parentdir # pylint: disable=W0611
 from GitVersion import Git
+from Externals import get_database_object
+import Persistence.log as log
 
 def html_header(title=""):
     return """<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <html>
  <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/bot.css" />
   <link rel="shortcut icon" type="image/svg+xml" href="https://avatar.frankfurtium.de/ds100.svg" />
   <title>DS100-Daten-Dump {}</title>
@@ -32,7 +35,7 @@ def get_links_list():
         return links.read().replace('VERSION', Git().describe('--dirty'))
 
 def get_sources(sql_):
-    sql.cursor.execute("""
+    sql_.cursor.execute("""
         SELECT
             source,
             COUNT(source)
@@ -61,13 +64,16 @@ parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',
                     required=False,
-                    default=0,
+                    default=3,
                     action='count')
 parser.add_argument('--max-entries',
                     help='Maximale Anzahl von Einträgen, bevor die Tabelle aufgeteilt wird.',
                     required=False,
                     default=2000,)
 args = parser.parse_args()
+
+log.basicConfig(level=50 - 10 * args.verbose, style='{')
+log_ = log.getLogger('dump', fmt='{name}:{levelname} {message}')
 
 def write_dump_list(sql_, target_path_, name, **kwargs):
     with (target_path_ / (name + ".html")).open(mode='w') as df:
@@ -88,7 +94,7 @@ def write_dump_list(sql_, target_path_, name, **kwargs):
         print(table_footer(), file=df)
         print(html_footer(), file=df)
 
-sql = Database('readonly')
+sql = get_database_object('readonly')
 sources = get_sources(sql)
 sources_list = create_sources_list(sources)
 links_list = get_links_list()
@@ -103,7 +109,7 @@ with (target_path / "index.html").open(mode='w') as dfl:
     print(html_footer(), file=dfl)
 for row in sources:
     number_of_entries = int(row[1])
-    print("Dumping source", row[0], "with", row[1], "entries")
+    log_.info("Dumping source %s with %d entries", row[0], number_of_entries)
     sql.cursor.execute("""
         SELECT
             Abk,
@@ -112,10 +118,12 @@ for row in sources:
             shortstore
         WHERE
             source = ?
+        ORDER BY
+            Abk
     """, (row[0], )
     )
     write_dump_list(sql, target_path, row[0])
-print("Dumping blacklist")
+log_.info("Dumping blacklist")
 sql.cursor.execute("""
         SELECT
             blacklist.source || ':' || blacklist.Abk,

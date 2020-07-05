@@ -38,9 +38,9 @@ Before starting
     ```
 * Copy ``credentials.py.dist`` to ``credentials.py`` and insert your
   Twitter bot credentials.
-* Import data using ``import-data.py`` or
+* Import data using ``import-data`` or
 * Create the documentation AND import data in one step using
-  ``update-doc.sh``.
+  ``update-doc``.
 
 LICENSE
 =======

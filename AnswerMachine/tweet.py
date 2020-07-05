@@ -1,7 +1,7 @@
 # pylint: disable=C0114
 
-import react
-import log
+import Persistence.log as log
+from .react import process_tweet
 log_ = log.getLogger(__name__)
 
 class Tweet:
@@ -11,8 +11,12 @@ class Tweet:
         self.original = tweepy_tweet
         if 'extended_entities' in tweepy_tweet.__dict__:
             ee = tweepy_tweet.extended_entities
-            alt_text = '\u200b'.join([m['ext_alt_text'] for m in ee['media']])
-            self.text = '\u200b'.join([self.text, alt_text])
+            if 'media' in ee:
+                alt_text = '\u200b'.join([m['ext_alt_text']
+                                          for m in ee['media']
+                                          if 'ext_alt_text' in m
+                                            and m['ext_alt_text'] is not None])
+                self.text = '\u200b'.join([self.text, alt_text])
 
     def __str__(self):
         if log_.getEffectiveLevel() < 30:
@@ -43,7 +47,7 @@ class Tweet:
         Checks if this tweet is a pure retweet. It is not clear if this doesn't
         maybe find commented retweets.
         """
-        return 'retweeted_status' in self.original.raw and self.original.raw['retweeted_status']
+        return 'retweeted_status' in vars(self.original) and self.original.retweeted_status
 
     def is_mention(self, bot):
         """
@@ -123,7 +127,8 @@ class Tweet:
             other_tweet = apis.twitter.get_other_tweet(other_id, tweet_list)
             if other_tweet is None:
                 continue
-            other_tweet.process_as_other(myself, magic, apis, self)
+            bot_tweet = Tweet(other_tweet)
+            bot_tweet.process_as_other(myself, magic, apis, self)
 
     def default_magic_hashtag(self, magic):
         dmt_list = [t[0] for t in self.hashtags(magic)]
@@ -145,4 +150,4 @@ class Tweet:
         mode = orig_tweet.get_mode(myself, magic)
         dmt = orig_tweet.default_magic_hashtag(magic)
         log_.debug("Processing tweet %d mode '%s' default magic hash tag %s", self.id, mode, dmt)
-        react.process_tweet(self, apis, magic, modus=mode, default_magic_tag=dmt)
+        process_tweet(self, apis, magic, modus=mode, default_magic_tag=dmt)

@@ -4,23 +4,17 @@
 
 import argparse
 import sys
-from database import Database
+import parentdir # pylint: disable=W0611
+from Externals import get_database_object
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--list', action='store_true', required=False, default=False)
 parser.add_argument('--add', action='store', required=False)
 # parser.add_argument('--remove', action='store', required=False)
 parser.add_argument('--statistics-for', action='store', required=False)
-parser.add_argument('--verbose', '-v',
-                    dest='verbose',
-                    help='Output lots of stuff',
-                    required=False,
-                    action='count')
 args = parser.parse_args()
-if args.verbose is None:
-    args.verbose = 0
 
-sql = Database('readwrite')
+sql = get_database_object('readwrite')
 
 if args.list:
     sql.cursor.execute("""

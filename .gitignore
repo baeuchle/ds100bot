@@ -6,3 +6,5 @@ info.db
 doc/output 
 doc/dumps.snip
 tweet_details.py
+saved_tweets/
+sonstiges/

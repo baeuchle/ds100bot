@@ -1,52 +1,77 @@
 # pylint: disable=C0114
 
 import tweepy
-from tweet import Tweet
-from measure import split_text
-import log
+from Externals.twitter.Measure import Measure
+import Persistence.log as log
 log_ = log.getLogger(__name__)
 tweet_log_ = log.getLogger('tweet', '{message}')
 
-class TwitterApi:
+class TwitterBase():
     def __init__(self):
         import credentials # pylint: disable=C0415
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
         self.twit = tweepy.API(auth)
         self.myself = self.twit.me()
+        self.measure = Measure()
 
     def warn_rate_error(self, rate_err, description):
         log_.critical("Rate limit violated at %s: %s", description, rate_err.reason)
         self.print_rate_limit()
 
     def print_rate_limit(self):
-        if log_.getEffectiveLevel() > 49:
-            return
         rls = self.twit.rate_limit_status()
         res = rls['resources']
         for r in res:
             for l in res[r]:
                 rrl = res[r][l]
-                if rrl['limit'] != rrl['remaining'] and rrl['remaining'] < 5:
-                    log_.critical("Resource limit for %s low: %s of %s remaining",
+                if rrl['limit'] == rrl['remaining']:
+                    continue
+                if rrl['remaining'] == 0:
+                    log_.critical("Resource limit for %s used up: limit %s",
+                        l,
+                        rrl['limit']
+                    )
+                elif rrl['remaining'] < 5:
+                    log_.warning("Resource limit for %s low: %s of %s remaining",
+                        l,
+                        rrl['remaining'],
+                        rrl['limit']
+                    )
+                elif rrl['remaining'] < rrl['limit']:
+                    log_.info("Resource limit for %s in use: %s of %s",
                         l,
                         rrl['remaining'],
                         rrl['limit']
                     )
 
-    # Return new tweet id, 0 if RateLimit (= try again), -1 if other
-    # error (fix before trying again).
     def tweet(self, text, **kwargs):
+        """Tweet text, possibly split up into several separate tweets.
+
+        Returns:
+            - ID of the last tweet that was sent, if all tweets were sent successfully
+            - ID of the original tweet or last tweet that was sent if the last attempt ended in a
+              duplicate tweet-error.
+            - Negative API code if there was a different error.
+        """
         reply_id = kwargs.get('in_reply_to_status_id', 0)
         kwargs['auto_populate_reply_metadata'] = True
-        for part in split_text(text):
+        for part in self.measure.split(text):
             new_reply_id = self.tweet_single(part, **kwargs)
+            if new_reply_id == -187: # duplicate tweet: Don't tweet the others
+                return reply_id
+            if new_reply_id < 0: # other error: return error code.
+                return new_reply_id
+            # all ok: go on with new id
             kwargs['in_reply_to_status_id'] = new_reply_id
-            if new_reply_id > 0:
-                reply_id = new_reply_id
+            reply_id = new_reply_id
         return reply_id
 
     def tweet_single(self, text, **_): # pylint: disable=R0201
+        """General handling of actual tweet data. If log level is Warning or lower, then
+        pretty-print the text of the tweet.
+
+        Returns a negative value for empty strings, a positive value for else."""
         if len(text) == 0:
             log_.error("Empty tweet?")
             return -1
@@ -58,16 +83,15 @@ class TwitterApi:
                 tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
             tt += "▀{}┛".format('━'*(length+2))
             tweet_log_.warning(tt)
-        return 0
+        return 1
 
     def all_relevant_tweets(self, highest_id, tag):
-        results = {}
+        results = []
         for tl in (self.mentions(highest_id),
                    self.timeline(highest_id),
                    self.hashtag(tag, highest_id)):
             for t in tl:
-                if not t.has_hashtag(['NOBOT'], case_sensitive=False):
-                    results[t.id] = t
+                results.append(t)
         return results
 
     def mentions(self, highest_id):
@@ -85,25 +109,36 @@ class TwitterApi:
         try:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
-                result.append(Tweet(t))
+                result.append(t)
             log_.warning("%d tweets found", len(result))
             return result
-        except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error(rateerror, "cursoring")
         except tweepy.TweepError as twerror:
-            print("Error {} reading tweets: {}".format(twerror.api_code, twerror.reason))
+            try:
+                if twerror.response.status_code == 429:
+                    self.warn_rate_error(twerror, "cursoring")
+                    return []
+            finally:
+                pass
+            log_.critical("Error %s reading tweets: %s", twerror.api_code, twerror.reason)
         return []
 
     def get_tweet(self, tweet_id):
         try:
-            return Tweet(self.twit.get_status(
+            return self.twit.get_status(
                 tweet_id,
                 tweet_mode='extended',
                 include_ext_alt_text=True
-            ))
-        except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error(rateerror, "getting tweet")
+            )
         except tweepy.TweepError as twerror:
+            try:
+                if twerror.response.status_code == 429:
+                    self.warn_rate_error(twerror, "cursoring")
+                    return None
+            finally:
+                pass
+            if twerror.api_code == 136: # user has blocked the bot: chill out.
+                log_.debug("%s's Author has blocked us from reading their tweets.", tweet_id)
+                return None
             log_.critical("Error %s reading tweet %s: %s",
                           twerror.api_code,
                           tweet_id,

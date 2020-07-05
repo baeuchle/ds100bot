@@ -1,0 +1,87 @@
+#!/usr/bin/python3
+
+"""Tester for the bot"""
+
+import argparse
+import sys
+
+from AnswerMachine import handle_list
+from Externals import get_externals
+import Mock
+import Persistence.log as log
+
+def arguments():
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter,
+                                     description=__doc__,
+                                     epilog="""Possible sources:
+  testcases: Use the list of all mocked testcase tweets
+  id:        Out of the list of all mocked testcase tweets, use only the ones given with the --id
+             attribute
+  external:  Use mocked tweet objects from tweet_details.py.  That file may be created with
+             get_tweet.
+    """)
+    parser.add_argument('--verbose', '-v',
+                        dest='verbose',
+                        help='Output lots of stuff',
+                        required=False,
+                        action='count')
+    parser.add_argument('--quiet', '-q',
+                        dest='quiet',
+                        help='Output less stuff',
+                        required=False,
+                        action='count')
+    parser.add_argument('--source',
+                        choices=['testcases', 'id', 'external'],
+                        default='testcases',
+                        help='''Specify source of testable tweets. See possible values below''',
+                        required=False,
+                       )
+    parser.add_argument('--id',
+                        required=False,
+                        nargs='*',
+                        help='''The ids of test tweets to look at. Only valid with --source id'''
+                       )
+    parser.add_argument('--output',
+                        choices=['summary', 'descriptive'],
+                        default='descriptive',
+                        help='Kind of statistics output: One-line-summary or a little more verbose.'
+                       )
+    args_ = parser.parse_args()
+    if args_.source == 'id' and args_.id is None:
+        parser.print_help()
+        parser.exit("Error: --source id given, but no --id found")
+    if args_.source != 'id' and args_.id is not None:
+        parser.print_help()
+        parser.exit("Error: --id given, but --source is not 'id'")
+    if args_.verbose is None:
+        args_.verbose = 0
+    if args_.quiet is not None:
+        args_.verbose -= args_.quiet
+    args_.verbose = 50 - args_.verbose * 10
+    return args_
+
+def setup_log(loglvl):
+    if loglvl <= 0:
+        loglvl = 1
+
+    log.basicConfig(level=loglvl, style='{')
+    return log.getLogger('test_ds100')
+
+def setup_apis(args_):
+    api_ = get_externals(twmode='none', dbmode='readonly')
+    id_list = args_.id if args_.id is not None else []
+    api_.twitter = Mock.MockApi(mode=args_.source,
+                                id_list=[int(x) for x in id_list])
+    return api_
+
+if __name__ == "__main__":
+    args = arguments()
+    log_ = setup_log(args.verbose)
+    api = setup_apis(args)
+
+    tagsearch, magic_tags = api.database.magic_hashtags()
+    max_id = handle_list(api.twitter.all_relevant_tweets(
+                            0, tagsearch
+                         ), apis=api, magic_tags=magic_tags)
+    if args.source != 'external':
+        sys.exit(api.twitter.statistics(args.output))

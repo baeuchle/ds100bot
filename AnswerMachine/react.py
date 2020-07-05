@@ -3,7 +3,7 @@
 import datetime
 import sqlite3
 import regex as re
-import log
+import Persistence.log as log
 log_ = log.getLogger(__name__)
 follog_ = log.getLogger(__name__ + '.following', '{name} {message}')
 
