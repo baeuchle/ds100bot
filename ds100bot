@@ -36,7 +36,7 @@ def setup_log(loglvl):
     return log.getLogger('ds100')
 
 def setup_apis(args_):
-    mode = 'readwrite' if args_.readwrite else 'readonly'
+    mode = 'readwrite' if args_.rw else 'readonly'
     api_ = get_externals(mode=mode)
     Persistence.notify_new_version(api_)
     return api_
