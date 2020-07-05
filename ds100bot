@@ -41,12 +41,10 @@ def setup_apis(args_):
     Persistence.notify_new_version(api_)
     return api_
 
-def teardown_apis(api_, apiname, max_id_=0):
+def teardown_apis(api_, max_id_=0):
     Persistence.store_version(api_.database)
     if max_id > 0:
         Persistence.store_since_id(api_.database, max_id_)
-    if apiname == 'mock':
-        api_.twitter.statistics()
     api_.database.close_sucessfully()
     log_.info("Bot finished")
 
@@ -59,4 +57,4 @@ if __name__ == "__main__":
     max_id = handle_list(api.twitter.all_relevant_tweets(
                             Persistence.get_since_id(api.database), tagsearch
                          ), apis=api, magic_tags=magic_tags)
-    teardown_apis(api, args.api, max_id)
+    teardown_apis(api, max_id)
