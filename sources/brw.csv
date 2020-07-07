@@ -1,0 +1,194 @@
+Abk;Name
+Abf;Abfahrt
+Abzw;Abzweigstelle
+AFB;Automatische Fahr- und Bremssteuerung
+AK;Automatikkupplung
+Ank;Ankunft
+Anst;Anschlussstelle
+Ap;Abschnittsprüfung
+apl;außerplanmäßig
+Arbz;Arbeitszug
+Asig;Ausfahrsignal
+ASig;Ausfahrsignal
+aS;Außergewöhnliche Sendung
+Ausf;Ausfahrt
+AutomET;Automatische Einschalttaste
+AutomHET;Automatische Hilfseinschalttaste
+Avsig;Ausfahrvorsignal
+AVsig;Ausfahrvorsignal
+Awanst;Ausweichanschlussstelle
+Bebu;Betriebsstellenbuch
+Bef;Befehl
+Befo;Beförderungsanordnung
+Betra;Betriebs- und Bauanweisung
+Betrst;Betriebsstelle
+BEU;Bundesstelle für Eisenbahnunfalluntersuchung
+Bf;Bahnhof
+Bft;Bahnhofsteil
+Bgl;Baugleis
+Bk;Blockstelle
+Bksig;Blocksignal
+BkSig;Blocksignal
+Bkvsig;Blockvorsignal
+BkVsig;Blockvorsignal
+Blifü;Blinklichtanlagen mit Fernüberwachung
+Blilo;Blinklichtanlagen mit Überwachungssignalen
+BözM;Betrieblich örtlich zuständiger Mitarbeiter
+Br;Bremse
+Brh;Bremshundertstel
+Brpr;Bremsprobe
+BRW;Betriebsregelwerk
+Bstg;Bahnsteig
+BÜ;Bahnübergang
+BUVO_NE;Betriebsunfallvorschrift für Nichtbundeseigene Eisenbahnen
+BZ;Betriebszentrale
+DWeg;Durchrutschweg
+Dksig;Deckungssignal
+DkSig;Deckungssignal
+Dkst;Deckungsstelle
+DMV;Dienstanweisung für Mitarbeiter von Verkehrsunternehmen
+Durchf;Durchfahrt
+EBA;Eisenbahn-Bundesamt
+EBO;Eisenbahn-Bau- und Betriebsordnung
+EFF;Eisenbahnfahrzeug-Führerschein nach VDV
+EFR;Elektronische Fahrtenregistrierung
+EIU;Eisenbahninfrastrukturunternehmen
+ep;elektropneumatisch
+Esig;Einfahrsignal
+ESig;Einfahrsignal
+ET;Einschalttaste
+ETCS;European Train Control System
+EVsig;Einfahrvorsignal
+EVU;Eisenbahnverkehrsunternehmen
+EZB;Elektronischer Zugbericht
+FBOA;Festbremsortungsanlage
+Fdl;Fahrdienstleiter
+FfZ;Fahrplan für Zugmeldestellen
+fmdl;fernmündlich
+Fpl;Fahrplan
+Fplm;Fahrplan-Mitteilung
+Fplo;Fahrplananordnung
+Fpr;Fahrwegprüfung
+Frühh;Frühhalt
+Fspr;Fernsprecher
+FSÜ;Fahr- und Stillstandsüberwachung
+Fweg;Fahrweg
+Fz;Fahrzeug(e)
+Ggl;Gegengleis
+Gl;Gleis
+GL;Grenzlast
+GM;Grenzzeichenfreimeldung
+Gs;Gleissperre
+GWB;Gleiswechselbetrieb
+Gz;Güterzug
+HAT;Hilfsausschalttaste
+Heißl;Heißläufer
+HET;Hilfseinschalttaste
+HM;Haltmeldung
+HOA;Heißläuferortungsanlage
+Hp;Haltepunkt
+Hs;Formsperrsignal
+Hst;Haltestelle
+HV;Handverschluss
+Hz;Heizer
+KiN;Kundenbetreuer im Nahverkehr
+Kl;Kleinwagen
+KV;Kombinierter Verkehr
+La;Zusammenstellung der vorübergehenden Langsamfahrstellen und anderen Besonderheiten
+Lfsig;Langsamfahrsignal
+LfSig;Langsamfahrsignal
+Lfst;vorübergehende Langsamfahrstelle
+Lokw;Lokomotivwechsel
+Ls;Lichtsperrsignal
+Lü;Lademaßüberschreitung
+LZB;Linienförmige Zugbeeinflussung
+Mbr;Mindestbremshundertstel
+mdl;mündlich
+MER;Mobilitätseingeschränkte Reisende
+NBÜ;Notbremsüberbrückung
+NE;Nichtbundeseigene Eisenbahn
+Nfz;Nebenfahrzeug
+NTC;National Train Control (Nationale Zugbeeinflussung)
+öA;örtliche Aufsicht
+OB;Ortsstellbereich
+Ol;Oberleitung
+öZ;örtliche Zusätze
+PZB;Punktförmige Zugbeeinflussung
+Ra;Rangierarbeiter
+Rb;Rangierbegleiter
+Rf;Rangierfahrt
+Rgl;Regelgleis
+Ri;Richtung
+RIC;Regolamento Internazionale delle Carrozze
+RID;Règlement concernant le transport international ferroviaire de marchandises dangereuses
+RIS;Reisenden-Informations-System
+RIV;Regolamento Internazionale Veicoli
+RMP;Rückmeldeposten
+Rp;Räumungsprüfung
+Rpz;Räumungsprüfung auf Zeit
+RÜ;Reisendenübergang
+Rz;Reisezug
+SAT;Selbstabfertigung durch den Tf
+Sbk;selbsttätige Blockstelle, selbsttätiges Blocksignal
+Sbkvsig;Vorsignal eines selbsttätigen Blocksignals
+SbkVsig;Vorsignal eines selbsttätigen Blocksignals
+Schrp;Schrankenposten
+Schrw;Schrankenwärter
+Sifa;Sicherheitsfahrschaltung („Totmannschaltung“)
+Sig;Signal
+Sigabh;Signalabhängigkeit
+Sperr;Sperrung
+Sperrf;Sperrfahrt
+SRK;Selbstrettungskonzept
+SST;Seitenselektive Türsteuerung
+Stör;Störung
+Str;Strecke
+Strebu;Streckenbuch
+Stw;Stellwerk
+TAV;Technikbasiertes Abfertigungsverfahren
+TB0;Türblockierung ab 0 km/h
+Tb;Triebfahrzeugbegleiter
+TEN;Trans-European Networks
+Tf;Triebfahrzeugführer
+TfPV;Triebfahrzeugführerschein-Prüfungsverordnung
+TFS;Triebfahrzeugführerschein
+TfV;Triebfahrzeugführerscheinverordnung
+Tfz;Triebfahrzeug
+Tfzf;Triebfahrzeugfahrt
+TSI;Technische Spezifikationen für die Interoperabilität im Schienenverkehr 
+TWb;Technische Wagenbehandlung
+Üc;Übermittlungscode
+UIC;Union internationale des chemins de fer
+Ültg;Überleitung
+Uml;Umleitung
+Üs;Überwachungssignal
+Üst;Überleitstelle
+VMZ;Maximal zulässige Geschwindigkeit des Zuges
+Vsig;Vorsignal
+WB;Wirbelstrombremse
+Wdh;Wiederholer
+Wg;Wagen
+Wgm;Wagenmeister
+Wgp;Wagenprüfer
+WUB;Wagenuntersuchungsbeamter
+Ww;Weichenwärter
+ZB;Zusatzbescheinigung zum TFS
+Zes;Zentralschaltstelle
+Zf;Zugführer
+ZF;Zugfunk
+Zfst;Zugfolgestelle
+Zm;Zugmelder
+ZM;Zugschlussmeldung/Zugvollständigkeitsmeldung
+Zmb;Zugmeldebuch
+ZMP;Zugschlussmeldeposten
+Zmst;Zugmeldestelle
+Zp;Zugpersonal
+ZS;Zugsammelschiene
+Zs;Zugschaffner
+Zsig;Zwischensignal
+ZSig;Zwischensignal
+Zub;Zugbegleiter
+Zugg;Zuggattung
+Zugv;Zugvorbereiter
+Zvsig;Zwischenvorsignal
+ZVsig;Zwischenvorsignal
