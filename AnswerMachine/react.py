@@ -54,7 +54,7 @@ def find_tokens(tweet, modus, magic_tag):
         (?p)                # find longest match
         (?:^|\W)            # either at the beginning of the text or after a non-alphanumeric character, but don't find this
         (?:                 # Select source
-            (\$|\#)         # Special character to find something: # or $
+            (\$|\#|\%|\&|\/)# Special character to find something: # or $
             (?:(\p{Lu}+):)? # Optional prefix, e.g. "DS:" or "VGF:"
         )
         (                   # Payload
