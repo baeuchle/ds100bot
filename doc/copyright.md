@@ -91,7 +91,8 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></td>
    <td style="text-align: left;">
     <ul>
-     <li>Beinhaltet Abkürzungen aus dem Betriebsregelwerk des VDV.</li>
+     <li>Beinhaltet Abkürzungen aus dem Betriebsregelwerk des VDV und
+     der Ril 408 der Deutschen Bahn</li>
      <li>Liste ist auf Bahn-eigene und nicht komplett offensichtliche
      Abkürzungen („Ellok“ für „Elektrolokomotive“) begrenzt</li>
      <li>Groß- und Kleinschreibung ist sehr wichtig. Beispiele: „ZS“: Zugsammelschiene, „Zs“: Zugschaffner.</li>
@@ -99,7 +100,7 @@ Folgende Datenquellen werden vom Bot benutzt:
     </ul>
    </td>
    <td>
-    <a href="https://ds100.frankfurtium.de/dumps/ds301.html">ds301</a>
+    <a href="https://ds100.frankfurtium.de/dumps/brw.html">brw</a>
    </td>
   </tr>
   <tr><th>#LP</th>
