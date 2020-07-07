@@ -16,9 +16,9 @@ und in der [Schweiz](/dumps/ch.html) „Herisau“. __He__ in Quelle
  <thead>
   <tr>
     <th rowspan="2">↓ Tweet ist/hat…</th>
-    <th colspan="2">Kürzel mit # oder $, aber ohne Quelle</th>
+    <th colspan="2">Kürzel mit #,$,%,&amp;,/, aber ohne Quelle</th>
     <th colspan="3">Kürzel mit expliziter Quelle</th>
-    <th colspan="2">Kürzel ohne # oder $</th>
+    <th colspan="2">Kürzel ohne #,$,%,&amp;,/</th>
   </tr>
   <tr>
    <th>#HE</th>
@@ -80,10 +80,10 @@ und in der [Schweiz](/dumps/ch.html) „Herisau“. __He__ in Quelle
  </tbody>
 </table>
 
-(1): Kürzel ohne \# oder $ werden nur gefunden, wenn sonst keine Kandidaten im
-Tweet vorhanden sind.<br/>
-(2): Nur Kürzel ohne Kleinbuchstaben werden bei der Suche ohne \# oder $
-gefunden.
+(1): Kürzel ohne \#, $, &amp;, % oder / werden nur gefunden, wenn sonst
+keine Kandidaten im Tweet vorhanden sind.<br/>
+(2): Nur Kürzel ohne Kleinbuchstaben werden bei der Suche ohne \#, $,
+&amp;, % oder / gefunden.
 
 <table>
  <thead>
@@ -143,8 +143,13 @@ Aufbau der Kürzel
 
 Den eigentlichen Abkürzungen wird vorangestellt:
 
-- Ein \# oder $, je nach Quelle (\# steht dabei für Orte, $ für
-  Strecken). Wird dies weggelassen (siehe Tabelle oben), ist es wie \#.
+- Ein Sonderzeichen, dass die Art der Quelle anzeigt. Wird dies
+  weggelassen (siehe Tabelle oben), ist es wie \#. Mögliche Zeichen:
+  - __\#__ für Orte
+  - __$__ für Strecken
+  - __%__ für Signale
+  - __&amp;__ für allgemeine Abkürzungen
+  - __/__ für Linien
 - Ein Bezeichner für die Quelle, siehe ebenfalls die Tabellen oben.
   Diese Bezeichner bestehen nur aus Großbuchstaben und werden von einem
   Doppelpunkt beendet.

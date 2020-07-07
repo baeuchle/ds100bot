@@ -48,7 +48,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/ds100.html">ds100</a>
    </td>
-   <td rowspan="2">
+   <td rowspan="4">
     #DS100, #_DE
    </td>
   </tr>
@@ -67,6 +67,39 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/benannte_strecken.html">benannte_strecken</a>
     <a href="https://ds100.frankfurtium.de/dumps/strecken.html">strecken</a>
+   </td>
+  </tr>
+  <tr><th>%DS</th>
+   <td>Signale in der ESO</td>
+   <td>Zusammenstellung von <a href="https://twitter.com/autinerd/">@autinerd</a></td>
+   <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></td>
+   <td style="text-align: left;">
+    <ul>
+     <li>Gibt es in DV301 (ehem. DR) und DS301 (ehem. DB) unterschiedliche
+     Signale mit gleichem Namen, wird die DS301-Variante beantwortet.</li>
+     <li>Signalnamen mit "/" können aus technischen Gründen nicht beantwortet
+     werden. Das betrifft Vr1/2 (aus der DV301).</li>
+    </ul>
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/ds301.html">ds301</a>
+   </td>
+  </tr>
+  <tr><th>&DS</th>
+   <td>Allgemeine Abkürzungen Bahn (Deutschland)</td>
+   <td>Zusammenstellung von <a href="https://twitter.com/autinerd/">@autinerd</a></td>
+   <td><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></td>
+   <td style="text-align: left;">
+    <ul>
+     <li>Beinhaltet Abkürzungen aus dem Betriebsregelwerk des VDV.</li>
+     <li>Liste ist auf Bahn-eigene und nicht komplett offensichtliche
+     Abkürzungen („Ellok“ für „Elektrolokomotive“) begrenzt</li>
+     <li>Groß- und Kleinschreibung ist sehr wichtig. Beispiele: „ZS“: Zugsammelschiene, „Zs“: Zugschaffner.</li>
+     <li>Signaltypen gibt es allerdings doppelt: „Asig“ und „ASig“ bzw. „Zvsig“ und „ZVsig“.</li>
+    </ul>
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/ds301.html">ds301</a>
    </td>
   </tr>
   <tr><th>#LP</th>
