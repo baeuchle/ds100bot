@@ -54,7 +54,7 @@ def find_tokens(tweet, modus, magic_tag):
         (?p)                # find longest match
         (?:^|\W)            # either at the beginning of the text or after a non-alphanumeric character, but don't find this
         (?:                 # Select source
-            (\$|\#|\%|\&|\/)# Special character to find something: # or $
+            (\$|\#|\%|\&amp;|\/)# Special character to find something: #,$,%,&,/
             (?:(\p{Lu}+):)? # Optional prefix, e.g. "DS:" or "VGF:"
         )
         (                   # Payload
@@ -180,6 +180,8 @@ def compose_answer(tweet, sql, magic_tags, modus, default_magic_tag='DS100'):
         log_.debug("Part: '%s' mt '%s'", tweetpart, tag)
         for match in find_tokens(tweetpart, modus, tag):
             sigil = match[0] if not match[0] == "" else '#'
+            if sigil == '&amp;':
+                sigil = '&'
             source = match[1]
             payload = match[2]
             payload = payload[0] + payload[1:].replace('_', ' ')
