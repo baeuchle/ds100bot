@@ -22,6 +22,12 @@ def arguments():
                         required=False,
                         action='store_true',
                         default=False)
+    parser.add_argument('--no-version',
+                        dest='notify_version',
+                        help='Do not send out version tweet and do not store last version',
+                        required=False,
+                        action='store_false',
+                        default=True)
     args_ = parser.parse_args()
     if args_.verbose is None:
         args_.verbose = 0
@@ -38,11 +44,13 @@ def setup_log(loglvl):
 def setup_apis(args_):
     mode = 'readwrite' if args_.rw else 'readonly'
     api_ = get_externals(mode=mode)
-    Persistence.notify_new_version(api_)
+    if args_.notify_version:
+        Persistence.notify_new_version(api_)
     return api_
 
-def teardown_apis(api_, max_id_=0):
-    Persistence.store_version(api_.database)
+def teardown_apis(api_, notify, max_id_=0):
+    if notify:
+        Persistence.store_version(api_.database)
     if max_id > 0:
         Persistence.store_since_id(api_.database, max_id_)
     api_.database.close_sucessfully()
@@ -57,4 +65,4 @@ if __name__ == "__main__":
     max_id = handle_list(api.twitter.all_relevant_tweets(
                             Persistence.get_since_id(api.database), tagsearch
                          ), apis=api, magic_tags=magic_tags)
-    teardown_apis(api, max_id)
+    teardown_apis(api, args.notify_version, max_id)
