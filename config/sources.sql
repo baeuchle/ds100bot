@@ -18,6 +18,8 @@ INSERT INTO sources VALUES('benannte_strecken','Abk','Beschreibung','Nummer',NUL
 INSERT INTO sources VALUES('ch','Abkuerzung','BEZEICHNUNG_OFFIZIELL',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('db640','Abk','Name',NULL,NULL,1,';',NULL,0);
 INSERT INTO sources VALUES('ds100','Abk','Name','Kurzname','gültig von',1,';',NULL,1);
+INSERT INTO sources VALUES('ds301','Abk','Gemeinsam','Kurzname',NULL,0,';',NULL,1);
+INSERT INTO sources VALUES('brw','Abk','Name',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('gimmick','Abk','Name',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('hhe','Abk','Name',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('leitpunkte','Abk','Name',NULL,NULL,0,';',NULL,1);

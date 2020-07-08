@@ -530,6 +530,12 @@ def mocked_tweets():
         id=442,
         user=User.followed
         ))
+    list_of_tweets.append(TweepyMock(
+        full_text='This tweet #FF $1234 %Hp0 &Awanst /FFM:U2 bot%tl%sigil%450',
+        expected_answer='FF: Frankfurt (Main) Hbf\n1234: HH-Eidelstedt - Rothenburgsort\nHp0: Halt.\nAwanst: Ausweichanschlussstelle',
+        id=450,
+        user=User.followed
+        ))
     return list_of_tweets
 
 def mocked_source():

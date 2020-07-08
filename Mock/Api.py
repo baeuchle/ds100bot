@@ -90,7 +90,7 @@ class MockApi(TwitterBase):
                     res_count.tweet.missed += 1
                 else:
                     res_count.tweet.correct += 1
-                    stat_log.info("Tweet %d correcly unanswered", t.id)
+                    stat_log.info("Tweet %d correctly unanswered", t.id)
                 continue
             # expected answer is not None:
             if not was_replied_to:
@@ -102,7 +102,7 @@ class MockApi(TwitterBase):
                 res_count.tweet.correct += 1
                 stat_log.info("Tweet %d correctly answered with correct answer", t.id)
                 continue
-            res_count.tweet.wrong_answer += 1
+            res_count.tweet.bad_content += 1
             stat_log.error("Tweet %d correctly answered, but with wrong answer", t.id)
             stat_log.warning(t.expected_answer)
             stat_log.warning(self.replies[t.id])
@@ -132,8 +132,8 @@ class MockApi(TwitterBase):
             stat_log.log(51, "ALL GOOD:               %2d", res_count.tweet.correct)
             stat_log.log(51, "INCORRECT TEXT:         %2d", res_count.tweet.bad_content)
             stat_log.log(51, "WRONG ANSWER/NOT ANSWER:%2d", res_count.tweet.missed)
-            stat_log.log(51, "CORRECT FOLLOWING:      %2d", res_count.tweet.correct)
-            stat_log.log(51, "WRONG FOLLOWING:        %2d", res_count.tweet.wrong)
+            stat_log.log(51, "CORRECT FOLLOWING:      %2d", res_count.follow.correct)
+            stat_log.log(51, "WRONG FOLLOWING:        %2d", res_count.follow.wrong)
         elif output == 'summary':
             ratio = (res_count.tweet.correct + res_count.follow.correct) / (0.0 + denominator)
             stat_log.log(51, "A %d/%d F %d/%d R %.1f%%",
