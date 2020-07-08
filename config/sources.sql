@@ -29,6 +29,7 @@ INSERT INTO sources VALUES('raildeliverygroup','Abbr','Name',NULL,NULL,0,';',NUL
 INSERT INTO sources VALUES('sncf','Abréviation','Définition',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('strecken','STRNR','STRKURZN','STRNAME',NULL,1,';',NULL,1);
 INSERT INTO sources VALUES('vgfhst','Abk','Name',NULL,NULL,1,';',NULL,1);
-INSERT INTO sources VALUES('vgfstrecken','Abk','Weg',NULL,NULL,1,';',NULL,1);
+INSERT INTO sources VALUES('vgflinien','Nummer','Laufweg',NULL,NULL,1,';',NULL,1);
+INSERT INTO sources VALUES('vgfstrecken','Abk','Weg',NULL,NULL,0,';',NULL,0);
 INSERT INTO sources VALUES('wien_vor','Abk','Name',NULL,NULL,0,';',NULL,1);
 COMMIT;

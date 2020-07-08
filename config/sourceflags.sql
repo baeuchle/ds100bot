@@ -33,6 +33,7 @@ INSERT INTO sourceflags VALUES('#','BOT','gimmick',NULL);
 -- local
 INSERT INTO sourceflags VALUES('#','FFM','vgfhst','_FFM');
 INSERT INTO sourceflags VALUES('$','FFM','vgfstrecken','_FFM');
+INSERT INTO sourceflags VALUES('/','FFM','vgflinien','_FFM');
 INSERT INTO sourceflags VALUES('#','HH','hhe','_HH');
 INSERT INTO sourceflags VALUES('#','W','wien_vor','_W');
 -- legacy aliases
