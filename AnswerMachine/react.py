@@ -8,6 +8,15 @@ log_ = log.getLogger(__name__)
 follog_ = log.getLogger(__name__ + '.following', '{name} {message}')
 
 def process_tweet(tweet, api, magic_tags, modus=None, default_magic_tag='DS100'):
+    textlist = list(tweet.text)
+    for key in ['media', 'urls']:
+        if key in tweet.original.entities:
+            for ent in tweet.original.entities[key]:
+                start = ent['indices'][0]
+                end = ent['indices'][1]
+                length = end - start
+                textlist[start:end] = '_'*length
+    tweet.text = "".join(textlist)
     reply = compose_answer(tweet.text,
                            api.database,
                            tweet.hashtags(magic_tags),

@@ -532,7 +532,7 @@ def mocked_tweets():
         ))
     list_of_tweets.append(TweepyMock(
         full_text='This tweet #FF $1234 %Hp0 &amp;Awanst /FFM:U2 bot%tl%sigil%450',
-        expected_answer='FF: Frankfurt (Main) Hbf\n1234: HH-Eidelstedt - Rothenburgsort\nHp0: Halt.\nAwanst: Ausweichanschlussstelle',
+        expected_answer='FF: Frankfurt (Main) Hbf\n1234: HH-Eidelstedt - Rothenburgsort\nHp0: Halt.\nAwanst: Ausweichanschlussstelle\nFFM/U2: Bad Homburg Gonzenheim - Nieder-Eschbach - Riedwiese - Heddernheim - Südbahnhof',
         id=450,
         user=User.followed
         ))
