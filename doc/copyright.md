@@ -218,7 +218,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfhst.html">vgfhst</a>
    </td>
-   <td rowspan="2">
+   <td rowspan="3">
     #_FFM
    </td>
   </tr>
@@ -237,6 +237,16 @@ Folgende Datenquellen werden vom Bot benutzt:
     <a href="https://ds100.frankfurtium.de/dumps/vgfstrecken.html">vgfhst</a>
    </td>
   </tr>
+  <tr><th>/FFM</th>
+   <td>Stadtbahn- und Straßenbahnlinien aus Frankfurt am Main</td>
+   <td>Eigene Zusammenstellung</td>
+   <td>Gemeinfrei</td>
+   <td>
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/vgflinien.html">vgflinien</a>
+   </td>
+  </tr>
   <tr><th>#HH</th>
    <td>Hamburger U-Bahn-Haltestellen</td>
    <td><a href="http://www.hamburger-bahnhoefe.de/">Hamburger-Bahnhöfe.de</a></td>
@@ -247,6 +257,30 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
    <td>
     #_HH
+   </td>
+  </tr>
+  <tr><th>/NI</th>
+   <td>Niedersachsen</td>
+   <td>Zusammenstellung von <a href="https://twitter.com/SimonBredemeier">@SimonBredemeier</a></td>
+   <td><a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC0</a></td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/niedersachsen.html">niedersachsen</a>
+   </td>
+   <td>
+    #_NI
+   </td>
+  </tr>
+  <tr><th>/SH</th>
+   <td>Schleswig-Holstein</td>
+   <td>Zusammenstellung von <a href="https://twitter.com/SimonBredemeier">@SimonBredemeier</a></td>
+   <td><a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC0</a></td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/schleswig_holstein.html">schleswig_holstein</a>
+   </td>
+   <td>
+    #_NI
    </td>
   </tr>
   <tr><th>#W</th>

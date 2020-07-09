@@ -1,0 +1,65 @@
+Linie;Laufweg
+RE1;Hannover - Nienburg (Weser) - Verden (Aller) - Bremen - Delmenhorst - Oldenburg (Oldb) - Leer (Ostfriesl) - Emden - Norddeich
+RE2;Uelzen - Celle - Hannover - Sarstedt - Kreiensen - Northeim (Han) - Göttingen
+RE3;Hamburg - Lüneburg - Uelzen - Celle - Hannover
+RE4;Hamburg - Buchholz (Nordh) - Rotenburg (Wümme) - Bremen
+RE5;Hamburg - Buxtehude - Stade - Cuxhaven
+RE8;Hannover - Nienburg (Weser) - Verden (Aller) - Bremen - Osterholz-Scharmbek - Bremerhaven
+RE9;Bremerhaven - Osterholz-Scharmbek - Bremen - Diepholz - Osnabrück
+RE10;Bad Harzburg - Goslar - Salzgitter-Ringelheim - Hildesheim - Hannover
+RE15;Emden - Leer (Ostfriesl) - Meppen - Lingen (Ems) - Rheine - Münster (Westf)
+RE18;Wilhelmshaven - Oldenburg (Oldb) - Cloppenburg - Bramsche - Osnabrück
+RE19;Wilhelmshaven - Oldenburg (Oldb) - Delmenhorst - Bremen
+RE20;Uelzen - Salzwedel - Hohenwulsch - Stendal - Tangerhütte - Magdeburg
+RE21;Goslar - Vienenburg - Wernigerode - Halberstadt - Oschersleben (Bode) - Magdeburg
+RE30;Wolfsburg - Gifhorn - Lehrte - Hannover
+RE50;Wolfsburg - Braunschweig - Hildesheim
+RE60;Braunschweig - Peine - Hannover - Minden (Westf) - Melle - Osnabrück - Rheine
+RE70;Braunschweig - Peine - Hannover - Minden (Westf) - Herford - Bielefeld
+RE78;Nienburg (Weser) - Minden (Westf) - Herford - Bielefeld
+RE83;Lüneburg - Büchen - Lübeck - Kiel
+RB31;Hamburg - Maschen - Lüneburg
+RB32;Lüneburg - Dahlenburg - Dannenberg
+RB33;Buxtehude - Bremervörde - Bremerhaven - Dorum - Cuxhaven
+RB35;Wolfsburg - Oebisfelde - Gardelegen - Stendal
+RB36;Wolfsburg - Oebisfelde - Wegenstedt - Haldensleben - Barleben - Magdeburg
+RB37;Bremen - Langwedel - Soltau - Uelzen
+RB38;Bucholz (Nordh) - Soltau - Walsrode - Hannover
+RB40;Braunschweig - Helmstedt - Eilsleben - Magdeburg - Burg
+RB41;Hamburg - Buchholz (Nordh) - Tostedt - Scheeßel - Rotenburg (Wümme) - Bremen
+RB42;Braunschweig - Wolfenbüttel - Vienenburg - Bad Harzburg
+RB43;Braunschweig - Wolfenbüttel - Vienenburg - Goslar
+RB44;Braunschweig - Salzgitter-Immendorf - Salzgitter-Lebenstedt
+RB45;Braunschweig - Wolfenbüttel - Schöppenstedt
+RB46;Braunschweig - Seesen - Herzberg (Harz)
+RB47;Braunschweig - Gifhorn - Wittingen - Uelzen
+RB48;Braunschweig - Salzgitter-Lebenstedt
+RB56;Bad Bentheim - Nordhorn - Neuenhaus
+RB57;Leer - Weener - Nieuweschanz - Groningen
+RB58;Osnabrück - Bramsche - Vechta - Delmenhorst - Bremen
+RB59;Wilhelmshaven - Sande - Jever - Wittmund - Esens
+RB61;Bielefeld - Herford - Bünde - Osnabrück - Rheine - Bad Bentheim - Hengelo
+RB66;Osnabrück - Hasbergen - Lengerich - Münster (Westf)
+RB75;Osnabrück - Dissen-Bad Rothenfelde - Halle (Westf) - Bielefeld
+RB76;Rotenburg (Wümme) - Verden (Aller)
+RB77;Hildesheim - Hameln - Löhne - Bünde
+RB79;Hildesheim - Bodenburg
+RB80;Göttingen - Nordheim - Herzberg (Harz) - Nordhausen
+RB81;Bodenfelde - Northeim - Herzberg (Harz) - Nordhausen
+RB82;Göttingen - Northeim - Kreiensen - Seesen - Goslar - Bad Harzburg
+RB84;Kreiensen - Holzminden - Höxter - Ottbergen - Paderborn
+RB85;Göttingen - Bodenfelde - Ottbergen - Paderborn
+RB86;Göttingen - Northeim - Einbeck-Salzderhelden - Einbeck
+RB7;Göttingen - Eichenberg - Bebra - Bad Hersfeld - Fulda
+RB8;Göttingen - Eichenberg - Hann Münden - Kassel
+S1;Minden (Westf) - Stadthagen - Wunstorf - Hannover - Weetzen - Haste
+S2;Nienburg (Weser) - Wunstorf - Hannover - Weetzen - Haste
+S3;Hildesheim - Lehrte - Hannover
+S4;Hildesheim - Sarstedt - Hannover Messe/Laatzen - Hannover - Langenhagen - Bennemühlen
+S5;Hannover Flughafen - Langenhagen - Hannover - Bad Pyrmont - Altenbeken - Paderborn
+S6;Celle - Burgdorf - Hannover
+S7;Celle - Burgdorf - Lehrte - Hannover
+RS1;Verden (Aller) - Achim - Bremen - Bremen-Vegesack - Bremen-Farge
+RS2;Bremerhaven-Lehe - Osterholz-Scharmbeck - Ritterhude - Bremen - Twistringen
+RS3;Bremen - Delmenhorst - Hude - Oldenburg (Oldb) - Bad Zwischenahn
+RS4;Bremen - Delmenhorst - Hude - Nordenham
