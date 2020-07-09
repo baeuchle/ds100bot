@@ -27,6 +27,7 @@ INSERT INTO sources VALUES('nationalrail','CRS Code','Station Name',NULL,NULL,0,
 INSERT INTO sources VALUES('nederlands','Abk','Name',NULL,NULL,0,';',NULL,0);
 INSERT INTO sources VALUES('niedersachsen','Linie','Laufweg',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('raildeliverygroup','Abbr','Name',NULL,NULL,0,';',NULL,1);
+INSERT INTO sources VALUES('schleswig_holstein','Linie','Laufweg',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('sncf','Abréviation','Définition',NULL,NULL,0,';',NULL,1);
 INSERT INTO sources VALUES('strecken','STRNR','STRKURZN','STRNAME',NULL,1,';',NULL,1);
 INSERT INTO sources VALUES('vgfhst','Abk','Name',NULL,NULL,1,';',NULL,1);
