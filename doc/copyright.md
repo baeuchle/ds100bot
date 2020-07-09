@@ -218,7 +218,7 @@ Folgende Datenquellen werden vom Bot benutzt:
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfhst.html">vgfhst</a>
    </td>
-   <td rowspan="2">
+   <td rowspan="3">
     #_FFM
    </td>
   </tr>
@@ -235,6 +235,16 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
    <td>
     <a href="https://ds100.frankfurtium.de/dumps/vgfstrecken.html">vgfhst</a>
+   </td>
+  </tr>
+  <tr><th>/FFM</th>
+   <td>Stadtbahn- und Straßenbahnlinien aus Frankfurt am Main</td>
+   <td>Eigene Zusammenstellung</td>
+   <td>Gemeinfrei</td>
+   <td>
+   </td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/vgflinien.html">vgflinien</a>
    </td>
   </tr>
   <tr><th>#HH</th>
