@@ -259,6 +259,18 @@ Folgende Datenquellen werden vom Bot benutzt:
     #_HH
    </td>
   </tr>
+  <tr><th>/NI</th>
+   <td>Niedersachsen</td>
+   <td>Zusammenstellung von <a href="https://twitter.com/SimonBredemeier">@SimonBredemeier</a></td>
+   <td><a href="https://creativecommons.org/share-your-work/public-domain/cc0">CC0</a></td>
+   <td></td>
+   <td>
+    <a href="https://ds100.frankfurtium.de/dumps/niedersachsen.html">niedersachsen</a>
+   </td>
+   <td>
+    #_NI
+   </td>
+  </tr>
   <tr><th>#W</th>
    <td>Betriebsstellen der Wiener Linien</td>
    <td><a href="https://bahn.hauptsignal.at/">Christoph Schönweilers hauptsignal.at</a> (Stand 2020)</td>
