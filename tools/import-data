@@ -6,6 +6,7 @@ import argparse
 import csv
 from datetime import date
 import os
+import sys
 import parentdir # pylint: disable=W0611
 from Externals import get_database_object
 import Persistence.log as log
@@ -57,12 +58,16 @@ for f in os.listdir(directory):
         )
         headers = database.cursor.fetchone()
         if headers is None:
-            headers = ['Abk', 'Name', None, 'valid_from', 'valid_until', 1, ';']
+            headers = ['Abk', 'Name', None, None, None, 1, ';']
         log_.debug(tuple(headers))
         reader = csv.DictReader(csvfile, delimiter=headers[6])
         for datum in reader:
-            abk = ' '.join(datum[headers[0]].split())
-            name = ' '.join(datum[headers[1]].split())
+            try:
+                abk = ' '.join(datum[headers[0]].split())
+                name = ' '.join(datum[headers[1]].split())
+            except AttributeError as ae:
+                log_.critical("%s::%d: %s", csvfile.name, reader.line_num, ae)
+                sys.exit(1)
             kurzname = ''
             if not headers[2] is None:
                 if datum[headers[2]] is None:
