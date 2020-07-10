@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
+Bitte bis zum Ende lesen und unten Bestätigen!
+
 Vorschlag für neue Datenquelle:
 * Art der Quelle (\#Orte, $Strecken, %Signale, &Regeln_Sonstiges, /Linien, Typen): […]
 * Kurzbeschreibung/Netz (z.B. „Niederländische Signalordnung“, „Japanische Linien“): […]
@@ -34,3 +36,6 @@ Vorschlag für neue Datenquelle:
 - Es existiert kein Urheberrecht auf Informationen. Wohl aber auf Datenzusammenstellungen.
 - Wer also eine existierende Datensammlung kopiert, muss das Urheberrecht für diese Datensammlung beachten.
 - Wer aus einer vorhandenen Übersicht Daten selbst zusammenstellt, muss diese Übersicht als Quelle angeben (das ist die Regel des Bots, keine juristische), muss aber das Urheberrecht an der Übersicht nicht beachten.
+- Bei „gängigen“ Lizenzen wie die CC-Familie, ODbL, Apache etc. reicht der Name, bei anderen bitte einen Link zur Lizenz hinzufügen.
+
+Ich habe die Regeln verstanden und bin damit einverstanden: […]
