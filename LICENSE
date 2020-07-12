@@ -1,5 +1,9 @@
 Copyright 2020 Bjørn Bäuchle
 
+This license pertains to all files in this repository "DS100-Bot" except
+those in directory sources/ whose license is mentioned in
+doc/copyright.md.
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
 You may obtain a copy of the License below, or at:
