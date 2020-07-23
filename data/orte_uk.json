@@ -1,0 +1,48 @@
+{
+  "id": "orte_uk",
+  "headline": "Haltestellen und Bahnhöfe in Großbritannien",
+  "access": [{
+    "m_hashtag": "_UK",
+    "x_source": "UK",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_uk_crs",
+    "short": "CRS Code",
+    "long": "Station Name",
+    "delim": ",",
+    "file": "sources/orte_uk_crs.csv",
+    "source": {
+      "name": "National Rail Enquiries",
+      "url": "https://www.nationalrail.co.uk/stations_destinations/48541.aspx",
+      "modified": true
+    },
+    "comments": [
+      "Dreistellige Kürzel",
+      "Stand 2018"
+    ]
+  },{
+    "id": "orte_uk_long",
+    "short": "Abbr",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/orte_uk_long.csv",
+    "source": {
+      "name": "Rail Delivery Group",
+      "url": "http://data.atoc.org/how-to",
+      "modified": true
+    },
+    "license": {
+      "name": "CC-BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "owner": "Rail Delivery Group"
+    },
+    "comments": [
+      "Detaillierte Betriebsstellen",
+      "Aus Fixed-width-Text extrahiert",
+      "Namen mit Kleinbuchstaben versehen",
+      "4- bis 7-stellige Kürzel",
+      "Stand 2020"
+    ]
+  }]
+}

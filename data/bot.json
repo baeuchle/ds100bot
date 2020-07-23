@@ -1,0 +1,20 @@
+{
+  "id": "bot",
+  "headline": "Informationen über den Bot",
+  "access": [{
+    "m_hashtag": null,
+    "x_source": "BOT",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "bot",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/bot.csv",
+    "filter": [],
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    }
+  }]
+}

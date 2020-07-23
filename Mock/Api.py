@@ -105,6 +105,7 @@ class MockApi(TwitterBase):
             res_count.tweet.bad_content += 1
             stat_log.error("Tweet %d correctly answered, but with wrong answer", t.id)
             stat_log.warning(t.expected_answer)
+            stat_log.warning("↑↑↑↑EXPECTED↑↑↑↑  ↓↓↓↓GOT THIS↓↓↓↓")
             stat_log.warning(self.replies[t.id])
         res_count.follow = namedtuple('Following', ['correct', 'wrong'])
         res_count.follow.correct = 0

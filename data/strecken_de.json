@@ -1,0 +1,45 @@
+{
+  "id": "strecken_de",
+  "description": "Eisenbahnstrecken Deutschland",
+  "access": [{
+    "m_hashtag": "DS100",
+    "x_source": "DS",
+    "type": "$"
+  }, {
+    "m_hashtag": "_DE",
+    "x_source": "DE",
+    "type": "$"
+  }],
+  "data": [{
+    "id": "vzg",
+    "short": "STRNR",
+    "long": "STRKURZN",
+    "add": "STRNAME",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/strecken_de_vzg.csv",
+    "description": "Streckennummern nach VzG / Stredax",
+    "source": {
+      "name": "Geo-Streckennetz",
+      "url": "https://data.deutschebahn.com/dataset/geo-strecke",
+      "modified": true
+    },
+    "license": {
+      "name": "CC-BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "owner": "Deutsche Bahn AG"
+    }
+  },{
+    "id": "strecken_de_namen",
+    "short": "Abk",
+    "long": "Beschreibung",
+    "add": "Nummer",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/strecken_de_namen.csv",
+    "description": "Zusätzliche Streckennamen aus eigener Zusammenstellung",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    }
+  }]
+}

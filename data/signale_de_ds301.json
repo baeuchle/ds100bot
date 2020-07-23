@@ -1,0 +1,41 @@
+{
+  "id": "signale_de_ds301",
+  "headline": "Eisenbahnsignale Westdeutschland",
+  "description": "DS301 der Deutschen Bahn",
+  "access": [{
+    "m_hashtag": "DS301",
+    "x_source": "DS",
+    "type": "%"
+  }, {
+    "m_hashtag": "DS100",
+    "x_source": "DS",
+    "type": "%"
+  }, {
+    "m_hashtag": "_DE",
+    "x_source": "DS",
+    "type": "%"
+  }],
+  "data": [{
+    "id": "ds301",
+    "short": "Abk",
+    "long": "Gemeinsam",
+    "add": "Kurzname",
+    "delim": ";",
+    "file": "sources/signale_de.csv",
+    "filter": [{
+      "col": "DS/DV",
+      "contains": "DS",
+      "empty": true
+    }],
+    "source": {
+      "name": "Zusammenstellung von @autinerd",
+      "url": "https://twitter.com/autinerd",
+      "modified": false
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": "@autinerd on twitter"
+    }
+    }]
+}

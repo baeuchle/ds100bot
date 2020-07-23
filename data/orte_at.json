@@ -1,0 +1,33 @@
+{
+  "id": "orte_at",
+  "headline": "Österreichische Betriebsstellen",
+  "access": [{
+    "m_hashtag": "_AT",
+    "x_source": "AT",
+    "type": "#"
+  },{
+    "m_hashtag": "DB640",
+    "x_source": "AT",
+    "type": "#"
+  },{
+    "m_hashtag": "ÖBB",
+    "x_source": "ÖBB",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_at",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/orte_at_db640.csv",
+    "source": {
+      "name": "Betriebsstellen Österreich laut DB 640",
+      "modified": true
+    },
+    "comments": [
+      "Quelle ist nicht offiziell.",
+      "Groß-/Kleinschreibung muss beachtet werden, es sind auch Kleinbuchstaben erlaubt!"
+    ]
+  }]
+}

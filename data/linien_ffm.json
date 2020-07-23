@@ -1,0 +1,20 @@
+{
+  "id": "linien_ffm",
+  "headline": "Linien in Frankfurt",
+  "description": "Stadtbahn- und Straßenbahnlinien der <a href=\"https://vgf-ffm.de\">VGF</a>",
+  "access": [{
+    "m_hashtag": "_FFM",
+    "x_source": "FFM",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_ffm",
+    "short": "Nummer",
+    "long": "Laufweg",
+    "delim": ";",
+    "file": "sources/linien_ffm.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    }
+  }]
+}

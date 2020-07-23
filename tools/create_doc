@@ -1,0 +1,77 @@
+#!/usr/bin/python3
+
+"""Create documentation"""
+
+import argparse
+import sys
+from pathlib import Path
+import subprocess
+import parentdir # pylint: disable=W0611
+import Documentation
+from Externals import get_database_object
+from GitVersion import Git
+from Import import find_all_configs
+import Persistence.log as log
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--verbose', '-v',
+                    dest='verbose',
+                    help='Output lots of stuff',
+                    required=False,
+                    default=3,
+                    action='count')
+args = parser.parse_args()
+args.verbose = 50 - args.verbose * 10
+
+log.basicConfig(level=args.verbose, style='{')
+log_ = log.getLogger('import-data', fmt='{name}:{levelname} {message}')
+
+output_dir = Path('output')
+dump_dir = output_dir / 'dumps'
+config_dir = Path('data')
+doc_source = Path('doc')
+Path.mkdir(dump_dir, parents=True, exist_ok=True)
+
+database = get_database_object('readwrite')
+database.purge_data()
+
+configurations = find_all_configs(config_dir)
+if configurations is None:
+    sys.exit(1)
+navilinks = Documentation.navilink_list(Git().describe('--dirty'))
+dumplinks = Documentation.dumplink_list(configurations)
+
+Documentation.create_documentation(navilinks, doc_source, output_dir)
+Documentation.create_dump_mainpage(navilinks, dumplinks, dump_dir)
+
+licpage = Documentation.Licenses(doc_source / 'copyright.md', navilinks)
+
+for cid, config in configurations.items():
+    log_.info("Processing file %s", cid)
+    is_default = True
+    for a in config.access:
+        database.insert_source(a, cid, is_default)
+        is_default = False # only first one.
+    for dl in config.data_list:
+        if not database.insert_datalist(dl, cid):
+            sys.exit(1)
+    Documentation.dump_source(config, dumplinks, navilinks, database, dump_dir)
+    licpage.add_source(config.id)
+licpage.write(output_dir / 'copyright.html')
+database.close_sucessfully()
+
+subprocess.run(['chmod', '-R', '664', str(output_dir)], check=False)
+subprocess.run(['chmod', '-R', '+X', str(output_dir)], check=False)
+target_dir = Path('/var/www/ds100/')
+avatar_dir = Path('/var/www/avatar/')
+if target_dir.exists():
+    subprocess.run(['rsync', '-via', str(output_dir) + "/", str(target_dir)], check=False)
+    subprocess.run(['rsync', '-via', str(doc_source / 'bot.css'), str(target_dir)], check=False)
+else:
+    log_.warning('Not copying documentation')
+if avatar_dir.exists():
+    subprocess.run(['rsync', '-via', str(doc_source / 'avatar.svg'), str(avatar_dir / 'ds100.svg')],
+    check=False)
+    log_.warning('Not copying avatar')
+
+log_.info("Done")

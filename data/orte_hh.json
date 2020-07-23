@@ -1,0 +1,23 @@
+{
+  "id": "orte_hamburg",
+  "headline": "Haltestellen der Hochbahn Hamburg",
+  "access": [{
+    "m_hashtag": "_HH",
+    "x_source": "HH",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_hh",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/orte_hamburg.csv",
+    "source": {
+      "name": "Hamburger-Bahnhöfe.de",
+      "url": "http://hamburger-bahnhoefe.de/"
+    },
+    "comments": [
+      "Privat zusammengestellte Liste"
+    ]
+  }]
+}

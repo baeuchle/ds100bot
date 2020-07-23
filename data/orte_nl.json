@@ -1,0 +1,26 @@
+{
+  "id": "orte_nl",
+  "headline": "Niederländische Betriebsstellen",
+  "access": [{
+    "m_hashtag": "_NL",
+    "x_source": "NL",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_nl",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/orte_nl.csv",
+    "source": {
+      "name": "Anhang 6 zu Regeling spoorverkeer",
+      "url": "https://wetten.overheid.nl/BWBR0017707/2020-04-01/#Bijlage6"
+    },
+    "license": {
+      "name": "Gemeinfrei, da Gesetz"
+    },
+    "comments": [
+      "Stand 2020"
+    ]
+  }]
+}

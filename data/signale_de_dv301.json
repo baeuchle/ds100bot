@@ -1,0 +1,36 @@
+{
+  "id": "signale_de_dv301",
+  "headline": "Eisenbahnsignale Ostdeutschland",
+  "description": "DV301 der Deutschen Bahn",
+  "access": [{
+    "m_hashtag": "DV301",
+    "x_source": "DV",
+    "type": "%"
+  }],
+  "data": [{
+    "id": "dv301",
+    "short": "Abk",
+    "long": "Gemeinsam",
+    "add": "Kurzname",
+    "delim": ";",
+    "file": "sources/signale_de.csv",
+    "filter": [{
+      "col": "DS/DV",
+      "contains": "DV",
+      "empty": true
+    }],
+    "source": {
+      "name": "Zusammenstellung von @autinerd",
+      "url": "https://twitter.com/autinerd",
+      "modified": false
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": "@autinerd on twitter"
+    },
+    "comments": [
+      "Signalnamen mit \"/\" können aus technischen Gründen nicht beantwortet werden. Das betrifft Vr1/2."
+    ]
+  }]
+}
