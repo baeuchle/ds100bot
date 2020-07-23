@@ -305,5 +305,5 @@ Folgende Datenquellen werden vom Bot benutzt:
    </td>
    <td></td>
   </tr>
- <tbody>
+ </tbody>
 </table>
