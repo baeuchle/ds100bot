@@ -6,10 +6,10 @@ from .generator import Generator
 class Dump(Generator):
     def __init__(self, titletext, config, **kwargs):
         super().__init__(titletext, **kwargs)
-        self.headline("Daten aus Quelle {}".format(config.head))
+        self.headline("Daten: {}".format(config.head))
         if config.desc:
             description = ET.SubElement(self.head, 'p')
-            description.text = config.desc
+            description.append(Generator.xmltext(config.desc))
         self.head.append(kwargs.get('dumplinks', None))
         self.table = ET.SubElement(self.main, 'table', attrib={'class': 'dumptable'})
         links = kwargs.get('links', None)

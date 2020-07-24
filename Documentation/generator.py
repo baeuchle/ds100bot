@@ -39,3 +39,7 @@ class Generator:
         with targetfile.open(mode='w') as tf:
             ET.ElementTree(self.html).write(tf,
                 encoding='unicode', method='xml')
+
+    @classmethod
+    def xmltext(cls, text):
+        return ET.fromstring('<span>' + text + '</span>')

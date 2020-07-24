@@ -1,6 +1,6 @@
 {
   "id": "linien_ffm",
-  "headline": "Linien in Frankfurt",
+  "headline": "Linien Frankfurt",
   "description": "Stadtbahn- und Straßenbahnlinien der <a href=\"https://vgf-ffm.de\">VGF</a>",
   "access": [{
     "m_hashtag": "_FFM",
