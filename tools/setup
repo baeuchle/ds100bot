@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Create documentation"""
+"""Setup of data and documentation"""
 
 import argparse
 import sys
@@ -24,7 +24,7 @@ args = parser.parse_args()
 args.verbose = 50 - args.verbose * 10
 
 log.basicConfig(level=args.verbose, style='{')
-log_ = log.getLogger('import-data', fmt='{name}:{levelname} {message}')
+log_ = log.getLogger('setup', fmt='{name}:{levelname} {message}')
 
 output_dir = Path('output')
 dump_dir = output_dir / 'dumps'
@@ -72,6 +72,7 @@ else:
 if avatar_dir.exists():
     subprocess.run(['rsync', '-via', str(doc_source / 'avatar.svg'), str(avatar_dir / 'ds100.svg')],
     check=False)
+else:
     log_.warning('Not copying avatar')
 
 log_.info("Done")
