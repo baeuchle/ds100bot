@@ -31,7 +31,7 @@ class SourceConfig:
                 msg = "Key {} missing".format(mf)
                 raise JsonError(msg)
         self.access = [Access(a) for a in self.json['access']]
-        self.data_list = [DataSource(d) for d in self.json['data']]
+        self.data_list = [DataSource(d, self.json) for d in self.json['data']]
         self.id = self.json['id']
         self.head = self.json.get("headline", self.json.get("description", self.id))
         self.desc = self.json.get("description", "")

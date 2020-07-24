@@ -2,24 +2,28 @@
 
 import csv
 import Persistence.log as log
-from .error import DataError
+from .error import DataError, JsonError
 from .row import Row
 log_ = log.getLogger(__name__, fmt='{name}:{levelname} {message}')
 
 class DataSource:
     _mandatory_fields = (
-        "delim",
         "file",
-        "id",
         "long",
         "short"
     )
 
-    def __init__(self, config_dict):
+    def __init__(self, config_dict, complete_dict):
         self.config = config_dict
-        self.id = self.config['id']
+        self.id = self.config.get('id', complete_dict.get('id', None))
+        for mf in DataSource._mandatory_fields:
+            if mf not in config_dict:
+                msg = "Key {} missing".format(mf)
+                raise JsonError(msg)
+        if self.id is None:
+            raise JsonError("Key id neither in top level nor data::id")
         handle = open(self.config['file'])
-        self.reader = csv.DictReader(handle, delimiter=self.config['delim'])
+        self.reader = csv.DictReader(handle, delimiter=self.config.get('delim', ';'))
         self.cols = {
             'short': self.config['short'],
             'long': self.config['long'],
