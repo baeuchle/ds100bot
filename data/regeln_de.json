@@ -19,19 +19,20 @@
     "nolink": true,
     "file": "sources/regeln_de.csv",
     "source": {
-      "name": "Zusammenstellung von @autinerd",
-      "url": "https://twitter.com/autinerd",
-      "modified": false
+      "name": "Eigene Zusammenstellung"
     },
     "license": {
       "name": "CC-BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "owner": "@autinerd on twitter"
+      "owner": {
+        "type": "twitter",
+        "name": "autinerd"
+      }
     },
     "comments": [
       "Liste ist auf Bahn-eigene und nicht komplett offensichtliche Abkürzungen („Ellok“ für „Elektrolokomotive“) begrenzt",
       "Groß- und Kleinschreibung ist sehr wichtig. Beispiele: „ZS“: Zugsammelschiene, „Zs“: Zugschaffner.",
-     "Signaltypen gibt es doppelt: „Asig“ und „ASig“ bzw. „Zvsig“ und „ZVsig“."
+      "Signaltypen gibt es doppelt: „Asig“ und „ASig“ bzw. „Zvsig“ und „ZVsig“."
     ]
   }]
 }

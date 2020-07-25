@@ -20,7 +20,10 @@
     "license": {
       "name": "ähnlich CC-BY",
       "url": "https://opendata.swiss/de/dataset?q=haltestelle&organization=bundesamt-fur-verkehr-bav&res_rights=NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
-      "owner": "SBB"
+      "owner": {
+        "type": "name",
+        "name": "SBB"
+      }
     },
     "comments": [
       "Aus der der Originalquelle sind nur diejenigen Einträge übernommen, die wirklich eine Abkürzung haben."

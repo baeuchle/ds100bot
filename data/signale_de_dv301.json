@@ -20,14 +20,15 @@
       "empty": true
     }],
     "source": {
-      "name": "Zusammenstellung von @autinerd",
-      "url": "https://twitter.com/autinerd",
-      "modified": false
+      "name": "Eigene Zusammenstellung"
     },
     "license": {
       "name": "CC-BY-SA 4.0",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "owner": "@autinerd on twitter"
+      "owner": {
+        "type": "twitter",
+        "name": "autinerd"
+      }
     },
     "comments": [
       "Signalnamen mit \"/\" können aus technischen Gründen nicht beantwortet werden. Das betrifft Vr1/2."

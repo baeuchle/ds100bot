@@ -20,7 +20,10 @@
     "license": {
       "name": "ODbL",
       "url": "https://opendatacommons.org/licenses/odbl/",
-      "owner": "SNCF"
+      "owner": {
+        "type": "name",
+        "name": "SNCF"
+      }
     },
     "comments": [
       "Scheinbar war die Originalquelle früher all-caps und wird langsam umgestellt. Das ist aber nur bis C oder D gekommen, danach wird's etwas uneinheitlich."

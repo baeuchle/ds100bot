@@ -103,7 +103,9 @@ class Database:
         self.cursor.execute("""
             SELECT
                 Abk,
-                Name
+                Name,
+                Kurzname,
+                Datenliste
             FROM
                 shortstore
             WHERE
@@ -157,15 +159,17 @@ class Database:
                 Abk,
                 Name,
                 Kurzname,
+                Datenliste,
                 source
             )
             VALUES
-            (?,?,?,?,?)
+            (?,?,?,?,?,?)
         """,
              (primkey
             , datarow.abbr
             , datarow.long
             , datarow.add
+            , data_id
             , source_id
             , )
         )

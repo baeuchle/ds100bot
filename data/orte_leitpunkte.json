@@ -20,7 +20,10 @@
     },
     "license": {
       "name": "Extrahiert aus Liste",
-      "owner": "DB AG / @baeuchle"
+      "owner": {
+        "type": "name",
+        "name": "DB AG"
+      }
     }
   }]
 }

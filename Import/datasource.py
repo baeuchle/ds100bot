@@ -10,7 +10,8 @@ class DataSource:
     _mandatory_fields = (
         "file",
         "long",
-        "short"
+        "short",
+        "source"
     )
 
     def __init__(self, config_dict, complete_dict):

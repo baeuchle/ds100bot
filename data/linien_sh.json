@@ -13,13 +13,15 @@
     "delim": ";",
     "file": "sources/linien_sh.csv",
     "source": {
-      "name": "Eigene Zusammenstellung von @SimonBredemeier",
-      "url": "https://twitter.com/SimonBredemeier"
+      "name": "Eigene Zusammenstellung"
     },
     "license": {
       "name": "CC0",
       "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
-      "owner": "Simon Bredemeier"
+      "owner": {
+        "type": "twitter",
+        "name": "SimonBredemeier"
+      }
     }
   }]
 }

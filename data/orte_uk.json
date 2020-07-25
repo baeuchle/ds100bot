@@ -35,7 +35,10 @@
     "license": {
       "name": "CC-BY 4.0",
       "url": "https://creativecommons.org/licenses/by/4.0/",
-      "owner": "Rail Delivery Group"
+      "owner": {
+        "type": "name",
+        "name": "Rail Delivery Group"
+      }
     },
     "comments": [
       "Detaillierte Betriebsstellen",
