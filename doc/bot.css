@@ -9,6 +9,9 @@ h1::before {
 
 ul.flat {
   padding-left: 0;
+  width: 100%;
+  border-top: thin black double;
+  border-bottom: thin black double;
 }
 
 ul.flat li::before {
