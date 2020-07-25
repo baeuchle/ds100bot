@@ -13,25 +13,19 @@ CREATE TABLE IF NOT EXISTS "shortstore" (
 	`Abk`	TEXT NOT NULL,
 	`Name`	TEXT NOT NULL,
 	`Kurzname`	TEXT,
-	`gueltigvon`	TEXT,
+	`Datenliste`	TEXT,
 	`source`	TEXT,
 	PRIMARY KEY(`id`)
 );
-CREATE TABLE IF NOT EXISTS "sourceflags" ( `sigil` TEXT NOT NULL, `abbr` TEXT NOT NULL, `sourcename` TEXT NOT NULL );
 CREATE TABLE IF NOT EXISTS "sources" (
-	`source_name`	TEXT NOT NULL,
-	`abk_col`	TEXT NOT NULL,
-	`name_col`	TEXT NOT NULL,
-	`kurz_col`	TEXT,
-	`valid_from_col`	TEXT,
-	`replace_links`	INTEGER NOT NULL,
-	`delimiter`	TEXT NOT NULL,
-	`valid_until_col`	TEXT,
-	PRIMARY KEY(`source_name`,`source_name`)
+	"source_id"	TEXT NOT NULL,
+	"type"	TEXT,
+	"magic_hashtag"	TEXT,
+	"explicit_source"	TEXT NOT NULL,
+	"is_default"	INTEGER NOT NULL DEFAULT 0 CHECK(is_default in (0,1))
 );
 CREATE TABLE IF NOT EXISTS "blacklist" (
 	`id`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
 	`source`	TEXT NOT NULL,
 	`Abk`	TEXT NOT NULL
 );
-/* No STAT tables available */
