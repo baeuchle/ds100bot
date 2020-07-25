@@ -56,7 +56,7 @@ for cid, config in configurations.items():
         if not database.insert_datalist(dl, cid):
             sys.exit(1)
     Documentation.dump_source(config, dumplinks, navilinks, database, dump_dir)
-    licpage.add_source(config.id)
+    licpage.add_source(config)
 licpage.write(output_dir / 'copyright.html')
 database.close_sucessfully()
 
