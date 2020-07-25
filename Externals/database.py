@@ -116,6 +116,22 @@ class Database:
         )
         return self.cursor.fetchall()
 
+    def dumpblack(self):
+        self.cursor.execute("""
+            SELECT
+                blacklist.Abk,
+                shortstore.Name,
+                shortstore.Kurzname,
+                shortstore.Datenliste
+            FROM
+                blacklist
+            JOIN shortstore ON blacklist.Abk = shortstore.Abk
+            ORDER BY
+                blacklist.Abk
+        """, ()
+        )
+        return self.cursor.fetchall()
+
     def purge_data(self):
         log_.info("Purging old data...")
         self.cursor.execute("DELETE FROM shortstore")

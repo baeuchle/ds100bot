@@ -58,6 +58,7 @@ for cid, config in configurations.items():
     Documentation.dump_source(config, dumplinks, navilinks, database, dump_dir)
     licpage.add_source(config)
 licpage.write(output_dir / 'copyright.html')
+Documentation.dump_blacklist(dumplinks, navilinks, database, dump_dir)
 database.close_sucessfully()
 
 subprocess.run(['chmod', '-R', '664', str(output_dir)], check=False)

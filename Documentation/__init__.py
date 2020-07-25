@@ -4,6 +4,7 @@ from xml.etree import ElementTree as ET
 from pathlib import Path
 from .generator import Generator
 from .dump import Dump
+from .dump_bl import DumpBlacklist
 from .markdowndoc import MarkdownDoc
 from .licenses import Licenses
 
@@ -45,3 +46,9 @@ def dump_source(config, dumplinks, navilinks, db, dumpdir):
     for entry_row in db.dumplist(config.id):
         dump.add_row(entry_row)
     dump.write(dumpdir / (config.id + '.html'))
+
+def dump_blacklist(dumplinks, navilinks, db, dumpdir):
+    dump = DumpBlacklist(dumplinks=dumplinks, links=navilinks)
+    for entry_row in db.dumpblack():
+        dump.add_row(entry_row)
+    dump.write(dumpdir / 'blacklist.html')
