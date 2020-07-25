@@ -3,51 +3,61 @@ DS-100-Bot
 
 Dies ist ein Twitter-Bot zur Expansion von Bahnabkürzungen.
 
-Usage
------
+Vorbereitungen
+--------------
 
-Execute ``ds100bot.py``. See its ``--help``-option for details.
+Die Datei config/schema.sql enthält die Struktur der Datenbank. Die
+Datenbank ``info.db`` kann damit erstelt werden:
 
-If you're looking for the bots behaviour w/o trying to run it yourself,
-visit https://ds100.frankfurtium.de. You may want to learn German first.
+```
+    cat schema.sql | sqlite3 info.db
+```
 
-Prerequisites
+Um den Twitter-Bot nutzen zu können, muss die geneigte Benutzerin
+[Twitter-Developress](https://developer.twitter.com/) werden. Dann
+erhält sie auch Authentifizierungsdaten.
+
+Die Datei credentials.py.dist muss in credentials.py umbenannt werden
+und die Twitter-Authentifizierungsdaten eingetragen werden.
+
+Daten werden eingelesen und die Dokumentation erzeugt mit
+
+```
+    tools/setup
+```
+
+Vorbedinungen
 -------------
 
-The bot is written in Python3 and uses the non-standard packages
+Der Bot ist in python3 geschrieben und benutzt SQLite3 als Datenbank.
+Alle verwendeten Python-Packages sind als Ubuntu-Packages verfügbar und
+wahrscheinlich auch mit pip installierbar.
 
-* tweepy
-* re
-* sqlite3
+Ausführen
+---------
 
-(all others are included in a standard Ubuntu distribution).
+Es gibt vier Hauptprogramme. Für Informationen zur Bedienung dieser
+Programme kann die Option ``--help`` verwendet werden.
 
-In order to create the documentation, ``markdown`` is required.
+* ``ds100bot``: Der eigentliche Bot. Kann beliebig oft im Abstand weniger
+  Minuten ausgeführt werden.
+* ``statistics``: Gibt Statistiken über die Benutzung des Bots aus. Sollte
+  z.B. einmal monatlich ausgeführt werden.
+* ``test``: Führt Testfälle aus und überprüft, ob die Testtweets korrekt
+  beantwortet werden.
+* ``get_tweet``: Lädt echte Tweets herunter. Damit können problematische
+  Tweets genauer analysiert werden.
 
-Before starting
----------------
+LIZENZ
+======
 
-* Create an sqlite database ``info.db`` from ``schema.sql``:
-    ```
-    cat schema.sql | sqlite3 info.db
-    ```
-* Import the source data:
-    ```
-    cat config/sourceflags.sql | sqlite3 info.db
-    cat config/sources.sql | sqlite3 info.db
-    ```
-* Copy ``credentials.py.dist`` to ``credentials.py`` and insert your
-  Twitter bot credentials.
-* Import data using ``import-data`` or
-* Create the documentation AND import data in one step using
-  ``update-doc``.
+Der Quellcode dieses Bots ist unter der Apache Lizenz, Version 2.0,
+lizensiert. Siehe Datei LICENSE.
 
-LICENSE
-=======
+Die Datei ``config/api_weights.json`` ist von
+https://github.com/twitter/twitter-text/tree/master/config/v3.json
+genommen und von Twitter, Inc. ebenfalls unter Apache Lizenz, Version
+2.0, lizensiert.
 
-The source code of this bot is licensed under Apache License, Version
-2.0, see ``LICENSE``.
-
-The file ``config/api_weights.json`` is taken from
-https://github.com/twitter/twitter-text/tree/master/config/v3.json and
-licensed by Twitter, Inc., also under Apache License, Version 2.0.
+Die Datentabellen in ``sources`` stehen unter verschiedenen Lizenzen.
+Diese sind in ``data`` aufgeführt.
