@@ -1,0 +1,24 @@
+{
+  "id": "strecken_ffm",
+  "headline": "Stadtbahnstrecken Frankfurt",
+  "access": [{
+    "m_hashtag": "_FFM",
+    "x_source": "FFM",
+    "type": "$"
+  }],
+  "data": [{
+    "id": "strecken_ffm",
+    "short": "Abk",
+    "long": "Weg",
+    "delim": ";",
+    "file": "sources/strecken_ffm.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung aus Krakies/Nagel",
+      "url": "https://de.wikipedia.org/wiki/Vorlage:Krakies/Nagel",
+      "modified": true
+    },
+    "comments": [
+      "Alle Bauabschnitte der Stadtbahnstrecken können mit großen lateinischen Buchstaben oder den Unicode-Zeichen für römische Zahlen geschrieben werden: ‚$FFM:DIV‘ = ‚$FFM:DⅣ‘ = ‚$FFM:Dⅳ‘."
+    ]
+  }]
+}

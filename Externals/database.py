@@ -1,6 +1,7 @@
 # pylint: disable=C0114
 
 import sqlite3
+import datetime
 import Persistence.log as log
 from GitVersion import Git
 log_ = log.getLogger(__name__)
@@ -24,11 +25,11 @@ class Database:
     def magic_hashtags(self):
         self.cursor.execute("""
             SELECT
-                distinct(magictag)
+                distinct(magic_hashtag)
             FROM
-                sourceflags
+                sources
             WHERE
-                magictag IS NOT NULL
+                magic_hashtag IS NOT NULL
         """)
         results = ["#" + row[0] for row in self.cursor.fetchall()]
         return "(" + (" OR ".join(results)) + ")", results
@@ -97,3 +98,111 @@ class Database:
             LIMIT 0, 20
         """, (since, ))
         return self.cursor.fetchall()
+
+    def dumplist(self, source_id):
+        self.cursor.execute("""
+            SELECT
+                Abk,
+                Name,
+                Kurzname,
+                Datenliste
+            FROM
+                shortstore
+            WHERE
+                source = ?
+            ORDER BY
+                Abk
+        """, (source_id, )
+        )
+        return self.cursor.fetchall()
+
+    def dumpblack(self):
+        self.cursor.execute("""
+            SELECT
+                blacklist.Abk,
+                shortstore.Name,
+                shortstore.Kurzname,
+                shortstore.Datenliste
+            FROM
+                blacklist
+            JOIN shortstore ON blacklist.Abk = shortstore.Abk
+            ORDER BY
+                blacklist.Abk
+        """, ()
+        )
+        return self.cursor.fetchall()
+
+    def purge_data(self):
+        log_.info("Purging old data...")
+        self.cursor.execute("DELETE FROM shortstore")
+        self.cursor.execute("DELETE FROM sources")
+
+    def insert_source(self, access, source_id, is_def):
+        self.cursor.execute("""
+            INSERT INTO sources(
+                source_id,
+                type,
+                magic_hashtag,
+                explicit_source,
+                is_default
+            ) VALUES (?, ?, ?, ?, ?)
+        """,
+            (source_id,
+            access.type,
+            access.magic_hashtag,
+            access.explicit_source,
+            is_def
+            )
+        )
+
+    def insert_datalist(self, data_list, source_id):
+        for row in data_list:
+            try:
+                self.insert_data(row, data_list.id, source_id)
+            except sqlite3.Error as sqle:
+                log_.critical("%s: Error inserting data: %s", data_list.position, sqle)
+                return False
+        return True
+
+    def insert_data(self, datarow, data_id, source_id):
+        if self.readonly:
+            return
+        primkey = '{}::{}'.format(data_id, datarow.abbr)
+        self.cursor.execute("""
+            INSERT OR REPLACE
+            INTO shortstore(
+                id,
+                Abk,
+                Name,
+                Kurzname,
+                Datenliste,
+                source
+            )
+            VALUES
+            (?,?,?,?,?,?)
+        """,
+             (primkey
+            , datarow.abbr
+            , datarow.long
+            , datarow.add
+            , data_id
+            , source_id
+            , )
+        )
+
+    def log_request(self, result):
+        if self.readonly:
+            return
+        self.cursor.execute("""
+            INSERT INTO
+                requests(
+                    ds100_id
+                  , request_date
+                  , status
+                    )
+                VALUES (?,?,?)
+            """,
+               (result.normalized()
+              , datetime.datetime.today().strftime('%Y%m%d')
+              , result.status
+              , ))

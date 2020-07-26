@@ -1,0 +1,39 @@
+{
+  "id": "orte_de",
+  "description": "Eisenbahnbetriebsstellen, Bahnhöfe und Haltepunkte in Deutschland",
+  "headline": "Deutsche Betriebsstellen",
+  "access": [{
+    "m_hashtag": "DS100",
+    "x_source": "DS",
+    "type": "#"
+  }, {
+    "m_hashtag": "_DE",
+    "x_source": "DE",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "ds100",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/orte_de_ds100.csv",
+    "description": "Betriebsstellen der Deutschen Bahn nach Ril100",
+    "source": {
+      "name": "Betriebsstellenverzeichnis der Deutschen Bahn AG",
+      "url": "https://data.deutschebahn.com/dataset/data-betriebsstellen",
+      "modified": true
+    },
+    "license": {
+      "name": "CC-BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "owner": {
+        "type": "name",
+        "name": "Deutsche Bahn AG"
+      }
+    },
+    "comments": [
+      "Einzelne Einträge korrigiert"
+    ]
+  }]
+}

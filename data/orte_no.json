@@ -1,0 +1,27 @@
+{
+  "id": "orte_no",
+  "description": "Eisenbahnbetriebsstellen Norwegen",
+  "headline": "Betriebsstellen Norwegen",
+  "access": [{
+    "m_hashtag": "_NO",
+    "x_source": "NO",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_no",
+    "short": "Fork",
+    "long": "Navn",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/orte_no.csv",
+    "description": "Betriebsstellen Norwegen",
+    "source": {
+      "name": "Grafische Fahrpläne, Stand 2020",
+      "url": "https://www.banenor.no/kundeportal/ruter-og-sportilgang/grafiske-togruter1/",
+      "modified": true
+    },
+    "comments": [
+      "Selbst abgetippt"
+    ]
+  }]
+}

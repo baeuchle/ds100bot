@@ -1,0 +1,24 @@
+{
+  "id": "orte_wien",
+  "headline": "Haltestellen Wien",
+  "access": [{
+    "m_hashtag": "_W",
+    "x_source": "W",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_wien",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/orte_wien.csv",
+    "source": {
+      "name": "Christoph Schönweilers hauptsignal.at",
+      "url": "https://bahn.hauptsignal.at/"
+    },
+    "comments": [
+      "Datenbanksuche auf hauptsignal.at",
+      "Stand 2020"
+    ]
+  }]
+}

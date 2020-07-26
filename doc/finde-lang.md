@@ -1,5 +1,5 @@
 Finden der Abkürzungen
-----------------------
+======================
 
 Wurde ein [Tweet gefunden](/finde-tweets.html) und die [aktuelle
 Abkürzungsliste](/finde-listen.html) festgestellt, wird der Text nach

@@ -1,0 +1,29 @@
+{
+  "id": "orte_leitpunkte",
+  "headline": "Leitpunkte Deutschland",
+  "description": "Wegepunkte auf Fahrkartencodes",
+  "access": [{
+    "m_hashtag": "_LP",
+    "x_source": "LP",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "leitpunkte",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/orte_leitpunkte.csv",
+    "source": {
+      "name": "Tarifpunkte in den Beförderungsbedingungen der DB",
+      "url": "https://www.bahn.de/p/view/mdb/bahnintern/agb/entfernungswerk/mdb_305971_teil_2-3_tarifpunkte_anstobahnhfe_regionen.pdf",
+      "modified": false
+    },
+    "license": {
+      "name": " ",
+      "owner": {
+        "type": "name",
+        "name": "Deutsche Bahn AG"
+      }
+    }
+  }]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "regeln_de",
+  "headline": "Eisenbahnbegriffe (Deutschland)",
+  "description": "Abkürzungen aus Betriebsregelwerk des VDV und Ril 408 der Deutschen Bahn",
+  "access": [{
+    "m_hashtag": "DS100",
+    "x_source": "DS",
+    "type": "&"
+  }, {
+    "m_hashtag": "_DE",
+    "x_source": "DS",
+    "type": "&"
+  }],
+  "data": [{
+    "id": "ril408",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/regeln_de.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "autinerd"
+      }
+    },
+    "comments": [
+      "Liste ist auf Bahn-eigene und nicht komplett offensichtliche Abkürzungen („Ellok“ für „Elektrolokomotive“) begrenzt",
+      "Groß- und Kleinschreibung ist sehr wichtig. Beispiele: „ZS“: Zugsammelschiene, „Zs“: Zugschaffner.",
+      "Signaltypen gibt es doppelt: „Asig“ und „ASig“ bzw. „Zvsig“ und „ZVsig“."
+    ]
+  }]
+}

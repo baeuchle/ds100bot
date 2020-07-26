@@ -1,0 +1,28 @@
+{
+  "id": "orte_ffm",
+  "headline": "Haltestellen Frankfurt",
+  "access": [{
+    "m_hashtag": "_FFM",
+    "x_source": "FFM",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_ffm",
+    "short": "Abk",
+    "long": "Name",
+    "delim": ";",
+    "file": "sources/orte_ffm.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung, Hilfe aus privaten Nachrichten und dem Frankfurter Nahverkehrsforum",
+      "url": "https://frankfurter-nahverkehrsforum.de/forum/index.php?thread/20682-stationskürzel/",
+      "modified": true
+    },
+    "comments": [
+      "Alle Stadtbahn- und von der Leitstelle betreuten Straßenbahnhaltestellen haben ein Kürzel aus zwei Buchstaben",
+      "Bei Kreuzungsbahnhöfen im Stadtbahnbereich hat jede Ebene einen dritten Buchstaben",
+      "Andere Betriebsstellen haben längere Kürzel.",
+      "Alle Stadtbahnhaltestellen haben dreistellige Nummern",
+      "Straßenbahnhaltestellen haben vierstellige Nummern (diese sind allerdings nur lückenhaft bekannt)"
+    ]
+  }]
+}

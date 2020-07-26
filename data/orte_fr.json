@@ -1,0 +1,32 @@
+{
+  "id": "orte_fr",
+  "headline": "Französische Bahnhöfe",
+  "access": [{
+    "m_hashtag": "_FR",
+    "x_source": "FR",
+    "type": "#"
+  }],
+  "data": [{
+    "id": "orte_fr",
+    "short": "Abréviation",
+    "long": "Définition",
+    "delim": ";",
+    "file": "sources/orte_sncf.csv",
+    "source": {
+      "name": "Lexique des abréviations SNCF",
+      "url": "https://ressources.data.sncf.com/explore/dataset/lexique-des-acronymes-sncf/",
+      "modified": true
+    },
+    "license": {
+      "name": "ODbL",
+      "url": "https://opendatacommons.org/licenses/odbl/",
+      "owner": {
+        "type": "name",
+        "name": "SNCF"
+      }
+    },
+    "comments": [
+      "Scheinbar war die Originalquelle früher all-caps und wird langsam umgestellt. Das ist aber nur bis C oder D gekommen, danach wird's etwas uneinheitlich."
+    ]
+  }]
+}

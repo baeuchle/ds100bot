@@ -1,5 +1,5 @@
 Interaktion mit dem Bot
------------------------
+=======================
 
 Der Bot kann Benutzerinnen automatisch folgen, um ihre Tweets in seiner
 Timeline zu sehen und damit ohne gesonderte Aufwände auf diese Tweets zu
