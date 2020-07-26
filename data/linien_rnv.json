@@ -1,0 +1,26 @@
+{
+  "id": "linien_rnv",
+  "headline": "Straßenbahnlinien des RNV",
+  "access": [{
+    "m_hashtag": "_RNV",
+    "x_source": "RNV",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_rnv",
+    "short": "Nummer",
+    "long": "Laufweg",
+    "file": "sources/linien_rnv.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "moritzkraehe"
+      }
+    }
+  }]
+}

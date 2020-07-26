@@ -1,0 +1,87 @@
+Nummer;Laufweg
+1;MA Rheinau Bf - Neckarau - MA Hbf - Paradeplatz - Waldhof - MA Schönau
+2;MA Feudenheim - Universitätsklinikum - Wasserturm - Paradeplatz – Rheinstraße - Alte Feuerwache - MA Neckarstadt West
+3;MA Rheingoldhalle - Neckarau West - Lindenhof - MA Hbf - Wasserturm - Paradeplatz - Luzenberg - MA Sandhofen
+4;Bad Dürkheim - LU Oggersheim - LU Hbf - Berliner Platz - MA Hbf - Wasserturm - Paradeplatz - Alte Feuerwache - Schafweide - Universitätsklinikum - Bonafitiuskirche - Ulmenweg - Waldfriedhof
+4A;Bad Dürkheim - LU Oggersheim - LU Hbf - Berliner Platz - MA Hbf - Wasserturm - Paradeplatz - Alte Feuerwache - Schafweide - Universitätsklinikum - Bonafitiuskirche - Ulmenweg – Käfertaler Wald
+5;Rundfahrt Weinheim - Schriesheim - Dossenheim - Heidelberg - Mannheim - Viernheim - Weinheim
+5A;Heddesheim - MA Käfertal Bf - Universitätsklinikum - MA Hauptbahnhof - Paradeplatz - Abendakademie
+6;(MA SAP Arena S-Bahnhof -) Neuostheim - Paradeplatz - MA Rathaus - LU Rathaus - Berliner Platz - LU Rheingönheim
+6A;MA SAP Arena S-Bahnhof – Neuhermsheim - Paradeplatz - MA Rathaus - LU Rathaus - Berliner Platz - LU Rheingönheim
+7;MA Vogelstang - Nationaltheater - Paradeplatz - Schloss - Berliner Platz - LU Rathaus - BASF - LU Oppau
+8;Expresslinie MA Rheinau - Tattersall - MA Hbf - Berliner Platz - LU Oppau
+9;(RNV-Express Heidelberg - Edingen - Mannheim -) MA Neuostheim - MA Hauptbahnhof - Ludwigshafen - Bad Dürkheim
+10;LU Friesenheim - LU Hbf - Berliner Platz - LU Luitpoldhafen
+15;(Heddesheim -) Wallstadt Ost - MA Käfertal Bf - Universitätsklinikum - Alte Feuerwache - Paradeplatz - MA Hauptbahnhof
+X;Bad Dürkheim - LU Oggersheim - LU Hbf - BASF - Oppau
+20;HD Hauptbahnhof - Seegarten - Karlsplatz
+21;Neuenheim Technologiepark - Handschuhsheim Hans-Thoma-Platz
+22;HD Bismarckplatz - Betriebshof - Czernybrücke – Eppelheim Rathaus - Kirchheimer Straße
+23;HD Handschuhsheim - HD Bismarckplatz - HD Rohrbach - Leimen
+24;Rohrbach Süd - HD Hbf - Technologiepark - HD Handschuhsheim - Dossenheim - Schriesheim
+26;HD Bismarckplatz - Messplatz - Kirchheim
+27;HD Emmertsgrund - Mombertplatz - Rohrbach Süd - Rohrbach Gewerbegebiet
+28;HD Rohrbach Markt - Kirchheim S-Bahnhof - Hasenleiser - Rohrbach Markt
+29;HD Bismarckplatz - Rohrbach - Mombertplatz – Boxberg
+30;Schlierbach HITS - Universitätsplatz - Max-Planck-Institut für Astronomie
+31;HD Uniklinikum - Neuenheim - Bismarckplatz - Universitätsplatz
+32;HD Uniklinikum - Zoo - HD Hbf - Bismarckplatz - Universitätsplatz
+33;HD Emmertsgrund - Rohrbach Süd - Hasenleiser - Kirchheim West - Czernyring - HD Hbf - Bismarckplatz - Altstadt - Ziegelhausen Köpfel
+34;HD Pfaffengrund - Wieblingen - Heidelberg Hbf - Wilhelmsfeld - Heiligkreuzsteinach
+35;HD Wieblingen - Bismarckplatz - Schlierbach - Neckargemünd
+36;HD Orthopäd. Klinik - Ziegelh. Neckarschule - Friedhof - Hirtenaue
+37;HD Sportzentrum Nord - Kopfklinik - Bunsengymnasium West
+38;HD Handschuhsheim Hans-Thoma-Platz - Mühltal - Hans-Thoma-Platz
+39;HD Bismarckplatz - Speyererhof – Kohlhof - Königstuhl
+39A;HD Bismarckplatz - Speyererhof - EMBL – Boxberg
+40;MA Rheinau Karlsplatz - Pfingstberg - Hochstätt Seckenheim Rathaus - MA Seckenheim OEG-Bahnhof
+42;Edingen Bf - Neckarhausen - MA Seckenheim OEG-Bf
+43;MA Seckenheim Rathaus - Friedrichsfeld - MA Seckenheim Rathaus
+45;MA Neuostheim - Mallau - MA Rheinau Karlsplatz
+46;MA Seckenheim Rathaus - Neckarhausen - Neu-Edingen - MA Friedrichsfeld - Neckarhausen - MA Seckenheim Rathaus
+47;MA Fridtjof-Nansen-Weg - Rheinau Süd - MA Rheinau Bf
+48;MA Rheinau Bahnhof - Am Rheinauer See - MA Rheinauhafen
+49;MA Neckarau Rheingoldhalle - MA Neckarau Strandbad
+50;MA Neckarau West - Neuostheim - Käfertal Süd - Speckweg - Waldhof Bf - Schönau - MA Sandhofen
+51;MA Blumenau - Schönau - MA Sandhofen
+52;MA Sandhofen - Scharhof - IKEA - MA Sandhofen
+53;MA Kurpfalzbrücke - Luzenberg - Karl-Feuerstein-Straße - Waldstraße - Käfertal Wald - Kometenweg - Sonnenschein - Feuerwache Nord - Käfertal Rathaus - MA Käfertal Bf - Im Rott
+54;MA Käfertal Bf - Platz der Freundschaft/Vogelstang Zentrum - MA real Vogelstang - Gorgsheimerstraße/Vogelstang Zentrum - Käfertal Rathaus - MA Käfertal Bf
+55;Käfertaler Wald - Am Herrschaftswald - Waldfriedhof - Glücksburgerweg - Waldstraße - Haus Waldhof -Karl-Feuerstein-Straße - MA Waldhof Bf
+56;"MA Vogelstang, Warnemünder Weg - MA Käfertal Bf"
+57;MA Feudenheim - Wallstadt - (Vogelstang -) Wallstadt - MA Feudenheim
+58;(MA Seckenheim OEG-Bahnhof -) MA Feudenheim - Käfertal - Luzenberg - MA Friesenheimer Insel
+59;MA Sandhofen - Groß-Gerauer Straße - Sandhofen Rathaus - Sandhofen
+60;Pfeifferswörth - Dudenstraße - Ulmenweg - Sandgewann - Herzogenriedstraße - Neckarstadt West - MA Hauptbahnhof - Lanzvilla
+61;MA Kurpfalzbrücke - Carl-Benz-Straße - Bonifatiuskirche - Ludolf-Krehl-Straße - Einkaufszentrum Wohlgelegen
+62;MA Neuhermsheim - Oststadt - Kurpfalzbrücke - Neckarspitze - Kurpfalzbrücke - Oststadt - MA Neuhermsheim
+63;MA Pfalzplatz - Hochschule - Möhlstraße - Kunstverein - Wasserturm - MA Hauptbahnhof
+64;MA Hauptbahnhof - Wasserturm - Fahrlach - Feudenheim - MA Käfertal Bf
+65;LNHW - MIPO
+66;"MA Käfertal, Platz der Freundschaft - Taylor Nord - Spreewaldallee Chemnitzer Straße - Käfertal, Platz der Freundschaft"
+67;MA Käfertal Bahnhof - Benjamin-Franklin-Village - Käfertal Bahnhof
+70;LU Adolf-Kolping-Straße - Sternstraße - Friesenheim - BASF - LU Rathaus - LU Hbf
+71;LU Notwende - Hans-Warsch-Platz - Ebertpark Süd - LU Rathaus
+72;LU Ruchheim - Oderstraße - Hans-Warsch-Platz - Melm
+73;LU Oggersheim Bahnhof - Maudach Gemeindehaus - Marienkrankenhaus - Otto-Thiele-Platz
+74;LU Berliner Platz - Am Schwanen - Marienkrankenhaus - Niederfeld - Bayreuther Straße - LU Hauptbahnhof - LU Rathaus
+75;LU Berliner Platz - LU Hbf - Große Blies - Marienkrankenhaus - Rheingönheim Bf - Rheingönheim
+76;LU Berliner Platz - Rhein-Galerie - Große Blies - Marienkrankenhaus - Maudach
+77;LU Berliner Platz - Rheinallee - Parkinsel - Rheinallee - LU Berliner Platz
+78;LU BASF Süd - LU Hbf - Große Blies - Gartenstadt - LU Maudach
+80;LU BASF Süd - Mundenheim
+84;LU Oppau -Brüsseler Ring – Frankenthal Hauptbahnhof
+85;LU Oppau West - LU Oppau
+86;LU Oppau - Wolfsgrube - Anglerstraße - LU Oppau
+87;LU Oppau - Gemeindehaus - Edigheim - LU Pfingstweide
+89;LU Berliner Platz - Pfalzbau - Ebertpark - Freibad Willersinn
+90;LU Berliner Platz - Friesenheim - Oggersheim - Notwende/Melm
+94;LU Berliner Platz - Am Schwanen - Marienkrankenhaus - Niederfeld
+95;Berliner Platz - Maudach
+96;LU Berliner Platz - Mundenheim - Rheingönheim - Gartenstadt - Maudach
+97;LU Berliner Platz - Friesenheim - Oppau - Edigheim - Pflingstweide
+M1;Bismarckplatz - Rohrbach - Emmertsgrund
+M2;Uniplatz - Bismarckplatz - Wieblingen - Uniplatz
+M3;Bismarckplatz - Bahnstadt - Kirchheim - Rohrbach Hasenleiser
+M4;HD Bismarckplatz - Schlierbach - Ziegelhausen
+M5;HD Schwimmbad - HD Hbf - Bismarckplatz - S-Bf. Altstadt
