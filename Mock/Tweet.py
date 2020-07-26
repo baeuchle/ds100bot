@@ -536,6 +536,36 @@ def mocked_tweets():
         id=450,
         user=User.followed
         ))
+    list_of_tweets.append(TweepyMock(
+        full_text='Blacklist #LZB &amp;LZB bot%tl%bl%451',
+        expected_answer='LZB: Linienförmige Zugbeeinflussung',
+        id=451,
+        user=User.followed
+        ))
+    list_of_tweets.append(TweepyMock(
+        full_text='Repeated things #FF #FF bot%tl%460',
+        expected_answer='FF: Frankfurt (Main) Hbf',
+        id=460,
+        user=User.followed
+        ))
+    list_of_tweets.append(TweepyMock(
+        full_text='Repeated things #_FFM #DS:FF #DS100 #DE:FF #FF bot%tl%461',
+        expected_answer='FF: Frankfurt (Main) Hbf',
+        id=461,
+        user=User.followed
+        ))
+    list_of_tweets.append(TweepyMock(
+        full_text='Bot precedence #AI #_CH #BOT:AI bot%tl%462',
+        expected_answer='CH#AI: Airolo\nAI: Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.',
+        id=462,
+        user=User.followed
+        ))
+    list_of_tweets.append(TweepyMock(
+        full_text='Bot precedence #CH:AI #AI bot%tl%463',
+        expected_answer='CH#AI: Airolo\nAI: Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.',
+        id=463,
+        user=User.followed
+        ))
     return list_of_tweets
 
 def mocked_source():
