@@ -21,8 +21,6 @@ def is_same_version(sql):
     return get_last_hash(sql) == git_object.hash()
 
 def store_version(sql):
-    if sql.readonly:
-        return
     for subj, cont in (
         ('gitdescribe', git_object.describe()),
         ('githash', git_object.hash())

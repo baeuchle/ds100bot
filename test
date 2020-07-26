@@ -75,13 +75,17 @@ def setup_apis(args_):
     return api_
 
 if __name__ == "__main__":
-    args = arguments()
-    log_ = setup_log(args.verbose)
-    api = setup_apis(args)
+    try:
+        args = arguments()
+        log_ = setup_log(args.verbose)
+        api = setup_apis(args)
 
-    tagsearch, magic_tags = api.database.magic_hashtags()
-    max_id = handle_list(api.twitter.all_relevant_tweets(
-                            0, tagsearch
-                         ), apis=api, magic_tags=magic_tags)
-    if args.source != 'external':
-        sys.exit(api.twitter.statistics(args.output))
+        tagsearch, magic_tags = api.database.magic_hashtags()
+        max_id = handle_list(api.twitter.all_relevant_tweets(
+                                0, tagsearch
+                             ), apis=api, magic_tags=magic_tags)
+        if args.source != 'external':
+            sys.exit(api.twitter.statistics(args.output))
+    except Exception as e: # pylint: disable=W0703
+        log_.log(51, "TESTS FAIL TO RUN")
+        log_.info("%s", e)
