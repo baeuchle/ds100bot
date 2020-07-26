@@ -189,16 +189,24 @@ class Database:
         )
 
     def log_request(self, result):
-        self.cursor.execute("""
-            INSERT INTO
-                requests(
-                    ds100_id
-                  , request_date
-                  , status
-                    )
-                VALUES (?,?,?)
-            """,
-               (result.default_source + '::' + result.abbr
-              , datetime.datetime.today().strftime('%Y%m%d')
-              , result.status
-              , ))
+        try:
+            self.cursor.execute("""
+                INSERT INTO
+                    requests(
+                        ds100_id
+                      , request_date
+                      , status
+                        )
+                    VALUES (?,?,?)
+                """,
+                   (result.default_source + '::' + result.abbr
+                  , datetime.datetime.today().strftime('%Y%m%d')
+                  , result.status
+                  , ))
+        except sqlite3.Error as sqle:
+            log_.error("Cannot insert request: %s", sqle)
+            log_.error("Missing data: %s %s %s",
+                   result.normalized()
+                  , datetime.datetime.today().strftime('%Y%m%d')
+                  , result.status
+                  )
