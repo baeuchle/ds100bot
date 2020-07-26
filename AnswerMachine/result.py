@@ -63,7 +63,7 @@ class Result:
                 shortstore
             JOIN sources AS s1 ON s1.source_id = shortstore.source
             JOIN sources AS s2 ON s1.source_id = s2.source_id
-            LEFT OUTER JOIN blacklist ON blacklist.Abk = shortstore.Abk
+            LEFT OUTER JOIN blacklist ON blacklist.Abk = shortstore.Abk AND s1.type = '#'
             WHERE
                 shortstore.Abk = :abbr
             AND s1.type = :type_character
