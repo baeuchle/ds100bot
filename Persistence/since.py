@@ -18,8 +18,6 @@ def get_since_id(sql):
         return 0
 
 def store_since_id(sql, highest_id):
-    if sql.readonly:
-        return
     # store last answer time
     sql.cursor.execute("""
         UPDATE 

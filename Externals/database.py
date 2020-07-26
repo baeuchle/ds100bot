@@ -165,8 +165,6 @@ class Database:
         return True
 
     def insert_data(self, datarow, data_id, source_id):
-        if self.readonly:
-            return
         primkey = '{}::{}'.format(data_id, datarow.abbr)
         self.cursor.execute("""
             INSERT OR REPLACE
@@ -191,8 +189,6 @@ class Database:
         )
 
     def log_request(self, result):
-        if self.readonly:
-            return
         self.cursor.execute("""
             INSERT INTO
                 requests(
