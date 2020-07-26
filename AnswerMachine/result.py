@@ -33,7 +33,7 @@ class Result:
     def normalized(self):
         if self.status == 'notfound':
             return None
-        return '{}{}:{}'.format(self.type, self.source, self.abbr)
+        return '{}{}:{}'.format(self.type, self.default_source, self.abbr)
 
     def answered(self):
         text = '{}: {}\u200b\n'.format(self.abbr, self.long)
@@ -63,7 +63,7 @@ class Result:
                 shortstore
             JOIN sources AS s1 ON s1.source_id = shortstore.source
             JOIN sources AS s2 ON s1.source_id = s2.source_id
-            LEFT OUTER JOIN blacklist ON blacklist.Abk = shortstore.Abk
+            LEFT OUTER JOIN blacklist ON blacklist.Abk = shortstore.Abk AND s1.type = '#'
             WHERE
                 shortstore.Abk = :abbr
             AND s1.type = :type_character
