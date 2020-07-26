@@ -1,0 +1,30 @@
+{
+  "id": "linien_rvf",
+  "headline": "Straßenbahnlinien Freiburg",
+  "access": [{
+    "m_hashtag": "_RVF",
+    "x_source": "RVF",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_rvf_vag",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_rvf_vag.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "FloEllebrecht"
+      }
+    },
+    "comments": [
+      "Stand 2020",
+      "Beinhaltet nur Linine, die von der Freiburger VAG betrieben werden"
+    ]
+  }]
+}
