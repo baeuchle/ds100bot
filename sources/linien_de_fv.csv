@@ -1,0 +1,57 @@
+Linie;Laufweg
+ICE1;Sprinter: Hamburg - Hannover - Kassel - Frankfurt
+ICE4;Sprinter: Hamburg - Essen - Duisburg - Düsseldorf - Köln
+ICE10;Berlin - Wolfsburg - Hannover - Bielefeld - Hamm < Dortmund - Duisburg - Düsseldorf (- Köln - Aachen) | Wuppertal - Köln (- Bonn - Koblenz)
+ICE11;(Hamburg -) Berlin - Leipzig - Erfurt - Fulda - Frankfurt - Mannheim - Stuttgart - Ulm - Augsburg - München
+ICE12;Berlin - Wolfsburg - Braunschweig - Hildesheim - Kassel - Fulda - Frankfurt - Mannheim - Karlsruhe - Freiburg - Basel (- Bern - Interlaken)
+ICE13;Berlin - Braunschweig - Kassel - Fulda - Frankfurt
+ICE14;Berlin - Wolfsburg - Hannover - Bielefeld - Hamm - Dortmund - Bochum - Duisburg - Düsseldorf
+ICE15;Sprinter: (Warnemünde - Rostock -) Berlin - Halle - Erfurt - Frankfurt
+ICE18;Hamburg - Berlin - Halle - Erfurt - (Coburg) - Nürnberg < Augsburg | Ingolstadt > München
+ICE20;(Kiel -) Hamburg - Hannover - Kassel - Frankfurt - Mannheim - Karlsruhe - Freiburg - Basel - Zürich (- Chur)
+ICE22;(Oldenburg - Bremen) | (Kiel -) Hamburg > Hannover - Kassel - Frankfurt - Mannheim - Stuttgart
+ICE25;(Oldenburg -) Bremen | (Lübeck -) Hamburg > Hannover - Kassel - Fulda - Würzburg - Nürnberg - Ingolstadt - München
+ICE26;(Binz - Stralsund - Rostock - Schwerin -) Hamburg - Hannover - Kassel < Marburg - Frankfurt - Heidelberg - Karlsruhe | (Fulda - Würzburg - Augsburg - München - Kufstein < Innsbruck | Schwarzach-St. Veit)
+ICE28;(Binz - Stralsund - Greifswald ) | Hamburg > Berlin - Leipzig - Erfurt - Nürnberg < (Ingolstadt) | Augsburg > München
+ICE29;Sprinter: (Warnemünde - Rostock -) Berlin - Halle - Erfurt - Nürnberg - München
+ICE30; Hamburg - Bremen - Münster - Duisburg - Düsseldorf - Köln
+ICE31; (Kiel -) Hamburg - Bremen - Münster - Dortmund - Wuppertal - Köln - Koblenz - Mainz - Frankfurt (- Würzburg - Nürnberg - Passau)
+ICE41; (Dortmund -) Essen - Duisburg - Düsseldorf - Köln - Frankfurt - Würzburg - Nürnberg - München (- Garmisch-Partenkirchen)
+ICE42;(Hamburg - Bremen - Münster - ) Dortmund < Duisburg - Düsseldorf  | (Wuppertal) > Köln - Frankfurt Flughafen - Mannheim - Stuttgart - Augsburg - München
+ICE43;(Hannover - Bielefeld - Dortmund - Wuppertal -) Köln - Frankfurt Flughafen - Mannheim - Karlsruhe - Basel
+ICE45;Köln - Wiesbaden - Mannheim - Heidelberg - Stuttgart
+ICE47;Dortmund | Münster > Essen - Duisburg - Düsseldorf - Köln - Frankfurt Flughafen - Mannheim - Stuttgart
+ICE49;Köln - Frankfurt
+ICE50;Dresden - Leipzig - Erfurt - Fulda - Frankfurt - Mainz - Wiesbaden
+ICE62;München - Salzburg - Klagenfurt
+ICE78;Amsterdam - Arnheim - Duisburg - Düsseldorf - Köln - Frankfurt
+ICE79;Brüssel - Aachen - Köln - Frankfurt
+ICE82;Frankfurt - Mannheim < Saarbrücken | Karlsruhe - Strasbourg > Paris
+ICE83;(München - Augsburg -) Stuttgart - Karlsruhe - Strasbourg - Paris
+ICE84;Frankfurt - Mannheim - Karlsruhe - Basel - Luzern - Lugano - Mailand
+ICE89;München - Kufstein - Innsbruck - Feldkirch
+ICE90;(Frankfurt - Mannheim -) Stuttgart - Augsburg - München - Salzburg - Wien - Budapest
+ICE91;(Dortmund < Duisburg - Düsseldorf | Wuppertal > Köln - ) Frankfurt | (Hamburg - Hannover - Kassel - Fulda) > Würzburg - Nürnberg - Passau - Wien
+IC17;(Warnemünde -) Rostock - Berlin < Schönefeld Flughafen - Dresden | (Leipzig - Halle - Jena - Nürnberg - Passau - Wien)
+IC26;(Westerland | Stralsund - Rostock - Schwerin) > Hamburg - Hannover - Kassel - Marburg - Frankfurt - Heidelberg - Karlsruhe
+EC27;(Kiel | Westerland) > Hamburg - Berlin - Dresden - Prag - Budapest
+IC28;(Berlin - Greifswald - Stralsund - Binz) | (Nürnberg - Augsburg - München)
+IC30;(Westerland | Kiel | Binz - Stralsund - Rostock - Schwerin) > Hamburg - Bremen - Münster - Dortmund - Duisburg - Düsseldorf - Köln - Koblenz - Mainz < Frankfurt | Mannheim < Stuttgart (> Karlsruhe - Basel < Zürich | Bern - Interlaken)
+IC31;(Kiel | Lübeck) > Hamburg - Bremen - Münster - Dortmund < (Duisburg - Düsseldorf) | Wuppertal > Köln - Koblenz - Mainz - Frankfurt (- Würzburg < Nürnberg - Passau | Augsburg - München)
+IC32;Dortmund - Duisburg - Düsseldorf - Köln - Koblenz - Mainz - Mannheim - Heidelberg - Stuttgart < Tübingen | Augsburg - München - Salzburg - Klagenfurt | Oberstdorf | Friedrichshaven - Innsbruck
+IC35;Norddeich - Emden - Münster - Duisburg - Düsseldorf - Köln (- Koblenz - Mainz - Mannheim < Karlsruhe - Konstanz | Heidelberg - Stuttgart)
+IC37;Düsseldorf - Köln - Koblenz - Trier - Luxembourg
+IC50;Berlin - Halle - Leipzig - Erfurt - Fulda - Frankfurt - Heidelberg - Karlsruhe
+IC51;Gera | Leipzig > Erfurt - Kassel - Paderborn - Hamm - Dortmund - Duisburg - Düsseldorf - Köln
+IC55;Dresden - Leipzig - Halle - Magdeburg - Braunschweig - Hannover - Bielefeld - Hamm - Dortmund - Wuppertal - Köln
+IC56;Norddeich - Emden - Bremen - Hannover < (Wolfsburg - Berlin - Greifswald - Stralsund) | Braunschweig | (Warnemünde - Rostock) > Magdeburg < (Berlin - Cottbus) | Halle - Leipzig
+IC60;(Basel -) Karlsruhe - Stuttgart - Augsburg - München (- Salzburg)
+IC61;Karlsruhe - Stuttgart - Nürnberg < Augsburg - München | (Jena - Leipzig)
+IC62;(Saarbrücken - Mannheim) | Frankfurt -Heidelberg > Stuttgart - Augsburg - München - Salzburg > (Graz) | Klagenfurt
+IC75;Hamburg - Padborg - Kolding - Kopenhagen
+IC76;Hamburg - Flensburg - Padborg - Kolding - Aarhus
+IC77;Amsterdam - Amersfoort - Deventer - Hengelo - Osnabrück - Hannover - Wolfsburg - Berlin
+IC87;Stuttgart < Konstanz | Zürich
+EC88;München - Innsbruck - Verona (- Bologna)
+EC95;Berlin - Frankfurt (O) - Posen - Warschau
+FLX30;Leipzig - Berlin - Hannover - Bielefeld - Dortmund - Duisburg - Düsseldorf - Köln - Aachen

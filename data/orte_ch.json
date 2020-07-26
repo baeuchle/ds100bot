@@ -28,5 +28,16 @@
     "comments": [
       "Aus der der Originalquelle sind nur diejenigen Einträge übernommen, die wirklich eine Abkürzung haben."
     ]
+  }, {
+    "id": "orte_ch_add",
+    "short": "Abk",
+    "long": "Name",
+    "file": "sources/orte_ch_add.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "comments": [
+      "Zusätzliche Kürzel aus privaten Informationen"
+    ]
   }]
 }

@@ -1,0 +1,68 @@
+Abk;1976;1987;Bedeutung
+H0;;;Halt
+H1;;;Fahrt
+H2;;;Fahrt mit Geschwindigkeitsbeschränkung
+V0;;;Am folgenden Hauptsignal ist Halt zu erwarten
+V1;;;Am folgenden Hauptsignal ist Fahrt zu erwarten
+V2;;;Am folgenden Hauptsignal ist Fahrt mit Geschwindigkeitsbeschränkung zu erwarten
+F0;;;Halt
+F1;;;Fahrt freigegeben nur geradeaus
+F2;;;Fahrt freigegeben nur nach rechts
+F3;;;Fahrt freigegeben nur nach links
+F4;;;Halt zu erwarten
+F5;;;Fahrt freigegeben unter Beachtung der Abbiegeregeln nach §9 Straßenverkehrs-Ordnung
+A1;;;Türen schließen
+A2;;;Abfahren
+A2a;;;Abfahren (Optisch oder akustisch durch das Zugpersonal)
+A2b;;;Abfahren (Lichtsignal)
+Z1;;;Spitzensignal
+Z2;;;Schlusssignal
+Z3;;;Bremssignal
+Z4;;;Fahrtrichtungssignal
+Z5;;;Warnblinksignal
+G1;;;Ankündigung der Geschwindigkeitsbeschränkung. Zeigt Änderungen der zulässigen Geschwindigkeit nach unten an.
+G1a;;;Ankündigung der Geschwindigkeitsbeschränkung. Zeigt Änderungen der zulässigen Geschwindigkeit nach unten an. (Signaltafel)
+G1b;;;Ankündigung der Geschwindigkeitsbeschränkung. Zeigt Änderungen der zulässigen Geschwindigkeit nach unten an. (Lichtsignal)
+G2;;;Beginn der Geschwindigkeitsbeschränkung. Zeigt Änderungen der zulässigen Geschwindigkeit nach unten an.
+G2a;;;Beginn der Geschwindigkeitsbeschränkung. Zeigt Änderungen der zulässigen Geschwindigkeit nach unten an. (Signaltafel)
+G2b;;;Beginn der Geschwindigkeitsbeschränkung. Zeigt Änderungen der zulässigen Geschwindigkeit nach unten an. (Lichtsignal)
+G3;;;Ende der Geschwindigkeitsbeschränkung
+G4;;;Beginn der Geschwindigkeitsbegrenzung. Zeigt Änderungen der zulässigen Geschwindigkeit nach oben an.
+Sh1;;;Zwangshalt. Kennzeichnet Stellen, an denen bei Fahrt auf Sicht in jedem Fall anzuhalten ist.
+Sh2;;;Schutzhalt. Weiterfahrt ist unzulässig.
+Sh3;;;Nothalt
+Sh3a;;;Nothalt (akustisch)
+Sh3b;;;Nothalt (Kreissignal, Tagzeichen)
+Sh3c;;;Nothalt (Kreissignal, Nachtzeichen)
+Sh3d;;;Nothalt (Lichtsignal)
+Sh4;;;Läuten
+Sh5;;;Achtung
+Sh6;;;Grenzzeichen
+Sh7;;;Haltetafel
+R1;;;Wegfahren
+R2;;;Herkommen
+R3;;;Rangierhalt
+St1;;;Signalkontakt
+St2;;;Weichenkontakt
+St3;;;Ausschalten
+St4;;;Einschalten erlaubt
+St5;;;Stromabnehmer abziehen
+St6;;;Stromabnehmer anlegen
+St7;;;Streckentrenner. Der Fahrstrom ist kurz auszuschalten.
+St8;;;Halt für Fahrzeuge mit angelegtem Stromabnehmer
+W1;;;Weiche steht für Fahrt geradeaus mit höchstens 15 km/h
+W2;;;Weiche steht für Fahrt nach rechts mit höchstens 15 km/h
+W3;;;Weiche steht für Fahrt nach links mit höchstens 15 km/h
+W11;;;Weiche steht für Fahrt geradeaus mit zulässiger Geschwindigkeit
+W12;;;Weiche steht für Fahrt nach rechts mit zulässiger Geschwindigkeit
+W13;;;Weiche steht für Fahrt nach links mit zulässiger Geschwindigkeit
+W14;;;Weiche darf nicht aufgefahren werden
+Bü0;;;"Halt vor dem Bahnübergang; Weiterfahrt nur, wenn es die Verkehrslage erlaubt"
+Bü1;;;Der Bahnübergang darf befahren werden
+Bü2;;;Ein Überwachungssignal ist zu erwarten
+So1;;;Beginn einer Strecke mit Zugsicherung
+So2;;;Ende einer Strecke mit Zugsicherung
+So3;;;Standortkennzeichen. Gibt den Standort von Hauptsignalen an.
+So4;;;Auftragsschild. Gibt den Auftrag, am Signal H0 unter Beachtung besonderer Anordnungen, die in einer Dienstanweisung festgelegt sind, vorbeizufahren.
+So5;;;Begegnungsverbot – Anfang –
+So6;;;Begegnungsverbot – Ende –
