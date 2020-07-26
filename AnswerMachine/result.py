@@ -33,7 +33,7 @@ class Result:
     def normalized(self):
         if self.status == 'notfound':
             return None
-        return '{}{}:{}'.format(self.type, self.source, self.abbr)
+        return '{}{}:{}'.format(self.type, self.default_source, self.abbr)
 
     def answered(self):
         text = '{}: {}\u200b\n'.format(self.abbr, self.long)
