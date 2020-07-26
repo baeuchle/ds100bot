@@ -1,0 +1,32 @@
+{
+  "id": "linien_bsag",
+  "headline": "Straßenbahnlinien Bremen",
+  "access": [{
+    "m_hashtag": "_HB",
+    "x_source": "HB",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_bsag",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_bsag.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "FloEllebrecht"
+      }
+    },
+    "comments": [
+      "Stand 2020",
+      "Beinhaltet alle aktuellen Linien",
+      "Beinhaltet diverse E-Linien (Schülerverkehr, vereinfachte Einsetzer/Aussetzer)",
+      "Sofern die Nummer aktuell nicht vergeben ist, sind ehemalige Linien vorhanden"
+    ]
+  }]
+}
