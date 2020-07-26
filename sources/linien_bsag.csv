@@ -1,0 +1,99 @@
+Linie;Laufweg
+1;Huchting - Am Brill - Hauptbahnhof - Osterholz - Bf Mahndorf
+1S;Tenever-Zentrum - Osterholz - Kirchbachstr. (weiter als Linie 1E)
+1E;Ein-/Aussetzer Kirchbachstr. - BSAG-Zentrum bzw. Hauptbahnhof - Neue Vahr Süd (- Tenever-Zentrum)
+2;Gröpelingen - Bf Walle - Am Brill - Domsheide - Sebaldsbrück
+2E;Ostertor - Domsheide - Am Brill - Bf Walle - Gröpelingen
+3;Gröpelingen - Waller Ring - Am Brill - Weserwehr
+3S;Gröpelingen - Lloydstr. - Am Brill - Domsheide - Hauptbahnhof (eingestellt, siehe Linie 3/5/5S)
+4;Arsten - Domsheide - Hauptbahnhof - Horn - Borgfeld - Lilienthal - Falkenberg
+4S;Falkenberg - Lilienthal - Borgfeld - Horn - Kirchbachstr. (weiter als Linie 4)
+5;(Gröpelingen -) Waller Ring - Hauptbahnhof - Bürgerpark
+5S;Gröpelingen - Waller Ring (weiter als Linie 5)
+6;Flughafen Süd - Domsheide - Hauptbahnhof - Universität Nord
+6E;Ein-/Aussetzer Hauptbahnhof - Domsheide - BSAG-Zentrum
+8;Huchting - Domsheide - Hauptbahnhof - Kulenkampffallee
+10;Gröpelingen - Bf Walle - Hauptbahnhof - Sebaldsbrück
+10E;Gröpelingen - Bf Walle - Hauptbahnhof
+20;Hohweg - Bf Walle - Europahafen
+21;Universität Nord - Horn - Vahr - Sebaldsbrück (- Blockdiek)
+21E;(Weserpark Süd -) Bf Sebaldsbrück - Vahr - Horn - Universität Nord
+22;Universität Ost - Kulenkampffallee - Kirchbachstr. - Kattenturm
+22E;(Universität Nord -) Föhrenstr. - Habenhauser Brückenstr.
+24;(Lankenauer Höft -) Rablinghausen - Domsheide - Hauptbahnhof - Neue Vahr Nord
+24E;Hasenbüren - Seehausen - Reedeich-Nord - Domsheide - Hauptbahnhof
+25;Weidedamm Süd - Am Brill - Domsheide - Hauptbahnhof - Vahr - Osterholz
+26;Überseestadt Nord - Hemmstraße - Hauptbahnhof - Am Brill - Huckelriede - Habenhausen - Klinikum Links d. Weser
+27;Weidedamm Nord - Hemmstraße - Hauptbahnhof - Am Brill - Huckelriede - Kattenturm - Brinkum Nord
+27E;Kurzläufer Huckelriede - Kattenturm - Brinkum Nord bzw. Pappelstr. - Huckelriede (- Habenhausen)
+28;Universität Nord - Hemmstraße - Überseestadt Nord
+29;Neue Vahr Nord - Blockdiek - Sebaldsbrück (- Fuldahafen /- Hansalinie) - Kattenturm
+30;Borgfeld - Lilienthal - Falkenberg (eingestellt, siehe Linie 4/4S)
+31;Nedderland - Horn - Universität Nord - Borgfeld Ost
+32;Universität Süd - Borgfeld - Borgfeld Ost (eingestellt, siehe Linie 31)
+33;Horn - Am Querkamp - Osterholzer Landstr. - Sebaldsbrück
+33E;Horn - Am Querkamp - Ikensdamm bzw. Osterholzer Landstr. - Ikensdamm - Horn
+34;Horn - Modersohnweg - Osterholzer Landstr. - Sebaldsbrück
+34E;Ikensdamm - Osterholzer Landstr. - Sebaldsbrück
+35;ALT Osterholz - Tessiner Str. - Schaffhauser Str. - Schevemoorer Landstr. (eingestellt)
+37;Sebaldsbrück - Osterholz - Kuhkamp - Bf Mahndorf
+37E;Sebaldsbrück - Mercedes-Benz Tor 8
+38;Weserpark Süd - Panrepel - In den Ellern - Bf Mahndorf
+39;Weserpark Süd - Bf Mahndorf (direkt)
+40;Weserwehr - Bf Sebaldsbrück - Osterhop - Helsiusstr. - Bf Mahndorf
+41;Weserwehr - Bf Sebaldsbrück - Osterhop - Sollingstr. - Bf Mahndorf
+41E;Weserpark Süd - Bf Mahndorf - Sollingstr. - Bf Sebaldsbrück/- Föhrenstr.
+41S;(Bf Mahndorf -) Marschstr. - Weserwehr
+42;Weserwehr - Bf Sebaldsbrück - Osterhop - Fuldahafen - Gewerbepark Hansalinie
+44;Sebaldsbrück - Osterhop - Sollingstr. - Bf Mahndorf
+45;ALT Sebaldsbrück - Osterholzer Friedhof - Sulzbacher Str. - Saarstr. - Sebaldsbrück (eingestellt)
+51;Huckelriede - Habenhausen - Kattenturm - Klinikum Links d. Weser (eingestellt, siehe Linie 26)
+51E;Klinikum Links d. Weser - Arsten - Habenhausen - Huckelriede
+52;Huchting - Solinger Str. - Flughafen - Kattenturm
+53;Huckelriede - Kattenturm - Brinkum Nord (eingestellt, siehe Linie 27/27E)
+54;Huckelriede - Roland-Klinik (eingestellt)
+55;Huchting - Moordeich - Stuhrbraum - Brinkum/ZOB
+57;Kirchhuchting - Am Sodenmatt - Mittelshuchting - Kirchhuchting (Uhrzeigersinn)
+58;Kirchhuchting - Mittelshuchting - Am Sodenmatt - Kirchhuchting (Gegensinn)
+59;Gelsenkirchener Str. - WAL-MART (eingestellt)
+61;Rablinghausen - Reedeich-Nord - Strom - Sandhausen
+62;Rablinghausen - Reedeich-Nord - Seehausen - Hasenbüren
+63;Hauptbahnhof - Am Brill - Reedeich-Nord - GVZ u.z.
+64;Hauptbahnhof - Am Brill - Reedeich-Nord - GVZ - Hasenbüren (eingestellt, siehe Linie 61/63)
+65;Rablinghausen - Seehausen - Hasenbüren - Strom - Rablinghausen (Gegensinn)
+66;Rablinghausen - Strom - Hasenbüren - Seehausen - Rablinghausen (Uhrzeigersinn)
+70S;Neuenkirchen - Kreinsloger - Bf Vegesack (eingestellt)
+71;Neuenkirchen - Blumenthal - Vegesack - Bf Lesum - Burgdamm - Bf Burg - Gröpelingen (eingestellt, siehe Linie 90)
+73;Marßel - Burgdamm - Bf Burg - Gröpelingen (eingestellt, siehe Linie 93)
+74;Schwanewede - Bockhorn - Blumenthal - Vegesack - Taunusstr. - Marßel (eingestellt, siehe Linie 94/95)
+74S;Schwanewede - Bockhorn - Martin-Luther-Str. - Bf Vegesack (eingestellt)
+75;Ermlandstr. - Cranzer Str. - Blumenthal - Bf Aumund - Vegesack - Taunusstr. - Burg - Gröpelingen (eingestellt, siehe Linie 91/92)
+76;(Ermlandstr. -) Cranzer Str. - Blumenthal - Bf Aumund - Bf Vegesack (eingestellt, siehe Linie 91/92/95)
+78;Bf Vegesack - Bf Aumund - Borchsholt - Bf Vegesack (eingestellt, siehe Linie 98)
+79;Bf Vegesack - Ascherfeld - Bf Aumund - Borchsholt - Bf Vegesack (eingestellt, siehe Linie 98)
+80;Gröpelingen - Hüttenstr. Süd - Bf Oslebshausen
+81;Gröpelingen - Bf Oslebshausen - Stahlwerke - Hüttenstr. Süd
+82;Gröpelingen - Schwarzer Weg - In den Barken - Gröpelingen (Ringverkehr)
+83;ALT Blumenkamp - Taunusstr. - Vegesack - Gustav-Heinemann-Bürgerhaus (eingestellt)
+87;Blumenkamp - Taunusstr. - Vegesack - Bf Aumund - Beckedorf Gewerbekamp (eingestellt)
+90;Neuenkirchen - Blumenthal - Bf Aumund - Vegesack - Burgdamm - Bf Burg - Dohlenstr. - Gröpelingen
+90E;Schulverkehr Neuenkirchen - SZ Sandwehen bzw. Neuenkirchen -/Vegesack - Dobbheide
+91;Rönnbeck - Ermlandstr. - Bf Kreinsloger - Blumenthal - Vegesack - Burgdamm - Bf Burg - Gröpelingen
+92;Rönnbeck - Ermlandstr. - Bf Kreinsloger - Blumenthal - Vegesack - Lesum - Bf Burg - Gröpelingen
+93;Marßel - Burgdamm - Bf Burg - Dohlenstr. - Gröpelingen
+94;Schwanewede-Nord - Bockhorn - Blumenthal - Vegesack - Taunusstr. - Bf Burg - Marßel
+95;Bockhorn/Bh Blumenthal - Blumenthal - Bf Aumund - Vegesack - Taunusstr. - Bf Burg - Dohlenstr. - Gröpelingen
+96;Bf Blumenthal - Bh Blumenthal - Ermlandstr. - Bf Blumenthal (Ringverkehr)
+97;Bf Blumenthal - Am Fillerkamp - Am Knick - Rönnebeck Buschdeel (eingestellt, siehe Linie 91/92/96)
+98;Bf Vegesack - Ascherfeld - Borchsholt - Dobbheide - Bf Vegesack (Ringverkehr)
+99;Bf Vegesack - Ascherfeld - Bf Aumund - Borchsholt - Bf Vegesack (eingestellt, siehe Linie 98)
+N1;Huchting - Am Brill - Hauptbahnhof - Osterholz - Bf Mahndorf
+N3;Rablinghausen - Domsheide - Hauptbahnhof - Universität Süd - Horn - Osterholz - Kuhkamp - Bf Mahndorf
+N4;Arsten - Domsheide - Hauptbahnhof - Horn - Borgfeld - Lilienthal - Falkenberg
+N5;Domsheide - Hauptbahnhof - Vahr - Sebaldsbrück - Osterhop - Sollingstr./Helsiusstr. - Bf Mahndorf
+N6;Kirchhuchting - Am Sodenmatt - Mittelshuchting - Kirchhuchting (Ringverkehr)
+N7;(Neuenkirchen -) Blumenthal - Vegesack - Bf Lesum - Marßel - Gröpelingen - Waller Ring - Hemmstr. - Hauptbahnhof
+N9;Neue Vahr Nord - Kirchbachstr. - Hauptbahnhof - Am Brill - Huckelriede - Kattenturm - Habenhausen - Huckelriede
+N10;Gröpelingen - Bf Walle - Hauptbahnhof - Sebaldsbrück
+N94;Schwanewede - Bockhorn - Bf Blumenthal
+E;Verstärker Hauptbahnhof - Westend bzw. Rundkurs Hauptbahnhof - Am Brill - Westerstr. (und weiter über Domsheide)

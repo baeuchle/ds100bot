@@ -1,17 +1,16 @@
 {
-  "id": "signale_bostrab",
-  "headline": "Straßenbahnsignale",
-  "description": "BOStrab",
+  "id": "linien_rnv",
+  "headline": "Straßenbahnlinien des RNV",
   "access": [{
-    "m_hashtag": "BOSTRAB",
-    "x_source": "BO",
-    "type": "%"
+    "m_hashtag": "_RNV",
+    "x_source": "RNV",
+    "type": "/"
   }],
   "data": [{
-    "id": "bostrab",
-    "short": "Abk",
-    "long": "Bedeutung",
-    "file": "sources/signale_bostrab.csv",
+    "id": "linien_rnv",
+    "short": "Nummer",
+    "long": "Laufweg",
+    "file": "sources/linien_rnv.csv",
     "source": {
       "name": "Eigene Zusammenstellung"
     },
