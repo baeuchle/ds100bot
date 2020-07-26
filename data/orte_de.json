@@ -35,5 +35,16 @@
     "comments": [
       "Einzelne Einträge korrigiert"
     ]
+  }, {
+    "id": "orte_de_add",
+    "short": "Abk",
+    "long": "Name",
+    "file": "sources/orte_de_add.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "comments": [
+      "Zusätzliche Kürzel aus privaten Informationen"
+    ]
   }]
 }
