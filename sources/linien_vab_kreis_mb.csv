@@ -1,0 +1,28 @@
+Linie;Start;über 1;über 2;über 3;über 4;über 5;Ziel;Laufweg
+60;Aschaffenburg ROB;Niedernberg;Obernburg;;;;Obernburg-Elsenfeld Bf.;Aschaffenburg ROB - Niedernberg - Obernburg - Obernburg-Elsenfeld Bf.
+61;Aschaffenburg ROB;Sulzbach;Kleinwallstadt;Obernburg-Elsenfeld Bf.;Erlenbach;Klingenberg;Mönchberg;Aschaffenburg ROB - Sulzbach - Kleinwallstadt - Obernburg-Elsenfeld Bf. - Erlenbach - Klingenberg - Mönchberg
+62A;Roßbach;Volkersbrunn;;;;;Heimbuchenthal;Roßbach - Volkersbrunn - Heimbuchenthal
+62;Aschaffenburg ROB;Leidersbach;Hausen;;;;Obernburg-Elsenfeld Bf.;Aschaffenburg ROB - Leidersbach - Hausen - Obernburg-Elsenfeld Bf.
+63;Aschaffenburg ROB;Gailbach;Soden;Sulzbach;;;Dornau;Aschaffenburg ROB - Gailbach - Soden - Sulzbach - Dornau
+64;Obernburg-Elsenfeld Bf.;Eschau;;;;;Neuhammer;Obernburg-Elsenfeld Bf. - Eschau - Neuhammer
+65;Streit;Mechenhard;;;;;Erlenbach;Streit - Mechenhard - Erlenbach
+67;Klingenberg;Wörth;Haingrund;;;;Seckmauern;Klingenberg - Wörth - Haingrund - Seckmauern
+68;Obernburg-Elsenfeld Bf.;Obernburg;Eisenbach;;;;Mömlingen;Obernburg-Elsenfeld Bf. - Obernburg - Eisenbach - Mömlingen
+69;Elsenfeld;Eichelsbach;Eschau;Streit;Rück;;Elsenfeld;Elsenfeld - Eichelsbach - Eschau - Streit - Rück - Elsenfeld
+80;Miltenberg;Großheubach;Miltenberg;Bürgstadt;;;Miltenberg;Miltenberg - Großheubach - Miltenberg - Bürgstadt - Miltenberg
+81;Miltenberg;Großheubach;Röllfeld;Klingenberg;;;Erlenbach Krankenhaus;Miltenberg - Großheubach - Röllfeld - Klingenberg - Erlenbach Krankenhaus
+82;Miltenberg;Eichelbühl;;;;;Eichenbühl-Höhenorte;Miltenberg - Eichelbühl - Eichenbühl-Höhenorte
+83;Miltenberg;Großheubach;Mönchberg;Eschau;Altenbuch;Stadtprozelten;Wertheim;Miltenberg - Großheubach - Mönchberg - Eschau - Altenbuch - Stadtprozelten - Wertheim
+84;Miltenberg;Breitendiel;Mainbullau;Weilbach;;;Amorbach;Miltenberg - Breitendiel - Mainbullau - Weilbach - Amorbach
+85;Miltenberg;Bürgstadt;Freudenberg;Stadtprozelten;;;Wertheim;Miltenberg - Bürgstadt - Freudenberg - Stadtprozelten - Wertheim
+86;Miltenberg;Rüdenau;Kleinheubach;;;;Laudenbach;Miltenberg - Rüdenau - Kleinheubach - Laudenbach
+87;Miltenberg;Wenschdorf;Monbrunn;Schippach;;;Berndiel;Miltenberg - Wenschdorf - Monbrunn - Schippach - Berndiel
+88;Breitendiel;;;;;;Miltenberg;Breitendiel - Miltenberg
+92;Amorbach;;;;;;Amorbach;Amorbach - Amorbach
+93;Schneeberg;Kirchzell;Amorbach;Kleinheubach;;;Obernburg - Glanzstoffwerke;Schneeberg - Kirchzell - Amorbach - Kleinheubach - Obernburg - Glanzstoffwerke
+94;Amorbach;Weilbach;Weckbach;;;;Gönz;Amorbach - Weilbach - Weckbach - Gönz
+95;Amorbach;Kirchzell;Watterbach;Breitenbuch;;;Ottorfszell;Amorbach - Kirchzell - Watterbach - Breitenbuch - Ottorfszell
+96;Amorbach;Buch;Preunschen;Mörschenhardt;;;Mudau;Amorbach - Buch - Preunschen - Mörschenhardt - Mudau
+97;Gottersdorf;Reichartshausen;Neudorf;;;;Amorbach;Gottersdorf - Reichartshausen - Neudorf - Amorbach
+98;Amorbach;Boxbrunn;;;;;Beuchen;Amorbach - Boxbrunn - Beuchen
+99;Amorbach;Schneeberg;Hambrunn;;;;Zittenfelden;Amorbach - Schneeberg - Hambrunn - Zittenfelden

@@ -1,0 +1,30 @@
+Linie;Start;über 1;über 2;über 3;über 4;über 5;über 6;;Ziel;Anmerkung;Laufweg
+20;Aschaffenburg ROB;Goldbach;Hösbach;Feldkahl;;;;;Schöllkrippen;;Aschaffenburg ROB - Goldbach - Hösbach - Feldkahl - Schöllkrippen
+21;Aschaffenburg ROB;Goldbach;Hösbach-Sand;Wenighösbach;;;;;Unterafferbach;;Aschaffenburg ROB - Goldbach - Hösbach-Sand - Wenighösbach - Unterafferbach
+23;Aschaffenburg ROB;Goldbach;Feldkahl;;;;;;Mömbris;;Aschaffenburg ROB - Goldbach - Feldkahl - Mömbris
+24;Aschaffenburg ROB;Steinbach;Oberafferbach;Rückersbach;Hohl;;;;Mömbris;;Aschaffenburg ROB - Steinbach - Oberafferbach - Rückersbach - Hohl - Mömbris
+25;Aschaffenburg ROB;Johannesberg;Breunsberg;Daxberg;Mömbris;Geiselbach;;;Schöllkrippen;;Aschaffenburg ROB - Johannesberg - Breunsberg - Daxberg - Mömbris - Geiselbach - Schöllkrippen
+26;Mömbris;Rappach;Molkenberg;;;;;;Hemsbach;;Mömbris - Rappach - Molkenberg - Hemsbach
+27;Wiesen;Edelbach;Schöllkrippen;;;;;;Hösbach;;Wiesen - Edelbach - Schöllkrippen - Hösbach
+28;Heigenbrücken;Jakobsthal;Heinrichsthal;Wiesen;Schöllkrippen;;;;Hösbach;;Heigenbrücken - Jakobsthal - Heinrichsthal - Wiesen - Schöllkrippen - Hösbach
+29;Blankenbach;Krombach;Schöllkrippen;;;;;;Vormwald;;Blankenbach - Krombach - Schöllkrippen - Vormwald
+29S;Vormwald;Schöllkrippen;Geiselbach;Krombach;;;;;Blankenbach;;Vormwald - Schöllkrippen - Geiselbach - Krombach - Blankenbach
+30;Schöllkrippen;Westerngrund;Somborn;Bernbach;Horbach;Eidengesäß;;;Gelnhausen;;Schöllkrippen - Westerngrund - Somborn - Bernbach - Horbach - Eidengesäß - Gelnhausen
+31;Aschaffenburg ROB;Kleinostheim Waldstadt;Dettingen;Alzenau;Albstadt;;;;Somborn;;Aschaffenburg ROB - Kleinostheim Waldstadt - Dettingen - Alzenau - Albstadt - Somborn
+32;Kahl;Karlstein;Alzenau;;;;;;Kahl;;Kahl - Karlstein - Alzenau - Kahl
+33;Schöllkrippen;;;;;;;;Aschaffenburg;Kahlgrundexpress;(Kahlgrundexpress) Schöllkrippen - Aschaffenburg
+40;Aschaffenburg ROB;Haibach;Mespelbrunn;;;;;;Dammbach;;Aschaffenburg ROB - Haibach - Mespelbrunn - Dammbach
+41;Aschaffenburg ROB;Bessenbach;;;;;;;Hösbach-Bahnhof;;Aschaffenburg ROB - Bessenbach - Hösbach-Bahnhof
+42;Aschaffenburg ROB;Goldbach;Hösbach;Hösbach Bf.;Waldaschaff;Rothenbuch;;;Weibersbrunn;;Aschaffenburg ROB - Goldbach - Hösbach - Hösbach Bf. - Waldaschaff - Rothenbuch - Weibersbrunn
+43;Aschaffenburg ROB;Haibach;Schmerlenbach;Hösbach Bf.;;;;;Waldaschaff;;Aschaffenburg ROB - Haibach - Schmerlenbach - Hösbach Bf. - Waldaschaff
+44;Aschaffenburg ROB;Goldbach;Hösbach;Laufach;;;;;Hain;;Aschaffenburg ROB - Goldbach - Hösbach - Laufach - Hain
+45;Aschaffenburg ROB;Goldbach;Hösbach;Sailauf;;;;;Eichenberg;;Aschaffenburg ROB - Goldbach - Hösbach - Sailauf - Eichenberg
+47;Aschaffenburg ROB;Haibach;Grünmorsbach;Straßbessenbach;Bessenbach;Keilberg;Hösbach Bf.;Waldaschaff;Rothenbuch;Wochenendverkehr Hochspessart;(Wochenendverkehr Hochspessart) Aschaffenburg ROB - Haibach - Grünmorsbach - Straßbessenbach - Bessenbach - Keilberg - Hösbach Bf. - Waldaschaff - Rothenbuch
+50;Aschaffenburg ROB;Mainaschaff;Kleinostheim;Karlstein;;;;;Kahl;;Aschaffenburg ROB - Mainaschaff - Kleinostheim - Karlstein - Kahl
+52;Großostheim Friedenschule;Großostheim Realschule;Pflaumheim;Wenigumstadt;Ringheim;;;;Stockstadt;Schulverband Großostheim;(Schulverband Großostheim) Großostheim Friedenschule - Großostheim Realschule - Pflaumheim - Wenigumstadt - Ringheim - Stockstadt
+53;Aschaffenburg ROB;;Großostheim;Ringheim;Schaafheim;;;;Babenhausen (Hess.);;Aschaffenburg ROB - Großostheim - Ringheim - Schaafheim - Babenhausen (Hess.)
+54;Aschaffenburg ROB;;Großostheim;Pflaumheim;Schaafheim;;;;Babenhausen (Hess.);;Aschaffenburg ROB - Großostheim - Pflaumheim - Schaafheim - Babenhausen (Hess.)
+55;Aschaffenburg ROB;;Großostheim;Mömlingen;;;;;Obernburg-Elsenfeld Bf.;;Aschaffenburg ROB - Großostheim - Mömlingen - Obernburg-Elsenfeld Bf.
+56;Sulzbach am Main;Niedernberg;;;;;;;Großostheim;;Sulzbach am Main - Niedernberg - Großostheim
+58;Aschaffenburg ROB;Mainaschaff;Zellhausen;Seligenstadt;;;;;Rodgau-Weiskirchen;;Aschaffenburg ROB - Mainaschaff - Zellhausen - Seligenstadt - Rodgau-Weiskirchen
+KEX 33;Schöllkrippen;;;;;;;;Aschaffenburg;Kahlgrundexpress;(Kahlgrundexpress) Schöllkrippen - Aschaffenburg

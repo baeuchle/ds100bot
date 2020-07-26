@@ -1,0 +1,67 @@
+{
+  "id": "linien_vab",
+  "headline": "Buslinien Aschaffenburg",
+  "access": [{
+    "m_hashtag": "_VAB",
+    "x_source": "VAB",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_vab_sa",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_vab_stadt_ab.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "BlubbBlubber3"
+      }
+    },
+    "comments": [
+      "Buslinien der Stadt Aschaffenburg"
+    ]
+  },{
+    "id": "linien_vab_ka",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_vab_kreis_ab.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "BlubbBlubber3"
+      }
+    },
+    "comments": [
+      "Buslinien des Kreises Aschaffenburg"
+    ]
+  },{
+    "id": "linien_vab_km",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_vab_kreis_mb.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "BlubbBlubber3"
+      }
+    },
+    "comments": [
+      "Buslinien des Kreises Miltenberg"
+    ]
+  }]
+}
