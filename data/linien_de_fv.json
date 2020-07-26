@@ -1,0 +1,30 @@
+{
+  "id": "linien_de_fv",
+  "headline": "Fernverkehrslinien Deutschland",
+  "access": [{
+    "m_hashtag": "DS100",
+    "x_source": "DS",
+    "type": "/"
+  }, {
+    "m_hashtag": "_DE",
+    "x_source": "DE",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_de_fv",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_de_fv.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "SimonBredemeier"
+      }
+    }
+  }]
+}
