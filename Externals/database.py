@@ -198,7 +198,7 @@ class Database:
                     )
                 VALUES (?,?,?)
             """,
-               (result.normalized()
+               (result.default_source + '::' + result.abbr
               , datetime.datetime.today().strftime('%Y%m%d')
               , result.status
               , ))
