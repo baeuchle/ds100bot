@@ -126,6 +126,12 @@ class Database:
             FROM
                 blacklist
             JOIN shortstore ON blacklist.Abk = shortstore.Abk
+            JOIN sources ON sources.source_id = shortstore.source
+            WHERE
+                sources.type = '#'
+            AND
+                sources.is_default
+
             ORDER BY
                 blacklist.Abk
         """, ()
