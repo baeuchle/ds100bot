@@ -1,9 +1,9 @@
 Datenlisten
 ===========
 
-Dieses Verzeichnis enthält die Datenlisten, die für den Bot importiert
-werden. Diese Datenlisten werden in den Konfigurationen in data/
-referenziert.
+Das Quelltextverzeichnis sources/ enthält die Datenlisten, die für den
+Bot importiert werden. Diese Datenlisten werden in den Konfigurationen
+in data/ referenziert.
 
 Die Listen sind im CSV-Format; die erste Zeile enthält die Spaltennamen,
 die in der Konfiguration (siehe Verzeichnis data/) den Datenbank-Spalten

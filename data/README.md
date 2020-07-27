@@ -1,8 +1,10 @@
 Konfigurationen
 ===============
 
-In diesem Verzeichnis sind die Daten-Konfigurationen. Die Datenlisten
-sind in sources/ zu finden.
+Im Quelltextverzeichnis data/ sind die Daten-Konfigurationen, die
+bestimmen, welche Daten in die Datenbank geladen werden und mit welchen
+Hashtags, Quellen und Typen sie verfügbar sind. Die Datenlisten sind in
+sources/ zu finden.
 
 Format
 ------

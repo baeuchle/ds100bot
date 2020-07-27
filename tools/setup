@@ -43,6 +43,10 @@ dumplinks = Documentation.dumplink_list(configurations)
 
 Documentation.create_documentation(navilinks, doc_source, output_dir)
 Documentation.create_dump_mainpage(navilinks, dumplinks, dump_dir)
+dRM = Documentation.MarkdownDoc(Path("data") / 'README.md', navilinks)
+dRM.write(output_dir / 'data.html')
+sRM = Documentation.MarkdownDoc(Path("sources") / 'README.md', navilinks)
+sRM.write(output_dir / 'sources.html')
 
 licpage = Documentation.Licenses(doc_source / 'copyright.md', navilinks)
 

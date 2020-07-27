@@ -7,10 +7,10 @@ beantwortbaren Kürzeln durchsucht. Je nach Kontext werden
 unterschiedliche Dinge gefunden / beantwortet. __In jedem Fall ist
 Groß-/Kleinschreibung der Kürzel wichtig!__
 
-Wir nehmen als Beispiel __HE__, das nach [DS100](/dumps/ds100.html) „Emden“
-bedeutet, bei den [VGF-Haltestellen](/dumps/vgfhst.html) „Heerstraße“
-und in der [Schweiz](/dumps/ch.html) „Herisau“. __He__ in Quelle
-[DB640](/dumps/db640.html) bedeutet „Hegyeshalom“.
+Wir nehmen als Beispiel __HE__, das nach [DS100](/dumps/orte_de.html) „Emden“
+bedeutet, bei den [VGF-Haltestellen](/dumps/orte_ffm.html) „Heerstraße“
+und in der [Schweiz](/dumps/orte_ch.html) „Herisau“. __He__ in Quelle
+[DB640](/dumps/orte_at.html) bedeutet „Hegyeshalom“.
 
 <table>
  <thead>

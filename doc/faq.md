@@ -3,6 +3,20 @@ Häufig gestellte Fragen
 
 (oder was ich dafür halte)
 
+Mach doch mal ein einfaches Beispiel!
+-------------------------------------
+
+- So sieht der Bot diesen Tweet, aber wahrscheinlich nicht Antworten
+  darauf:
+
+> \#DS100 \#FF
+
+
+- So sieht der Bot einen Tweet, und wahrscheinlich auch Antworten
+  darauf:
+
+> @\_ds\_100 \#FF
+
 Warum antwortet mir der Bot nicht, obwohl er mir folgt?
 -------------------------------------------------------
 

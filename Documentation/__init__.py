@@ -31,7 +31,7 @@ def dumplink_list(config_list):
 
 def navilink_list(version):
     linkroot = ET.parse('doc/links.snip').getroot()
-    for vtag in linkroot.findall("li[@class='transform_version']"):
+    for vtag in linkroot.findall(".//li[@class='transform_version']"):
         vtag.text = "Version: {}".format(version)
     return linkroot
 
