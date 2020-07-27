@@ -1,7 +1,8 @@
 Konfigurationen
 ===============
 
-In diesem Verzeichnis sind die Daten-Konfigurationen.
+In diesem Verzeichnis sind die Daten-Konfigurationen. Die Datenlisten
+sind in sources/ zu finden.
 
 Format
 ------
@@ -70,6 +71,8 @@ Folgende Schlüssel sind unbedingt erforderlich:
 - source [siehe unten]
 
 Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
+- add [string] Spaltenname im CSV für zusätzliche Informationen. Diese
+  werden bisher an keiner Stelle ausgelesen und/oder verarbeitet.
 - delim [string, default ';']: Das Zeichen, mit dem Spalten im CSV
   voneinander getrennt sind
 - nolink [boolean (true/false), default false]: Wenn true, werden alle
