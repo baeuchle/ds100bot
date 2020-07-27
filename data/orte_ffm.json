@@ -22,7 +22,8 @@
       "Bei Kreuzungsbahnhöfen im Stadtbahnbereich hat jede Ebene einen dritten Buchstaben",
       "Andere Betriebsstellen haben längere Kürzel.",
       "Alle Stadtbahnhaltestellen haben dreistellige Nummern",
-      "Straßenbahnhaltestellen haben vierstellige Nummern (diese sind allerdings nur lückenhaft bekannt)"
+      "Straßenbahnhaltestellen haben vierstellige Nummern (diese sind allerdings nur lückenhaft bekannt)",
+      "Die Kürzel für Wendeanlagen fangen mit einem Unterstrich an '_'. Dies kann mit Magic Hashtags kollidieren (und tut es mindestens bei _HB), daher sollten diese nur voll qualifiziert benutzt werden, also als '#FFM:_HB'."
     ]
   }]
 }

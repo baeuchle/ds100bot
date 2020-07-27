@@ -493,7 +493,7 @@ def mocked_tweets():
         user=User.followed
         ))
     list_of_tweets.append(TweepyMock(
-        full_text='This tweet unusual tags Vol ⅸ: #_DE $3640 #_FFM #HB #_HB #211 #_W #J #_FFM $A3 bot%tl%mt%unusual%438',
+        full_text='This tweet unusual tags Vol ⅸ: #_DE $3640 #_FFM #HB #FFM:_HB #211 #_W #J #_FFM $A3 bot%tl%mt%unusual%438',
         expected_answer='3640: Frankfurt-Höchst - Bad Soden\nFFM#HB: Frankfurt Hauptbahnhof\nFFM#_HB: WA Hauptbahnhof\nFFM#211: Hauptbahnhof\nW#J: Jedlersdorf (in F)\nFFM$A3: Anschlussstrecke A3: Abzweig Nordwest - Oberursel Hohemark',
         id=438,
         user=User.followed
