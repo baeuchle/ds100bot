@@ -1,0 +1,571 @@
+Linie;Streckenverlauf;Verkehrsmitteltext;Kompakte Liniennummer
+S1;Kirchheim (T) - Plochingen - Stuttgart - Herrenberg;0 - S-Bahn;10-1-j18
+S2;Schorndorf - Stuttgart - Flughafen/Messe - Filderstadt;0 - S-Bahn;10-2-j18
+S3;Backnang - Stuttgart - Flughafen/Messe;0 - S-Bahn;10-3-j18
+S4;Backnang - Marbach - Stuttgart;0 - S-Bahn;10-4-j18
+S5;Bietigheim-Bissingen - Stuttgart;0 - S-Bahn;10-5-j18
+S6;Weil der Stadt - Leonberg - Stuttgart;0 - S-Bahn;10-6-j18
+S11;Neckarpark - Stuttgart - Herrenberg (Stadionlinie) Kirchheim (T) - Plochingen - Stuttgart - Herrenberg;0 - S-Bahn;10-11-j18
+S60;Böblingen - Renningen (- Stuttgart);0 - S-Bahn;10-60-j18
+R1;Ulm - Göppingen - Plochingen - Stuttgart;1 - R-Bahn;11-1-j18
+R2;Aalen - Schorndorf - Stuttgart;1 - R-Bahn;11-2-j18
+R3;Crailsheim - Backnang - Stuttgart;1 - R-Bahn;11-3-j18
+R4;Heilbronn - Bietigheim-Bissingen - Stuttgart;1 - R-Bahn;11-4-j18
+R5;Pforzheim - Bietigheim-Bissingen - Stuttgart;1 - R-Bahn;11-5-j18
+R7;Stuttgart - Herrenberg - Horb/Freudenstadt;1 - R-Bahn;11-7-j18
+R8;Tübingen - Plochingen - Stuttgart;1 - R-Bahn;11-8-j18
+R11;Kornwestheim - Untertürkheim;1 - R-Bahn;11-11-j18
+R74;(Herrenberg -) Eutingen i. G. - Freudenstadt;1 - R-Bahn;11-74-j18
+R81;Oberlenningen - Kirchheim (T);1 - R-Bahn;11-81-j18
+R21;Oberndorf - Rudersberg - Schorndorf;1 - R-Bahn;12-21-j18
+R61;Hemmingen - Korntal;1 - R-Bahn;12-61-j18
+R73;Plochingen - Tübingen - Herrenberg;1 - R-Bahn;12-73-j18
+R82;Neuffen - Nürtingen (Tälesbahn);1 - R-Bahn;12-82-j18
+IC;Stuttgart - Herrenberg - Horb/Freudenstadt;16 - IC;15-7-j18
+U1;Fellbach - Charlottenplatz - Vaihingen;2 - Stadtbahn;20-1-j18
+U2;Neugereut - Charlottenplatz - Vogelsang - Botnang;2 - Stadtbahn;20-2-j18
+U3;Plieningen - Möhringen - Vaihingen;2 - Stadtbahn;20-3-j18
+U4;Untertürkheim - Charlottenplatz - Hölderlinplatz;2 - Stadtbahn;20-4-j18
+U5;Killesberg - Hauptbahnhof - Möhringen - Leinfelden;2 - Stadtbahn;20-5-j18
+U6;Gerlingen - Hauptbahnhof - Möhringen - Fasanenhof;2 - Stadtbahn;20-6-j18
+U7;Mönchfeld - Hauptbahnhof - Ruhbank - Ostfildern;2 - Stadtbahn;20-7-j18
+U8;Ostfildern - Heumaden - Möhringen - Vaihingen;2 - Stadtbahn;20-8-j18
+U9;Hedelfingen - Charlottenplatz- Heslach Vogelrain Hedelfingen - Charlottenplatz - Heslach Vogelrain;2 - Stadtbahn;20-9-j18
+U11;Hauptbahnhof - Rotebühlplatz - Charlottenplatz - NeckarPark (Stadion);2 - Stadtbahn;20-11-s-j18
+U12;Remseck - Hallschlag - Hauptbahnhof - Dürrlewang;2 - Stadtbahn;20-12-j18
+U13;Feuerbach - Bad Cannstatt - Hedelfingen Bad Cannstatt - Hedelfingen (Giebel -) Feuerbach - Bad Cannstatt - Hedelfingen;2 - Stadtbahn;20-13-j18
+U14;Mühlhausen - Charlottenpl. - Rotebühlpl. - Hauptbahnhof;2 - Stadtbahn;20-14-j18
+U15;Stammheim - Hauptbahnhof - Ruhbank (- Heumaden);2 - Stadtbahn;20-15-j18
+U19;Bad Cannstatt Wilhelmsplatz - NeckarPark (Stadion);2 - Stadtbahn;20-19-j18
+U19;Bad Cannstatt Wilhelmsplatz - NeckarPark (Stadion);2 - Stadtbahn;20-19-s-j18
+U29;Hauptbahnhof - Vogelsang (- Botnang);2 - Stadtbahn;20-29-j18
+U34;Heslach Vogelrain - Rotebühlplatz - Vogelsang;2 - Stadtbahn;20-34-j18
+U19;Neugereut - Bad Ca. Wilhelmsplatz - NeckarPark (St.);2 - Stadtbahn;20-69-j18
+10;"Marienplatz - Degerloch (Zahnradbahn ""Zacke"")";3 - Zahnradbahn;21-10-j18
+20;Südheimer Platz - Waldfriedhof (Seilbahn);4 - Seilbahn;21-20-j18
+E;Zuffenhausen - Stammheim - Freiberg (Schülerverkehr);5 - Bus;30-15-a-j18
+35;Leinfelden - Plattenhardt - Bernhausen - Ruit;5 - Bus;30-35-j18
+36;Echterdingen - Bernhausen - Neuhausen;5 - Bus;30-36-j18
+E;Neuhausen - Bernhausen - Bonlanden / Degerloch (Schülerverkehr);5 - Bus;30-36-a-j18
+37;Sielmingen - Bernhausen - Plattenhardt;5 - Bus;30-37-j18
+38;Musberg - Leinfelden - Echterdingen - Stetten;5 - Bus;30-38-j18
+E;Musberg - Leinfelden - Plattenhardt (Schülerverkehr);5 - Bus;30-38-a-j18
+40;Wagenburgstraße - Hbf - Kräherwald - Vogelsang;5 - Bus;30-40-j18
+41;Berliner Platz - Marienplatz - Lerchenrainschule;5 - Bus;30-41-j18
+42;Schlossplatz - Gablenberg - Hbf - Erwin-Schoettle-Platz;5 - Bus;30-42-j18
+43;Pragsattel - Killesberg - Doggenburg - Charlottenplatz - Feuersee;5 - Bus;30-43-j18
+44;Killesberg - Hbf - Charlottenplatz - Westbahnhof;5 - Bus;30-44-j18
+45;Buchwald - Gablenberg - Ostendplatz - NeckarPark - (Mercedes-Benz Welt -) Bad Cannstatt;5 - Bus;30-45-j18
+50;Killesberg - Doggenburg - Westbahnhof;5 - Bus;30-50-j18
+52;(Korntaler Straße -) Borkumstr. - Zuffenhausen - Hallschlag - Bad Cannstatt;5 - Bus;30-52-j18
+54;Freiberg - Hofen - Neugereut (- Sommerrain);5 - Bus;30-54-j18
+56;Münster - Bad Cannstatt - NeckarPark - Mercedes-Benz Welt;5 - Bus;30-56-j18
+57;R.-Bosch-Krankenhaus - Burgholzhof - Pragsattel R.-Bosch-Krankenhaus - Burgholzhof - Pragsattel (- Killesberg);5 - Bus;30-57-j18
+58;Schmiden - Obere Ziegelei (- Sommerrain);5 - Bus;30-58-j18
+60;Oeffingen - Fellbach - Luginsland - Untertürkheim;5 - Bus;30-60-j18
+61;Rotenberg - Untertürkheim - Obertürkheim;5 - Bus;30-61-j18
+62;Uhlbach - Obertürkheim - Hedelfingen - Rohracker;5 - Bus;30-62-j18
+64;(Buchwald - Waldebene Ost-) Stelle - Frauenkopf;5 - Bus;30-64-j18
+65;(Uhlbach -) Obertürkheim - Heumaden - Plieningen;5 - Bus;30-65-j18
+66;Kühwasen - Geschwister-Scholl-Gymnasium;5 - Bus;30-66-j18
+67;(Fellbach Gewerbegebiet -) Bahnhof - Gartenstraße;5 - Bus;30-67-j18
+70;(Hoffeld -) Ruhbank - (Schönberg -) Plieningen;5 - Bus;30-70-j18
+71;Hoffeld - Degerloch - Asemwald - Schönberg;5 - Bus;30-71-j18
+72;Möhringen - Fasanenhof;5 - Bus;30-72-j18
+73;Degerloch - Plieningen - Neuhausen;5 - Bus;30-73-j18
+74;Degerloch - Bernhausen - Nürtingen;5 - Bus;30-74-j18
+E;Plattenhardt - Sielmingen - Nürt. Hölderlin-Gymn. (Schülerverkehr);5 - Bus;30-74-a-j18
+75;Bernhausen - Aich - Walddorfhäslach;5 - Bus;30-75-j18
+E;(Plieningen -) Sielmingen - Bernhausen - Bonlanden - Aich (Schülerverkehr);5 - Bus;30-75-a-j18
+76;Degerloch - Bernhausen - Stetten - Echterdingen;5 - Bus;30-76-j18
+77;Degerloch - Echterdingen - Harthausen;5 - Bus;30-77-j18
+78;Degerloch - Messe;5 - Bus;30-78-j18
+80;Vaihingen Bf (Ost) - Industriegebiet - Vaihingen Bf (Ost);5 - Bus;30-80-j18
+81;Büsnau - Vaihingen - Rohr - Dürrlewang;5 - Bus;30-81-j18
+82;Waldeck - Universität - Vaihingen - Rohr (- Leinfelden Bf);5 - Bus;30-82-j18
+84;Vaihingen - Sindelfingen - Universität;5 - Bus;30-84-j18
+86;Vaihingen - Musberg - Leinfelden;5 - Bus;30-86-j18
+90;Korntal - Weilimdorf - Giebel;5 - Bus;30-90-j18
+91;Feuerbach - Forsthaus (- Lauchhau - Sindelf. Spitzholz);5 - Bus;30-91-j18
+92;Stuttgart  - Leonberg - Universität - Heslach Vogelrain;5 - Bus;30-92-j18
+94;Leonb. Blosenbergk. - Bf - Ramtel (- Waldfriedhof);5 - Bus;30-94-j18
+98;Ditzingen - Gerlingen - Leonberg Golfplatz;5 - Bus;30-98-j18
+99;Stammheim - Schlotwiese - Zuffenhausen;5 - Bus;30-99-j18
+R61E;Schienenersatzverkehr Heimerdingen - Hemmingen;5 - Bus;31-61-e-j18
+R81;Oberlenningen - Kirchheim (T);13 - SEV-Bus;31-81-e-j18
+94;Leonb. Blosenbergk. - Bf - Ramtel (- Waldfriedhof);5 - Bus;31-94-j18
+101;Lerchenäcker - Esslingen (N) ZOB - Obertürkheim;5 - Bus;31-101-j18
+102;Zell - Esslingen (N) ZOB - Weil - Mettingen;5 - Bus;31-102-j18
+103;Zell - Esslingen (N) ZOB - Weil - Hedelfingen;5 - Bus;31-103-j18
+104;Esslingen (N) ZOB - Industriegebiet - Sirnau - Deizisau;5 - Bus;31-104-j18
+105;Essl. (N) Am Schönen Rain - Klinikum Esslingen - Essl. (N) ZOB;5 - Bus;31-105-j18
+106;Esslingen (N) ZOB - Baltmannsweiler - Hohengehren (- Winterbach - Schorndorf);5 - Bus;31-106-j18
+108;Esslingen (N) ZOB - Jägerhaus (- Dulkhäusle);5 - Bus;31-108-j18
+109;Esslingen (N) ZOB - Sulzgries - Rüdern;5 - Bus;31-109-j18
+110;Esslingen (N) ZOB - Hohenkreuz - Wäldenbronn;5 - Bus;31-110-j18
+111;Esslingen (N) ZOB - St. Bernhardt - Serach - Sulzgries - Neckarhalde;5 - Bus;31-111-j18
+112;Essl. (N) ZOB (- Hohenkreuz) - Dulkhäusle (- Jägerhaus);5 - Bus;31-112-j18
+113;Essl. (N) ZOB - Zollberg / - Adenauerbrücke - Berkheim;5 - Bus;31-113-j18
+114;Esslingen (N) ZOB - Lobenrot - Krummhardt - Aichelberg;5 - Bus;31-114-j18
+115;Esslingen (N) ZOB - Oberesslingen - Zell;5 - Bus;31-115-j18
+116;Essl. (N) ZOB - Wäldenbronn - Stetten (- Endersbach);5 - Bus;31-116-j18
+118;Esslingen (N) ZOB - Pliensauvorstadt - Zollberg - Esslingen (N) ZOB;5 - Bus;31-118-j18
+119;Esslingen (N) - Nellingen - Denkendorf;5 - Bus;31-119-j18
+120;Esslingen (N) - Nellingen - Neuhausen (- Wolfschlugen);5 - Bus;31-120-j18
+121;Oberesslingen - Denkendorf - Neuhausen;5 - Bus;31-121-j18
+122;Esslingen (N) - Scharnhausen - Flughafen/Messe;5 - Bus;31-122-j18
+131;Esslingen (N) - Ruit - Heumaden (- Scharnhausen);5 - Bus;31-131-j18
+132;Oberesslingen - St. Bernhard - Serach - Sulzgries - Rüdern;5 - Bus;31-132-j18
+138;Jägerhaus - Oberesslingen - Zell - Sirnau - Berkheim;5 - Bus;31-138-j18
+140;Esslingen (N) - Altbach - Plochingen;5 - Bus;31-140-j18
+141;Plochingen ZOB - Lettenäcker - Stumpenhof;5 - Bus;31-141-j18
+142;Plochingen  - Reichenbach;5 - Bus;31-142-j18
+143;Deizisau - Plochingen;5 - Bus;31-143-j18
+144;Kirchheim (T) -  Hochdorf - Reichenbach (F) - Plochingen;5 - Bus;31-144-j18
+145;Wernau (N) Bahnhof - Katzenstein - Schmalwiesen - Bahnhof [Stadtverkehr Wernau (Neckar)];5 - Bus;31-145-j18
+146;Wernau (N) Bahnhof - Schmalwiesen - Katzenstein - Bahnhof [Stadtverkehr Wernau (Neckar)];5 - Bus;31-146-j18
+148;Reichenbach Rißhalde - Bahnhof - Siegenberg;5 - Bus;31-148-j18
+149;Plochingen - Stumpenhof - Baltmannsweiler (- Schorndorf);5 - Bus;31-149-j18
+151;Wendlingen (N) ZOB - Köngen - Wendlingen (N);5 - Bus;31-151-j18
+152;Wendlingen (N) Schulzentrum - Sporthalle Im Speck - Schulzentrum;5 - Bus;31-152-j18
+153;Unterensingen - Zizishausen - Oberboihingen;5 - Bus;31-153-j18
+154;Wendlingen (N) ZOB - Weinhalde - ZOB;5 - Bus;31-154-j18
+155;Wendlingen (N) ZOB - Unterboihingen - ZOB;5 - Bus;31-155-j18
+161;Kirchheim (T) Altvaterweg - ZOB - Ötlingen;5 - Bus;31-161-j18
+163;Ötlingen - Lindorf - Kirchheim (T) ZOB - Schafhof;5 - Bus;31-163-j18
+165;Kirchheim (T) - Jesingen - Ohmden;5 - Bus;31-165-j18
+166;Kirchheim (T) - Reudern - Säer - Nürtingen;5 - Bus;31-166-j18
+166A;Oberboihingen - Reudern (Schülerverkehr);5 - Bus;31-166-a-j18
+167;Nürtingen - Oberensingen - Grötzingen - Aich - Neuenhaus;5 - Bus;31-167-j18
+167A;Grötzingen - Aich - Neuenhaus - Waldenbuch - Bonlanden Waldorfschule (Schülerverkehr);5 - Bus;31-167-a-j18
+168;Kirchheim (T) - Notzingen - Wernau (N);5 - Bus;31-168-j18
+169;Nürtingen - Gewerbegebiet Bachhalde - Nürtingen;5 - Bus;31-169-j18
+170;Kirchheim (T) - Weilheim - Wiesensteig - Reußenstein (RadWanderBus Reußenstein);5 - Bus;31-170-j18
+171;(Dettingen -) Owen - Nürtingen Owen - Nürtingen Krankenhaus;5 - Bus;31-171-j18
+173;Kirchheim (T) - Weilheim (T) - Bissingen (T) - Kirchheim (T);5 - Bus;31-173-j18
+174;Weilheim (T) - Hepsisau - Neidlingen und zurück;5 - Bus;31-174-j18
+175;Kirchheim (T) - Bissingen (T) - Weilheim (T) - Kirchheim (T);5 - Bus;31-175-j18
+176;(Kirchheim (T) -) Bissingen (T) - Oberlenningen;5 - Bus;31-176-j18
+177;(Neidlingen -) Weilheim (T) - Kirchheim (T) - Oberlenningen;5 - Bus;31-177-j18
+1771;Oberlenningen - Schopfloch - Laichingen (RadWanderBus Schwäbische Alb);5 - Bus;31-177-1-j18
+178;Kirchheim (T) - Schlierbach - Göppingen;5 - Bus;31-178-j18
+179;Oberlenningen - Erkenbrechtsweiler - Neuffen Oberlenningen - Erkenbrechtsweiler - Beuren - Neuffen;5 - Bus;31-179-j18
+180;Neuffen - Frickenhausen - Nürtingen Beuren - Neuffen - Frickenhausen - Nürtingen;5 - Bus;31-180-j18
+181;Nürtingen ZOB - Rieth;5 - Bus;31-181-j18
+182;Nürtingen ZOB - Roßdorf;5 - Bus;31-182-j18
+183;Nürtingen ZOB - Braike (- Waldfriedhof) - Roßdorf;5 - Bus;31-183-j18
+184;Nürtingen - Zizishausen - Unterensingen - Wendlingen;5 - Bus;31-184-j18
+185;Grafenberg - Großbettlingen - Nürtingen;5 - Bus;31-185-j18
+186;Oberensingen - Hardt;5 - Bus;31-186-j18
+187;Neckartenzlingen - Bempflingen - Großbettlingen;5 - Bus;31-187-j18
+188;Nürtingen - Altdorf - Neckartenzlingen - Schlaitdorf;5 - Bus;31-188-j18
+189;Neckartailfingen - Schlaitdorf - Walddorf-Häslach - Neckartenzlingen;5 - Bus;31-189-j18
+190;Neckartenzlingen (- Altdorf) / (- Neuenhaus - Grötzingen) - Aich;5 - Bus;31-190-j18
+191;Owen - Beuren - Hohenneuffen - Neuffen Neuffen - Hohenneuffen - Erkenbrechtsweiler - Beuren - Owen (RadWanderBus Blaue Mauer);5 - Bus;31-191-j18
+192;Neuffen Bahnhof - Kohlberg - Kappishäusern;5 - Bus;31-192-j18
+193;Neckartenzlingen - Bempflingen - Nürtingen;5 - Bus;31-193-j18
+194;Nürt. Roßdorf - Enzenhardt - Neckarhausen;5 - Bus;31-194-j18
+195;Raidwangen - Großbettlingen - Frickenhausen Frickenhausen - Großbettlingen - Nürtingen;5 - Bus;31-195-j18
+196;Nürtingen - Oberboihingen - Wendlingen (N);5 - Bus;31-196-j18
+197;(Reutlingen -) Metzingen - Bempflingen - Neckartenzlingen;5 - Bus;31-197-j18
+198;Kohlberg - Tischardt - Frickenhausen Bahnhof;5 - Bus;31-198-j18
+199;(Owen -) Beuren - Neuffen - Metzingen;5 - Bus;31-199-j18
+201;Waiblingen - Neustadt - Hohenacker - Bittenfeld;5 - Bus;31-201-j18
+202;Waiblingen - Endersbach - Strümpfelbach;5 - Bus;31-202-j18
+204;Waiblingen - Beinstein;5 - Bus;31-204-j18
+205;Waiblingen - Schmiden;5 - Bus;31-205-j18
+206;Waiblingen - Endersbach - Schnait;5 - Bus;31-206-j18
+207;(Korb -) Korber Höhe - Waiblingen Bf - Fellbach;5 - Bus;31-207-j18
+208;Waiblingen Bf - Altstadt - Galgenberg (Citybus 1);5 - Bus;31-208-j18
+209;Waiblingen - Korb - Kleinheppach - Endersbach;5 - Bus;31-209-j18
+210;(Waiblingen -) Korb - Schwaikheim - Winnenden - Rems-Murr-Klinikum;5 - Bus;31-210-j18
+211;Waiblingen - Stetten;5 - Bus;31-211-j18
+212;(Waiblingen -) Fellbach - Rommelshausen - Stetten;5 - Bus;31-212-j18
+213;Waiblingen - Hegnach;5 - Bus;31-213-j18
+216;Waiblingen Bf - Industriegebiet Eisental;5 - Bus;31-216-j18
+217;Buoch - Grunbach - Geradstetten - Rohrbronn;5 - Bus;31-217-j18
+217a;Schulbus Remshalden Rohrbronn - Geradstetten - Grunbach (Schülerverkehr);5 - Bus;31-217-a-j18
+218;Waiblingen Bf - Friedhof - Altstadt - Wasserstube (Citybus 2);5 - Bus;31-218-j18
+227;Waiblingen - Schorndorf;5 - Bus;31-227-j18
+228;(Schorndorf -) Rudersberg - Welzheim;5 - Bus;31-228-j18
+229;Miedelsbach - Steinenberg - Krehwinkel;5 - Bus;31-229-j18
+230;Lindental - Rudersberg - Mannenberg - Althütte;5 - Bus;31-230-j18
+242;Schorndorf Bf - Rems-Murr-Klinik - Spittler Stift - Schorndorf Bahnhof- Rems-Murr-Klinik - Spittler Stift - Grauhalde - Rems-Murr-Klinik - Bahnhof;5 - Bus;31-242-j18
+242;Schorndorf Bf - Schillerpl. - Grauh. - Schorndorf Bf Schorndorf Bf - Schillerplatz - Grauhalde - Kreiskrankenhaus - Schorndorf Bf;5 - Bus;31-242-a-j18
+243;Schorndorf - Urbach Banrain - Plüderhausen Schorndorf - Urbach - Plüderhausen;5 - Bus;31-243-j18
+243A;Schorndorf - Urbach - Plüderhausen;5 - Bus;31-243-a-j18
+244;Schorndorf - Schornbach - Oppelsbohm;5 - Bus;31-244-j18
+245;Schorndorf - Weiler - Rohrbronn - Schorndorf - Weiler - Rohrbronn - Hößlinswart (- Erlenhof) Hößlinswart (- Erlenhof);5 - Bus;31-245-j18
+246;Schorndorf Bf - Erlensiedlung - Kreisverkehr Welzheimer Str. Schorndorf Bf - Erlensiedlung - Kreisverkehr Welzheimer Str.;5 - Bus;31-246-j18
+246;Schorndorf Grauhalde - Wiesenstraße - Schlipfweg - Schorndorf Bf;5 - Bus;31-246-a-j18
+247;Schorndorf Bf - Grauhalde - Alte Steige - Neuer Friedhof - Bf Schorndorf Bahnhof - Grauhalde - Alte Steige - Neuer Friedhof - Bahnhof;5 - Bus;31-247-j18
+248;Schorndorf - Urbach - Plüderhausen;5 - Bus;31-248-j18
+249;Schorndorf - Urbach Banrain - Urbach Bf;5 - Bus;31-249-j18
+250;(Welzheim -) Walkersbach - Waldhausen;5 - Bus;31-250-j18
+251;Ferienflitzer: Welzheim - Rudersberg;5 - Bus;31-251-j18
+257;Welzheim - Cronhütte;5 - Bus;31-257-j18
+258;Welzheim - Vorderhundsberg - Langenberg - Edelmannshof - Obersteinenberg;5 - Bus;31-258-j18
+259;Welzheim ZOB - Mannholz - Rienharz - Welzheim ZOB;5 - Bus;31-259-j18
+260;Schorndorf - Oberberken - Adelberg - Göppingen;5 - Bus;31-260-j18
+261;Göppingen -  Bünzwangen - Ebersbach (F);5 - Bus;31-261-j18
+262;Plochingen - Reichenbach (F) - Schorndorf;5 - Bus;31-262-j18
+263;Schorndorf - Welzheim - Kaisersbach - Althütte;5 - Bus;31-263-j18
+265;Schorndorf - Rudersberg - Welzheim - Kaisersbach - Althütte - Rudersberg - Schorndorf;5 - Bus;31-265-j18
+266;Schwäbisch Gmünd - Alfdorf - Welzheim;5 - Bus;31-266-j18
+268;Alfdorf - Pfahlbronn - Lorch;5 - Bus;31-268-j18
+269;Alfdorf - Vordersteinenberg;5 - Bus;31-269-j18
+310;Winnenden - Buoch - Grunbach (Fahrrad2Go);5 - Bus;31-310-j18
+331;Winnenden - Breuningsweiler - Lehnenberg - Steinach;5 - Bus;31-331-j18
+332;Hertmannsweiler - Winnenden - Rems-Murr-Klinikum -  Schelmenholz - Hanweiler;5 - Bus;31-332-j18
+334;Schelmenholz - Winnenden - Leutenbach - Weiler z. Stein;5 - Bus;31-334-j18
+335;Rems-Murr-Klinikum- Winnenden - Leutenbach -  Nellmersbach (- Backnang);5 - Bus;31-335-j18
+336;Winnenden - Birkmannsweiler - Erlenhof - Oppelsbohm;5 - Bus;31-336-j18
+337;Winnenden - Bürg - Oppelsbohm;5 - Bus;31-337-j18
+338;Erlenhof - Kottweil - Ödernhardt - Erlenhof;5 - Bus;31-338-j18
+340;(Hertmannsweiler -) Baach - Höfen - Birkmannsweiler - Winnenden;5 - Bus;31-340-j18
+360;Sachsenweiler - Backnang - Rietenauer Weg  (- Lerchenäcker);5 - Bus;31-360-j18
+361;Heiningen - Backnang - Steinbach ;5 - Bus;31-361-j18
+362;Sachsenweiler - Backnang - Tausgymnasium;5 - Bus;31-362-j18
+362A;Sachsenweiler - Steinbach - Backnanger Schulen (Schülerverkehr);5 - Bus;31-362-a-j18
+363;Backnang - Oberschöntal - Unterschöntal - Backnang;5 - Bus;31-363-j18
+364;Backnang - Großaspach - Rielingshausen - Marbach;5 - Bus;31-364-j18
+365;Backnang - Unterweissach - Oberbrüden;5 - Bus;31-365-j18
+365A;Bildungszentrum Weissach i.T. - Oberbrüden (Schülerverkehr);5 - Bus;31-365-a-j18
+366;Backnang - Steinbach - Oberbrüden - Unterbrüden - Lippoldsweiler - Hohnweiler;5 - Bus;31-366-j18
+367;Backnang - Großaspach - Kleinaspach;5 - Bus;31-367-j18
+367A;Backnang - Großaspach - Kleinaspach (Schülerverkehr);5 - Bus;31-367-a-j18
+368;Backnang - Staigacker;5 - Bus;31-368-j18
+368A;Strümpfelbach - Tausschule (Schülerverkehr);5 - Bus;31-368-a-j18
+369;Backnang ZOB - Industriegebiet Süd;5 - Bus;31-369-j18
+370;Backnang ZOB - Biegel - Gartenstraße - Murrbäder ;5 - Bus;31-370-j18
+372;Murrhardt - Grab - Großerlach - Mainhardt (inkl. Limesbus Nord) Murrhardt - Grab - Großerlach - Mainhardt;5 - Bus;31-372-j18
+373;Murrhardt - Klingen - Sechselberg - Mettelberg - Murrhardt Murrhardt - Klingen - Fautspach - Mettelbg. - Murrhardt;5 - Bus;31-373-j18
+373A;Waltersberg - Murrhardt;5 - Bus;31-373-a-j18
+374;Murrhardt - Siegelsberg -  Hinterbüchelberg - Waltersberg - Murrhardt Murrhardt - Hinterbüchelberg / Mannenweiler Murrhardt - Hinterbüchelberg / Mannenweiler - Murrhardt;5 - Bus;31-374-j18
+375;Murrhardt - Fornsbach - Kirchenkirnberg - Kaisersbach - Welzheim (inkl. Limesbus mit Fahrradanhänger);5 - Bus;31-375-j18
+376;Murrhardt - Grab - Großerlach - Mainhardt - Sulzbach (M) - Murrhardt (Limesbus Nord);5 - Bus;31-376-j18
+380;Backnang - Sulzbach (M) - Mainhardt;5 - Bus;31-380-j18
+381;Backnang - WeissacherTal - Althütte Backnang - Weiss.Tal - Althütte (Spät- und Nachtbusverkehr) (Spät- und Nachtbusverkehr);5 - Bus;31-381-j18
+381-P;Backnang - Weiss.Tal - Althütte (Spät- und Nachtbusverkehr) Backnang - WeissacherTal - Althütte (Spät- und Nachtbusverkehr);5 - Bus;31-381-P-j18
+382;Backnang - Weissach i.T. - Auenwald - Althütte;5 - Bus;31-382-j18
+383;Backnang - Allmersbach i.T. - Unterweissach;5 - Bus;31-383-j18
+384;Backnang - Weissach i.T. - Althütte;5 - Bus;31-384-j18
+385;Backnang - Sulzbach (M) - Wüstenrot - Neuhütten;5 - Bus;31-385-j18
+386;Sulzbach (M) - Spiegelberg - Spiegelberger Teilorte;5 - Bus;31-386-j18
+387;Sulzbach (M) - Bartenbach - Großerlach - Sulzbach (M);5 - Bus;31-387-j18
+390;Backnang - Oppenweiler - Sulzbach (Murr) - Murrhardt Backnang - Murrhardt - Fornsbach;5 - Bus;31-390-j18
+393;Backnang - Allmersbach i.T. - Rudersberg (Fahrrad2Go);5 - Bus;31-393-j18
+401;Mühlhausen - Zuffenhausen (- Feuerbach);5 - Bus;31-401-j18
+402;Hochdorf-Hochberg-Neckarrems-Neckargr.-Aldingen-Pattonville;5 - Bus;31-402-j18
+403;Hochberg - Neckargröningen - Aldingen Berliner Straße;5 - Bus;31-403-j18
+405;Hochdorf - Neckarrems - Neckargröningen - Aldingen - Pattonville;5 - Bus;31-405-j18
+411;Kornwestheim Bahnhof - Friedhof;5 - Bus;31-411-j18
+412;Pattonville - Kornwestheim (- Stammheim);5 - Bus;31-412-j18
+413;Ludwigsburg - Kornwestheim;5 - Bus;31-413-j18
+414;Kornwestheim Bf - Mühlhäuser Straße - Bahnhof;5 - Bus;31-414-j18
+420;Ludwigsburg ZOB - Weststadt - Asperg ;5 - Bus;31-420-j18
+421;Neckarweihingen - Ludw. ZOB - Oststadt - Oßweil-Süd;5 - Bus;31-421-j18
+421A;Neckarweih. - Ludw. ZOB - Oststadt - Oßweil-Süd (Schülerverkehr);5 - Bus;31-421-a-j18
+422;Pflugfelden - Ludw. ZOB - Schlösslesfeld;5 - Bus;31-422-j18
+422A;Pflugfelden - Ludw. ZOB - Schlösslesfeld (Schülerverkehr);5 - Bus;31-422-a-j18
+423;Ludwigsburg ZOB - Kreisberufsschule;5 - Bus;31-423-j18
+424;"Ludwigsburg Arsenalplatz - ZOB - PH - Breuningerland - IKEA Ludw. Arsenalplatz - ZOB - PH - Breuningerland - IKEA Sonderverkehr ""Jazz on a Sunday"" Breuningerland Ludwigsburg";5 - Bus;31-424-j18
+425;Eglosheim - Ludw. ZOB - Oßweil;5 - Bus;31-425-j18
+425A;Eglosheim - Ludw. ZOB - Oßweil (Schülerverkehr);5 - Bus;31-425-a-j18
+426;Ludwigsburg ZOB  - Oßweil Nord;5 - Bus;31-426-j18
+427;(Pattonville -) Grünbühl - Ludw. ZOB - Hoheneck;5 - Bus;31-427-j18
+427A;(Pattonville -) Grünbühl - Ludw. ZOB - Hoheneck ;5 - Bus;31-427-a-j18
+429;Ludw. Forum - ZOB - Talstraße - Neckarweihingen Hermann-Hesse-Str.;5 - Bus;31-429-j18
+430;(Hochberg -) Poppenweiler - Ludw. ZOB - Eglosheim;5 - Bus;31-430-j18
+431;Ludwigsburg - Neckargröningen - Neckarrems - Hegnach - Waiblingen;5 - Bus;31-431-j18
+432;Ludwigsburg - Neckargröningen - Hegnach - Waiblingen;5 - Bus;31-432-j18
+433;Asperg - Ludwigsburg ZOB - Hochberg - Poppenweiler;5 - Bus;31-433-j18
+433A;Asperg - Ludw. ZOB - Hochberg - Poppenweiler (Schülerverkehr);5 - Bus;31-433-a-j18
+443;Ludwigsburg - Neckarweihingen - Marbach (N);5 - Bus;31-443-j18
+444;Ludwigsburg - Freiberg (N) - Höpfigheim (- Steinheim (M));5 - Bus;31-444-j18
+444A;Freiberg (N) - Pleidelsheim - Höpfigheim (Schülerverkehr);5 - Bus;31-444-a-j18
+446;Freiberg (N) - Großingersheim - Kleiningersheim;5 - Bus;31-446-j18
+446A;Freiberg (N) - Großingersheim - Kleiningersheim (Schülerverkehr);5 - Bus;31-446-a-j18
+451;Marbach (N) - Poppenweiler - Neckargröningen - Aldingen;5 - Bus;31-451-j18
+453;Marbach (N) - Rielingshausen - Kirchberg - Marbach (N);5 - Bus;31-453-j18
+455;Backnang - Weiler zum Stein /  Burgstall (- Kirchberg);5 - Bus;31-455-j18
+456;Marbach (N) - Erdmannhausen - Affalterbach (- Winnenden);5 - Bus;31-456-j18
+456A;Marbach (N) - Erdmannhausen - Affalterbach (Schülerverkehr);5 - Bus;31-456-a-j18
+457;Marbach (N) Bahnhof - Hörnle;5 - Bus;31-457-j18
+459;Freiberg (N) - Pleidelsheim - Besigheim;5 - Bus;31-459-j18
+459A;Mundelsheim - Hessigheim - Besigheim (Schülerverkehr);5 - Bus;31-459-a-j18
+460;Beilstein - Oberstenfeld - Großbottwar - Beilstein - Oberstenfeld - Großbottwar - Steinheim (M) - Marbach (N) Steinheim (M) - Marbach (N);5 - Bus;31-460-j18
+460A;Beilstein - Oberstenfeld - Großbottwar - Steinheim (M) - Marbach (N) (Schülerverkehr);5 - Bus;31-460-a-j18
+461;Winzerhausen - Großbottwar - Marbach (N);5 - Bus;31-461-j18
+462;Beilstein - Oberstenfeld - Großbottwar - Marbach (N);5 - Bus;31-462-j18
+463;Prevorst - Oberstenfeld / Hof und Lembach - Großbottwar;5 - Bus;31-463-j18
+464;Marbach - Bottwartal - Neckartal - Besigheim Fahrrad- und Wanderbus WeinKulTourer;5 - Bus;31-464-j18
+467;Backnang - Kleinaspach - Oberstenfeld - Prevorst (Berg- und Talbus);5 - Bus;31-467-j18
+477;Burgstall - Kirchberg - Zwingelhausen - Großaspach;5 - Bus;31-477-j18
+488;Ortsbus Kirchberg (M) Kirchberg (M) Bf - Zwingelhausen - Rathaus - Kirchberg (M) Bf (Ortsbus Kirchberg (M));5 - Bus;31-488-j18
+501;Feuerbach - Münchingen - Schwieberd. - Hemmingen;5 - Bus;31-501-j18
+502;Feuerbach - Schwieberdingen - Hemmingen - Eberdingen - Riet;5 - Bus;31-502-j18
+503;Feuerbach - Schwieberdingen - Vaihingen (E);5 - Bus;31-503-j18
+504;Schwieberdingen Bf - Bosch - Hülbe;5 - Bus;31-504-j18
+508;Ludwigsburg - Möglingen - Zuffenhausen;5 - Bus;31-508-j18
+531;Asperg - Markgröningen - Schwieberdingen;5 - Bus;31-531-j18
+531A;Hemmingen - Schwieberdingen -  Markgröningen (Schülerverkehr);5 - Bus;31-531-a-j18
+532;Ludwigsburg - Asperg - Markgröningen - Sachsenheim;5 - Bus;31-532-j18
+532A;Unterriexingen - Markgröningen (Schülerverkehr);5 - Bus;31-532-a-j18
+533;Aldingen - Ludwigsburg - Möglingen - Markgröningen;5 - Bus;31-533-j18
+533A;Möglingen - Markgröningen (Schülerverkehr);5 - Bus;31-533-a-j18
+534;Ludwigsburg - Möglingen - Schwieberdingen - Hemmingen;5 - Bus;31-534-j18
+534A;Unterriex. - Markgr. - Mögl. - Ludwigsburg (Schülerverkehr);5 - Bus;31-534-a-j18
+535;Ludwigsburg - Möglingen - Münchingen - Ditzingen;5 - Bus;31-535-j18
+536;Ludw. IKEA - Breuningerland - Tamm - Möglingen;5 - Bus;31-536-j18
+536A;Tamm - Asperg - Möglingen (Schülerverkehr);5 - Bus;31-536-a-j18
+540;Bietigheim ZOB - Bissingen Neuer Friedhof;5 - Bus;31-540-j18
+541;(Tamm -) Bissingen - Unterriexingen;5 - Bus;31-541-j18
+542;Bietigheim - Bissingen - Tamm - Hoheneck;5 - Bus;31-542-j18
+543;Sachsenheim - Untermberg;5 - Bus;31-543-j18
+544;Bietigheim - Sachsenheim - Eichwald;5 - Bus;31-544-j18
+551;(IKEA - Breuningerland -)  Bietigheim - Metterz. - Sachsenheim;5 - Bus;31-551-j18
+551A;Bietigheim - Metterzimmern - Sachsenheim (Schülerverkehr);5 - Bus;31-551-a-j18
+552;(IKEA - Breuningerland -)  Bietigheim - Metterzimmern;5 - Bus;31-552-j18
+553;Untermberg - Bissingen -  ZOB - Bietigheim;5 - Bus;31-553-j18
+554;Untermberg - Bissingen -  ZOB - Bietigheim - Bönnigheim;5 - Bus;31-554-j18
+555;ZOB - Bissingen - Metterzimmern - Kammgarnspinnerei;5 - Bus;31-555-j18
+556;ZOB - Bissingen - Ellental - Bietigheim - Buch - ZOB;5 - Bus;31-556-j18
+557;ZOB - Buch - Bietigheim - Ellental - Bissingen - ZOB;5 - Bus;31-557-j18
+558;Bietigheim ZOB - Gewerbegebiet Laiern;5 - Bus;31-558-j18
+559;Bietigheim ZOB - Büttenwiesen;5 - Bus;31-559-j18
+560;(Husarenhof -) Ingersh. Feld - Besigheim Bf - Schäuber;5 - Bus;31-560-j18
+561;Bietigheim Kammgarnspinnerei - ZOB;5 - Bus;31-561-j18
+564;Kammgarnspinnerei - Bietigheim ZOB - Freiberg (N);5 - Bus;31-564-j18
+565;Buch - Bolzstraße - Friedhof St. Peter;5 - Bus;31-565-j18
+566;Bietigheim - Sachsenheim (- Sersheim - Vaihingen (E)) Bietigheim - Sachsenheim - Sersheim - Vaihingen (E);5 - Bus;31-566-j18
+566A;Bietigheim - Sachsenheim - Sersheim (Schülerverkehr);5 - Bus;31-566-a-j18
+567;Hohenhaslach - Freudental - Bietigheim - Großingersheim - Pleidelsheim (- Murr) Großingersheim - Pleidelsheim;5 - Bus;31-567-j18
+567A;Kleiningersheim - Großingersheim - Bietigheim (Schülerverkehr);5 - Bus;31-567-a-j18
+568;Freudental - Löchgau - Besigheim - Ottmarsheim;5 - Bus;31-568-j18
+568A;Freudental - Löchgau - Besigheim - Ottmarsheim (Schülerverkehr);5 - Bus;31-568-a-j18
+571;Großsachsenheim - Hohenhaslach - Häfnerhaslach (Bietigheim -) Sachsenheim - Hohenhaslach - Häfnerhaslach;5 - Bus;31-571-j18
+571A;Häfnerhaslach - Hohenhaslach - Großsachsenheim (Schülerverkehr);5 - Bus;31-571-a-j18
+572;Bietigheim - Tripsdrill - Kirbachtal (Wanderbus Stromer);5 - Bus;31-572-j18
+573;Kirchheim (N) - Gemmrigheim (- Ottmarsheim);5 - Bus;31-573-j18
+574;Besigheim / Ottmarsheim - Kirchheim (N) - Bönnigheim Besigheim - Kirchheim (N) - Bönnigheim;5 - Bus;31-574-j18
+574A;Bönnigh. - Kirchheim (N) - Gemmrigh. - Besigh. (Schülerverkehr);5 - Bus;31-574-a-j18
+578;Sersheim - Kleinglattbach - Vaihingen (E) Sersheim - Kleinglattbach - Vaihingen (E);5 - Bus;31-578-j18
+579;Oberriexingen - Enzweihingen - Vaihingen (E) - Kleinglattbach - Ensingen Oberriexingen - Enzweihingen - Vaihingen (E) - Kleinglattbach - Ensingen;5 - Bus;31-579-j18
+590;Vaihingen (E) - Ensingen - Horrheim - Hohenhaslach;5 - Bus;31-590-j18
+592;Gündelbach - Vaihingen (E) - Eberdingen Gündelbach - Vaihingen (E) - Eberdingen (- Hochdorf);5 - Bus;31-592-j18
+595;Vaihingen (E) - Enzweihingen - Riet - Hochdorf;5 - Bus;31-595-j18
+612;Korntal - Neuwirtshaus - Münchingen (- Hemmingen);5 - Bus;31-612-j18
+612A;Kallenberg - Münchingen (Schülerverkehr);5 - Bus;31-612-a-j18
+620;Ditzingen - Heimerdingen (- Weissach);5 - Bus;31-620-j18
+623;Ditzingen - Schöckingen (- Heimerdingen);5 - Bus;31-623-j18
+623A;Schöckingen - Hirschlanden - Ditzingen (Schülerverkehr);5 - Bus;31-623-a-j18
+624;Stadtverkehr Ditzingen;5 - Bus;31-624-j18
+625;Ditzingen Bahnhof Süd - Gewerbegebiet Süd;5 - Bus;31-625-j18
+631;Leonberg - Sindelfingen - Böblingen;5 - Bus;31-631-j18
+632;Leonberg - Eltingen - Warmbronn;5 - Bus;31-632-j18
+633;Weissach - Friolzheim - Renningen - Leonberg;5 - Bus;31-633-j18
+634;Weissach - Rutesheim - Leonberg;5 - Bus;31-634-j18
+634A;Weissach - Rutesheim - Leonberg (Schülerverkehr);5 - Bus;31-634-a-j18
+634E;Leonberg Bahnhof - Krankenhaus;5 - Bus;31-634-E-j18
+635;Leonberg - Gerlingen;5 - Bus;31-635-j18
+636;Weissach - Flacht - Perouse - Rutesheim - Renningen / Renningen - Malmsheim - Renningen;5 - Bus;31-636-j18
+651;Leonberg - Höfingen - Hemmingen;5 - Bus;31-651-j18
+652;Leonberg - Heimsheim - Tiefenbronn - Weissach Porsche;5 - Bus;31-652-j18
+653;Leonberg - Gebersheim - Rutesheim - Heimsheim - Mönsheim - Weissach Porsche / Wiernsheim;5 - Bus;31-653-j18
+653A;Mönsheim - Friolzheim - Heimsheim - Rutesheim - Gebersheim - Leonberg;5 - Bus;31-653-a-j18
+655;Rutesheim Bahnhof - Rutesheim Rathaus;5 - Bus;31-655-j18
+655A;Rutesheim Bahnhof - Rutesheim Schulzentrum;5 - Bus;31-655-a-j18
+663;Weil der Stadt - Merklingen - Münklingen - Hausen;5 - Bus;31-663-j18
+665;Weil der Stadt Bf - Blammerberg - Bf (- Gymnasium);5 - Bus;31-665-j18
+666;Weil d. Stadt - Mühlhausen - Tiefenbronn - Pforzheim;5 - Bus;31-666-j18
+670;Weil der Stadt - Schafhausen - Dätzingen - Althengstett - Calw;5 - Bus;31-670-j18
+701;Diezenhalde - Böbl.  ZOB - Sindelf. ZOB - Eichholz;5 - Bus;31-701-j18
+703;Böblingen ZOB - Sindelfingen ZOB - Eichholz;5 - Bus;31-703-j18
+704;(Böblingen - Goldberg -) Sindelf. - Hinterweil - Grünäcker - Landhaussiedlung;5 - Bus;31-704-j18
+705;Böblingen ZOB - Flugfeld - Sindelfingen ZOB;5 - Bus;31-705-j18
+706;Böblingen ZOB - Sindelf. Breuningerland - Viehweide;5 - Bus;31-706-j18
+707;Böbl. Danziger Str. - Hulb - Sindelf. Mercedes-Benz - ZOB;5 - Bus;31-707-j18
+708;Böbl. Thermalb. - Goldberg - Sindelf. ZOB - Eichholz;5 - Bus;31-708-j18
+709;Sindelfingen ZOB - Böbl. ZOB - Hallenbad - Rauher Kapf;5 - Bus;31-709-j18
+711;Sindelf. ZOB - Goldberg Wasserturm - Breuningerland;5 - Bus;31-711-j18
+712;Sindelfingen ZOB - Marktplatz - Viehweide;5 - Bus;31-712-j18
+715;Sindelfingen ZOB - Maichingen - Hinterweil - ZOB;5 - Bus;31-715-j18
+716;Sindelfingen ZOB - Hinterweil - Maichingen - ZOB;5 - Bus;31-716-j18
+717;Sindelfingen ZOB - Dagersheim - Darmsheim;5 - Bus;31-717-j18
+718;Sindelfingen ZOB - Darmsheim;5 - Bus;31-718-j18
+721;Böbl. Diezenhalde - ZOB - Kreiskrankenhaus;5 - Bus;31-721-j18
+722;Maichingen - Böblingen Waldorfschule;5 - Bus;31-722-j18
+723;Böbl. ZOB - Schulz. Murkenbach - Tannenberg - ZOB;5 - Bus;31-723-j18
+724;Böblingen  ZOB - Eichendorffsch. - Schulz. Murkenbach - Rauher Kapf;5 - Bus;31-724-j18
+726;Böblingen ZOB - Eugen-Bolz-Straße - Geleener Straße - ZOB;5 - Bus;31-726-j18
+728;Böblingen ZOB - Technologiepark;5 - Bus;31-728-j18
+731;Böblingen ZOB - Dagersheim Ost;5 - Bus;31-731-j18
+732;Böblingen ZOB - Dagersheim - Darmsheim;5 - Bus;31-732-j18
+734;Goldberg - Schönaich - Goldberg - Sindelfingen ZOB;5 - Bus;31-734-j18
+745;Magstadt - Maichingen (- Sindelfingen);5 - Bus;31-745-j18
+746;Vaihingen Universität - Büsnau - Magstadt;5 - Bus;31-746-j18
+747;Vaihingen Universität - Büsnau - Warmbronn;5 - Bus;31-747-j18
+748;(Doggenburg -) Vaihingen Universität - Sindelfingen - Maichingen;5 - Bus;31-748-j18
+749;(Sindelfingen -) Maichingen - Grafenau - Schafhausen;5 - Bus;31-749-j18
+752;Ehningen - Altdorf - Holzgerlingen Ehningen - Hildrizhausen - Holzgerlingen - Neuweiler;5 - Bus;31-752-j18
+753;Rohrau (- Nufringen Gewerbegebiet) - Gärtringen;5 - Bus;31-753-j18
+754;Sindelfingen - Böblingen - Weil i. S. - Dettenhausen;5 - Bus;31-754-j18
+756;Holzgerlingen - Breitenstein - Neuweiler;5 - Bus;31-756-j18
+759;Liebelsberg - Wildberg - Deckenpfronn - Gärtringen;5 - Bus;31-759-j18
+760;(Sindelfingen -) Böblingen - Schönaich - Waldenbuch (- Neuenhaus);5 - Bus;31-760-j18
+761;(Sindelfingen -) Böblingen - Schönaich - Weil im Schönbuch;5 - Bus;31-761-j18
+761A;(Sindelfingen -) Böblingen - Schönaich - Weil im Schönbuch;5 - Bus;31-761-a-j18
+763;(Sindelfingen -) Böblingen - Grafenau / Aidlingen - Calw;5 - Bus;31-763-j18
+764;Dachtel - Deufringen - Aidlingen - Ehningen;5 - Bus;31-764-j18
+766;Böblingen - Dagersheim - Darmsheim - Grafenau - Weil der Stadt;5 - Bus;31-766-j18
+770;Altensteig - Nagold - Herrenberg (Schnellbus);5 - Bus;31-770-j18
+773;Herrenberg - Deckenpfronn - Calw;5 - Bus;31-773-j18
+774;Nagold - Jettingen - Haslach - Herrenberg;5 - Bus;31-774-j18
+775;Wildberg - Kuppingen - Herrenberg Wildberg - Sulz - Oberjettingen;5 - Bus;31-775-j18
+777;Nagold - Mötzingen - Gäufelden - Altingen;5 - Bus;31-777-j18
+778;Nagold ZOB - Mötzingen - Bondorf;5 - Bus;31-778-j18
+779;Herrenb. ZOB Bhfstr. - Vogelsang - ZOB;5 - Bus;31-779-j18
+780;Herrenb. ZOB - Schwarzw.siedlg.- Holdergraben - Herrenb. ZOB ;5 - Bus;31-780-j18
+781;Herrenberg ZOB Bahnhofstraße - Stadtwerke - Daimlerstraße - ZOB;5 - Bus;31-781-j18
+782;Herrenb. ZOB - Hallenb. (- Waldfriedh.) - Seniorenzentr. - ZOB;5 - Bus;31-782-j18
+790;Herrenberg - Nebringen - Öschelbronn - Mötzingen;5 - Bus;31-790-j18
+791;Herrenberg - Ammerbuch - Entringen;5 - Bus;31-791-j18
+794;Herrenberg - Tailfingen (- Herrenberg);5 - Bus;31-794-j18
+806;(Degerloch -) EnBW City - Bernhausen;5 - Bus;31-806-j18
+809;Bernhausen - Harthausen - Grötzingen - Aich - Neuenhaus;5 - Bus;31-809-j18
+826;Leinfelden - Waldenbuch - Tübingen;5 - Bus;31-826-j18
+826A;Tübingen - Weil i. S. - Breitenstein (Schülerverkehr) / Waldenbuch - Leinfelden (Schülerverkehr);5 - Bus;31-826-a-j18
+828;Flughafen - Echterdingen - Waldenbuch - Tübingen;5 - Bus;31-828-j18
+N1;Schlossplatz - Vaihingen Büsnau - Schlossplatz;6 - Nachtbus;33-1-j18
+N2;Schlossplatz - Botnang - Schlossplatz;6 - Nachtbus;33-2-j18
+N3;Schlossplatz - Gerlingen - Schlossplatz;6 - Nachtbus;33-3-j18
+N4;Schlossplatz - Zuffenhausen - Schlossplatz;6 - Nachtbus;33-4-j18
+N5;Schlossplatz - Neugereut - Schlossplatz;6 - Nachtbus;33-5-j18
+N6;Schlossplatz - Fellbach - Schlossplatz;6 - Nachtbus;33-6-j18
+N7;Schlossplatz - Heumaden - Schlossplatz;6 - Nachtbus;33-7-j18
+N8;Schlossplatz - Plieningen - Schlossplatz;6 - Nachtbus;33-8-j18
+N9;Schlossplatz - Fasanenhof - Schlossplatz;6 - Nachtbus;33-9-j18
+N10;Schlossplatz - Rohrer Höhe  - Schlossplatz;6 - Nachtbus;33-10-j18
+N14;Esslingen - Liebersbronn - Aichschieß - Aichelberg;6 - Nachtbus;34-14-j18
+N19;Esslingen - Nellingen - Denkendorf - Neuhausen - Esslingen;6 - Nachtbus;34-19-j18
+N22;Esslingen - Ruit - Kemnat - Scharnhausen - Esslingen;6 - Nachtbus;34-22-j18
+N30;Backnang - Burgstall (M) - Kirchberg (M) - Kleinaspach - Backnang;6 - Nachtbus;34-30-j18
+N31;Waiblingen - Korb - Kernen - Waiblingen;6 - Nachtbus;34-31-j18
+N40;Marbach (N) - Erdmannhausen -  Affalterbach - Kirchberg (M);6 - Nachtbus;34-40-j18
+N41;Ludwigsburg - Eglosheim - Neckarweihingen - Hoheneck;6 - Nachtbus;34-41-j18
+N42;Ludwigsburg Ost;6 - Nachtbus;34-42-j18
+N43;Ludwigsburg - Pattonville - Remseck - Poppenweiler ;6 - Nachtbus;34-43-j18
+N44;Freiberg (N) - Pleidelsheim - Besigheim ;6 - Nachtbus;34-44-j18
+N46;Beilstein - Oberstenfeld - Großbottwar - Marbach (N);6 - Nachtbus;34-46-j18
+N52;Markgröningen - Unterriexingen - Sachsenheim -  Hohenhaslach - Ensingen;6 - Nachtbus;34-52-j18
+N53;Schwieberdingen - Markgröningen - Möglingen - Ludwigsburg;6 - Nachtbus;34-53-j18
+N55;Zuffenhausen - Münchingen - Schwieberdingen -  Hemmingen - Hochdorf - Eberdingen;6 - Nachtbus;34-55-j18
+N56;Oberriexingen - Sachsenheim - Bietigheim;6 - Nachtbus;34-56-j18
+N57;Bietigheim - Löchgau - Bönnigheim - Bietigheim;6 - Nachtbus;34-57-j18
+N58;Bietigheim - Besigheim - Walheim - Kirchheim (N) -  Gemmrigheim - Ottmarsheim - Besigheim - Bietigheim;6 - Nachtbus;34-58-j18
+N60;Böblingen - Sindelfingen - Maichingen - Magstadt - Renningen;6 - Nachtbus;34-60-j18
+N62;Leonberg - Gebersheim - Rutesheim - Perouse - Flacht - Weissach;6 - Nachtbus;34-62-j18
+N65;Ditzingen - Hirschlanden -  Schöckingen - Heimerdingen ;6 - Nachtbus;34-65-j18
+N70;Herrenberg - Bondorf - Mötzingen - Nagold;6 - Nachtbus;34-70-j18
+N73;Böblingen ZOB - Diezenhalde -   Sindelfingen Eichholz - Böblingen ZOB;6 - Nachtbus;34-73-j18
+N74;Böblingen - Holzgerlingen - Altdorf - Hildrizhausen - Weil i.S. - Neuweiler - Breitenstein - Schönaich- Böbl.;6 - Nachtbus;34-74-j18
+N75;Böblingen - Dagersheim - Aidlingen - Deufringen - Dagersheim - Böblingen;6 - Nachtbus;34-75-j18
+N76;Oberaichen - Musberg - Steinenbronn - Waldenbuch;6 - Nachtbus;34-76-j18
+N77;Gärtringen - Rohrau - Herrenberg - Affstätt - Kuppingen -  Oberjesingen - Deckenpfronn - Gärtringen;6 - Nachtbus;34-77-j18
+N80;Tübingen - Herrenberg;6 - Nachtbus;34-80-j18
+N81;Wendlingen - Nürtingen - Großbettlingen - Neckarhausen;6 - Nachtbus;34-81-j18
+N92;Filderstadt - Aichtal (- Neckartailfingen) - Bernhausen Bf;6 - Nachtbus;34-92-j18
+X10;Kirchheim (T) - Flughafen/Messe;15 - Expressbus;35-X10-j18
+X20;Waiblingen - Esslingen;15 - Expressbus;35-X20-j18
+X60;Leonberg - Universität - Flughafen/Messe;15 - Expressbus;35-X60-j18
+RT94;Leonberg Blosenbergkirche - Bahnhof - Waldfriedhof;8 - Ruftaxi;50-94-j18
+RT106;Esslingen (N) ZOB - Baltmannsweiler - Hohengehren;8 - Ruftaxi;50-106-j18
+RT142;Plochingen - Reichenbach;8 - Ruftaxi;50-142-j18
+RT143;Plochingen - Deizisau;8 - Ruftaxi;50-143-j18
+RT144;Kirchheim (T) - Notzingen;8 - Ruftaxi;50-144-j18
+RT145;Wernau (N) Bahnhof - Katzenstein - Schmalwiesen;8 - Ruftaxi;50-145-j18
+RT146;Wernau (N) Bahnhof - Schmalwiesen - Katzenstein;8 - Ruftaxi;50-146-j18
+RT149;Plochingen ZOB - Reichenbach - Baltmannsweiler;8 - Ruftaxi;50-149-j18
+RT161;Kirchheim (T) Altvaterweg - ZOB - Ötlingen;8 - Ruftaxi;50-161-j18
+RT163;Ötlingen - Lindorf - Kirchheim (T) ZOB - Schafhof;8 - Ruftaxi;50-163-j18
+RT165;Kirchheim (T) ZOB - Jesingen - Ohmden;8 - Ruftaxi;50-165-j18
+RT166;Kirchheim (T) - Reudern - Nürtingen;8 - Ruftaxi;50-166-j18
+RT167;Nürtingen - Aichtal - Neuenhaus;8 - Ruftaxi;50-167-j18
+RT173;Weilheim (T) - Bissingen (T);8 - Ruftaxi;50-173-j18
+RT175;Bissingen (T) - Weilheim (T);8 - Ruftaxi;50-175-j18
+RT176;Kirchheim (T) - Dettingen - Bissingen - Ochsenwang;8 - Ruftaxi;50-176-j18
+RT177;(Neidlingen -) Weilheim (T) - Kirchheim (T) - Oberlenningen;8 - Ruftaxi;50-177-j18
+RT178;Kirchheim (T) - Schlierbach;8 - Ruftaxi;50-178-j18
+RT179;(Kirchheim (T)) - Oberlenningen - Erkenbrechtsweiler Oberlenningen - Erkenbrechtsweiler;8 - Ruftaxi;50-179-j18
+RT180;Nürtingen - Neuffen - Beuren - Erkenbrechtsweiler;8 - Ruftaxi;50-180-j18
+RT183;Nürtingen Bahnhofstraße - Braike - Roßdorf Nürtingen - Braike - Roßdorf;8 - Ruftaxi;50-183-j18
+RT184;Nürtingen - Zizishausen - Unterensingen;8 - Ruftaxi;50-184-j18
+RT185;Großbettlingen - Raidwangen - Nürtingen;8 - Ruftaxi;50-185-j18
+RT188;Nürtingen - Neckartenzlingen - Altenriet - Schlaitdorf;8 - Ruftaxi;50-188-j18
+RT192;Nürtingen - Kappishäusern;8 - Ruftaxi;50-192-j18
+RT193;Kleinbettlingen - Bempflingen - Nürtingen;8 - Ruftaxi;50-193-j18
+RT195;Raidwangen - Großbettlingen - Frickenhausen;8 - Ruftaxi;50-195-j18
+RT196;Oberboihingen - Nürtingen;8 - Ruftaxi;50-196-j18
+RT198;Kohlberg - Tischardt - Frickenhausen - Nürtingen;8 - Ruftaxi;50-198-j18
+RT201;Waiblingen - Neustadt - Hohenacker - Hegnach - Bittenfeld;8 - Ruftaxi;50-201-j18
+RT202;Endersbach - Strümpfelbach;8 - Ruftaxi;50-202-j18
+RT206;Endersbach - Beutelsbach - Schnait;8 - Ruftaxi;50-206-j18
+RT209;Korb - Kleinheppach;8 - Ruftaxi;50-209-j18
+RT209;Großheppach - Endersbach;8 - Ruftaxi;50-209-1-j18
+RT211;Kernen;8 - Ruftaxi;50-211-j18
+RT217;Grunbach - Buoch - Hebsack - Rohrbronn;8 - Ruftaxi;50-217-j18
+RT250;Walkersbach - Waldhausen;8 - Ruftaxi;50-250-j18
+RT260;Schorndorf - Oberberken;8 - Ruftaxi;50-260-j18
+RT262;Plochingen - Lichtenwald;8 - Ruftaxi;50-262-j18
+RT262;Schlichten - Schorndorf;8 - Ruftaxi;50-262-S-j18
+RT266;Welzheim - Alfdorf;8 - Ruftaxi;50-266-j18
+RT268;Alfdorf;8 - Ruftaxi;50-268-j18
+RT334;Winnenden - Leutenbach - Weiler z Stein;8 - Ruftaxi;50-334-j18
+RT361;Backnang - Plattenwald - Steinbach - Mittelbrüden - Oberbrüden Backnang - Plattenwald - Steinbach - Mittelbrüden - Oberbrüden;8 - Ruftaxi;50-361-j18
+RT363;Backnang ZOB - Backnang Oberschöntal;8 - Ruftaxi;50-363-j18
+RT364;Marbach (N) - Rielingshausen;8 - Ruftaxi;50-364-j18
+RT381;Backnang - Weissacher Tal - Althütte;8 - Ruftaxi;50-381-j18
+RT386;Sulzbach (M) - Spiegelberg;8 - Ruftaxi;50-386-j18
+RT390;Backnang - Murrhardt;8 - Ruftaxi;50-390-j18
+RT457;Marbach (N) - Hörnle - Marbach (N);8 - Ruftaxi;50-457-j18
+RT632;Leonberg - Warmbronn;8 - Ruftaxi;50-632-j18
+RT651;Leonberg - Höfingen;8 - Ruftaxi;50-651-j18
+RT653;Leonberg - Gebersheim;8 - Ruftaxi;50-653-j18
+RT657;Heimerdingen - Rutesheim;8 - Ruftaxi;50-657-j18
+RT663;Weil der Stadt - Merklingen - Münklingen - Hausen;8 - Ruftaxi;50-663-j18
+RT670;Weil der Stadt - Schafhausen - Dätzingen;8 - Ruftaxi;50-670-j18
+RT752;Holzgerlingen - Altdorf - Hildrizhausen;8 - Ruftaxi;50-752-j18
+RT753;Rohrau Rathaus - Gärtringen Bahnhof;8 - Ruftaxi;50-753-j18
+RT754;Böblingen - Holzgerl. - Weil i. S. (- Dettenhausen);8 - Ruftaxi;50-754-j18
+RT760;Böblingen - Schönaich - Waldenbuch;8 - Ruftaxi;50-760-j18
+RT763;Böblingen - Aidlingen - Deufringen - Dachtel;8 - Ruftaxi;50-763-j18
+RT766;(Böblingen -) Döffingen - Dätzingen - Weil der Stadt;8 - Ruftaxi;50-766-j18
+RT773;Herrenberg - Deckenpfronn;8 - Ruftaxi;50-773-j18
+RT774;Jettingen - Sindlingen - Haslach - Herrenberg;8 - Ruftaxi;50-774-j18
+RT780;Herrenberg ZOB - Schwarzwaldsiedlung - Holdergraben - Herrenberg ZOB;8 - Ruftaxi;50-780-j18
+RT782;Herrenberg ZOB - Hallenbad - Ehbühl  - (Waldfriedhof) - Seniorenzentrum - ZOB;8 - Ruftaxi;50-782-j18
+RT790;Herrenberg - Nebringen - Öschelbronn - Mötzingen;8 - Ruftaxi;50-790-j18
+RT791;Kayh - Breitenholz - Entringen;8 - Ruftaxi;50-791-j18
+RT4;Zuffenhausen Rathaus - Zazenhausen;8 - Ruftaxi;51-4-j18
+RT6;Kelterplatz - Rotenberg;8 - Ruftaxi;51-6-j18
+RT7;Ährenweg - Rohracker;8 - Ruftaxi;51-7-j18
+RT16;Kirchh. (T) Marktplatz. - Rembrandtweg - Marktplatz;8 - Ruftaxi;51-16-j18
+RT17;Kirchheim (T) Im Münzen - Saarstraße - ZOB;8 - Ruftaxi;51-17-j18
+RT21;Welzheim - Raum Welzheim/Kaisersbach;8 - Ruftaxi;51-21-j18
+RT22;Schorndorf und Umgebung;8 - Ruftaxi;51-22-j18
+RT30;Winnenden - Schelmenholz Breuningsweiler - Buoch - Reichenbach;8 - Ruftaxi;51-30-j18
+RT31;Winnenden - Berglen;8 - Ruftaxi;51-31-j18
+RT34;Backnang Bürgerheim - Aspacher Brücke;8 - Ruftaxi;51-34-j18
+RT35;Backnang -  Stadtgebiet und Stadtteile;8 - Ruftaxi;51-35-j18
+RT36;Sulzbach (M) - Großerlach;8 - Ruftaxi;51-36-j18
+RT37;Murrhardt - Schönbronn (Murrhardt Nord);8 - Ruftaxi;51-37-j18
+RT38;Murrhardt Süd;8 - Ruftaxi;51-38-j18
+RT41;Kornwestheim Bf - Stadt - Bf;8 - Ruftaxi;51-41-j18
+RT70;Degerloch (B27) - Königsträßle - Ruhbank;7 - Linientaxi;51-70-j18
+RT92;Nürtingen - Kappishäusern;8 - Ruftaxi;51-92-j18
+LT10;Marienplatz - Degerloch (Zahnradbahn Zacke);7 - Linientaxi;52-10-j18
+LT64;Linientaxi Stelle - Frauenkopf;7 - Linientaxi;52-64-j18
+LT151;Wendlingen (N) - Köngen - Wendlingen (N);7 - Linientaxi;52-151-j18
+23;Straßenbahnwelt - Schlossplatz - Charlottenplatz - Ruhbank;9 - Museumsverkehr;62-23-j18
+707;Mühlacker - Mühlhausen (E) - Illingen - Vaihingen (E);5 - Bus;77-707-j18

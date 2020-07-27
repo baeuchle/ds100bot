@@ -1,0 +1,31 @@
+{
+  "id": "linien_vvs",
+  "headline": "ÖPNV-Linien Stuttgart",
+  "access": [{
+    "m_hashtag": "_STG",
+    "x_source": "STG",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_vvs",
+    "short": "Linie",
+    "long": "Streckenverlauf",
+    "file": "sources/linien_vvs.csv",
+    "source": {
+      "name": "VVS Open Data Portal",
+      "url": "https://www.openvvs.de/dataset/linien"
+    },
+    "license": {
+      "name": "CC-BY 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "link",
+        "name": "Verkehrs- und Tarifverbund Stuttgart",
+        "url": "https://vvs.de"
+      }
+    },
+    "comments": [
+      "Stand 2019"
+    ]
+  }]
+}
