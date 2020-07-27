@@ -7,10 +7,10 @@
     "type": "/"
   }],
   "data": [{
-    "id": "linien_rvf_vag",
+    "id": "linien_rvf",
     "short": "Linie",
     "long": "Laufweg",
-    "file": "sources/linien_rvf_vag.csv",
+    "file": "sources/linien_rvf.csv",
     "source": {
       "name": "Eigene Zusammenstellung"
     },
@@ -24,7 +24,11 @@
     },
     "comments": [
       "Stand 2020",
-      "Beinhaltet nur Linine, die von der Freiburger VAG betrieben werden"
+      "Enthält alle Linien des RVF",
+      "Nachtlinien fangen mit N an",
+      "Bürgerbus Breisach fangen mit BB an",
+      "Linien aus Emmendingen fangen mit EN an",
+      "Außerdem: NB für Neuenburg, SB für Stadtbus Breisach"
     ]
   }]
 }
