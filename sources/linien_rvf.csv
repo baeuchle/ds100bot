@@ -1,0 +1,119 @@
+Linie;Laufweg
+1;Littenweiler - Bertoldsbrunnen - Hauptbahnhof - Paduaalle - Landwasser
+2;Günterstal - Johanneskirche - Bertoldsbrunnen - Hauptbahnhof - Hornusstr. - Zähringen
+3;Vauban - Johanneskirche - Bertoldsbrunnen - Hauptbahnhof - Haid
+4;Zähringen - Hornusstr. - Betroldsbrunnen - Hauptbahnhof - Technische Fakultät
+5;Rieselfeld - Pressehaus - Stadttheater - Europaplatz
+10;Bissierstraße - Elsässer Straße - Paduaallee/- Landwasser
+11;Haid - St. Georgen - Vauban - Pressehaus - Hauptbahnhof
+14;Hauptbahnhof - Eschholzstraße - Scherrerplatz - Haid
+15;Zähringen - Gundelfingen - Wildtal - Berggasse
+16;Zähringen - Bf Gundeflingen
+17;Molzhofsiedlung - Kappel - Littenweiler
+17A;Littenweiler Laßbergstraße - Littenweiler Löwen - Littenweiler Laßbergstraße (Ringverkehr)
+18;Littenweiler - Unteres Grün - Ebnet
+19;Paduaallee - Lehen Ziegelei - Mundenhof
+21;Günterstal - Schauinslandbahn-Talstation - Horben Rathaus
+22;Zähringen - IKEA - Messe - Bissierstraße
+23;Hauptbahnhof - Rennweg - Industriepark Ost - Zähringen
+24;Haid - Rieselfeld - Paduaallee - Zähringen - Bf Gundelfingen
+25;Hugstetten Bahnhof - Hochdorf - Industriegebiet Nord - Zähringen
+27;Europaplatz - Herdern
+31;Paduaallee - Lehen - Umkirch - Merdingen - Hochstetten - Breisach Bahnhof
+32;Paduaallee - Lehen - Umkirch - Opfingen - Rieselfeld - Haid
+33;Haid - Rieselfeld - Opfingen - Tiengen - Munzingen (- Schallstadt)
+34;Haid - St. Georgen - KEIDEL Bad
+35;Haid - St. Georgen - Tiengen - Munzingen
+36;Bissierstraße - Elsässer Straße - Landwasser - Hochdorf
+N46;Hauptbahnhof - Opfingen - Tiengen - Munzingen - Hochstetten - Breisach
+N47;Hauptbahnhof - Umkirch - Waltershofen - Wasenweiler - Ihringen
+BB3;Bürgerbus Breisach Linie 3: Bahnhof - Marktplatz - Stadtmuseum - Kupfertorplatz - Bahnhof
+BB4;Bürgerbus Breisach Linie 4: Bahnhof - Sozialstation - Vogesenstraße - Makrtplatz - Bahnhof
+EM1;Stadtbus Emmendingen Linie 1: ZOB - Berufsschule - Blumenstraße - ZOB
+EM2;Stadtbus Emmendingen Linie 2: ZOB - Schwarzloch - Pauluskirche - ZOB
+EM3;Stadtbus Emmendingen Linie 3: ZOB - Unterstadt - ZOB
+EM4;AST Emmendingen Linie 4: ZOB - Kreiskrankenhaus - ZOB
+EM5;Stadtbus Emmendingen Linie 5: ZOB - Windenreute - Maleck (- Hochburg) - ZOB
+EM6;Stadtbus Emmendingen Linie 6: ZOB - Mundingen - ZOB
+EM7;AST Emmendingen Linie 7: ZOB - Kollmarsreute - ZOB
+EM8;Citybus Emmendingen Linie 8: Emmendingen - Teningen - Heimbach/- Nimburg - Bottingen
+EM9;Stadtbus Emmendingen Linie 9: ZOB - Über der Elz (- Wasser) - ZOB
+EM10;AST Emmendingen Linie 10: ZOB - Kastelberg - ZOB
+NB4;Stadtbus Neuenburg: Neuenburg - Steinenstadt - Kandern
+SB1;Stadtbus Breisach Linie 1: Bahnhof - Kupfertor - Burkheimer Straße
+SB2;Stadtbus Breisach Linie 2: Bahnhof - Rebgarten - Stadtbücherei
+102;Riegel-Malterdingen - Endingen - Sasbach - Burkheim - Breisach
+103;Riegel-Malterdingen - Endingen - Forchheim - Wyhl - Sasbach
+104;Vogtsburg - Oberrotweil - Achkarren - Breisach
+105;Wyhl - Endingen - Bahlingen - Nimburg - Teningen - Emmendingen
+106;Endingen - Wyhl - Weisweil - Kenzingen
+107;Endingen - Amoltern - Kiechlinsbergen - Sasbach - Endingen
+110;Stadtverkehr Müllheim: Müllheim - Neuenburg - Müllheim
+111;Müllheim - Badenweiler - Schweighof (- Neuenweg)
+112;(Müllheim -) Badenweiler - Niederweiler - Schweighof - Badenweiler
+113;(Bad Krozingen -) Staufen - Grunern - Sulzburg - Heitersheim
+114;Kirchhofen - Oberambringen - Staufen
+116;Herbolzheim - Broggingen - Bombach - Kenzingen
+200;Schnellbus Nimburg - Vörstetten - Freiburg
+201;Freiburg-Zähringen - Gundelfingen - Vörstetten - Nimburg
+202;Denzlingen - Vörstetten - Reute - Emmendingen
+203;Debzlingen - Vörstetten - Reute - Nimburg
+204;Gundelfingen - Vörstetten - March - Hugstetten - Umkirch
+211;Emmendingen - Mundingen - Landeck - Freiamt
+212;Freiamt - Bombach - Ettenheim
+221;Freiburg - Stegen - Kirchzarten - Buchenbach - St. Märgen
+222;Kirchzarten - Buchenbach - Falkensteig/- Wagensteig
+231;Emmendingen - Kollmarsreute - Sexau - Freiamt
+232;Ortsverkehr Freiamt: Ottoschwanden - Freihof - Helgenreute - Glasig - Ottoschwanden
+233;Ortsverkehr Freiamt: Mußbach - Ottoschwanden - Brettental - Gscheid - Mußbach
+241;Freiburg - Wolfenweiler - Schallstadt - Mengen - Bremgarten
+242;Bad Krozingen - Biengen - Hausen - Hartheim - Bremgarten (- Heitersheim - Schlatt)
+243;Bremgarten - Hausen - Breisach
+245;Hartheim - Heitersheim - Müllheim
+261;Sulzburg < Heitersheim / Britzingen > Müllheim
+264;Schliengen - Kandern - Obereggenen - Müllheim
+271;Freiburg - Kirchzarten - Oberried - Hofsgrund
+281;Herbolzheim - Broggingen - Bombach - Kenzingen
+291;Untermünstertal - Münsterhalden/- Obermünstertal - Wiedener Eck
+295;Gottenheim - Bötzingen - Oberbergen - Oberrotweil
+297;Freiburg-Landwasser - Hugstetten - March - Eichstetten - Bötzingen
+309;Breisach - Bad Krozingen
+1076;Euregiobus Breisach - Volgelsheim - Neuf Brisach - Andolsheim - Colmar Gare
+7200;Freiburg - Denzlingen - Wasser - Emmendingen - Teningen - Riegel-Malterdingen - Kenzingen (- Herbolzheim - Rust)
+7201;(Oberprechtal - Elzach -) Bleibach - Waldkirch - Sexau - Emmendingen
+7204;AST Teningen Linie 2: Emmendingen - Nimburg - Bottingen
+7205;Denzlingen - Glottertal - St. Peter (- Kandel)
+7206;(Freiburg -) Denzlingen - Waldkirch - Gutach - Bleibach - Elzach (- Yach/- Biederbach - Höhenhäuser)
+7207;Stadtbus Waldkirch: Gymnasium - Friedhof - Siensbach
+7208;Freiburg - Merzhausen - Hexental - Ehrenstetten - Bad Krozingen/- Staufen
+7209;Freiburg - Industriegebiet Nord - Denzlingen - Sexau
+7211;Stadtbus Breisach Linie 1: Bahnhof - Kupfertor - Burkheimer Straße
+7212;Freiburg - Hugstetten - March - Hugstetten - Freiburg
+7215;Kirchzarten - Oberried - Hofsgrund - Schauinsland - Notschrei - Todtnau
+7216;(Freiburg -) Kirchzarten - Stegen - St. Peter - St. Märgen - Breitnau - Hinterzarten inkl. AST Breitnau/Höllsteig
+7231;Herbolzheim - Ringsheim - Rust Europa Park
+7236;Elzach - Biederbach - Haslach
+7240;Freiburg - Ebringen - Schallstadt - Kirchhofen - Norsingen - Bad Krozingen - Heitersheim (- Müllheim)
+7241;Bürgerbusse Bad Krozingen: Oberkrozingen/Kems, Kurgebiet und Parksiedlung
+7243;AST Heitersheim - Ballrechten - Oberdottingen (- Sulzburg)
+7255;(Menzenschwand -) Seebrugg - Altglashütten < Bärental / Falkau > Titisee (- Neustadt)
+7257;Seebrugg - Fischbach - Lenzkirch - Titisee - Neustadt
+7258;Neustadt - Lenzkirch - Gündelwangen - Bonndorf
+7259;Neustadt - Rötenbach - Löffingen (- Unadingen) inkl. SBG Wanderbus Löffingen - Schattenmühle - Unadingen
+7252;Löffingen - Göschweiler - Löffingen
+7253;Löffingen - Dittishausen - Löffingen
+7261;(St. Peter -) St. Märgen < Jostal / Waldau > Neustadt
+7262;Neustadt - Eisenbach - Bubenbach - Neustadt
+7268;Panoramabus Triberg - Furtwangen - Thurner - Neustadt
+7272;(Waldkirch -) Bleibach - Simonswald - Gütenbach - Furtwangen
+7274;Elzach - Oberprechtal (- Triberg)
+7300;(Titisee - Feldberg -) Todtnau - Zell i. Wiesental (- Schopfheim)
+7319;St. Blasien - Häusern - Seebrugg
+7342;Waldshut -/Tiengen - Gurtweil - (Berau -) Ühlingen - Grafenhausen - Seebrugg
+7343;Bonndorf - Gündelwangen/- Grafenhausen - Seebrugg
+9007;SkiBus Falkau - Altglashütten - Feldberg
+9051;FreizeitBus Menzenschwand - Äulemer Kreuz - Aha - Schluchsee
+N7200;Nachtbus Freiburg - Denzlingen - Wasser - Emmendingen - Köndringen - Malterdingen - Kenzingen
+N7206;Nachtbus Freiburg - Denzlingen - Waldkirch - Gutach - Bleibach - Elzach
+N7208;Nachtbus Freiburg - Merzhausen - Hexental - Ehrenkirchen - Scherzingen
+N7216;Nachtbus Dreisamtal: Freiburg - Kirchzarten - Stegen - Eschbach - St. Peter inkl. Kirchzarten - Oberried - Hofsgrund

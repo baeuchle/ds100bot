@@ -46,7 +46,10 @@ NOSPAM;Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots b
 XXX;This bot is not x-rated
 NSFW;Dieser Bot ist Safe for Work
 BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN). Siehe https://ds100.frankfurtium.de/dumps/blacklist.html
-NEUEDATEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://github.com/baeuchle/ds100bot/blob/master/data/README.md
+NEUEDATEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
+BEITRAGEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
+FAQ;Häufig gestellte Fragen sind unter https://ds100.frankfurtium.de/faq.html beantwortet.
+BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er statt dessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
 POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Komatibel. Siehe #HELP.
 PEOPLE;Der echte Mensch hinter dem Bot ist @baeuchle. @fips_schneider hilft manchmal aus.
 ANTIGNOSE;Der Vorhersagealgorithmus für Verspätungen der Deutschen Bahn. *Pro*gnose kann man das nämlich nicht nennen.

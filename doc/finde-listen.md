@@ -2,7 +2,7 @@ Festlegen der verwendeten Abkürzungslisten
 ==========================================
 
 Standardmäßig werden gefundene Kürzel mithilfe der
-[DS100-](/dumps/ds100.html)/[STREDAX-](/dumps/strecken.html)Listen erweitert.
+[DS100-](/dumps/orte_de.html)/[STREDAX-](/dumps/strecken_de.html)Listen erweitert.
 Für jede Abkürzung kann eine Quelle explizit angefordert werden (siehe
 [die Regeln für Abkürzungen](/finde-lang.html)); man kann aber auch die
 „Standard-Liste“ für den Tweet verändern, in dem man einen Magic Hashtag

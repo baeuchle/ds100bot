@@ -27,6 +27,10 @@ ul.flat li {
   list-style-type: none;
 }
 
+ul.flat li.containsul::before {
+  content: "";
+}
+
 blockquote {
   border: thin blue solid;
   font-family: sans-serif;

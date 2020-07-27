@@ -1,12 +1,12 @@
 Impressum
 =========
 
-Die meisten Tweets des Bots werden automatisch nach den <a
-href="/finderegeln.html">dargestellten Regeln</a> erzeugt. Erklärungen
-und Hilfestellungen können auch von den Twitter-Nutzern <a
-href="https://twitter.com/baeuchle/">@baeuchle</a> und <a
-href="https://twitter.com/fips_schneider/">@fips_schneider</a> gegeben
-werden und sollten einfach erkennbar sein.
+Die meisten Tweets des Bots werden automatisch nach den [dargestellten
+Regeln](/finde-lang.html) erzeugt. Erklärungen und Hilfestellungen
+können auch von den Twitter-Nutzern
+[@baeuchle](https://twitter.com/baeuchle/) und
+[@fips\_schneider](https://twitter.com/fips_schneider/) gegeben werden
+und sollten einfach erkennbar sein.
 
 Angaben gemäß §5 TMG:
 ---------------------
