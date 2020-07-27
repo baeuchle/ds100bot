@@ -1,0 +1,26 @@
+{
+  "id": "linien_th",
+  "headline": "SPNV Thüringen",
+  "access": [{
+    "m_hashtag": "_TH",
+    "x_source": "TH",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_th",
+    "short": "Linie",
+    "long": "Laufweg und Betreiber",
+    "file": "sources/linien_th.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "jonaes_"
+      }
+    }
+  }]
+}
