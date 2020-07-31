@@ -85,7 +85,10 @@ Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
   interpretiert.
 - comments [liste von strings]: Kommentare zur Datenliste. Beliebiger
   Text, der zum Verständnis der Quelle, der Inhalte oder der Herkunft
-  wichtig sein könnte.
+  wichtig sein könnte. Muss wirklich eine **Liste von Strings** sein,
+  also mit eckigen Klammern: \[ "Kommentar1", "Kommentar2" \], _auch
+  wenn es nur einen oder keinen Kommentar gibt_ (im letzten Fall kann
+  man es einfach weglassen).
 - filter [liste, siehe unten]
 - license [siehe unten]
 
