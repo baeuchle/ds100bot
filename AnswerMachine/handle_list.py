@@ -9,6 +9,8 @@ def filter_list(tweet_list):
     results = {}
     for api_tweet in tweet_list:
         t = Tweet(api_tweet)
+        if t.id in results:
+            continue
         if t.has_hashtag(['NOBOT'], case_sensitive=False):
             continue
         results[t.id] = t
