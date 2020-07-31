@@ -18,7 +18,10 @@ benutzt:
 - __Alternativtexte zu Bildern__ werden so behandelt, als stünden sie am
   Ende des Tweets, das heißt, sie werden mit dem letzten Magic Hashtag
   des Tweets analysiert. In den Bildern selbst wird kein Magic Hashtag
-  erkannt.
+  erkannt. In Tweets, die __nur__ durch Erwähnung des eines Magic
+  Hashtags gefunden werden (also nicht, weil der Bot der Verfasserin
+  folgt oder weil der Bot erwähnt wurde), können die Alternativtexte
+  leider nicht gelesen werden.
 - __Die Quelle [BOT](/dumps/gimmick.html) wird immer beachtet.__
 
 Namensgebung der Magic Hashtags
