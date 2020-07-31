@@ -130,7 +130,7 @@ Optional:
   'gemeinfrei' ist). Besteht aus:
   - type [string]: Welcher Art dieses Objekt ist. Mögliche Arten:
     - "name": "name" ist einfach nur ein Name.
-    - "twitter": "name" ist eine Twitter-Userin (ohne \@, also "\_ds\_100")
+    - "twitter": "name" ist eine Twitter-Userin (ohne @, also z.B. "\_ds\_100")
     - "github": "name" ist eine Github-Userin
     - "link": Hier wird ein beliebiger Link gesetzt mit dem Text "name"
       und dem Ziel "url"
