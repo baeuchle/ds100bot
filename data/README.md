@@ -61,6 +61,7 @@ Ersteller\*innen und/oder Lizenzen, in verschiedenen Datenlisten sein
 und können hier zusammengesetzt werden.
 
 Folgende Schlüssel sind unbedingt erforderlich:
+
 - id [string]: Identifiziert diese Datenliste. Darf bei **einer**
   Datenliste pro Quelle weggelassen werden, diese 'erbt' dann die id der
   Quelle.
@@ -73,6 +74,7 @@ Folgende Schlüssel sind unbedingt erforderlich:
 - source [siehe unten]
 
 Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
+
 - add [string] Spaltenname im CSV für zusätzliche Informationen. Diese
   werden bisher an keiner Stelle ausgelesen und/oder verarbeitet.
 - delim [string, default ';']: Das Zeichen, mit dem Spalten im CSV
@@ -92,11 +94,13 @@ Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
 Spezifiziert die Herkunft der Datenliste.
 
 Benötigte Schlüssel:
+
 - name [string, darf nicht leer sein]: Bezeichnung der Herkunft. (z.B.
   "Eigene Zusammenstellung", "Dokument 1234 der
   Boteisenbahngesellschaft")
 
 Optionale Schlüssel:
+
 - url [url]: Link zur externen Quelle, aus der die Datenliste genommen
   wurde
 - modified [boolean (true/false), default false]: Gibt an, dass die
@@ -109,11 +113,13 @@ vorhanden, bedeutet das, dass das Urheberrecht dieser Liste beim Autor
 des Bots liegt und die Liste unter Apache Lizenz 2.0 veröffentlicht ist.
 
 Benötigt:
+
 - name [string, darf nicht leer sein]: Name der Lizenz. Darf eine
   gängige Abkürzung sein ("CC-BY-SA 4.0", "CC0") oder auch ein Text
   ("gemeinfrei").
 
 Optional:
+
 - url [url]: Link zum Text der Lizenz, falls vorhanden
 - owner [objekt]: Spezifiziert, wer das Urheberrecht auf diese
   Datenliste innehat. Darf weggelassen werden, wenn es bei der
