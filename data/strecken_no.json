@@ -1,0 +1,23 @@
+{
+  "id": "strecken_no",
+  "headline": "Strecken Norwegen",
+  "access": [{
+    "m_hashtag": "_NO",
+    "x_source": "NO",
+    "type": "$"
+  }],
+  "data": [{
+    "id": "strecken_no",
+    "short": "Blad",
+    "long": "Vei",
+    "file": "sources/strecken_no.csv",
+    "source": {
+      "name": "Grafische Fahrpläne, Stand 2020",
+      "url": "https://www.banenor.no/kundeportal/ruter-og-sportilgang/grafiske-togruter1/",
+      "modified": true
+    },
+    "comments": [
+      "Selbst abgetippt"
+    ]
+  }]
+}
