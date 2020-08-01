@@ -33,6 +33,29 @@
       }
     }
   },{
+    "id": "kbs",
+    "short": "Tabellennummer",
+    "long": "Laufweg",
+    "add": "Liniennummer",
+    "nolink": true,
+    "file": "sources/strecken_de_kbs.csv",
+    "description": "Kursbuchstrecken",
+    "source": {
+      "name": "Kursbuch der Deutschen Bahn",
+      "url": "http://kursbuch.bahn.de/hafas/kbview.exe/dn?rt=1&dosearch=1&searchmode=tableplus&table_nr= &controlpattern=P.ddd&mainframe=utable&tocinfo=reg_tab"
+    },
+    "license": {
+      "name": " ",
+      "owner": {
+        "type": "name",
+        "name": "Deutsche Bahn AG"
+      }
+    },
+    "comments": [
+      "Dreistellige Streckennummern",
+      "Unternummern sind auf die erste Zahl reduziert, z.B. $645.3 für die KBS 645.3-4"
+    ]
+  },{
     "id": "strecken_de_namen",
     "short": "Abk",
     "long": "Beschreibung",
