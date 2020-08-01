@@ -4,7 +4,10 @@ from .error import DataError
 
 class Row:
     def normalize(self, contents, col):
-        return ' '.join(contents[self.cols[col]].split())
+        try:
+            return ' '.join(contents[self.cols[col]].split())
+        except AttributeError as ae:
+            raise DataError(str(ae))
 
     # pylint: disable=R0903
     def __init__(self, contents, cols, nolink, filters):
