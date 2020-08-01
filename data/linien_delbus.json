@@ -1,0 +1,29 @@
+{
+  "id": "linien_delbus",
+  "headline": "Bus Delmenhorst",
+  "access": [{
+    "m_hashtag": "_DEL",
+    "x_source": "DEL",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_delbus",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_delbus.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "FloEllebrecht"
+      }
+    },
+    "comments": [
+      "Stand 2020"
+    ]
+  }]
+}
