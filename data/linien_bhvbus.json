@@ -1,0 +1,29 @@
+{
+  "id": "linien_bhvbus",
+  "headline": "Bus Bremerhaven",
+  "access": [{
+    "m_hashtag": "_BHV",
+    "x_source": "BHV",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_bhvbus",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_bhvbus.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "FloEllebrecht"
+      }
+    },
+    "comments": [
+      "Stand 2020"
+    ]
+  }]
+}

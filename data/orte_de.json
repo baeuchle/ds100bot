@@ -46,5 +46,26 @@
     "comments": [
       "Zusätzliche Kürzel aus privaten Informationen"
     ]
+  }, {
+    "id": "orte_de_stationsdaten",
+    "short": "Bf. Nr.",
+    "long": "Station",
+    "file": "sources/orte_de_stationsdaten.csv",
+    "source": {
+      "name": "Stationsdaten",
+      "url": "https://data.deutschebahn.com/dataset/data-stationsdaten"
+    },
+    "license": {
+      "name": "CC-BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "owner": {
+        "type": "name",
+        "name": "Deutsche Bahn AG"
+      }
+    },
+    "comments": [
+      "Stand 03/2020",
+      "Stationsnummern"
+    ]
   }]
 }

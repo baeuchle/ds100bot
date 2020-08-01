@@ -1,0 +1,22 @@
+{
+  "id": "linien_no",
+  "headline": "SPV Norwegen",
+  "access": [{
+    "m_hashtag": "_NO",
+    "x_source": "NO",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_no",
+    "short": "Linje",
+    "long": "Vei",
+    "file": "sources/linien_no_vy.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "comments": [
+      "Alle Linien, die von der VY betrieben werden. Andere Anbieter scheinen sich nicht mehr in das alte Linienschema einzuordnen.",
+      "Stand: 2020"
+    ]
+  }]
+}

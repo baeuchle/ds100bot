@@ -79,7 +79,7 @@ def find_tokens(tweet, modus, magic_tag):
         ()
         ()
         (
-            [\p{Lu}\p{N}_]+)
+            \p{Lu}[\p{Lu}\p{N}_]*)
                         # All uppercase letters plus all kinds of numbers plus _
         (?:$|\W)        # either end of string or non-\w character
         """, re.X)
