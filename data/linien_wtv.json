@@ -1,0 +1,29 @@
+{
+  "id": "linien_wtv",
+  "headline": "Bus Waldshuter TV",
+  "access": [{
+    "m_hashtag": "_WTV",
+    "x_source": "WTV",
+    "type": "/"
+  }],
+  "data": [{
+    "id": "linien_wtv",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_wtv.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "FloEllebrecht"
+      }
+    },
+    "comments": [
+      "Stand 2020"
+    ]
+  }]
+}
