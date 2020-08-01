@@ -1,0 +1,29 @@
+{
+  "id": "regeln_evus",
+  "headline": "Eisenbahnverkehrsunternehmen",
+  "description": "Alle in der EU registrierten Eisenbahnverkehrsunternehmen",
+  "access": [{
+    "m_hashtag": "_EVU",
+    "x_source": "EVU",
+    "type": "&"
+  }],
+  "data": [{
+    "id": "evu_liste",
+    "short": "UNIQUE",
+    "long": "Keeper Name / Halter Name / Nom du détenteur / Название владельца",
+    "nolink": true,
+    "file": "sources/regeln_evus.csv",
+    "source": {
+      "name": "Vehicle Keeper Marking register (VKM)",
+      "url": "https://www.era.europa.eu/sites/default/files/registers/docs/iu_vkm_publiclist_124_en.xls"
+    },
+    "license": {
+      "name": "ähnlich CC-BY",
+      "url": "https://www.era.europa.eu/content/disclaimer-and-copyright-notice",
+      "owner": {
+        "type": "name",
+        "name": "European Union Agency for Railways"
+      }
+    }
+  }]
+}
