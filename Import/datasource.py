@@ -30,22 +30,30 @@ class DataSource:
             'long': self.config['long'],
             'add': self.config.get('add', None)
         }
-        self.iter = None
+        self.iter = {
+            'iter': None, # iterator
+            'split': self.config.get('alias', None), # split character for aliases
+            'index': 0, # split array index
+            'next': None # next item
+        }
         self.nolink = self.config.get('nolink', False)
         self.filters = self.config.get('filter', [])
 
     def __iter__(self):
-        self.iter = self.reader.__iter__()
+        self.iter['iter'] = self.reader.__iter__()
         return self
 
     def __next__(self):
         row = None
         while True:
-            ni = self.iter.__next__()
+            if self.iter['index'] == 0:
+                self.iter['next'] = self.iter['iter'].__next__()
             try:
-                row = Row(ni, self.cols, self.nolink, self.filters)
+                row = Row(self.iter, self.cols, self.nolink, self.filters)
                 if row.valid:
+                    self.iter['index'] = row.next_index()
                     break
+                self.iter['index'] = 0
             except DataError as de:
                 de.args = ['{}: {}'.format(self.getPosition(), de.args[0])]
                 raise
