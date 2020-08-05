@@ -2,57 +2,33 @@ Abk;Name
 REKURSION;Siehe bitte #REKURSION
 TOGGLE;Siehe bitte #UMSCHALTEN
 UMSCHALTEN;Siehe bitte #TOGGLE
-RTFM; Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
-MAN;  Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
-HELP; Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
-HILF; Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
-HILFE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
-USAGE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
-HOWTO;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
+RTFM,MAN,HELP,HILF,HILFE,USAGE,HOWTO;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
 NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt
 NAZIS;Alle Raus! Die Benutzung dieses Bots ist Nazis untersagt
 FCKNZS;Nazis Raus! Die Benutzung dieses Bots ist Nazis untersagt
-TOS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. https://ds100.franfurtium.de/haftung.html\nNazis dürfen diesen Bot nicht benutzen.
-TERMS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. https://ds100.franfurtium.de/haftung.html\nNazis dürfen diesen Bot nicht benutzen.
+TOS,TERMS;Terms of Service: Keine Garantie für Richtigkeit oder Vollständigkeit. https://ds100.franfurtium.de/haftung.html\nNazis dürfen diesen Bot nicht benutzen.
 EULA;Durch die Benutzung entstehen auf Seiten des Bots und des Benutzers keine Verpflichtungen
 WHOIS;Das ist der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle.\nhttps://ds100.frankfurtium.de/impressum.html
 WHORU;Ich bin der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle.\nhttps://ds100.frankfurtium.de/impressum.html
-COPY; © Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.\nhttps://ds100.frankfurtium.de/copyright.html
-KOPIE;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.\nhttps://ds100.frankfurtium.de/copyright.html
-URHBR;© Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.\nhttps://ds100.frankfurtium.de/copyright.html
-WIESO;Wieso dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.\nhttps://ds100.frankfurtium.de/motivation.html
-WARUM;Warum dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.\nhttps://ds100.frankfurtium.de/motivation.html
+COPY,KOPIE,URHBR; © Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.\nhttps://ds100.frankfurtium.de/copyright.html
+WIESO,WARUM;Wieso dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.\nhttps://ds100.frankfurtium.de/motivation.html
 WIE;Dieser Bot ist ein Python-Script, das alle drei Minuten läuft und nach beantwortbaren Tweets sucht.
-KI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
-AI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
-FOLLOW;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
-FOLGEN;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
-FOLGE; Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
-DEFLLOW;  Wenn der Bot nicht mehr ohne extra Erwähnung (siehe #FOLLOW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
-ENTFOLGEN;Wenn der Bot nicht mehr ohne extra Erwähnung (siehe #FOLLOW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
-SOURCE;    Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
-SOURCECODE;Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
-QUELLCODE; Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
-GITHUB;    Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
-HAFT;   Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.\nhttps://ds100.frankfurtium.de/haftung.html
-HAFTUNG;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.\nhttps://ds100.frankfurtium.de/haftung.html
-DSGVO;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nhttps://ds100.frankfurtium.de/datenschutz.html
-DATENSCHUTZ;       Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nhttps://ds100.frankfurtium.de/datenschutz.html
-DATEN;Datenschutz: Siehe #DSGVO\nDaten: v.a. © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html
-DATA; Datenschutz: Siehe #DSGVO\nDaten: v.a. © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html
+KI,AI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
+FOLLOW,FOLGEN,FOLGE;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
+DEFLLOW,ENTFOLGEN;Wenn der Bot nicht mehr ohne extra Erwähnung (siehe #FOLLOW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
+SOURCE,SOURCECODE,QUELLCODE,GITHUB;Der Quelltext des Bots ist auf github zu finden: https://github.com/baeuchle/ds100bot
+HAFT,HAFTUNG;Haftung: Der Bot erhebt keinerlei Anspruch auf Vollständigkeit oder Richtigkeit der Angaben. Wer aufgrund des Outputs dieses Bots an der falschen Betriebsstelle landet, hat selbst Schuld.\nhttps://ds100.frankfurtium.de/haftung.html
+DSGVO,DATENSCHUTZ;Datenschutz: Dieser Bot erhebt keine persönlichen oder unpersönlichen Daten. Für die Benutzung ist allerdings ein Twitter-Account nötig.\nhttps://ds100.frankfurtium.de/datenschutz.html
+DATEN,DATA;Datenschutz: Siehe #DSGVO\nDaten: v.a. © DB OpenData, CC-BY.\nhttps://ds100.frankfurtium.de/copyright.html
 L10N;Localization: This bot serves data in German except very few exceptions (as this one). There is no way for the user to change that.
-SPAM;  Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.
-NOSPAM;Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.
+SPAM,NOSPAM;Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.
 XXX;This bot is not x-rated
 NSFW;Dieser Bot ist Safe for Work
 BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN). Siehe https://ds100.frankfurtium.de/dumps/blacklist.html
-NEUEDATEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
-BEITRAGEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
+NEUEDATEN,BEITRAGEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
 FAQ;Häufig gestellte Fragen sind unter https://ds100.frankfurtium.de/faq.html beantwortet.
 BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er statt dessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
 POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Komatibel. Siehe #HELP.
 PEOPLE;Der echte Mensch hinter dem Bot ist @baeuchle. @fips_schneider hilft manchmal aus.
 ANTIGNOSE;Der Vorhersagealgorithmus für Verspätungen der Deutschen Bahn. *Pro*gnose kann man das nämlich nicht nennen.
-COVID19;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
-SARS COV 2;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
-CORONA;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
+COVID19,SARS COV 2,CORONA;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).

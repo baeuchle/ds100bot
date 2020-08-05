@@ -10,9 +10,8 @@
     "id": "bot",
     "short": "Abk",
     "long": "Name",
-    "delim": ";",
+    "alias": ",",
     "file": "sources/bot.csv",
-    "filter": [],
     "source": {
       "name": "Eigene Zusammenstellung"
     }
