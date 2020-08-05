@@ -26,9 +26,10 @@ class Generator:
         body = ET.SubElement(self.html, 'body')
         self.head = ET.SubElement(body, 'header')
         self.main = ET.SubElement(body, 'main')
-        self.navi = ET.SubElement(body, 'nav')
         self.foot = ET.SubElement(body, 'footer')
+        self.navi = ET.SubElement(self.foot, 'navi')
         if 'links' in kwargs:
+            ET.SubElement(self.navi, 'p').text = 'Links'
             self.navi.append(kwargs['links'])
 
     def headline(self, titletext):
