@@ -10,7 +10,7 @@ Der Bot durchsucht Twitter nach
   - Explizite Erwähnungen (d.h., @\_ds\_100 steht im sichtbaren Text)
   - Implizite Erwähnungen (z.B. Antworten auf den Bot oder auf Tweets,
     die den Bot erwähnen)
-- Tweets, die einen der [Magic Hashtags](/magic.html) enthalten.
+- Tweets, die einen der [Magic Hashtags](/finde-listen.html) enthalten.
 
 Der Bot schließt aus:
 - Pure Retweets
