@@ -23,8 +23,9 @@ ul.flat li:first-child::before {
 }
 
 ul.flat li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
+  white-space: nowrap;
 }
 
 ul.flat li.containsul::before {
