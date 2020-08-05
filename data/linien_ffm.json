@@ -12,6 +12,7 @@
     "short": "Nummer",
     "long": "Laufweg",
     "delim": ";",
+    "alias": ",",
     "file": "sources/linien_ffm.csv",
     "source": {
       "name": "Eigene Zusammenstellung"

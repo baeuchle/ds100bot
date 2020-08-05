@@ -36,7 +36,10 @@ class ReadWrite(BaseApi):
                     log_.error("Tweeted too much, waiting 1 Minute before trying again")
                     time.sleep(60)
                     continue
-                if twerror.api_code != 187: # duplicate tweet
+                if twerror.api_code == 385:
+                    log_.critical("Error 385: Tried to reply to deleted or invisible tweet %s",
+                        kwargs.get('in_reply_to_status_id', 'N/A'))
+                elif twerror.api_code != 187: # duplicate tweet
                     log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
                 return -int(twerror.api_code)
 

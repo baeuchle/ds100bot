@@ -23,8 +23,9 @@ ul.flat li:first-child::before {
 }
 
 ul.flat li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
+  white-space: nowrap;
 }
 
 ul.flat li.containsul::before {
@@ -104,4 +105,33 @@ th.note, td.note {
 
 th.no, td.no {
   background-color: #ff8080;
+}
+
+navi, header, section {
+  display: block;
+  clear: both;
+}
+
+navi ul {
+  display: none;
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+navi p {
+  display: block;
+  float: left;
+  margin-right: 1em;
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+navi p:before {
+  content: "☰ ";
+  display: inline-block;
+  margin-right: .2em;
+}
+
+navi:hover ul, navi:active ul {
+  display: block;
 }

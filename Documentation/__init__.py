@@ -18,8 +18,6 @@ def create_documentation(navi_list, md_dir, html_dir):
 
 def dumplink_list(config_list):
     linklist = ET.Element('ul', attrib={'class': 'flat'})
-    item = ET.SubElement(linklist, 'li')
-    item.text = "Alle Quellen:"
     for cid, conf in sorted(config_list.items()):
         item = ET.SubElement(linklist, 'li')
         link = ET.SubElement(item, 'a', attrib={'href': '/dumps/' + cid + '.html'})

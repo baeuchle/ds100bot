@@ -10,17 +10,17 @@ class Row:
             raise DataError(str(ae))
 
     # pylint: disable=R0903
-    def __init__(self, contents, cols, nolink, filters):
+    def __init__(self, iterator, cols, nolink, filters):
         self.cols = cols
         for c in ('short', 'long'):
-            if self.cols[c] not in contents:
+            if self.cols[c] not in iterator['next']:
                 msg = "Column {} ({}) not in contents".format(self.cols[c], c)
                 raise DataError(msg)
-        self.abbr = self.normalize(contents, 'short')
-        self.long = self.normalize(contents, 'long')
+        self.abbr = self.split(iterator)
+        self.long = self.normalize(iterator['next'], 'long')
         self.add = None
-        if self.cols['add'] is not None and self.cols['add'] in contents:
-            self.add = contents[self.cols['add']]
+        if self.cols['add'] is not None and self.cols['add'] in iterator['next']:
+            self.add = iterator['next'][self.cols['add']]
         if nolink:
             self.long = self.long.replace('.', '\u2024')
         self.valid = False
@@ -31,10 +31,10 @@ class Row:
             # no filters: everything valid
             self.valid = True
         for f in self.filters:
-            if f['col'] not in contents:
+            if f['col'] not in iterator['next']:
                 self.valid = False
                 continue
-            string = contents[f['col']]
+            string = iterator['next'][f['col']]
             if (string is None) == f['empty']:
                 self.valid = True
                 continue
@@ -44,6 +44,21 @@ class Row:
             if f['contains'] in string:
                 self.valid = True
                 continue
+
+    def split(self, iterator):
+        short = self.normalize(iterator['next'], 'short')
+        if iterator['split'] is not None:
+            abbrs = short.split(iterator['split'])
+            short = abbrs[iterator['index']]
+            self.abbr_index = iterator['index'] + 1
+            if self.abbr_index == len(abbrs):
+                self.abbr_index = 0
+        else:
+            self.abbr_index = 0
+        return short
+
+    def next_index(self):
+        return self.abbr_index
 
     def __str__(self):
         return str(self.__dict__)

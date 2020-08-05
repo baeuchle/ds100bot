@@ -77,6 +77,9 @@ Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
 
 - add [string] Spaltenname im CSV für zusätzliche Informationen. Diese
   werden bisher an keiner Stelle ausgelesen und/oder verarbeitet.
+- alias [string] Wenn vorhanden, werden Schlüssel (aus Spalte 'short')
+  aufgespalten und für jedes Resultat wird ein Datensatz mit gleicher
+  Erklärung eingetragen.
 - delim [string, default ';']: Das Zeichen, mit dem Spalten im CSV
   voneinander getrennt sind
 - nolink [boolean (true/false), default false]: Wenn true, werden alle
