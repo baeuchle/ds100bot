@@ -19,3 +19,82 @@ U9;Nieder-Eschbach - Riedberg - Niederursel - Nordwestzentrum - Ginnheim
 19;Schülerverkehr: Schwanheim - Niederrad - Louisa
 20;Stadionverkehr: Stadion - Niederrad - Hauptbahnhof
 21;Stadion - Niederrad - Hauptbahnhof - Mönchhofstraße - Nied Kirche
+24;Kalbach Frischezentrum - Kalbach (U)
+25;Berkersheim Bahnhof - Harheim - Nieder-Erlenbach
+251,91;Frankfurt Nordwestzentrum - Steinbach - Kronberg
+253;Königstein - Bad Soden - Sulzbach - MTZ - Frankfurt-Höchst
+27;Nieder-Eschbach (U) - Bonames - Frankfurter Berg - Berkersheim Am Neuenberg - Preungesheim (U)
+28;(Riedberg (U) - Annette-Kolf-Weg - Rathaus Kalbach -) Kalbach (U) - Harheim Tempelhof
+29;Nieder-Erlenbach Hohe Brück - Nieder-Eschbach - Kalbach - Riedberg - Sandelmühle (U) - Nordwestzentrum (U)
+30;Bad Vilbel Bahnhof - Unfallklinik - Friedberger Warte (- Konstablerwache - Lokalbahnhof - Sachsenhausen Hainer Weg)
+31;Osthafen Kaiserlaibrücke - Ostbahnhof - Ostendstraße - Zoo (U)
+32;Frankfurt Ostbahnhof - Alleenring - Frankfurt Westbahnhof
+33;Frankfurt Hauptbahnhof - Westhafen Rotfeder-Ring
+34;Gallus Mönchhofstraße - Rödelheim - Industriehof - Dornbusch - Friedberger Warte - Bornheim Mitte (U)
+35;Sachsenhausen Stresemannallee/Mörfelder Landstraße - Sachsenhausen Lerchesberg
+36;Westbahnhof - Bockenheimer Warte - Westend - Konstablerwache - Lokalbahnhof - Sachsenhausen Hainer Weg
+37;Gutleut Briefzentrum - Frankfurt Hauptbahnhof
+38;Bornheim Panoramabad - Seckbach Atzelberg
+39;Ginnheim Markus-Krankenhaus - Berkersheim Mitte
+41;Offenbach Hbf - Frankfurt Leonhardsgasse
+42;Enkheim Victor-Slotosch-Straße - Enkheim (U) - Bergen
+43;Bornheim Mitte (U) - Bergen Ost
+44;Seckbach Leonhardsgasse - Friedhof Fechenheim
+45;Frankfurt Südbahnhof - Sachsenhausen Deutschherrnbrücke (- Offenbach Kaiserlei (S) )
+46;Rebstock Römerhof - Frankfurt Hauptbahnhof
+47;Frankfurt Südbahnhof - Dielmannstraße - Südbahnhof
+48;Frankfurt Südbahnhof - Goetheturm - Südbahnhof
+50;Unterliederbach West - Bockenheimer Warte (U)
+51;Industriepark Höchst Tor Ost - Niederrad Triftstraße
+52;Gallus Schloßborner Straße/Europaviertel West - Griesheim Jägerallee
+53;Zeilsheim Bahnhof - Höchst Bahnhof - Höchst Bolongaropalast
+54;Sindlingen Friedhof - Zeilsheim Bahnhof - Höchst Bahnhof - Griesheim Bahnhof
+55;Sindlingen Friedhof - Rödelheim Bahnhof (S)
+56;Eschborn Südbahnhof (S) - Rödelheim Bf - Eschborner Landstraße West
+57;Siedlung Taunusblick - Industriepark Höchst Tor West
+58;(Eschborn West -) Höchst Bahnhof - Flughafen Terminal 1
+59;Unterliederbach Cheruskerweg - Griesheim Erzbergerstraße
+60;Rödelheim Bahnhof (S) - Heddernheim - Alt Eschersheim Im Uhrig
+61;Flughafen Terminal 1 - Frankfurt Südbahnhof
+62;Flughafen Terminal 1 - Schwanheim
+63;Eschersheim Weißer Stein - Preungesheim Gravensteiner-Platz
+64;Ginnheim (U) - Frankfurt Hauptbahnhof (- Europaviertel West)
+65;Bad Homburg Ober-Erlenbach - Frankfurt Nieder-Erlenbach - Bad Vilbel Bahnhof
+66;Eschersheim Weißer Stein - Berkersheim Am Neuenberg
+68;Kelsterbach Gesamtschule - Frankfurt Schwanheim
+69;Eschersheim Weißer Stein (U) - Dornbusch Hügelstraße (U)
+71;Nordwestzentrum (U) - Gerhardt-Hauptmann-Ring - Nordwestzentrum (U)
+72;Frankfurt Nordwestzentrum (U) - Rödelheim Bahnhof
+73;Frankfurt Nordwestzentrum (U) - Frankfurt Westbahnhof
+75;Frankfurt Bockenheimer Warte (U) - Uni Campus Westend - Bockenheimer Warte (U)
+751;Darmstadt - Walldorf - Frankfurt Flughafen
+77;Gateway Gardens Mitte - CargoCity Süd
+78;Schwanheim Rheinlandstraße - Frankfurt Südbahnhof
+79;Niederrad Bahnhof (S) - Bürostadt Niederrad - Niederrad Bahnhof (S)
+804;Kelkheim-Eppenhain/-Fischbach - Kelkheim - Sulzbach MTZ - Ffm-Höchst
+81;Oberrad Buchrainplatz - Goldbergweg - Buchrainplatz
+82;Oberrad Buchrainplatz - Wiener Straße - Buchrainplatz
+83;Lohrberg - Friedberger Warte
+OF-50;Gravenbruch - Frankfurt Südbahnhof
+X17;Hofheim - Hattersheim - Flughafen Terminal 1/Neu-Isenburg
+X19;Obertshausen - Heusenstamm - Neu-Isenburg - Flughafen Terminal 1
+X57;Hanau - Maintal - Frankfurt-Enkheim
+X97;Offenbach - Bad Vilbel
+837 AST;Hattersheim - Frankfurt/Sindlingen
+n1;Konstablerwache - Rödelheim - Unterliederbach - Höchst
+n2;Konstablerwache - Ginnheim - Bockenheim - Hausen
+n3;Konstablerwache - Dornbusch - Heddernheim - Riedberg
+n31;Stierstadt Bahnhof - Oberursel Bahnhof - Stierstadt Bahnhof
+n4;Konstablerwache - Preungesheim - Bonames - Harheim
+n4;Konstablerwache - Preungesheim - Bonames - Harheim
+n41;Konstablerwache - Preungesheim - Berkersheim
+n5;Konstablerwache - Bornheim - Enkheim - Riederwald - Konstablerwache
+n61;Frankfurt - Offenbach - Maintal - Hanau
+n62;Konstablerwache - Fechenheim - Offenbach - Konstablerwache
+n63;Konstablerwache - Oberrad - Offenbach - Konstablerwache
+n65;Frankfurt - Hanauer Landstraße - Offenbach Marktplatz
+n7;Konstablerwache - Schwanheim - Flughafen
+n71;Frankfurt - Neu-Isenburg - Langen - Darmstadt und zurück
+n72;Frankfurt Flughafen - Neu-Isenburg - Offenbach/ Dietzenbach
+n8;Konstablerwache - Höchst - Sindlingen
+n96;Frankfurt - Bad Vilbel - Niederdorfelden - Schöneck
