@@ -1,5 +1,6 @@
 """Represents a row of abbreviation data"""
 
+from AnswerMachine.react import find_tokens
 from .error import DataError
 
 class Row:
@@ -26,15 +27,20 @@ class Row:
         self.valid = False
         if self.abbr == "":
             return # invalid
+        self.apply_filters(filters, iterator['next'])
+        if self.valid:
+            self.check_abbreviation()
+
+    def apply_filters(self, filters, data):
         self.filters = filters
         if len(self.filters) == 0:
             # no filters: everything valid
             self.valid = True
         for f in self.filters:
-            if f['col'] not in iterator['next']:
+            if f['col'] not in data:
                 self.valid = False
                 continue
-            string = iterator['next'][f['col']]
+            string = data[f['col']]
             if (string is None) == f['empty']:
                 self.valid = True
                 continue
@@ -56,6 +62,18 @@ class Row:
         else:
             self.abbr_index = 0
         return short
+
+    def check_abbreviation(self):
+        candidates = find_tokens('#' + self.abbr.replace(' ', '_'), '', '')
+        if len(candidates) != 1:
+            self.valid = False
+            msg = "Abbreviation {} will not be matched".format(self.abbr)
+            raise DataError(msg)
+        if candidates[0].abbr != self.abbr:
+            self.valid = False
+            msg = "Abbreviation {} will be falsely matched as {}".format(self.abbr,
+                candidates[0].abbr)
+            raise DataError(msg)
 
     def next_index(self):
         return self.abbr_index
