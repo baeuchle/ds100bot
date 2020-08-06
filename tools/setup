@@ -70,12 +70,12 @@ subprocess.run(['chmod', '-R', '+X', str(output_dir)], check=False)
 target_dir = Path('/var/www/ds100/')
 avatar_dir = Path('/var/www/avatar/')
 if target_dir.exists():
-    subprocess.run(['rsync', '-via', str(output_dir) + "/", str(target_dir)], check=False)
-    subprocess.run(['rsync', '-via', str(doc_source / 'bot.css'), str(target_dir)], check=False)
+    subprocess.run(['rsync', '-a', str(output_dir) + "/", str(target_dir)], check=False)
+    subprocess.run(['rsync', '-a', str(doc_source / 'bot.css'), str(target_dir)], check=False)
 else:
     log_.warning('Not copying documentation')
 if avatar_dir.exists():
-    subprocess.run(['rsync', '-via', str(doc_source / 'avatar.svg'), str(avatar_dir / 'ds100.svg')],
+    subprocess.run(['rsync', '-a', str(doc_source / 'avatar.svg'), str(avatar_dir / 'ds100.svg')],
     check=False)
 else:
     log_.warning('Not copying avatar')
