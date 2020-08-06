@@ -37,6 +37,7 @@
     "short": "Tabellennummer",
     "long": "Laufweg",
     "add": "Liniennummer",
+    "alias": ",",
     "nolink": true,
     "file": "sources/strecken_de_kbs.csv",
     "description": "Kursbuchstrecken",

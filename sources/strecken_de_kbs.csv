@@ -1,11 +1,11 @@
 Tabellennummer;Liniennummer;Laufweg
 100;RE 1;Hamburg - Schwerin - Rostock
-101_1;;Wedel (Holst) - Jungfernstieg - Hauptbahnhof - Ohlsdorf - Hamburg Airport / Poppenbüttel
-101_2;;Altona - Jungfernstieg - Hauptbahnhof - Bergedorf
-101_3;;Pinneberg - Altona - Jungfernstieg - Hauptbahnhof - Neugraben - Stade
-101_11;;Blankenese - Altona - Dammtor - Hauptbahnhof - Barmbek - Poppenbüttel
-101_21;;Elbgaustraße / Altona - Dammtor - Hauptbahnhof - Bergedorf - Aumühle
-101_31;;Altona - Dammtor - Hauptbahnhof - Berliner Tor / Neugraben
+101 1,101¹;;Wedel (Holst) - Jungfernstieg - Hauptbahnhof - Ohlsdorf - Hamburg Airport / Poppenbüttel
+101 2,101²;;Altona - Jungfernstieg - Hauptbahnhof - Bergedorf
+101 3,101³;;Pinneberg - Altona - Jungfernstieg - Hauptbahnhof - Neugraben - Stade
+101 11,101¹¹;;Blankenese - Altona - Dammtor - Hauptbahnhof - Barmbek - Poppenbüttel
+101 21,101²¹;;Elbgaustraße / Altona - Dammtor - Hauptbahnhof - Bergedorf - Aumühle
+101 31,101³¹;;Altona - Dammtor - Hauptbahnhof - Berliner Tor / Neugraben
 102;;Hamburg - Büchen (-Schwerin)
 103;;Hamburg - Elmshorn - Itzehoe / Neumünster - Kiel
 104;;Hamburg - Bad Oldesloe - Lübeck - Lübeck-Travemünde Strand
@@ -45,63 +45,63 @@ Tabellennummer;Liniennummer;Laufweg
 194;RB24;Zinnowitz - Peenemünde
 198;;Bergen auf Rügen - Putbus - Lauterbach
 199;;Lauterbach Mole - Putbus LB - Binz LB - Sellin Ost - Baabe - Göhren (Rügen)
-200_1;S 1;S Wannsee Bhf - S+U Friedrichstr. Bhf - S Oranienburg Bhf
-200_2;S 2;S Blankenfelde (TF) Bhf - S+U Friedrichstr. Bhf - S Bernau Bhf
-200_3;S 3;S Erkner Bhf - S+U Berlin Hauptbahnhof - S Spandau Bhf
-200_5;S 5;S Strausberg Nord - S+U Berlin Hauptbahnhof - S Westkreuz
-200_7;S 7;S Ahrensfelde Bhf - S+U Berlin Hauptbahnhof - S Potsdam Hauptbahnhof
-200_8;S 8;(S Zeuthen - ) S Grünau - S Ostkreuz - S Birkenwerder Bhf
-200_9;S 9;S Flughafen B-Schönefeld Bhf - S+U Berlin Hauptbahnhof - S Spandau Bhf
-200_25;S25;S Teltow Stadt - S+U Friedrichstr. Bhf - S Hennigsdorf Bhf
-200_26;;S Teltow Stadt - S+U Friedrichstr. Bhf - S Waidmannslust
-200_41;S 41;S Südkreuz Bhf - S Westkreuz - S+U Gesundbrunnen Bhf - S Ostkreuz - S Südkreuz Bhf
-200_42;S 42;S Südkreuz Bhf - S Ostkreuz - S+U Gesundbrunnen Bhf - S Westkreuz - S Südkreuz Bhf
-200_45;S 45;S Flughafen B-Schönefeld Bhf - S Südkreuz Bhf
-200_46;S 46;S Königs Wusterhausen Bhf - S Südkreuz Bhf - S Westkreuz - S Westend - S+U Gesundbrunnen Bhf
-200_47;S 47;S Spindlersfeld - S+U Hermannstr.
-200_75;S 75;S Wartenberg - S+U Warschauer Str.
-200_85;S 85;S Grünau - S Schöneweide Bhf - S Ostkreuz Bhf - S+U Pankow
+200 1,200¹;S 1;S Wannsee Bhf - S+U Friedrichstr. Bhf - S Oranienburg Bhf
+200 2,200²;S 2;S Blankenfelde (TF) Bhf - S+U Friedrichstr. Bhf - S Bernau Bhf
+200 3,200³;S 3;S Erkner Bhf - S+U Berlin Hauptbahnhof - S Spandau Bhf
+200 5,200⁵;S 5;S Strausberg Nord - S+U Berlin Hauptbahnhof - S Westkreuz
+200 7,200⁷;S 7;S Ahrensfelde Bhf - S+U Berlin Hauptbahnhof - S Potsdam Hauptbahnhof
+200 8,200⁸;S 8;(S Zeuthen - ) S Grünau - S Ostkreuz - S Birkenwerder Bhf
+200 9,200⁹;S 9;S Flughafen B-Schönefeld Bhf - S+U Berlin Hauptbahnhof - S Spandau Bhf
+200 25,200²⁵;S25;S Teltow Stadt - S+U Friedrichstr. Bhf - S Hennigsdorf Bhf
+200 26,200²⁶;;S Teltow Stadt - S+U Friedrichstr. Bhf - S Waidmannslust
+200 41,200⁴¹;S 41;S Südkreuz Bhf - S Westkreuz - S+U Gesundbrunnen Bhf - S Ostkreuz - S Südkreuz Bhf
+200 42,200⁴²;S 42;S Südkreuz Bhf - S Ostkreuz - S+U Gesundbrunnen Bhf - S Westkreuz - S Südkreuz Bhf
+200 45,200⁴⁵;S 45;S Flughafen B-Schönefeld Bhf - S Südkreuz Bhf
+200 46,200⁴⁶;S 46;S Königs Wusterhausen Bhf - S Südkreuz Bhf - S Westkreuz - S Westend - S+U Gesundbrunnen Bhf
+200 47,200⁴⁷;S 47;S Spindlersfeld - S+U Hermannstr.
+200 75,200⁷⁵;S 75;S Wartenberg - S+U Warschauer Str.
+200 85,200⁸⁵;S 85;S Grünau - S Schöneweide Bhf - S Ostkreuz Bhf - S+U Pankow
 201;RE 1, RB 11;Magdeburg Hbf - Berlin - Frankfurt (Oder) - Cottbus
 202;RE 2, RB 17;Wismar - Wittenberge(Berlin)
 203;;Berlin - Jüterbog - Lutherstadt Wittenberg/Falkenberg (Elster)
-203_Nord;RE 3, RE66, RE10, RB60, RB61, RB62;Stralsund/Schwedt (Oder) - Angermünde - Berlin
-203_Süd;;Falkenberg (Elster)/Lutherstadt Wittenberg - Jüterbog - Berlin
-205_Nord;RE 5, RE5;Rostock/Stralsund - Neustrelitz - Berlin Südkreuz
-205_Sued;RE5, RE7;Berlin Gesundbrunnen - Berlin Hbf - Wünsdorf-Waldstadt - Elsterwerda
+203 Nord;RE 3, RE66, RE10, RB60, RB61, RB62;Stralsund/Schwedt (Oder) - Angermünde - Berlin
+203 Süd;;Falkenberg (Elster)/Lutherstadt Wittenberg - Jüterbog - Berlin
+205 Nord;RE 5, RE5;Rostock/Stralsund - Neustrelitz - Berlin Südkreuz
+205 Süd;RE5, RE7;Berlin Gesundbrunnen - Berlin Hbf - Wünsdorf-Waldstadt - Elsterwerda
 206;RE 6, RB 55;Wittenberge - Hennigsdorf (b Berlin) - Berlin
 207;RE 7, RB 33;Dessau - Wünsdorf-Waldstadt
 208;RE 18, RB 49, S 4;Cottbus - Ruhland - Falkenberg (Elster)
-209_12;RB 12;Berlin Ostkreuz - Berlin-Lichtenberg - Löwenberg - Templin Stadt
-209_13;RB 13;Berlin Jungfernheide - Wustermark
-209_14;RB 10, RB 14;Nauen - Berlin - Berlin-Schönefeld Flughafen
-209_20;RB 20;Oranienburg - Potsdam
-209_21;RB 21, RB 22;Berlin - Potsdam - Golm - Wustermark - Königs Wusterhausen
-209_22;RB 22;Berlin Friedrichstraße - Berlin - Potsdam - Golm - Königs Wusterhausen
-209_23;RB 23;Potsdam - Michendorf
-209_24;RB 24, RE 3, RB 60, RE 2, RB 66;Eberswalde - Berlin - Königs Wusterhausen - Senftenberg
-209_25;RB 25;Berlin Ostkreuz - Berlin-Lichtenberg - Ahrensfelde - Werneuchen
-209_26;RB 26;Berlin-Lichtenberg - Müncheberg - Seelow-Gusow - Küstrin-Kietz - Kostrzyn
-209_27;RB 27;Berlin-Karow/Berlin Gesundbrunnen - Basdorf - Wensickendorf/Klosterfelde - Schmachtenhagen/Groß Schönebeck
-209_35;RB 35;Bad Saarow - Klinikum Fürstenwalde(Spree)
-209_36;RB 36;Königs Wusterhausen - Beeskow - Frankfurt (Oder)
-209_43;RB 43, RE 10, S 4;Cottbus - Leipzig Hbf
-209_60;RB 60;Eberswalde - Wriezen - Frankfurt (Oder)
-209_61_62;;Eberswalde Hbf - Angermünde - Prenzlau - Schwedt (Oder)
-209_66;RB 66, RE66;Szczecin Glowny - Angermünde - (Berlin)
+209 12,209¹²;RB 12;Berlin Ostkreuz - Berlin-Lichtenberg - Löwenberg - Templin Stadt
+209 13,209¹³;RB 13;Berlin Jungfernheide - Wustermark
+209 14,209¹⁴;RB 10, RB 14;Nauen - Berlin - Berlin-Schönefeld Flughafen
+209 20,209²⁰;RB 20;Oranienburg - Potsdam
+209 21,209²¹;RB 21, RB 22;Berlin - Potsdam - Golm - Wustermark - Königs Wusterhausen
+209 22,209²²;RB 22;Berlin Friedrichstraße - Berlin - Potsdam - Golm - Königs Wusterhausen
+209 23,209²³;RB 23;Potsdam - Michendorf
+209 24,209²⁴;RB 24, RE 3, RB 60, RE 2, RB 66;Eberswalde - Berlin - Königs Wusterhausen - Senftenberg
+209 25,209²⁵;RB 25;Berlin Ostkreuz - Berlin-Lichtenberg - Ahrensfelde - Werneuchen
+209 26,209²⁶;RB 26;Berlin-Lichtenberg - Müncheberg - Seelow-Gusow - Küstrin-Kietz - Kostrzyn
+209 27,209²⁷;RB 27;Berlin-Karow/Berlin Gesundbrunnen - Basdorf - Wensickendorf/Klosterfelde - Schmachtenhagen/Groß Schönebeck
+209 35,209³⁵;RB 35;Bad Saarow - Klinikum Fürstenwalde(Spree)
+209 36,209³⁶;RB 36;Königs Wusterhausen - Beeskow - Frankfurt (Oder)
+209 43,209⁴³;RB 43, RE 10, S 4;Cottbus - Leipzig Hbf
+209 60,209⁶⁰;RB 60;Eberswalde - Wriezen - Frankfurt (Oder)
+209 61,209 62,209⁶¹,209⁶²;;Eberswalde Hbf - Angermünde - Prenzlau - Schwedt (Oder)
+209 66,209⁶⁶;RB 66, RE66;Szczecin Glowny - Angermünde - (Berlin)
 211;RB 11, RE 1;;;RE 14, RB 51;Dessau - Lutherstadt Wittenberg - Falkenberg
 225;RB 31, RE 15, RE 18, RB 49, S 4;Elsterwerda-Biehla/Hoyerswerda - Ruhland - Großenhain - Cossebaude - Dresden
 226;RB 33;Königsbrück - Dresden-Klotzsche - Dresden
 227;RB 34;Kamenz - Radeberg - Dresden
 233;RE 2, RE 1, RB 61, RB 60, RB 34, RB 33, S 2;Dresden - Dresden-Klotzsche - Arnsdorf
 240;RB 31, RE5;Berlin - Elsterwerda - Dresden
-241_1;S 1;Meißen Triebischtal - Coswig - Dresden - Pirna - Schöna
-241_1S;RE 20;Dresden - Bad Schandau - Decin hl.n. - Usti nad Labem hl.n. - Litomerice mesto
-241_2;S 2;Pirna - Dresden - Dresden Flughafen
+241 1,241¹;S 1;Meißen Triebischtal - Coswig - Dresden - Pirna - Schöna
+241 1S,241¹S;RE 20;Dresden - Bad Schandau - Decin hl.n. - Usti nad Labem hl.n. - Litomerice mesto
+241 2,241²;S 2;Pirna - Dresden - Dresden Flughafen
 242;S 2, S 1;Dresden-Neustadt - Dresden - Heidenau - Pirna
 245;RE 50, RE 18, RE 15, RB 31, S 1;Riesa/Großenhain - Priestewitz - Weinböhla - Coswig - Radebeul Ost/Cossebaude - Dresden
 246;RE 19, RB 72;Kurort Altenberg - Glashütte - Heidenau - Dresden Müglitztalbahn
 247;U 28;Decin hl.n. - Bad Schandau - Sebnitz (Sachs) - Rumburk
-247_1;;Goßdorf-Kohlmühle - Porschdorf (Kr. Pirna) - Goßdorf-Kohlmühle
+247 1,247¹;;Goßdorf-Kohlmühle - Porschdorf (Kr. Pirna) - Goßdorf-Kohlmühle
 248;RB 71;Pirna - Neustadt (Sachs) - Sebnitz (Sachs)
 250;RE 13, RE 14, RE 38, RE 3, RB 51, S 8, S 2;Lutherstadt Wittenberg/Dessau - Bitterfeld - Leipzig/Halle
 254;RE 13, RE 14;Magdeburg - Roßlau (Elbe) - Dessau Hbf
@@ -131,18 +131,18 @@ Tabellennummer;Liniennummer;Laufweg
 353;RB 42, RB 43;Braunschweig - Vienenburg - Bad Harzburg / Goslar
 354;;Bad Harzburg - Goslar - Seesen - Kreiensen - Göttingen
 355;RB 84, RB 85;Paderborn - Ottbergen - Bodenfelde - Göttingen - Holzminden - Kreiensen
-356_2;;Bodenfelde - Northeim
+356,356 2,356²;;Bodenfelde - Northeim
 357;;Göttingen - Northeim - Herzberg - Nordhausen
 358;;Braunschweig - Seesen - Herzberg
-360_2;;Nienburg - Wunstorf - Hannover - Weetzen - Haste
-360_3;;Hannover - Lehrte - Hildesheim
-360_4;;Bennemühlen - Hannover - Hildesheim
-360_5;S 5;Hannover Flughafen - Hannover - Hameln - Paderborn
-360_6_7;;Hannover - Celle
-361_1;;Hannover - Wunstorf
-361_2;;Hannover Hbf - Han.-Bismarckstr. - Han.-Liinden/Fischerhof - Weetzen
-361_3;;Hannover Hbf - Lehrte
-361_4;;Hannover - Hildesheim
+360 2,360²;;Nienburg - Wunstorf - Hannover - Weetzen - Haste
+360 3,360³;;Hannover - Lehrte - Hildesheim
+360 4,360⁴;;Bennemühlen - Hannover - Hildesheim
+360 5,360⁵;S 5;Hannover Flughafen - Hannover - Hameln - Paderborn
+360 6,360 7,360⁶,360⁷;;Hannover - Celle
+361 1,361¹;;Hannover - Wunstorf
+361 2,361²;;Hannover Hbf - Han.-Bismarckstr. - Han.-Liinden/Fischerhof - Weetzen
+361 3,361³;;Hannover Hbf - Lehrte
+361 4,361⁴;;Hannover - Hildesheim
 370;RE 6, RE 60 (WFB), ERB 61, ERB 69, RE 70 (WFB), RE 78 (ERB);Bielefeld - Minden - Wunstorf - Hannover
 372;NWB 77;Bünde - Löhne - Hameln - Hildesheim Weserbahn
 373;NWB 79;Hildesheim - Bodenburg Lammetalbahn
@@ -168,14 +168,13 @@ Tabellennummer;Liniennummer;Laufweg
 410;RE 7 (National Express), RE 15 (WFB), ERB 65, ERB 69, ERB 89;Rheine - Münster - Hamm
 411;ERB 50;Münster - Lünen - Dortmund RB 50 Der Lüner - Lünen
 412;RB 51, RB 64;Dortmund - Lünen - Gronau - Enschede
-415_1;RE 1, RE 2, ERB 3, RE 5 (bis 08.06.2019), RE 5 (ab 09.06.2019 National Express), RE 6, RE 11 (ABR), RE 19 (ABR), RE 42;Köln - Düsseldorf - Duisburg - Essen
-415_2;RE 1, RE 2, ERB 3, RE 6, RE 11 (ABR), RE 16 (ABR), RB 40 (ABR), RE 42;Duisburg - Essen - Dortmund - Hamm (Westf)
+415 1,415¹;RE 1, RE 2, ERB 3, RE 5 (bis 08.06.2019), RE 5 (ab 09.06.2019 National Express), RE 6, RE 11 (ABR), RE 19 (ABR), RE 42;Köln - Düsseldorf - Duisburg - Essen
+415 2,415²;RE 1, RE 2, ERB 3, RE 6, RE 11 (ABR), RE 16 (ABR), RB 40 (ABR), RE 42;Duisburg - Essen - Dortmund - Hamm (Westf)
 416;ERB 3;Düsseldorf - Duisburg - Oberhausen - Dortmund - Hamm (Westf)
 420;RE 5 (bis 08.06.2019), RE 5 (ab 09.06.2019 National Express), RE 19 (ABR), RB 35 (ABR);(Amsterdam -) Emmerich - Wesel - Oberhausen - Duisburg (- Köln )
 421;RB 19a (ABR);(Düsseldorf - ) Wesel - Bocholt RB 32 Der Bocholter
 424;NWB 45;Bottrop - Oberhausen - Duisburg - Moers RE 44
-425_Fern;;(Düsseldorf - ) Duisburg - Essen - Gelsenkirchen - Münster
-425_Reg;;(Düsseldorf - ) Duisburg - Essen - Gelsenkirchen - Münster
+425;;(Düsseldorf - ) Duisburg - Essen - Gelsenkirchen - Münster
 426;RB 43;Dorsten - Wanne-Eickel - Dortmund
 427;RE 4, RE 16 (ABR), RB 40 (ABR), S 5;Dortmund - Witten - Hagen
 428;RB 46 (ABR);Gelsenkirchen - Wanne-Eickel - Bochum
@@ -192,20 +191,20 @@ Tabellennummer;Liniennummer;Laufweg
 443;HLB 93;Bad Berleburg - Erndtebrück - Siegen - Betzdorf HLB 93 Rothaar-Bahn
 445;RB 40, RB 95 (HLB), RE 99 (HLB);(Frankfurt) - Gießen - Dillenburg - Siegen
 447;NWB 36;Oberhausen - Duisburg-Ruhrort RB 36 Ruhrort-Bahn
-450_1;S 1;Solingen - Düsseldorf - D Flughafen - Duisburg - Essen - Bochum - Dortmund S 1
-450_2;S 2;Dortmund - Herne - Gelsenkirchen/Recklinghausen - Duisburg/Essen S 2
-450_3;S 3;Oberhausen - Mülheim - Essen - Hattingen S 3
-450_4;S 4;Dortmund-Lütgendortmund - Unna-Königsborn - Unna S 4
-450_5;S 5;Dortmund - Witten - Wetter - Hagen S 5
-450_6;S 6;K-Worringen - K-Nippes - Köln - Langenfeld - Düsseldorf - Ratingen Ost - Essen S 6
-450_7;S 7 (ABR);Solingen - Remscheid - Wuppertal
-450_8;S 8;Mönchengladbach - Düsseldorf - Wuppertal - Hagen S 8
-450_9;S 9;Haltern am See - Bottrop - Essen - Velbert-Langenberg - Wuppertal - Hagen S 9
-450_11;S 11;D Flughafen Terminal - Düsseldorf Hbf - Neuss - Köln - Bergisch Gladbach S 11
-450_12;S 12;Horrem - Köln - Porz - Troisdorf - Siegburg/Bonn - Hennef - Au S 12
-450_13;S 13, S 19;Düren-Horrem-Köln-Köln/Bonn Flughafen-Troisdorf-Siegburg/Bonn-Hennef-Au S 13 / S 19
-450_28;S 28 (Regiobahn);Kaarster See - Neuss - Düsseldorf - Mettmann Stadtwald S28
-450_68;S 68;Langenfeld - Düsseldorf - Wuppertal-Vohwinkel S 68
+450 1,450¹;S 1;Solingen - Düsseldorf - D Flughafen - Duisburg - Essen - Bochum - Dortmund S 1
+450 2,450²;S 2;Dortmund - Herne - Gelsenkirchen/Recklinghausen - Duisburg/Essen S 2
+450 3,450³;S 3;Oberhausen - Mülheim - Essen - Hattingen S 3
+450 4,450⁴;S 4;Dortmund-Lütgendortmund - Unna-Königsborn - Unna S 4
+450 5,450⁵;S 5;Dortmund - Witten - Wetter - Hagen S 5
+450 6,450⁶;S 6;K-Worringen - K-Nippes - Köln - Langenfeld - Düsseldorf - Ratingen Ost - Essen S 6
+450 7,450⁷;S 7 (ABR);Solingen - Remscheid - Wuppertal
+450 8,450⁸;S 8;Mönchengladbach - Düsseldorf - Wuppertal - Hagen S 8
+450 9,450⁹;S 9;Haltern am See - Bottrop - Essen - Velbert-Langenberg - Wuppertal - Hagen S 9
+450 11,450¹¹;S 11;D Flughafen Terminal - Düsseldorf Hbf - Neuss - Köln - Bergisch Gladbach S 11
+450 12,450¹²;S 12;Horrem - Köln - Porz - Troisdorf - Siegburg/Bonn - Hennef - Au S 12
+450 13,450¹³;S 13, S 19;Düren-Horrem-Köln-Köln/Bonn Flughafen-Troisdorf-Siegburg/Bonn-Hennef-Au S 13 / S 19
+450 28,450²⁸;S 28 (Regiobahn);Kaarster See - Neuss - Düsseldorf - Mettmann Stadtwald S28
+450 68,450⁶⁸;S 68;Langenfeld - Düsseldorf - Wuppertal-Vohwinkel S 68
 455;RE 7 (National Express), ERB 13, RB 48 (National Express);Köln - Wuppertal - Hagen - (Dortmund ) Hamm - Münster
 459;RB 25;Köln - Overath - Gummersbach - Meinerzhagen - Lüdenscheid
 460;RE 9, HLB 90, HLB 93, S 12, S 19;Köln - Au - Betzdorf - Siegen Siegstrecke
@@ -235,18 +234,18 @@ Tabellennummer;Liniennummer;Laufweg
 498;RB 31 (NWB);Xanten - Moers - Duisburg Der Niederrheiner
 500;RE 50;Leipzig - Riesa - Dresden
 501;S 6, S 5/S 5X, S 3;Halle (Saale) - Leipzig/Halle Flughafen/Schkeuditz - Leipzig Hbf (tief)
-501_1;S 1;Leipzig-Stötteritz - Leipzig - Leipzig Miltitzer Allee
-501_2;S 2;Leipzig-Stötteritz - Leipzig - Delitzsch - Bitterfeld - Dessau/Lutherstadt Wittenberg - Jüterbog
-501_3;S 3, RE 50;Oschatz - Wurzen - Leipzig - Schkeuditz - Halle (S) Hbf - Halle-Trotha
-501_4;S 4, RE 10;Hoyerswerda - Falkenberg - Torgau - Leipzig - Markkleeberg-Gaschwitz
-501_5;S 5/S 5X;Halle (Saale) - Leipzig/Halle Flughafen - Leipzig Hbf (tief) - Altenburg - Zwickau (Sachs)
-501_6;S 6;Leipzig Messe - Leipzig Hbf (tief) - Borna (Leipzig) - Geithain
-501_7;S 7;Halle-Nietleben - Halle (Saale) Hbf
-501_8;S 8;Halle (Saale) - Bitterfeld - Dessau - Lutherstadt Wittenberg
-501_9;S 9;Halle - Delitzsch - Eilenburg
+501 1,501¹;S 1;Leipzig-Stötteritz - Leipzig - Leipzig Miltitzer Allee
+501 2,501²;S 2;Leipzig-Stötteritz - Leipzig - Delitzsch - Bitterfeld - Dessau/Lutherstadt Wittenberg - Jüterbog
+501 3,501³;S 3, RE 50;Oschatz - Wurzen - Leipzig - Schkeuditz - Halle (S) Hbf - Halle-Trotha
+501 4,501⁴;S 4, RE 10;Hoyerswerda - Falkenberg - Torgau - Leipzig - Markkleeberg-Gaschwitz
+501 5,501⁵;S 5/S 5X;Halle (Saale) - Leipzig/Halle Flughafen - Leipzig Hbf (tief) - Altenburg - Zwickau (Sachs)
+501 6,501⁶;S 6;Leipzig Messe - Leipzig Hbf (tief) - Borna (Leipzig) - Geithain
+501 7,501⁷;S 7;Halle-Nietleben - Halle (Saale) Hbf
+501 8,501⁸;S 8;Halle (Saale) - Bitterfeld - Dessau - Lutherstadt Wittenberg
+501 9,501⁹;S 9;Halle - Delitzsch - Eilenburg
 506;RB 110;Leipzig - Grimma - Döbeln
 510;RE 3, RB 30;Dresden - Chemnitz - Zwickau - Plauen - Hof
-510_3;RE 3, RB 30, S 3;Dresden - Tharandt - Freiberg
+510 3,510³;RE 3, RB 30, S 3;Dresden - Tharandt - Freiberg
 516;C 15;Chemnitz Technopark - Chemnitz Zentralhaltestelle - Chemnitz Hbf - Niederwiesa - Hainichen
 517;RB 80;Chemnitz - Flöha - Annaberg-Buchholz - Cranzahl
 519;RB 81;Chemnitz - Flöha - Pockau-Lengefeld - Olbernhau-Grünthal
@@ -258,7 +257,7 @@ Tabellennummer;Liniennummer;Laufweg
 535;RB 95;Zwickau (Sachs) - Aue (Sachs) - Johanngeorgenstadt
 539;RB 5, RB 1;Mehltheuer - Plauen - Herlasgrün/Zwickau - Falkenstein - Klingenthal - Kraslice
 540;RE 3, RE 1, RB 37, S 5/5X;Gera - Schmölln - Altenburg/Gößnitz/Zwickau/Glauchau
-540_1;RE 3, RE 1;Göttingen - Erfurt - Gera - Greiz - /Altenburg/Gößnitz - Glauchau
+540 1,540¹;RE 3, RE 1;Göttingen - Erfurt - Gera - Greiz - /Altenburg/Gößnitz - Glauchau
 541;RE 3, RB 4;Gera - Greiz - Elsterberg - Plauen (V) Mitte - Weischlitz
 544;RE 3, RB 5, RB 2, RB 1, EBx 13, EB 30;Zwickau - Plauen - Mehltheuer - Hof/Adorf - Bad Brambach - Cheb
 546;EB 13;Gera - Weida - Hof
@@ -268,7 +267,7 @@ Tabellennummer;Liniennummer;Laufweg
 557;EB 32;Saalfeld - Lobenstein - Blankenstein
 559;EB 28;Pößneck unt Bf - Orlamünde - Jena
 560;RE 42, RE 18, RE 17, RE 16, RE 15, RB 25, RB 20;Naumburg (Saale) - Großheringen - Jena - Saalfeld (Saale)
-560_18;RE 18;Halle (Saale)Hbf - Naumburg (Saale) - Jena-Göschwitz
+560 18,560¹⁸;RE 18;Halle (Saale)Hbf - Naumburg (Saale) - Jena-Göschwitz
 561;EBx 47, EB 23;Erfurt - Neudietendorf - Arnstadt - Saalfeld
 562;RB 60;Rottenbach - Obstfelderschmiede - Katzhütte
 563;RB 61;Obstfelderschmiede - Cursdorf
@@ -277,28 +276,27 @@ Tabellennummer;Liniennummer;Laufweg
 566;STx 45, STB 46;Erfurt - Plaue - Ilmenau - Rennsteig
 569;STB 41;Meiningen - Eisfeld - Sonneberg
 570;RE 7, STx 50, STB 44, EB 40;Erfurt - Arnstadt - Grimmenthal - Meiningen/Würzburg
-570_7;RE 7;Erfurt - Grimmenthal - / Bad Kissingen - Ebenhausen (Unterfr) - Schweinfurt - Würzburg
+570 7,570⁷;RE 7;Erfurt - Grimmenthal - / Bad Kissingen - Ebenhausen (Unterfr) - Schweinfurt - Würzburg
 571;RB, RE, STB, STx, EB;Erfurt - Neudietendorf - Arnstadt - Plaue
 573;STB 43;Wernshausen - Schmalkalden - Zella-Mehlis - Suhl
 575;STB 41;Eisenach - Wernshausen - Meiningen
 579;EB 26;Weimar - Bad Berka - Kranichfeld
-580_1;;Halle/Leipzig - Naumburg
-580_2;;Naumburg - Großheringen - Weimar - Erfurt - Eisenach
+580 1,580¹;;Halle/Leipzig - Naumburg
+580 2,580²;;Naumburg - Großheringen - Weimar - Erfurt - Eisenach
 585;RB 77;Wangen - Nebra - Naumburg Ost
 586;RB 78;Querfurt - Mücheln (Geiseltal) - Merseburg
 590;RE 19, RE 9, RE 2, RB 75, RB 51, RB 8;Halle - Erfurt - Sangerhausen - Nordhausen - Kassel
 594;EB 27;Sömmerda - Buttstädt
 601;RE 56, RE 55;Nordhausen - Sondershausen - Straußfurt - Erfurt
 603;RE 2, RE 1, RB 53, RB 52;Leinefelde - Mühlhausen (Thür) - Bad Langensalza - Gotha / Kühnhausen - Erfurt
-604_2;RE 2;Kassel-Wilhelmshöhe - Leinefelde - Bad Langensalza - Erfurt
+604,604 2,604²;RE 2;Kassel-Wilhelmshöhe - Leinefelde - Bad Langensalza - Erfurt
 605;RE 1, RB 20, RB 6;Bebra - Eisenach - Gotha - Erfurt
 606;STB 48;Fröttstädt - Waltershausen - Friedrichroda
 610;CAN, CAN;Kassel - Melsungen - Bebra - Fulda (- Frankfurt) Fuldatalbahn
 611;RE 9, RE 2, RB 8;Kassel - Eichenberg - Göttingen
 612;RB4, RT4;Kassel - Wolfhagen - Korbach
 613;RB 8, RB 7, RB 5;Göttingen - Eichenberg - Bebra - Bad Hersfeld - Fulda
-615;RE 50, RB 51;Frankfurt - Offenbach - Hanau - Fulda - Bebra Kinzigtalbahn Nahverkehr
-615_1;Fernverkehr;Frankfurt - Offenbach - Hanau - Fulda Kinzigtalbahn
+615,615¹;RE 50, RB 51;Frankfurt - Offenbach - Hanau - Fulda - Bebra Kinzigtalbahn
 616;RB 52;Fulda - Gersfeld Rhönbahn
 620;RE 30, RB 38, RB39, RB41, RE98;(Frankfurt) - Gießen - Marburg - Kassel Main-Weser-Bahn - Gießen - Gießen
 621;RB 39;Kassel - Wabern - Bad Wildungen
@@ -320,19 +318,18 @@ Tabellennummer;Liniennummer;Laufweg
 641;RE 80, RB 81, RB 82, RE 85, RB 86;Darmstadt / Frankfurt - Hanau - Groß-Umstadt Wiebelsbach - Eberbach Odenwaldbahn
 642;RB 56;Hanau - Kahl (Main) - Schöllkrippen
 643;RB 11;Frankfurt-Höchst - Bad Soden Sodener Bahn
-645_1;S1;Wiesbaden - F-Höchst - Frankfurt - Offenbach Ost - Rödermark -Ober Roden
-645_2;S2;Niedernhausen (Ts) - Frankfurt-Höchst - Frankfurt - Offenbach Ost - Dietzenbach
-645_3_4;S3 S4;Darmstadt - Langen - Frankfurt Süd - Frankfurt - Frankfurt West / Bad Soden / Kronberg
-645_5;S5;Friedrichsdorf (Ts) - Bad Homburg - Frankfurt West - Frankfurt (Main) - Frankfurt Süd
-645_6;S6;Friedberg - Bad Vilbel - Frankfurt West - Frankfurt (Main) - Frankfurt Süd
-645_7;S7;Frankfurt Hbf (hoch) - Groß Gerau-Dornberg - Riedstadt Goddelau
-645_8_9;S8 S9;Hanau - Frankfurt - Frankfurt Flughafen / Mainz / Mainz-Kastel / Wiesbaden
+645 1,645¹;S1;Wiesbaden - F-Höchst - Frankfurt - Offenbach Ost - Rödermark -Ober Roden
+645 2,645²;S2;Niedernhausen (Ts) - Frankfurt-Höchst - Frankfurt - Offenbach Ost - Dietzenbach
+645 3,645 4,645³,645⁴;S3 S4;Darmstadt - Langen - Frankfurt Süd - Frankfurt - Frankfurt West / Bad Soden / Kronberg
+645 5,645⁵;S5;Friedrichsdorf (Ts) - Bad Homburg - Frankfurt West - Frankfurt (Main) - Frankfurt Süd
+645 6,645⁶;S6;Friedberg - Bad Vilbel - Frankfurt West - Frankfurt (Main) - Frankfurt Süd
+645 7,645⁷;S7;Frankfurt Hbf (hoch) - Groß Gerau-Dornberg - Riedstadt Goddelau
+645 8,645 9,645⁸,645⁹;S8 S9;Hanau - Frankfurt - Frankfurt Flughafen / Mainz / Mainz-Kastel / Wiesbaden
 646;RB 12;Königstein - Frankfurt-Höchst - Frankfurt (Main) Hbf
 647;RB 61;Frankfurt - Dreieich-Buchschlag - Rödermark-Ober Roden - Dieburg Dreieichbahn
-650;RE 60, RB 66, RB 67, RB 68;Frankfurt (Main) - Darmstadt / Mannheim / Heidelberg - Wiesloch-Walldorf Main-Neckar-Bahn
-650_1;RB 66;Darmstadt Hbf - Darmstadt-Eberstadt - Pfungstadt
-650_2;Fernverkehr;Heidelberg / Mannheim - Darmstadt - Frankfurt (Main) Main-Neckar-Bahn
-650_3;;Neu-Edingen/Friedrichsfeld - Schwetzingen
+650,650 2,650²;RE 60, RB 66, RB 67, RB 68;Frankfurt (Main) - Darmstadt / Mannheim / Heidelberg - Wiesloch-Walldorf Main-Neckar-Bahn
+650 1,650¹;RB 66;Darmstadt Hbf - Darmstadt-Eberstadt - Pfungstadt
+650 3,650³;;Neu-Edingen/Friedrichsfeld - Schwetzingen
 651;RB 75;Wiesbaden -Mainz - Darmstadt - Aschaffenburg
 653;RB 63;Worms - Bensheim
 654;RB 69;Weinheim - Mörlenbach - Fürth
@@ -341,24 +338,24 @@ Tabellennummer;Liniennummer;Laufweg
 660;RE 14, RB 35, RB 44, RB 46;Mainz - Worms - Ludwigshafen - Mannheim
 661;RB 31, RE 13;Mainz - Alzey - Kirchheimbolanden
 662;RB 31, RB 35, RE 13;Bingen (Rhein) Stadt - Alzey - Worms Rheinhessenbahn
-662_1;RB 65;Monsheim - Kaiserslautern Zellertalbahn
+662 1,662¹;RB 65;Monsheim - Kaiserslautern Zellertalbahn
 663;;Armsheim - Alzey (Gesamtverkehr)
 665;;Ludwigshafen - Mannheim - Heidelberg
-665_1_2;;(Mannheim -) Heidelberg - Neckargemünd - Osterburken
-665_3_4;;(Mannheim - ) - Schifferstadt - Germersheim - Graben-Neudorf/Wörth - Bruchsal
-665_5;;Heidelberg - Meckesheim - Eppingen/Aglasterhausen
+665 1,665 2,665¹,665²;;(Mannheim -) Heidelberg - Neckargemünd - Osterburken
+665 3,665 4,665³,665⁴;;(Mannheim - ) - Schifferstadt - Germersheim - Graben-Neudorf/Wörth - Bruchsal
+665 5,665⁵;;Heidelberg - Meckesheim - Eppingen/Aglasterhausen
 666;RB 46;Eiswoog - Grünstadt - Frankenthal
 667;RB 45;Monsheim - Grünstadt - Bad Dürkheim - Neustadt
 670;RB 71, RB 70, RE 1, RE 68, RE 69, S 1, S 2, S 3, S 4;Saarbrücken - Kaiserslautern - Mannheim
-670_1;;Ludwigshafen Hbf-Ludwigshafen BASF
+670 1,670¹;;Ludwigshafen Hbf-Ludwigshafen BASF
 671;RB 67;Kaiserslautern - Landstuhl - Kusel
 672;RB 68, RB 64, RB 65, RB 35;Pirmasens Hbf - Pirmasens Nord Gesamtverkehr
-672_1;;Kaiserslautern - Pirmasens
-672_2;;Bingen - Bad Kreuznach - Kaiserslautern
+672 1,672¹;;Kaiserslautern - Pirmasens
+672 2,672²;;Bingen - Bad Kreuznach - Kaiserslautern
 673;RB 66;Kaiserslautern - Lauterecken-Grumbach Lautertalbahn
 674;RB 68;Saarbrücken - Zweibrücken - Pirmasens
 675;RB 51, RB 55, RB 56;Pirmasens - Landau
-675_1;RB 56;Bundenthal-Rumbach - Hinterweidenthal
+675 1,675¹;RB 56;Bundenthal-Rumbach - Hinterweidenthal
 676;RE 6, RB 51, RB 53;Neustadt - Landau - Karlsruhe
 677;;Wörth - Lauterbourg
 678;RB 54;Winden - Bad Bergzabern
@@ -378,16 +375,16 @@ Tabellennummer;Liniennummer;Laufweg
 702;;Karlsruhe - Offenburg - Freiburg - Müllheim (Baden) - Basel
 703;;Freiburg - Müllheim (Baden) - Mulhouse
 707;;Neckarbischofsheim - Hüffenhardt
-710_1;AVG S 1, AVG S 11;Hochstetten - Karlsruhe - Ittersbach/Bad Herrenalb
-710_3;AVG S 3, AVG S 31, AVG S 32, AVG S 71;Odenheim - Menzingen - Karlsruhe - Rastatt
-710_4;AVG S 4;Karlsruhe-Eppingen-Heilbronn-Öhringen
-710_5;AVG S 5;Pforzheim-Karlsruhe-Wörth
-710_6;AVG S 6;Bad Wildbad-Pforzheim
-710_7;AVG S 8, AVG S 7, AVG S 71;Achern-Rastatt-Karlsruhe
-710_8;AVG S 7, AVG S 8, AVG S 81;Herrenberg-Bondorf-Karlsruhe
-710_9;AVG S 9;Bretten-Bruchsal
-710_41;AVG S 1, AVG S 5, AVG S 41, AVG S 42;Mosbach (S41)/Sinsheim (S42) - Bad Friedrichshall - Heilbronn
-710_51;AVG S 51, AVG S 52;Germersheim-Karlsruhe-Pforzheim
+710 1,710¹;AVG S 1, AVG S 11;Hochstetten - Karlsruhe - Ittersbach/Bad Herrenalb
+710 3,710³;AVG S 3, AVG S 31, AVG S 32, AVG S 71;Odenheim - Menzingen - Karlsruhe - Rastatt
+710 4,710⁴;AVG S 4;Karlsruhe-Eppingen-Heilbronn-Öhringen
+710 5,710⁵;AVG S 5;Pforzheim-Karlsruhe-Wörth
+710 6,710⁶;AVG S 6;Bad Wildbad-Pforzheim
+710 7,710⁷;AVG S 8, AVG S 7, AVG S 71;Achern-Rastatt-Karlsruhe
+710 8,710⁸;AVG S 7, AVG S 8, AVG S 81;Herrenberg-Bondorf-Karlsruhe
+710 9,710⁹;AVG S 9;Bretten-Bruchsal
+710 41,710⁴¹;AVG S 1, AVG S 5, AVG S 41, AVG S 42;Mosbach (S41)/Sinsheim (S42) - Bad Friedrichshall - Heilbronn
+710 51,710⁵¹;AVG S 51, AVG S 52;Germersheim-Karlsruhe-Pforzheim
 717;;Achern - Ottenhöfen
 718;;Offenburg - Appenweier - Bad Griesbach
 719;;Strasbourg - Kehl - Appenweier - Offenburg
@@ -399,7 +396,7 @@ Tabellennummer;Liniennummer;Laufweg
 726;;Freiburg (Breisgau) - Waldkirch - Elzach
 727;;Breisach/Endingen - Freiburg - Titisee - Seebrugg/Neustadt - Donaueschingen
 730;;Basel - Waldshut - Schaffhausen - Singen (Hohentwiel)
-730_4;SBB S 23, SBB S 27, SBB S 41, SBB S 19;Waldshut - Koblenz - Winterthur/Baden - (Zürich)
+730 4,730⁴;SBB S 23, SBB S 27, SBB S 41, SBB S 19;Waldshut - Koblenz - Winterthur/Baden - (Zürich)
 731;;Radolfzell - Friedrichshafen
 732;;Radolfzell - Stockach
 734;;(Zell / Schopfheim) - Steinen - Lörrach - Weil am Rhein
@@ -407,7 +404,7 @@ Tabellennummer;Liniennummer;Laufweg
 737;;Waldshut - Weizen
 740;;Stuttgart - Eutingen - Freudenstadt/Horb - Rottweil - Tuttlingen - Singen
 742;;Rottweil - Trossingen - Villingen - Donaueschingen - Bräunlingen
-742_1;;Trossingen Bahnhof - Trossingen Stadt
+742 1,742¹;;Trossingen Bahnhof - Trossingen Stadt
 743;;Rottweil / Sigmaringen - Tuttlingen - Immendingen - Blumberg - Waldshut
 750;;Stuttgart - Göppingen - Geislingen (Steige) - Ulm
 751;;Ulm - Aulendorf - Friedrichshafen - Lindau
@@ -428,7 +425,6 @@ Tabellennummer;Liniennummer;Laufweg
 769;;Balingen - Schömberg
 770;;Karlsruhe - Pforzheim - Mühlacker - Vaihingen (Enz) - Stuttgart
 771;;Mannheim - Heidelberg - Bruchsal - Mühlacker - Vaihingen (Enz) - Stuttgart
-771_Fv;;Mannheim - Heidelberg - Bruchsal - Mühlacker - Vaihingen (Enz) - Stuttgart
 772;;Mühlacker / Pforzheim - Maulbronn
 774;;Pforzheim - Horb - Tübingen
 780;;Würzburg - Heilbronn - Stuttgart
@@ -438,15 +434,15 @@ Tabellennummer;Liniennummer;Laufweg
 784;;Miltenberg - Amorbach - Walldürn - Seckach
 785;;Stuttgart - Backnang - Schwäbisch Hall-Hessental - Crailsheim - Nürnberg
 786;;Stuttgart - Schwäbisch Gmünd - Aalen - Crailsheim
-790_1;;Kirchheim (Teck) - Plochingen - Stuttgart - Böblingen - Herrenberg
-790_2_3;;Backnang / Schorndorf - Waiblingen - Stuttgart - S-Flughafen/Messe - Filderstadt
-790_4_5;;Bietigheim-Bissingen / Backnang - Marbach - Ludwigsburg - Stuttgart Schwabstraße
-790_6;;Weil der Stadt / Böblingen - Renningen - Leonberg - Stuttgart Schwabstraße
-790_11;;Kornwestheim - Stuttgart-Untertürkheim
-790_21;R 21;Schorndorf - Rudersberg
-790_61;R 61;Korntal - Hemmingen - Heimerdingen
-790_64;;Kirchheim - Oberlenningen - Unterlenningen
-790_72;R 72;Böblingen - Holzgerlingen - Dettenhausen
+790 1,790¹;;Kirchheim (Teck) - Plochingen - Stuttgart - Böblingen - Herrenberg
+790 2,790 3,790²,790³;;Backnang / Schorndorf - Waiblingen - Stuttgart - S-Flughafen/Messe - Filderstadt
+790 4,790 5,790⁴,790⁵;;Bietigheim-Bissingen / Backnang - Marbach - Ludwigsburg - Stuttgart Schwabstraße
+790 6,790⁶;;Weil der Stadt / Böblingen - Renningen - Leonberg - Stuttgart Schwabstraße
+790 11,790¹¹;;Kornwestheim - Stuttgart-Untertürkheim
+790 21,790²¹;R 21;Schorndorf - Rudersberg
+790 61,790⁶¹;R 61;Korntal - Hemmingen - Heimerdingen
+790 64,790⁶⁴;;Kirchheim - Oberlenningen - Unterlenningen
+790 72,790⁷²;R 72;Böblingen - Holzgerlingen - Dettenhausen
 800;;Aschaffenburg - Würzburg
 801;;Schlüchtern - Gemünden
 803;EB 50;Gemünden - Bad Kissingen
@@ -475,13 +471,13 @@ Tabellennummer;Liniennummer;Laufweg
 876;;Cham - Waldmünchen
 877;;Cham - Bad Kötzting - Lam
 880;;Nürnberg - Regensburg - Passau
-890_1;S 1;Bamberg - Erlangen - Fürth - Nürnberg - Hartmannshof
-890_2;S 2;Roth - Schwabach - Nürnberg - Feucht - Altdorf
-890_3;S 3;Nürnberg - Neumarkt (Oberpf)
-890_4;S 4;Nürnberg - Ansbach - Crailsheim
+890 1,890¹;S 1;Bamberg - Erlangen - Fürth - Nürnberg - Hartmannshof
+890 2,890²;S 2;Roth - Schwabach - Nürnberg - Feucht - Altdorf
+890 3,890³;S 3;Nürnberg - Neumarkt (Oberpf)
+890 4,890⁴;S 4;Nürnberg - Ansbach - Crailsheim
 891;;Pegnitz/Simmelsdorf-Hüttenbach - Neunkirchen a Sand - Nürnberg
 900;;Nürnberg - Ingolstadt - München
-900_1;;Ffm / Fulda-Würzburg-Nürnberg-München (Fv)
+900 1,900¹;;Ffm / Fulda-Würzburg-Nürnberg-München (Fv)
 905;;Bayerisch Eisenstein - Plattling - Plzen hl.n.
 906;;Zwiesel - Grafenau
 907;;Zwiesel - Bodenmais
@@ -505,7 +501,7 @@ Tabellennummer;Liniennummer;Laufweg
 948;;Grafing - Ebersberg - Wasserburg
 950;;München - Rosenheim - Kufstein
 951;;München - Rosenheim - Traunstein - Salzburg
-951_1;;Salzburg - Freilassing
+951 1,951¹;;Salzburg - Freilassing
 952;;Prien - Aschau (Chiemgau)
 953;;Traunstein - Ruhpolding
 954;;Salzburg - Freilassing - Berchtesgaden
@@ -528,7 +524,7 @@ Tabellennummer;Liniennummer;Laufweg
 977;;Ulm - Günzburg (Gv)
 978;;Mindelheim - Krumbach - Günzburg
 980;;Ulm - Augsburg (Nv)
-980_1;;Stuttgart - Ulm - Augsburg - München (Fv)
+980 1,980¹;;Stuttgart - Ulm - Augsburg - München (Fv)
 981;;Augsburg-Oberhausen - München (Nv)
 983;;Augsburg - Ingolstadt
 985;;Augsburg - Weilheim
@@ -538,10 +534,10 @@ Tabellennummer;Liniennummer;Laufweg
 991;;Eichstätt Bahnhof - Eichstätt Stadt
 993;;Ulm - Donauwörth - Ingolstadt - Regensburg
 998;;München - Deisenhofen - Holzkirchen
-999_1;S 1;Freising / Flughafen - Neufahrn - München Ost - Leuchtenbergring
-999_2;S 2;Petershausen / Altomünster - München - Erding
-999_3;S 3;Mammendorf - München - Holzkirchen
-999_4;S 4;Geltendorf - München - Trudering
-999_6;S 6;Tutzing - München - Ebersberg
-999_7;S 7;Wolfratshausen - München - Kreuzstraße
-999_8;S 8;Herrsching - München - München Flughafen
+999 1,999¹;S 1;Freising / Flughafen - Neufahrn - München Ost - Leuchtenbergring
+999 2,999²;S 2;Petershausen / Altomünster - München - Erding
+999 3,999³;S 3;Mammendorf - München - Holzkirchen
+999 4,999⁴;S 4;Geltendorf - München - Trudering
+999 6,999⁶;S 6;Tutzing - München - Ebersberg
+999 7,999⁷;S 7;Wolfratshausen - München - Kreuzstraße
+999 8,999⁸;S 8;Herrsching - München - München Flughafen
