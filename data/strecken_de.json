@@ -60,7 +60,7 @@
     "short": "Abk",
     "long": "Beschreibung",
     "add": "Nummer",
-    "delim": ";",
+    "alias": ",",
     "nolink": true,
     "file": "sources/strecken_de_namen.csv",
     "description": "Zusätzliche Streckennamen aus eigener Zusammenstellung",

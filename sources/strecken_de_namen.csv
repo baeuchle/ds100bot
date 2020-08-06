@@ -14,7 +14,7 @@ VDE5;Helmstedt-Magdeburg-Berlin;$6400
 VDE6;Halle-Hann. Münden;
 VDE7;Bebra-Erfurt;
 VDE8;Berlin-Nürnberg;
-VDE8¹;Nürnberg-Erfurt;
-VDE8²;Erfurt-Leipzig/Halle;
-VDE8³;Leipzig/Halle-Berlin;
+VDE8¹,VDE8_1;Nürnberg-Erfurt;
+VDE8²,VDE8_2;Erfurt-Leipzig/Halle;
+VDE8³,VDE8_3;Leipzig/Halle-Berlin;
 VDE9;Leipzig-Dresden;
