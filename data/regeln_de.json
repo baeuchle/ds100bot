@@ -15,7 +15,7 @@
     "id": "ril408",
     "short": "Abk",
     "long": "Name",
-    "delim": ";",
+    "alias": ",",
     "nolink": true,
     "file": "sources/regeln_de.csv",
     "source": {
