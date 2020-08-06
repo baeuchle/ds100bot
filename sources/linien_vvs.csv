@@ -246,7 +246,7 @@ R81;Oberlenningen - Kirchheim (T);13 - SEV-Bus;31-81-e-j18
 376;Murrhardt - Grab - Großerlach - Mainhardt - Sulzbach (M) - Murrhardt (Limesbus Nord);5 - Bus;31-376-j18
 380;Backnang - Sulzbach (M) - Mainhardt;5 - Bus;31-380-j18
 381;Backnang - WeissacherTal - Althütte Backnang - Weiss.Tal - Althütte (Spät- und Nachtbusverkehr) (Spät- und Nachtbusverkehr);5 - Bus;31-381-j18
-381-P;Backnang - Weiss.Tal - Althütte (Spät- und Nachtbusverkehr) Backnang - WeissacherTal - Althütte (Spät- und Nachtbusverkehr);5 - Bus;31-381-P-j18
+381P,381 P;Backnang - Weiss.Tal - Althütte (Spät- und Nachtbusverkehr) Backnang - WeissacherTal - Althütte (Spät- und Nachtbusverkehr);5 - Bus;31-381-P-j18
 382;Backnang - Weissach i.T. - Auenwald - Althütte;5 - Bus;31-382-j18
 383;Backnang - Allmersbach i.T. - Unterweissach;5 - Bus;31-383-j18
 384;Backnang - Weissach i.T. - Althütte;5 - Bus;31-384-j18

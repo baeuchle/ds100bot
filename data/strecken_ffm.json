@@ -10,7 +10,7 @@
     "id": "strecken_ffm",
     "short": "Abk",
     "long": "Weg",
-    "delim": ";",
+    "alias": ",",
     "file": "sources/strecken_ffm.csv",
     "source": {
       "name": "Eigene Zusammenstellung aus Krakies/Nagel",

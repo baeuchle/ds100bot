@@ -8,14 +8,12 @@ Anst;Anschlussstelle
 Ap;Abschnittsprüfung
 apl;außerplanmäßig
 Arbz;Arbeitszug
-Asig;Ausfahrsignal
-ASig;Ausfahrsignal
+Asig,ASig;Ausfahrsignal
 aS;Außergewöhnliche Sendung
 Ausf;Ausfahrt
 AutomET;Automatische Einschalttaste
 AutomHET;Automatische Hilfseinschalttaste
-Avsig;Ausfahrvorsignal
-AVsig;Ausfahrvorsignal
+Avsig,AVsig;Ausfahrvorsignal
 Awanst;Ausweichanschlussstelle
 Bebu;Betriebsstellenbuch
 Bef;Befehl
@@ -27,10 +25,8 @@ Bf;Bahnhof
 Bft;Bahnhofsteil
 Bgl;Baugleis
 Bk;Blockstelle
-Bksig;Blocksignal
-BkSig;Blocksignal
-Bkvsig;Blockvorsignal
-BkVsig;Blockvorsignal
+Bksig,BkSig;Blocksignal
+Bkvsig,BkVsig;Blockvorsignal
 Blifü;Blinklichtanlagen mit Fernüberwachung
 Blilo;Blinklichtanlagen mit Überwachungssignalen
 BözM;Betrieblich örtlich zuständiger Mitarbeiter
@@ -40,11 +36,10 @@ Brpr;Bremsprobe
 BRW;Betriebsregelwerk
 Bstg;Bahnsteig
 BÜ;Bahnübergang
-BUVO_NE;Betriebsunfallvorschrift für Nichtbundeseigene Eisenbahnen
+BUVO NE;Betriebsunfallvorschrift für Nichtbundeseigene Eisenbahnen
 BZ;Betriebszentrale
 DWeg;Durchrutschweg
-Dksig;Deckungssignal
-DkSig;Deckungssignal
+Dksig,DkSig;Deckungssignal
 Dkst;Deckungsstelle
 DMV;Dienstanweisung für Mitarbeiter von Verkehrsunternehmen
 Durchf;Durchfahrt
@@ -54,8 +49,7 @@ EFF;Eisenbahnfahrzeug-Führerschein nach VDV
 EFR;Elektronische Fahrtenregistrierung
 EIU;Eisenbahninfrastrukturunternehmen
 ep;elektropneumatisch
-Esig;Einfahrsignal
-ESig;Einfahrsignal
+Esig,ESig;Einfahrsignal
 ET;Einschalttaste
 ETCS;European Train Control System
 EVsig;Einfahrvorsignal
@@ -95,8 +89,7 @@ KiN;Kundenbetreuer im Nahverkehr
 Kl;Kleinwagen
 KV;Kombinierter Verkehr
 La;Zusammenstellung der vorübergehenden Langsamfahrstellen und anderen Besonderheiten
-Lfsig;Langsamfahrsignal
-LfSig;Langsamfahrsignal
+Lfsig,LfSig;Langsamfahrsignal
 Lfst;vorübergehende Langsamfahrstelle
 Lokw;Lokomotivwechsel
 Ls;Lichtsperrsignal
@@ -130,8 +123,7 @@ RÜ;Reisendenübergang
 Rz;Reisezug
 SAT;Selbstabfertigung durch den Tf
 Sbk;selbsttätige Blockstelle, selbsttätiges Blocksignal
-Sbkvsig;Vorsignal eines selbsttätigen Blocksignals
-SbkVsig;Vorsignal eines selbsttätigen Blocksignals
+Sbkvsig,SbkVsig;Vorsignal eines selbsttätigen Blocksignals
 Schrp;Schrankenposten
 Schrw;Schrankenwärter
 Sifa;Sicherheitsfahrschaltung („Totmannschaltung“)
@@ -185,10 +177,8 @@ Zmst;Zugmeldestelle
 Zp;Zugpersonal
 ZS;Zugsammelschiene
 Zs;Zugschaffner
-Zsig;Zwischensignal
-ZSig;Zwischensignal
+Zsig,ZSig;Zwischensignal
 Zub;Zugbegleiter
 Zugg;Zuggattung
 Zugv;Zugvorbereiter
-Zvsig;Zwischenvorsignal
-ZVsig;Zwischenvorsignal
+Zvsig,ZVsig;Zwischenvorsignal

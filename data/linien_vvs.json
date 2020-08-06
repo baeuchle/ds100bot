@@ -11,6 +11,7 @@
     "short": "Linie",
     "long": "Streckenverlauf",
     "file": "sources/linien_vvs.csv",
+    "alias": ",",
     "source": {
       "name": "VVS Open Data Portal",
       "url": "https://www.openvvs.de/dataset/linien"

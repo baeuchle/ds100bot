@@ -1,62 +1,28 @@
 Abk;Weg
 A;A-Strecke: Südbahnhof - Heddernheim - (Ginnheim/Bad Homburg/Oberursel)
-Aⅰ;A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache
-AⅠ;A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache
-AI;A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache
-Aⅱ;A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz
-AⅡ;A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz
-AII;A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz
-Aⅲ;A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein
-AⅢ;A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein
-AIII;A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein
-Aⅳ;A-Strecke Teilabschnitt 4 Willy-Brandt-Platz - Südbahnhof
-AⅣ;A-Strecke Teilabschnitt 4 Willy-Brandt-Platz - Südbahnhof
-AIV;A-Strecke Teilabschnitt 4 Willy-Brandt-Platz - Südbahnhof
-Aⅴ;A-Strecke Teilabschnitt 5 Südbahnhof - Sachsenhäuser Warte (- Neu-Isenburg) (nicht weiterverfolgt)
-AⅤ;A-Strecke Teilabschnitt 5 Südbahnhof - Sachsenhäuser Warte (- Neu-Isenburg) (nicht weiterverfolgt)
-AV;A-Strecke Teilabschnitt 5 Südbahnhof - Sachsenhäuser Warte (- Neu-Isenburg) (nicht weiterverfolgt)
+Aⅰ,AⅠ,AI;A-Strecke Teilabschnitt 1 Humser Straße - Hauptwache
+Aⅱ,AⅡ,AII;A-Strecke Teilabschnitt 2 Hauptwache - Willy-Brandt-Platz
+Aⅲ,AⅢ,AIII;A-Strecke Teilabschnitt 3 Humser Straße - Weißer Stein
+Aⅳ,AⅣ,AIV;A-Strecke Teilabschnitt 4 Willy-Brandt-Platz - Südbahnhof
+Aⅴ,AⅤ,AV;A-Strecke Teilabschnitt 5 Südbahnhof - Sachsenhäuser Warte (- Neu-Isenburg) (nicht weiterverfolgt)
 A1;Anschlussstrecke A1: Weißer Stein - Ginnheim
 A2;Anschlussstrecke A2: Heddernheim - Bad Homburg Gonzenheim
 A3;Anschlussstrecke A3: Abzweig Nordwest - Oberursel Hohemark
 B;B-Strecke: Europaviertel - Hauptbahnhof - Konstablerwache - (Preungesheim/Seckbacher Landstraße)
-Bⅰ;B-Strecke Teilabschnitt 1: Scheffeleck - Willy-Brandt-Platz
-BⅠ;B-Strecke Teilabschnitt 1: Scheffeleck - Willy-Brandt-Platz
-BI;B-Strecke Teilabschnitt 1: Scheffeleck - Willy-Brandt-Platz
-Bⅱ;B-Strecke Teilabschnitt 2: Willy-Brandt-Platz - Hauptbahnhof
-BⅡ;B-Strecke Teilabschnitt 2: Willy-Brandt-Platz - Hauptbahnhof
-BII;B-Strecke Teilabschnitt 2: Willy-Brandt-Platz - Hauptbahnhof
-Bⅳ;B-Strecke Teilabschnitt 4: Hauptbahnhof - Europaviertel (ursprünglich Nied - Höchst)
-BⅣ;B-Strecke Teilabschnitt 4: Hauptbahnhof - Europaviertel (ursprünglich Nied - Höchst)
-BIV;B-Strecke Teilabschnitt 4: Hauptbahnhof - Europaviertel (ursprünglich Nied - Höchst)
+Bⅰ,BⅠ,BI;B-Strecke Teilabschnitt 1: Scheffeleck - Willy-Brandt-Platz
+Bⅱ,BⅡ,BII;B-Strecke Teilabschnitt 2: Willy-Brandt-Platz - Hauptbahnhof
+Bⅳ,BⅣ,BIV;B-Strecke Teilabschnitt 4: Hauptbahnhof - Europaviertel (ursprünglich Nied - Höchst)
 B1;Anschlussstrecke B1: Scheffeleck - Preungesheim
 B2;Anschlussstrecke B2: Konstablerwache - Seckbacher Landstraße
 C;C-Strecke: (Praunheim/Hausen) - Industriehof - Zoo - (Ostbahnhof / Enkheim)
-Cⅰ;C-Strecke Teilabschnitt 1: Alte Oper - Hauptwache
-CⅠ;C-Strecke Teilabschnitt 1: Alte Oper - Hauptwache
-CI;C-Strecke Teilabschnitt 1: Alte Oper - Hauptwache
-Cⅱ;C-Strecke Teilabschnitt 2: Hauptwache - Zoo
-CⅡ;C-Strecke Teilabschnitt 2: Hauptwache - Zoo
-CII;C-Strecke Teilabschnitt 2: Hauptwache - Zoo
-Cⅲ;C-Strecke Teilabschnitt 3: Bockenheimer Warte - Alte Oper
-CⅢ;C-Strecke Teilabschnitt 3: Bockenheimer Warte - Alte Oper
-CIII;C-Strecke Teilabschnitt 3: Bockenheimer Warte - Alte Oper
-Cⅳ;C-Strecke Teilabschnitt 4: Zoo - Ostbahnhof
-CⅣ;C-Strecke Teilabschnitt 4: Zoo - Ostbahnhof
-CIV;C-Strecke Teilabschnitt 4: Zoo - Ostbahnhof
-Cⅴ;C-Strecke Teilabschnitt 5: Industriehof - Bockenheimer Warte
-CⅤ;C-Strecke Teilabschnitt 5: Industriehof - Bockenheimer Warte
-CV;C-Strecke Teilabschnitt 5: Industriehof - Bockenheimer Warte
+Cⅰ,CⅠ,CI;C-Strecke Teilabschnitt 1: Alte Oper - Hauptwache
+Cⅱ,CⅡ,CII;C-Strecke Teilabschnitt 2: Hauptwache - Zoo
+Cⅲ,CⅢ,CIII;C-Strecke Teilabschnitt 3: Bockenheimer Warte - Alte Oper
+Cⅳ,CⅣ,CIV;C-Strecke Teilabschnitt 4: Zoo - Ostbahnhof
+Cⅴ,CⅤ,CV;C-Strecke Teilabschnitt 5: Industriehof - Bockenheimer Warte
 C1;Anschlussstrecke C1: Zoo - Eissporhalle - Enkheim
 D;D-Strecke: (Schwanheim / Stadion) - Hauptbahnhof - Ginnheim - Kalbach
-Dⅰ;D-Strecke Teilabschnitt 1: Hauptbahnhof - Bockenheimer Warte
-DⅠ;D-Strecke Teilabschnitt 1: Hauptbahnhof - Bockenheimer Warte
-DI;D-Strecke Teilabschnitt 1: Hauptbahnhof - Bockenheimer Warte
-Dⅱ;D-Strecke Teilabschnitt 2: Bockenheimer Warte - Ginnheim (geplant)
-DⅡ;D-Strecke Teilabschnitt 2: Bockenheimer Warte - Ginnheim (geplant)
-DII;D-Strecke Teilabschnitt 2: Bockenheimer Warte - Ginnheim (geplant)
-Dⅲ;D-Strecke Teilabschnitt 3: Niederrad - Hauptbahnhof (nicht weiterverfolgt)
-DⅢ;D-Strecke Teilabschnitt 3: Niederrad - Hauptbahnhof (nicht weiterverfolgt)
-DIII;D-Strecke Teilabschnitt 3: Niederrad - Hauptbahnhof (nicht weiterverfolgt)
-Dⅳ;D-Strecke Teilabschnitt 4: Nordweststadt - Riedberg - Kalbach
-DⅣ;D-Strecke Teilabschnitt 4: Nordweststadt - Riedberg - Kalbach
-DIV;D-Strecke Teilabschnitt 4: Nordweststadt - Riedberg - Kalbach
+Dⅰ,DⅠ,DI;D-Strecke Teilabschnitt 1: Hauptbahnhof - Bockenheimer Warte
+Dⅱ,DⅡ,DII;D-Strecke Teilabschnitt 2: Bockenheimer Warte - Ginnheim (geplant)
+Dⅲ,DⅢ,DIII;D-Strecke Teilabschnitt 3: Niederrad - Hauptbahnhof (nicht weiterverfolgt)
+Dⅳ,DⅣ,DIV;D-Strecke Teilabschnitt 4: Nordweststadt - Riedberg - Kalbach
