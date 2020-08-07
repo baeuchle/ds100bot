@@ -5,9 +5,6 @@
   "access": [{
     "x_source": "DS",
     "type": "&"
-  }, {
-    "x_source": "DS",
-    "type": "&"
   }],
   "magic_hashtags": [
     "DS100",

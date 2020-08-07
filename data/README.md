@@ -42,11 +42,11 @@ sein):
 
 - type [string]: Das Typenzeichen für diese Art von Listen. Momentan
   wird verwendet:
-  - \# für Orte und Betriebsstellen
-  - $ für Strecken
-  - % für Signale
-  - / für Linien
-  - &amp; für allgemeine Abkürzungen
+    - \# für Orte und Betriebsstellen
+    - $ für Strecken
+    - % für Signale
+    - / für Linien
+    - &amp; für allgemeine Abkürzungen
 - x\_source [string]: Die explizite Quellenangabe (siehe unten)
 
 Die explizite Quelle darf nur aus Großbuchstaben bestehen. Der Magic
