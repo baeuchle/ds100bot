@@ -18,16 +18,20 @@ Inhalt
 
 In der obersten Ebene müssen folgende Schlüssel vorhanden sein:
 
-- id (string): Gibt der Quelle einen eindeutigen Namen
-- access (liste, siehe unten)
-- data (liste, siehe unten)
+- id [string]: Gibt der Quelle einen eindeutigen Namen
+- access [liste]: siehe unten
+- data [liste]: siehe unten
+- magic\_hashtags [liste von strings]: Alle magic hashtags, unter denen
+  diese Quelle gefunden werden kann.  Muss wirklich eine **Liste von
+  Strings** sein, also mit eckigen Klammern: \[ "MHT1", "MHT2" \],
+  _auch wenn es nur einen Magic Hashtag gibt_.
 
 Folgende Schlüssel werden zusätzlich erkannt:
 
-- headline (string): Die Überschrift dieser Quelle. Wenn nicht
+- headline [string]: Die Überschrift dieser Quelle. Wenn nicht
   vorhanden, wird description benutzt, wenn auch nicht vorhanden, wird
   die id benutzt.
-- description (string): Der "Untertitel" der Quelle. Wenn nicht
+- description [string]: Der "Untertitel" der Quelle. Wenn nicht
   vorhanden, wird keiner benutzt.
  
 ### access
@@ -38,14 +42,11 @@ sein):
 
 - type [string]: Das Typenzeichen für diese Art von Listen. Momentan
   wird verwendet:
-  - \# für Orte und Betriebsstellen
-  - $ für Strecken
-  - % für Signale
-  - / für Linien
-  - &amp; für allgemeine Abkürzungen
-- m\_hashtag [string]: Der Magic Hashtag für diese Quelle, in dessen
-  Bereich ein Suchbegriff ohne explizit angegebene Quelle dieser Quelle
-  zugeordnet wird. (Ohne führendes \#!)
+    - \# für Orte und Betriebsstellen
+    - $ für Strecken
+    - % für Signale
+    - / für Linien
+    - &amp; für allgemeine Abkürzungen
 - x\_source [string]: Die explizite Quellenangabe (siehe unten)
 
 Die explizite Quelle darf nur aus Großbuchstaben bestehen. Der Magic
@@ -75,9 +76,9 @@ Folgende Schlüssel sind unbedingt erforderlich:
 
 Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
 
-- add [string] Spaltenname im CSV für zusätzliche Informationen. Diese
+- add [string]: Spaltenname im CSV für zusätzliche Informationen. Diese
   werden bisher an keiner Stelle ausgelesen und/oder verarbeitet.
-- alias [string] Wenn vorhanden, werden Schlüssel (aus Spalte 'short')
+- alias [string]: Wenn vorhanden, werden Schlüssel (aus Spalte 'short')
   aufgespalten und für jedes Resultat wird ein Datensatz mit gleicher
   Erklärung eingetragen.
 - delim [string, default ';']: Das Zeichen, mit dem Spalten im CSV
@@ -92,8 +93,8 @@ Folgende Schlüssel werden erkannt, wenn sie vorhanden sind:
   also mit eckigen Klammern: \[ "Kommentar1", "Kommentar2" \], _auch
   wenn es nur einen oder keinen Kommentar gibt_ (im letzten Fall kann
   man es einfach weglassen).
-- filter [liste, siehe unten]
-- license [siehe unten]
+- filter [liste]: siehe unten
+- license: siehe unten
 
 #### source
 

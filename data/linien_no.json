@@ -2,10 +2,12 @@
   "id": "linien_no",
   "headline": "SPV Norwegen",
   "access": [{
-    "m_hashtag": "_NO",
     "x_source": "NO",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_NO"
+  ],
   "data": [{
     "id": "linien_no",
     "short": "Linje",

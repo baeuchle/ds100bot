@@ -2,10 +2,12 @@
   "id": "linien_vab",
   "headline": "Buslinien Aschaffenburg",
   "access": [{
-    "m_hashtag": "_VAB",
     "x_source": "VAB",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_VAB"
+  ],
   "data": [{
     "id": "linien_vab_sa",
     "short": "Linie",

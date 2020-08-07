@@ -2,10 +2,12 @@
   "id": "strecken_ffm",
   "headline": "Stadtbahnstrecken Frankfurt",
   "access": [{
-    "m_hashtag": "_FFM",
     "x_source": "FFM",
     "type": "$"
   }],
+  "magic_hashtags": [
+    "_FFM"
+  ],
   "data": [{
     "id": "strecken_ffm",
     "short": "Abk",

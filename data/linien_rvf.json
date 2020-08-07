@@ -2,10 +2,12 @@
   "id": "linien_rvf",
   "headline": "Straßenbahnlinien Freiburg",
   "access": [{
-    "m_hashtag": "_RVF",
     "x_source": "RVF",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_RVF"
+  ],
   "data": [{
     "id": "linien_rvf",
     "short": "Linie",

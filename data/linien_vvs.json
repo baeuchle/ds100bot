@@ -2,10 +2,12 @@
   "id": "linien_vvs",
   "headline": "ÖPNV-Linien Stuttgart",
   "access": [{
-    "m_hashtag": "_STG",
     "x_source": "STG",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_STG"
+  ],
   "data": [{
     "id": "linien_vvs",
     "short": "Linie",

@@ -3,14 +3,19 @@
   "headline": "Eisenbahnbegriffe (Deutschland)",
   "description": "Abkürzungen aus Betriebsregelwerk des VDV und Ril 408 der Deutschen Bahn",
   "access": [{
-    "m_hashtag": "DS100",
-    "x_source": "DS",
-    "type": "&"
-  }, {
-    "m_hashtag": "_DE",
     "x_source": "DS",
     "type": "&"
   }],
+  "magic_hashtags": [
+    "DS100",
+    "_DE",
+    "DS301",
+    "_SH",
+    "_NI",
+    "_RMV",
+    "DV301",
+    "_TH"
+  ],
   "data": [{
     "id": "ril408",
     "short": "Abk",

@@ -2,18 +2,17 @@
   "id": "orte_at",
   "headline": "Österreichische Betriebsstellen",
   "access": [{
-    "m_hashtag": "_AT",
     "x_source": "AT",
     "type": "#"
   },{
-    "m_hashtag": "DB640",
-    "x_source": "AT",
-    "type": "#"
-  },{
-    "m_hashtag": "ÖBB",
     "x_source": "ÖBB",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_AT",
+    "DB640",
+    "ÖBB"
+  ],
   "data": [{
     "id": "orte_at",
     "short": "Abk",

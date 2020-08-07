@@ -2,10 +2,12 @@
   "id": "linien_bhvbus",
   "headline": "Bus Bremerhaven",
   "access": [{
-    "m_hashtag": "_BHV",
     "x_source": "BHV",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_BHV"
+  ],
   "data": [{
     "id": "linien_bhvbus",
     "short": "Linie",

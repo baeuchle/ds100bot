@@ -3,14 +3,16 @@
   "headline": "Linien Köln",
   "description": "Straßenbahnlinien im VRS in Köln",
   "access": [{
-    "m_hashtag": "_KÖLN",
     "x_source": "KÖ",
     "type": "/"
   }, {
-    "m_hashtag": "_KOELN",
     "x_source": "KOE",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_KÖLN",
+    "_KOELN"
+  ],
   "data": [{
     "short": "Linie",
     "long": "Laufweg",

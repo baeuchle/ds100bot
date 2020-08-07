@@ -2,10 +2,12 @@
   "id": "linien_bsag",
   "headline": "Straßenbahnlinien Bremen",
   "access": [{
-    "m_hashtag": "_HB",
     "x_source": "HB",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_HB"
+  ],
   "data": [{
     "id": "linien_bsag",
     "short": "Linie",

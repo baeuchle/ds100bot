@@ -56,6 +56,8 @@ for cid, config in configurations.items():
     for a in config.access:
         database.insert_source(a, cid, is_default)
         is_default = False # only first one.
+    for mht in config.magic_hashtags:
+        database.insert_magic_hashtag(cid, mht)
     for dl in config.data_list:
         if not database.insert_datalist(dl, cid):
             sys.exit(1)

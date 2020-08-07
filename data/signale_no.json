@@ -1,0 +1,21 @@
+{
+  "id": "signale_no",
+  "headline": "Norske signale",
+  "access": [{
+    "x_source": "NO",
+    "type": "%"
+  }],
+  "magic_hashtags": [
+    "_NO"
+  ],
+  "data": [{
+    "id": "signale_no",
+    "short": "Nummer",
+    "long": "Betydning",
+    "alias": ",",
+    "file": "sources/signale_no.csv",
+    "source": {
+      "name": "Trykk 401"
+    }
+  }]
+}

@@ -2,10 +2,12 @@
   "id": "orte_fr",
   "headline": "Französische Bahnhöfe",
   "access": [{
-    "m_hashtag": "_FR",
     "x_source": "FR",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_FR"
+  ],
   "data": [{
     "id": "orte_fr",
     "short": "Abréviation",

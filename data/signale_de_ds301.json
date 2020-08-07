@@ -3,18 +3,17 @@
   "headline": "Eisenbahnsignale Westdeutschland",
   "description": "DS301 der Deutschen Bahn",
   "access": [{
-    "m_hashtag": "DS301",
-    "x_source": "DS",
-    "type": "%"
-  }, {
-    "m_hashtag": "DS100",
-    "x_source": "DS",
-    "type": "%"
-  }, {
-    "m_hashtag": "_DE",
     "x_source": "DS",
     "type": "%"
   }],
+  "magic_hashtags": [
+    "DS301",
+    "DS100",
+    "_DE",
+    "_SH",
+    "_NI",
+    "_RMV"
+  ],
   "data": [{
     "id": "ds301",
     "short": "Abk",

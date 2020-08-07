@@ -3,10 +3,12 @@
   "description": "Eisenbahnbetriebsstellen Norwegen",
   "headline": "Betriebsstellen Norwegen",
   "access": [{
-    "m_hashtag": "_NO",
     "x_source": "NO",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_NO"
+  ],
   "data": [{
     "id": "orte_no",
     "short": "Fork",

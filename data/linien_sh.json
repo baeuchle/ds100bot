@@ -2,10 +2,12 @@
   "id": "linien_sh",
   "headline": "Regionalbahnlinien Schleswig-Holstein",
   "access": [{
-    "m_hashtag": "_SH",
     "x_source": "SH",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_SH"
+  ],
   "data": [{
     "id": "linien_sh",
     "short": "Linie",

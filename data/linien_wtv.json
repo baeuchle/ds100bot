@@ -2,10 +2,12 @@
   "id": "linien_wtv",
   "headline": "Bus Waldshuter TV",
   "access": [{
-    "m_hashtag": "_WTV",
     "x_source": "WTV",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_WTV"
+  ],
   "data": [{
     "id": "linien_wtv",
     "short": "Linie",

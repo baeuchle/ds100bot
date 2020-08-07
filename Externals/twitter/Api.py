@@ -101,7 +101,10 @@ class TwitterBase():
         return self.cursor(self.twit.home_timeline, since_id=highest_id)
 
     def hashtag(self, tag, highest_id):
-        return self.cursor(self.twit.search, q=tag, since_id=highest_id)
+        tweets = []
+        for ht in self.cursor(self.twit.search, q=tag, since_id=highest_id):
+            tweets.append(self.get_tweet(ht.id))
+        return tweets
 
     def cursor(self, task, **kwargs):
         kwargs['tweet_mode'] = 'extended'

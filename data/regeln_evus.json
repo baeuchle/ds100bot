@@ -3,10 +3,12 @@
   "headline": "Eisenbahnverkehrsunternehmen",
   "description": "Alle in der EU registrierten Eisenbahnverkehrsunternehmen",
   "access": [{
-    "m_hashtag": "_EVU",
     "x_source": "EVU",
     "type": "&"
   }],
+  "magic_hashtags": [
+    "_EVU"
+  ],
   "data": [{
     "id": "evu_liste",
     "short": "UNIQUE",

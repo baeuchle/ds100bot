@@ -96,9 +96,7 @@ class Licenses(MarkdownDoc):
                     'href': '/dumps/' + source.id + '.html'
                 }).text = source.id
                 mht_container = ET.SubElement(tr, 'td', attrib=rowspan)
-                mht_container.text = ', '.join(
-                    set('#{}'.format(a.magic_hashtag) for a in source.access)
-                )
+                mht_container.text = ', '.join(source.magic_hashtags)
                 if source.id == 'bot':
                     mht_container.text = 'N/A'
             if not dl == source.data_list[-1]:

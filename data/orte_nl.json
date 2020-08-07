@@ -2,10 +2,12 @@
   "id": "orte_nl",
   "headline": "Niederländische Betriebsstellen",
   "access": [{
-    "m_hashtag": "_NL",
     "x_source": "NL",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_NL"
+  ],
   "data": [{
     "id": "orte_nl",
     "short": "Abk",

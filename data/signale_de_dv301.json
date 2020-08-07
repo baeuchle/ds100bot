@@ -3,10 +3,13 @@
   "headline": "Eisenbahnsignale Ostdeutschland",
   "description": "DV301 der Deutschen Bahn",
   "access": [{
-    "m_hashtag": "DV301",
     "x_source": "DV",
     "type": "%"
   }],
+  "magic_hashtags": [
+    "DV301",
+    "_TH"
+  ],
   "data": [{
     "id": "dv301",
     "short": "Abk",

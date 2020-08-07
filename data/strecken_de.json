@@ -2,14 +2,16 @@
   "id": "strecken_de",
   "description": "Eisenbahnstrecken Deutschland",
   "access": [{
-    "m_hashtag": "DS100",
     "x_source": "DS",
     "type": "$"
   }, {
-    "m_hashtag": "_DE",
     "x_source": "DE",
     "type": "$"
   }],
+  "magic_hashtags": [
+    "DS100",
+    "_DE"
+  ],
   "data": [{
     "id": "vzg",
     "short": "STRNR",

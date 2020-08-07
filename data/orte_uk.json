@@ -2,10 +2,12 @@
   "id": "orte_uk",
   "headline": "Betriebsstellen Großbritannien",
   "access": [{
-    "m_hashtag": "_UK",
     "x_source": "UK",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_UK"
+  ],
   "data": [{
     "id": "orte_uk_crs",
     "short": "CRS Code",

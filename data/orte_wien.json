@@ -2,10 +2,12 @@
   "id": "orte_wien",
   "headline": "Haltestellen Wien",
   "access": [{
-    "m_hashtag": "_W",
     "x_source": "W",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_W"
+  ],
   "data": [{
     "id": "orte_wien",
     "short": "Abk",
