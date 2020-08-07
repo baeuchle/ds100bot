@@ -63,6 +63,7 @@ class Result:
                 shortstore
             JOIN sources AS s1 ON s1.source_id = shortstore.source
             JOIN sources AS s2 ON s1.source_id = s2.source_id
+            JOIN magic_hashtags ON magic_hashtags.source_id = shortstore.source
             LEFT OUTER JOIN blacklist ON blacklist.Abk = shortstore.Abk AND s1.type = '#'
             WHERE
                 shortstore.Abk = :abbr
@@ -71,7 +72,7 @@ class Result:
                 (:explicit_source != '' AND s1.explicit_source = :explicit_source)
                 OR
                 (:explicit_source == ''
-                AND (s1.magic_hashtag = :magic_hashtag
+                AND (magic_hashtags.magic_hashtag = :magic_hashtag
                 OR s1.explicit_source = 'BOT'
                 )
                 ))

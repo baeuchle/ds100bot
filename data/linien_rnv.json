@@ -2,10 +2,12 @@
   "id": "linien_rnv",
   "headline": "Straßenbahnlinien des RNV",
   "access": [{
-    "m_hashtag": "_RNV",
     "x_source": "RNV",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_RNV"
+  ],
   "data": [{
     "id": "linien_rnv",
     "short": "Nummer",

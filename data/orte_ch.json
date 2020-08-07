@@ -2,10 +2,12 @@
   "id": "orte_ch",
   "headline": "Schweizer Betriebsstellen",
   "access": [{
-    "m_hashtag": "_CH",
     "x_source": "CH",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_CH"
+  ],
   "data": [{
     "id": "orte_ch",
     "short": "Abkuerzung",

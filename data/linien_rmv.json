@@ -2,10 +2,12 @@
   "id": "linien_rmv",
   "headline": "SPNV Rhein-Main-Verkehrsverbund",
   "access": [{
-    "m_hashtag": "_RMV",
     "x_source": "RMV",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_RMV"
+  ],
   "data": [{
     "id": "linien_rmv",
     "short": "Liniennummer",

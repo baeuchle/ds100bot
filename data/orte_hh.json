@@ -2,10 +2,12 @@
   "id": "orte_hamburg",
   "headline": "Haltestellen Hochbahn Hamburg",
   "access": [{
-    "m_hashtag": "_HH",
     "x_source": "HH",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_HH"
+  ],
   "data": [{
     "id": "orte_hh",
     "short": "Abk",

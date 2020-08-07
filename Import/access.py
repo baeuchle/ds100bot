@@ -8,7 +8,6 @@ class Access:
     # pylint: disable=R0903
     _mandatory_fields = (
         'type',
-        'm_hashtag',
         'x_source'
     )
 
@@ -19,5 +18,4 @@ class Access:
                 msg = "Key access::{} missing".format(mf)
                 raise JsonError(msg)
         self.type = self.conf['type']
-        self.magic_hashtag = self.conf['m_hashtag']
         self.explicit_source = self.conf['x_source']

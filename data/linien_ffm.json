@@ -3,10 +3,12 @@
   "headline": "Linien Frankfurt",
   "description": "Stadtbahn- und Straßenbahnlinien der <a href=\"https://vgf-ffm.de\">VGF</a>",
   "access": [{
-    "m_hashtag": "_FFM",
     "x_source": "FFM",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_FFM"
+  ],
   "data": [{
     "id": "linien_ffm",
     "short": "Nummer",

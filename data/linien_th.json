@@ -2,10 +2,12 @@
   "id": "linien_th",
   "headline": "SPNV Thüringen",
   "access": [{
-    "m_hashtag": "_TH",
     "x_source": "TH",
     "type": "/"
-  }],
+ }],
+  "magic_hashtags": [
+    "_TH"
+  ],
   "data": [{
     "id": "linien_th",
     "short": "Linie",

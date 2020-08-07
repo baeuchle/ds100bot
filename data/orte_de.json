@@ -3,14 +3,16 @@
   "description": "Eisenbahnbetriebsstellen, Bahnhöfe und Haltepunkte in Deutschland",
   "headline": "Deutsche Betriebsstellen",
   "access": [{
-    "m_hashtag": "DS100",
     "x_source": "DS",
     "type": "#"
   }, {
-    "m_hashtag": "_DE",
     "x_source": "DE",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "DS100",
+    "_DE"
+  ],
   "data": [{
     "id": "ds100",
     "short": "Abk",

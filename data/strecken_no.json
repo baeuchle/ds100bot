@@ -2,10 +2,12 @@
   "id": "strecken_no",
   "headline": "Strecken Norwegen",
   "access": [{
-    "m_hashtag": "_NO",
     "x_source": "NO",
     "type": "$"
   }],
+  "magic_hashtags": [
+    "_NO"
+  ],
   "data": [{
     "id": "strecken_no",
     "short": "Blad",

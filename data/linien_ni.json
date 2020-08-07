@@ -2,10 +2,12 @@
   "id": "linien_ni",
   "headline": "Regionalbahnlinien Niedersachsen",
   "access": [{
-    "m_hashtag": "_NI",
     "x_source": "NI",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_NI"
+  ],
   "data": [{
     "id": "linien_ni",
     "short": "Linie",

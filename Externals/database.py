@@ -27,9 +27,7 @@ class Database:
             SELECT
                 distinct(magic_hashtag)
             FROM
-                sources
-            WHERE
-                magic_hashtag IS NOT NULL
+                magic_hashtags
         """)
         results = ["#" + row[0] for row in self.cursor.fetchall()]
         return "(" + (" OR ".join(results)) + ")", results
@@ -142,24 +140,36 @@ class Database:
         log_.info("Purging old data...")
         self.cursor.execute("DELETE FROM shortstore")
         self.cursor.execute("DELETE FROM sources")
+        self.cursor.execute("DELETE FROM magic_hashtags")
 
     def insert_source(self, access, source_id, is_def):
         self.cursor.execute("""
             INSERT INTO sources(
                 source_id,
                 type,
-                magic_hashtag,
                 explicit_source,
                 is_default
-            ) VALUES (?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?)
         """,
             (source_id,
             access.type,
-            access.magic_hashtag,
             access.explicit_source,
             is_def
             )
         )
+
+    def insert_magic_hashtag(self, source_id, mht):
+        self.cursor.execute("""
+            INSERT INTO magic_hashtags(
+                source_id,
+                magic_hashtag
+            ) VALUES (?, ?)
+        """,
+            (source_id,
+             mht
+            )
+        )
+
 
     def insert_datalist(self, data_list, source_id):
         for row in data_list:

@@ -2,10 +2,12 @@
   "id": "signale_no",
   "headline": "Norske signale",
   "access": [{
-    "m_hashtag": "_NO",
     "x_source": "NO",
     "type": "%"
   }],
+  "magic_hashtags": [
+    "_NO"
+  ],
   "data": [{
     "id": "signale_no",
     "short": "Nummer",

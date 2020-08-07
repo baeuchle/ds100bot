@@ -2,10 +2,12 @@
   "id": "bot",
   "headline": "Informationen über den Bot",
   "access": [{
-    "m_hashtag": null,
     "x_source": "BOT",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "BOTINFO"
+  ],
   "data": [{
     "id": "bot",
     "short": "Abk",

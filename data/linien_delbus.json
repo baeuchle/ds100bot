@@ -2,10 +2,12 @@
   "id": "linien_delbus",
   "headline": "Bus Delmenhorst",
   "access": [{
-    "m_hashtag": "_DEL",
     "x_source": "DEL",
     "type": "/"
   }],
+  "magic_hashtags": [
+    "_DEL"
+  ],
   "data": [{
     "id": "linien_delbus",
     "short": "Linie",

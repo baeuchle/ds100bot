@@ -20,9 +20,12 @@ CREATE TABLE IF NOT EXISTS "shortstore" (
 CREATE TABLE IF NOT EXISTS "sources" (
   "source_id" TEXT NOT NULL,
   "type" TEXT,
-  "magic_hashtag" TEXT,
   "explicit_source" TEXT NOT NULL,
   "is_default" INTEGER NOT NULL DEFAULT 0 CHECK(is_default in (0,1))
+);
+CREATE TABLE IF NOT EXISTS "magic_hashtags" (
+  "source_id" TEXT NOT NULL,
+  "magic_hashtag" TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS "blacklist" (
   `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,

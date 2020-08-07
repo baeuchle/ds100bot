@@ -3,10 +3,12 @@
   "headline": "Straßenbahnsignale",
   "description": "BOStrab",
   "access": [{
-    "m_hashtag": "BOSTRAB",
     "x_source": "BO",
     "type": "%"
   }],
+  "magic_hashtags": [
+    "BOSTRAB"
+  ],
   "data": [{
     "id": "bostrab",
     "short": "Abk",

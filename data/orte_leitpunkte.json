@@ -3,10 +3,12 @@
   "headline": "Leitpunkte Deutschland",
   "description": "Wegepunkte auf Fahrkartencodes",
   "access": [{
-    "m_hashtag": "_LP",
     "x_source": "LP",
     "type": "#"
   }],
+  "magic_hashtags": [
+    "_LP"
+  ],
   "data": [{
     "id": "leitpunkte",
     "short": "Abk",
