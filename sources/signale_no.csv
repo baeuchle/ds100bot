@@ -1,0 +1,84 @@
+Nummer;Betydning
+1;Stopp
+2;Varsom
+3,3a;Innkjør
+3b;Passér
+4;Klar linje
+5;Avgang
+6;Tilsett bremsen
+7;Løs bremsen
+8;Kjør fram forbi middel
+9;Kryssende tog er kommet
+20,20a,20b;Stopp
+21;Kjør (avvikelse over en eller flere sporveksler)
+22;Kjør (uten avvikende togveksel)
+23;Stopp (Forsignal)
+24;Kjør (avvikelse over en eller flere sporveksler) (Forsignal)
+25;Kjør (uten avvikende togveksel) (Forsignal)
+31;Kjør (Hjelpesignal)
+32;Vanskelig Togvei (Hjelpesignal)
+34;Spornummersignal
+35;Hovedlinjesignal
+36;Togsportsignal
+36a;Togsportsignal (fra avviketogspor)
+36b;Togsportsignal (fra hovedtogspor)
+37;Tillset bremsen
+38;Løs bremsen
+39;Avgang
+41,43;Skifting forbudt
+42,45;Skifting tillatt
+44;Varsom skifting tillatt
+46;Frigitt for lokal skifting
+48;Stopp
+49;Kjør fram
+50;Bakk
+51a;Rett fram
+51b;Fra avvikespor
+51c;Til venstre
+51d;Til høyre
+52a;Fra venstre til høyre
+52b;Fra høyre til venstre
+52c;Fra venstre til venstre
+52d;Fra høyre til høyre
+53;Sporet sperret
+54;Sporet fritt
+55;Stopp foran planovergangen
+56;Planovergangen kan passeres
+57;Planovergangsignalet viser "Stopp foran planovergangen"
+58;Planovergangsignalet viser "Planovergangen kan passeres"
+59;Rasfare
+60;Tog kan passere rasfarestrekning
+65a;Jordet seksjon
+65b;Varslesignal for signal 65c og 65e
+65c;Utkopling foran død seksjon
+65d;Innkoppling etter død seksjon
+65e;Senking av strømavtaker
+65f;Heving av strømavtaker
+65g;Stopp for elektrisk lokomotiv
+66;Togvei slutt
+67;Orienteringsignal
+67a;Orienteringsignal
+67b;Orienteringsignal for planovergang
+67c;Orienteringsignal for holdeplass
+67d;Orienteringsignal for planovergang og holdeplass
+68;Hastighetssignaler
+68a;Nedsatt kjørehastighet
+68b;Økt kjørehastighet
+68c;Avvikende nedsatt kjørehastighet
+68d;Avvikende økt kjørehastighet
+69;Midlertidig hastighetsignal
+69a;Midlertidig kjørehastighet
+69b;Midlertidig hastighet opphører
+76;Stopp
+78;Ingen avstigning
+80;Gi akt og bemerket
+81;Bremser på
+82;Stopp
+83;Tog kommer
+84;Bremser av
+85;Beredt
+86;Alarm, faresignal
+87;Kjøretillatelse mottatt
+90;Forlamper
+91;Baklamper
+95;Sluttsignal
