@@ -2,12 +2,6 @@ CREATE TABLE IF NOT EXISTS "last" (
   `subject` TEXT NOT NULL,
   `content` TEXT
 );
-CREATE TABLE IF NOT EXISTS "requests" (
-  `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-  `ds100_id` TEXT NOT NULL,
-  `request_date` TEXT NOT NULL,
-  `status` INTEGER
-);
 CREATE TABLE IF NOT EXISTS "shortstore" (
   `id` TEXT NOT NULL,
   `Abk` TEXT NOT NULL,
