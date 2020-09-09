@@ -32,3 +32,13 @@ CREATE TABLE IF NOT EXISTS "blacklist" (
   `source` TEXT NOT NULL,
   `Abk` TEXT NOT NULL
 );
+CREATE TABLE "requestlog" (
+  "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+  "explicit_source" TEXT,
+  "active_magic" TEXT NOT NULL,
+  "type" TEXT,
+  "abbreviation" TEXT NOT NULL,
+  "request_date" TEXT NOT NULL,
+  "derived_source" TEXT NOT NULL,
+  "status" TEXT NOT NULL
+);
