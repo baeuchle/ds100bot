@@ -2,7 +2,7 @@ Abk;Name
 REKURSION;Siehe bitte #REKURSION
 TOGGLE;Siehe bitte #UMSCHALTEN
 UMSCHALTEN;Siehe bitte #TOGGLE
-RTFM,MAN,HELP,HILF,HILFE,USAGE,HOWTO;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
+RTFM,MAN,HELP,HILF,HILFE,HOWTO;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
 NAZI;Raus! Die Benutzung dieses Bots ist Nazis untersagt
 NAZIS;Alle Raus! Die Benutzung dieses Bots ist Nazis untersagt
 FCKNZS;Nazis Raus! Die Benutzung dieses Bots ist Nazis untersagt
@@ -26,9 +26,7 @@ XXX;This bot is not x-rated
 NSFW;Dieser Bot ist Safe for Work
 BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN). Siehe https://ds100.frankfurtium.de/dumps/blacklist.html
 NEUEDATEN,BEITRAGEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
-FAQ;Häufig gestellte Fragen sind unter https://ds100.frankfurtium.de/faq.html beantwortet.
-BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er statt dessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
-POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Komatibel. Siehe #HELP.
+POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Kompatibel. Siehe #HELP.
 PEOPLE;Der echte Mensch hinter dem Bot ist @baeuchle. @fips_schneider hilft manchmal aus.
 ANTIGNOSE;Der Vorhersagealgorithmus für Verspätungen der Deutschen Bahn. *Pro*gnose kann man das nämlich nicht nennen.
 COVID19,SARS COV 2,CORONA;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).

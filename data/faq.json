@@ -1,0 +1,20 @@
+{
+  "id": "faq",
+  "headline": "FAQs",
+  "access": [{
+    "x_source": "FAQ",
+    "type": "#"
+  }],
+  "magic_hashtags": [
+    "BOTFAQ"
+  ],
+  "data": [{
+    "id": "faq",
+    "short": "Abk",
+    "long": "Name",
+    "file": "sources/faq.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    }
+  }]
+}

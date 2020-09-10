@@ -67,8 +67,7 @@ licpage.write(output_dir / 'copyright.html')
 Documentation.dump_blacklist(dumplinks, navilinks, database, dump_dir)
 database.close_sucessfully()
 
-subprocess.run(['chmod', '-R', '664', str(output_dir)], check=False)
-subprocess.run(['chmod', '-R', '+X', str(output_dir)], check=False)
+subprocess.run(['chmod', '-R', 'ug=rwX,o=rX', str(output_dir)], check=False)
 target_dir = Path('/var/www/ds100/')
 avatar_dir = Path('/var/www/avatar/')
 if target_dir.exists():

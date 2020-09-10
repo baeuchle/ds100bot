@@ -1,0 +1,13 @@
+Abk;Name
+LEERZEICHEN;Leerzeichen in offiziellen Kürzeln müssen durch _ ersetzt werden. Abkürzungen mit Leerzeichen zu erkennen, widerspricht #NOSPAM. Leerzeichen weglassen wird uneindeutig: https://ds100.frankfurtium.de/leerzeichen_ds100.html
+GROSSKLEIN;Groß- und Kleinbuchstaben müssen wie in der jeweiligen Quelle benutzt werden, z.B. ALLES GROß für die DS100.
+SIGNAL;Signallisten werden mit % aktiviert. Zum Merken denke man an ein Form-%Vr2, das so ein bisschen wie ein % aussieht.
+STRECKE;Streckenlisten werden mit $ aktiviert, z.B. $1733
+LINIE;Linienlisten werden mit / aktiviert, z.B. /ICE20
+MAGICCHAR;Je nach Art der Abkürzungslisten werden unterschiedliche Anfangszeichen benutzt: # für Orte, $ für Strecken, % für Signale, / für Linien, & für andere Abkürzungen.
+STELLWERK;Auf Stellwerken stehen oft Abkürzungen. Diese sind meistens aus Anfangsbuchstaben des Ortes + "f" oder "w" gebildet: *F*ahrdienstleiterin und *W*ärterin. Die Abkürzungen sind höchstens in der direkten Umgebung eindeutig und nicht im Bot hinterlegt.
+WIEDERHOLUNG;Der Bot beantwortet jeden Tweet, in dem etwas Beantwortbares ist, auch wenn er den Tweet davor auch schon mit dem gleichen Kürzel beantwortet hat. Threads erkennen und auf Wiederholungen nicht mehr zu reagieren, ist sehr aufwändig, daher bleibt das vorerst so.
+REPLY;Der Bot findet ungekennzeichnete Tweets von Accounts, denen er folgt, nicht, wenn diese Tweets auf jemanden Antworten, dem der Bot *nicht* folgt, genauso, wie man solche Tweets in seiner eigenen Timeline auch nicht sieht. Mit Markierung (@_ds_100 oder #DS100) klappt's.
+USAGE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
+BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er stattdessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
+DARFICH;Ja, du darfst diesen Bot benutzen, wenn du kein Nazi bist. Siehe #TERMS.

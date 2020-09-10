@@ -38,7 +38,7 @@ class Database:
                 status AS status,
                 count(status) AS count
             FROM
-                requests
+                requestlog
             WHERE
                 request_date >= ?
             GROUP BY
@@ -53,13 +53,9 @@ class Database:
                 count(short) AS C
             FROM (
                 SELECT
-                    CASE
-                        WHEN SUBSTR(ds100_id, 1, 1) = '#' THEN REPLACE(ds100_id, '#:', '#DS:')
-                        WHEN SUBSTR(ds100_id, 1, 1) = '$' THEN REPLACE(ds100_id, '$:', '$DS:')
-                        ELSE '#DS:' || ds100_id
-                    END AS short
+                    type || derived_source || ':' || abbreviation AS short
                 FROM
-                    requests
+                    requestlog
                 WHERE
                     status = 'found'
                     AND
@@ -67,33 +63,24 @@ class Database:
             )
             GROUP BY S
             ORDER BY C DESC
-            LIMIT 0, 20
+            LIMIT 0, 15
         """, (since, ))
         return self.cursor.fetchall()
 
     def popular_sources(self, since):
         self.cursor.execute("""
             SELECT
-                source AS S,
-                count(source) AS C
-            FROM (
-                SELECT
-                    CASE
-                        WHEN ds100_id LIKE '#:%' THEN 'DS'
-                        WHEN ds100_id LIKE '$:%' THEN 'DS'
-                        WHEN ds100_id LIKE '%:%' THEN substr(ds100_id, 2, instr(ds100_id, ':') - 2)
-                        ELSE 'DS'
-                    END AS source
-                FROM
-                    requests
-                WHERE
-                    status = 'found'
-                    AND
-                    request_date >= ?
-            )
+                derived_source AS S,
+                count(derived_source) AS C
+            FROM
+                requestlog
+            WHERE
+                status = 'found'
+                AND
+                request_date >= ?
             GROUP BY S
             ORDER BY C DESC
-            LIMIT 0, 20
+            LIMIT 0, 7
         """, (since, ))
         return self.cursor.fetchall()
 
@@ -208,17 +195,26 @@ class Database:
         try:
             self.cursor.execute("""
                 INSERT INTO
-                    requests(
-                        ds100_id
-                      , request_date
-                      , status
-                        )
-                    VALUES (?,?,?)
-                """,
-                   (result.default_source + '::' + result.abbr
-                  , datetime.datetime.today().strftime('%Y%m%d')
-                  , result.status
-                  , ))
+                    requestlog(
+                        explicit_source,
+                        active_magic,
+                        type,
+                        abbreviation,
+                        derived_source,
+                        request_date,
+                        status
+                    )
+                    VALUES (?,?,?,?,?,?,?)
+            """,
+             (result.candidate.explicit_source
+            , result.candidate.magic_hashtag
+            , result.candidate.type_character
+            , result.abbr
+            , result.default_source
+            , datetime.datetime.today().strftime('%Y%m%d')
+            , result.status
+            ,
+            ))
         except sqlite3.Error as sqle:
             log_.error("Cannot insert request: %s", sqle)
             log_.error("Missing data: %s %s %s",
