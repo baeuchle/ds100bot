@@ -28,7 +28,7 @@ BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werde
 NEUEDATEN,BEITRAGEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
 FAQ;Häufig gestellte Fragen sind unter https://ds100.frankfurtium.de/faq.html beantwortet.
 BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er stattdessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
-POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Komatibel. Siehe #HELP.
+POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Kompatibel. Siehe #HELP.
 PEOPLE;Der echte Mensch hinter dem Bot ist @baeuchle. @fips_schneider hilft manchmal aus.
 ANTIGNOSE;Der Vorhersagealgorithmus für Verspätungen der Deutschen Bahn. *Pro*gnose kann man das nämlich nicht nennen.
 COVID19,SARS COV 2,CORONA;Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).
