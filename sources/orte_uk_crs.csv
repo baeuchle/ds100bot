@@ -426,6 +426,7 @@ Camberley,CAM
 Camborne,CBN
 Cambridge,CBG
 Cambridge Heath,CBH
+Cambridge North,CMB
 Cambuslang,CBL
 Camden Road,CMD
 Camelon,CMO
@@ -578,6 +579,7 @@ Coombe Junction Halt,COE
 Copplestone,COP
 Corbridge,CRB
 Corby,COR
+Corfe Castle,CFC
 Corkerhill,CKH
 Corkickle,CKL
 Corpach,CPA
@@ -1177,6 +1179,7 @@ Hooton,HOO
 Hope (Derbyshire),HOP
 Hope (Flintshire),HPE
 Hopton Heath,HPT
+Horden,HRE
 Horley,HOR
 Hornbeam Park,HBP
 Hornsey,HRN
@@ -1217,6 +1220,7 @@ Hythe (Essex),HYH
 IBM Halt,IBM
 Ifield,IFI
 Ilford,IFD
+Ilkeston,ILN
 Ilkley,ILK
 Imperial Wharf,IMW
 Ince & Elton,INE
@@ -1254,6 +1258,7 @@ Kempton Park Racecourse,KMP
 Kemsing,KMS
 Kemsley,KML
 Kendal,KEN
+Kenilworth,KNW
 Kenley,KLY
 Kennett,KNE
 Kennishead,KNS
@@ -1475,6 +1480,7 @@ Lostock Hall,LOH
 Lostwithiel,LOS
 Loughborough,LBO
 Loughborough Junction,LGJ
+Low Moor,LMR
 Lowdham,LOW
 Lower Sydenham,LSY
 Lowestoft,LWT
@@ -1494,6 +1500,7 @@ Machynlleth,MCN
 Maesteg,MST
 Maesteg (Ewenny Road),MEW
 Maghull,MAG
+Maghull North,MNS
 Maiden Newton,MDN
 Maidenhead,MAI
 Maidstone Barracks,MDB
@@ -1550,6 +1557,7 @@ Menston,MNN
 Meols,MEO
 Meols Cop,MEC
 Meopham,MEP
+Meridian Water,MRW
 Merryton,MEY
 Merstham,MHM
 Merthyr Tydfil,MER
@@ -1700,7 +1708,6 @@ Northfleet,NFL
 Northolt Park,NLT
 Northumberland Park,NUM
 Northwich,NWI
-Norton Bridge,NTB
 Norwich,NRW
 Norwood Junction,NWD
 Nottingham,NOT
@@ -1922,6 +1929,7 @@ Riding Mill,RDM
 Risca & Pontymister,RCA
 Rishton,RIS
 Robertsbridge,RBR
+Robroyston,RRN
 Roby,ROB
 Rochdale,RCD
 Roche,ROC
@@ -2387,6 +2395,7 @@ Warminster,WMN
 Warnham,WNH
 Warrington Bank Quay,WBQ
 Warrington Central,WAC
+Warrington West,WAW
 Warwick,WRW
 Warwick Parkway,WRP
 Water Orton,WTO
@@ -2537,6 +2546,7 @@ Wootton Wawen,WWW
 Worcester Foregate Street,WOF
 Worcester Park,WCP
 Worcester Shrub Hill,WOS
+Worcestershire Parkway,WOP
 Workington,WKG
 Worksop,WRK
 Worle,WOR
