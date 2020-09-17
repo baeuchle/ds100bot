@@ -11,5 +11,5 @@ REPLY;Der Bot findet ungekennzeichnete Tweets von Accounts, denen er folgt, nich
 USAGE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
 BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er stattdessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
 DARFICH;Ja, du darfst diesen Bot benutzen, wenn du kein Nazi bist. Siehe #TERMS.
-QUELLENWAHL;Der Bot findet alle Tweets mit Magic Hashtag [MHT] (z.B. #_CH für 🇨🇭, dann kann man #BN für Bern benutzen). Mit anderem MHT, z.B. #DS100, oder Erwähnung, @_ds_100, oder Antwort, in der der Bot erwähnt wird, kann man #CH:BN benutzen.
-STANDARDQUELLE;Beim Folgenlassen oder einfach erwähnen interpretiert der Bot normale Hashtags wie #HE als deutsch (= als DS100-Abkürzung). Man kann entweder Magic Hashtag benutzen (#_CH #HE) oder Quellenkürzel dazu (#CH:HE), wenn man eine andere Quelle (hier: DIDOK aus 🇨🇭) meint.
+QUELLENWAHL;Der Bot findet alle Tweets mit Magic Hashtag [MHT] (z.B. #_CH für 🇨🇭, dann wird aus #BN Bern). Mit anderem MHT, z.B. #DS100/Erwähnung, @_ds_100/Antwort, in der der Bot erwähnt wird, kann man #CH:BN benutzen.
+STANDARDQUELLE;Bei Folgenlassen/Erwähnen interpretiert der Bot Hashtags wie #HE als 🇩🇪 (= DS100-Abkürzung). Für andere Quelle (Bsp: DIDOK aus 🇨🇭): Magic Hashtag benutzen (#_CH #HE) oder Quellenkürzel dazu (#CH:HE)
