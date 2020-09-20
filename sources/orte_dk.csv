@@ -1,0 +1,940 @@
+BANENR;TIB;HVDSTRK;STRKAFS;TRINBRAET;NAVN;FORKORTELSE;FRAKM;TILKM;STATIONSMIDTE;BANEKLASSE;BTRTYPE;BEMAERKNING;SORT_ORDER;FILTER
+11a;1,6,10,11;1;11000;;København H;Kh;0;1,685;0;Hovedbane;Station;;1;STED
+11a;1;1;12002;;København H - Hvidovre Fjern;Kh-Hif;1,685;6,23;;Hovedbane;Fri Bane;;2;3
+11a;1;1;12002;12003;Valby;Val;;;3,925;Hovedbane;Trinbræt;;3;STED
+11a;1,11;1;12007;;Hvidovre Fjern;Hif;6,23;8,37;7,3;Hovedbane;Teknisk Station;;4;STED
+11a;1;1;12010;;Hvidovre Fjern - Glostrup;Hif-Gl;8,37;10,594;;Hovedbane;Fri Bane;;5;4
+11a;1;1;12011;;Glostrup;Gl;10,594;12,526;11,214;Hovedbane;Station;;6;STED
+11a;1;1;12014;;Glostrup - Høje Taastrup;Gl-Htå;12,526;18,204;;Hovedbane;Fri Bane;;7;3
+11b;1;1;12019;;Høje Taastrup;Htå;18,204;20,987;19,5;Hovedbane;Station;;8;STED
+11b;;1;12519;;Høje Taastrup kombiterminal;Htås;20,92;22,005;;Hovedbane;Kombiterminal;;9;STED
+11b;1;1;12022;;Høje Taastrup - Roskilde;Htå-Ro;20,987;30,089;;Hovedbane;Fri Bane;;10;4
+11b;1;1;12022;12025;Hedehusene;Hh;;;24,176;Hovedbane;Trinbræt;;11;STED
+11b;1;1;12022;12029;Trekroner;Trk;;;28,3;Hovedbane;Trinbræt;;12;STED
+11b;1,4,5;1;13000;;Roskilde;Ro;30,089;32,927;31,253;Hovedbane;Station;;13;STED
+12;1;1;14034;;Roskilde - Viby Sjælland;Ro-Vy;32,927;41,592;;Hovedbane;Fri Bane;;14;3
+12;1;1;14043;;Viby Sjælland;Vy;41,592;43,547;42,475;Hovedbane;Station;;15;STED
+12;1;1;14044;;Viby Sjælland - Borup;Vy-Bo;43,547;48,802;;Hovedbane;Fri Bane;;16;3
+12;1;1;14049;;Borup;Bo;48,802;50,55;49,725;Hovedbane;Station;;17;STED
+12;1;1;14052;;Borup - Kværkeby;Bo-Ky;50,55;55,913;;Hovedbane;Fri Bane;;18;3
+12;1;1;14057;;Kværkeby;Ky;55,913;57,781;56,605;Hovedbane;Teknisk Station;;19;STED
+12;1;1;14058;;Kværkeby - Ringsted;Ky-Rg;57,781;61,494;;Hovedbane;Fri Bane;;20;3
+12;1,2,6;1;15000;;Ringsted;Rg;61,494;65,332;63,904;Hovedbane;Station;;21;STED
+13;1;1;16066;;Ringsted - Fjenneslev;Rg-Fj;65,332;70,608;;Hovedbane;Fri Bane;;22;3
+13;1;1;16071;;Fjenneslev;Fj;70,608;72,792;71,5;Hovedbane;Teknisk Station;;23;STED
+13;1;1;16074;;Fjenneslev - Sorø;Fj-So;72,792;77,555;;Hovedbane;Fri Bane;;24;3
+13;1;1;16079;;Sorø;So;77,555;79,505;78,342;Hovedbane;Station;;25;STED
+13;1;1;16080;;Sorø - Slagelse;So-Sg;79,505;91,803;;Hovedbane;Fri Bane;;26;3
+13;1,615;1;16093;;Slagelse;Sg;91,803;94,169;92,91;Hovedbane;Station;;28;STED
+13;1;1;16096;;Slagelse - Forlev;Sg-Fo;94,169;99,604;;Hovedbane;Fri Bane;;29;3
+13;1;1;16101;;Forlev;Fo;99,604;101,803;100;Hovedbane;Teknisk Station;;30;STED
+13;1;1;16102;;Forlev - Korsør;Fo-Kø;101,803;107,183;;Hovedbane;Fri Bane;;31;3
+14;1;1;16111;;Korsør;Kø;107,183;109,882;108,268;Hovedbane;Station;;32;STED
+14;1;1;16114;;Korsør - Sprogø;Kø-Spr;109,882;119,401;;Hovedbane;Fri Bane;;33;3
+14;1;1;16121;;Sprogø;Spr;119,401;121,579;120,2;Hovedbane;Teknisk Station;;34;STED
+14;1;1;16124;;Sprogø - Nyborg;Spr-Ng;121,579;129,843;;Hovedbane;Fri Bane;;35;4
+14;1;1;16127;;Nyborg;Ng;129,843;132,968;131,6;Hovedbane;Station;;36;STED
+20;6;2;20006;;Vigerslev - Avedøre Havnevej;Ig-Avh;6,33;9,061;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;37;3
+20;6;2;20009;;Avedøre Havnevej;Avh;9,061;9,201;9,131;Hovedbane;Teknisk Station;Ig-Rg, ATC 072008 i ProArc 020999;38;STED
+20;6;2;20010;;Avedøre Havnevej - Kildebrønde;Avh-Kib;9,201;20,82;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;39;4
+20;6;2;20021;;Kildebrønde;Kib;20,82;22,552;21,686;Hovedbane;Teknisk Station;Ig-Rg, ATC 072008 i ProArc 020999;40;STED
+20;6;2;20024;;Kildebrønde - Jersie Fjern;Kib-Jsf;22,552;31,966;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;41;4
+20;6;2;20033;;Jersie Fjern;Jsf;31,966;33,529;32,748;Hovedbane;Teknisk Station;Ig-Rg, ATC 072008 i ProArc 020999;42;STED
+20;6;2;20034;;Jersie Fjern - Køge Nord;Jsf-Kjn;33,529;34,092;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;43;4
+20;6;2;21000;;Køge Nord;Kjn;34,092;36,426;35,306;Hovedbane;Station;Ig-Rg, ATC 072008 i ProArc 020999;44;STED
+20;6;2;21036;;Køge Nord - Lellinge;Kjn-Lel;36,426;38,912;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;45;4
+20;6;2;21039;;Lellinge;Lel;38,912;40,213;39,563;Hovedbane;Teknisk Station;Ig-Rg, ATC 072008 i ProArc 020999;46;STED
+20;6;2;21042;;Lellinge - Bjæverskov;Lel-Bjs;40,213;45,237;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;47;4
+20;6;2;21047;;Bjæverskov;Bjs;45,237;46,957;46,097;Hovedbane;Teknisk Station;Ig-Rg, ATC 072008 i ProArc 020999;48;STED
+20;6;2;21048;;Bjæverskov - Ringsted;Bjs-Rg;46,957;59,186;;Hovedbane;Fri Bane;Ig-Rg, ATC 072008 i ProArc 020999;49;4
+20;6;2;21048;21059;Adamshøj;Ada;58,67;58,97;58,82;Hovedbane;Teknisk Lokation;Ig-Rg, ATC 072008 i ProArc 020999;50;STED
+21;2;2;22066;;Ringsted - Næstved;Rg-Næ;66,325;89,495;;Regionalbane;Fri Bane;(Ny slut-km er 89,546)  Ændres ved Mbæ ibrug 2028;51;3
+21;2;2;22066;22075;Glumsø;Gz;;;75,984;Regionalbane;Trinbræt;Nyt Trinbræt;52;STED
+21;2,4;2;23000;;Næstved;Næ;89,495;93,132;90,706;Regionalbane;Station;Km ændres efter ERTMS i 2020;53;STED
+21;2;2;24096;;Næstved - Lundby;Næ-Lu;93,132;105,272;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;54;3
+21;2;2;24109;;Lundby;Lu;105,272;107,072;106,689;Regionalbane;Station;Km ændres efter ERTMS i 2020;56;STED
+21;2;2;24110;;Lundby - Vordingborg;Lu-Vo;107,072;116,622;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;57;3
+21;2;2;24121;;Vordingborg;Vo;116,622;119,366;118,073;Regionalbane;Station;Km ændres efter ERTMS i 2020;58;STED
+21;2;2;24122;;Vordingborg - Masnedø;Vo-Mn;119,366;121,237;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;59;3
+21;2;2;24123;;Masnedø;Mn;121,237;122,668;121,9;Regionalbane;Teknisk Station;Km ændres efter ERTMS i 2020;60;STED
+21;2;2;24124;;Masnedø - Orehoved;Mn-Oh;122,668;126,668;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;61;3
+21;2;2;26003;;Orehoved;Oh;126,668;128,525;127,323;Regionalbane;Teknisk Station;Km ændres efter ERTMS i 2020;62;STED
+21;2;2;26004;;Orehoved - Nørre Alslev;Oh-Nv;128,525;131,337;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;63;3
+21;2;2;26007;;Nørre Alslev;Nv;131,337;133,057;132,265;Regionalbane;Station;Km ændres efter ERTMS i 2020;64;STED
+21;2;2;26010;;Nørre Alslev - Eskilstrup;Nv-Ek;133,057;135,852;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;65;3
+21;2;2;26011;;Eskilstrup;Ek;135,852;137,575;136,751;Regionalbane;Station;Km ændres efter ERTMS i 2020;66;STED
+21;2;2;26014;;Eskilstrup - Tingsted;Ek-Tn;137,575;139,967;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;67;3
+21;2;2;26015;;Tingsted;Tn;139,967;141,708;140,852;Regionalbane;Teknisk Station;Km ændres efter ERTMS i 2020;68;STED
+21;2;2;26018;;Tingsted - Nykøbing Falster;Tn-Nf;141,708;145,239;;Regionalbane;Fri Bane;Km ændres efter ERTMS i 2020;69;3
+21;2,3;2;27000;;Nykøbing Falster;Nf;145,239;147,835;146,831;Regionalbane;Station;Km ændres efter ERTMS i 2020;70;STED
+22;2;2;28002;;Nykøbing Falster - Nykøbing Falster Vest;Nf-Nfv;147,835;148,414;;Lokalbane I;Fri Bane;Km ændres efter ERTMS i 2020;71;3
+22;2;2;28003;;Nykøbing Falster Vest;Nfv;148,414;149,691;148,677;Lokalbane I;Teknisk Station;Km ændres efter ERTMS i 2020;72;STED
+22;2;2;28004;;Nykøbing Falster Vest - Rødby Øst;Nfv-Rfø;149,691;180,6;;Lokalbane I;Fri Bane;Km ændres efter ERTMS i 2020;73;4
+22;2;2;28033;;Rødby Øst;Rfø;180,6;181,816;181,2;Lokalbane I;Teknisk Station;Km ændres efter ERTMS i 2020;74;STED
+22;2;2;28034;;Rødby Øst - Rødby Færge;Rfø-Rf;181,816;182,538;;Lokalbane I;Fri Bane;Km ændres efter ERTMS i 2020;75;4
+22;2;2;29000;;Rødby Færge;Rf;182,538;183,514;183,2;Lokalbane I;Station;Km ændres efter ERTMS i 2020;76;STED
+30;3;3;32024;;Nykøbing Falster - Væggerløse;Nf-Vø;147,975;152,826;;Lokalbane II;Fri Bane;;77;3
+30;3;3;32029;;Væggerløse;Vø;152,826;153,959;153,515;Lokalbane II;Teknisk Station;;78;STED
+30;3;3;32030;;Væggerløse - Fiskebæk;Vø-Fi;153,959;161,436;;Lokalbane II;Fri Bane;;79;3
+30;3;3;32037;;Fiskebæk;Fi;161,436;162,542;161,913;Lokalbane II;Teknisk Station;;80;STED
+30;3;3;32038;;Fiskebæk - Gedser;Fi-Ge;162,542;168,883;;Lokalbane II;Fri Bane;;81;3
+30;3;3;33000;;Gedser;Ge;168,883;169,963;169,856;Lokalbane II;Station;;82;STED
+40;4,1004;4;42034;;Roskilde - Gadstrup;Ro-Gt;32,291;38,585;;Lokalbane I;Fri Bane;;83;3
+40;1004;4;42039;;Gadstrup;Gt;38,585;40,389;39,438;Lokalbane I;Station;;84;STED
+40;1004;4;42042;;Gadstrup - Havdrup;Gt-Hd;40,389;42,039;;Lokalbane I;Fri Bane;;85;3
+40;1004;4;42043;;Havdrup;Hd;42,039;43,868;42,887;Lokalbane I;Station;;86;STED
+40;1004;4;42044;;Havdrup - Lille Skensved;Hd-Lw;43,868;45,999;;Lokalbane I;Fri Bane;;87;3
+40;1004;4;42047;;Lille Skensved;Lw;45,999;47,806;46,772;Lokalbane I;Station;;88;STED
+40;4,1004;4;42048;;Lille Skensved - Køge;Lw-Kj;47,806;52,095;;Lokalbane I;Fri Bane;;89;3
+40;4;4;42048;42051;Ølby;Ølb;;;50,9;Lokalbane I;Trinbræt;;90;STED
+40;4;4;42053;;Køge;Kj;52,095;54,701;53,679;Lokalbane I;Station;;91;STED
+40;4;4;42056;;Køge - Herfølge;Kj-Hf;54,701;58,35;;Lokalbane I;Fri Bane;;92;3
+40;4;4;42059;;Herfølge;Hf;58,35;60,088;59,239;Lokalbane I;Station;;93;STED
+40;4;4;42060;;Herfølge - Tureby;Hf-Th;60,088;64,691;;Lokalbane I;Fri Bane;;94;3
+40;4;4;42065;;Tureby;Th;64,691;66,384;65,569;Lokalbane I;Station;;95;STED
+40;4;4;42068;;Tureby - Haslev;Th-Hz;66,384;73,458;;Lokalbane I;Fri Bane;;96;3
+40;4;4;42075;;Haslev;Hz;73,458;75,184;74,359;Lokalbane I;Station;;97;STED
+40;4;4;42076;;Haslev - Holme-Olstrup;Hz-Ol;75,184;84,293;;Lokalbane I;Fri Bane;;98;3
+40;4;4;42085;;Holme-Olstrup;Ol;84,293;86,021;85,262;Lokalbane I;Station;;99;STED
+40;4;4;42086;;Holme-Olstrup - Næstved;Ol-Næ;86,021;91,674;;Lokalbane I;Fri Bane;;100;3
+40;4;4;42086;42089;Næstved Nord;Næn;;;89,578;Lokalbane I;Trinbræt;;101;STED
+79;5;5;52034;;Roskilde - Lejre;Ro-Lj;32,927;39,606;;Regionalbane;Fri Bane;;102;3
+79;5;5;52041;;Lejre;Lj;39,606;41,738;40,776;Regionalbane;Station;;103;STED
+79;5;5;52042;;Lejre - Hvalsø;Lj-Hv;41,738;47,268;;Regionalbane;Fri Bane;;104;3
+79;5;5;52049;;Hvalsø;Hv;47,268;50,625;48,318;Regionalbane;Station;;105;STED
+79;5;5;52050;;Hvalsø - Tølløse;Hv-Tø;50,625;53,705;;Regionalbane;Fri Bane;;106;3
+79;5,616;5;52055;;Tølløse;Tø;53,705;55,936;54,6;Regionalbane;Station;;107;STED
+79;5;5;52056;;Tølløse - Vipperød;Tø-Pe;55,936;60,522;;Regionalbane;Fri Bane;;108;3
+79;5;5;52061;;Vipperød;Pe;60,522;62,067;61,16;Regionalbane;Station;;109;STED
+79;5;5;52062;;Vipperød - Holbæk;Pe-Hk;62,067;65,656;;Regionalbane;Fri Bane;;110;3
+79;5;5;52067;;Holbæk;Hk;65,656;67,885;67,005;Regionalbane;Station;;111;STED
+51;5;5;52068;;Holbæk - Regstrup;Hk-Rt;67,885;74,662;;Lokalbane I;Fri Bane;;112;3
+51;5;5;52075;;Regstrup;Rt;74,662;75,884;75,177;Lokalbane I;Station;;113;STED
+51;5;5;52076;;Regstrup - Mørkøv;Rt-Mø;75,884;82,266;;Lokalbane I;Fri Bane;;114;3
+51;5;5;52076;52079;Knabstrup;Ks;;;79,432;Lokalbane I;Trinbræt;;115;STED
+51;5;5;52083;;Mørkøv;Mø;82,266;83,498;82,923;Lokalbane I;Station;;116;STED
+51;5;5;52084;;Mørkøv - Jyderup;Mø-Jy;83,498;88,834;;Lokalbane I;Fri Bane;;117;3
+51;5;5;52089;;Jyderup;Jy;88,834;90,063;89,523;Lokalbane I;Station;;118;STED
+51;5;5;52092;;Jyderup - Svebølle;Jy-Se;90,063;96,308;;Lokalbane I;Fri Bane;;119;3
+51;5;5;52097;;Svebølle;Se;96,308;97,825;97,173;Lokalbane I;Station;;120;STED
+51;5;5;52098;;Svebølle - Værslev;Se-Væ;97,825;102,053;;Lokalbane I;Fri Bane;;121;3
+51;5;5;52103;;Værslev;Væ;102,053;103,944;102,924;Lokalbane I;Teknisk Station;;122;STED
+51;5;5;52104;;Værslev - Kalundborg;Væ-Kb;103,944;109,334;;Lokalbane I;Fri Bane;;123;3
+51;5;5;52104;52109;Kalundborg Øst;Kbø;;;108,39;Lokalbane I;Trinbræt;;124;STED
+51;5;5;53000;;Kalundborg;Kb;109,334;110,586;110,586;Lokalbane I;Station;;125;STED
+19;6;7;70002;;København H - København G;Kh-Gb;2,425;2,74;;Hovedbane;Fri Bane;Ændres ved SP på Kh-Kjn-Rg;126;3
+19;6;7;71000;;København G;Gb;2,74;3,665;3,2;Hovedbane;Teknisk Station;Ændres ved SP på Kh-Kjn-Rg;127;STED
+19;6;7;72002;;København G - Vigerslev;Gb-Ig;3,665;4,75;;Hovedbane;Fri Bane;Ændres ved SP på Kh-Kjn-Rg;128;3
+19;6;7;72002;72045;Ny Ellebjerg;Nel;;;4,571;Hovedbane;Trinbræt;Ændres ved SP på Kh-Kjn-Rg;129;STED
+19;6,11;7;72003;;Vigerslev;Ig;4,75;6,936;6,2;Hovedbane;Teknisk Station;Ændres ved SP på Kh-Kjn-Rg;130;STED
+19;11;7;72006;;Vigerslev - Hvidovre Fjern;Ig-Hif;6,936;7,285;;Hovedbane;Fri Bane;Ændres ved SP på Kh-Kjn-Rg;131;3
+70;7;7;76012;;Lersøen - Svanemøllen;Ler-Sam;11,788;12,404;;Godsbane;Fri Bane;;132;4
+70;7;7;76013;;Svanemøllen;Sam;12,404;13,238;12,7;Godsbane;Teknisk Station;;133;STED
+70;7;7;76014;;Svanemøllen - Østerport;Sam-Kk;13,238;13,995;;Godsbane;Fri Bane;;134;4
+70;7;7;77000;;Østerport;Kk;13,995;15,317;0;Godsbane;Teknisk Station;;135;STED
+;;9;92038;;Hillerød - Fredensborg;Hi-Fd;37,366;44,889;;Privatbane;Fri Bane;;136;3
+;;9;92038;92041;Grønholt;Grt;;;41,7;Privatbane;Trinbræt;;137;STED
+;;9;92038;92043;Kratbjerg;Krb;;;43,8;Privatbane;Trinbræt;;138;STED
+;;9;92045;;Fredensborg;Fd;44,889;46,123;45,404;Privatbane;Station;;139;STED
+;;9;92048;;Fredensborg - Snekkersten;Fd-Sq;46,123;56,804;;Privatbane;Fri Bane;;140;3
+;;9;92048;92049;Langerød;Lrt;;;48,3;Privatbane;Trinbræt;;141;STED
+;;9;92048;92051;Kvistgård;Kå;;;51,71;Privatbane;Trinbræt;;142;STED
+;;9;92048;92055;Mørdrup;Møt;;;54;Privatbane;Trinbræt;;143;STED
+10;10;10;101000;;København H;Kh;0;0,93;0;Hovedbane;Station;;144;STED
+10;10;10;102002;;København H - Østerport;Kh-Kk;0,93;2,113;;Regionalbane;Fri Bane;;145;3
+10;10;10;102002;102027;Nørreport;Kn;;;1,5;Regionalbane;Trinbræt;;146;STED
+10;10;10;102003;;Østerport;Kk;2,113;3,928;3,055;Regionalbane;Station;;147;STED
+10;10;10;102004;;Østerport - Helgoland;Kk-Hgl;3,928;4,809;;Regionalbane;Fri Bane;;148;3
+10;10;10;102005;;Helgoland;Hgl;4,809;6,389;5,2;Regionalbane;Teknisk Station;;149;STED
+10;10;10;102006;;Helgoland - Hellerup;Hgl-Hl;6,389;7,043;;Regionalbane;Fri Bane;;150;4
+10;10;10;103000;;Hellerup;Hl;7,043;8,896;7,825;Regionalbane;Station;;151;STED
+10;10;10;104010;;Hellerup - Klampenborg;Hl-Kl;8,896;12,722;;Regionalbane;Fri Bane;;152;3
+10;10;10;104013;;Klampenborg;Kl;12,722;13,932;13,312;Regionalbane;Station;;153;STED
+10;10;10;104014;;Klampenborg - Skodsborg;Kl-Så;13,932;17,902;;Regionalbane;Fri Bane;;154;3
+10;10;10;104017;;Skodsborg;Så;17,902;19,522;18,808;Regionalbane;Station;;155;STED
+10;10;10;104020;;Skodsborg - Rungsted kyst;Så-Ru;19,522;25,224;;Regionalbane;Fri Bane;;156;3
+10;10;10;104020;104023;Vedbæk;Vb;;;22,158;Regionalbane;Trinbræt;;157;STED
+10;10;10;104025;;Rungsted Kyst;Ru;25,224;26,598;26,051;Regionalbane;Station;;158;STED
+10;10;10;104028;;Rungsted Kyst - Nivå;Ru-Ni;26,598;31,998;;Regionalbane;Fri Bane;;159;3
+10;10;10;104028;104029;Kokkedal;Ok;;;29,074;Regionalbane;Trinbræt;;160;STED
+10;10;10;104033;;Nivå;Ni;31,998;33,526;32,484;Regionalbane;Station;;161;STED
+10;10;10;104034;;Nivå - Snekkersten;Ni-Sq;33,526;41,952;;Regionalbane;Fri Bane;;162;3
+10;10;10;104034;104037;Humlebæk;Hum;;;36,261;Regionalbane;Trinbræt;;163;STED
+10;10;10;104034;104041;Espergærde;Gæ;;;40;Regionalbane;Trinbræt;;164;STED
+10;10;10;105000;;Snekkersten;Sq;41,952;43,388;42,718;Regionalbane;Station;;165;STED
+10;10;10;106044;;Snekkersten - Helsingør;Sq-Hg;43,388;44,93;;Regionalbane;Fri Bane;;166;3
+10;10;10;107000;;Helsingør;Hg;44,93;46,164;46,161;Regionalbane;Station;;167;STED
+50;11;12;122020;;København H - Bavnehøj;Kh-Ban;1,9;2,05;;Hovedbane;Fri Bane;;168;3
+50;11;12;122033;;Bavnehøj;Ban;2,05;3,326;2,7;Hovedbane;Teknisk Station;;169;STED
+50;11;12;122038;;Bavnehøj - Kalvebod;Ban-Klv;3,326;3,8;;Hovedbane;Fri Bane;;170;4
+50;11;12;123000;;Kalvebod;Klv;3,8;5,366;4,8;Hovedbane;Teknisk Station;;171;STED
+50;11;12;124006;;Kalvebod - Københavns Lufthavn Kastrup;Klv-Cph;5,366;10,143;;Hovedbane;Fri Bane;;172;4
+50;11;12;124006;124007;Ørestad;Øre;;;7,186;Hovedbane;Trinbræt;;173;STED
+50;11;12;124006;124009;Tårnby;Tåt;;;8,626;Hovedbane;Trinbræt;;174;STED
+50;11;12;125000;;Københavns Lufthavn Kastrup;Cph;10,143;14,505;11,8;Hovedbane;Station;;175;STED
+50;11;12;126016;;Københavns Lufthavn Kastrup - Peberholm;Cph-Phm;14,505;18,2;;Hovedbane;Fri Bane;;176;4
+50;11;12;129002;;Vigerslev - Kalvebod;Ig-Klv;2,31;3,35;;Hovedbane;Fri Bane;;178;3
+78;21;21;212002;;Odense - Fruens Bøge;Od-Frs;1,458;4,549;;Lokalbane I;Fri Bane;;179;3
+78;21;21;212002;212003;Odense Sygehus;Oss;;;3,813;Lokalbane I;Trinbræt;;180;STED
+78;21;21;212005;;Fruens Bøge;Frs;4,549;5,613;5,3;Lokalbane I;Station;;181;STED
+78;21;21;212006;;Fruens Bøge - Højby;Frs-Høs;5,613;10,421;;Lokalbane I;Fri Bane;;182;4
+78;21;21;212006;212007;Hjallese;Hjs;;;6,896;Lokalbane I;Trinbræt;;183;STED
+78;21;21;212011;;Højby;Høs;10,421;11,751;11,025;Lokalbane I;Station;;184;STED
+78;21;21;212012;;Højby - Årslev;Høs-Ås;11,751;14,367;;Lokalbane I;Fri Bane;;185;4
+78;21;21;212015;;Årslev;Ås;14,367;15,411;14,946;Lokalbane I;Station;;186;STED
+78;21;21;212016;;Årslev - Ringe;Ås-Re;15,411;21,937;;Lokalbane I;Fri Bane;;187;3
+78;21;21;212016;212017;Pederstrup;Pds;;;17,4;Lokalbane I;Trinbræt;;188;STED
+78;21;21;212023;;Ringe;Re;21,937;23,968;22,368;Lokalbane I;Station;;189;STED
+78;21;21;212024;;Ringe - Kværndrup;Re-Kvs;23,968;29,605;;Lokalbane I;Fri Bane;;190;3
+78;21;21;212024;212027;Rudme;Rus;;;27,194;Lokalbane I;Trinbræt;;191;STED
+78;21;21;212029;;Kværndrup;Kvs;29,605;30,535;30,188;Lokalbane I;Station;;192;STED
+78;21;21;212032;;Kværndrup - Stenstrup;Kvs-Sts;30,535;35,342;;Lokalbane I;Fri Bane;;193;4
+78;21;21;212035;;Stenstrup;Sts;35,342;36,334;35,598;Lokalbane I;Station;;194;STED
+78;21;21;212038;;Stenstrup - Svendborg;Sts-Svg;36,334;47,466;;Lokalbane I;Fri Bane;;195;4
+78;21;21;212038;212039;Stenstrup Syd;Sis;;;36,952;Lokalbane I;Trinbræt;;196;STED
+78;21;21;212038;212045;Svendborg Vest;Svv;;;45,695;Lokalbane I;Trinbræt;;197;STED
+78;21;21;213000;;Svendborg;Svg;47,466;48,39;48,22;Lokalbane I;Station;;198;STED
+15a;1;22;222002;;Nyborg - Hjulby;Ng-Ju;132,968;135,662;;Hovedbane;Fri Bane;;199;3
+15a;1;22;222005;;Hjulby;Ju;135,662;137,234;136,648;Hovedbane;Teknisk Station;;200;STED
+15a;1;22;222006;;Hjulby - Ullerslev;Ju-Uv;137,234;140,994;;Hovedbane;Fri Bane;;201;3
+15a;1;22;222011;;Ullerslev;Uv;140,994;142,707;141,544;Hovedbane;Teknisk Station;;202;STED
+15a;1;22;222012;;Ullerslev - Marslev;Uv-Mv;142,707;150,15;;Hovedbane;Fri Bane;;203;3
+15a;1;22;222012;222015;Langeskov;Lv;;;146,6;Hovedbane;Trinbræt;;204;STED
+15a;1;22;222019;;Marslev;Mv;150,15;151,707;151,023;Hovedbane;Teknisk Station;;205;STED
+15a;1;22;222022;;Marslev - Odense;Mv-Od;151,707;159,584;;Hovedbane;Fri Bane;;206;3
+15b;1,21;22;223000;;Odense;Od;159,584;161,779;160,32;Hovedbane;Station;;207;STED
+16;1;22;224032;;Odense - Holmstrup;Od-Hp;161,779;168,296;;Hovedbane;Fri Bane;;208;3
+16;1;22;224037;;Holmstrup;Hp;168,296;169,624;168,996;Hovedbane;Station;;209;STED
+16;1;22;224040;;Holmstrup - Tommerup;Hp-Tp;169,624;174,539;;Hovedbane;Fri Bane;;210;3
+16;1;22;224045;;Tommerup;Tp;174,539;176,338;175,485;Hovedbane;Station;;211;STED
+16;1;22;224046;;Tommerup - Aarup;Tp-Ap;176,338;183,414;;Hovedbane;Fri Bane;;212;3
+16;1;22;224046;224047;Skalbjerg;Sc;;;178,753;Hovedbane;Trinbræt;;213;STED
+16;1;22;224046;224049;Bred;Bd;;;181,121;Hovedbane;Trinbræt;;215;STED
+16;1;22;224053;;Aarup;Ap;183,414;185,41;184,855;Hovedbane;Station;;216;STED
+16;1;22;224056;;Aarup - Ejby;Ap-Eb;185,41;193,588;;Hovedbane;Fri Bane;;217;3
+16;1;22;224056;224059;Gelsted;Gd;;;190,209;Hovedbane;Trinbræt;;219;STED
+16;1;22;224063;;Ejby;Eb;193,588;195,414;194,802;Hovedbane;Station;;220;STED
+16;1;22;224066;;Ejby - Kavslunde;Eb-Ka;195,414;203,102;;Hovedbane;Fri Bane;;221;3
+16;1;22;224066;224069;Nørre Aaby;Na;;;200,113;Hovedbane;Trinbræt;;223;STED
+16;1;22;224073;;Kavslunde;Ka;203,102;205,265;204,288;Hovedbane;Station;;224;STED
+16;1;22;224074;;Kavslunde - Middelfart;Ka-Md;205,265;209,499;;Hovedbane;Fri Bane;;225;3
+16;1;22;224079;;Middelfart;Md;209,499;211,241;210,382;Hovedbane;Station;;226;STED
+16;1;22;224080;;Middelfart - Snoghøj;Md-Sno;211,241;214,479;;Hovedbane;Fri Bane;;227;3
+16;1;22;224085;;Snoghøj;Sno;214,479;216,478;216,212;Hovedbane;Teknisk Station;;228;STED
+16;1;22;224086;;Snoghøj - Fredericia;Sno-Fa;216,478;219,193;;Hovedbane;Fri Bane;;229;4
+16;1,23,26;22;225000;;Fredericia;Fa;219,193;221,975;220,585;Hovedbane;Station;;230;STED
+16;26;22;225801;;Fredericia godsstation;Gfa;;;;Hovedbane;Teknisk Station;;231;STED
+23a;23;23;232004;;Fredericia - Børkop;Fa-Bk;1,269;11,13;;Hovedbane;Fri Bane;;232;3
+23a;23;23;232013;;Børkop;Bk;11,13;13,177;11,87;Hovedbane;Station;;234;STED
+23a;23;23;232014;;Børkop - Vejle;Bk-Vj;13,177;24,466;;Hovedbane;Fri Bane;;235;3
+23a;23;23;232014;232015;Brejning;Bet;;;14,838;Hovedbane;Trinbræt;;236;STED
+23a;23,33;23;233000;;Vejle;Vj;24,466;26,76;25,72;Hovedbane;Station;;237;STED
+23b;23;23;234028;;Vejle - Hedensted;Vj-Hed;26,76;39,77;;Hovedbane;Fri Bane;;238;3
+23b;23;23;234041;;Hedensted;Hed;39,77;41,83;40,761;Hovedbane;Station;;239;STED
+23b;23;23;234042;;Hedensted - Horsens;Hed-Hs;41,83;56,031;;Hovedbane;Fri Bane;;240;4
+23b;23;23;234057;;Horsens;Hs;56,031;58,549;57,1;Hovedbane;Station;;241;STED
+23b;23;23;234060;;Horsens - Hovedgård;Hs-Hå;58,549;70,6;;Hovedbane;Fri Bane;;242;3
+23b;23;23;234071;;Hovedgård;Hå;70,6;72,4;71,575;Hovedbane;Teknisk Station;;244;STED
+23b;23;23;234074;;Hovedgård - Skanderborg;Hå-Sd;72,4;84,701;;Hovedbane;Fri Bane;;245;3
+23b;23,35;23;235000;;Skanderborg;Sd;84,701;87,202;85,765;Hovedbane;Station;;247;STED
+23b;23;23;236088;;Skanderborg - Hørning;Sd-Hx;87,202;92,711;;Hovedbane;Fri Bane;;248;3
+23b;23;23;236093;;Hørning;Hx;92,711;94,8;94,234;Hovedbane;Station;;249;STED
+23b;23;23;236096;;Hørning - Aarhus H;Hx-Ar;94,8;105,068;;Hovedbane;Fri Bane;;250;3
+23b;23;23;236096;236103;Viby Jylland;Vi;;;103,744;Hovedbane;Trinbræt;;252;STED
+23b;23,24,36,37;23;237000;;Aarhus H;Ar;105,068;111,29;108,478;Hovedbane;Station;;253;STED
+24;24;24;242112;;Aarhus H - Brabrand;Ar-Br;111,29;114,314;;Hovedbane;Fri Bane;;254;3
+24;24;24;242115;;Brabrand;Br;114,314;115,863;115,185;Hovedbane;Teknisk Station;;255;STED
+24;24;24;242116;;Brabrand - Mundelstrup;Br-Mu;115,863;121,815;;Hovedbane;Fri Bane;;256;3
+24;24;24;242123;;Mundelstrup;Mu;121,815;123,298;122,375;Hovedbane;Teknisk Station;;257;STED
+24;24;24;242124;;Mundelstrup - Hinnerup;Mu-Hn;123,298;130,942;;Hovedbane;Fri Bane;;258;3
+24;24;24;242131;;Hinnerup;Hn;130,942;132,719;131,752;Hovedbane;Station;;259;STED
+24;24;24;242134;;Hinnerup - Hadsten;Hn-Ha;132,719;140,472;;Hovedbane;Fri Bane;;260;3
+24;24;24;242141;;Hadsten;Ha;140,472;141,743;141,129;Hovedbane;Station;;261;STED
+24;24;24;242142;;Hadsten - Langå;Ha-Lg;141,743;153,425;;Hovedbane;Fri Bane;;262;3
+24;24,32;24;243000;;Langå;Lg;153,425;155,253;154,3;Hovedbane;Station;;263;STED
+71;24;24;244156;;Langå - Stevnstrup;Lg-Ste;155,253;160,48;;Hovedbane;Fri Bane;;264;3
+71;24;24;244161;;Stevnstrup;Ste;160,48;162;161;Hovedbane;Teknisk Station;;265;STED
+71;24;24;244162;;Stevnstrup - Randers;Ste-Rd;162;166,973;;Hovedbane;Fri Bane;;266;4
+71;24;24;244167;;Randers;Rd;166,973;168,9;167,695;Hovedbane;Station;;267;STED
+71;24;24;244170;;Randers - Fårup;Rd-Fp;168,9;181,47;;Hovedbane;Fri Bane;;268;3
+71;24;24;244183;;Fårup;Fp;181,47;183,4;182,418;Hovedbane;Teknisk Station;;269;STED
+71;24;24;244184;;Fårup - Hobro;Fp-Hb;183,4;198,099;;Hovedbane;Fri Bane;;270;3
+71;24;24;245000;;Hobro;Hb;198,099;199,555;198,965;Hovedbane;Station;;271;STED
+71;24;24;246200;;Hobro - Skørping;Hb-Sø;199,555;221,39;;Hovedbane;Fri Bane;;272;3
+71;24;24;246200;246215;Arden;Ad;;;214,487;Hovedbane;Trinbræt;;273;STED
+71;24;24;246221;;Skørping;Sø;221,39;223,324;222,05;Hovedbane;Station;;274;STED
+71;24;24;246224;;Skørping - Ellidshøj;Sø-Eh;223,324;233,052;;Hovedbane;Fri Bane;;275;3
+71;24;24;246224;246229;Støvring;Sr;;;229,519;Hovedbane;Trinbræt;;276;STED
+71;24;24;246233;;Ellidshøj;Eh;233,052;234,676;234,062;Hovedbane;Teknisk Station;;277;STED
+71;24;24;246236;;Ellidshøj - Aalborg;Eh-Ab;234,676;245,62;;Hovedbane;Fri Bane;;278;3
+71;24;24;246236;246239;Svenstrup Jylland;Sn;;;239,231;Hovedbane;Trinbræt;;279;STED
+71;24;24;246236;246245;Skalborg;Og;;;244,144;Hovedbane;Trinbræt;;280;STED
+71;24,25;24;247000;;Aalborg;Ab;245,62;250,155;248,36;Hovedbane;Station;;281;STED
+71;25;24;247000;247249;Aalborg Vestby;Abv;;;249,619;Hovedbane;Trinbræt;;282;STED
+71;;24;247901;;Aalborg Havn;Abh;;;;Hovedbane;Teknisk Station;;283;STED
+25;25;25;252250;;Aalborg - Lindholm;Ab-Lih;250,155;250,63;;Regionalbane;Fri Bane;;284;3
+25;25;25;252251;;Lindholm;Lih;250,63;252,2;251,35;Regionalbane;Station;;285;STED
+25;25,1025;25;252254;;Lindholm - Sulsted;Lih-Su;252,2;262,881;;Regionalbane;Fri Bane;;286;4
+25;1025;25;252263;;Sulsted;Su;262,881;264,53;263,4;Regionalbane;Teknisk Station;;287;STED
+25;1025;25;252266;;Sulsted - Brønderslev;Su-Bl;264,53;274,353;;Regionalbane;Fri Bane;;288;3
+25;1025;25;252275;;Brønderslev;Bl;274,353;276,071;274,88;Regionalbane;Station;;289;STED
+25;1025;25;252278;;Brønderslev - Vrå;Bl-Vr;276,071;284,151;;Regionalbane;Fri Bane;;290;3
+25;1025;25;252285;;Vrå;Vr;284,151;285,76;284,665;Regionalbane;Station;;291;STED
+25;1025;25;252286;;Vrå - Hjørring;Vr-Hj;285,76;295,809;;Regionalbane;Fri Bane;;292;3
+25;1025;25;253000;;Hjørring;Hj;295,809;297,479;296,625;Regionalbane;Station;;293;STED
+25;1025;25;254298;;Hjørring - Sindal;Hj-Sa;297,479;309,199;;Regionalbane;Fri Bane;;294;3
+25;1025;25;254298;254299;Hjørring Øst;Hjø;;;297,836;Regionalbane;Trinbræt;Ibrugtagningsdato ukendt;295;STED
+25;1025;25;254309;;Sindal;Sa;309,199;310,701;310,2;Regionalbane;Station;;296;STED
+25;1025;25;254312;;Sindal - Kvissel;Sa-Kv;310,701;322,999;;Regionalbane;Fri Bane;;297;3
+25;1025;25;254312;254317;Tolne;To;;;317,4;Regionalbane;Trinbræt;;298;STED
+25;1025;25;254323;;Kvissel;Kv;322,999;324,55;323,798;Regionalbane;Station;;299;STED
+25;1025;25;254326;;Kvissel - Frederikshavn;Kv-Fh;324,55;331,95;;Regionalbane;Fri Bane;;300;3
+25;1025;25;255000;;Frederikshavn;Fh;331,95;333,399;333,337;Regionalbane;Station;;301;STED
+26;26;26;262004;;Fredericia - Taulov;Fa-Tl;2,205;5,994;;Hovedbane;Fri Bane;;302;3
+26;1,26;26;262009;;Taulov;Tl;5,994;9,662;8,64;Hovedbane;Station;;303;STED
+26;1,26;26;262509;;Taulov kombiterminal;Tlk;6,185;7,932;;Hovedbane;Kombiterminal;;304;STED
+26;26;26;262010;;Taulov - Kolding;Tl-Kd;9,662;18,55;;Hovedbane;Fri Bane;;305;3
+26;26;26;262019;;Kolding;Kd;18,55;20,908;19,905;Hovedbane;Station;;306;STED
+26;26;26;262022;;Kolding - Lunderskov;Kd-Lk;20,908;31,6;;Hovedbane;Fri Bane;;307;3
+26;26,29;26;263000;;Lunderskov;Lk;31,6;33,716;32,788;Hovedbane;Station;;308;STED
+98;26;26;264034;;Lunderskov - Vamdrup;Lk-Vm;33,716;37,843;;Hovedbane;Fri Bane;;309;3
+98;26;26;264039;;Vamdrup;Vm;37,843;39,98;38,822;Hovedbane;Station;;310;STED
+98;26;26;264040;;Vamdrup - Farris;Vm-Fz;39,98;42,612;;Hovedbane;Fri Bane;;311;3
+98;26;26;264043;;Farris;Fz;42,612;44,372;43,76;Hovedbane;Teknisk Station;;312;STED
+98;26;26;264046;;Farris - Sommersted;Fz-Sst;44,372;50,563;;Hovedbane;Fri Bane;;313;3
+98;26;26;264051;;Sommersted;Sst;50,563;52,315;51,822;Hovedbane;Teknisk Station;;314;STED
+98;26;26;264054;;Sommersted - Vojens;Sst-Oj;52,315;57,52;;Hovedbane;Fri Bane;;315;4
+98;26;26;265000;;Vojens;Oj;57,52;60,024;59,217;Hovedbane;Station;;316;STED
+98;26;26;266062;;Vojens - Rødekro;Oj-Rq;60,024;78,217;;Hovedbane;Fri Bane;;317;3
+98;26;26;266079;;Rødekro;Rq;78,217;80,731;79,568;Hovedbane;Station;;318;STED
+98;26;26;266084;;Rødekro - Tinglev;Rq-Te;80,731;93,732;;Hovedbane;Fri Bane;;319;3
+98;26,28;26;267000;;Tinglev;Te;93,732;96,2;95,242;Hovedbane;Station;;320;STED
+99;26;26;268098;;Tinglev - Vejbæk;Te-Vk;96,2;101,9;;Hovedbane;Fri Bane;;321;3
+99;26;26;268103;;Vejbæk;Vk;101,9;103,615;102,972;Hovedbane;Teknisk Station;;322;STED
+99;26;26;268104;;Vejbæk - Padborg;Vk-Pa;103,615;108,349;;Hovedbane;Fri Bane;;323;3
+99;;26;269500;;Padborg kombiterminal;Pak;107,914;108,679;;Hovedbane;Kombiterminal;;324;STED
+99;26;26;269000;;Padborg;Pa;108,349;110,641;109,69;Hovedbane;Station;;325;STED
+27;1;27;271216;;Snoghøj - Taulov;Sno-Tl;216,569;220,05;;Hovedbane;Fri Bane;;327;4
+28;28;28;281000;;Sønderborg;Sdb;0;1,108;0;Regionalbane;Station;;328;STED
+28;28;28;282002;;Sønderborg - Gråsten;Sdb-Gst;1,108;15,65;;Regionalbane;Fri Bane;;329;4
+28;28;28;282015;;Gråsten;Gst;15,65;16,972;16,264;Regionalbane;Station;;330;STED
+28;28;28;282018;;Gråsten - Tinglev;Gst-Te;16,972;40,355;;Regionalbane;Fri Bane;;331;4
+28;28;28;282018;282031;Kliplev;Kw;;;31,3;Regionalbane;Trinbræt;;332;STED
+29;29;29;292002;;Lunderskov - Vejen;Lk-Vn;0,727;10,71;;Hovedbane;Fri Bane;;333;3
+29;29;29;292011;;Vejen;Vn;10,71;12,901;11,555;Hovedbane;Station;;334;STED
+29;29;29;292014;;Vejen - Holsted;Vn-Hq;12,901;24,642;;Hovedbane;Fri Bane;;335;3
+29;29;29;292014;292019;Brørup;Bp;;;19,412;Hovedbane;Trinbræt;;336;STED
+29;29;29;292025;;Holsted;Hq;24,642;26,588;25,88;Hovedbane;Station;;337;STED
+29;29;29;292028;;Holsted - Bramming;Hq-Bm;26,588;38,218;;Hovedbane;Fri Bane;;338;3
+29;29;29;292028;292033;Gørding;Gø;;;33,28;Hovedbane;Trinbræt;;339;STED
+29;29,30;29;293000;;Bramming;Bm;38,218;40,023;39,271;Hovedbane;Station;;340;STED
+97;29;29;294042;;Bramming - Tjæreborg;Bm-Tb;40,023;46,673;;Hovedbane;Fri Bane;;341;3
+97;29;29;294047;;Tjæreborg;Tb;46,673;48,425;47,387;Hovedbane;Station;;342;STED
+97;29;29;294050;;Tjæreborg - Esbjerg;Tb-Es;48,425;54,814;;Hovedbane;Fri Bane;;343;3
+97;29,31;29;295000;;Esbjerg;Es;54,814;56,269;55,7;Hovedbane;Station;;344;STED
+97;;29;295901;;Esbjerg Havn;Esh;;;;Hovedbane;Teknisk Station;;345;STED
+94;30;30;302002;;Bramming - Gredstedbro;Bm-Gs;0,801;7,659;;Lokalbane I;Fri Bane;;346;3
+94;30;30;302002;302005;Sejstrup;Sej;;;4,2;Lokalbane I;Trinbræt;;347;STED
+94;30;30;302007;;Gredstedbro;Gs;7,659;9,127;8,464;Lokalbane I;Station;;348;STED
+94;30;30;302010;;Gredstedbro - Ribe;Gs-Rb;9,127;15,465;;Lokalbane I;Fri Bane;;349;3
+94;30;30;302010;302015;Ribe Nørremark;Rbn;;;15,3;Lokalbane I;Trinbræt;;350;STED
+94;30;30;302017;;Ribe;Rb;15,465;17,405;16,697;Lokalbane I;Station;;351;STED
+95;30;30;302018;;Ribe - Skærbæk;Rb-Æk;17,405;36,059;;Lokalbane II;Fri Bane;;352;3
+95;30;30;302018;302023;Hviding;Vd;;;23,2;Lokalbane II;Trinbræt;;353;STED
+95;30;30;302018;302029;Rejsby;Rej;;;28,2;Lokalbane II;Trinbræt;;354;STED
+95;30;30;302018;302033;Brøns;Brr;;;32,2;Lokalbane II;Trinbræt;;355;STED
+95;30;30;302037;;Skærbæk;Æk;36,059;37,492;36,735;Lokalbane II;Station;;356;STED
+95;30;30;302038;;Skærbæk - Bredebro;Æk-Bw;37,492;48,563;;Lokalbane II;Fri Bane;;357;3
+95;30;30;302038;302043;Døstrup Sønderjylland;Ds;;;42,12;Lokalbane II;Trinbræt;;358;STED
+95;30;30;302049;;Bredebro;Bw;48,563;49,642;48,99;Lokalbane II;Station;;359;STED
+95;30;30;302050;;Bredebro - Tønder;Bw-Tdr;49,642;63,325;;Lokalbane II;Fri Bane;;360;3
+95;30;30;302050;302055;Visby;Vis;;;54,52;Lokalbane II;Trinbræt;;361;STED
+95;30;30;302050;302061;Tønder Nord;Trn;;;63,3;Lokalbane II;Trinbræt;;362;STED
+95;30;30;303000;;Tønder;Tdr;63,325;65,061;63,939;Lokalbane II;Station;;363;STED
+96;30;30;304066;;Tønder - Tønder Grænse;Tdr-Tdgr;65,061;67,844;;Lokalbane II;Fri Bane;;364;4
+90;31;31;312058;;Esbjerg - Guldager;Es-Gu;56,269;62,574;;Lokalbane I;Fri Bane;;366;3
+90;31;31;312058;312059;Spangsbjerg;Esn;;;58,2;Lokalbane I;Trinbræt;;367;STED
+90;31;31;312058;312060;Gjesing;Gje;;;60,134;Lokalbane I;Trinbræt;;368;STED
+90;31;31;312063;;Guldager;Gu;62,574;63,842;63,273;Lokalbane I;Station;;369;STED
+90;31;31;312064;;Guldager - Varde;Gu-Va;63,842;71,8;;Lokalbane I;Fri Bane;;370;3
+90;31;31;312073;;Varde;Va;71,8;73,926;73,242;Lokalbane I;Station;;371;STED
+90;31;31;312073;312071;Varde Kaserne;Vka;;;72,36;Lokalbane I;Trinbræt;;372;STED
+91;31;31;312074;;Varde - Tistrup;Va-Tr;73,926;86,726;;Lokalbane II;Fri Bane;;373;3
+91;31;31;312074;312075;Varde Nord;Vno;;;75,225;Lokalbane II;Trinbræt;;374;STED
+91;31;31;312074;312081;Sig;Is;;;81,5;Lokalbane II;Trinbræt;;375;STED
+91;31;31;312087;;Tistrup;Tr;86,726;87,785;87,349;Lokalbane II;Station;;376;STED
+91;31;31;312088;;Tistrup - Ølgod;Tr-Øg;87,785;97,336;;Lokalbane II;Fri Bane;;377;3
+91;31;31;312088;312093;Gårde;Gå;;;92,836;Lokalbane II;Trinbræt;;378;STED
+91;31;31;312097;;Ølgod;Øg;97,336;98,82;97,956;Lokalbane II;Station;;379;STED
+91;31;31;312100;;Ølgod - Skjern;Øg-Sj;98,82;114,64;;Lokalbane II;Fri Bane;;380;3
+91;31;31;312100;312111;Tarm;Ta;;;111,083;Lokalbane II;Trinbræt;;381;STED
+91;31,35;31;313000;;Skjern;Sj;114,64;116,56;115,629;Lokalbane II;Station;;382;STED
+92;31;31;314118;;Skjern - Lem;Sj-Lm;116,56;126,279;;Lokalbane II;Fri Bane;;383;3
+92;31;31;314127;;Lem;Lm;126,279;127,756;127,046;Lokalbane II;Station;;384;STED
+92;31;31;314128;;Lem - Ringkøbing;Lm-Rj;127,756;138,151;;Lokalbane II;Fri Bane;;385;3
+92;31;31;314139;;Ringkøbing;Rj;138,151;140,051;139,163;Lokalbane II;Station;;386;STED
+92;31;31;314142;;Ringkøbing - Ulfborg;Rj-Uf;140,051;159,455;;Lokalbane II;Fri Bane;;387;3
+92;31;31;314142;314145;Hee;He;;;145,584;Lokalbane II;Trinbræt;;388;STED
+92;31;31;314142;314151;Tim;Tm;;;151,41;Lokalbane II;Trinbræt;;389;STED
+92;31;31;314159;;Ulfborg;Uf;159,455;160,665;160,068;Lokalbane II;Station;;390;STED
+92;31;31;314162;;Ulfborg - Vemb;Uf-Vem;160,665;167,673;;Lokalbane II;Fri Bane;;391;3
+92;31;31;314169;;Vemb;Vem;167,673;169,08;168,195;Lokalbane II;Station;;392;STED
+92;31;31;314170;;Vemb - Holstebro;Vem-Ho;169,08;185,97;;Lokalbane II;Fri Bane;;393;4
+92;31;31;314170;314175;Bur;Bu;;;174,183;Lokalbane II;Trinbræt;;394;STED
+33b;31,33;31;315000;;Holstebro;Ho;185,97;187,52;186,594;Regionalbane;Station;;395;STED
+33b;31;31;316188;;Holstebro - Hjerm;Ho-Hm;187,52;194,534;;Regionalbane;Fri Bane;;396;3
+33b;31;31;316195;;Hjerm;Hm;194,534;195,914;195,101;Regionalbane;Station;;397;STED
+33b;31;31;316196;;Hjerm - Struer;Hm-Str;195,914;201,108;;Regionalbane;Fri Bane;;398;3
+33b;31,32,34;31;317000;;Struer;Str;201,108;202,316;202,1;Regionalbane;Station;;399;STED
+32;32;32;322002;;Langå - Ulstrup;Lg-Up;0,884;6,3;;Regionalbane;Fri Bane;;400;3
+32;32;32;322007;;Ulstrup;Up;6,3;7,73;7,2;Regionalbane;Station;;401;STED
+32;32;32;322008;;Ulstrup - Bjerringbro;Up-Bj;7,73;15,001;;Regionalbane;Fri Bane;;402;3
+32;32;32;322015;;Bjerringbro;Bj;15,001;16,85;15,98;Regionalbane;Station;;403;STED
+32;32;32;322018;;Bjerringbro - Rødkærsbro;Bj-Rk;16,85;26,195;;Regionalbane;Fri Bane;;404;3
+32;32;32;322027;;Rødkærsbro;Rk;26,195;27,637;26,9;Regionalbane;Station;;405;STED
+32;32;32;322028;;Rødkærsbro - Rindsholm;Rk-Rn;27,637;33,684;;Regionalbane;Fri Bane;;406;3
+32;32;32;322035;;Rindsholm;Rn;33,684;35,105;34,3;Regionalbane;Teknisk Station;;407;STED
+32;32;32;322036;;Rindsholm - Viborg;Rn-Vg;35,105;39,48;;Regionalbane;Fri Bane;;408;3
+32;32;32;322041;;Viborg;Vg;39,48;41,125;40,199;Regionalbane;Station;;409;STED
+32;32;32;322042;;Viborg - Ravnstrup;Vg-Ra;41,125;46,819;;Regionalbane;Fri Bane;;410;3
+32;32;32;322047;;Ravnstrup;Ra;46,819;48,259;47,573;Regionalbane;Teknisk Station;;411;STED
+32;32;32;322050;;Ravnstrup - Stoholm;Ra-Sm;48,259;56,271;;Regionalbane;Fri Bane;;412;3
+32;32;32;322057;;Stoholm;Sm;56,271;57,626;56,996;Regionalbane;Station;;413;STED
+32;32;32;322058;;Stoholm - Højslev;Sm-Hø;57,626;64,076;;Regionalbane;Fri Bane;;414;3
+32;32;32;322065;;Højslev;Hø;64,076;65,301;64,85;Regionalbane;Station;;415;STED
+32;32;32;322066;;Højslev - Skive;Hø-Sk;65,301;69,123;;Regionalbane;Fri Bane;;416;3
+32;32;32;322071;;Skive;Sk;69,123;71,106;70,542;Regionalbane;Station;;417;STED
+32;32;32;322072;;Skive - Rønbjerg;Sk-Røb;71,106;77,206;;Regionalbane;Fri Bane;;418;3
+32;32;32;322077;;Rønbjerg;Røb;77,206;78,484;77,97;Regionalbane;Teknisk Station;;419;STED
+32;32;32;322080;;Rønbjerg - Vinderup;Røb-Vp;78,484;88,524;;Regionalbane;Fri Bane;;420;4
+32;32;32;322089;;Vinderup;Vp;88,524;89,741;89,2;Regionalbane;Station;;421;STED
+32;32;32;322090;;Vinderup - Struer;Vp-Str;89,741;101,492;;Regionalbane;Fri Bane;;422;3
+33a;33;33;332002;;Holstebro - Tvis;Ho-Ts;0,632;8,765;;Regionalbane;Fri Bane;;423;3
+33a;33;33;332009;;Tvis;Ts;8,765;10,003;9,46;Regionalbane;Teknisk Station;;424;STED
+33a;33;33;332010;;Tvis - Aulum;Ts-Uu;10,003;17,291;;Regionalbane;Fri Bane;;425;3
+33a;33;33;332017;;Aulum;Uu;17,291;18,619;17,73;Regionalbane;Station;;426;STED
+33a;33;33;332020;;Aulum - Vildbjerg;Uu-Id;18,619;24,54;;Regionalbane;Fri Bane;;427;3
+33a;33;33;332025;;Vildbjerg;Id;24,54;25,982;25,28;Regionalbane;Station;;428;STED
+33a;33;33;332026;;Vildbjerg - Skibbild;Id-Ib;25,982;30,858;;Regionalbane;Fri Bane;;429;3
+33a;33;33;332031;;Skibbild;Ib;30,858;32,08;31,555;Regionalbane;Teknisk Station;;430;STED
+33a;33;33;332034;;Skibbild - Herning;Ib-Hr;32,08;40,06;;Regionalbane;Fri Bane;;431;3
+56;33;33;332034;332035;Gødstrup;Gp;;;34,904;Regionalbane;Trinbræt;Forventet ibrugtagning 01.09.2020 (målt fra km-tavle);432;STED
+39;33,35;33;333000;;Herning;Hr;40,06;43,4;41,2;Regionalbane;Station;;433;STED
+39;33;33;334044;;Herning - Kølkær;Hr-Ke;43,4;50,61;;Regionalbane;Fri Bane;;434;3
+39;33;33;334051;;Kølkær;Ke;50,61;51,821;51,177;Regionalbane;Teknisk Station;;435;STED
+39;33;33;334052;;Kølkær - Fasterholt;Ke-Ft;51,821;56,719;;Regionalbane;Fri Bane;;436;3
+39;33;33;334057;;Fasterholt;Ft;56,719;58,246;57,594;Regionalbane;Teknisk Station;;437;STED
+39;33;33;334060;;Fasterholt - Brande;Ft-Bb;58,246;64,355;;Regionalbane;Fri Bane;;438;3
+39;33;33;334065;;Brande;Bb;64,355;66,045;65,405;Regionalbane;Station;;439;STED
+39;33;33;334068;;Brande - Thyregod;Bb-Ty;66,045;74,15;;Regionalbane;Fri Bane;;440;3
+39;33;33;334075;;Thyregod;Ty;74,15;75,65;74,856;Regionalbane;Station;;441;STED
+39;33;33;334076;;Thyregod - Give;Ty-Gw;75,65;82,2;;Regionalbane;Fri Bane;;442;3
+39;33;33;334083;;Give;Gw;82,2;83,801;82,829;Regionalbane;Station;;443;STED
+39;33;33;334084;;Give - Gadbjerg;Gw-Gg;83,801;92,675;;Regionalbane;Fri Bane;;444;3
+39;33;33;334093;;Gadbjerg;Gg;92,675;93,849;93,439;Regionalbane;Teknisk Station;;445;STED
+39;33;33;334094;;Gadbjerg - Jelling;Gg-Jl;93,849;99,664;;Regionalbane;Fri Bane;;446;3
+39;33;33;334101;;Jelling;Jl;99,664;100,999;100,215;Regionalbane;Station;;447;STED
+39;33;33;334102;;Jelling - Grejsdal;Jl-Ges;100,999;108,66;;Regionalbane;Fri Bane;;448;3
+39;33;33;334109;;Grejsdal;Ges;108,66;110,255;109,6;Regionalbane;Teknisk Station;;449;STED
+39;33;33;334112;;Grejsdal - Vejle;Ges-Vj;110,255;113,6;;Regionalbane;Fri Bane;;450;4
+39;33;33;334112;334113;Vejle Sygehus;Vjs;;;113,2;Regionalbane;Trinbræt;;451;STED
+34;34,1034;34;342002;;Struer - Hvidbjerg;Str-Hw;0,572;21,335;;Lokalbane II;Fri Bane;;452;4
+34;1034;34;342002;342007;Humlum;Um;;;6,9;Lokalbane II;Trinbræt;;453;STED
+34;1034;34;342002;342013;Oddesund Nord;No;;;12,377;Lokalbane II;Trinbræt;;454;STED
+34;1034;34;342002;342017;Uglev;Ul;;;16,754;Lokalbane II;Trinbræt;;455;STED
+34;1034;34;342021;;Hvidbjerg;Hw;21,335;22,153;21,86;Lokalbane II;Station;;456;STED
+34;1034;34;342024;;Hvidbjerg - Hurup Thy;Hw-Ur;22,153;39,119;;Lokalbane II;Fri Bane;;457;3
+34;1034;34;342024;342027;Lyngs;Ln;;;26,9;Lokalbane II;Trinbræt;;458;STED
+34;1034;34;342024;342035;Ydby;Yd;;;35,08;Lokalbane II;Trinbræt;;459;STED
+34;1034;34;342039;;Hurup Thy;Ur;39,119;40,038;39,492;Lokalbane II;Station;;460;STED
+34;1034;34;342042;;Hurup Thy - Bedsted Thy;Ur-Bn;40,038;45,92;;Lokalbane II;Fri Bane;;461;3
+34;1034;34;342045;;Bedsted Thy;Bn;45,92;46,87;46,372;Lokalbane II;Station;;462;STED
+34;1034;34;342048;;Bedsted Thy - Snedsted;Bn-Sne;46,87;58,805;;Lokalbane II;Fri Bane;;463;3
+34;1034;34;342048;342053;Hørdum;Hæ;;;53,742;Lokalbane II;Trinbræt;;464;STED
+34;1034;34;342059;;Snedsted;Sne;58,805;59,728;59,21;Lokalbane II;Station;;465;STED
+34;1034;34;342060;;Snedsted - Thisted;Sne-Ti;59,728;72,935;;Lokalbane II;Fri Bane;;466;4
+34;1034;34;342060;342067;Sjørring;Ri;;;67;Lokalbane II;Trinbræt;;467;STED
+34;1034;34;343000;;Thisted;Ti;72,935;73,679;73,6;Lokalbane II;Station;;468;STED
+55;35;35;352002;;Skanderborg - Ry;Sd-Ry;0,598;11,544;;Regionalbane;Fri Bane;;469;3
+55;35;35;352002;352005;Alken;Ak;;;5,134;Regionalbane;Trinbræt;;470;STED
+55;35;35;352011;;Ry;Ry;11,544;12,723;12,265;Regionalbane;Station;;471;STED
+55;35;35;352014;;Ry - Laven;Ry-La;12,723;17,062;;Regionalbane;Fri Bane;;472;3
+55;35;35;352017;;Laven;La;17,062;18,188;17,588;Regionalbane;Station;;473;STED
+55;35;35;352020;;Laven - Svejbæk;La-Sv;18,188;22,802;;Regionalbane;Fri Bane;;474;3
+55;35;35;352023;;Svejbæk;Sv;22,802;23,878;23,205;Regionalbane;Station;;475;STED
+55;35;35;352024;;Svejbæk - Silkeborg;Sv-Sl;23,878;29,1;;Regionalbane;Fri Bane;;476;3
+55;35;35;352029;;Silkeborg;Sl;29,1;30,932;30,127;Regionalbane;Station;;477;STED
+55;35;35;352032;;Silkeborg - Funder;Sl-Fu;30,932;35,687;;Regionalbane;Fri Bane;;478;3
+55;35;35;352037;;Funder;Fu;35,687;37,073;36,185;Regionalbane;Teknisk Station;;479;STED
+55;35;35;352038;;Funder - Engesvang;Fu-Ev;37,073;44,907;;Regionalbane;Fri Bane;;480;3
+55;35;35;352045;;Engesvang;Ev;44,907;46,082;45,528;Regionalbane;Station;;481;STED
+55;35;35;352048;;Engesvang - Bording;Ev-Bg;46,082;51,073;;Regionalbane;Fri Bane;;482;3
+55;35;35;352051;;Bording;Bg;51,073;52,113;51,746;Regionalbane;Station;;483;STED
+55;35;35;352054;;Bording - Ikast;Bg-Ik;52,113;58,717;;Regionalbane;Fri Bane;;484;3
+55;35;35;352059;;Ikast;Ik;58,717;60,046;59,422;Regionalbane;Station;;485;STED
+55;35;35;352062;;Ikast - Hammerum;Ik-Hu;60,046;65,099;;Regionalbane;Fri Bane;;486;3
+55;35;35;352065;;Hammerum;Hu;65,099;66,2;65,518;Regionalbane;Station;;487;STED
+55;35;35;352068;;Hammerum - Herning;Hu-Hr;66,2;69,996;;Regionalbane;Fri Bane;;488;3
+56;35;35;352068;352069;Birk Centerpark;Bic;;;67,915;Regionalbane;Trinbræt;;489;STED
+56;35;35;354074;;Herning - Kibæk;Hr-Kæ;73,525;85,311;;Lokalbane II;Fri Bane;;490;3
+56;35;35;354074;354075;Herning Messecenter;Hrm;;;73,744;Lokalbane II;Trinbræt;;491;STED
+56;35;35;354074;354077;Studsgård;Stu;;;77,9;Lokalbane II;Trinbræt;;492;STED
+56;35;35;354085;;Kibæk;Kæ;85,311;86,482;85,7;Lokalbane II;Station;;493;STED
+56;35;35;354088;;Kibæk - Borris;Kæ-Bs;86,482;101,039;;Lokalbane II;Fri Bane;;494;3
+56;35;35;354088;354095;Troldhede;Td;;;94,038;Lokalbane II;Trinbræt;;495;STED
+56;35;35;354101;;Borris;Bs;101,039;102,325;101,67;Lokalbane II;Station;;496;STED
+56;35;35;354104;;Borris - Skjern;Bs-Sj;102,325;110,734;;Lokalbane II;Fri Bane;;497;3
+36;36;36;362002;;Aarhus H - Østbanetorvet;Ar-Øs;0,881;1,515;;Lokalbane I;Fri Bane;;498;3
+36;36;36;362002;362027;Skolebakken;Bak;;;1,3;Lokalbane I;Trinbræt;;499;STED
+36;36;36;362003;;Østbanetorvet;Øs;1,515;2,37;2;Lokalbane I;Station;;500;STED
+36;36;36;362004;;Østbanetorvet - Torsøvej;Øs-Tov;2,37;6,26;;Lokalbane I;Fri Bane;;501;3
+36;36;36;362004;362037;Den Permanente;Per;;;3,8;Lokalbane I;Trinbræt;;502;STED
+36;36;36;362004;362057;Vestre Strandallé;Vsa;;;5,9;Lokalbane I;Trinbræt;;503;STED
+36;36;36;362007;;Torsøvej;Tov;6,26;8,203;7,145;Lokalbane I;Station;;504;STED
+36;36;36;362010;;Torsøvej - Lystrup;Tov-Lp;8,203;11,2;;Lokalbane I;Fri Bane;;505;4
+36;36;36;362011;;Lystrup;Lp;11,2;12,042;11,7;Lokalbane I;Station;;506;STED
+36;36;36;362014;;Lystrup - Skødstrup;Lp-Øds;12,042;16,993;;Lokalbane I;Fri Bane;;507;3
+36;36;36;362014;362145;Hovmarken;Lpt;;;13,056;Lokalbane I;Trinbræt;;508;STED
+36;36;36;362014;362015;Hjortshøj;Ht;;;14,535;Lokalbane I;Trinbræt;;509;STED
+36;36;36;362017;;Skødstrup;Øds;16,993;17,75;17,4;Lokalbane I;Station;;510;STED
+36;36;36;362018;;Skødstrup - Hornslet;Øds-Os;17,75;24,64;;Lokalbane I;Fri Bane;;511;4
+36;36;36;362018;362019;Løgten;Lt;;;19,2;Lokalbane I;Trinbræt;;512;STED
+36;36;36;362025;;Hornslet;Os;24,64;25,424;24,915;Lokalbane I;Station;;513;STED
+36;36;36;362026;;Hornslet - Ryomgård;Os-Rå;25,424;39,517;;Lokalbane I;Fri Bane;;514;3
+36;36;36;362026;362031;Mørke;Mr;;;30,732;Lokalbane I;Trinbræt;;515;STED
+36;36;36;362041;;Ryomgård;Rå;39,517;40,695;40,165;Lokalbane I;Station;;516;STED
+36;36;36;362042;;Ryomgård - Grenaa;Rå-Gr;40,695;68,076;;Lokalbane I;Fri Bane;;517;3
+36;36;36;362042;362047;Kolind;Ko;;;46,1;Lokalbane I;Trinbræt;;518;STED
+36;36;36;362042;362059;Trustrup;Tu;;;58,3;Lokalbane I;Trinbræt;;519;STED
+36;36;36;363000;;Grenaa;Gr;68,076;69,169;68,83;Lokalbane I;Station;;520;STED
+36;;36;363901;;Grenaa Havn;Gr H;;;;Lokalbane I;Teknisk Station;;521;STED
+;;414;414000;;(Slagelse) - (Næstved);Sg-Næ;0,922;39,123;;Nedlagt;Fri Bane;;522;3
+;;416;416000;;(Dalmose) - Skælskør;Da-Ss;15,458;26,778;;Nedlagt;Fri Bane;;523;3
+44;;432;432000;;(Tommerup) - Assens;Tp-Ac;0;28,607;;Restbane m/spor;Fri Bane;;524;3
+;;434;434000;;(Ringe) - Korinth;Re-Krs;27,13;43,566;;Nedlagt;Fri Bane;Tidl. Godsbane;525;3
+;;451;451000;;Ålestrup - (Viborg);Aat-Vi;35,318;37,095;;Nedlagt;Fri Bane;;526;4
+;;457;457000;;(Randers) - Strømmen;Rd-Stø;0,815;3,365;;Nedlagt;Fri Bane;Tidl. Godsbane;527;3
+;;472;472000;;(Strømmen)-Allingåbro;Stø-Al;3,365;19,752;;Nedlagt;Fri Bane;Tidl. Godsbane;528;4
+;;491;491000;;(Bramming) - Grindsted;Bm-Gi;1,051;40,79;;Nedlagt;Fri Bane;Nedlagt Godsbane;529;3
+49;;492;492000;;(Tinglev) - (Tønder);Te-Tdr;41,855;67,459;;Restbane m/spor;Fri Bane;;530;3
+;;494;494000;;(Rødekro) - Aabenraa;Rq-Åa;1,09;6,383;;Nedlagt;Fri Bane;Tidl. Godsbane;531;3
+;;494;494007;;Aabenraa;Åa;6,383;6,768;6,8;Nedlagt;Station;Tidl. Godsbane;532;STED
+;;496;496001;;Haderslev By;Hab;0;0,254;0;Nedlagt;Station;Tidl. Godsbane;533;STED
+;;496;496000;;Haderslev - (Vojens);Had-Oj;0,254;10,975;;Nedlagt;Fri Bane;Tidl. Godsbane;534;4
+52;52;52;521252;;Lindholm - Aalborg Lufthavn;Lih-Abl;252,319;253,86;;Hovedbane;Fri Bane;Data er ikke endelige;535;4
+52;52;52;521255;;Aalborg Lufthavn;Abl;253,86;254,303;254,198;Hovedbane;Station;Data er ikke endelige;536;STED
+;;53;531002;;Aalborg - Aalborg Østhavn;Ab-Abø;2,154;16,919;;Godsbane;Fri Bane;;537;3
+;;602;602001;;Jægersborg;Jæt;0;0,83;0;Privatbane;Station;;538;STED
+;;602;602002;;Jægersborg - Fuglevad;Jæt-Fgv;0,83;3,16;;Privatbane;Fri Bane;;539;4
+;;602;602002;602011;Nørgaardsvej;Nøv;;;1,2;Privatbane;Trinbræt;;540;STED
+;;602;602002;602019;Lyngby Lokal;Lyl;;;1,9;Privatbane;Trinbræt;;541;STED
+;;602;602003;;Fuglevad;Fgv;3,16;3,61;3,3;Privatbane;Station;;542;STED
+;;602;602004;;Fuglevad - Ørholm;Fgv-Ørh;3,61;5,25;;Privatbane;Fri Bane;;543;4
+;;602;602004;602045;Brede;Bre;;;4,5;Privatbane;Trinbræt;;544;STED
+;;602;602005;;Ørholm;Ørh;5,25;5,65;5,5;Privatbane;Station;;545;STED
+;;602;602006;;Ørholm - Nærum;Ørh-Nær;5,65;7,33;;Privatbane;Fri Bane;;546;4
+;;602;602006;602061;Ravnholm;Rvh;;;6,1;Privatbane;Trinbræt;;547;STED
+;;602;602073;;Nærum;Nær;7,33;7,64;7,64;Privatbane;Station;;548;STED
+;;604;604002;;Hillerød - Brødeskov;Hi-Bsk;0,971;4,45;;Privatbane;Fri Bane;;549;3
+;;604;604005;;Brødeskov;Bsk;4,45;5,32;4,8;Privatbane;Station;;550;STED
+;;604;604006;;Brødeskov - Gørløse;Bsk-Gør;5,32;9,5;;Privatbane;Fri Bane;;551;4
+;;604;604011;;Gørløse;Gør;9,5;10,25;9,8;Privatbane;Station;;552;STED
+;;604;604012;;Gørløse - Skævinge;Gør-Skv;10,25;13,97;;Privatbane;Fri Bane;;553;4
+;;604;604015;;Skævinge;Skv;13,97;15,22;14,2;Privatbane;Station;;554;STED
+;;604;604016;;Skævinge - Ølsted;Skv-Øls;15,22;18,94;;Privatbane;Fri Bane;;555;4
+;;604;604016;604017;Grimstrup;Gsf;;;17,3;Privatbane;Trinbræt;;556;STED
+;;604;604019;;Ølsted;Øls;18,94;19,69;19,3;Privatbane;Station;;557;STED
+;;604;604020;;Ølsted - Kregme;Øls-Krf;19,69;21,28;;Privatbane;Fri Bane;;558;4
+;;604;604021;;Kregme;Krf;21,28;22;21,5;Privatbane;Station;;559;STED
+;;604;604022;;Kregme - Frederiksværk;Krf-Frv;22;25,21;;Privatbane;Fri Bane;;560;4
+;;604;604022;604023;Lille Kregme;Llk;;;23;Privatbane;Trinbræt;;561;STED
+;;604;604025;;Frederiksværk;Frv;25,21;26,37;25,8;Privatbane;Station;;562;STED
+;;604;604026;;Frederiksværk - Melby;Frv-Mel;26,37;29,85;;Privatbane;Fri Bane;;563;4
+;;604;604026;604027;Hanehoved;Hhf;;;27,3;Privatbane;Trinbræt;;564;STED
+;;604;604029;;Melby;Mel;29,85;30,59;30;Privatbane;Station;;565;STED
+;;604;604030;;Melby - Dyssekilde;Mel-Dsk;30,59;31,67;;Privatbane;Fri Bane;;566;4
+;;604;604031;;Dyssekilde;Dsk;31,67;32,47;31,9;Privatbane;Station;;567;STED
+;;604;604032;;Dyssekilde - Østerbjerg;Dsk-Øsf;32,47;33,69;;Privatbane;Fri Bane;;568;4
+;;604;604033;;Østerbjerg;Øsf;33,69;34,47;33,9;Privatbane;Station;;569;STED
+;;604;604036;;Østerbjerg - Hundested;Øsf-Hun;34,47;38,84;;Privatbane;Fri Bane;;570;4
+;;604;604036;604037;Vibehus;Vif;;;37,1;Privatbane;Trinbræt;;571;STED
+;;604;604039;;Hundested;Hun;38,84;39,3;39;Privatbane;Station;;572;STED
+;;604;604041;;Hundested Havn;Huh;39,3;39,78;39,6;Privatbane;Station;;573;STED
+;;605;605002;;Helsingør - Grønnehave;Hg-Grø;0;0,7;;Privatbane;Fri Bane;;574;3
+;;605;605003;;Grønnehave;Grø;0,7;1,2;0,9;Privatbane;Station;;575;STED
+;;605;605004;;Grønnehave - Højstrup;Grø-Høp;1,2;2,11;;Privatbane;Fri Bane;;576;4
+;;605;605004;605035;Marienlyst;Mar;;;1,5;Privatbane;Trinbræt;;577;STED
+;;605;605005;;Højstrup;Høp;2,11;2,59;2,4;Privatbane;Station;;578;STED
+;;605;605006;;Højstrup - Hellebæk;Høp-Hel;2,59;5,41;;Privatbane;Fri Bane;;579;4
+;;605;605007;;Hellebæk;Hel;5,41;5,8;5,6;Privatbane;Station;;580;STED
+;;605;605008;;Hellebæk - Ålsgårde;Hel-Aal;5,8;6,7;;Privatbane;Fri Bane;;581;4
+;;605;605009;;Ålsgårde;Aal;6,7;7,6;7;Privatbane;Station;;582;STED
+;;605;605010;;Ålsgårde - Saunte;Aal-Sau;7,6;10,33;;Privatbane;Fri Bane;;583;4
+;;605;605010;605087;Skibstrup;Skb;;;8,7;Privatbane;Trinbræt;;584;STED
+;;605;605013;;Saunte;Sau;10,33;10,82;10,6;Privatbane;Station;;585;STED
+;;605;605014;;Saunte - Hornbæk;Sau-Hnk;10,82;12,46;;Privatbane;Fri Bane;;586;4
+;;605;605014;605117;Karinebæk;Kab;;;11,7;Privatbane;Trinbræt;;587;STED
+;;605;605015;;Hornbæk;Hnk;12,46;13,11;12,7;Privatbane;Station;;588;STED
+;;605;605016;;Hornbæk - Dronningmølle;Hnk-Drm;13,11;17,17;;Privatbane;Fri Bane;;589;4
+;;605;605016;605143;Horneby Sand;Hsa;;;14,3;Privatbane;Trinbræt;;590;STED
+;;605;605016;605151;Kildekrog;Kil;;;15,1;Privatbane;Trinbræt;;591;STED
+;;605;605019;;Dronningmølle;Drm;17,17;17,83;17,4;Privatbane;Station;;592;STED
+;;605;605020;;Dronningmølle - Firhøj;Drm-Fir;17,83;19,16;;Privatbane;Fri Bane;;593;4
+;;605;605021;;Firhøj;Fir;19,16;19,66;19,4;Privatbane;Station;;594;STED
+;;605;605022;;Firhøj - Gilleleje;Fir-Gll;19,66;24,05;;Privatbane;Fri Bane;;595;4
+;;605;605022;605209;Søborg;Søb;;;20,8;Privatbane;Trinbræt;;596;STED
+;;605;605022;605225;Stæremosen;Stæ;;;22,4;Privatbane;Trinbræt;;597;STED
+;;605;605022;605237;Gilleleje Øst;Glø;;;23,7;Privatbane;Trinbræt;;598;STED
+;;606;606002;;Hillerød - Slotspavillonen;Hi-Spg;1,16;1,43;;Privatbane;Fri Bane;;599;3
+;;606;606003;;Slotspavillonen;Spg;1,43;2,1;1,8;Privatbane;Station;;600;STED
+;;606;606004;;Slotspavillonen - Kagerup;Spg-Kgg;2,1;8,2;;Privatbane;Fri Bane;;601;4
+;;606;606004;606007;Gribsø;Gøg;;;7,1;Privatbane;Trinbræt;;602;STED
+;;606;606009;;Kagerup;Kgg;8,2;8,89;8,6;Privatbane;Station;;603;STED
+;;606;606010;;Kagerup - Mårum;Kgg-Mmg;8,89;13,36;;Privatbane;Fri Bane;;604;4
+;;606;606013;;Mårum;Mmg;13,36;14,01;13,7;Privatbane;Station;;605;STED
+;;606;606014;;Mårum - Græsted;Mmg-Græ;14,01;19,49;;Privatbane;Fri Bane;;606;4
+;;606;606014;606017;Saltrup;Sag;;;16,6;Privatbane;Trinbræt;;607;STED
+;;606;606014;606019;Græsted Syd;Grs;;;18,6;Privatbane;Trinbræt;;608;STED
+;;606;606021;;Græsted;Græ;19,49;20,07;19,7;Privatbane;Station;;609;STED
+;;606;606022;;Græsted - Gilleleje;Græ-Gll;20,07;25,42;;Privatbane;Fri Bane;;610;4
+;;606;606022;606023;Pårup;Ppg;;;23,1;Privatbane;Trinbræt;;611;STED
+;;606;606022;606025;Fjellenstrup;Fjg;;;24,9;Privatbane;Trinbræt;;612;STED
+;;606;606027;;Gilleleje;Gll;25,42;26,15;25,9;Privatbane;Station;;613;STED
+;;608;608010;;Kagerup - Helsinge;Kgg-Hlg;8,89;14,04;;Privatbane;Fri Bane;;614;4
+;;608;608010;608011;Duemose;Dug;;;10,7;Privatbane;Trinbræt;;615;STED
+;;608;608015;;Helsinge;Hlg;14,04;14,88;14,6;Privatbane;Station;;616;STED
+;;608;608016;;Helsinge - Vejby;Hlg-Vej;14,88;20,72;;Privatbane;Fri Bane;;617;4
+;;608;608016;608017;Laugø;Løg;;;16,9;Privatbane;Trinbræt;;618;STED
+;;608;608016;608019;Ørby;Øbg;;;19,1;Privatbane;Trinbræt;;619;STED
+;;608;608021;;Vejby;Vej;20,72;21,37;21;Privatbane;Station;;620;STED
+;;608;608022;;Vejby - Tisvildeleje;Vej-Tvl;21,37;24,32;;Privatbane;Fri Bane;;621;4
+;;608;608022;608221;Holløse;Hog;;;22,2;Privatbane;Trinbræt;;622;STED
+;;608;608022;608235;Godhavn;Ghg;;;23,5;Privatbane;Trinbræt;;623;STED
+;;608;608025;;Tisvildeleje;Tvl;24,32;24,85;24,7;Privatbane;Station;;624;STED
+;;609;609002;;Holbæk - Mårsø;Hk-Må;0,8;4,5;;Privatbane;Fri Bane;;625;3
+;;609;609002;609003;Stenhus;Sht;;;1,3;Privatbane;Trinbræt;;626;STED
+;;609;609005;;Mårsø;Må;4,5;5,65;5,1;Privatbane;Station;;627;STED
+;;609;609006;;Mårsø - Gislinge;Må-Gsl;5,65;10,38;;Privatbane;Fri Bane;;628;3
+;;609;609006;609007;Ny Hagested;Hgt;;;7,7;Privatbane;Trinbræt;;629;STED
+;;609;609011;;Gislinge;Gsl;10,38;11,01;10,7;Privatbane;Station;;630;STED
+;;609;609012;;Gislinge - Svinninge;Gsl-Sng;11,01;15,41;;Privatbane;Fri Bane;;631;4
+;;609;609015;;Svinninge;Sng;15,41;16,2;15,8;Privatbane;Station;;632;STED
+;;609;609018;;Svinninge - Hørve;Sng-Hve;16,2;19,38;;Privatbane;Fri Bane;;633;4
+;;609;609019;;Hørve;Hve;19,38;20,14;19,7;Privatbane;Station;;634;STED
+;;609;609022;;Hørve - Fårevejle;Hve-Fvj;20,14;23,51;;Privatbane;Fri Bane;;635;4
+;;609;609023;;Fårevejle;Fvj;23,51;24,13;23,8;Privatbane;Station;;636;STED
+;;609;609026;;Fårevejle - Asnæs;Fvj-Asn;24,13;26,66;;Privatbane;Fri Bane;;637;4
+;;609;609027;;Asnæs;Asn;26,66;27,37;27;Privatbane;Station;;638;STED
+;;609;609028;;Asnæs - Grevinge;Asn-Grv;27,37;30,18;;Privatbane;Fri Bane;;639;4
+;;609;609031;;Grevinge;Grv;30,18;30,63;30,4;Privatbane;Station;;640;STED
+;;609;609032;;Grevinge - Vig;Grv-Vig;30,63;36,56;;Privatbane;Fri Bane;;641;4
+;;609;609037;;Vig;Vig;36,56;37,2;36,8;Privatbane;Station;;642;STED
+;;609;609038;;Vig - Nørre Asmindrup;Vig-Nam;37,2;40,93;;Privatbane;Fri Bane;;643;4
+;;609;609041;;Nørre Asmindrup;Nam;40,93;41,67;41,3;Privatbane;Station;;644;STED
+;;609;609042;;Nørre Asmindrup - Højby Sjælland;Nam-Hbs;41,67;44,17;;Privatbane;Fri Bane;;645;4
+;;609;609042;609043;Sommerland Sjælland;Slt;;;43;Privatbane;Trinbræt;;646;STED
+;;609;609045;;Højby Sjælland;Hbs;44,17;44,93;44,5;Privatbane;Station;;647;STED
+;;609;609046;;Højby Sjælland - Nykøbing Sjælland;Hbs-Nks;44,93;49,13;;Privatbane;Fri Bane;;648;4
+;;609;609046;609047;Nyled;Ndt;;;48,1;Privatbane;Trinbræt;;649;STED
+;;609;609049;;Nykøbing Sjælland;Nks;49,13;49,79;49,4;Privatbane;Station;;650;STED
+;;615;615002;;Slagelse - Havrebjerg;Sg-Heb;0,945;5,68;;Privatbane;Fri Bane;;651;3
+;;615;615007;;Havrebjerg;Heb;5,68;6,47;6,2;Privatbane;Station;Nedlagt station 2011;652;STED
+;;615;615008;;Havrebjerg - Høng;Heb-Øn;6,47;12,276;;Privatbane;Fri Bane;;653;4
+;;615;615013;;Høng;Øn;12,276;13,236;12,8;Privatbane;Station;;654;STED
+;;615;615014;;Høng - Gørlev;Øn-Gv;13,236;17,919;;Privatbane;Fri Bane;Veteranbane;655;3
+;;616;616002;;Høng - Ruds Vedby;Øn-Ruv;0,53;6,83;;Privatbane;Fri Bane;;656;3
+;;616;616007;;Ruds Vedby;Ruv;6,83;7,5;7,2;Privatbane;Station;;657;STED
+;;616;616008;;Ruds Vedby - Skellebjerg;Ruv-Skl;7,5;11,64;;Privatbane;Fri Bane;;658;4
+;;616;616011;;Skellebjerg;Skl;11,64;12,29;11,978;Privatbane;Station;;659;STED
+;;616;616014;;Skellebjerg - Dianalund;Skl-Dia;12,29;14,63;;Privatbane;Fri Bane;;660;4
+;;616;616015;;Dianalund;Dia;14,63;15,51;15,2;Privatbane;Station;;661;STED
+;;616;616016;;Dianalund - Stenlille;Dia-Stl;15,51;20,88;;Privatbane;Fri Bane;;662;4
+;;616;616016;616019;Vedde;Ved;;;18,3;Privatbane;Trinbræt;;663;STED
+;;616;616021;;Stenlille;Stl;20,88;21,8;21,2;Privatbane;Station;;664;STED
+;;616;616022;;Stenlille - Store Merløse;Stl-Sms;21,8;28,57;;Privatbane;Fri Bane;;665;4
+;;616;616022;616025;Nyrup;Nyp;;;25,2;Privatbane;Trinbræt;;666;STED
+;;616;616022;616027;Bagmarken;Bmt;;;27,2;Privatbane;Trinbræt;;667;STED
+;;616;616029;;Store Merløse;Sms;28,57;29,32;28,9;Privatbane;Station;;668;STED
+;;616;616030;;Store Merløse - Kirke Eskilstrup;Sms-Kek;29,32;33,28;;Privatbane;Fri Bane;;669;4
+;;616;616033;;Kirke Eskilstrup;Kek;33,28;34,06;33,8;Privatbane;Station;;670;STED
+;;616;616036;;Kirke Eskilstrup - Tølløse;Kek-Tø;34,06;37,659;;Privatbane;Fri Bane;;671;4
+;;618;618002;;Køge - Egøje;Kj-Egø;0,524;2,75;;Privatbane;Fri Bane;;672;3
+;;618;618003;;Egøje;Egø;2,75;3,62;3,2;Privatbane;Station;;673;STED
+;;618;618004;;Egeøje - Vallø;Egø-Vlø;3,62;5,56;;Privatbane;Fri Bane;;674;4
+;;618;618005;;Vallø;Vlø;5,56;6,39;5,9;Privatbane;Station;;675;STED
+;;618;618008;;Vallø - Grubberholm;Vlø-Grh;6,39;7,97;;Privatbane;Fri Bane;;676;4
+;;618;618009;;Grubberholm;Grh;7,97;8,73;8,2;Privatbane;Station;;677;STED
+;;618;618010;;Grubberholm - Hårlev;Grh-Hrl;8,73;11,64;;Privatbane;Fri Bane;;678;4
+;;618;618010;618011;Himlingøje;Hmø;;;10,2;Privatbane;Trinbræt;;679;STED
+;;618;618013;;Hårlev;Hrl;11,64;12,63;12,1;Privatbane;Station;;680;STED
+;;618;618014;;Hårlev - Karise;Hrl-Kri;12,63;17,25;;Privatbane;Fri Bane;;681;4
+;;618;618014;618015;Lille Linde;Lli;;;13,8;Privatbane;Trinbræt;;682;STED
+;;618;618017;;Karise;Kri;17,25;18,02;17,5;Privatbane;Station;;683;STED
+;;618;618018;;Karise - Faxe Syd;Kri-Fxs;18,02;26,2;;Privatbane;Fri Bane;;684;4
+;;618;618018;618021;Tokkerup;Tok;;;21,9;Privatbane;Trinbræt;;685;STED
+;;618;618027;;Faxe Syd;Fxs;26,2;27,06;26,6;Privatbane;Station;;686;STED
+;;618;618028;;Faxe Syd - Faxe Ladeplads;Fxs-Fxl;27,06;29,61;;Privatbane;Fri Bane;;687;4
+;;618;618030;;Faxe Ladeplads;Fxl;29,61;30,01;29,8;Privatbane;Station;;688;STED
+;;619;619002;;Hårlev  -  Klippinge;Hrl-Klp;0,2;6,07;;Privatbane;Fri Bane;;689;4
+;;619;619002;619003;Varpelev;Vap;;;3,5;Privatbane;Trinbræt;;690;STED
+;;619;619007;;Klippinge;Klp;6,07;6,84;6,5;Privatbane;Station;;691;STED
+;;619;619008;;Klippinge - Store Heddinge;Klp-Sth;6,84;11,82;;Privatbane;Fri Bane;;692;4
+;;619;619011;;Store Heddinge;Sth;11,82;12,51;12,2;Privatbane;Station;;693;STED
+;;619;619014;;Store Heddinge - Rødvig;Sth-Rdg;12,51;17,92;;Privatbane;Fri Bane;;694;4
+;;619;619017;;Rødvig;Rdg;17,92;18,65;18,5;Privatbane;Station;;695;STED
+;;632;632002;;Nykøbing Falster Vest - Grænge;Nfv-Grg;1,8;7,17;;Privatbane;Fri Bane;;696;4
+;;632;632002;632003;Østeroreby;Øto;;;3,1;Privatbane;Trinbræt;;697;STED
+;;632;632007;;Grænge;Grg;7,17;8,31;7,6;Privatbane;Station;;698;STED
+;;632;632010;;Grænge - Sakskøbing;Grg-Sx;8,31;15,51;;Privatbane;Fri Bane;;699;4
+;;632;632017;;Sakskøbing;Sx;15,51;17,26;16,4;Privatbane;Station;;700;STED
+;;632;632018;;Sakskøbing - Maribo;Sx-Mrb;17,26;24,71;;Privatbane;Fri Bane;;701;3
+;;632;632025;;Maribo;Mrb;24,71;25,8;25,4;Privatbane;Station;;702;STED
+;;632;632026;;Maribo - Ryde;Mrb-Ryd;25,8;33,28;;Privatbane;Fri Bane;;703;4
+;;632;632033;;Ryde;Ryd;33,28;34,37;33,9;Privatbane;Station;;704;STED
+;;632;632036;;Ryde - Søllested;Ryd-Søl;34,37;40,59;;Privatbane;Fri Bane;;705;4
+;;632;632041;;Søllested;Søl;40,59;41,56;41;Privatbane;Station;;706;STED
+;;632;632042;;Søllested - Nakskov;Søl-Nsk;41,56;49,3;;Privatbane;Fri Bane;;707;4
+;;632;632042;632045;Avnede;Avd;;;45,1;Privatbane;Trinbræt;;708;STED
+;;632;632049;;Nakskov;Nsk;49,3;50,55;50,2;Privatbane;Station;;709;STED
+;;634;634000;;Maribo - Bandholm;Mrb-Bdh;0;7,4;;Privatbane;Fri Bane;Veteranbane;710;4
+;;662;662002;;Varde - Varde Vest;Va-Vav;0,625;1,88;;Privatbane;Fri Bane;;711;3
+;;662;662002;662161;Frisvadvej;Frt;;;1,6;Privatbane;Trinbræt;;712;STED
+;;662;662003;;Varde Vest;Vav;1,88;2,84;2,4;Privatbane;Station;;713;STED
+;;662;662004;;Varde Vest - Janderup;Vav-Jad;2,84;8,58;;Privatbane;Fri Bane;;714;4
+;;662;662004;662341;Boulevarden;Bot;;;3,4;Privatbane;Trinbræt;;715;STED
+;;662;662004;662561;Elkærdam;El;;;5,6;Privatbane;Trinbræt;;716;STED
+;;662;662004;662721;Hyllerslev;Hyv;;;7,2;Privatbane;Trinbræt;;717;STED
+;;662;662009;;Janderup;Jad;8,58;9,25;8,9;Privatbane;Station;;718;STED
+;;662;662010;;Janderup - Billum;Jad-Bim;9,25;11,35;;Privatbane;Fri Bane;;719;4
+;;662;662011;;Billum;Bim;11,35;12,11;11,8;Privatbane;Station;;720;STED
+;;662;662012;;Billum - Hesselmed;Bim-Hst;12,11;13,92;;Privatbane;Fri Bane;;721;4
+;;662;662013;;Hesselmed;Hst;13,92;14,41;14;Privatbane;Station;;722;STED
+;;662;662014;;Hesselmed - Oksbøl;Hst-Oks;14,41;14,73;;Privatbane;Fri Bane;;723;4
+;;662;662015;;Oksbøl;Oks;14,73;15,58;15,1;Privatbane;Station;;724;STED
+;;662;662016;;Oksbøl - Henne;Oks-Hnn;15,58;24,36;;Privatbane;Fri Bane;;725;4
+;;662;662016;662017;Baunhøj;Bah;;;16,2;Privatbane;Trinbræt;;726;STED
+;;662;662016;662019;Vrøgum;Vrø;;;18,2;Privatbane;Trinbræt;;727;STED
+;;662;662016;662021;Jegum;Jeg;;;19,7;Privatbane;Trinbræt;;728;STED
+;;662;662016;662023;Søvig Sund;Søt;;;21,8;Privatbane;Trinbræt;;729;STED
+;;662;662016;662237;Dyreby;Dy;;;23,7;Privatbane;Trinbræt;;730;STED
+;;662;662025;;Henne;Hnn;24,36;25,39;25;Privatbane;Station;;731;STED
+;;662;662026;;Henne - Outrup;Hnn-Ovt;25,39;27,22;;Privatbane;Fri Bane;;732;4
+;;662;662027;;Outrup;Ovt;27,22;27,82;27,7;Privatbane;Station;;733;STED
+;;662;662028;;Outrup - Nørre Nebel;Ovt-Nbl;27,82;37,17;;Privatbane;Fri Bane;;734;4
+;;662;662028;662029;Løftgård;Løt;;;29,1;Privatbane;Trinbræt;;735;STED
+;;662;662028;662032;Lunde;Luj;;;32,2;Privatbane;Trinbræt;;736;STED
+;;662;662037;;Nørre Nebel;Nbl;37,17;37,81;37,6;Privatbane;Station;;737;STED
+;;663;663002;;Oksbøl - Oksbøl Lejren;Oks-Oksl;0;4,79;;Privatbane;Fri Bane;;738;4
+;;664;664009;;Odder;Odd;9,7;10,06;9,7;Privatbane;Station;;739;STED
+;;664;664012;;Odder - Assedrup;Odd-Ass;10,06;13,66;;Privatbane;Fri Bane;;740;4
+;;664;664012;664111;Rude Havvej;Ruh;;;11,1;Privatbane;Trinbræt;;741;STED
+;;664;664013;;Assedrup;Ass;13,66;14,69;14;Privatbane;Station;;742;STED
+;;664;664016;;Assedrup - Malling;Ass-Mal;14,69;17,93;;Privatbane;Fri Bane;;743;4
+;;664;664017;;Malling;Mal;17,93;18,85;18,1;Privatbane;Station;;744;STED
+;;664;664020;;Malling - Mårslet;Mal-Mst;18,85;22,69;;Privatbane;Fri Bane;;745;4
+;;664;664020;664205;Beder;Bed;;;20,5;Privatbane;Trinbræt;;746;STED
+;;664;664020;664221;Vilhelmsborg;Vh;;;22,1;Privatbane;Trinbræt;;747;STED
+;;664;664023;;Mårslet;Mst;22,69;23,43;23,1;Privatbane;Station;;748;STED
+;;664;664024;;Mårslet - Tranbjerg;Mst-Trg;23,43;26,84;;Privatbane;Fri Bane;;749;4
+;;664;664024;664237;Mølleparken;Mpk;;;23,8;Privatbane;Trinbræt;;750;STED
+;;664;664024;664261;Nørrevænget;Nrv;;;26,1;Privatbane;Trinbræt;;751;STED
+;;664;664027;;Tranbjerg;Trg;26,84;27,67;27,2;Privatbane;Station;;752;STED
+;;664;664028;;Tranbjerg - Viby Jylland;Trg-Vi;27,67;31,12;;Privatbane;Fri Bane;;753;4
+;;664;664028;664291;Gunnar Clausensvej;Gct;;;29,1;Privatbane;Trinbræt;;754;STED
+;;664;664028;664297;Øllegårdsvej;Øgt;;;29,7;Privatbane;Trinbræt;;755;STED
+;;664;664028;664305;Rosenhøj;Rh;;;30,6;Privatbane;Trinbræt;;756;STED
+;;664;664031;;Viby Jylland;Vi;31,12;31,9;31,6;Privatbane;Station;;757;STED
+;;664;664032;;Viby Jylland - Aarhus H;Vi-Ar;31,9;35,501;;Privatbane;Fri Bane;;758;3
+;;664;664032;664033;Kongsvang;Kgv;;;33,4;Privatbane;Trinbræt;;759;STED
+;;665;665002;;Lemvig - Strande;Lmv-Sta;1,28;10,04;;Privatbane;Fri Bane;;760;4
+;;665;665002;665003;Balleby;Bat;;;3,7;Privatbane;Trinbræt;;761;STED
+;;665;665002;665007;Klinkby;Kli;;;6,5;Privatbane;Trinbræt;;762;STED
+;;665;665002;665009;Nejrup;Net;;;8,7;Privatbane;Trinbræt;;763;STED
+;;665;665011;;Strande;Sta;10,04;10,86;10,3;Privatbane;Station;;764;STED
+;;665;665012;;Strande - Harboøre;Sta-Hbø;10,86;17,06;;Privatbane;Fri Bane;;765;4
+;;665;665012;665013;Victoria Street Station;Vic;;;11,9;Privatbane;Trinbræt;;766;STED
+;;665;665012;665015;Vrist;Vri;;;14,6;Privatbane;Trinbræt;;767;STED
+;;665;665017;;Harboøre;Hbø;17,06;17,95;17,5;Privatbane;Station;;768;STED
+;;665;665018;;Harboøre - Rønland;Hbø-Røn;17,95;21,18;;Privatbane;Fri Bane;;769;4
+;;665;665021;;Rønland;Røn;21,18;22,29;21,7;Privatbane;Station;;770;STED
+;;665;665024;;Rønland - Thyborøn Havn;Røn-Thb;22,29;28,01;;Privatbane;Fri Bane;;771;4
+;;665;665024;665025;Sprogøvej;Ths;;;26,5;Privatbane;Trinbræt;;772;STED
+;;665;665024;665027;Thyborøn;Tht;;;27,2;Privatbane;Trinbræt;;773;STED
+;;665;665029;;Thyborøn Havn;Thb;28,01;28,5;28,1;Privatbane;Station;;774;STED
+;;666;666002;;Vemb - Bækmarksbro;Vem-Bkm;0,61;8,08;;Privatbane;Fri Bane;;775;4
+;;666;666002;666005;Amstrup;Amt;;;5,5;Privatbane;Trinbræt;;776;STED
+;;666;666009;;Bækmarksbro;Bkm;8,08;8,81;8,3;Privatbane;Station;;777;STED
+;;666;666010;;Bækmarksbro - Fåre;Bkm-Fre;8,81;13,59;;Privatbane;Fri Bane;;778;4
+;;666;666010;666011;Sinkbæk;Sit;;;11,6;Privatbane;Trinbræt;;779;STED
+;;666;666013;;Fåre;Fre;13,59;14,28;13,8;Privatbane;Station;;780;STED
+;;666;666016;;Fåre - Ramme;Fre-Ram;14,28;18,72;;Privatbane;Fri Bane;;781;4
+;;666;666019;;Ramme;Ram;18,72;19,37;18,9;Privatbane;Station;;782;STED
+;;666;666020;;Ramme - Bonnet;Ram-Bnt;19,37;22,53;;Privatbane;Fri Bane;;783;4
+;;666;666023;;Bonnet;Bnt;22,53;23,22;23;Privatbane;Station;;784;STED
+;;666;666024;;Bonnet - Lemvig;Bnt-Lmv;23,22;27,69;;Privatbane;Fri Bane;;785;4
+;;666;666024;666025;Armose;Arm;;;25,9;Privatbane;Trinbræt;;786;STED
+;;666;666027;;Lemvig;Lmv;27,69;28,9;28,8;Privatbane;Station;;787;STED
+;;667;667000;;Mariager - Fårup;Mrg-Fp;0;18,87;;Privatbane;Fri Bane;Veteranbane;788;4
+;;668;668001;;Hjørring;Hj;0,46;0,82;0;Privatbane;Station;;789;STED
+;;668;668001;668005;Kvægtorvet;Kt;;;0,5;Privatbane;Trinbræt;;790;STED
+;;668;668002;;Hjørring - Tornby;Hj-Tnb;0,82;10,13;;Privatbane;Fri Bane;;791;3
+;;668;668002;668015;Teglgårdsvej;Tgv;;;1,6;Privatbane;Trinbræt;;792;STED
+;;668;668002;668033;Herregårdsparken;Hgp;;;3,2;Privatbane;Trinbræt;;793;STED
+;;668;668002;668041;Vellingshøj;Vlh;;;4;Privatbane;Trinbræt;;794;STED
+;;668;668002;668069;Vidstrup;Vid;;;6,9;Privatbane;Trinbræt;;795;STED
+;;668;668002;668095;Sønderby;Sdby;;;9,4;Privatbane;Trinbræt;;796;STED
+;;668;668011;;Tornby;Tnb;10,13;10,87;10,4;Privatbane;Station;;797;STED
+;;668;668012;;Tornby - Hirtshals;Tnb-Hhs;10,87;16,5;;Privatbane;Fri Bane;;798;4
+;;668;668012;668135;Horne;Hon;;;13,6;Privatbane;Trinbræt;;799;STED
+;;668;668012;668151;Emmersbæk;Emm;;;15,1;Privatbane;Trinbræt;;800;STED
+;;668;668017;;Hirtshals;Hhs;16,5;17,9;17,8;Privatbane;Station;;801;STED
+;;668;668017;668165;Lilleheden;Lhe;;;16,6;Privatbane;Trinbræt;;802;STED
+;;669;669002;;Frederikshavn - Strandby;Fh-Stb;1,36;6,16;;Privatbane;Fri Bane;;803;3
+;;669;669005;;Strandby;Stb;6,16;6,87;6,5;Privatbane;Station;;804;STED
+;;669;669008;;Strandby - Jerup;Stb-Jeu;6,87;12,86;;Privatbane;Fri Bane;;805;4
+;;669;669008;669009;Rimmen;Rim;;;9,5;Privatbane;Trinbræt;;806;STED
+;;669;669013;;Jerup;Jeu;12,86;13,47;13,3;Privatbane;Station;;807;STED
+;;669;669014;;Jerup - Ålbæk;Jeu-Ålb;13,47;19,69;;Privatbane;Fri Bane;;808;4
+;;669;669014;669015;Napstjert;Nap;;;15,6;Privatbane;Trinbræt;;809;STED
+;;669;669019;;Ålbæk;Ålb;19,69;20,47;19,9;Privatbane;Station;;810;STED
+;;669;669022;;Ålbæk - Hulsig;Ålb-Hul;20,47;27,97;;Privatbane;Fri Bane;;811;4
+;;669;669022;669025;Bunken;Buk;;;24,5;Privatbane;Trinbræt;;812;STED
+;;669;669027;;Hulsig;Hul;27,97;28,59;28,2;Privatbane;Station;;813;STED
+;;669;669030;;Hulsig - Skagen;Hul-Sgb;28,59;39,05;;Privatbane;Fri Bane;;814;4
+;;669;669030;669037;Frederikshavnsvej;Fhv;;;38;Privatbane;Trinbræt;;815;STED
+;;669;669039;;Skagen;Sgb;39,05;39,93;39,85;Privatbane;Station;;816;STED
+80;810,820,850;81;811000;;København H;Kh;0;0,781;0;S-bane;Station;;817;STED
+80;810;81;812001;;København H - Valby;Kh-Val;0,781;3,401;;S-bane;Fri Bane;Kun spor V;818;3
+80;810,850;81;812002;;København H - Skelbæk;Kh-Slb;0,781;0,967;;S-bane;Fri Bane;Ikke spor V;819;3
+80;810,850;81;812002;812021;Dybbølsbro;Dbt;;;0,9;S-bane;Trinbræt;;820;STED
+80;810,850;81;813000;;Skelbæk;Slb;0,967;1,696;1,3;S-bane;Teknisk Station;Ikke spor V;821;STED
+80;810;81;814002;;Skelbæk - Valby;Slb-Val;1,696;3,401;;S-bane;Fri Bane;Ikke spor V;822;4
+80;810;81;814002;814023;Carlsberg;Cb;;;2,55;S-bane;Trinbræt;;823;STED
+80;810,830;81;815000;;Valby;Val;3,401;4,846;3,925;S-bane;Station;;824;STED
+81;810;81;816006;;Valby - Glostrup;Val-Gl;4,846;10,478;;S-bane;Fri Bane;;825;4
+81;810;81;816006;816007;Danshøj;Dah;;;5,26;S-bane;Trinbræt;;826;STED
+81;810;81;816006;816063;Hvidovre Nær;Hit;;;6,3;S-bane;Trinbræt;;827;STED
+81;810;81;816006;816075;Rødovre;Rdo;;;7,4;S-bane;Trinbræt;;828;STED
+81;810;81;816006;816085;Brøndbyøster;Bøt;;;8,5;S-bane;Trinbræt;;829;STED
+81;810;81;816011;;Glostrup;Gl;10,478;11,998;11,214;S-bane;Station;;830;STED
+81;810;81;816012;;Glostrup - Taastrup;Gl-Tå;11,998;16,902;;S-bane;Fri Bane;;831;3
+81;810;81;816012;816141;Albertslund;Alb;;;14,1;S-bane;Trinbræt;;832;STED
+81;810;81;817000;;Taastrup;Tå;16,902;17,999;17,4;S-bane;Station;;833;STED
+81;810;81;818020;;Taastrup - Høje Taastrup;Tå-Htå;17,999;18,929;;S-bane;Fri Bane;;834;3
+81;810;81;819000;;Høje Taastrup;Htå;18,929;19,822;19,5;S-bane;Station;;835;STED
+80;820;82;821000;;København H;Kh;0;0,4;0;S-bane;Station;;836;STED
+80;820;82;822002;;København H - Østerport;Kh-Kk;0,4;2,375;;S-bane;Fri Bane;;837;3
+80;820;82;822002;822023;Vesterport;Vpt;;;0,5;S-bane;Trinbræt;;838;STED
+80;820;82;822002;822027;Nørreport;Kn;;;1,5;S-bane;Trinbræt;;839;STED
+80;820;82;822003;;Østerport;Kk;2,375;3,593;3,055;S-bane;Station;;840;STED
+80;820;82;822004;;Østerport - Svanemøllen;Kk-Sam;3,593;5,315;;S-bane;Fri Bane;;841;3
+80;820;82;822004;822045;Nordhavn;Nht;;;4,5;S-bane;Trinbræt;;842;STED
+80;820,840,8820;82;823000;;Svanemøllen;Sam;5,315;6,305;5,8;S-bane;Station;;843;STED
+82;8820;82;824006;;Svanemøllen - Hellerup;Sam-Hl;6,305;7,043;;S-bane;Fri Bane;;844;4
+82;8820,8860,8880;82;825000;;Hellerup;Hl;7,043;8,556;7,825;S-bane;Station;;845;STED
+82;8820;82;826010;;Hellerup - Gentofte;Hl-Gj;8,556;10,064;;S-bane;Fri Bane;;846;3
+82;8820;82;826010;826109;Bernstorffsvej;Bft;;;9,3;S-bane;Trinbræt;;847;STED
+82;8820;82;826011;;Gentofte;Gj;10,064;11,851;10,926;S-bane;Station;;848;STED
+82;8820;82;826012;;Gentofte - Lyngby;Gj-Ly;11,851;13,199;;S-bane;Fri Bane;;849;3
+82;8820;82;826012;826125;Jægersborg;Jæt;;;12,56;S-bane;Trinbræt;;850;STED
+82;8820;82;826013;;Lyngby;Ly;13,199;14,476;13,89;S-bane;Station;;851;STED
+82;8820;82;826016;;Lyngby - Holte;Ly-Hot;14,476;18,142;;S-bane;Fri Bane;;852;3
+82;8820;82;826016;826165;Sorgenfri;Sft;;;15,728;S-bane;Trinbræt;;853;STED
+82;8820;82;826016;826171;Virum;Vir;;;17,7;S-bane;Trinbræt;;854;STED
+82;8820;82;826019;;Holte;Hot;18,142;19,817;18,96;S-bane;Station;;855;STED
+82;8820;82;826020;;Holte - Birkerød;Hot-Bi;19,817;23,076;;S-bane;Fri Bane;;856;4
+82;8820;82;826023;;Birkerød;Bi;23,076;24,748;23,823;S-bane;Station;;857;STED
+82;8820;82;826026;;Birkerød - Allerød;Bi-Li;24,748;28,766;;S-bane;Fri Bane;;858;3
+82;8820;82;826026;826270;Høvelte;Høv;;;26,3;S-bane;Trinbræt;;859;STED
+82;8820;82;826029;;Allerød;Li;28,766;30,375;29,335;S-bane;Station;;860;STED
+82;8820;82;826032;;Allerød - Hillerød;Li-Hi;30,375;35,625;;S-bane;Fri Bane;;861;3
+82;8820;82;827000;;Hillerød;Hi;35,625;36,676;36,5;S-bane;Station;;862;STED
+83;830;83;832006;;Valby - Vanløse;Val-Van;4,74;6,5;;S-bane;Fri Bane;;863;4
+83;830;83;832006;832065;Langgade;Vat;;;4,8;S-bane;Trinbræt;;864;STED
+83;830;83;832006;832069;Peter Bangsvej;Pbt;;;5,9;S-bane;Trinbræt;;865;STED
+83;830;83;833000;832071;Flintholm;Fl;;;6,8;S-bane;Trinbræt;;866;STED
+83;830;83;833000;;Vanløse;Van;6,5;8,081;7,3;S-bane;Station;;867;STED
+83;830;83;834010;;Vanløse - Herlev;Van-Her;8,081;11,473;;S-bane;Fri Bane;;868;4
+83;830;83;834010;834105;Jyllingevej;Jyt;;;8,2;S-bane;Trinbræt;;869;STED
+83;830;83;834010;834107;Islev;Ist;;;9,4;S-bane;Trinbræt;;870;STED
+83;830;83;834010;834109;Husum;Hut;;;10,752;S-bane;Trinbræt;;871;STED
+83;830;83;834011;;Herlev;Her;11,473;12,898;12,34;S-bane;Station;;872;STED
+83;830;83;834014;;Herlev - Ballerup;Her-Ba;12,898;16,939;;S-bane;Fri Bane;;873;4
+83;830;83;834014;834151;Skovlunde;Sko;;;15;S-bane;Trinbræt;;874;STED
+83;830;83;834014;834161;Malmparken;Mpt;;;16;S-bane;Trinbræt;;875;STED
+83;830;83;835000;;Ballerup;Ba;16,939;19,12;17,855;S-bane;Station;;876;STED
+83;830;83;836020;;Ballerup - Veksø;Ba-Vs;19,12;25,515;;S-bane;Fri Bane;;877;3
+83;830;83;836020;836021;Måløv;Mw;;;21,07;S-bane;Trinbræt;;878;STED
+83;830;83;836020;836023;Kildedal;Kid;;;23,142;S-bane;Trinbræt;;879;STED
+83;830;83;836025;;Veksø;Vs;25,515;27,318;26,24;S-bane;Station;;880;STED
+83;830;83;836028;;Veksø - Ølstykke;Vs-Øl;27,318;33,256;;S-bane;Fri Bane;;881;3
+83;830;83;836028;836029;Stenløse;St;;;30,03;S-bane;Trinbræt;;882;STED
+83;830;83;836028;836031;Egedal;Egd;;;31,5;S-bane;Trinbræt;;883;STED
+83;830;83;836033;;Ølstykke;Øl;33,256;34,93;34,06;S-bane;Station;;884;STED
+83;830;83;836036;;Ølstykke - Frederikssund;Øl-Fs;34,93;40,851;;S-bane;Fri Bane;;885;3
+83;830;83;836036;836037;Vinge;Vng;;;37,265;S-bane;Trinbræt;Ikke i drift endnu;886;STED
+83;830;83;837000;;Frederikssund;Fs;40,851;41,836;41,84;S-bane;Station;;887;STED
+84;840;84;842008;;Svanemøllen - Dyssegård;Sam-Dyt;6,937;9,85;;S-bane;Fri Bane;;888;4
+84;840;84;842008;842087;Ryparken;Ryt;;;7,1;S-bane;Trinbræt;;889;STED
+84;840;84;842008;842089;Emdrup;Emt;;;9,2;S-bane;Trinbræt;;890;STED
+84;840;84;842011;;Dyssegård;Dyt;9,85;11,06;10,6;S-bane;Station;;891;STED
+84;840;84;842012;;Dyssegård - Buddinge;Dyt-Bud;11,06;13,079;;S-bane;Fri Bane;;892;4
+84;840;84;842012;842123;Vangede;Ang;;;11,5;S-bane;Trinbræt;;893;STED
+84;840;84;842012;842125;Kildebakke;Ket;;;12,7;S-bane;Trinbræt;;894;STED
+84;840;84;842013;;Buddinge;Bud;13,079;14,407;13,8;S-bane;Station;;895;STED
+84;840;84;842016;;Buddinge - Hareskov;Bud-Har;14,407;19,886;;S-bane;Fri Bane;;896;4
+84;840;84;842016;842165;Stengården;Sgt;;;15,6;S-bane;Trinbræt;;897;STED
+84;840;84;842016;842169;Bagsværd;Bav;;;16,8;S-bane;Trinbræt;;898;STED
+84;840;84;842016;842183;Skovbrynet;Skt;;;18,2;S-bane;Trinbræt;;899;STED
+84;840;84;842019;;Hareskov;Har;19,886;20,746;20,2;S-bane;Station;;900;STED
+84;840;84;842022;;Hareskov - Farum;Har-Fm;20,746;26,188;;S-bane;Fri Bane;;901;4
+84;840;84;842022;842233;Værløse;Vær;;;23,2;S-bane;Trinbræt;;902;STED
+84;840;84;843000;;Farum;Fm;26,188;27,444;27,3;S-bane;Station;;903;STED
+85;850;85;852001;;København H - Bavnehøj;Kh-Ban;0,781;1,928;;S-bane;Fri Bane;Kun spor V;904;3
+85;850;85;852002;;Skelbæk - Bavnehøj;Slb-Ban;1,696;1,928;;S-bane;Fri Bane;Ikke spor V;905;4
+85;850;85;852003;;Bavnehøj;Ban;1,928;2,759;2,4;S-bane;Teknisk Station;;906;STED
+85;850;85;852004;;Bavnehøj - Åmarken;Ban-Åm;2,759;5,763;;S-bane;Fri Bane;;907;4
+85;850;85;852004;852043;Sydhavn;Syv;;;2,9;S-bane;Trinbræt;;908;STED
+85;850;85;852004;852045;Sjælør;Sjæ;;;3,8;S-bane;Trinbræt;;909;STED
+85;850;85;852004;852049;Ny Ellebjerg;Nel;;;4,4;S-bane;Trinbræt;;910;STED
+85;850;85;852005;;Åmarken;Åm;5,763;6,91;6,275;S-bane;Station;;911;STED
+85;850;85;852008;;Åmarken - Vallensbæk;Åm-Vlb;6,91;13,297;;S-bane;Fri Bane;;912;3
+85;850;85;852008;852091;Friheden;Frh;;;7,8;S-bane;Trinbræt;;913;STED
+85;850;85;852008;852097;Avedøre;Avø;;;9,631;S-bane;Trinbræt;;914;STED
+85;850;85;852008;852119;Brøndby Strand;Bsa;;;11,923;S-bane;Trinbræt;;915;STED
+85;850;85;852013;;Vallensbæk;Vlb;13,297;14,593;14,1;S-bane;Station;;916;STED
+85;850;85;852016;;Vallensbæk - Hundige;Vlb-Und;14,593;17,789;;S-bane;Fri Bane;;917;4
+85;850;85;852016;852165;Ishøj;Ih;;;16,422;S-bane;Trinbræt;;918;STED
+85;850;85;853000;;Hundige;Und;17,789;19,384;18,7;S-bane;Station;;919;STED
+85;850;85;854020;;Hundige - Karlslunde;Und-Klu;19,384;23,708;;S-bane;Fri Bane;;920;4
+85;850;85;854020;854219;Greve;Gre;;;21,8;S-bane;Trinbræt;;921;STED
+85;850;85;854023;;Karlslunde;Klu;23,708;24,935;24,248;S-bane;Station;;922;STED
+85;850;85;854026;;Karlslunde - Solrød Strand;Klu-Sol;24,935;28,772;;S-bane;Fri Bane;;923;4
+85;850;85;854029;;Solrød Strand;Sol;28,772;29,895;29,3;S-bane;Station;;924;STED
+85;850;85;854030;;Solrød Strand - Ølsemagle;Sol-Ølm;29,895;32,724;;S-bane;Fri Bane;;925;4
+85;850;85;854030;854309;Jersie;Jsi;;;30,754;S-bane;Trinbræt;;926;STED
+85;850;85;854033;;Ølsemagle;Ølm;32,724;33,81;33,348;S-bane;Teknisk Station;;927;STED
+85;850;85;854034;;Ølsemagle - Køge;Ølm-Kj;33,81;37,443;;S-bane;Fri Bane;;928;4
+85;850;85;854034;854341;Køge Nord;Kjn;;;34,094;S-bane;Trinbræt;;929;STED
+85;850;85;854034;854363;Ølby;Ølb;;;36,3;S-bane;Trinbræt;;930;STED
+85;850;85;855000;;Køge;Kj;37,443;38,98;38,98;S-bane;Station;;931;STED
+86;8860;86;862010;;Hellerup - Klampenborg;Hl-Kl;8,556;12,115;;S-bane;Fri Bane;;932;3
+86;8860;86;862010;862103;Charlottenlund;Ch;;;10,25;S-bane;Trinbræt;;933;STED
+86;8860;86;862010;862116;Ordrup;Op;;;11,6;S-bane;Trinbræt;;934;STED
+86;8860;86;863000;;Klampenborg;Kl;12,115;13,411;13,312;S-bane;Station;;935;STED
+87;880;88;881000;881003;Ny Ellebjerg;Nel;;;2,348;S-bane;Trinbræt;;936;STED
+87;880;88;881000;;Vigerslev;Ig;2,285;3,323;2,5;S-bane;Teknisk Station;;937;STED
+87;880;88;882002;;Vigerslev - Flintholm;Ig-Fl;3,323;6,122;;S-bane;Fri Bane;;938;3
+87;880;88;882002;882003;Vigerslev Allé;Vgt;;;3,425;S-bane;Trinbræt;;939;STED
+87;880;88;882002;882004;Danshøj;Dah;;;4,139;S-bane;Trinbræt;;940;STED
+87;880;88;882002;882005;Ålholm;Ålm;;;4,958;S-bane;Trinbræt;;941;STED
+87;880;88;882002;882006;KB Hallen;Kbn;;;5,599;S-bane;Trinbræt;;942;STED
+87;880;88;882007;;Flintholm;Fl;6,122;7,083;6,6;S-bane;Station;;943;STED
+87;880;88;882008;;Flintholm - Lersøen;Fl-Ler;7,083;10,14;;S-bane;Fri Bane;;944;3
+87;880;88;882008;882009;Grøndal;Ght;;;7,8;S-bane;Trinbræt;;945;STED
+87;880;88;882008;882010;Fuglebakken;Fut;;;8,7;S-bane;Trinbræt;;946;STED
+87;880;88;882008;882011;Nørrebro;Nø;;;9,74;S-bane;Trinbræt;;947;STED
+87;880;88;883000;882013;Bispebjerg;Bit;;;10,387;S-bane;Trinbræt;;948;STED
+87;7,880,8880;88;883000;;Lersøen;Ler;10,14;11,945;10,6;S-bane;Teknisk Station;;949;STED
+87;880,8880;88;884012;;Lersøen - Hellerup;Ler-Hl;11,945;12,87;;S-bane;Fri Bane;;950;4
+87;880,8880;88;884012;884013;Ryparken;Ryt;;;12;S-bane;Trinbræt;;951;STED
