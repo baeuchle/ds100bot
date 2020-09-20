@@ -1,0 +1,31 @@
+{
+  "id": "linien_hg",
+  "headline": "Linien Hochtaunuskreis",
+  "description": "Buslinien im Hochtaunuskreis",
+  "access": [{
+    "x_source": "HG",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_HG"
+  ],
+  "data": [{
+    "id": "linien_hg",
+    "short": "Linie",
+    "long": "Laufweg",
+    "delim": ";",
+    "alias": ",",
+    "file": "sources/linien_hg.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "jonaes_"
+      }
+    }
+  }]
+}

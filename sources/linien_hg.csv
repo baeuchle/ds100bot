@@ -1,0 +1,83 @@
+Linie;Laufweg
+1;Bad Homburg (Hirschgarten | Gotisches Haus) – Dornholzhausen – Bahnhof – Gonzenheim – Ober-Eschbach – Südcampus – Am Römischen Hof
+2;Bad Homburg Eichenstahl – Kirdorf – Bahnhof – Gonzenheim – Ober-Eschbach – Ober-Erlenbach Ahlweg
+3;Bad Homburg Mariannenweg – Berliner Siedlung – Bahnhof – Kirdorf – Waldfriedhof
+4;Bad Homburg Gartenfeld – Bahnhof – Schanze – Gonzenheim – Seedamweg
+5;Bad Homburg Gonzenheim – Bahnhof – Kurhaus – Saalburg (– Anspach Hessenpark)
+6;Bad Homburg Sportzentrum Nordwest – Tiefenbachwiesen – Kirdorf – Bahnhof – Steinkaut
+7;Bad Homburg Nesselbornfeld – Bahnhof – Gewerbegebiet Mitte – Hochtaunusklinik – Oberursel Oberstedten (– Oberursel als 41)
+11;Bad Homburg (Hirschgarten | Gotisches Haus) – Dornholzhausen – Bahnhof – Gonzenheim – Am Römischen Hof -- Ober-Eschbach – Südcampus – Hessengärten
+12;Bad Homburg Eichenstahl – Kirdorf – Bahnhof – Gonzenheim – Ober-Eschbach – Ober-Erlenbach Gewerbegebiet
+17;Bad Homburg Nesselbornfeld – Bahnhof – Gewerbegebiet Mitte – Hochtaunusklinik
+21;Bad Homburg Abendbus Dornholzhausen – Gotisches Haus – Kurhaus – Bahnhof
+22;Bad Homburg Abendbus Eichenstahl – Kirdorf – Bahnhof – Gonzenheim – Ober-Eschbach – Ober-Erlenbach Ahlweg
+23;Bad Homburg Abendbus Gartenfeldsiedlung – Berliner Siedlung – Bahnhof – Kurhaus – Kirdorf – Waldfriedhof
+24;Bad Homburg Abendbus Bahnhof – Schanze – Ober-Eschbach – Südcampus
+26;Bad Homburg Abendbus Bahnhof → Schanze → Gonzenheim → Steinkaut → Bahnhof
+27;Bad Homburg Abendbus Bahnhof – Gewerbegebiet Mitte – Hochtaunusklinik – Oberursel-Oberstedten (– Oberursel als 45)
+31;Bad Homburg Schulbus Dornholzhausen – Gotisches Haus – Bahnhof – Steinkaut – Maria-Ward-Schule
+32;Bad Homburg Schulbus Ober-Erlenbach – Ober-Eschbach – Gonzenheim – Seedammweg – Bahnhof – Gesamtschule
+33;Bad Homburg Schulbus Petterweil Friedhof – Ober-Erlenbach – Ober-Eschbach – Seedammweg – Bahnhof – Steinkaut – Maria-Ward-Schule
+34;Bad Homburg Schulbus Nesselbornfeld → Gartenfeld → Berliner Siedlung → Bahnhof → Steinkaut → Maria-Ward-Schule
+36;Bad Homburg Schulbus Bahnhof → Berliner Siedlung → Mariannenweg → Dornholzhausen → Gotisches Haus → Gesamtschule
+37;Bad Homburg Schulbus Gesamtschule → Dornholzhausen → Gotisches Haus → Berliner Siedlung → Bahnhof
+39;Bad Homburg Schulbus Bahnhof – Gonzenheim – Ober-Eschbach – Ober-Erlenbach – Friedrichsdorf Philipp-Reis-Schule
+41;Oberursel Oberstedten – Borkenberg – Marktplatz – Bahnhof
+42;Oberursel (Hauptfriedhof –) Waldlust – Portstraße – Bahnhof – An den Drei Hasen – Bommersheim – Stierstadt Bf – Weißkirchen Ost
+43;Oberursel Bahnhof – Marktplatz – Stierstadt Bf – Weißkirchen Ost
+44;Oberursel Abendbus Bahnhof → Marktplatz → Stierstadt → Weißkirchen Ost → Stierstadt Bf → Marktplatz → Oberursel Bf
+45;Oberursel Abendbus Bahnhof – Marktplatz – Borkenberg – Oberstedten Hans-Mess-Str.
+46;Oberursel Abendbus Bahnhof – Bommersheim – Stierstadt Bf
+47;Oberursel Schulbus Stierstadt Altes Rathaus → Weißkirchen Ost → Bommersheim → An den Drei Hasen → Gymnasium/Erich-Kästner-Schule
+48;Oberursel Schulbus Oberstedten Weinbergstraße – Borkenberg – Stierstadt IGS
+49;Oberursel Schulbus Oberstedten Weinbergstraße – Erich-Kästner-Schule/Gymnasium – Bommersheim – Stierstadt IGS
+50;Bad Homburg – Oberursel Hohemark – Schmitten – Rod a.d. Weil 
+51;Bad Homburg – Oberursel Hohemark – Oberreifenberg – Rod a.d. Weil – Hasselbach
+53;Friedrichsdorf Bahnhof – Burgholzhausen – Bahnhof – Dillingen (– Köppern –) Bahnhof
+54;Friedrichsdorf-Köppern Waldkrankenhaus – Köppern Bf – Friedrichsdorf Bf – Bad Homburg-Kirdorf Waldfriedhof – Bad Homburg Bf
+55;Friedrichsdorf Schulbus Köppern – Bad Homburg Amtsgericht
+56;Friedrichsdorf Bahnhof – Seulberg – Bahnhof (nur Di / Do)
+57;(Bad Homburg –) Oberursel Hohemark – Oberreifenberg – Großer Feldberg (– Königstein)
+59;Nachtbus Friedrichsdorf → Wehrheim → Neu-Anspach → Usingen → Grävenwiesbach
+60;Neu-Anspach – Schmitten – Glashütten – Königstein
+61;Neu-Anspach – Usingen (– Altweilnau – Riedelbach)
+62;Hasselbach – Rod a.d. Weil – Niederlauken – Merzhausen – Usingen
+63;Usingen – Wernborn – Wehrheim (– Neu-Anspach)
+64;(Neu-Anspach | Usingen –) (→ Wernborn →) (– Pfaffenwiesbach | Wehrheim)
+65;(Bad Homburg-Ober-Erlenbach –) Frankfurt-Nieder-Erlenbach – Bad Vilbel \n (Kransberg –) Michelbach – Usingen \n Usingen – Merzhausen
+66;Michelbach – Eschbach – Usingen
+67;Usingen Bahnhof – Schleichenbach – Hochtaunuskliniken – Bahnhof
+68;Grävenwiesbach – Naunstadt – Laubach (← Heinzenberg ← Mönstadt)
+69;Rod a.d. Weil – Grävenwiesbach – Altweilnau – Neu-Anspach
+71;Königstein im Taunus Altkönigstift – Bahnhof – Rosenhof – Waldschwimmbad
+72;Königstein im Taunus Oberhöchstadt – Bahnhof – Rosenhof – Waldschwimmbad
+73;Königstein im Taunus Altkönigstift – Bahnhof – Roter Hang
+80;(Neu-Anspach –) Schmitten – Oberreifenberg – Königstein
+81;(Rod a.d. Weil –) Riedelbach – Waldems – Glashütten – Königstein
+82;(Usingen –) Neu-Anspach – Hunoldstal – Riedelbach (– Rod an der Weil)
+83;(Königstein –) Schloßborgn – Glashütten – Oberems
+84;Königstein Bf – Königstein Goethestr. – Königstein Bf – Königstein Stadtmitte – Falkenstein
+85;Falkenstein – Königstein Stadtmitte – Königstein Bahnhof – Mommolshain – Kronberg Bahnhof
+86;(Niederreifenberg –) Oberreifenberg – Schmitten (– Riedelbach)
+91;Weißkirchen/Steinbach Bf – Steinbach – Steinbach Sportpark
+223;Idstein – Bermbach – Heftrich – Glashütten – Königstein
+231;Idstein – Esch – Steinfischbach – Niederems – Esch – Idstein
+245;Weiltalbus: (Bad Homburg –) Oberursel – Schmitten – Weilmünster – Weilburg
+251;Frankfurt Nordwestzentrum – Weißkirchen/Steinbach Bf – Steinbach – Kronberg
+252;(Oberursel –) Weißkirchen – Steinbach – Eschborn
+253;Königstein – Bad Soden – Sulzbach – Main-Taunus-Zentrum – Frankfurt-Höchst
+261;Königstein – Kronberg – Oberursel (– Bad Homburg)
+263;Hofheim – Kelkheim – Königstein – Eppstein
+283;Haintchen – Hasselbach – Erbach – Bad Camberg
+285;Haintchen – Niederselters – Bad Camberg – Limburg
+803;Königstein Stadtmitte – Neuenhain – Bad Soden – Sulzbach MTZ
+805;Königstein Stadtmitte – Schloßborn (– Eppstein | Fischbach)
+811;Königstein – Bad Soden – Sulzbach – Schwalbach
+815;(Vockenhausen –) Eppstein – Fischbach – Ruppertshain (– Eppenhain | Königstein)
+n31;Oberursel Nachtbus Stierstadt Bf → Bommersheim → Bahnhof → Portstraße → Oberstedten → Bahnhof → Stierstadt Bf
+n35;Friedrichsdorf Nachtbus Bahnhof → Dillingen → Köppern → Burgholzhausen → Seulberg → Bahnhof
+U2;Bad Homburg Gonzenheim - Nieder-Eschbach - Riedwiese - Heddernheim - Südbahnhof
+U3;Oberursel Hohemark - Oberursel Bf - Niederursel - Heddernheim - Südbahnhof
+X26;Wiesbaden – Hofheim – Königstein – Oberursel – Bad Homburg
+X27;Königstein – Oberursel – Bad Homburg – Karben – Nidderau
+X89;Weilburg – Weilmünster – Grävenwiesbach
