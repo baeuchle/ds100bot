@@ -1,0 +1,29 @@
+{
+  "id": "orte_se",
+  "headline": "Betriebsstellen Schweden",
+  "access": [{
+    "x_source": "SE",
+    "type": "$"
+  }],
+  "magic_hashtags": [
+    "_SE"
+  ],
+  "data": [{
+    "id": "orte_se",
+    "short": "Abk",
+    "long": "Name",
+    "file": "sources/orte_se.csv",
+    "source": {
+      "name": "Svensk Wikipedia",
+      "url": "https://sv.wikipedia.org/wiki/Lista_över_trafikplatssignaturer_i_det_svenska_järnvägsnätet"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "FloEllebrecht"
+      }
+    }
+  }]
+}

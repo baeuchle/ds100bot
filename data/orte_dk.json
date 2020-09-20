@@ -1,0 +1,35 @@
+{
+  "id": "orte_dk",
+  "headline": "Betriebsstellen Dänemark",
+  "access": [{
+    "x_source": "DK",
+    "type": "#"
+  }],
+  "magic_hashtags": [
+    "_DK"
+  ],
+  "data": [{
+    "id": "orte_dk",
+    "short": "FORKORTELSE",
+    "long": "NAVN",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/orte_dk.csv",
+    "description": "Betriebsstellen Dänemark",
+    "source": {
+      "name": "Strækningsregister",
+      "url": "https://www.bane.dk/da/Leverandoer/Krav/Tekniske-data",
+      "modified": true
+
+    },
+    "filter": [{
+      "col": "FILTER",
+      "contains": "STED",
+      "empty": true
+    }],
+    "comments": [
+      "Aus der Gesamtliste sind die Einträge gefiltert, die keinen Bindestrich enthalten (Formel =WENNFEHLER(FINDEN(\"-\",G2,1);\"STED\"))",
+      "Für Grenaa Havn wird aus technischen Gründen #DK:Gr_H statt '#DK:Gr.H' verwendet."
+    ]
+  }]
+}
