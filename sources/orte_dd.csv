@@ -1,0 +1,773 @@
+Ort;Haltestelle;Abkürzung
+Bonnewitz;Bonnewitz;BON
+Borthen;Borthen;BTN
+Boxdorf (Moritzburg);An der Triebe;ADT
+Boxdorf (Moritzburg);Am Grunde;AGD
+Boxdorf (Moritzburg);Am Weiher;AMW
+Boxdorf (Moritzburg);Baumwiese;BAW
+Boxdorf (Moritzburg);Bebelplatz;BEB
+Boxdorf (Moritzburg);Ernst-Wagner-Straße;EWA
+Boxdorf (Moritzburg);Feuerwehr Boxdorf;FBX
+Boxdorf (Moritzburg);Querweg;QUW
+Coswig (b Dresden);Auerstraße;AUE
+Coswig (b Dresden);Coswig Zentrum/Börse;CWB
+Coswig (b Dresden);Salzstraße VGM;EVSA
+Coswig (b Dresden);Radebeuler Straße;RAD
+Coswig (b Dresden);Rathaus Coswig;RCW
+Coswig (b Dresden);Steinbacher Weg;SBW
+Coswig (b Dresden);Salzstraße;SLZ
+Dresden;A.-Weineck-Straße;AWK
+Dresden;Aachener Straße;AAC
+Dresden;Abzweig nach Reick;ABR
+Dresden;Achtbeeteweg;ABW
+Dresden;Adalbert-Stifter-Weg;AST
+Dresden;Agentur für Arbeit;AFA
+Dresden;Ahlbecker Straße;AHL
+Dresden;Alaunplatz;ALA
+Dresden;Alberthafen;ABH
+Dresden;Albert-Hensel-Straße;AHS
+Dresden;Albertplatz;ALP
+Dresden;Albertstadt West;ASW
+Dresden;Albert-Wolf-Platz;AWP
+Dresden;Alexander-Puschkin-Platz;APU
+Dresden;Alfred-Thiele-Straße;ATH
+Dresden;Altburgstädtel;ABU
+Dresden;Altcotta;ACO
+Dresden;Altdobritz;ADB
+Dresden;Altenberger Platz;ABP
+Dresden;Altenberger Straße;ALB
+Dresden;Alter Postweg;NIC
+Dresden;Alter Schlachthof;ASH
+Dresden;Altfranken;AFR
+Dresden;Altkaditz;AKD
+Dresden;Altkaitz;AKA
+Dresden;Altklotzsche;AKL
+Dresden;Altleuben;ALN
+Dresden;Altleubnitz;ALZ
+Dresden;Altlockwitz;ALO
+Dresden;Altmarkt;AMT
+Dresden;Altmockritz;AMO
+Dresden;Altnaußlitz;ANA
+Dresden;Altnickern;ANI
+Dresden;Altnossener Straße;ANS
+Dresden;Altomsewitz;AOM
+Dresden;Altpieschen;API
+Dresden;Altplauen;APL
+Dresden;Altreick;ARE
+Dresden;Altstrehlen;EALS
+Dresden;Alttolkewitz;ATO
+Dresden;Alttrachau;ATR
+Dresden;Altwachwitz;AWW
+Dresden;Altwilschdorf;AWD
+Dresden;Am Altfrankener Park;AAP
+Dresden;Am Anger;AAN
+Dresden;Am Brüchigt;ABT
+Dresden;Am Festspielhaus;AFE
+Dresden;Am Galgenberg;AGB
+Dresden;Am Hellerhof;AHH
+Dresden;Am Hellerrand;AHR
+Dresden;Am Krähenhügel;AKH
+Dresden;Am Lehmberg;AML
+Dresden;Am Olter;AOL
+Dresden;Am Querfeld;AQU
+Dresden;Am Schöpsdamm;ASD
+Dresden;Am Steinacker;ASA
+Dresden;Am Steinigt;ASI
+Dresden;Am Urnenfeld;AUR
+Dresden;Am Viertelacker;AVA
+Dresden;Am Waldrand;AWR
+Dresden;Am Weißen Adler;AWA
+Dresden;Am Wiesenrand;AWS
+Dresden;Am Zwingerteich;AZT
+Dresden;Amalie-Dietrich-Platz;ADP
+Dresden;Amselgrund;AMG
+Dresden;Amselsteg;AMS
+Dresden;An den Winkelwiesen;ADW
+Dresden;An der Flutrinne;ADF
+Dresden;An der Obstplantage;ADO
+Dresden;An der Post;APO
+Dresden;An der Rennbahn;ADR
+Dresden;Angelikastraße;ANG
+Dresden;Anton-/Leipziger Straße;LEI
+Dresden;Arkonastraße;ARK
+Dresden;Arno-Holz-Allee;AHA
+Dresden;Arno-Schellenberg-Str.;ASC
+Dresden;Auf der Höhe;ADH
+Dresden;Augsburger Straße;AUG
+Dresden;Äußerer Matthäusfriedhof;AMF
+Dresden;B.-Smetana-Straße;BSM
+Dresden;Babisnauer Straße;BAB
+Dresden;Bahnhof Klotzsche;BFK
+Dresden;Bahnhof Mitte;BMI
+Dresden;Bahnhof Neustadt;BFN
+Dresden;Bahnhofstraße;BHF
+Dresden;Bamberger Straße;BAM
+Dresden;Bannewitzer Straße;BAN
+Dresden;Bärensteiner Straße;BAE
+Dresden;Bärwalder Straße;BWR
+Dresden;Bauhofstraße;BHS
+Dresden;Bautz./Rothenburger Str.;BTZ
+Dresden;Beckerstraße;BEC
+Dresden;Beerenhut;BEH
+Dresden;Bergfelderweg;BGW
+Dresden;Berggartenstraße;BGG
+Dresden;Berggießhübler Straße;BGH
+Dresden;Bergmannstraße;BMA
+Dresden;Bernhardstraße;BER
+Dresden;Berthold-Haupt-Straße;BHT
+Dresden;Betriebshof Gorbitz;GOR
+Dresden;Betriebshof Trachenberge;TRB
+Dresden;Betriebshof Waltherstr.;BWA
+Dresden;Bf. Neustadt Hansastr.;BNH
+Dresden;Birkenhainer Straße;BIR
+Dresden;Birkenstraße;BKS
+Dresden;Bischofsweg;BIW
+Dresden;Blasewitzer/Fetscherstr.;FET
+Dresden;Bodemerweg;BDW
+Dresden;Böhmertstraße;BMS
+Dresden;Bonhoefferplatz;BHP
+Dresden;Bönischplatz;BNP
+Dresden;Borsbergblick;BBB
+Dresden;Boxdorfer Straße;BOX
+Dresden;Breitscheidstraße;BRS
+Dresden;Bremer Straße;BRM
+Dresden;Breschke und Schuch;EBUS
+Dresden;Brunnenweg;BRU
+Dresden;Buchenstraße;BUC
+Dresden;Budapester Straße;BDP
+Dresden;Bühlau Ullersdorfer Pl.;BUE
+Dresden;Bünaustraße;BNS
+Dresden;Bunsenstraße;BUN
+Dresden;Burgenlandstraße;BGL
+Dresden;Bürgerstraße;BGR
+Dresden;Burgkstraße;BGK
+Dresden;C.-David-Friedrich-Str.;CDF
+Dresden;Cäcilienstraße;CAC
+Dresden;Calberlastraße;CAL
+Dresden;Cämmerswalder Straße;CAM
+Dresden;Campingplatz Mockritz;CMO
+Dresden;Carolaplatz;CAP
+Dresden;Chamissostraße;CHA
+Dresden;Chemnitzer Straße;CHE
+Dresden;Clara-Viebig-Straße;CVI
+Dresden;Clara-Zetkin-Straße;CZN
+Dresden;Clausen-Dahl-Straße;CLD
+Dresden;Comeniusplatz;COP
+Dresden;Conertplatz;CNP
+Dresden;Corinthstraße;COR
+Dresden;Coschütz;COZ
+Dresden;Coschützer Straße;CSS
+Dresden;Cossebaude Bf.;CSB
+Dresden;Cossebauder Straße;COB
+Dresden;Cottaer Straße;COA
+Dresden;Coventrystraße;COV
+Dresden;Cunewalder Straße;CUW
+Dresden;Cunnersdorfer Straße;CUD
+Dresden;Dahlienweg;DAH
+Dresden;Dammweg;DWE
+Dresden;Dampfschiffstraße;DAM
+Dresden;Deutsches Hygiene-Museum;DHM
+Dresden;Diakonissenkrankenhaus;DIK
+Dresden;Dohnaer Straße;DOH
+Dresden;Dölzschen;DOL
+Dresden;Dölzschener Straße;DLZ
+Dresden;Dora-Stock-Straße;DSS
+Dresden;Dorfhainer Straße;DFH
+Dresden;Dorfplatz Oberpoyritz;DOP
+Dresden;Dorfstraße;DOF
+Dresden;Dornblüthstraße;DOR
+Dresden;Dörnichtweg;DNW
+Dresden;Dorothea-Erxleben-Straße;DEX
+Dresden;Dreyßigplatz;DRP
+Dresden;Droste-Hülshoff-Straße;DHS
+Dresden;Duckwitzstraße;DUC
+Dresden;Dungerstraße;EDNG
+Dresden;Dürerstraße;DUR
+Dresden;Ebertplatz;EBP
+Dresden;Eichbergstraße;EIC
+Dresden;Eisenbahnstraße;EBS
+Dresden;Eissporthalle;ESH
+Dresden;ElbePark;EPK
+Dresden;Elbschlösser;ESL
+Dresden;Elisabethstraße;ELI
+Dresden;Elsterweg;ELS
+Dresden;Energie-Museum;EEGM
+Dresden;Enno-Heidebroek-Straße;EHS
+Dresden;Erich-Kästner-Straße;EKA
+Dresden;Erna-Berger-Straße;EBE
+Dresden;Ernst-Toller-Straße;ETO
+Dresden;Ernst-Wagner-Straße;EWA
+Dresden;Eschebachstraße;ESB
+Dresden;Eugen-Bracht-Straße;EBR
+Dresden;F.- Schreiter- Straße;FSS
+Dresden;Fabricestraße;FAS
+Dresden;Fehrmannweg;FMW
+Dresden;Felsenkeller;EFLK
+Dresden;Festspielhaus Hellerau;FSH
+Dresden;Fetscherplatz;FEP
+Dresden;Flensburger Straße;FLE
+Dresden;Flügelweg;FLW
+Dresden;Flughafen;FLU
+Dresden;Flughafen West;FWE
+Dresden;Flughafenstraße;FLH
+Dresden;Flugzeugwerke;FGW
+Dresden;Fontane-Center;FTC
+Dresden;Försterlingstraße;FLR
+Dresden;Frankenbergstraße;FKB
+Dresden;Fraunhofer-Inst.-Zentrum;FIZ
+Dresden;Freibad Wostra;FWO
+Dresden;Freiheit;FRE
+Dresden;Friedensstraße;FRI
+Dresden;Friedhof Leuben;FHL
+Dresden;Fritz-Meinhardt-Straße;FME
+Dresden;Fuchsberg;FUB
+Dresden;Fürstenhainer Straße;FTS
+Dresden;Fußweg nach Borthen;FBO
+Dresden;Gabelsbergerstraße;GAB
+Dresden;Gamigstraße;GAM
+Dresden;Gartenstraße;GRS
+Dresden;Gasanstaltstraße;GAS
+Dresden;Gasthof Weißig;GWE
+Dresden;Georg-Arnhold-Bad;GEA
+Dresden;Georg-Palitzsch-Straße;GPA
+Dresden;Gerichtsstraße;GER
+Dresden;Gerokstraße;GRO
+Dresden;Gewerbegebiet Kaditz;GKA
+Dresden;Gohlis;GOH
+Dresden;Gohliser Weg;GOW
+Dresden;Gombsener Straße;GMS
+Dresden;Gompitz,Gompitzer Höhe;GMP
+Dresden;Gondelweg;GDW
+Dresden;Göppersdorfer Weg;GPW
+Dresden;Gorbitz;GOR
+Dresden;Gorbitzer Straße;GOB
+Dresden;Görlitzer Straße;GLS
+Dresden;Gottfried-Keller-Straße;GKE
+Dresden;Gottleubaer Straße;GOT
+Dresden;Greifswalder Straße;GWS
+Dresden;Grenzstraße;GRE
+Dresden;Gret-Palucca-Straße;GPS
+Dresden;Grillparzerstraße;GRI
+Dresden;Grimmstraße;GRM
+Dresden;Großenh./F.-Reuter-Str.;GFS
+Dresden;Großenhainer Platz;GRP
+Dresden;Großglocknerstraße;GGL
+Dresden;Gruna;GRN
+Dresden;Grunaer Weg;GRW
+Dresden;Grundschule Luga;EGSL
+Dresden;Grundstraße;GRD
+Dresden;Grüner Weg;GNW
+Dresden;Guerickestraße;GUE
+Dresden;Güntzplatz;GUN
+Dresden;Gustav-Freytag-Straße;GFT
+Dresden;Gustavheim;GUS
+Dresden;Gutenbergstraße;GUT
+Dresden;H.-Steyer-Stadion;HST
+Dresden;Hamburger Straße;HAM
+Dresden;Hammerweg;HMW
+Dresden;Hänichenweg;HNW
+Dresden;Hans-Dankner-Straße;HDA
+Dresden;Hans-Oster-Str.;HAO
+Dresden;Hartigstraße;EHAT
+Dresden;Hauptbahnhof;HBF
+Dresden;Hauptbahnhof Nord;HBN
+Dresden;Hebbelplatz;HEB
+Dresden;Heckenweg;HEC
+Dresden;Heeresbäckerei;HBR
+Dresden;Hegereiterstraße;HEG
+Dresden;Heidefriedhof;HEF
+Dresden;Heideparkstraße;HPK
+Dresden;Heinrich-Greif-Straße;EHGR
+Dresden;Heinrich-Schütz-Straße;HSS
+Dresden;Heinrich-Tessenow-Weg;HTW
+Dresden;Heinrich-Zille-Straße;HZS
+Dresden;Helena-Rott-Straße;HRS
+Dresden;Hellerau Kiefernweg;HEL
+Dresden;Hellerberge;HBE
+Dresden;Hellerhofstraße;HHO
+Dresden;Hellersiedlung;HLS
+Dresden;Helmholtzstraße;HHZ
+Dresden;Hendrichstraße;HNS
+Dresden;Hepkeplatz;HEK
+Dresden;Hepkestraße;HEP
+Dresden;Herkuleskeule;EHKK
+Dresden;Hermann-Michel-Straße;HMI
+Dresden;Hermann-Seidel-Straße;HSE
+Dresden;Heroldstraße;HRO
+Dresden;Hirtenstraße;HIR
+Dresden;Hochsch Technik/Wirtscha;EHSW
+Dresden;Höckendorfer Weg;HKW
+Dresden;Hohe Straße;HHS
+Dresden;Hohlweg;HOH
+Dresden;Hornweg;HOR
+Dresden;Hp.Weixdorf Bad;HPW
+Dresden;Hubertusplatz;HUB
+Dresden;Hüblerplatz;HUP
+Dresden;Hüfnerweg;HFW
+Dresden;Hugo-Bürkner-Straße;HBU
+Dresden;Hugo-Junkers-Ring;HJR
+Dresden;Hülße-Gymnasium;HGM
+Dresden;Hülßestraße;HUL
+Dresden;Hutbergstraße;HGS
+Dresden;Ikarusweg;IKW
+Dresden;Industriegebiet Nord;IDN
+Dresden;Industriepark Klotzsche;IPK
+Dresden;Infineon;KIN
+Dresden;Infineon Nord;IFN
+Dresden;Infineon Süd;IFS
+Dresden;Innsbrucker Straße;INN
+Dresden;Jacobistraße;JCS
+Dresden;Jacob-Winter-Platz;JWP
+Dresden;Jägerpark;JPK
+Dresden;Johannes-Brahms-Straße;JBR
+Dresden;Johannisfriedhof;JHF
+Dresden;Johannstadt;JOH
+Dresden;Johannstadt Fähre;FJOF
+Dresden;Josef-Herrmann-Straße;JHE
+Dresden;Josephinenstraße;JOP
+Dresden;Julius-Otto-Straße;JOT
+Dresden;Julius-Vahlteich-Straße;JVA
+Dresden;Junghansstraße;JHS
+Dresden;Jüngststraße;JGS
+Dresden;Justizvollzugsanstalt;JUZ
+Dresden;K.-Kollwitz-Ufer;KKU
+Dresden;Kadenstraße;KSE
+Dresden;KaditzAmVorwerksfeld;KAD
+Dresden;Kaditzer Straße;KDS
+Dresden;Kaitzer Straße;KTZ
+Dresden;Kamenzer Straße;KMS
+Dresden;Kapellenweg;KAP
+Dresden;Karcherallee;KAR
+Dresden;Karl-Laux-Straße;KLX
+Dresden;Karl-Marx-Straße;KMX
+Dresden;Karlshagener Weg;KRW
+Dresden;Kasseler Straße;KAS
+Dresden;Kastanienstraße;KST
+Dresden;Käthe-Kollwitz-Platz;KKW
+Dresden;Kauschaer Straße;KAU
+Dresden;Kelterei;KEL
+Dresden;Keppgrundstraße;KEP
+Dresden;Keulenbergstraße;KEU
+Dresden;Kipsdorfer Straße;KPS
+Dresden;Kirschenstraße;KIR
+Dresden;Kleestraße;KLE
+Dresden;Kleinnaundorfer Straße;KLN
+Dresden;Kleinzschachw. Fähre;KLF
+Dresden;Kleinzschachwitz;KLZ
+Dresden;Klettestraße;KLT
+Dresden;Klosterteichplatz;KLP
+Dresden;Klotzsche, M.-Reiche-Str;MRS
+Dresden;Knappestraße;KNA
+Dresden;Koblenzer Straße;KOB
+Dresden;Kohlsdorfer Landstraße;KOH
+Dresden;Kölner Straße;KLS
+Dresden;Koloniestraße;KOS
+Dresden;Kolpingstraße;KLG
+Dresden;Kongresszentrum;KGZ
+Dresden;Königsheimplatz;KHP
+Dresden;Kopernikusstraße;KOP
+Dresden;Koreanischer Platz;KOR
+Dresden;Körnerplatz;KNP
+Dresden;Kotteweg;KOT
+Dresden;Kotzschweg;KOZ
+Dresden;Krankenh. Friedrichstadt;KHF
+Dresden;Krankenhaus Neustadt;KHN
+Dresden;Krebser Straße;KRB
+Dresden;Krebser Straße Nord;KRN
+Dresden;Kretschmerstraße;KRT
+Dresden;Krhs. St.Joseph-Stift;KHJ
+Dresden;Krügerstraße;KGS
+Dresden;Künstlerhaus;KTN
+Dresden;Kurhausstraße;KUR
+Dresden;Kurt-Tucholsky-Straße;KTS
+Dresden;Kurzer Schritt;KSC
+Dresden;Laibacher Straße;LAI
+Dresden;Landesdirektion Sachsen;LDS
+Dresden;Lassallestraße;LAS
+Dresden;Laubegast;LBG
+Dresden;Laubegast Fähre;FTOL
+Dresden;Lauterbacher Straße;LAU
+Dresden;Leiblstraße;LBL
+Dresden;Lene-Glatzer-Straße;LGL
+Dresden;Lengefelder Straße;LFS
+Dresden;Lenneplatz;LEN
+Dresden;Leubener Straße;LBN
+Dresden;Leubnitzer Höhe;LBH
+Dresden;Leutewitz;LTW
+Dresden;Liebenauer Straße;LBS
+Dresden;Liebstädter Straße;LST
+Dresden;Lipsiusstraße;LIP
+Dresden;Lise-Meitner-Straße;LME
+Dresden;Liststraße;LIS
+Dresden;Liststraße (Harkortstr.);HKT
+Dresden;Löbtau Gröbelstraße;LGS
+Dresden;Lockwitz;LOC
+Dresden;Lohmener Straße;LOM
+Dresden;Lohrmannstraße;LOR
+Dresden;Lößnitzstraße;LON
+Dresden;Lößnitzweg;LOW
+Dresden;Louisenstraße;LOI
+Dresden;Ludwig-Hartmann-Straße;LHA
+Dresden;Ludwig-Renn-Allee;LRA
+Dresden;Ludwigstraße;LUD
+Dresden;Luga;LUG
+Dresden;M.-Oeder-Straße;MOE
+Dresden;Malerstraße;MAL
+Dresden;Malterstraße;MTR
+Dresden;Manitiusstraße;MAN
+Dresden;Mansfelder Straße;MFS
+Dresden;Marienallee;MAA
+Dresden;Marienberger Straße;MAB
+Dresden;Marie-Wittich-Straße;MWI
+Dresden;Markusfriedhof;MKF
+Dresden;Martin-Opitz-Straße;MOP
+Dresden;Maxim-Gorki-Straße;MGS
+Dresden;Maxstraße;MAX
+Dresden;Mengsstraße;MEN
+Dresden;Merbitzer Straße;MER
+Dresden;Merianplatz;MAP
+Dresden;Messe Dresden;MES
+Dresden;Messe, Gleisschleife;MEG
+Dresden;Messering (HALLE 1);MEH
+Dresden;Meußlitzer Straße;MEU
+Dresden;Michaelisstraße;MIS
+Dresden;Mickten;MIC
+Dresden;Mockethaler Straße;MTS
+Dresden;Mockritz;MOC
+Dresden;Mockritzer Straße;MOK
+Dresden;Mohorner Straße;MHS
+Dresden;Mommsenstraße;MOM
+Dresden;Moosleite;MLW
+Dresden;Mordgrundbrücke;MOR
+Dresden;Moritzburger Platz;MBP
+Dresden;Moritzburger Weg;MOW
+Dresden;Mosenstraße;MOS
+Dresden;Mügelner Straße;MUG
+Dresden;Mühlenstraße;MLS
+Dresden;Münchner Platz;MUP
+Dresden;Münzgasse;EMZG
+Dresden;Münzteichweg;MTW
+Dresden;Nätherstraße;NAE
+Dresden;Neubertstraße;NEU
+Dresden;Neue Straße;NES
+Dresden;Neuer Annenfriedhof;NAF
+Dresden;Neuer Kathol. Friedhof;NKF
+Dresden;Neuländer Straße;NLS
+Dresden;Neunimptscher Straße;NNI
+Dresden;Neuostra;NEA
+Dresden;Neustadt Fähre;FNEU
+Dresden;Neustädter Markt;NMT
+Dresden;Nickerner Weg;NIW
+Dresden;Niedergohlis Dorfstraße;NGD
+Dresden;Niedergohlis Südstraße;NGS
+Dresden;Niederpoyritz Fähre;FNPO
+Dresden;Niedersedlitzer Platz;NSP
+Dresden;Niedersedlitzer Straße;NST
+Dresden;Niederseidewitzer Weg;NSW
+Dresden;Niederwaldplatz;NWP
+Dresden;Niederwaldstraße;NWS
+Dresden;Niederwartha;NWA
+Dresden;Nordstraße;NOR
+Dresden;Nürnberger Platz;NUP
+Dresden;Ob. Station Schwebebahn;OSS
+Dresden;Oberauer Straße;OBE
+Dresden;Obergohlis;OGS
+Dresden;Oberloschwitz;BOLO
+Dresden;Ockerwitz;OCW
+Dresden;Ockerwitzer Straße;OKW
+Dresden;Oederaner Straße;OED
+Dresden;Oehmestraße;OEH
+Dresden;Omsewitz;OMS
+Dresden;Oschatzer Straße;OSC
+Dresden;Oskar-Maune-Straße;OMA
+Dresden;Otto-Dix-Ring;ODX
+Dresden;Otto-Pilz-Straße;OPI
+Dresden;Overbeckstraße;OVE
+Dresden;P+R Ostragehege;OGP
+Dresden;Palaisplatz;PAP
+Dresden;Panometer;EPAN
+Dresden;Paradiesstraße;PAS
+Dresden;Pennrich, Gleisschleife;PEG
+Dresden;Pennricher Straße;PER
+Dresden;Permoserstraße;PMS
+Dresden;Peschelstraße;PSC
+Dresden;Pestalozziplatz;PST
+Dresden;Pesterwitz;PES
+Dresden;Pfeifferhannsstraße;PFH
+Dresden;Pferderennbahn;PFB
+Dresden;Pfotenhauerstraße;PFO
+Dresden;Pieschener Allee;PSA
+Dresden;Pillnitz;PIL
+Dresden;Pillnitz Fähre;FPIL
+Dresden;Pillnitz, Schloss;PLO
+Dresden;Pillnitzer Platz;PLP
+Dresden;Pirnaischer Platz;PIP
+Dresden;Platanenstraße;PLT
+Dresden;Plattleite;PTL
+Dresden;Plauen, Rathaus;PLR
+Dresden;Plauen,Nöthnitzer Straße;NTN
+Dresden;Plauenscher Ring;PAR
+Dresden;Podemusstraße;POD
+Dresden;Pohlandplatz;POH
+Dresden;Postplatz;POS
+Dresden;Prager Straße;PGS
+Dresden;Prellerstraße;PRE
+Dresden;Prof.-Billroth-Straße;PBI
+Dresden;Prof.-Ricker-Straße;PRS
+Dresden;Prohlis Gleisschleife;PRO
+Dresden;Prohlis Kaufpark Nickern;PRL
+Dresden;Pulsnitzer Straße;PUL
+Dresden;Putbuser Weg;PBW
+Dresden;Putjatinplatz;PTP
+Dresden;Querallee;QUE
+Dresden;Quohrener Straße;QUO
+Dresden;R.-Harbig-Stadion;RHX
+Dresden;Räcknitzhöhe;RAC
+Dresden;Rähnitzer Allee;RAL
+Dresden;Rankestraße;RAN
+Dresden;Rathaus Klotzsche;RKL
+Dresden;Rathaus Leuben;RTL
+Dresden;Rathaus Pieschen;RPN
+Dresden;Rathaus Pillnitz;RPI
+Dresden;Rathausstraße;RTS
+Dresden;Ratsstraße;RAT
+Dresden;Rauensteinstraße;RAU
+Dresden;Regensburger Straße;REG
+Dresden;Reichenbachstraße;REI
+Dresden;Reichenhaller Straße;RCS
+Dresden;Reineckeweg;RNW
+Dresden;Reisstraße;RSS
+Dresden;Reitbahnstraße;RIT
+Dresden;Rennplatzstraße;REN
+Dresden;Rethelstraße;RET
+Dresden;Riegelplatz;RIE
+Dresden;Rißweg;RIS
+Dresden;Robert-Sterl-Straße;RBS
+Dresden;Rochwitz,Bühlauer Str.;ROC
+Dresden;Rohrbahn;ROB
+Dresden;Rosa-Luxemburg-Platz;RLP
+Dresden;Roseggerstraße;RSG
+Dresden;Rosenstraße;ROS
+Dresden;Rossendorfer Straße;ROD
+Dresden;Rottwerndorfer Straße;ROT
+Dresden;Rubensweg;RUW
+Dresden;Rückertstraße;RKS
+Dresden;Rüdesheimer Straße;RUD
+Dresden;Rudolf-Leonhard-Straße;RLS
+Dresden;Rudolf-Walther-Straße;RWS
+Dresden;Saalhausener Straße;SHA
+Dresden;Saarstraße;SAR
+Dresden;Sachsenallee;SAA
+Dresden;Sagarder Weg;SGW
+Dresden;Saßnitzer Straße;SAS
+Dresden;Saxoniastraße;SAX
+Dresden;S-Bf. Bischofsplatz;SBI
+Dresden;S-Bf. Dobritz;SDZ
+Dresden;S-Bf. Freiberger Straße;SFB
+Dresden;S-Bf. Grenzstraße;SGR
+Dresden;S-Bf. Industriegelände;SIG
+Dresden;S-Bf. Niedersedlitz;SND
+Dresden;S-Bf. Pieschen;SPN
+Dresden;S-Bf. Plauen;SPL
+Dresden;S-Bf. Reick;SRE
+Dresden;S-Bf. Strehlen;SSR
+Dresden;S-Bf. Trachau;STR
+Dresden;S-Bf. Trachau West;STW
+Dresden;Schanzenstraße;SAZ
+Dresden;Scharfenberger Straße;SBG
+Dresden;Scharfensteinstraße;SST
+Dresden;Schaufußstraße;SCU
+Dresden;Schiffswerft Laubegast;SWL
+Dresden;Schillerplatz;SIP
+Dresden;Schillerstraße;SHL
+Dresden;Schillingstraße;SLI
+Dresden;Schlehenstraße;SLE
+Dresden;Schlüterstraße;SLT
+Dresden;Schneebergstraße;SNS
+Dresden;Schönaer Straße;SNA
+Dresden;Schule Gompitz;SCG
+Dresden;Schulstraße;SUL
+Dresden;Schunckstraße;SUK
+Dresden;Schurichtstraße;SUR
+Dresden;Schweizer Straße;SZS
+Dresden;Schweriner Straße;SCH
+Dresden;Schwimmh. Freib. Platz;SHF
+Dresden;Schwimmhalle Bühlau;SHB
+Dresden;Schwimmhalle Klotzsche;SHK
+Dresden;Seewiesenweg;SEW
+Dresden;Seidnitz Center;SEC
+Dresden;Seidnitzer Weg;SEI
+Dresden;Semmelweisstraße;SEM
+Dresden;Sobrigauer Weg;SOW
+Dresden;Söbrigen;SOB
+Dresden;Söbrigener Straße;SOG
+Dresden;Sörnewitzer Straße;SRN
+Dresden;Sosaer Straße;SOS
+Dresden;Spenerstraße;SPS
+Dresden;Spitzhausstraße;SPH
+Dresden;Spitzwegstraße;SPI
+Dresden;Sportplätze;SPO
+Dresden;St.-Benno-Gymnasium;GYM
+Dresden;St.-Marien-Krankenh.;SMK
+Dresden;St.-Pauli-Friedhof;SPF
+Dresden;Staats- u. Unibibliothek;SUB
+Dresden;Stadtgutstraße;SGU
+Dresden;Staffelsteinstraße;SSS
+Dresden;Stauffenbergallee;STF
+Dresden;Steglichstraße;STE
+Dresden;Stephanstraße;STS
+Dresden;Stralsunder Straße;SSU
+Dresden;Straßburger Platz;SBP
+Dresden;Straße des 17.Juni;STJ
+Dresden;Strehlener Platz;STP
+Dresden;Striesener Straße;STN
+Dresden;Struppener Straße;SRU
+Dresden;Südhöhe;SUE
+Dresden;Südvorstadt;SVS
+Dresden;Synagoge;SYN
+Dresden;Tannenstraße;TAN
+Dresden;Tännichtstraße;TNS
+Dresden;Taschenbergpalais;ETPA
+Dresden;Tatzberg;TBG
+Dresden;Taubenberg;TAU
+Dresden;Technische Sammlungen;TSA
+Dresden;Technische Universität;TUD
+Dresden;Tharandter Straße;THA
+Dresden;Thäterstraße;THS
+Dresden;Theaterplatz;THE
+Dresden;Theilestraße;TEI
+Dresden;Thomas-Mann-Straße;TMS
+Dresden;Tiergartenstraße;TIE
+Dresden;Tiroler Straße;TIS
+Dresden;Tolkewitz, Schulcampus;TSC
+Dresden;Tornaer Straße;TON
+Dresden;Trachauer Straße;TAS
+Dresden;Trachenberger Platz;TRP
+Dresden;Trattendorfer Straße;TRS
+Dresden;Trinitatisplatz;TIP
+Dresden;Tronitzer Straße;TRO
+Dresden;Troppauer Straße;TPS
+Dresden;Uhlandstraße;UHL
+Dresden;Universitätsklinikum;UKD
+Dresden;Urnenstraße;URN
+Dresden;Van-Gogh-Straße;VGO
+Dresden;Veilchenstraße;VEI
+Dresden;Vollmarstraße;VOL
+Dresden;Vorwerkstraße;VOW
+Dresden;Wachbergstraße;WCH
+Dresden;Wächterstraße;WAC
+Dresden;Wägnerstraße;WGS
+Dresden;Waldschlößchen;WSO
+Dresden;Waldschlößchenstraße;WSS
+Dresden;Waldteichstraße;WTS
+Dresden;Walpurgisstraße;WPS
+Dresden;Waltherstraße;WTH
+Dresden;Wasaplatz;WAS
+Dresden;Washingtonstraße;WSH
+Dresden;Wasserwerk Tolkewitz;WWT
+Dresden;Webergasse;WEB
+Dresden;Weberplatz;WPL
+Dresden;Weidentalstraße;WDS
+Dresden;Weißdornstraße;WSD
+Dresden;Weißer Hirsch;BWHI
+Dresden;Weißeritzstraße;WSR
+Dresden;Werftstraße;WEF
+Dresden;Wernerstraße;WER
+Dresden;Westendstraße;WEE
+Dresden;Wettiner Platz;EWTP
+Dresden;Wieckestraße;WIE
+Dresden;Wilder Mann;WIM
+Dresden;Wilder-Mann-Straße;WMS
+Dresden;Wilhelm-Busch-Straße;WBU
+Dresden;Wilhelminenstraße;WIL
+Dresden;Wilischstraße;WIS
+Dresden;Wilschdf.Ind.-gebiet;WIG
+Dresden;Wilschdorfer Landstr.;WLS
+Dresden;Windmühlenstraße;WND
+Dresden;Windmühlenweg;WMW
+Dresden;Winterbergstraße;WIN
+Dresden;Wittenberger Straße;WIT
+Dresden;Wölfnitz;WOL
+Dresden;Wölfnitzer Ring;WOR
+Dresden;Wostra;WOS
+Dresden;Würzburger Straße;WBR
+Dresden;Wurzener Straße;WUZ
+Dresden;Zachengrundring;ZGR
+Dresden;Zeithainer Straße;ZEH
+Dresden;Zellescher Weg;ZEL
+Dresden;Zinnowitzer Straße;ZNW
+Dresden;Zoo;ZOO
+Dresden;Zschertnitz;ZTZ
+Dresden;Zschertnitzer Straße;ZZN
+Dresden;Zschierener Straße;ZSS
+Dresden;Zschonergrundstraße;ZSO
+Dresden;Zum Windkanal;ZUW
+Dresden;Zur Elbinsel;ZEI
+Dresden;Zur Neuen Brücke;ZNB
+Dresden;Zur Steinhöhe;ZSH
+Dresden;Zweibrüderweg;ZWE
+Dresden;Zwickauer Straße;ZWU
+Dresden;Zwinglistraße;ZWI
+Freital;Am Dathepark;ADA
+Freital;Burgker Straße;BUR
+Freital;Meßweg;MEW
+Freital;Schule Kleinnaundorf;SKN
+Freital;Steigerstraße;STG
+Gombsen;Gombsen;GBS
+Gombsen;Neugombsen;NGO
+Gompitz;Rudolf-Walther-Straße;RWS
+Goppeln;Autobahnmeisterei;ABM
+Goppeln;Goppeln;GOP
+Graupa;Borsbergstraße;BOB
+Graupa;Bonnewitzer Straße;BWS
+Graupa;Tschaikowskiplatz;GRA
+Graupa;Tiefer Grund;TGR
+Heidenau;Dresdner Straße;DRD
+Heidenau;Bf. Heidenau;HDN
+Heidenau;K.-Kollwitz-Straße;KKS
+Kreischa;Haußmannplatz;HAP
+Kreischa;Klinikum Kreischa;KLK
+Kreischa;Kreischa;KRE
+Pesterwitz;Dorfplatz Pesterwitz;DFP
+Pesterwitz;Obere Straße;OBS
+Pesterwitz;Pesterwitz;PES
+Pesterwitz;Wurgwitzer Straße;WWS
+Radebeul;Altserkowitz;ASE
+Radebeul;Bergblick;BBL
+Radebeul;Borstraße;BOR
+Radebeul;Dr.-Külz-Straße;DKU
+Radebeul;Eduard-Bilz-Straße;EBI
+Radebeul;Eisenbahnbrücke;EIS
+Radebeul;Fichtestraße;FIS
+Radebeul;Flemmingstraße;FLM
+Radebeul;Forststraße;FOR
+Radebeul;Fritz-Schulze-Straße;FSR
+Radebeul;Gellertstraße;GES
+Radebeul;Gerhart-Hauptmann-Straße;GHA
+Radebeul;Gradsteg;GST
+Radebeul;Gutenbergstraße;GBG
+Radebeul;Hauptstraße;HPT
+Radebeul;Hospiz (Radebeul);HRD
+Radebeul;Johannisbergstraße;JHA
+Radebeul;Kaufland;KLR
+Radebeul;Landesbühnen Sachsen;LDB
+Radebeul;Moritzburger Straße;MOG
+Radebeul;Nizzastraße;NIZ
+Radebeul;Radebeul Ost;RBO
+Radebeul;Radebeul West (Schleife);RBW
+Radebeul;Reichsstraße;RES
+Radebeul;S-Bf. Weintraube;SWT
+Radebeul;Schildenstraße;SIL
+Radebeul;Schloß Wackerbarth;SWA
+Radebeul;Wasastraße;WAA
+Radebeul;Zillerstraße;ZIL
+Radebeul;Zinzendorfstraße;ZIZ
+Röhrsdorf (b Pirna);Röhrsdorf;ROE
+Sobrigau;Fußweg nach Sobrigen;FSO
+Sobrigau;Hummelmühle;HUM
+Sobrigau;Sechserhaus;SHS
+Weinböhla;Florian-Geyer-Weg;EFYW
+Weinböhla;Haltepunkt Weinböhla;EHWB
+Weinböhla;Weinböhla Kirchplatz;EWBK
+Weinböhla;Köhlerstraße;KOL
+Weinböhla;Weinböhla;WBL

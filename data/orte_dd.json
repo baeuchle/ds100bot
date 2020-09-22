@@ -1,0 +1,24 @@
+{
+  "id": "orte_dd",
+  "headline": "Haltestellen Dresden",
+  "access": [{
+    "x_source": "DD",
+    "type": "#"
+  }],
+  "magic_hashtags": [
+    "_DD"
+  ],
+  "data": [{
+    "id": "orte_dd",
+    "short": "Abkürzung",
+    "long": "Haltestelle",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/orte_dd.csv",
+    "description": "Haltestellen Dresden",
+    "source": {
+      "name": "Haltestellenkürzel der Dresdener Verkehrsbetriebe AG",
+      "url": "https://www.dvb.de/de-de/fahrplan/haltestellenauskunft/haltestellenkuerzel/"
+    }
+  }]
+}
