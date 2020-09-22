@@ -90,4 +90,6 @@ for row in sql.popular_sources(since):
 text += """
 (Keine Garantie für richtiges Zählen)"""
 
+print(text.replace("\u200b", ""))
+
 twapi.tweet(text)
