@@ -3,7 +3,7 @@
   "headline": "Betriebsstellen Schweden",
   "access": [{
     "x_source": "SE",
-    "type": "$"
+    "type": "#"
   }],
   "magic_hashtags": [
     "_SE"
