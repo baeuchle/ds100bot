@@ -1,0 +1,48 @@
+Linie,Laufweg
+S1,Schöna – Bad Schandau – Pirna – Dresden – Coswig – Meißen Triebischtal
+S2,Pirna – Heidenau – Dresden Hbf – Dresden Flughafen
+S3,Dresden – Tharandt – Klingenberg-Colmnitz – Freiberg (Sachs)
+1,Prohlis – Dobritz – Gruna – Stadtzentrum – Friedrichstadt – Leutewitz
+2,Kleinzschachwitz – Leuben – Gruna – Stadtzentrum – Bahnhof Mitte – Cotta – Gorbitz
+3,Coschütz – Plauen – Hauptbahnhof – Stadtzentrum – Bahnhof Neustadt – Wilder Mann
+4,Laubegast – Tolkewitz – Striesen – Stadtzentrum – Mickten – Radebeul – Coswig – Weinböhla
+6,Niedersedlitz – Leuben – Laubegast – Blasewitz – Johannstadt – Neustadt – Bahnhof Mitte – Löbtau – Wölfnitz
+7,Weixdorf – Klotzsche – Neustadt – Stadtzentrum – Hauptbahnhof – Bahnhof Mitte – Cotta – Gorbitz – Pennrich
+8,Hellerau – Neustadt – Stadtzentrum – Hauptbahnhof – Südvorstadt
+9,Prohlis – Reick – Strehlen – Hauptbahnhof – Stadtzentrum – Mickten – Kaditz
+10,Striesen – Pohlandplatz – Straßburger Platz – Hauptbahnhof – MESSE DRESDEN
+11,Bühlau – Bahnhof Neustadt – Stadtzentrum – Hauptbahnhof – Zschernitz
+12,Striesen – Blasewitz – Fetscherplatz – Stadtzentrum – Löbtau – Leutewitz
+13,Prohlis – Reick – Strehlen – Straßburger Platz – Neustadt – Mickten (-Kaditz)
+61,Weißig/Fernsehturm – Bühlau – Blasewitz – Gruna – Strehlen – Südvorstadt – Löbtau
+62,Johannstadt – Stadtzentrum – Südvorstadt – Löbtau Süd – Naußlitz – Dölzschen
+63,Pillnitz – Loschwitz – Blasewitz – Striesen – Strehlen – Mockritz – Zschernitz – Plauen – Löbtau
+64,Reick – Gruna – Striesen – Universitätsklinikum – Waldschlößchen – Neustadt – Pieschen – Mickten – Kaditz
+65,Heidenau/Luga – Leuben – Reick – Seidnitz – Blasewitz
+66,Lockwitz/Nickern – Prohlis – Strehlen – Hauptbahnhof – Südhöhe – Mockritz/Coschütz (- Freital)
+70,Industriegebiet Nord – Klotzsche – Hellerau – Trachenberge – Trachau – Mickten -Übigau – Cotta – Gompitz
+72,Klotzsche Infineon – Hellerau – Boxdorf – Radebeul – Altkaditz – ElbePark
+73,Wilder Mann – Döbelner Straße – S-Bahnhof Pieschen – Wurzener Straße
+74,Jägerpark – Waldschlößchen – Marienallee
+75,Goppeln – Leubnitz – Strehlen – Postplatz – Bahnhof Mitte – Friedrichstadt – Cotta – Cossebaude – Niederwartha
+76,Justizvollzugsanstalt – S-Bahnhof Pieschen
+77,Klotzsche Infineon – Flughafen
+79,Mickten – Übigau
+80,Klotzsche – Wilschdorf – Boxdorf – Wilder Mann – Trachau – Übigau – Cotta – Omsewitz
+81,Bahnhof Neustadt – Liststraße – Wilschdorf
+83,Bonnewitz – Graupa – Pillnitz
+84,Bühlau – Rochwitz – Loschwitz – Blasewitz
+85,Striesen – Gruna – Strehlen – Zschernitz – Plauen – Löbtau Süd
+86,Heidenau – Kleinzschachwitz – Laubegast – Dobritz – Prohlis – Lockwitz – Kreischa
+87,Striesen – Tolkewitz – Seidnitz – Reick – Leubnitz – Mockritz
+88,Kleinzschachwitz – Niedersedlitz – Prohlis – Kauscha
+89,Röhrsdorf – Borthen – Lockwitz – Niedersedlitz
+90,Löbtau – Naußlitz – Pesterwitz – Altfranken – Gompitz
+91,Gompitz – Pennrich – Unkersdorf – Brabschütz – Merbitz – Briesnitz – Cotta
+92,Cotta – Briesnitz – Ockerwitz
+93,Oberwartha – Cossebaude – Mobschatz – Briesnitz – Cotta
+95,Anruflinientaxi: Bahnhof Cossebaude – Gohlis – Bahnhof Cossebaude
+97,Anruflinientaxi: Leutewitz – Zschonergrundmühle
+98A,Weißig – Gönnsdorf – Pappritz – Niederpoyritz
+98B,Weißig – Schönfeld – Rockau – Cunnersdorf – Niederpoyritz
+98C,Schönfeld – Borsberg
