@@ -1,0 +1,30 @@
+{
+  "id": "linien_dd",
+  "headline": "Linien Dresden",
+  "access": [{
+    "x_source": "DD",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_DD"
+  ],
+  "data": [{
+    "id": "linien_dd",
+    "short": "Linie",
+    "long": "Laufweg",
+    "delim": ",",
+    "alias": "|",
+    "file": "sources/linien_dd.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "moritzkraehe"
+      }
+    }
+  }]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "linien_sn",
+  "headline": "Linien Sachsen",
+  "access": [{
+    "x_source": "SN",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_SN"
+  ],
+  "data": [{
+    "id": "linien_sn",
+    "short": "Linie",
+    "long": "Laufweg",
+    "delim": ",",
+    "alias": "|",
+    "file": "sources/linien_sn.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "moritzkraehe"
+      }
+    }
+  }]
+}

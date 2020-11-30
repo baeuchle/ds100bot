@@ -5,6 +5,9 @@
   "access": [{
     "x_source": "BO",
     "type": "%"
+  }, {
+    "x_source": "BOSTRAB",
+    "type": "%"
   }],
   "magic_hashtags": [
     "BOSTRAB",

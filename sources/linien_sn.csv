@@ -1,0 +1,58 @@
+Linie,Laufweg
+RE1,Dresden – Arnsdorf – Bischofswerda – Bautzen – Löbau – Görlitz
+RB1,Zwickau Zentrum – Lengenfeld – Falkenstein – Klingenthal – Kraslice
+RE2,Dresden – Arnsdorf – Bischofswerda – Ebersbach – Zittau – Liberec
+RB2,Zwickau – Plauen – Mehltheuer – Hof / Cheb
+RE3,Dresden – Tharandt – Chemnitz – Zwickau – Plauen (Vogtl) – Hof
+RE4,Halle (Saale) Hbf – Domnitz (Saalkr) – Könnern – Halberstadt – Goslar
+RB4,Gera – Elsterberg – Weischlitz
+RB5,Mehltheuer – Plauen – Falkenstein – Kraslice – Karlovy Vary
+RE6,Leipzig – Bad Lausick – Geithain – Burgstädt – Chemnitz
+RE10,Leipzig Hbf – Eilenburg – Beilrode – Cottbus
+RE13,Leipzig Hbf – Delitzsch – Bitterfeld – Dessau Hbf – Zerbst (Anh) – Magdeburg Hbf
+RE15,Dresden – Großenhain – Ruhland – Hoyerswerda
+RE18,Dresden – Großenhain – Ortrand – Ruhland – Senftenberg – Cottbus
+RE19,Dresden – Heidenau – Altenberg (Ski- und Wanderexpress)
+RE20,Dresden – Pirna – Bad Schandau – Schöna – Dolní Zleb – Děčín – Ústí n.L. – Litoměřice
+RB20,Leipzig Hbf – Weißenfels – Naumburg (Saale) Hbf – Bad Kösen – Großheringen – Erfurt Hbf – Eisenach
+RB30,Dresden – Klingenberg-Colmnitz – Freiberg – Chemnitz – Glauchau – Zwickau
+RB31,Dresden – Cossebaude – Coswig – Großenhain – Elsterwerda-Biehla
+RB33,Dresden – Ottendorf-Okrilla – Königsbrück
+RB34,Dresden – Radeberg – Kamenz
+RB37,Gößnitz – Glauchau
+RE42,Leipzig Hbf – Weißenfels – Naumburg (Saale) Hbf – Jena – Saalfeld – Nürnberg
+RB45,Chemnitz – Stauchitz – Riesa – Elsterwerda
+RE50,Saxonia: Dresden – Riesa – Leipzig
+RB60,Dresden – Arnsdorf – Bischofswerda – Bautzen – Löbau – Görlitz
+RB61,Dresden – Arnsdorf – Bischofswerda – Ebersbach – Zittau
+RB64,Hoyerswerda – Uhyst – Niesky – Görlitz
+RB65,Zittau – Görlitz – Weißwasser – Cottbus
+RB71,Pirna – Dürrröhrsdorf – Neustadt – Sebnitz
+RB72,Heidenau – Glashütte – Altenberg
+RB80,Chemnitz – Flöha – Annaberg-Buchholz – Cranzahl
+RB81,Chemnitz – Flöha – Pockau-Lengefeld – Olbernhau-Grünthal
+RB89,Chemnitz – Thalheim – Aue (Schienenersatzverkehr mit Bus 361 und 524)
+RB95,Zwickau – Aue – Johanngeorgenstadt 
+RB110,Leipzig – Grimma – Döbeln
+RB113,Leipzig – Bad Lausick – Geithain
+EBx12,Leipzig Hbf – Zeitz – Wetterzeube – Gera – Saalfeld
+EBx13,Gera – Weida – Hof
+EB22,Leipzig Hbf – Zeitz – Wetterzeube – Gera – Saalfeld
+U28,Rumburk – Šluknov – Sebnitz – Bad Schandau – Děčín
+T7,Cranzahl – Vejprty – Chomutov
+L7,Rybniště/Seifhennersdorf – Varnsdorf – Zittau – Liberec
+CD142|ČD142,Johanngeorgenstadt – Karlovy Vary
+CB53,Glauchau – Stollberg (Sachs)
+Kirnitzschtalbahn,Bad Schandau Stadtpark – Lichtenhainer Wasserfall
+LGB,Radebeul Ost – Radeburg
+Lößnitzgrundbahn,Radebeul Ost – Radeburg
+WTB,Freital-Hainsberg – Dippoldiswalde – Kurort Kipsdorf
+Weißeritztalbahn,Freital-Hainsberg – Dippoldiswalde – Kurort Kipsdorf
+Fichtelbergbahn,Cranzahl – Kurort Oberwiesenthal
+DSB,Augustusburg – Erdmannsdorf
+Drahtseilbahn,Augustusburg – Erdmannsdorf
+FEG,Freiberg – Holzhau
+Freiberger Eisenbahn,Freiberg – Holzhau
+DBG|DBG502|Döllnitzbahn,Oschatz – Mügeln – Altmügeln – Kemmlitz/Glossen
+SOEG|Zittauer Schmalspurbahn,Zittau – Bertsdorf – Kurort Oybin/Kurort Jonsdorf
+WEM|Waldeisenbahn|Waldeisenbahn Muskau,Weißwasser – Kromlau/Bad Muskau
