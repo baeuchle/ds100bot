@@ -1,20 +1,21 @@
 {
-  "id": "regeln_evus",
-  "headline": "Eisenbahnverkehrsunternehmen",
-  "description": "Alle in der EU registrierten Eisenbahnverkehrsunternehmen",
+  "id": "regeln_vkm",
+  "headline": "Fahrzeughalterkennzeichen",
+  "description": "Alle in der EU registrierten Fahrzeughalter",
   "access": [{
-    "x_source": "EVU",
+    "x_source": "VKM",
     "type": "&"
   }],
   "magic_hashtags": [
-    "_EVU"
+    "_EVU",
+    "_VKM"
   ],
   "data": [{
-    "id": "evu_liste",
+    "id": "vkm_liste",
     "short": "UNIQUE",
     "long": "Keeper Name / Halter Name / Nom du détenteur / Название владельца",
     "nolink": true,
-    "file": "sources/regeln_evus.csv",
+    "file": "sources/regeln_vkms.csv",
     "source": {
       "name": "Vehicle Keeper Marking register (VKM)",
       "url": "https://www.era.europa.eu/sites/default/files/registers/docs/iu_vkm_publiclist_124_en.xls"
