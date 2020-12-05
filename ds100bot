@@ -3,6 +3,7 @@
 """Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
 
 import argparse
+import sys
 
 from AnswerMachine import handle_list
 from Externals import get_externals
@@ -59,7 +60,12 @@ def teardown_apis(api_, notify, max_id_=0):
 if __name__ == "__main__":
     args = arguments()
     log_ = setup_log(args.verbose)
-    api = setup_apis(args)
+    api = None
+    try:
+        api = setup_apis(args)
+    except RuntimeError as re:
+        log_.critical(re)
+        sys.exit(1)
 
     tagsearch, magic_tags = api.database.magic_hashtags()
     max_id = handle_list(api.twitter.all_relevant_tweets(

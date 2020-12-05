@@ -11,8 +11,11 @@ class TwitterBase():
         import credentials # pylint: disable=C0415
         auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
         auth.set_access_token(credentials.access_token, credentials.access_token_secret)
-        self.twit = tweepy.API(auth)
-        self.myself = self.twit.me()
+        try:
+            self.twit = tweepy.API(auth)
+            self.myself = self.twit.me()
+        except tweepy.error.TweepError as te:
+            raise RuntimeError(str(te))
         self.measure = Measure()
 
     def warn_rate_error(self, rate_err, description):
