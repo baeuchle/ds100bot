@@ -1,10 +1,13 @@
 # pylint: disable=C0114
 
+import re
 import Persistence.log as log
 from .react import process_tweet
 log_ = log.getLogger(__name__)
 
 class Tweet:
+    hashtagre = None
+
     def __init__(self, tweepy_tweet):
         self.id = tweepy_tweet.id
         self.text = tweepy_tweet.full_text
@@ -97,11 +100,14 @@ class Tweet:
     def hashtags(self, candidate_list):
         """
         Returns a list of all the entries in candidate_list that are
-        present as hashtag in the tweet.
+        present in the tweet.
         """
-        return [[ht['text'], ht['indices']]
-                for ht in self.original.entities['hashtags']
-                if '#' + ht['text'] in candidate_list]
+        if Tweet.hashtagre is None:
+            Tweet.hashtagre = re.compile('|'.join(map(re.escape, candidate_list)))
+        return [
+            [m.group(0).replace('#', '', 1), m.span()]
+            for m in Tweet.hashtagre.finditer(self.text)
+        ]
 
     def is_eligible(self, myself):
         """

@@ -15,10 +15,10 @@ benutzt:
   steht bei der [Übersicht der Daten](/copyright.html).
 - __Sind mehrere Magic Hashtags vorhanden__, so gilt jeder davon bis zum
   nächsten; der erste gilt schon ab Anfang.
-- __Alternativtexte zu Bildern__ werden so behandelt, als stünden sie am
-  Ende des Tweets, das heißt, sie werden mit dem letzten Magic Hashtag
-  des Tweets analysiert. In den Bildern selbst wird kein Magic Hashtag
-  erkannt.
+- __Alternativtexte zu Bildern__ werden so behandelt, als führten sie
+  den Tweet fort. Magic Hashtags im Alt-Text werden bei der Auswahl der
+  Quelle beachtet. Allerdings werden Tweets nicht auf Grund von Magic
+  Hashtags im Alt-Text gefunden.
 - __Die Quelle [BOT](/dumps/gimmick.html) wird immer beachtet.__
 
 Namensgebung der Magic Hashtags

@@ -506,7 +506,7 @@ def mocked_tweets():
         ))
     list_of_tweets.append(TweepyMock(
         full_text='This tweet media: #_FFM #HB #DS100 bot%tl%mt%mf%440',
-        expected_answer='FFM#HB: Frankfurt Hauptbahnhof\nRALP: Alpirsbach\nHE: Emden\nMS: München Süd',
+        expected_answer='FFM#HB: Frankfurt Hauptbahnhof\nRALP: Alpirsbach\nCH#HE: Herisau\nCH#MS: Münsingen',
         extended_entities={'media': [{'ext_alt_text': '#RALP'},
                                      {'ext_alt_text': '#_CH #HE'},
                                      {'ext_alt_text': '#MS'}
