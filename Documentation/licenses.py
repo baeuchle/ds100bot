@@ -59,7 +59,7 @@ class Licenses(MarkdownDoc):
         thead = ET.SubElement(lic_table, 'thead')
         tr = ET.SubElement(thead, 'tr')
         for text in ('', 'Beschreibung', 'Quelle', 'Lizenz',
-                     'Anmerkungen', 'Dump', 'Magic Hashtag'):
+                     'Anmerkungen', 'Dump', 'Magic Hashtag / Magic emoji'):
             th = ET.SubElement(tr, 'th')
             th.text = text
         self.lic = ET.SubElement(lic_table, 'tbody')

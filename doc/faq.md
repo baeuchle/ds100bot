@@ -3,6 +3,8 @@ Häufig gestellte Fragen
 
 (oder was ich dafür halte)
 
+Siehe auch die [FAQ-Abkürzungsliste des Bots](/dumps/faq.html).
+
 Mach doch mal ein einfaches Beispiel!
 -------------------------------------
 

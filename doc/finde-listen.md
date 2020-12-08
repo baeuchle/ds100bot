@@ -6,7 +6,9 @@ Standardmäßig werden gefundene Kürzel mithilfe der
 Für jede Abkürzung kann eine Quelle explizit angefordert werden (siehe
 [die Regeln für Abkürzungen](/finde-lang.html)); man kann aber auch die
 „Standard-Liste“ für den Tweet verändern, in dem man einen Magic Hashtag
-benutzt:
+oder ein Magic Emoji benutzt. Magic Emojis funktionieren dabei komplett
+gleichberechtigt wie Magic Hashtags, nur werden sie nicht zur Suche nach
+Tweets benutzt. Im Detail:
 
 - __Kein Magic Hashtag vorhanden__ bedeutet, dass alles beim alten
   bleibt, siehe oben.
@@ -15,14 +17,14 @@ benutzt:
   steht bei der [Übersicht der Daten](/copyright.html).
 - __Sind mehrere Magic Hashtags vorhanden__, so gilt jeder davon bis zum
   nächsten; der erste gilt schon ab Anfang.
-- __Alternativtexte zu Bildern__ werden so behandelt, als stünden sie am
-  Ende des Tweets, das heißt, sie werden mit dem letzten Magic Hashtag
-  des Tweets analysiert. In den Bildern selbst wird kein Magic Hashtag
-  erkannt.
+- __Alternativtexte zu Bildern__ werden so behandelt, als führten sie
+  den Tweet fort. Magic Hashtags im Alt-Text werden bei der Auswahl der
+  Quelle beachtet. Allerdings werden Tweets nicht auf Grund von Magic
+  Hashtags im Alt-Text gefunden.
 - __Die Quelle [BOT](/dumps/gimmick.html) wird immer beachtet.__
 
 Namensgebung der Magic Hashtags
-===============================
+-------------------------------
 
 Magic Hashtags beginnen mit einem Unterstrich \_, um von anderen Tags
 unterschieden werden zu können.
@@ -39,7 +41,7 @@ Bei lokalen Listen (gegenwärtig Frankfurt, Hamburg, Wien) wird ein
 möglichst sinnvolles Kürzel für die Stadt gewählt: \_FFM, \_HH, \_W.
 
 Beispiel für die Benutzung von Magic Hashtags
-=============================================
+---------------------------------------------
 
 > ### Tweet 1
 > Variante 1: Quelle direkt im Suchbegriff: \#FFM:HWC<br/>
@@ -64,3 +66,13 @@ und
 >
 >> #### Antwort
 >> NO#OSL: Oslo S
+
+Magic Emojis
+------------
+
+Anstelle von Magic Hashtags können auch Magic Emojis genutzt werden, um
+zwischen den Quellen zu wechseln. Diese sind meistens die jeweiligen
+Landesflaggen, also etwa 🇩🇪 oder 🇳🇴. Tweets werden jedoch nicht
+anhand eines Magic Emojis gefunden!
+
+Magic Hashtags und Magic Emojis können auch gemischt werden.
