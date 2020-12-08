@@ -24,7 +24,7 @@ Tweets benutzt. Im Detail:
 - __Die Quelle [BOT](/dumps/gimmick.html) wird immer beachtet.__
 
 Namensgebung der Magic Hashtags
-===============================
+-------------------------------
 
 Magic Hashtags beginnen mit einem Unterstrich \_, um von anderen Tags
 unterschieden werden zu können.
@@ -41,7 +41,7 @@ Bei lokalen Listen (gegenwärtig Frankfurt, Hamburg, Wien) wird ein
 möglichst sinnvolles Kürzel für die Stadt gewählt: \_FFM, \_HH, \_W.
 
 Beispiel für die Benutzung von Magic Hashtags
-=============================================
+---------------------------------------------
 
 > ### Tweet 1
 > Variante 1: Quelle direkt im Suchbegriff: \#FFM:HWC<br/>
@@ -68,7 +68,7 @@ und
 >> NO#OSL: Oslo S
 
 Magic Emojis
-============
+------------
 
 Anstelle von Magic Hashtags können auch Magic Emojis genutzt werden, um
 zwischen den Quellen zu wechseln. Diese sind meistens die jeweiligen
