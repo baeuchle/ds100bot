@@ -6,7 +6,9 @@ Standardmäßig werden gefundene Kürzel mithilfe der
 Für jede Abkürzung kann eine Quelle explizit angefordert werden (siehe
 [die Regeln für Abkürzungen](/finde-lang.html)); man kann aber auch die
 „Standard-Liste“ für den Tweet verändern, in dem man einen Magic Hashtag
-benutzt:
+oder ein Magic Emoji benutzt. Magic Emojis funktionieren dabei komplett
+gleichberechtigt wie Magic Hashtags, nur werden sie nicht zur Suche nach
+Tweets benutzt. Im Detail:
 
 - __Kein Magic Hashtag vorhanden__ bedeutet, dass alles beim alten
   bleibt, siehe oben.
@@ -64,3 +66,13 @@ und
 >
 >> #### Antwort
 >> NO#OSL: Oslo S
+
+Magic Emojis
+============
+
+Anstelle von Magic Hashtags können auch Magic Emojis genutzt werden, um
+zwischen den Quellen zu wechseln. Diese sind meistens die jeweiligen
+Landesflaggen, also etwa 🇩🇪 oder 🇳🇴. Tweets werden jedoch nicht
+anhand eines Magic Emojis gefunden!
+
+Magic Hashtags und Magic Emojis können auch gemischt werden.
