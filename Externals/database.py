@@ -29,8 +29,10 @@ class Database:
             FROM
                 magic_hashtags
         """)
-        results = ["#" + row[0] for row in self.cursor.fetchall()]
-        return "(" + (" OR ".join(results)) + ")", results
+        tags = [row[0] for row in self.cursor.fetchall()]
+        mht = ['#' + t for t in tags if ord(t[0]) < 2**16]
+        emojis = [t for t in tags if ord(t[0]) >= 2**16]
+        return "(" + (" OR ".join(mht)) + ")", [*mht, *emojis]
 
     def count_status(self, since):
         self.cursor.execute("""
