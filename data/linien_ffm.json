@@ -14,11 +14,18 @@
     "id": "linien_ffm",
     "short": "Nummer",
     "long": "Laufweg",
-    "delim": ";",
-    "alias": ",",
+    "delim": ",",
+    "alias": ";",
     "file": "sources/linien_ffm.csv",
     "source": {
       "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "Standardlizenz",
+      "contributors": [{
+        "type": "twitter",
+        "name": "MoritzKraehe"
+      }]
     }
   }]
 }
