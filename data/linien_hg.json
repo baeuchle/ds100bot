@@ -13,8 +13,8 @@
     "id": "linien_hg",
     "short": "Linie",
     "long": "Laufweg",
-    "delim": ";",
-    "alias": ",",
+    "delim": ",",
+    "alias": ";",
     "file": "sources/linien_hg.csv",
     "source": {
       "name": "Eigene Zusammenstellung"

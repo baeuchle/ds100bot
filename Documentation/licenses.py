@@ -14,6 +14,26 @@ def add_source(target, source):
     if source.get('modified', False):
         ET.SubElement(target, 'span').text = " (modifiziert)"
 
+def add_owner(element, owner):
+    own = ET.SubElement(element, 'span')
+    own.text = " "
+    owner_type = owner.get('type', None)
+    owner_name = owner.get('name', '')
+    if owner_type == 'name':
+        own.text += owner_name
+    elif owner_type == 'twitter':
+        ET.SubElement(element, 'a', attrib={
+            'href': 'https://twitter.com/' + owner_name
+        }).text = "@{} auf twitter".format(owner_name)
+    elif owner_type == 'github':
+        ET.SubElement(element, 'a', attrib={
+            'href': 'https://github.com/' + owner_name
+        }).text = "{} auf github".format(owner_name)
+    elif owner_type == 'link' and owner.get('url', False):
+        ET.SubElement(element, 'a', attrib={
+            'href': owner['url']
+        }).text = owner_name
+
 def add_license(target, lic):
     ET.SubElement(target, 'span').text = "© "
     lic_link = lic.get('url', None)
@@ -25,24 +45,13 @@ def add_license(target, lic):
     lic_element.text = lic['name']
     owner = lic.get('owner', None)
     if owner:
-        own = ET.SubElement(target, 'span')
-        own.text = " "
-        owner_type = owner.get('type', None)
-        owner_name = owner.get('name', '')
-        if owner_type == 'name':
-            own.text += owner_name
-        elif owner_type == 'twitter':
-            ET.SubElement(target, 'a', attrib={
-                'href': 'https://twitter.com/' + owner_name
-            }).text = "@{} auf twitter".format(owner_name)
-        elif owner_type == 'github':
-            ET.SubElement(target, 'a', attrib={
-                'href': 'https://github.com/' + owner_name
-            }).text = "{} auf github".format(owner_name)
-        elif owner_type == 'link' and owner.get('url', False):
-            ET.SubElement(target, 'a', attrib={
-                'href': owner['url']
-            }).text = owner_name
+        add_owner(target, owner)
+    contributors = lic.get('contributors', None)
+    if contributors:
+        contrib = ET.SubElement(target, 'strong')
+        contrib.text = " Beitragende:"
+        for c in contributors:
+            add_owner(target, c)
 
 def add_comments(target, comments):
     if len(comments) == 1:

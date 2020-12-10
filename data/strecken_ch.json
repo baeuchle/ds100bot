@@ -1,0 +1,30 @@
+{
+  "id": "strecken_ch",
+  "headline": "Strecken Schweiz",
+  "access": [{
+    "x_source": "CH",
+    "type": "$"
+  }],
+  "magic_hashtags": [
+    "_CH",
+    "🇨🇭"
+  ],
+  "data": [{
+    "id": "strecken_ch_sbb",
+    "short": "linie",
+    "long": "linienname",
+    "file": "sources/strecken_ch_sbb.csv",
+    "source": {
+      "name": "Liniennetz der SBB",
+      "url": "https://opendata.swiss/de/dataset/linie"
+    },
+    "license": {
+      "name": "ähnlich CC-BY",
+      "url": "https://opendata.swiss/de/terms-of-use/#terms_by",
+      "owner": {
+        "type": "name",
+        "name": "SBB"
+      }
+    }
+  }]
+}
