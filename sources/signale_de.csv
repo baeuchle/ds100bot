@@ -57,7 +57,7 @@ Lf5;Lf5;Anfangtafel;Die auf der Geschwindigkeitstafel (Lf 4) angezeigte Geschwin
 Lf6;;Geschwindigkeits-Ankündesignal;Ein Geschwindigkeitssignal (Lf 7) ist zu erwarten.;DS
 Lf7;;Geschwindigkeitssignal;Die angezeigte Geschwindigkeit darf vom Signal ab nicht überschritten werden.;DS
 Sh0;Gsp0;Halt! Fahrverbot;Halt! Fahrverbot.;
-Sh1;Gsp1;Rangierfahrtsignal;Fahrverbot aufgehoben.;
+Sh1;Gsp1|Ra12;Rangierfahrtsignal;Fahrverbot aufgehoben.;
 ;Gsp2;Gleissperre ist abgelegt;Gleissperre ist abgelegt;DV
 Sh2;Sh2;;Schutzhalt.;
 Sh3;Sh1;Kreissignal;Sofort halten.;
