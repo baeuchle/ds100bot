@@ -17,8 +17,8 @@
   ],
   "data": [{
     "id": "ds301",
-    "short": "Abk",
-    "long": "Gemeinsam",
+    "short": "DSAbk",
+    "long": "Beschreibung",
     "add": "Kurzname",
     "delim": ";",
     "file": "sources/signale_de.csv",
@@ -36,7 +36,11 @@
       "owner": {
         "type": "twitter",
         "name": "autinerd"
-      }
+      },
+      "contributors": [{
+        "type": "twitter",
+        "name": "baeuchle"
+      }]
     }
     }]
 }

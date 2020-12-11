@@ -12,10 +12,11 @@
   ],
   "data": [{
     "id": "dv301",
-    "short": "Abk",
-    "long": "Gemeinsam",
+    "short": "DVAbk",
+    "long": "Beschreibung",
     "add": "Kurzname",
     "delim": ";",
+    "alias": "|",
     "file": "sources/signale_de.csv",
     "filter": [{
       "col": "DS/DV",
