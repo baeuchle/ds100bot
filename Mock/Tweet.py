@@ -409,7 +409,7 @@ def mocked_tweets():
         ))
     list_of_tweets.append(TweepyMock(
         full_text='This tweet unusual tags Vol Ⅴ: #BOT:SARS_COV_2 #BOT:REKURSION #BOT:toggle bot%tl%xs%unusual%424',
-        expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).\nREKURSION: Siehe bitte #REKURSION',
+        expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig). Lasst euch impfen, sobald ihr die Gelegenheit bekommt!\nREKURSION: Siehe bitte #REKURSION',
         id=424,
         user=User.followed
         ))
@@ -470,7 +470,7 @@ def mocked_tweets():
         ))
     list_of_tweets.append(TweepyMock(
         full_text='This tweet unusual tags Vol ⅴ: #DS100 #SARS_COV_2 #REKURSION #toggle bot%tl%mt%unusual%434',
-        expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig).\nREKURSION: Siehe bitte #REKURSION',
+        expected_answer='SARS COV 2: Dieser Bot ist offiziell Virusfrei™ und immun. Kuscheln, Händchenhalten etc. ist erlaubt. Bitte nicht anniesen (weil ist eklig). Lasst euch impfen, sobald ihr die Gelegenheit bekommt!\nREKURSION: Siehe bitte #REKURSION',
         id=434,
         user=User.followed
         ))

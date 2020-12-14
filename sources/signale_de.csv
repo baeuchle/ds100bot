@@ -1,14 +1,9 @@
 DSAbk;DVAbk;Kurzname;Beschreibung;DS/DV
+;So20;Zuordnungstafel;Das durch die Zuordnungstafel gekennzeichnete Signal gilt für das Gleis, auf das die Spitze des Dreiecks weist;DV
 Hp0;Hp0;Halt;Halt.;
-Zs12;Zs2;M-Tafel;Am Halt zeigenden oder gestörten Hauptsignal auf mündlichen oder fernmündlichen Auftrag vorbeifahren.;DS
-Hp1;Hp1;Fahrt;Fahrt.;
+Hp1|Ks1|Sk1;Hp1|Ks1;Fahrt;Fahrt.;
 Hp2;Hp2;Langsamfahrt;Langsamfahrt.;
-Vr0;Vr0;Halt erwarten;Halt erwarten.;
-Vr1;Vr1;Fahrt erwarten;Fahrt erwarten.;
-Vr2;Vr2;Langsamfahrt erwarten;Langsamfahrt erwarten.;
-;Vr1 2;Fahrt oder Langsamfahrt erwarten;Fahrt oder Langsamfahrt erwarten.;DV
-Ks1;Ks1;Fahrt;Fahrt;
-Ks2;Ks2;Halt erwartem;Halt erwarten.;
+Ks2|Vr0|Sk2;Ks2|Hl10|Vr0;Halt erwarten;Halt erwarten.;
 ;Hl1;Fahrt mit Höchstgeschwindigkeit;Fahrt mit Höchstgeschwindigkeit.;DV
 ;Hl2;Fahrt mit 100 km/h, dann mit Höchstgeschwindigkeit;Fahrt mit 100 km/h, dann mit Höchstgeschwindigkeit.;DV
 ;Hl3a;Fahrt mit 40 km/h, dann mit Höchstgeschwindigkeit;Fahrt mit 40 km/h, dann mit Höchstgeschwindigkeit.;DV
@@ -21,7 +16,6 @@ Ks2;Ks2;Halt erwartem;Halt erwarten.;
 ;Hl8;Geschwindigkeit 100 km/h auf 40 km/h (60 km/h) ermäßigen;Geschwindigkeit 100 km/h auf 40 km/h (60 km/h) ermäßigen.;DV
 ;Hl9a;Fahrt mit 40 km/h, dann mit 40 km/h (60 km/h);Fahrt mit 40 km/h, dann mit 40 km/h (60 km/h).;DV
 ;Hl9b;Fahrt mit 60 km/h, dann mit 40 km/h (60 km/h);Fahrt mit 60 km/h, dann mit 40 km/h (60 km/h).;DV
-;Hl10;„Halt“ erwarten;„Halt“ erwarten.;DV
 ;Hl11;Geschwindigkeit 100 km/h ermäßigen, „Halt“ erwarten;Geschwindigkeit 100 km/h ermäßigen, „Halt“ erwarten.;DV
 ;Hl12a;Geschwindigkeit 40 km/h ermäßigen, „Halt“ erwarten;Geschwindigkeit 40 km/h ermäßigen, „Halt“ erwarten.;DV
 ;Hl12b;Geschwindigkeit 60 km/h ermäßigen, „Halt“ erwarten;Geschwindigkeit 60 km/h ermäßigen, „Halt“ erwarten.;DV
@@ -32,36 +26,40 @@ Sv3;Sv3;Fahrt! Langsamfahrt erwarten;Fahrt! Langsamfahrt erwarten.;
 Sv4;Sv4;Langsamfahrt! Fahrt erwarten;Langsamfahrt! Fahrt erwarten.;
 Sv5;Sv5;Langsamfahrt! Langsamfahrt erwarten;Langsamfahrt! Langsamfahrt erwarten;
 Sv6;Sv6;Langsamfahrt! Halt erwarten;Langsamfahrt! Halt erwarten.;
-Zs1;Zs1|Zs101;Ersatzsignal;Am Signal Hp 0 oder am gestörten Lichthauptsignal ohne schriftlichen Befehl vorbeifahren.;
-Zs2;Zs4;Richtungsanzeiger;Die Fahrstraße führt in die angezeigte Richtung.;
-Zs2v;;Richtungsvoranzeiger;Richtungsanzeiger (Zs 2) erwarten.;DV
+Vr1;Vr1;Fahrt erwarten;Fahrt erwarten.;
+Vr2;Vr2;Langsamfahrt erwarten;Langsamfahrt erwarten.;
+;Vr1 2;Fahrt oder Langsamfahrt erwarten;Fahrt oder Langsamfahrt erwarten.;DV
+Zs1;Zs1;Ersatzsignal;Am Signal Hp 0 oder am gestörten Lichthauptsignal ohne schriftlichen Befehl vorbeifahren.;
+Zs2;Zs2;Richtungsanzeiger;Die Fahrstraße führt in die angezeigte Richtung.;
+Zs2v;Zs2v;Richtungsvoranzeiger;Richtungsanzeiger (Zs 2) erwarten.;
 Zs3;Zs3;Geschwindigkeitsanzeiger;Die durch die Kennziffer angezeigte Geschwindigkeit darf vom Signal ab im anschließenden Weichenbereich nicht überschritten werden.;
 Zs3v;Zs3v;Geschwindigkeitsvoranzeiger;Geschwindigkeitsanzeiger (Zs 3) erwarten;
-Zs4;Zp10;K-Scheibe;Beschleunigungsanzeiger/K-Scheibe: Fahrzeit kürzen;
-Zs5;Zp11;L-Scheibe;Verzögerungsanzeiger/L-Scheibe: Langsamer fahren;
-Zs6;;Gleiswechselanzeiger;Der Fahrweg führt in das Streckengleis entgegen der gewöhnlichen Fahrtrichtung.;DS
-;Zs7;Linksfahrtauftragssignal;Fahrt auf linkem Streckengleis;DV
-Zs7;Zs11;Vorsichtsignal;Am Signal Hp 0 oder am gestörten Lichthauptsignal ohne schriftlichen Befehl vorbeifahren! Weiterfahrt auf Sicht.;
+Zs6;Zs6;Gegengleisanzeiger;Der Fahrweg führt in das Streckengleis entgegen der gewöhnlichen Bedeutung Fahrtrichtung.;
+Zs7;Zs7;Vorsichtsignal;Am Signal Hp 0 oder am gestörten Lichthauptsignal ohne schriftlichen Befehl vorbeifahren! Weiterfahrt auf Sicht.;
 Zs8;Zs8;Gegengleisfahrt-Ersatzsignal;Am Halt zeigenden oder gestörten Hauptsignal vorbeifahren, der Fahrweg führt in das Streckengleis entgegen der gewöhnlichen Fahrtrichtung.;
+;Zs9;Bahnübergangstafel;Nach dem zulässigen Vorbeifahren an dem Halt zeigenden oder gestörten Lichthauptsignal Halt vor dem Bahnübergang! Weiterfahrt nach Sicherung.;DV
 Zs10;;Endesignal;Ende der Geschwindigkeitsbeschränkung.;DS
-;Zs6|Zs106;Stumpfgleis- und Frühhaltanzeiger;Fahrt in ein Stumpfgleis oder in ein Gleis mit verkürztem Einfahrweg.;DV
-Ts1;Sp1;Nachschieben einstellen;Nachschieben einstellen.;
-Ts2;;Halt für zurückkehrende Schiebelokomotiven und Sperrfahrten;Halt für zurückkehrende Schiebelokomotiven und Sperrfahrten.;DS
-Ts3;;Weiterfahrt für zurückkehrende Schiebelokomotiven und Sperrfahrten;Weiterfahrt für zurückkehrende Schiebelokomotiven und Sperrfahrten.;DS
-Lf1;Lf1;Langsamfahrscheibe; Es folgt eine vorübergehende Langsamfahrstelle, auf der die angezeigte Geschwindigkeit nicht überschritten werden darf.;
+Zs12;Zs12;M-Tafel;Am Halt zeigenden oder gestörten Hauptsignal auf mündlichen oder fernmündlichen Auftrag vorbeifahren.;
+Zs13;Zs13;Stumpfgleis- und Frühhaltanzeiger;Fahrt in ein Stumpfgleis oder in ein Gleis mit verkürztem Einfahrweg.;
+;Zs103;Rautentafel;Das Halt zeigende Hauptsignal gilt nicht für Rangierabteilungen.;DV
+Ts1;Ts1;Nachschieben einstellen;Nachschieben einstellen.;
+Ts2;Ts2;Halt für zurückkehrende Schiebelokomotiven und Sperrfahrten;Halt für zurückkehrende Schiebelokomotiven und Sperrfahrten.;
+Ts3;Ts3;Weiterfahrt für zurückkehrende Schiebelokomotiven und Sperrfahrten;Weiterfahrt für zurückkehrende Schiebelokomotiven und Sperrfahrten.;
+Lf1;Lf1;Langsamfahrscheibe;Es folgt eine vorübergehende Langsamfahrstelle, auf der die angezeigte Geschwindigkeit nicht überschritten werden darf.;
 ;Lf1 2;Langsamfahrbeginnscheibe;An dem am Signal beginnenden, in der Regel durch eine Endscheibe begrenzten Gleisabschnitt darf die angezeigte Geschwindigkeit nicht überschritten werden;DV
 Lf2;Lf2;Anfangscheibe;Anfang der vorübergehenden Langsamfahrstelle.;
 Lf3;Lf3;Endscheibe;Ende der vorübergehenden Langsamfahrstelle.;
-Lf4;Lf4;Geschwindigkeitstafel; Es folgt eine ständige Langsamfahrstelle, auf der die angezeigte Geschwindigkeit nicht überschritten werden darf.;
-Lf5;Lf5;Anfangtafel;Die auf der Geschwindigkeitstafel (Lf 4) angezeigte Geschwindigkeitsbeschränkung muss durchgeführt sein.;
-Lf6;;Geschwindigkeits-Ankündesignal;Ein Geschwindigkeitssignal (Lf 7) ist zu erwarten.;DS
-Lf7;;Geschwindigkeitssignal;Die angezeigte Geschwindigkeit darf vom Signal ab nicht überschritten werden.;DS
-Sh0;Gsp0;Halt! Fahrverbot;Halt! Fahrverbot.;
-Sh1;Gsp1|Ra12;Rangierfahrtsignal;Fahrverbot aufgehoben.;
-;Gsp2;Gleissperre ist abgelegt;Gleissperre ist abgelegt;DV
+Lf4;;Geschwindigkeitstafel;Es folgt eine ständige Langsamfahrstelle, auf der die angezeigte Geschwindigkeit nicht überschritten werden darf.;DS
+Lf5;;Anfangtafel;Die auf der Geschwindigkeitstafel (Lf 4) angezeigte Geschwindigkeitsbeschränkung muss durchgeführt sein.;DS
+Lf6;Lf6;Geschwindigkeits-Ankündesignal;Ein Geschwindigkeitssignal (Lf 7) ist zu erwarten.;
+Lf7;Lf7;Geschwindigkeitssignal;Die angezeigte Geschwindigkeit darf vom Signal ab nicht überschritten werden.;
+;Lf4;Geschwindigkeitstafel;Die angezeigte Geschwindigkeit darf nicht überschritten werden.;DV
+;Lf5;Eckentafel;Die durch das Signal Lf 4 angezeigte Geschwindigkeitsbeschränkung Bedeutung muss durchgeführt sein.;DV
+Sh0;Sh0;Halt! Fahrverbot;Halt! Fahrverbot.;
+Sh1;Sh1;Rangierfahrtsignal;Fahrverbot aufgehoben.;
+;Ra12;Rangierfahrtsignal;Rangierfahrt erlaubt;DV
 Sh2;Sh2;;Schutzhalt.;
-Sh3;Sh1;Kreissignal;Sofort halten.;
-;Sh3;Haltvorscheibe;Haltscheibe erwarten;DV
+Sh3;Sh3;Kreissignal;Sofort halten.;
 Sh5;Sh5;Horn- und Pfeifsignal;Sofort halten.;
 Ra1;Ra1;;Wegfahren.;
 Ra2;Ra2;;Herkommen.;
@@ -73,41 +71,35 @@ Ra7;Ra7;;Langsam abdrücken.;
 Ra8;Ra8;;Mäßig schnell abdrücken.;
 Ra9;Ra9;;Zurückziehen.;
 Ra10;Ra10;Rangierhalttafel;Über die Tafel hinaus darf nicht rangiert werden.;
-Ra11;Ra11;Wartezeichen;Auftrag des Wärters zur Rangierfahrt abwarten.;
-;Ra11a;Wartezeichen;Auftrag des Wärters zur Rangierfahrt abwarten.;DV
-;Ra11b;Wartezeichen;Auftrag des Wärters zur Rangierfahrt abwarten.;DV
+Ra11;Ra11a|Ra11b;Wartezeichen;Auftrag des Wärters zur Rangierfahrt abwarten.;
 Ra12;So12;Grenzzeichen;Grenze, bis zu der bei zusammenlaufenden Gleisen das Gleis besetzt werden darf.;
-Ra13;So13;Isolierzeichen;Kennzeichnung der Grenze der Gleisisolierung.;
+Ra13;Ra13;Isolierzeichen;Kennzeichnung der Grenze der Gleisisolierung.;
 Wn1;Wn1;;Gerader Zweig.;
 Wn2;Wn2;;Gebogener Zweig.;
-;Wn2a;;Gebogener Zweig (von der Weichenspitze aus gesehen);DV
-;Wn2b;;Gebogener Zweig (vom Herzstück aus gesehen bei einfachen und Innenbogenweichen);DV
-;Wn2c;;Gebogener Zweig (vom Herzstück aus gesehen bei Außenbogenweichen);Dv
 Wn3;Wn3;;Gerade von links nach rechts.;
 Wn4;Wn4;;Gerade von rechts nach links.;
 Wn5;Wn5;;Bogen von links nach links.;
 Wn6;Wn6;;Bogen von rechts nach rechts.;
+Wn7;Wn7;;Die Gleissperre ist abgelegt;
 Zp1;Zp1;Achtungssignal;Achtung.;
 Zp2;Zp2;;Handbremsen mäßig anziehen.;
 Zp3;Zp3;;Handbremsen stark anziehen.;
 Zp4;Zp4;;Handbremsen lösen.;
 Zp5;Zp5;Notsignal;Beim Zug ist etwas Außergewöhnliches eingetreten - Bremsen und Hilfe leisten.;
-Zp6;Zp12;;Bremse anlegen.;
-Zp7;Zp13;;Bremse lösen.;
-Zp8;Zp14;;Bremse in Ordnung.;
+Zp6;Zp6;;Bremse anlegen.;
+Zp7;Zp7;;Bremse lösen.;
+Zp8;Zp8;;Bremse in Ordnung.;
 Zp9;Zp9;;Abfahren.;
-;Zp8;Türschließauftrag;Türen schließen.;
-Zp11;Zp6;;Kommen.;
-Zp12;;;Grenzzeichenfrei.;DS
+Zp10;Zp10;Türschließauftrag;Türen schließen.;
+Zp11;Zp11;;Kommen.;
+Zp12;Zp12;;Grenzzeichenfrei.;
 El1;El1;Ausschaltsignal;Ausschalten.;
 El1v;El1v;Signal E1 ersarten;Ausschalten erwarten;
-;El1 2;Schaltstrecke für verkürzte Schutzstrecken;Schaltstrecke für verkürzte Schutzstrecken;DV
 El2;El2;Einschaltsignal;Einschalten erlaubt.;
 El3;El3;„Bügel ab“-Ankündesignal;Signal „Bügel ab“ erwarten.;
 El4;El4;„Bügel ab“-Signal;Bügel ab.;
 El5;El5;„Bügel an“-Signal;Bügel an.;
 El6;El6;;Halt für Fahrzeuge mit gehobenen Stromabnehmern;
-;El7;Fahrstrom unterbrechen;Fahrstrom unterbrechen!;DV
 Zg1;Zg1;Spitzensignal;Kennzeichnung der Zugspitze.;
 Zg2;Zg2;Schlusssignal;Kennzeichnung des Zugschlusses.;
 Fz1;Fz1;Rangierlokomotivsignal;Kennzeichnung einer Lokomotive im Rangierdienst.;
@@ -116,37 +108,29 @@ Ro1;Ro1;;Vorsicht! Im Nachbargleis nähern sich Fahrzeuge.;
 Ro2;Ro2;;Arbeitsgleise räumen.;
 Ro3;Ro3;;Arbeitsgleise schnellstens räumen.;
 Ro4;Ro4;Fahnenschild;Kennzeichnung der Gleisseite, nach der beim Ertönen der Rottenwarnsignale Ro 2 und Ro 3 die Arbeitsgleise zu räumen sind.;
-Ne1;So5;Trapeztafel;Kennzeichnung der Stelle, wo bestimmte Züge vor einer Betriebsstelle zu halten haben;
-Ne2;So3;Vorsignaltafel;Kennzeichnung des Standorts eines Vorsignals.;
-;So3a;Vorsignaltafel;Kennzeichnung des Standorts eines Lichtvorsignals oder eines zweibegriffen Formvorsignals;DV
-;So3b;Vorsignaltafel;Kennzeichnung des Standorts eines dreibegriffigen Formvorsignals;DV
-;So3c;Vorsignaltafel;Kennzeichnung des Standorts eines im verkürzten Bremsweg stehenden Lichtvorsignals oder zweibegriffigen Formvorsignals;DV
-;So3d;Vorsignaltafel;Kennzeichnung des Standorts eines im verkürzten Bremsweg stehenden dreibegriffigen Formvorsignals;DV
-Ne3;So4;Vorsignalbaken;Ein Vorsignal ist zu erwarten.;
-Ne4;So2;Schachbretttafel;Das Hauptsignal steht – abweichend von der Regel – an einem anderen Standort.;
-Ne5;So8;Haltetafel;Kennzeichnung des Halteplatzes der Zugspitze bei planmäßig haltenden Zügen.;
-Ne6;So9;Haltepunkttafel;Ein Haltepunkt ist zu erwarten.;
-Ne7;So7;;Schneepflugtafel;
-;So7a;Schneepflugtafel;Pflugschar heben.;DV
-;So7b;Schneepflugtafel;Pflugschar senken;DV
-;So1;Endtafel;Fahren auf Sicht beenden.;DV
-Ne12;So17;Ankündigungsbake;Überwachungssignal einer Rückfallweiche beachten.;DV
-Ne13;So18;;Überwachungssignal einer Rückfallweiche;DV
-Ne13a;So18a;;Die Rückfallweiche ist gegen die Spitze befahrbar;DV
-Ne13b;So18b;;Die Rückfallweiche ist gegen die Spitze nicht befahrbar, vor der Weiche halten;DV
-;So19;Hauptsignalbaken;Ein Hauptsignal ist zu erwarten.;DV
-;So20;Zuordnungstafel;Das durch die Zuordnungstafel gekennzeichnete Signal gilt für das Gleis, auf das die Spitze des Dreiecks weist;DV
-Bü0;So16|So16b;;Halt vor dem Bahnübergang! Weiterfahrt nach Sicherung.;
-Bü1;So16a;;Der Bahnübergang darf befahren werden.;
-Bü2;So15;Rautentafel;Ein Überwachungssignal ist zu erwarten.;
-Bü3;So14;Kennzeichnung des Einschaltpunktes von Blinklichtern;Kennzeichnung des Einschaltpunktes von Blinklichtern;
-Bü4;Pf1;Pfeiftafel;Etwa 3 Sekunden lang pfeifen!;
-;Pf2;Pfeiftafel vor Bahnübergängen;Zweimal pfeifen!;DV
-Bü5;;Läutetafel;Es ist zu läuten.;DS
+Ne1;Ne1;Trapeztafel;Kennzeichnung der Stelle, wo bestimmte Züge vor einer Betriebsstelle zu halten haben;
+Ne2;Ne2;Vorsignaltafel;Kennzeichnung des Standorts eines Vorsignals.;
+Ne3;Ne3;Vorsignalbaken;Ein Vorsignal ist zu erwarten.;
+Ne4;Ne4;Schachbretttafel;Das Hauptsignal steht – abweichend von der Regel – an einem anderen Standort.;
+Ne5;Ne5;Haltetafel;Kennzeichnung des Halteplatzes der Zugspitze bei planmäßig haltenden Zügen.;
+Ne6;Ne6;Haltepunkttafel;Ein Haltepunkt ist zu erwarten.;
+Ne7;Ne7;Schneepflugtafel;;
+Ne7a;Ne7a;Schneepflugtafel;Pflugschar heben.;
+Ne7b;Ne7b;Schneepflugtafel;Pflugschar senken;
+Ne12;Ne12;Ankündigungsbake;Überwachungssignal einer Rückfallweiche beachten.;
+Ne13;Ne13;Überwachungssignal einer Rückfallweiche;;
+Ne13a;Ne13a;Überwachungssignal einer Rückfallweiche;Die Rückfallweiche ist gegen die Spitze befahrbar;
+Ne13b;Ne13b;Überwachungssignal einer Rückfallweiche;Die Rückfallweiche ist gegen die Spitze nicht befahrbar, vor der Weiche halten;
 Ne14;Ne14;ETCS-Halt-Tafel (ETCS Stop marker);Halt für Züge in ETCS-Betriebsart SR.;
-Ne8;So113;Gefahrenanstrich;Kennzeichnung fester Gegenstände, die wegen zu geringen Abstandes vom Gleis Personen gefährden können;
-;Zs103;Rautentafel;Das Halt zeigende Hauptsignal gilt nicht für Rangierabteilungen.;DV
-;Zs9;Bahnübergangstafel;Nach dem zulässigen Vorbeifahren an dem Halt zeigenden oder gestörten Lichthauptsignal Halt vor dem Bahnübergang! Weiterfahrt nach Sicherung.;DV
+;So1;Endtafel;Fahren auf Sicht beenden.;DV
+;So19;Hauptsignalbaken;Ein Hauptsignal ist zu erwarten.;DV
 ;So106;Kreuztafel;Bei fehlendem Vorsignal wird angezeigt, dass ein Hauptsignal zu erwarten ist.;DV
-;Lsp|Hsp;Lichtsperrsignal;Halt!;DV
-;So10;Brandfackeltafel;Nicht feuern! Aschkasten schließen!;DV
+Bü0;Bü0;;Halt vor dem Bahnübergang! Weiterfahrt nach Sicherung.;
+Bü1;Bü1;;Der Bahnübergang darf befahren werden.;
+Bü2;;Rautentafel;Ein Überwachungssignal ist zu erwarten.;DS
+;So15;Warntafel;Überwachungssignal beachten.;DV
+Bü3;;Merktafel;Kennzeichnung des Einschaltpunktes von Blinklichtern oder Lichtzeichen mit Fernüberwachung;DS
+;So14;Kennzeichnung des Einschaltpunktes von Blinklichtern;Kennzeichnung des Einschaltpunktes von Blinklichtern;DV
+Bü4;Bü4;Pfeiftafel;Etwa 3 Sekunden lang pfeifen!;
+;Pf2;Pfeiftafel vor Bahnübergängen;Zweimal pfeifen!;DV
+Bü5;Bü5;Läutetafel;Es ist zu läuten.;
