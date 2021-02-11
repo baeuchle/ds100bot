@@ -566,6 +566,49 @@ def mocked_tweets():
         id=463,
         user=User.followed
         ))
+    list_of_tweets.append(TweepyMock(
+        full_text='Bot flag emoji \U0001F1E6\U0001F1F9 #FAQ:AUSLAND bot%tl%501',
+        expected_answer=('FAQ#AUSLAND: Kürzel mit X und Z haben als zweiten Buchstaben das Land: '
+            + 'XA\U0001F1E6\U0001F1F9 '
+            + 'XB\U0001F1E7\U0001F1EA '
+            + 'XC\U0001f1f7\U0001f1fa '
+            + 'XD\U0001f1e9\U0001f1f0 '
+            + 'XE\U0001f1ea\U0001f1f8 '
+            + 'XF\U0001f1eb\U0001f1f7 '
+            + 'XG\U0001f1ec\U0001f1f7 '
+            + 'XH\U0001f1eb\U0001f1ee '
+            + 'XI\U0001f1ee\U0001f1f9 '
+            + 'XJ\U0001f1f7\U0001f1f8 '
+            + 'XK\U0001f1ec\U0001f1e7 '
+            + 'XL\U0001f1f1\U0001f1fa '
+            + 'XM\U0001f1ed\U0001f1fa '
+            + 'XN\U0001f1f3\U0001f1f1 '
+            + 'XO\U0001f1f3\U0001f1f4 '
+            + 'XP\U0001f1f5\U0001f1f1 '
+            + 'XQ\U0001f1f9\U0001f1f7 '
+            + 'XR\U0001f1ed\U0001f1f7 '
+            + 'XS\U0001f1e8\U0001f1ed '
+            + 'XT\U0001f1e8\U0001f1ff '
+            + 'XU\U0001f1f7\U0001f1f4 '
+            + 'XV\U0001f1f8\U0001f1ea '
+            + 'XW\U0001f1e7\U0001f1ec '
+            + 'XX\U0001f1f5\U0001f1f9 '
+            + 'XY\U0001f1f8\U0001f1f0 '
+            + 'XZ\U0001f1f8\U0001f1ee '
+            + 'ZA\U0001f1f2\U0001f1f0 '
+            + 'ZB\U0001f1e7\U0001f1e6 '
+            + 'ZE\U0001f1ea\U0001f1ea '
+            + 'ZI\U0001f1ee\U0001f1ea '
+            + 'ZK\U0001f1f0\U0001f1ff '
+            + 'ZL\U0001f1f1\U0001f1f9 '
+            + 'ZM\U0001f1f2\U0001f1e9 '
+            + 'ZT\U0001f1f1\U0001f1fb '
+            + 'ZU\U0001f1fa\U0001f1e6 '
+            + 'ZW\U0001f1e7\U0001f1fe'
+        ),
+        id=501,
+        user=User.followed
+        ))
     return list_of_tweets
 
 def mocked_source():

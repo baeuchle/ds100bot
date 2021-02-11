@@ -18,6 +18,8 @@ class Measure:
         self.replaced_separator = {
             '\u200b': '',
         }
+        if self.weight_config['emojiParsingEnabled']:
+            self.emoji_flag_re = re.compile('[\U0001F1E6-\U0001F1FF]{2}')
 
     def measure_tweet_length(self, text):
         normalized = unicodedata.normalize('NFC', text)
@@ -28,6 +30,10 @@ class Measure:
             normalized)
         total_weight = 0
         target = self.weight_config['maxWeightedTweetLength'] * self.weight_config['scale']
+        if self.weight_config['emojiParsingEnabled']:
+            # replace double-flag-letter-emoji by one flag-letter-emoji
+            # (A, in this case)
+            normalized = self.emoji_flag_re.sub('\U0001F1E6', normalized)
         for c in normalized:
             curr_weight = self.weight_config['defaultWeight']
             for r in self.weight_config['ranges']:
