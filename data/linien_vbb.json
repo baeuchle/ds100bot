@@ -1,0 +1,30 @@
+{
+  "id": "linien_vbb",
+  "headline": "SPNV-Linien Berlin/Brandenburg",
+  "access": [{
+    "x_source": "VBB",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_VBB",
+    "🧸"
+  ],
+  "data": [{
+    "id": "linien_vbb",
+    "short": "Linie",
+    "long": "Bezeichnung/Laufweg/Betreiber",
+    "delim": ";",
+    "file": "sources/linien_vbb.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }]
+}
