@@ -1,0 +1,29 @@
+{
+  "id": "linien_mv",
+  "headline": "SPNV-Linien Mecklenburg-Vorpommern",
+  "access": [{
+    "x_source": "MV",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_MV"
+  ],
+  "data": [{
+    "id": "linien_mv",
+    "short": "Linie",
+    "long": "Name/Laufweg/Betreiber",
+    "delim": ";",
+    "file": "sources/linien_mv.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }]
+}

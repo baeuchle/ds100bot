@@ -1,0 +1,29 @@
+{
+  "id": "linien_p",
+  "headline": "ÖPNV-Linien in Potsdam",
+  "description": "ÖPNV-Linien im Stadtgebiet Potsdam außer Bahn-Verkehr",
+  "access": [{
+    "x_source": "P",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_P"
+  ],
+  "data": [{
+    "id": "linien_p",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_p.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung auf Basis von: Liniennetz Potsdam & Websites der Verkehrsunternehmen ViP, regiobus, VTF, HVG, BVG"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }]
+}

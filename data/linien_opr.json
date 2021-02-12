@@ -1,0 +1,30 @@
+{
+  "id": "linien_opr",
+  "headline": "Buslinien im Landkreis Ostprignitz-Ruppin ",
+  "description": "Buslinien, die von der Ostprignitz-Ruppiner Personennahverkehrsgesellschaft mbH betrieben werden",
+  "access": [{
+    "x_source": "OPR",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_OPR"
+  ],
+  "data": [{
+    "id": "linien_opr",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_opr.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung auf Basis von orp-busse.de",
+      "url": "https://www.orp-busse.de"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }]
+}

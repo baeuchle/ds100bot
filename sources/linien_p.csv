@@ -1,0 +1,55 @@
+Linie;Laufweg
+BER2;AirportShuttle: S Hauptbahnhof - S Teltow Stadt - Flughafen BER Terminal 1-2
+F1;Auf dem Kiewitt - Hermannswerder
+N13;S Hauptbahnhof - S Babelsberg/Lutherplatz - Am Stern, Johannes-Kepler-Platz - Stahnsdorf, Waldschänke - Kleinmachnow, Rathausmarkt - S Teltow Stadt/Gonfrevillestr.
+N14;Golm, Science Park/Universität - Bhf Park Sanssouci - Bhf Charlottenhof - S Hauptbahnhof - S Babelsberg/Schulstr. - Bhf Rehbrücke - Am Stern, Johannes-Kepler-Platz 
+N15;S Hauptbahnhof - Neu Fahrland, Heinrich-Heine-Weg - Groß Glienicke, Birkenweg / Fahrland, Am Upstall
+N16;S Hauptbahnhof - Glienicker Brücke - S Berlin-Wannsee - S Berlin-Nikolassee
+N17;Bornim, Institut für Agrartechnik - S Hauptbahnhof - S Babelsberg/Schulstr. - S Griebnitzsee Bhf/Süd - Am Stern, Johannes-Kepler-Platz
+X1;PlusBus Teltower Rübchen: S Hauptbahnhof - Drewitz, Stern-Center/Nuthestr. - Stahnsdorf, Waldschänke - Teltow, Warthestr. - S Teltow Stadt - Teltow, Bahnhof
+X5;S Hauptbahnhof - Bhf Charlottenhof - Bhf Park Sanssouci - Campus Universität/Lindenallee - Bhf Golm
+X15;Sanssouci-Linie: S Hauptbahnhof - Schloss Sanssouci
+X43;S Hauptbahnhof - Michendorf, Bahnhof - Seddin, Jägerhof - Beelitz, Am Lustgarten - Beelitz, Liebknechtpark
+91;Bhf Pirschheide - Bhf Charlottenhof - Platz der Einheit/West - S Hauptbahnhof - Bhf Rehbrücke
+92;Bornstedt, Kirschallee - Platz der Einheit/West - S Hauptbahnhof - Schlaatz, Bisamkiez (- Am Stern, Johannes-Kepler-Platz - Kirchsteigfeld, Marie-Juchacz-Str.)
+93;Kultur-Linie: Glienicker Brücke - Platz der Einheit/Bildungsforum - S Hauptbahnhof - Bhf Rehbrücke
+94;(Bhf Pirschheide -) Schloss Charlottenhof - Bhf Charlottenhof - Platz der Einheit/West - S Babelsberg/Wattstr. - Babelsberg, Fontanestr.
+96;Volkspark-Linie: Campus Jungfernsee - Platz der Einheit/West - S Hauptbahnhof - Schlaatz, Bisamkiez - Am Stern, Johannes-Kepler-Platz - Kirchsteigfeld, Marie-Juchacz-Str.
+98;Schloss Charlottenhof - Bhf Charlottenhof - Platz der Einheit/West - S Hauptbahnhof - Bhf Rehbrücke
+99;Babelsberg, Fontanestr. - S Babelsberg/Wattstr. - Platz der Einheit/Nord (- S Hauptbahnhof)
+118;Drewitz, Stern-Center/Nuthestr. - Am Stern, Johannes-Kepler-Platz - Berlin, Steinstücken - S Berlin-Wannsee - Berlin, U Krumme Lanke - Berlin, Rathaus Zehlendorf
+316;Glienicker Brücke - S Berlin-Wannsee
+580;PlusBus Hoher Fläming: S Hauptbahnhof - Werder, Strengbrücke - Lehnin, Busbahnhof - Bad Belzig, Busbahnhof - Bad Belzig, Bahnhof - Bad Belzig, Am Betriebshof
+601;S Hauptbahnhof - S Babelsberg/Schulstr. - Medienstadt Babelsberg Bhf - Am Stern, Johannes-Kepler-Platz - Stahnsdorf, Waldschänke - S Teltow Stadt - Teltow, Sigridshorst
+602;S Babelsberg/Lutherplatz - Bhf Rehbrücke - Stahnsdorf, Waldschänke - Stahnsdorf, Green Park - Teltow, Warthestr.
+603;Cecilienhof-Linie: (S Hauptbahnhof -) Platz der Einheit/West - Höhenstr.
+604;(S Hauptbahnhof -) Campus Jungfernsee - Dallgow-Döberitz, Havelpark - Falkensee, Bahnhof/Süd
+605;S Hauptbahnhof - Bhf Charlottenhof - Bhf Park Sanssouci - Bhf Golm - Golm, Science Park West
+606;S Hauptbahnhof - Bhf Charlottenhof - Bhf Park Sanssouci - Bhf Golm - Alt-Golm
+607;S Hauptbahnhof - Forsthaus Templin - Caputh, Schloss - Caputh, Bhf Schwielowsee - Ferch, Potsdamer Platz (- Werder (Havel), Bahnhof)
+608;S Hauptbahnhof - Wilhelmshorst, Grüner Weg - Langerwisch, Kirche - Michendorf, Bahnhof - Michendorf, West / Stücken, Dorf / Dobbrikow, Am Anger
+609;Campus Jungfernsee - Fahrland, Am Upstall - Satzkorn - Kirche Kartzow (- Paaren)
+610;Potsdam, Platz der Einheit/West - Schloss Charlottenhof - Bhf Park Sanssouci - Wildpark-West, Marktplatz
+611;Bhf Rehbrücke - Bergholz-Rehbrücke, R.-Kuckuck-Str./DIfE - Saarmund, Bergstr. (- Tremsdorf, Feuerwehr)
+612;Grube, Schlänitzseer Weg - Bhf Golm - Bornstedt, Kirschallee
+614;S Hauptbahnhof - Luisenplatz-Ost/Park Sanssouci - Paaren - Paretz, Schloss - Ketzin, Am Markt - Gutenpaaren
+616;S Babelsberg - Schloss Babelsberg - S Griebnitzsee
+619;S Hauptbahnhof - S Babelsberg/Lutherplatz - Drewitz, Stern-Center/Nuthestr. - Güterfelde, Kirchplatz - Ludwigsfelde, Bahnhof
+631;S Hauptbahnhof -Platz der Einheit/West - Bhf Charlottenhof - Geltow, Kuckucksweg - Werder (Havel), Bahnhof
+634;Grube, Schlänitzseer Weg - Töplitz, Leester Str. - Neu Töplitz, Wendeplatz
+638;Campus Jungfernsee - S+U Rathaus Spandau
+639;Groß Glienicke, Waldsiedlung - Groß Glienicke, Am Park
+643;PlusBus Beelitz-Zauche: S Hauptbahnhof - Michendorf, Bahnhof - Seddin, Bahnhof - Beelitz, Liebknechtpark / Beelitz, Finkenstr.
+650;S Hauptbahnhof - Kirche Bornim - Paaren - Wustermark, Schule - Nauen, Bahnhof
+690;Filmpark-Linie: S Hauptbahnhof - S Babelsberg/Schulstr. - Bhf Medienstadt Babelsberg - Am Stern, Johannes-Kepler-Platz
+691;S Hauptbahnhof - Telegrafenberg
+692;Bornim, Institut für Agrartechnik - Bornstedt, Kirschallee - Platz der Einheit/West - Klinikum
+693;S Babelsberg/Lutherplatz - Bhf Rehbrücke
+694;Hermannswerder, Küsselstr. - S Hauptbahnhof - S Griebnitzsee Bhf/Süd - Am Stern, Johannes-Kepler-Platz - Drewitz, Stern-Center/Gerlachstr.
+695;Sanssouci-Linie: S Hauptbahnhof - Schloss Sanssouci - Neues Palais - Bhf Pirschheide
+696;S Griebnitzsee - Bhf Medienstadt Babelsberg - Drewitz, Robert-Baberske-Str.
+697;(Bornstedt, Kirschallee -) Am Schragen - Berlin, Neukladower Allee
+698;Campus Jungfernsee - Bornstedt, Kirschallee
+699;Bhf Rehbrücke - Am Stern, Johannes-Kepler-Platz
+715;PlusBus Teltow-Fläming: S Hauptbahnhof - S Babelsberg/Lutherplatz - Drewitz, Stern-Center/Nuthestr. - Ahrensdorf, Am Sportpl. - Ludwigsfelde, Bahnhof
+750;S Hauptbahnhof - S Babelsberg/Lutherplatz - Drewitz, Stern-Center/Nuthestr. - Ludwigsfelde, Bahnhof - Trebbin, Bahnhofstr. - Luckenwalde, Heidestr.
