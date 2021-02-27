@@ -1,3 +1,9 @@
+<description><titel>Titel</titel>
+<metadata>metametameta</metatada>
+<card src="card.png"/>
+</description>
+
+
 Aufbau der Antworten des Bots
 =============================
 
