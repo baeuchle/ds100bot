@@ -7,7 +7,10 @@ from .generator import Generator
 class DumpBlacklist(Dump):
     def __init__(self, **kwargs):
         # pylint: disable=W0233
-        Generator.__init__(self, 'DS100-Daten-Dump Blacklist', **kwargs)
+        Generator.__init__(self,
+            'DS100-Daten-Dump Blacklist',
+            desc='Alle Kürzel, die wegen anderer Bedeutungen normalerweise ignoriert werden',
+            **kwargs)
         self.headline("Blacklist")
         ET.SubElement(self.head, 'p').text = """Die folgenden Einträge werden nicht ohne explizite
         Quellenangabe (z.B. "#DS:") beantwortet."""

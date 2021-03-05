@@ -3,8 +3,14 @@
 from xml.etree import ElementTree as ET
 
 class Generator:
+    SITENAME = {'property': 'og:site_name', 'content': 'DS100 Bot'}
+    CARD = {'content': 'https://ds100.frankfurtium.de/socialcard.png'}
+    LOCALE = {'property:': 'og:locale', 'content': 'de_DE'}
+    CARDTYPE = {'name': 'twitter:card', 'content': 'summary_large_image'}
+    SITE = {'name': 'twitter:site', 'content': '@_ds_100'}
+    CREATOR = {'name': 'twitter:creator', 'content': '@baeuchle'}
     def __init__(self, titletext, **kwargs):
-        self.html = ET.Element('html')
+        self.html = ET.Element('html', attrib={'prefix': 'og: https://ogp.me/ns#'})
         head = ET.SubElement(self.html, 'head')
         head.append(ET.Element('meta', attrib={'charset': 'utf-8'}))
         head.append(ET.Element('meta', attrib={
@@ -21,6 +27,19 @@ class Generator:
             'type': 'image/svg+xml',
             'href': 'https://avatar.frankfurtium.de/ds100.svg'
         }))
+        desc = {'content': kwargs.get('desc', titletext)}
+        head.append(ET.Element('meta', attrib={'property': 'og:title', 'content': titletext}))
+        head.append(ET.Element('meta', attrib=Generator.SITENAME))
+        head.append(ET.Element('meta', attrib={'property': 'og:image', **Generator.CARD}))
+        head.append(ET.Element('meta', attrib={'property': 'og:description', **desc}))
+        head.append(ET.Element('meta', attrib=Generator.LOCALE))
+        head.append(ET.Element('meta', attrib=Generator.CARDTYPE))
+        head.append(ET.Element('meta', attrib={'name': 'twitter:title', 'content': titletext}))
+        head.append(ET.Element('meta', attrib={'name': 'twitter:description', **desc}))
+        head.append(ET.Element('meta', attrib=Generator.SITE))
+        head.append(ET.Element('meta', attrib=Generator.CREATOR))
+        head.append(ET.Element('meta', attrib={'name': 'twitter:image', **Generator.CARD}))
+        head.append(ET.Element('meta', attrib={'name': 'description', **desc}))
         title = ET.SubElement(head, 'title')
         title.text = titletext
         body = ET.SubElement(self.html, 'body')

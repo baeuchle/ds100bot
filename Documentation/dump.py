@@ -13,7 +13,9 @@ def add_source_line(target, data_obj):
 
 class Dump(Generator):
     def __init__(self, titletext, config, **kwargs):
-        super().__init__(titletext, **kwargs)
+        super().__init__(titletext,
+                         desc='Liste aller Abkürzungen in der Quelle {}'.format(config.head),
+                         **kwargs)
         self.number_of_data_lists = len(config.data_list)
         self.headline("Daten: {}".format(config.head))
         if config.desc:
