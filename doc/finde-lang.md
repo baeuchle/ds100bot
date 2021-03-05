@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Finden der Abkürzungen</title>
+<desc>Was hält der Bot für Abkürzungen und wie interpretiert er das?</desc>
+</p>
+
 Finden der Abkürzungen
 ======================
 

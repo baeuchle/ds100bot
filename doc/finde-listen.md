@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Finden der Listen</title>
+<desc>Wie wählt der Bot aus, welche Abkürzungsliste er benutzt?</desc>
+</p>
+
 Festlegen der verwendeten Abkürzungslisten
 ==========================================
 

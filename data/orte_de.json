@@ -1,7 +1,7 @@
 {
   "id": "orte_de",
   "description": "Eisenbahnbetriebsstellen, Bahnhöfe und Haltepunkte in Deutschland",
-  "headline": "Deutsche Betriebsstellen",
+  "headline": "Betriebsstellen Deutschland",
   "access": [{
     "x_source": "DS",
     "type": "#"

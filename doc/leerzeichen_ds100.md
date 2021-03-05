@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Leerzeichen</title>
+<desc>Warum sind Leerzeichen im Kürzel wichtig?</desc>
+</p>
+
 Uneindeutige Kürzel mit Leerzeichen
 ===================================
 

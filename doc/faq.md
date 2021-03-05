@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: FAQ</title>
+<desc>Sammlung von häufig gestellten Fragen</desc>
+</p>
+
 Häufig gestellte Fragen
 =======================
 

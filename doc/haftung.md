@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Haftung</title>
+<desc>Es wird keinerlei Haftung übernommen.</desc>
+</p>
+
 Haftungsausschluss
 ==================
 
