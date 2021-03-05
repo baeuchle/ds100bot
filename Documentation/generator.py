@@ -5,7 +5,7 @@ from xml.etree import ElementTree as ET
 class Generator:
     SITENAME = {'property': 'og:site_name', 'content': 'DS100 Bot'}
     CARD = {'content': 'https://ds100.frankfurtium.de/socialcard.png'}
-    LOCALE = {'property:': 'og:locale', 'content': 'de_DE'}
+    LOCALE = {'property': 'og:locale', 'content': 'de_DE'}
     CARDTYPE = {'name': 'twitter:card', 'content': 'summary_large_image'}
     SITE = {'name': 'twitter:site', 'content': '@_ds_100'}
     CREATOR = {'name': 'twitter:creator', 'content': '@baeuchle'}
