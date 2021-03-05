@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Schwarzliste</title>
+<desc>Was ist die Schwarzliste des Bots und warum gibt es sie?</desc>
+</p>
+
 Schwarzliste
 ============
 

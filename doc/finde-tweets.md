@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Finden von Tweets</title>
+<desc>Welche Tweets betrachtet der Bot, um sie zu beantworten?</desc>
+</p>
+
 Finden von Tweets
 =================
 

@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Datenschutz</title>
+<desc>Es werden keine personalisierten Daten erhoben.</desc>
+</p>
+
 Datenschutz
 ===========
 

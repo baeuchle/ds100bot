@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Möglichkeiten, beizutragen</title>
+<desc>Wie kann man beitragen, um den Bot zu verbessern oder ihm neues beizubringen?</desc>
+</p>
+
 Beitragen
 =========
 

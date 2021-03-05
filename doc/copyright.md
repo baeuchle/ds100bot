@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Verwendete Daten und Lizenzen</title>
+<desc>Welche Daten verwendet der Bot und welche rechtlichen Bedingungen gelten dafür?</desc>
+</p>
+
 Daten und Urheberrecht
 ======================
 

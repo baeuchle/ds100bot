@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Aufbau der Antworten</title>
+<desc>Wie sind die Antworten des Bots strukturiert und was bedeutet alles?</desc>
+</p>
+
 Aufbau der Antworten des Bots
 =============================
 

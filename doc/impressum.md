@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Impressum</title>
+<desc>Wer steckt hinter dem Bot?</desc>
+</p>
+
 Impressum
 =========
 

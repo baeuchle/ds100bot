@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100-Bot Startseite</title>
+<desc>Erklärungen und Dokumentation zum DS100-Twitterbot für Eisenbahnabkürzungen</desc>
+</p>
+
 DS-100-Bot
 ==========
 

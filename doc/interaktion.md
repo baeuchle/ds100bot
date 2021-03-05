@@ -1,3 +1,8 @@
+<p id="meta">
+<title>DS-100: Interaktion</title>
+<desc>Wie kann man mit dem Bot interagieren?</desc>
+</p>
+
 Interaktion mit dem Bot
 =======================
 
