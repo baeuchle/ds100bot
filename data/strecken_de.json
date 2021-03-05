@@ -60,6 +60,26 @@
       "Unternummern sind auf die erste Zahl reduziert, z.B. $645.3 für die KBS 645.3-4"
     ]
   },{
+    "id": "kbs_alt",
+    "short": "Tabellennummer",
+    "long": "Laufweg",
+    "add": "Liniennummer",
+    "alias": ",",
+    "nolink": true,
+    "file": "sources/strecken_de_alt.csv",
+    "description": "ehemalige Kursbuchstrecken",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  },{
     "id": "strecken_de_namen",
     "short": "Abk",
     "long": "Beschreibung",
