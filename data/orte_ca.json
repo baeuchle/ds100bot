@@ -1,0 +1,24 @@
+{
+  "id": "orte_ca",
+  "headline": "Betriebsstellen Kanada",
+  "access": [{
+    "x_source": "CA",
+    "type": "#"
+  }],
+  "magic_hashtags": [
+    "_CA",
+    "🇨🇦"
+  ],
+  "data": [{
+    "id": "orte_ca_via",
+    "short": "Station Code",
+    "long": "Station Name",
+    "delim": ";",
+    "nolink": true,
+    "file": "sources/orte_ca_via.csv",
+    "description": "Bahnhofskürzel der VIA Rail Canada",
+    "source": {
+      "name": "Eigene Zusammenstellung aus OSM-Daten"
+    }
+  }]
+}
