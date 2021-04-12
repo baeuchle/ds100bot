@@ -1,6 +1,6 @@
 Linie;Laufweg
-ICE1;Sprinter: Hamburg - Hannover - Kassel - Frankfurt
-ICE4;Sprinter: Hamburg - Essen - Duisburg - Düsseldorf - Köln
+ICE1;Sprinter: Hamburg - Essen - Duisburg - Düsseldorf - Köln
+ICE4;Sprinter: Hamburg - Hannover - Kassel - Frankfurt
 ICE10;Berlin - Wolfsburg - Hannover - Bielefeld - Hamm < Dortmund - Duisburg - Düsseldorf (- Köln - Aachen) | Wuppertal - Köln (- Bonn - Koblenz)
 ICE11;(Hamburg -) Berlin - Leipzig - Erfurt - Fulda - Frankfurt - Mannheim - Stuttgart - Ulm - Augsburg - München
 ICE12;Berlin - Wolfsburg - Braunschweig - Hildesheim - Kassel - Fulda - Frankfurt - Mannheim - Karlsruhe - Freiburg - Basel (- Bern - Interlaken)
@@ -10,14 +10,17 @@ ICE15;Sprinter: (Warnemünde - Rostock -) Berlin - Halle - Erfurt - Frankfurt
 ICE18;Hamburg - Berlin - Halle - Erfurt - (Coburg) - Nürnberg < Augsburg | Ingolstadt > München
 ICE20;(Kiel -) Hamburg - Hannover - Kassel - Frankfurt - Mannheim - Karlsruhe - Freiburg - Basel - Zürich (- Chur)
 ICE22;(Oldenburg - Bremen) | (Kiel -) Hamburg > Hannover - Kassel - Frankfurt - Mannheim - Stuttgart
+ICE24;Hamburg - Hannover - Kassel - Fulda - Würzburg - Würzburg - Augsburg < Kempten - Oberstdorf | München - Kufstein - Wörgl < Innsbruck | Schwarzach-St. Veit
 ICE25;(Oldenburg -) Bremen | (Lübeck -) Hamburg > Hannover - Kassel - Fulda - Würzburg - Nürnberg - Ingolstadt - München
-ICE26;(Binz - Stralsund - Rostock - Schwerin -) Hamburg - Hannover - Kassel < Marburg - Frankfurt - Heidelberg - Karlsruhe | (Fulda - Würzburg - Augsburg - München - Kufstein < Innsbruck | Schwarzach-St. Veit)
-ICE28;(Binz - Stralsund - Greifswald ) | Hamburg > Berlin - Leipzig - Erfurt - Nürnberg < (Ingolstadt) | Augsburg > München
-ICE29;Sprinter: (Warnemünde - Rostock -) Berlin - Halle - Erfurt - Nürnberg - München
+ICE26;(Binz - Stralsund - Rostock - Schwerin -) Hamburg - Hannover - Kassel - Marburg - Frankfurt - Heidelberg - Karlsruhe
+RJ27;Berlin - Dresden - Prag - Brno - Wien - Graz
+ICE28;(Binz - Stralsund - Greifswald ) | Hamburg > Berlin - Leipzig - Erfurt - Nürnberg - (Ingolstadt) - München
+ICE29;Sprinter: Berlin - Halle - Erfurt - Nürnberg - München
 ICE30; Hamburg - Bremen - Münster - Duisburg - Düsseldorf - Köln
 ICE31; (Kiel -) Hamburg - Bremen - Münster - Dortmund - Wuppertal - Köln - Koblenz - Mainz - Frankfurt (- Würzburg - Nürnberg - Passau)
+ICE39; Hamburg - Münster - Essen - Duisburg - Düsseldorf - Köln
 ICE41; (Dortmund -) Essen - Duisburg - Düsseldorf - Köln - Frankfurt - Würzburg - Nürnberg - München (- Garmisch-Partenkirchen)
-ICE42;(Hamburg - Bremen - Münster - ) Dortmund < Duisburg - Düsseldorf  | (Wuppertal) > Köln - Frankfurt Flughafen - Mannheim - Stuttgart - Augsburg - München
+ICE42;(Hamburg - Bremen - Münster - Essen - Duisburg - Düsseldorf) | Dortmund - Wuppertal > Köln - Frankfurt Flughafen - Mannheim - Stuttgart - Augsburg - München
 ICE43;(Hannover - Bielefeld - Dortmund - Wuppertal -) Köln - Frankfurt Flughafen - Mannheim - Karlsruhe - Basel
 ICE45;Köln - Wiesbaden - Mannheim - Heidelberg - Stuttgart
 ICE47;Dortmund | Münster > Essen - Duisburg - Düsseldorf - Köln - Frankfurt Flughafen - Mannheim - Stuttgart
@@ -28,12 +31,13 @@ ICE78;Amsterdam - Arnheim - Duisburg - Düsseldorf - Köln - Frankfurt
 ICE79;Brüssel - Aachen - Köln - Frankfurt
 ICE82;Frankfurt - Mannheim < Saarbrücken | Karlsruhe - Strasbourg > Paris
 ICE83;(München - Augsburg -) Stuttgart - Karlsruhe - Strasbourg - Paris
-ICE84;Frankfurt - Mannheim - Karlsruhe - Basel - Luzern - Lugano - Mailand
+ICE84;Frankfurt - Mannheim - Strasbourg - Lyon - Marseille
+ECE85;Frankfurt - Mannheim - Karlsruhe - Basel - Luzern - Lugano - Milano
+ECE88;München - Lindau - St. Gallen - Zürich
 ICE89;München - Kufstein - Innsbruck - Feldkirch
-ICE90;(Frankfurt - Mannheim -) Stuttgart - Augsburg - München - Salzburg - Wien - Budapest
+RJ90; (Frankfurt - Mannheim -) Stuttgart - Augsburg - München - Salzburg - Wien - Budapest
 ICE91;(Dortmund < Duisburg - Düsseldorf | Wuppertal > Köln - ) Frankfurt | (Hamburg - Hannover - Kassel - Fulda) > Würzburg - Nürnberg - Passau - Wien
 IC17;(Warnemünde -) Rostock - Berlin < Schönefeld Flughafen - Dresden | (Leipzig - Halle - Jena - Nürnberg - Passau - Wien)
-IC26;(Westerland | Stralsund - Rostock - Schwerin) > Hamburg - Hannover - Kassel - Marburg - Frankfurt - Heidelberg - Karlsruhe
 EC27;(Kiel | Westerland) > Hamburg - Berlin - Dresden - Prag - Budapest
 IC28;(Berlin - Greifswald - Stralsund - Binz) | (Nürnberg - Augsburg - München)
 IC30;(Westerland | Kiel | Binz - Stralsund - Rostock - Schwerin) > Hamburg - Bremen - Münster - Dortmund - Duisburg - Düsseldorf - Köln - Koblenz - Mainz < Frankfurt | Mannheim < Stuttgart (> Karlsruhe - Basel < Zürich | Bern - Interlaken)
