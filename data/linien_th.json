@@ -22,7 +22,11 @@
       "owner": {
         "type": "twitter",
         "name": "jonaes_"
-      }
+      },
+      "contributors": [{
+        "type": "twitter",
+        "name": "SimonBredemeier"
+      }]
     }
   }]
 }
