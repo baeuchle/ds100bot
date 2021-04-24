@@ -1,0 +1,28 @@
+{
+  "id": "linien_by",
+  "headline": "ÖPNV Bayern",
+  "access": [{
+    "x_source": "BY",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_BY"
+  ],
+  "data": [{
+    "id": "linien_by",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_by.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "SimonBredemeier"
+      }
+    }
+  }]
+}
