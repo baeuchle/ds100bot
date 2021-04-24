@@ -1,0 +1,123 @@
+Linie;Laufweg
+RE1;München-Nürnberg-Express: Nürnberg - Allersberg - Ingolstadt - München
+RE2;alex: Hof - Weiden - Regensburg - Landshut - München
+RE3;Donau-Isar-Express: Passau - Landshut - München
+RE4;München - Mühldorf (- Simbach)
+RE5;München - Rosenheim - Traunstein - Salzburg
+RB6;München - Weilheim - Garmisch-Partenkirchen - Seefeld (- Innsbruck)
+RE7;(Nürnberg - Treuchtlingen - Donauwörth -) Augsburg - Buchloe - Kempten < Immenstadt - Lindau (| Oberstdorf)
+RS7;Ulm - Memmingen
+RE8;Fugger-Express: Treuchtlingen - Donauwörth - Augsburg - München
+RE9;Fugger-Express: lm - Günzburg - Augsburg - München
+RE10;Würzburg - Kitzingen - Neustadt - Fürth - Nürnberg
+RB10;Meistadt - Fürth - Nürnberg
+RB11;Fürth - Cadolzburg
+RB12;Fürth - Markt Erlbach
+RB13;Ingolstadt - Aichach - Friedberg - Augsburg
+RE14;Franken-Thüringen-Express: Saalfeld - Lichtenfels - Bamberg - Fürth - Nürnberg
+RB14;Eichstädt Stadt - Eichstädt Bahnhof (- Ingolstadt)
+RB15;Ulm - Günzburg - Donauwörth - Ingolstadt - Regensburg
+RE16;Nürnberg - Treuchtlingen - Donauwörth - Augsburg
+RB16;(Nürnberg -) Treuchtlingen - Eichstädt - Ingolstadt - München
+RE17;(Nürnberg - Treuchtlingen - Donauwörth -) Augsburg - Buchloe - Kempten - Immenstadt < Lindau | Oberstdorf
+RB17;Ingolstadt - Regensburg
+RE18;Ulm - Günzburg - Donauwrth - Ingolstadt - Regensburg (< Eggmühl | Passau)
+RB18;Bad Rodach - Coburg
+RE19;Franken-Thüringen-Express: Sonneberg - Bamberg - Fürth - Nürnberg
+RE20;Franken-Thüringen-Express: Leipzig - Jena - Saalfeld - Lichtenfels - Bamberg - Fürth - Nürnberg
+RB21;Gräfenberg - Nürnberg Nordost
+RE22;Flughafenexpress: Regensburg - Flughafen München
+RB22;Ebermannstadt - Forchen (- Bamberg - Lichtenfels)
+RE23;Marktredwitz - Weiden - Regensburg
+RB23;Marktredwitz - Weiden - Regensburg
+RB24;(Bad Rodach -) Coburg - Lichtenfels - Bayreuth - Kirchenlaibach - Marktredwitz - Hof - Bad Steben
+RB25;Bamberg - Lichtenfels - Kronach (- Saalfeld)
+RB26;Bamberg - Ebern
+RB27;Schwandorf - Cham - Furth i Wald
+RB28;Cham - Bad Kötzing - Lam
+RB29;Cham - Waldmüchen
+RE30;(Hof -) Bayreuth - Pegnitz - Nürnberg
+RB30;Neuhaus - Nürnberg
+RE31;Hof - Marktredwitz < Kirchenlaibach - Pegnitz - Nürnberg (| Weiden - Regensburg)
+RB31;(Nürnberg -) Lauf . Simmelsdorf-Hüttenbach
+RE32;Nürnberg - Pegnitz - Bayreuth
+RB32;Bogen - Straubing - Neufahrn
+RB33;Landshut - Freising (- München)
+RE35;Bamberg - Lichtenfels - Hof
+RB35;Plattling - Zwiesel - Bayerisch Eisenstein
+RB36;Zwiesel - Grafenau
+RB37;Zwiesel - Bodenmais
+RE38;Lichtenfels - Bayreuth
+RB38;Gotteszell - Vietach
+RE39;Lichtenfels - Hof
+RE40;Nürnberg - Neukirchen - Schwandorf - Regensburg
+RB40;München - Mühldorf
+RB41;Nürnberg - Neukirchen - Weiden - Neustadt / Mühldorf - Markl - Simbach
+RB42;Mühldorf - Burghausen
+RE43;Nürnberg - Neukirchen - Amberg (- Schwandorf - Regensburg)
+RB44;Landshut - Mühldorf - Wasserburg - Rosenheim
+RB45;Lanshut - Mühldorf - Salzburg
+RB46;Mühldorf - Passau
+RE47;Nürnberg - Neukirchen - Amberg - Schwandorf - Cham - Furth i Wald
+RB47;Mühldorf - Hörpolding (- Traunreut - Traunstein)
+RB48;Wasserburg - Ebersberg (- Grafing - München)
+RB49;Traureut - Hörpolding - Traunstein
+RE50;Nürnberg - Regensburg - Landshut - München
+RB50;Gemünden - Bad Kissingen - Schweinfurt
+RB51;Neumarkt - Regensburg - Straubing - Plattling
+RB52;Prien - Aschau
+RB53;Traunstein - Ruhpolding / Schlüchtern - Jossa - Gemünden - Würzburg - Schweinfurt - Bamberg
+RE54;Frankfurt - Aschaffenburg - Würzburg - Schweinfurt - Bamberg
+RB54;München - Rosenheim - Kufstein
+RE55;Frankfurt - Aschaffenburg < Würzburg (| Schweinfurt - Bamberg)
+RB55;München - Holzkirchen - Bayrischzell
+RB56;München - Holzkirchen - Schaftlach - Lenggries / Hanau - Kahl - Schöllkrippen
+RE57;Würzburg - Schweinfurt - Bad Kissingen
+RB57;München - Holzkirchen - Schaftlach - Tegernsee
+RB58;München - Holzkirchen - Bad Aibling - Rosenheim
+RB59;Traunstein - Waging
+RE60;Nürnberg - Treuchtlingen
+RB60;München - Weilheim - Garmisch-Partenkirchen - Reutte - Vils
+RE61;München - Weilheim - Garmisch-Partenkirchen - Mittenwald
+RB61:Roth - Hilpoltstein
+RE62;München-Weilheim - Garmisch-Partenkirchen - Lermoos
+RB62;Pleinfeld - Gunzenhausen
+RB63;Murnau - Oberammergau
+RB64;Garmisch - Grainau
+RB65;München - Weilheim
+RB66;München - Kochel
+RB67;Augsburg - Geltendorf - Weilheim - Schongau
+RE68;München - Geltendorf - Buchloe - Füssen
+RB68;München - Geltendorf - Buchloe - Füssen
+RB69;Augsburg - Landsberg
+RE70;München - Geltendorf - Buchloe - Kempten - Immenstadt - Lindau
+RE71;Augsburg - Buchloe - Memmingen
+RS71;Ulm - Weißenhorn
+RE72;München - Geltendorf - Buchloe - Memmingen
+RE73;(Augsburg - Buchloe -) Türkheim - Bad Wörishofen
+RB73;Kempten - Pfronten-Steinach
+RE74;München - Geltendorf - Buchloe - Kempten
+RE75;Ulm - Memmingen - Kempten (- Immenstdt - Lindau)
+RE77;Augsburg - Buchloe - Füssen
+RB78;Günzburg - Krumbach (- Mindelheim)
+RE79;Augsburg - Buchloe (- Marktoberdorf)
+RB80;(Gemüden - Würzburg -) Steinach - Ansbach - Treuchtlingen
+RB81;Steinach - Bad Windsheim - Neustadt
+RB82;Rothenburg - Steinach
+RE84;(Aschaffenburg -) Miltenberg - Amorbach - Seckach
+RB85;Würzburg - Lauda - Osterburken
+RB86;Fugger-Express: Dinkelscherben - Augsburg - München
+RE87;(Aschaffenburg -) Miltenberg - Wertheim (- Lauda - Crailsheim)
+RB87;Fugger-Express: Donauwörth - Augsburg - München
+RB88; Aschaffenburg - Miltenberg
+RE89;Aalen - Nördlingen - Donauwörth - Augsburg - München
+RB89;Aalen - Nördlingen - Donauwörth
+RB91; Wicklesgreuth - Windsbach
+RB92;(Aulendorf -) Kißlegg - Lindau - Friedrichshafen
+RB93;Lindau - Friedrichshafen
+RB95;Marktredwitz - Schirnding - Cheb - Hof
+RE96;Lindau - Memmingen - Buchloe - Geltendorf - München
+RB96;Hof - Selb
+RE98;Lindau - Bludenz
+RB98;Helmbrechts - Münchberg
+RB99;Hof - Münchberg
