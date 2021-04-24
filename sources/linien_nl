@@ -1,0 +1,135 @@
+Linie;Laufweg
+ICE100;Amsterdam - Utrecht - Arnhem - Keulen - Frankfurt - Mannheim - Basel
+ICE120;Amsterdam - Utrecht - Arnhem - Keulen (- Frankfurt)
+IC140;Amsterdam - Amersfoort - Deventer - Hengelo - Osnabrück - Hannover - Berlijn
+IC240;Amsterdam - Amersfoort - Deventer - Hengelo - Osnabrück - Hannover - Berlijn
+S400;Roosendaal - Essen - Antwerpen - Puurs
+IC500;Groningen - Zwolle - Amersfoort - Utrecht - Gouda - Rotterdam
+IC600;Leeuwarden - Zwolle - Amersfoort - Utrecht - Gouda - Rotterdam
+IC700;Groningen - Zwolle - Lelystadt - Schiphol - Leiden - Den Haag
+IC800;(Den Helder -) Alkmaar - Amsterdam - Utrecht - 's-Hertogenbosch - Eindhoven - Roermond - Maastricht
+ICD900;Amsterdam - Schiphol - Rotterdam - Breda
+ICD1000;Amsterdam - Schiphol - Rotterdam
+IC1100;Den Haag - Rotterdam - Breda - Tilburg - Eindhoven
+IC1400;Nachtnet: Rotterdam - Den Haag - Schiphol - Amsterdam - Utrecht
+IC1500;Amsterdam - Amersfoort (- Deventer)
+IC1600;Schiphol - Amersfoort - Deventer - Hengelo - Enschede
+IC1700;Den Haag - Gouda - Utrecht - Amersfoort - Deventer - Hengelo - Enschede
+IC1800;Leeuwarden - Zwolle - Lelystad - Schiphol - Leiden - Den Haag
+IC1900;Dordrecht - Breda - Tilburg - Eindhoven
+IC2000;Den Haag - Gouda - Utrecht - Amersfoort (- Deventer)
+IC2100;Amsterdam - Haarlem - Leiden - Den Haag
+IC2200;Amsterdam - Haarlem - Leiden - Den Haag - Rotterdam - Dordrecht - Rosendaal - Vlissingen
+IC2400;Lelystad  Schiphol - Leiden - Den Haag - Rotterdam - Dordrecht
+S2500;(Roosendaal -) Essen - Antwerpen - Puurs
+IC2600;Almere - Amsterdam
+IC2800;Rotterdam - Gouda - Utrecht
+IC2900;Enkhuizen - Hoorn - Amsterdam - Utrecht - 's-Hertogenbosch - Eindhoven - Roermond - Maastricht
+IC3000;Den Helder - Alkmaar - Amsterdam - Utrecht - Arnhem - Nijmegen
+IC3100;Schiphol - Utrecht - Arnhem - Nijmegen
+SP3300;Leiden - Hoofddorp - Schiphol - Zaandam - Hoorn
+IC3400;Haarlem - Beverwijk - Alkmaar
+IC3500;Schiphol - Utrecht - 's-Hertogenbosch - Eindhoven - Venlo
+IC3600;Zwolle - Deventer - Zutphen - Arnhem - Nijmegen - 's-Hertogenbosch - Tilburg - Breda - Roosendaal
+IC3700;Dordrecht - Rotterdam - Den Haag - Leiden - Schiphol - Utrecht - 's-Hertogen - Eindhoven - Venlo
+SN3800;Zwolle - Emmen
+IC3900; Enkuizen - Hoorn - Amsterdam - Utrecht - 's-Hertogenbosch - Eindhoven - Heerlen
+SP4000;Uitgeest - Zaandam - Amsterdam - Woerden - Gouda - Rotterdam
+SP4400;(Oss -) 's-Hertogenbosch - Eindhoven - Deurne
+SP4500;Amsterdam - Hoorn - Enkhuizen
+SP4600;Amsterdam - Schiphol - Leiden - Den Haag
+SP4800;Hoorn - Alkmaar - Haarlem - Amsterdam
+SP4900;Almere - Hilversum - Utrecht
+SP5000;Den Haag - Rotterdam - Dordrecht
+SP5100;Den Haag - Rotterdam - Dordrecht
+SP5200;Tilburg - Eindhoven
+S5300;Maastricht - Wezet - Luik - Tongeren - Hasselt
+SP5400;Zandvoort aan Zee - Haarlem - Amsterdam
+SP5500;Baarn - Den Dolder - Utrecht
+SP5600;Zwolle - Amersfoort - Utrecht
+SP5700;Hoofddorp - Schiphol - Hilversum - Utrecht
+SP5800;Hoofddorp - Schiphol - Amsterdam
+SP5900;Dordrecht - Roosendaal
+SP6000;(Woerden -) Utrecht - Geldermalsen - 's-Hertogenbosch
+SP6200;Groningen - ssen
+SP6300; Haarlem - Leiden (- Den Haag)
+SP6400;Einhoven - Weert
+SP6500;Utrecht - Houten
+SP6600;Dordrecht - Breda - Tilburg - 's-Hertogenbosch - Nijmegen - Arnhem
+SP6800;Den Haag - Gouda
+SP6900;Den Haag - Gouda - Utrecht - Geldermalsen - Tiel
+SP7000;Apeldorn - Deventer - Almelo (- Hengelo - Enschede)
+ST7100;Dordrecht - Gorinchem
+ST7200;Dordrecht - Gorinchem - Geldermalsen
+SP7300;Breukelen - Utrecht - Veenenaal (- Rhenen)
+SP7400;Uitgeest - Zaandam - Amsterdam - Utrecht - Veenendaal - Rhenen
+SP7500;Ede-Wageningen - Arnhem
+SP7600;Zutphen - Arnhem - Nijmegen (- Wijchen)
+SP7700;Rotterdam - Gouda
+SP7900;Zwolle - Almelo - Hengelo - enschede
+ST8000;Zwolle - Emmen
+SP8100;Zwolle - Groningen
+SP8500;Zwolle - Kampen
+SP8600;Alphen a/d Rijn - Gouda
+SP8700;Alphen a/d Rijn - Gouda
+IC8800;Leiden - Alphen a/d Rijn - Utrecht
+SP8900;Leiden - Alphen a/d Rijn
+SP9000;Leeuwarden - Meppel
+EST9100;Amsterdam - Rotterdam - Brussel - Lille - London
+ICD9200;Amsterdam - Schiphol - Rotterdam - Breda - Antwerpen - Brussel
+THA9300;Amsterdam - Schiphol - Rotterdam - Antwerpen - Brusel - Paris
+ICD9600;Den Haag - Rotterdam - Breda - Antwerpen - Brussel
+THA9900;Amsterdam - Schiphol - Rotterdam - Antwerpen - Brussel (< Bourg | Valence - Avignon - Marseille)
+IC11400;Nachtnet: Gouda - Rotterdam
+IC11600;Schiphol - Amersfoort
+IC11700;Den Haag - Gouda - Utrecht - Amersfoort
+IC12200;Vlissingen - Roosendaal
+IC12600;Gronngen - Lelystadt - Amsterdam
+IC13500;Eindhoven - Venlo
+SN13800;Zwolle - Emmen
+SP14000;Utrecht - Gouda - Rotterdam
+IC14400;Zandvoort aan Zee - Haarlem
+IC14600;Amsterdam - Lelystad - Zwolle
+SP14900;Almere - Hilversum - Utrecht
+SP15400;Zaandvoort aan Zee - Haarlem
+SP15600;Amersfoort - Jijkerk - Harderwijk
+SP15800;Amsterdam - Hilversum - Amersfoort
+SP17800;Apeldoorn - Zutphen
+IC17900;Zwolle - Almelo - Enschede
+SN19800; Maastricht - Heerlen - Herzogenrath - Aken
+RE20000;Arnhem - Zevenaar - Emmerich - Oberhausen - Düsseldorf
+RE20050;Venlo - Mönchengladbach - Neuss - Düsseldorf - Wuppertal - Hamm
+ST20100;Groningen - Zuidbroek - Bad Nieuweschans - Weener - Rail vervangende diensten - Leer
+RB20180;Enschede - Gronau - Münster
+RB20250;Enschede - Gronau - Coesfeld - Dortmund
+RB20350;Hengelo - Bad Bentheim - Rheine - Osnabrück - Bielefeld
+IC21400;Nachtnet: Eindhoven - Utrecht | Rotterdam - Einhoven
+IC22200;Amsterdam - Haarlem
+IC22400;Amersfoort - Utrecht
+IC23400;Nachtnet: Utrecht - Arnhem - Nijmegen
+IC24400;Nachtnet:Amsterdam - Schiphol - Leiden
+IC28300;Utrecht Centraal - Utrecht Maliebaan
+SN30400;Apeldoorn - Zutphen - Winterswijk
+ST30700;Arnhem - Doetinchem
+ST30800;Zutphen - Winterswijk
+ST30900;Arnhem - Doetichem - Winterswijk
+ST31000;Almelo - Hardenberg
+ST31100;Tiel - Arnhem
+ST31200;Zutphen - Henglo - Oldenzaal
+ST31300;Amersfoort - Barneveld - Ede-Wageningen
+ST31400;Amersfoort - Barneveld
+ST32000;Heerlen - Maastricht
+ST32200;Nijmegen - Venlo - Roermond
+ST32300;Nijmegen - Venlo
+ST32400;Roermond - Sittard - Maastricht
+ST32500;Sittard - Heerlen - Kerkrade
+ST37000;Leeuwarden - Sneek
+ST37100;Leeuwarden - Sneek - Stavoren
+ST37200;Harlingen - Leeuwarden
+SN37300;Leeuwarden - Groningen
+SN37400;Leeuwarden - Groningen
+ST37500;Groningen - Bad Nieweschans
+ST37600;Groningen - Riideschool (- Eemshaven)
+ST37700;Groningen - Delfzijl
+ST37800;Groningen - Veendam
+SN37900;Groningen - Bad Nieuweschans
