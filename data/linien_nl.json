@@ -1,0 +1,29 @@
+{
+  "id": "linien_nl",
+  "headline": "SPV Niederlande",
+  "access": [{
+    "x_source": "NL",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_NL",
+    "🇳🇱"
+  ],
+  "data": [{
+    "id": "linien_nl",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_nl.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "SimonBredemeier"
+      }
+    }
+  }]
+}
