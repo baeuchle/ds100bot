@@ -1,18 +1,19 @@
 {
-  "id": "linien_th",
-  "headline": "SPNV Thüringen",
+  "id": "linien_nl",
+  "headline": "SPV Niederlande",
   "access": [{
-    "x_source": "TH",
+    "x_source": "NL",
     "type": "/"
- }],
+  }],
   "magic_hashtags": [
-    "_TH"
+    "_NL",
+    "🇳🇱"
   ],
   "data": [{
-    "id": "linien_th",
+    "id": "linien_nl",
     "short": "Linie",
-    "long": "Laufweg und Betreiber",
-    "file": "sources/linien_th.csv",
+    "long": "Laufweg",
+    "file": "sources/linien_nl.csv",
     "source": {
       "name": "Eigene Zusammenstellung"
     },
@@ -21,12 +22,8 @@
       "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
       "owner": {
         "type": "twitter",
-        "name": "jonaes_"
-      },
-      "contributors": [{
-        "type": "twitter",
         "name": "SimonBredemeier"
-      }]
+      }
     }
   }]
 }

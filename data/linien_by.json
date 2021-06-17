@@ -1,18 +1,18 @@
 {
-  "id": "linien_th",
-  "headline": "SPNV Thüringen",
+  "id": "linien_by",
+  "headline": "ÖPNV Bayern",
   "access": [{
-    "x_source": "TH",
+    "x_source": "BY",
     "type": "/"
- }],
+  }],
   "magic_hashtags": [
-    "_TH"
+    "_BY"
   ],
   "data": [{
-    "id": "linien_th",
+    "id": "linien_by",
     "short": "Linie",
-    "long": "Laufweg und Betreiber",
-    "file": "sources/linien_th.csv",
+    "long": "Laufweg",
+    "file": "sources/linien_by.csv",
     "source": {
       "name": "Eigene Zusammenstellung"
     },
@@ -21,12 +21,8 @@
       "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
       "owner": {
         "type": "twitter",
-        "name": "jonaes_"
-      },
-      "contributors": [{
-        "type": "twitter",
         "name": "SimonBredemeier"
-      }]
+      }
     }
   }]
 }
