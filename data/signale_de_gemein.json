@@ -1,0 +1,37 @@
+{
+  "id": "signale_de_gemein",
+  "headline": "Eisenbahnsignale Gemeines Signalbuch",
+  "description": "Erfundene Signalbegriffe zum Lachen",
+  "access": [{
+    "x_source": "GSB",
+    "type": "%"
+  }, {
+    "x_source": "GEMEIN",
+    "type": "%"
+  }],
+  "magic_hashtags": [
+    "_GSB"
+  ],
+  "data": [{
+    "id": "gemein",
+    "short": "Abk",
+    "long": "Kurzname",
+    "add": "Bedeutung",
+    "delim": ";",
+    "file": "sources/signale_de_gemein.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/share-your-work/public-domain/cc0",
+      "owner": {
+        "type": "twitter",
+        "name": "9Lukas5"
+      }
+    },
+    "comments": [
+      "Original-Autor des gemeinen Signalbuches unbekannt"
+    ]
+  }]
+}
