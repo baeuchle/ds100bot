@@ -16,8 +16,8 @@
   ],
   "data": [{
     "id": "ds100",
-    "short": "Abk",
-    "long": "Name",
+    "short": "RL100-Code",
+    "long": "RL100-Langname",
     "delim": ";",
     "nolink": true,
     "file": "sources/orte_de_ds100.csv",
