@@ -10,7 +10,7 @@ WIEDERHOLUNG;Der Bot beantwortet jeden Tweet, in dem etwas Beantwortbares ist, a
 REPLY;Der Bot findet ungekennzeichnete Tweets von Accounts, denen er folgt, nicht, wenn diese Tweets auf jemanden Antworten, dem der Bot *nicht* folgt, genauso, wie man solche Tweets in seiner eigenen Timeline auch nicht sieht. Mit Markierung (@_ds_100 oder #DS100) klappt's.
 USAGE;Expansion von DS100- und anderen Kürzeln. https://ds100.frankfurtium.de/\n#DS100 im Tweet und Kürzel als Hashtag markieren, bspw #FF\nDetails https://ds100.frankfurtium.de/finde-lang.html
 BILDERKENNUNG;Der Bot kann keine Bilderkennung. Wenn er manchmal zu wissen scheint, was auf einem Bild zu sehen ist, weiß er stattdessen, was im Alt-Text zu dem Bild steht. Siehe auch #KI.
-DARFICH;Ja, du darfst diesen Bot benutzen, wenn du kein Nazi bist. Siehe #TERMS.
+DARFICH;Ja, du darfst diesen Bot benutzen, wenn du kein Nazi bist. Siehe #TERMS. #FCKNZS #NAZISRAUS
 QUELLENWAHL;Der Bot findet alle Tweets mit Magic Hashtag [MHT] (z.B. #_CH für 🇨🇭, dann wird aus #BN Bern). Mit anderem MHT, z.B. #DS100/Erwähnung, @_ds_100/Antwort, in der der Bot erwähnt wird, kann man #CH:BN benutzen.
 STANDARDQUELLE;Bei Folgenlassen/Erwähnen interpretiert der Bot Hashtags wie #HE als 🇩🇪 (= DS100-Abkürzung). Für andere Quelle (Bsp: DIDOK aus 🇨🇭): Magic Hashtag benutzen (#_CH #HE) oder Quellenkürzel dazu (#CH:HE)
 WARTEHALT;Wenn ich kurz gelaufen bin, muss ich mich verschnaufen. Das dauert immer exakt 3 Minuten. Schneller Antworten ist also nicht, warte halt mal ein bisschen.
