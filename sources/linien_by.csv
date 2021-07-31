@@ -90,18 +90,21 @@ RB67;Augsburg - Geltendorf - Weilheim - Schongau
 RE68;München - Geltendorf - Buchloe - Füssen
 RB68;München - Geltendorf - Buchloe - Füssen
 RB69;Augsburg - Landsberg
+RE7;Augsburg - Buchloe - Kempten - Immenstadt - Lindau-Insel - Lindau-Reutin
+RS7;Memmingen - Illertissen - Senden - Neu-Ulm - Ulm 
 RE70;München - Geltendorf - Buchloe - Kempten - Immenstadt - Lindau
 RE71;Augsburg - Buchloe - Memmingen
 RS71;Ulm - Weißenhorn
-RE72;München - Geltendorf - Buchloe - Memmingen
+RE72;München - Geltendorf - Buchloe - Memmingen (- Leutkirch - Kißlegg - Hergatz - Lindau-Insel)
 RE73;(Augsburg - Buchloe -) Türkheim - Bad Wörishofen
-RB73;Kempten - Pfronten-Steinach
+RB73;Kempten - Pfronten-Steinach (- Reutte (Tirol))
 RE74;München - Geltendorf - Buchloe - Kempten
-RE75;Ulm - Memmingen - Kempten (- Immenstdt - Lindau)
-RE77;Augsburg - Buchloe - Füssen
+RE75;Ulm - Memmingen - Kempten (- Immenstadt - Oberstdorf)
+RE77;Ulm - Memmingen - Kempten - Immenstadt - Hergatz - Lindau-Insel / Wangen (AlRgäu)
+RB77;Augsburg - Buchloe - Biessenhofen - Füssen
 RB78;Günzburg - Krumbach (- Mindelheim)
 RE79;Augsburg - Buchloe (- Marktoberdorf)
-RB80;(Gemüden - Würzburg -) Steinach - Ansbach - Treuchtlingen
+RB80;(Gemünden - Würzburg -) Steinach - Ansbach - Treuchtlingen
 RB81;Steinach - Bad Windsheim - Neustadt
 RB82;Rothenburg - Steinach
 RE84;(Aschaffenburg -) Miltenberg - Amorbach - Seckach
