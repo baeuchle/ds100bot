@@ -2,9 +2,9 @@ Linie;Laufweg
 1;Littenweiler - Bertoldsbrunnen - Hauptbahnhof - Paduaalle - Landwasser
 2;Günterstal - Johanneskirche - Bertoldsbrunnen - Hauptbahnhof - Hornusstr. - Zähringen
 3;Vauban - Johanneskirche - Bertoldsbrunnen - Hauptbahnhof - Haid
-4;Zähringen - Hornusstr. - Betroldsbrunnen - Hauptbahnhof - Technische Fakultät
+4;Zähringen - Hornusstr. - Betroldsbrunnen - Hauptbahnhof - Messe
 5;Rieselfeld - Pressehaus - Stadttheater - Europaplatz
-10;Bissierstraße - Elsässer Straße - Paduaallee/- Landwasser
+10;Bissierstraße - Elsässer Straße - Paduaallee
 11;Haid - St. Georgen - Vauban - Pressehaus - Hauptbahnhof
 14;Hauptbahnhof - Eschholzstraße - Scherrerplatz - Haid
 15;Zähringen - Gundelfingen - Wildtal - Berggasse
@@ -57,7 +57,7 @@ SB2;Stadtbus Breisach Linie 2: Bahnhof - Rebgarten - Stadtbücherei
 200;Schnellbus Nimburg - Vörstetten - Freiburg
 201;Freiburg-Zähringen - Gundelfingen - Vörstetten - Nimburg
 202;Denzlingen - Vörstetten - Reute - Emmendingen
-203;Debzlingen - Vörstetten - Reute - Nimburg
+203;Denzlingen - Vörstetten - Reute - Nimburg
 204;Gundelfingen - Vörstetten - March - Hugstetten - Umkirch
 211;Emmendingen - Mundingen - Landeck - Freiamt
 212;Freiamt - Bombach - Ettenheim

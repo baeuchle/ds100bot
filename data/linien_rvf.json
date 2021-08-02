@@ -22,7 +22,11 @@
       "owner": {
         "type": "twitter",
         "name": "FloEllebrecht"
-      }
+      },
+      "contributors": [{
+        "type": "twitter",
+        "name": "trassenfinder"
+      }]
     },
     "comments": [
       "Stand 2020",
