@@ -1,4 +1,6 @@
 Linie;Laufweg
+ECE88;Zürich - St. Gallen - Bregenz - Lindau-Reutin - Memmingen - Buchloe - München
+IC32;Dortmund - Köln - Mannheim - Stuttgart - Ulm (weiter als RE) - Memmingen - Kempten - Oberstdorf
 RE1;München-Nürnberg-Express: Nürnberg - Allersberg - Ingolstadt - München
 RE2;alex: Hof - Weiden - Regensburg - Landshut - München
 RE3;Donau-Isar-Express: Passau - Landshut - München
@@ -90,18 +92,21 @@ RB67;Augsburg - Geltendorf - Weilheim - Schongau
 RE68;München - Geltendorf - Buchloe - Füssen
 RB68;München - Geltendorf - Buchloe - Füssen
 RB69;Augsburg - Landsberg
-RE70;München - Geltendorf - Buchloe - Kempten - Immenstadt - Lindau
+RE7;Augsburg - Buchloe - Kempten - Immenstadt - Lindau-Insel - Lindau-Reutin
+RS7;Memmingen - Illertissen - Senden - Neu-Ulm - Ulm 
+RE70;München - Geltendorf - Buchloe - Kempten - Immenstadt - Lindau-Insel
 RE71;Augsburg - Buchloe - Memmingen
-RS71;Ulm - Weißenhorn
-RE72;München - Geltendorf - Buchloe - Memmingen
+RS71;Ulm - Neu-Ulm - Senden - Weißenhorn
+RE72;München - Geltendorf - Buchloe - Memmingen (- Leutkirch - Kißlegg - Hergatz - Lindau-Insel)
 RE73;(Augsburg - Buchloe -) Türkheim - Bad Wörishofen
-RB73;Kempten - Pfronten-Steinach
+RB73;Kempten - Pfronten-Steinach (- Reutte (Tirol))
 RE74;München - Geltendorf - Buchloe - Kempten
-RE75;Ulm - Memmingen - Kempten (- Immenstdt - Lindau)
-RE77;Augsburg - Buchloe - Füssen
+RE75;Ulm - Memmingen - Kempten (- Immenstadt - Oberstdorf)
+RE77;Ulm - Memmingen - Kempten - Immenstadt - Hergatz - Lindau-Insel / Wangen (Allgäu)
+RB77;Augsburg - Buchloe - Biessenhofen - Füssen
 RB78;Günzburg - Krumbach (- Mindelheim)
 RE79;Augsburg - Buchloe (- Marktoberdorf)
-RB80;(Gemüden - Würzburg -) Steinach - Ansbach - Treuchtlingen
+RB80;(Gemünden - Würzburg -) Steinach - Ansbach - Treuchtlingen
 RB81;Steinach - Bad Windsheim - Neustadt
 RB82;Rothenburg - Steinach
 RE84;(Aschaffenburg -) Miltenberg - Amorbach - Seckach
@@ -116,7 +121,7 @@ RB91; Wicklesgreuth - Windsbach
 RB92;(Aulendorf -) Kißlegg - Lindau - Friedrichshafen
 RB93;Lindau - Friedrichshafen
 RB95;Marktredwitz - Schirnding - Cheb - Hof
-RE96;Lindau - Memmingen - Buchloe - Geltendorf - München
+RE96;Lindau - Kißlegg - Memmingen
 RB96;Hof - Selb
 RE98;Lindau - Bludenz
 RB98;Helmbrechts - Münchberg

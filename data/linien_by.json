@@ -22,7 +22,11 @@
       "owner": {
         "type": "twitter",
         "name": "SimonBredemeier"
-      }
+      },
+      "contributors": [{
+        "type": "twitter",
+        "name": "der_heubi"
+      }]
     }
   }]
 }
