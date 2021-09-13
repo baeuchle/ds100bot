@@ -8,6 +8,8 @@ log_ = log.getLogger(__name__)
 def filter_list(tweet_list):
     results = {}
     for api_tweet in tweet_list:
+        if api_tweet is None:
+            continue
         t = Tweet(api_tweet)
         if t.id in results:
             continue

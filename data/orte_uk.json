@@ -4,9 +4,13 @@
   "access": [{
     "x_source": "UK",
     "type": "#"
+  },{
+    "x_source": "GB",
+    "type": "#"
   }],
   "magic_hashtags": [
     "_UK",
+    "_GB",
     "🇬🇧"
   ],
   "data": [{

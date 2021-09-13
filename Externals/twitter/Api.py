@@ -94,6 +94,9 @@ class TwitterBase():
                    self.timeline(highest_id),
                    self.hashtag(tag, highest_id)):
             for t in tl:
+                if t is None:
+                    log_.error("Received None tweet")
+                    continue
                 results.append(t)
         return results
 
