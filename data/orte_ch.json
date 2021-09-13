@@ -39,6 +39,13 @@
     "source": {
       "name": "Eigene Zusammenstellung"
     },
+    "license": {
+      "name": "Standardlizenz",
+      "contributors": [{
+        "type": "twitter",
+        "name": "Stechny"
+      }]
+    },
     "comments": [
       "Zusätzliche Kürzel aus privaten Informationen"
     ]
