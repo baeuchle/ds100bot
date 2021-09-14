@@ -31,6 +31,7 @@ ICE78;Amsterdam - Arnheim - Duisburg - Düsseldorf - Köln - Frankfurt
 ICE79;Brüssel - Aachen - Köln - Frankfurt
 ICE82;Frankfurt - Mannheim < Saarbrücken | Karlsruhe - Strasbourg > Paris
 ICE83;(München - Augsburg -) Stuttgart - Karlsruhe - Strasbourg - Paris
+TGV83;(München - Augsburg -) Stuttgart - Karlsruhe - Strasbourg - Paris
 ICE84;Frankfurt - Mannheim - Strasbourg - Lyon - Marseille
 ECE85;Frankfurt - Mannheim - Karlsruhe - Basel - Luzern - Lugano - Milano
 ECE88;München - Lindau - St. Gallen - Zürich
