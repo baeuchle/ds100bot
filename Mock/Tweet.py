@@ -482,7 +482,7 @@ def mocked_tweets():
         ))
     list_of_tweets.append(TweepyMock(
         full_text='This tweet unusual tags Vol ⅶ: #_UK #ABE #ABER #_NL #Ah;#Ahg/#Apn #APD bot%tl%mt%unusual%436',
-        expected_answer='UK#ABE: Aber\nUK#ABER: Aber\nNL#Ah: Arnhem\nNL#Ahg: Arnhem Goederenstation\nNL#Apn: Alphen aan den Rijn',
+        expected_answer='GB#ABE: Aber\nGB#ABER: Aber\nNL#Ah: Arnhem\nNL#Ahg: Arnhem Goederenstation\nNL#Apn: Alphen aan den Rijn',
         id=436,
         user=User.followed
         ))

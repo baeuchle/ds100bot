@@ -100,7 +100,7 @@ El3;El3;„Bügel ab“-Ankündesignal;Signal „Bügel ab“ erwarten.;
 El4;El4;„Bügel ab“-Signal;Bügel ab.;
 El5;El5;„Bügel an“-Signal;Bügel an.;
 El6;El6;;Halt für Fahrzeuge mit gehobenen Stromabnehmern;
-Zg1;Zg1;Spitzensignal;Kennzeichnung der Zugspitze.;
+Zg1|Zg1a|Zg1b;Zg1|Zg1a|Zg1b;Spitzensignal;Kennzeichnung der Zugspitze.;
 Zg2;Zg2;Schlusssignal;Kennzeichnung des Zugschlusses.;
 Fz1;Fz1;Rangierlokomotivsignal;Kennzeichnung einer Lokomotive im Rangierdienst.;
 Fz2;Fz2;Gelbe Fahne;Kennzeichnung von Wagen, die während eines Stilllagers mit Personal besetzt sind.;
