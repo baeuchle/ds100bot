@@ -6,7 +6,7 @@ import argparse
 import sys
 
 from AnswerMachine import handle_list
-from Externals import get_externals
+from Externals import setup_database
 import Mock
 import Persistence.log as log
 
@@ -46,7 +46,9 @@ def arguments():
                         default='descriptive',
                         help='Kind of statistics output: One-line-summary or a little more verbose.'
                        )
+    parser.add_argument('--readwrite', default=False, help='Will be forced to be false')
     args_ = parser.parse_args()
+    args_.readwrite = False
     if args_.source == 'id' and args_.id is None:
         parser.print_help()
         parser.exit("Error: --source id given, but no --id found")
@@ -67,25 +69,21 @@ def setup_log(loglvl):
     log.basicConfig(level=loglvl, style='{')
     return log.getLogger('test_ds100')
 
-def setup_apis(args_):
-    api_ = get_externals(twmode='none', dbmode='readonly')
-    id_list = args_.id if args_.id is not None else []
-    api_.twitter = Mock.MockApi(mode=args_.source,
-                                id_list=[int(x) for x in id_list])
-    return api_
-
 if __name__ == "__main__":
     try:
         args = arguments()
         log_ = setup_log(args.verbose)
-        api = setup_apis(args)
+        id_list = args.id if args.id is not None else []
+        database = setup_database(args)
+        twitter = Mock.MockApi(mode=args.source,
+                               id_list=[int(x) for x in id_list])
 
-        tagsearch, magic_tags = api.database.magic_hashtags()
-        max_id = handle_list(api.twitter.all_relevant_tweets(
+        tagsearch, magic_tags = database.magic_hashtags()
+        max_id = handle_list(twitter.all_relevant_tweets(
                                 0, tagsearch
-                             ), apis=api, magic_tags=magic_tags)
+                             ), twitter=twitter, database=database, magic_tags=magic_tags)
         if args.source != 'external':
-            sys.exit(api.twitter.statistics(args.output))
+            sys.exit(twitter.statistics(args.output))
     except Exception as e: # pylint: disable=W0703
         log_.log(51, "TESTS FAIL TO RUN")
         log_.info("%s", e)

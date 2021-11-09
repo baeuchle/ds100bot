@@ -9,7 +9,7 @@ import pprint
 from textwrap import dedent
 from urllib.parse import urlparse
 from pathlib import Path
-from Externals import get_twitter_object
+from Externals import set_twitter_arguments, setup_twitter
 
 def print_tweet_details(tw, targetfile):
     quoted_status_id = None
@@ -80,6 +80,8 @@ parser.add_argument('--mode',
                     default='mock',
                     action='store'
                    )
+set_twitter_arguments(parser)
+
 args = parser.parse_args()
 do_mock = args.mode == 'mock'
 do_dump = args.mode == 'dump'
@@ -87,7 +89,7 @@ if args.mode == 'both':
     do_mock = True
     do_dump = True
 
-twapi = get_twitter_object('readonly')
+twapi = setup_twitter(args)
 
 tid = args.id
 if tid is None:

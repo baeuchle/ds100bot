@@ -4,7 +4,7 @@
 
 import argparse
 import datetime
-from Externals import get_externals
+from Externals import setup_database, set_twitter_arguments, setup_twitter
 import Mock
 import Persistence.log as log
 
@@ -16,13 +16,7 @@ first_last_month = (first - one_day).strftime("%Y%m01")
 first_last_year = (january_first - one_day).strftime("%Y0101")
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--readwrite',
-                    dest='twmode',
-                    help='Actually send tweets',
-                    required=False,
-                    action='store_const',
-                    const='readwrite',
-                    default='none')
+set_twitter_arguments(parser)
 parser.add_argument('--verbose', '-v',
                     dest='verbose',
                     help='Output lots of stuff',
@@ -59,12 +53,10 @@ else:
     since = int(args.since)
     since_text = since
 
-api = get_externals(twmode=args.twmode, dbmode='readonly')
-twapi = api.twitter
+twapi = setup_twitter(args)
 if twapi is None:
     twapi = Mock.MockApi()
-# setup database
-sql = api.database
+sql = setup_database(args)
 
 counts = sql.count_status(since=since)
 text = """Zeit für Statistik! Daten für die Zeit seit {}. Ich habe:

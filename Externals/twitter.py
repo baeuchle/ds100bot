@@ -1,22 +1,108 @@
-# pylint: disable=C0114
+"""Twitter API including Command line argumentation"""
 
+import configparser
+import time
 import tweepy
-from Externals.twitter.Measure import Measure
+
+from Externals.Measure import Measure
 import Persistence.log as log
 log_ = log.getLogger(__name__)
 tweet_log_ = log.getLogger('tweet', '{message}')
 
-class TwitterBase():
-    def __init__(self):
-        import credentials # pylint: disable=C0415
-        auth = tweepy.OAuthHandler(credentials.consumer_key, credentials.consumer_secret)
-        auth.set_access_token(credentials.access_token, credentials.access_token_secret)
+def set_arguments(ap):
+    group = ap.add_argument_group('Twitter API', description='Configure Twitter API')
+    group.add_argument('--config',
+                        action='store',
+                        help='path to configuration file',
+                        required=True)
+    group.add_argument('--application',
+                        action='store',
+                        help='Name of the twitter application',
+                        required=True)
+    group.add_argument('--user',
+                        action='store',
+                        help='Name of the user',
+                        required=True
+                        )
+    group.add_argument('--readwrite',
+                        action='store_true',
+                        help="Don't tweet, only read tweets.",
+                        required=False)
+
+class Twitter:
+    def __init__(self, api, readwrite=False):
+        self.twit = api
         try:
-            self.twit = tweepy.API(auth)
             self.myself = self.twit.me()
         except tweepy.error.TweepError as te:
             raise RuntimeError(str(te))
         self.measure = Measure()
+        self.readonly = not readwrite
+
+    def tweet_single(self, text, **kwargs):
+        """Actually posts text as a new tweet.
+
+        kwargs are passed to tweepy directly.
+
+        Returns:
+            - the ID of the newly created tweet if there were no errors (positive)
+            - -1 if there was an unknown error
+            - -api_code if there was an error with API code api_code
+
+        If api_code is 185 (status update limit), then the program pauses 1 minute and tries again
+        (this will be repeated indefinitely) An error message will be logged each time.
+
+        If api_code is neither 185 nor 187 (duplicate tweet), a critical log message will be logged.
+        """
+        if len(text) == 0:
+            log_.error("Empty tweet?")
+            return -1
+        if tweet_log_.isEnabledFor(log.WARNING):
+            lines = text.splitlines()
+            length = max([len(l) for l in lines])
+            tt = "▄{}┓\n".format('━'*(length+2))
+            for l in lines:
+                tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
+            tt += "▀{}┛".format('━'*(length+2))
+            tweet_log_.warning(tt)
+        if self.readonly:
+            return 1
+        while True: # catches rate limit
+            try:
+                new_tweet = self.twit.update_status(text, **kwargs)
+                return new_tweet.id
+            except tweepy.TweepError as twerror:
+                if twerror.api_code is None:
+                    log_.critical("Unknown error while tweeting: %s", twerror.reason)
+                    return -1
+                if twerror.api_code == 185: # status update limit (tweeted too much)
+                    log_.error("Tweeted too much, waiting 1 Minute before trying again")
+                    time.sleep(60)
+                    continue
+                if twerror.api_code == 385:
+                    log_.critical("Error 385: Tried to reply to deleted or invisible tweet %s",
+                        kwargs.get('in_reply_to_status_id', 'N/A'))
+                elif twerror.api_code != 187: # duplicate tweet
+                    log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
+                return -int(twerror.api_code)
+
+    def follow(self, user):
+        log_.warning("Follow @%s", user.screen_name)
+        if self.readonly:
+            return
+        try:
+            self.twit.create_friendship(id=user.id)
+        except tweepy.RateLimitError as rateerror:
+            self.warn_rate_error(rateerror, "follow @{}".format(user.screen_name))
+
+    def defollow(self, user):
+        log_.warning("Defollow @%s", user.screen_name)
+        if self.readonly:
+            return
+        try:
+            self.twit.destroy_friendship(id=user.id)
+        except tweepy.RateLimitError as rateerror:
+            self.warn_rate_error(rateerror, "defollow @{}".format(user.screen_name))
 
     def warn_rate_error(self, rate_err, description):
         log_.critical("Rate limit violated at %s: %s", description, rate_err.reason)
@@ -69,24 +155,6 @@ class TwitterBase():
             kwargs['in_reply_to_status_id'] = new_reply_id
             reply_id = new_reply_id
         return reply_id
-
-    def tweet_single(self, text, **_): # pylint: disable=R0201
-        """General handling of actual tweet data. If log level is Warning or lower, then
-        pretty-print the text of the tweet.
-
-        Returns a negative value for empty strings, a positive value for else."""
-        if len(text) == 0:
-            log_.error("Empty tweet?")
-            return -1
-        if tweet_log_.isEnabledFor(log.WARNING):
-            lines = text.splitlines()
-            length = max([len(l) for l in lines])
-            tt = "▄{}┓\n".format('━'*(length+2))
-            for l in lines:
-                tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
-            tt += "▀{}┛".format('━'*(length+2))
-            tweet_log_.warning(tt)
-        return 1
 
     def all_relevant_tweets(self, highest_id, tag):
         results = []
@@ -154,12 +222,6 @@ class TwitterBase():
                           twerror.reason)
         return None
 
-    def follow(self, user): # pylint: disable=R0201
-        log_.warning("Follow @%s", user.screen_name)
-
-    def defollow(self, user): # pylint: disable=R0201
-        log_.warning("Defollow @%s", user.screen_name)
-
     def is_followed(self, user):
         try:
             return self.twit.show_friendship(
@@ -176,3 +238,20 @@ class TwitterBase():
         if other_id in tlist:
             return None
         return self.get_tweet(other_id)
+
+def make_twapi(args):
+    config = configparser.ConfigParser()
+    config.read(args.config)
+    auth = tweepy.OAuthHandler(
+        config[args.application]['key'],
+        config[args.application]['secret']
+    )
+    auth.set_access_token(
+        config[args.user]['token'],
+        config[args.user]['secret']
+    )
+    try:
+        api = tweepy.API(auth)
+    except tweepy.error.TweepError as te:
+        raise RuntimeError(str(te))
+    return Twitter(api, args.readwrite)

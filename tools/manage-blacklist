@@ -5,16 +5,20 @@
 import argparse
 import sys
 import parentdir # pylint: disable=W0611
-from Externals import get_database_object
+from Externals import setup_database
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--list', action='store_true', required=False, default=False)
 parser.add_argument('--add', action='store', required=False)
 # parser.add_argument('--remove', action='store', required=False)
 parser.add_argument('--statistics-for', action='store', required=False)
+parser.add_argument('--readwrite',
+                    help='Actually do stuff',
+                    required=False,
+                    default=True)
 args = parser.parse_args()
 
-sql = get_database_object('readwrite')
+sql = setup_database(args)
 
 if args.list:
     sql.cursor.execute("""
