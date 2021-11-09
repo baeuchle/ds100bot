@@ -85,7 +85,7 @@ class Database:
                 request_date >= ?
             GROUP BY S
             ORDER BY C DESC
-            LIMIT 0, 7
+            LIMIT 0, 5
         """, (since, ))
         return self.cursor.fetchall()
 
