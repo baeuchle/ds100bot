@@ -5,16 +5,17 @@
 import argparse
 import sys
 import parentdir # pylint: disable=W0611
-from Externals import get_database_object
+from Externals import setup_database
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--list', action='store_true', required=False, default=False)
 parser.add_argument('--add', action='store', required=False)
 # parser.add_argument('--remove', action='store', required=False)
 parser.add_argument('--statistics-for', action='store', required=False)
+parser.add_argument('--readwrite', help='Change Database', required=False, default=True)
 args = parser.parse_args()
 
-sql = get_database_object('readwrite')
+sql = setup_database(args)
 
 if args.list:
     sql.cursor.execute("""
@@ -34,9 +35,9 @@ if not args.statistics_for is None:
             count(status) as c,
             status
         FROM
-            requests
+            requestlog
         WHERE
-            ds100_id LIKE ?
+            abbreviation LIKE ?
         GROUP BY
             status
     """, (args.statistics_for, ))
@@ -52,29 +53,17 @@ if not args.add is None:
             1
         FROM
             blacklist
-        JOIN
-            sourceflags
-        ON
-            sourceflags.sourcename = blacklist.source
         WHERE
-            abbr || ':' || Abk = ?
+            source || ':' || Abk = ?
     """, (args.add, ))
     row = sql.cursor.fetchone()
     if row is None:
-        a = sql.cursor.execute("""
+        parts = args.add.split(':')
+        sql.cursor.execute("""
             INSERT INTO
                 blacklist(source, Abk)
-            SELECT
-                sourcename, Abk
-            FROM
-                sourceflags
-            JOIN
-                shortstore
-            ON
-                sourcename = source
-            WHERE
-                sigil || abbr || ':' || Abk = ?
-        """, (args.add,))
+            VALUES(?, ?)
+        """, (parts[0], parts[1],))
         if sql.cursor.rowcount == 0:
             print("Keine Daten eingetragen", file=sys.stderr)
             sys.exit(1)

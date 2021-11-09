@@ -1,15 +1,25 @@
 # pylint: disable=C0114
 
-from collections import namedtuple
 import tweepy # for exceptions
-from Externals import TwitterBase
-from Externals.twitter.Measure import Measure
+from Externals import Twitter
+from Externals.Measure import Measure
 from AnswerMachine.tweet import Tweet
 import Persistence.log as log
 from .Tweet import User, mocked_source, mocked_tweets
 log_ = log.getLogger(__name__)
 
-class MockApi(TwitterBase):
+class Count: # pylint: disable=too-few-public-methods
+    def __init__(self):
+        self.correct = 0
+        self.missed = 0
+        self.bad_content = 0
+
+class Result: # pylint: disable=too-few-public-methods
+    def __init__(self):
+        self.tweet = Count()
+        self.follow = Count()
+
+class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
     def __init__(self, **kwargs):
         log_.setLevel(log_.getEffectiveLevel() - 10)
         self.running_id = 10001
@@ -27,6 +37,7 @@ class MockApi(TwitterBase):
         self.replies = {}
         self.double_replies = []
         self.measure = Measure()
+        self.readonly = True
 
     def get_tweet(self, tweet_id):
         for t in self.mock:
@@ -76,11 +87,7 @@ class MockApi(TwitterBase):
 
     def statistics(self, output='descriptive'):
         stat_log = log.getLogger('statistics', '{message}')
-        res_count = namedtuple('Results', ['tweet', 'follow'])
-        res_count.tweet = namedtuple('Tweets', ['correct', 'missed', 'bad_content'])
-        res_count.tweet.correct = 0
-        res_count.tweet.missed = 0
-        res_count.tweet.bad_content = 0
+        res_count = Result()
         stat_log.debug("    RESULTS")
         for t in self.mock:
             was_replied_to = t.id in self.replies
@@ -107,9 +114,6 @@ class MockApi(TwitterBase):
             stat_log.warning(t.expected_answer)
             stat_log.warning("↑↑↑↑EXPECTED↑↑↑↑  ↓↓↓↓GOT THIS↓↓↓↓")
             stat_log.warning(self.replies[t.id])
-        res_count.follow = namedtuple('Following', ['correct', 'wrong'])
-        res_count.follow.correct = 0
-        res_count.follow.wrong = 0
         for l in User.followers, User.nonfollowers:
             for u in l:
                 if u.follows == u.follow_after:
@@ -119,14 +123,14 @@ class MockApi(TwitterBase):
                 else:
                     stat_log.error("User @%s doesn't follow correctly (should %s, does %s)",
                                    u.screen_name, u.follow_after, u.follows)
-                    res_count.follow.wrong += 1
+                    res_count.follow.missed += 1
         self.report_statisctics(stat_log, output, res_count)
-        return res_count.tweet.missed + res_count.tweet.bad_content + res_count.follow.wrong
+        return res_count.tweet.missed + res_count.tweet.bad_content + res_count.follow.missed
 
     def report_statisctics(self, stat_log, output, res_count): # pylint: disable=R0201
         denominator = (res_count.tweet.correct + res_count.tweet.missed +
                        res_count.tweet.bad_content + res_count.follow.correct +
-                       res_count.follow.wrong)
+                       res_count.follow.missed)
         if denominator == 0:
             stat_log.log(51, "No testcases found")
         elif output == 'descriptive':
@@ -134,11 +138,11 @@ class MockApi(TwitterBase):
             stat_log.log(51, "INCORRECT TEXT:         %2d", res_count.tweet.bad_content)
             stat_log.log(51, "WRONG ANSWER/NOT ANSWER:%2d", res_count.tweet.missed)
             stat_log.log(51, "CORRECT FOLLOWING:      %2d", res_count.follow.correct)
-            stat_log.log(51, "WRONG FOLLOWING:        %2d", res_count.follow.wrong)
+            stat_log.log(51, "WRONG FOLLOWING:        %2d", res_count.follow.missed)
         elif output == 'summary':
             ratio = (res_count.tweet.correct + res_count.follow.correct) / (0.0 + denominator)
             stat_log.log(51, "A %d/%d F %d/%d R %.1f%%",
                          res_count.tweet.correct,
                          res_count.tweet.bad_content + res_count.tweet.missed,
-                         res_count.follow.correct, res_count.follow.wrong,
+                         res_count.follow.correct, res_count.follow.missed,
                          100.0 * ratio)

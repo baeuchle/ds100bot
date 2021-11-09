@@ -128,13 +128,13 @@ class Tweet:
             return 'all'
         return None
 
-    def process_other_tweets(self, tweet_list, myself, magic, apis):
+    def process_other_tweets(self, tweet_list, **kwargs):
         for other_id in self.quoted_status_id(), self.in_reply_id():
-            other_tweet = apis.twitter.get_other_tweet(other_id, tweet_list)
+            other_tweet = kwargs['twitter'].get_other_tweet(other_id, tweet_list)
             if other_tweet is None:
                 continue
             bot_tweet = Tweet(other_tweet)
-            bot_tweet.process_as_other(myself, magic, apis, self)
+            bot_tweet.process_as_other(self, **kwargs)
 
     def default_magic_hashtag(self, magic):
         dmt_list = [t[0] for t in self.hashtags(magic)]
@@ -143,17 +143,17 @@ class Tweet:
             dmt = dmt_list[0]
         return dmt
 
-    def process_as_other(self, myself, magic, apis, orig_tweet):
-        if not self.is_eligible(myself):
+    def process_as_other(self, orig_tweet, **kwargs):
+        if not self.is_eligible(kwargs['myself']):
             return
-        if self.is_mention(myself):
+        if self.is_mention(kwargs['myself']):
             log_.info("Not processing other tweet because it already mentions me")
             return
-        if self.has_hashtag(magic):
-            log_.info(
-            "Not processing other tweet because it already has the magic hashtag")
+        if self.has_hashtag(kwargs['magic']):
+            log_.info("Not processing other tweet because it already has the magic hashtag")
             return
-        mode = orig_tweet.get_mode(myself, magic)
-        dmt = orig_tweet.default_magic_hashtag(magic)
+        mode = orig_tweet.get_mode(kwargs['myself'], kwargs['magic'])
+        dmt = orig_tweet.default_magic_hashtag(kwargs['magic'])
         log_.debug("Processing tweet %d mode '%s' default magic hash tag %s", self.id, mode, dmt)
-        process_tweet(self, apis, magic, modus=mode, default_magic_tag=dmt)
+        process_tweet(self, kwargs['twitter'], kwargs['database'], kwargs['magic'],
+                      modus=mode, default_magic_tag=dmt)

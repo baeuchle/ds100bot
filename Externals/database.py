@@ -6,13 +6,16 @@ import Persistence.log as log
 from GitVersion import Git
 log_ = log.getLogger(__name__)
 
+def setup_database(cli_args):
+    return Database(cli_args.readwrite)
+
 class Database:
-    def __init__(self, mode):
+    def __init__(self, readwrite):
         git_ = Git()
         self.sql = sqlite3.connect(git_.topdir() + '/info.db')
         self.sql.row_factory = sqlite3.Row
         self.cursor = self.sql.cursor()
-        self.readonly = (mode == 'readonly')
+        self.readonly = not readwrite
         if self.readonly:
             log_.info('Running with readonly database')
 
@@ -82,7 +85,7 @@ class Database:
                 request_date >= ?
             GROUP BY S
             ORDER BY C DESC
-            LIMIT 0, 7
+            LIMIT 0, 5
         """, (since, ))
         return self.cursor.fetchall()
 

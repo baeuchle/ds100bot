@@ -7,7 +7,7 @@ from .result import Result
 log_ = log.getLogger(__name__)
 follog_ = log.getLogger(__name__ + '.following', '{name} {message}')
 
-def process_tweet(tweet, api, magic_tags, modus=None, default_magic_tag='DS100'):
+def process_tweet(tweet, twitter, database, magic_tags, **kwargs):
     textlist = list(tweet.text)
     for key in ['media', 'urls']:
         if key in tweet.original.entities:
@@ -18,14 +18,15 @@ def process_tweet(tweet, api, magic_tags, modus=None, default_magic_tag='DS100')
                 textlist[start:end] = '_'*length
     tweet.text = "".join(textlist)
     reply = compose_answer(tweet.text,
-                           api.database,
+                           database,
                            tweet.hashtags(magic_tags),
-                           modus,
-                           default_magic_tag)
+                           kwargs.get('modus', None),
+                           kwargs.get('default_magic_tag', 'DS100')
+                          )
     if len(reply.strip()) == 0:
         log_.info("No expandable content found")
         return
-    api.twitter.tweet(reply,
+    twitter.tweet(reply,
         in_reply_to_status_id=tweet.id,
         auto_populate_reply_metadata=True
     )

@@ -6,7 +6,7 @@ import argparse
 import sys
 
 from AnswerMachine import handle_list
-from Externals import get_externals
+from Externals import setup_database, set_twitter_arguments, setup_twitter
 import Persistence
 import Persistence.log as log
 
@@ -17,12 +17,7 @@ def arguments():
                         help='Output lots of stuff',
                         required=False,
                         action='count')
-    parser.add_argument('--readwrite',
-                        dest='rw',
-                        help='Actually send tweets and store data in DB',
-                        required=False,
-                        action='store_true',
-                        default=False)
+    set_twitter_arguments(parser)
     parser.add_argument('--no-version',
                         dest='notify_version',
                         help='Do not send out version tweet and do not store last version',
@@ -42,33 +37,31 @@ def setup_log(loglvl):
     log.basicConfig(level=loglvl, style='{')
     return log.getLogger('ds100')
 
-def setup_apis(args_):
-    mode = 'readwrite' if args_.rw else 'readonly'
-    api_ = get_externals(mode=mode)
-    if args_.notify_version:
-        Persistence.notify_new_version(api_)
-    return api_
-
-def teardown_apis(api_, notify, max_id_=0):
+def teardown_apis(db, notify, max_id_=0):
     if notify:
-        Persistence.store_version(api_.database)
+        Persistence.store_version(db)
     if max_id > 0:
-        Persistence.store_since_id(api_.database, max_id_)
-    api_.database.close_sucessfully()
+        Persistence.store_since_id(db, max_id_)
+    db.close_sucessfully()
     log_.info("Bot finished")
 
 if __name__ == "__main__":
     args = arguments()
     log_ = setup_log(args.verbose)
-    api = None
     try:
-        api = setup_apis(args)
+        twitter = setup_twitter(args)
+        database = setup_database(args)
+        if args.notify_version:
+            Persistence.notify_new_version(twitter, database)
     except RuntimeError as re:
         log_.critical(re)
         sys.exit(1)
 
-    tagsearch, magic_tags = api.database.magic_hashtags()
-    max_id = handle_list(api.twitter.all_relevant_tweets(
-                            Persistence.get_since_id(api.database), tagsearch
-                         ), apis=api, magic_tags=magic_tags)
-    teardown_apis(api, args.notify_version, max_id)
+    tagsearch, magic_tags = database.magic_hashtags()
+    max_id = handle_list(twitter.all_relevant_tweets(
+                            Persistence.get_since_id(database), tagsearch
+                         ),
+                         twitter=twitter,
+                         database=database,
+                         magic_tags=magic_tags)
+    teardown_apis(database, args.notify_version, max_id)
