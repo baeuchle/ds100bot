@@ -1,7 +1,7 @@
 {
   "id": "linien_ffm",
   "headline": "Linien Frankfurt",
-  "description": "Stadtbahn- und Straßenbahnlinien der <a href=\"https://vgf-ffm.de\">VGF</a>",
+  "description": "Kommunale Nahverkehrslinien in Frankfurt",
   "access": [{
     "x_source": "FFM",
     "type": "/"
