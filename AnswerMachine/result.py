@@ -77,11 +77,19 @@ class Result:
                 )
                 ))
             AND s2.is_default
-            LIMIT 1
             """,
             self.candidate.get_dict()
         )
-        return sql.fetchone()
+        result = sql.fetchall()
+        if not result:
+            return None
+        if len(result) == 1:
+            return result[0]
+        # if more than one: BOT has *no* precedence.
+        for row in result:
+            if row['req_xs'] != 'BOT':
+                return row
+        return result[0]
 
     def loggable(self, magic_tags):
         if self.status in ('found', 'blacklist'):
