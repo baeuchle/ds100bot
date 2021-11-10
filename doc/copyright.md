@@ -34,8 +34,9 @@ Verwendete Daten
 Der Bot greift auf verschiedene Datenquellen zurück. Die Auswahl der
 Datenquelle geschieht auf Grund des ersten Teils des Suchbegriffs, etwa
 bei ‚\#DS:FF‘ der Teil ‚__\#DS:__‘. Ist kein solcher Teil vorhanden
-(‚FF‘) oder besteht er nur aus ‚__\#__‘ oder ‚__\$__‘ (‚\#FF‘), werden
+(‚FF‘) oder besteht er nur aus ‚__\#__‘ oder ‚__$__‘ (‚\#FF‘), werden
 die Quellen aus dem aktuellen __[Magic Hashtag](finde-listen.html)__
 oder __\#BOT__ (nur bei ‚__\#__‘) benutzt.
 
-Folgende Datenquellen werden vom Bot benutzt:
+Folgende Datenquellen werden vom Bot benutzt; Informationen zu den
+jeweiligen Lizenzen und Quellen finden sich bei den Dumps:

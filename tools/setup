@@ -55,7 +55,7 @@ sRM.write(output_dir / 'sources.html')
 
 licpage = Documentation.Licenses(doc_source / 'copyright.md', navilinks)
 
-for cid, config in configurations.items():
+for cid, config in sorted(configurations.items()):
     log_.info("Processing file %s", cid)
     is_default = True
     for a in config.access:
@@ -68,6 +68,7 @@ for cid, config in configurations.items():
             sys.exit(1)
     Documentation.dump_source(config, dumplinks, navilinks, database, dump_dir)
     licpage.add_source(config)
+
 licpage.write(output_dir / 'copyright.html')
 Documentation.dump_blacklist(dumplinks, navilinks, database, dump_dir)
 database.close_sucessfully()
