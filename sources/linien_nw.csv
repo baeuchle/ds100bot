@@ -1,0 +1,103 @@
+Linie;Laufweg
+S1;Solingen - Düsseldorf - Duisburg - Essen - Bochum - Dortmund
+S1N;Minden - Hannover
+S2;(Essen - Gelsenkirchen | Recklinghausen) - Herne - Dortmund
+S3;Oberhausen - Mülheim - Essen - Hattingen
+S4;Dortmund-Lütgendortmund - Dorstfeld - Dortmund-Wickede - Unna
+S5;Hagen - Wetter - Witten - Dortmund
+S5N;Hannover Flughafen - Hannover - Hameln - Paderborn
+S6;Köln - Leverkusen - Langenfeld (- Düsseldorf - Essen)
+S7;Wuppertal - Remscheid-Lennep - Remscheid - Solingen
+S8;Mönchengladbach - Neuss - Düsseldorf - Wuppertal - Schwelm - Hagen
+S9;Hagen - Wuppertal - Velbert - Essen - Bottrop - (Haltern am See | Recklinghausen)
+S11;Bergisch Gladbach - Köln - Dormagen - Neuss - Düsseldorf - Düsseldorf Flughafen
+S12;Au (Sieg) - Eitorf - Hennef - Siegburg - Troisdorf - Köln - Horrem
+S19;Au (Sieg) - Hennef (Sieg) - Köln - Horrem - Düren
+S23;Euskirchen - Rheinbach - Meckenheim Bonn
+S28;Kaarst - Neuss - Düsseldorf - Mettmann - Wuppertal
+S68;Langenfeld - Düsseldorf - Wuppertal-Vohwinkel
+RE1;(RRX) Aachen - Düren - Köln - Düsseldorf - Duisburg - Essen - Bochum - Dortmund - Hamm
+RE2;Düsseldorf - Duisburg - Essen - Gelsenkirchen - Recklinghausen - Haltern am See - Münster - Osnabrück
+RE3;Düsseldorf - Duisburg - Oberhausen - Gelsenkirchen - Dortmund - Hamm
+RE4;Aachen - Erkelenz - Mönchengladbach - Düsseldorf - Wuppertal - Hagen - Witten - Dortmund
+RE5;(RRX) Wesel - Oberhausen - Duisburg - Düsseldorf - Köln - Bonn - Koblenz
+RE6;(RRX) Köln - Düsseldorf - Duisburg - Essen - Dortmund - Hamm - Bielefeld - Minden
+RE7;Rheine - Münster - Hamm - Hagen - Wuppertal - Köln - Neuss - Krefeld
+RE8;Mönchengladbach - Grevenbroich - Pulheim - Köln - Troisdorf - BN-Beuel - Neuwied - Koblenz
+RE9;Aachen - Düren - Köln - Troisdorf - Siegburg/Bonn - Hennef - Betzdorf - Siegen
+RE10;Kleve - Geldern - Krefeld - Düsseldorf
+RE11;(RRX) Düsseldorf - Duisburg - Essen - Dortmund - Hamm (- Paderborn - Kassel)
+RE12;Köln - Euskirchen - Mechernich - Kall - Jünkerath - Gerolstein - Trier
+RE13;Venlo - Mönchengladbach - Düsseldorf - Wuppertal - Hagen - Hamm
+RE14;(Coesfeld | Borken) - Dorsten - Bottrop - Essen (- E-Steele)
+RE15;Emden - Leer - Meppen - Lingen - Rheine - Münster
+RE16;(Siegen - Finnentrop | Iserlohn) - Letmathe - Hagen - Bochum - Essen
+RE17;Hagen - Schwerte - Bestwig - Brilon Wald - Warburg - Kassel
+RE18;Aachen - Herzogenrath - Heerlen - Maastricht
+RE19;(Arnhem - Emmerich | Bocholt) - Wesel - Oberhausen - Duisburg - Düsseldorf
+RB20;Stolberg - Alsdorf - Herzogenrath - Aachen - Stolberg - (Stolberg Altstadt | Eschweiler-Weisweiler - Langerwehe - Düren)
+RB21;Heimbach - Kreuzau - Düren - Jülich - Linnich
+RE22;Köln - Euskirchen - Mechernich - Kall - Jünkerath - Gerolstein
+RB23;Bad Münstereifel - Euskirchen
+RB24;Köln - Erftstadt - Euskirchen - Mechernich - Kall - Jünkerath - Gerolstein
+RB25;Lüdenscheid - Meinerzhagen - Marienheide - Gummersbach - Overath - Rösrath - Köln
+RB26;Köln - Brühl - Bonn - Remagen - Koblenz - Mainz
+RB27;Mönchengladbach - Grevenbroich - Pulheim - Köln - Troisdorf - BN-Beuel - Linz - Neuwied - Koblenz
+RB28;Euskirchen - Zülpich - Düren
+RB28R;Neuwied - Niederlahnstein
+RE29;Spa - Pepinster - Welkenraedt - Aachen
+RB30;Ahrbrück - Bad Neuenahr - Remagen - Bonn
+RB31;Xanten - Moers - Duisburg
+RB32;Dortmund - Gelsenkirchen - Duisburg
+RB33;(Essen - Krefeld - Mönchengladbach | Heinsberg) - Lindern - Aachen
+RB34;Dalheim - Wegberg - Mönchengladbach
+RB35;Gelsenkirchen - Oberhausen - Duisburg - Krefeld - Mönchengladbach
+RB36;Duisdorf-Ruhrort - Oberhausen
+RB38;Bedburg - Bergheim - Horrem (- Köln)
+RB39;(Düsseldorf -) Neuss - Grevenbroich - Bedburg
+RB39R;Ahrbrück - Kreuzberg - Dernau - Bad Neuenahr - Remagen
+RB40;Essen - Bochum - Witten - Hagen
+RE42;Mönchengladbach - Duisburg - Essen - Gelsenkirchen - Recklinghausen - Münster
+RB43;Dorsten - Wanne-Eickel - Herne - Dortmund
+RE44;Moers - Oberhausen - Bottrop
+RB46;Gelsenkirchen - Wanne-Eickel - Bochum
+RB48;Wuppertal - Solingen - Köln - Bonn - BN-Mehlem
+RE49;Wuppertal - Essen - Oberhausen - Wesel
+RB50;Münster - Lünen - Dortmund
+RB51;Enschede - Gronau - Coesfeld - Lünen - Dortmund
+RB52;Dortmund - Hagen - Lüdenscheid
+RB53;Dortmund - Schwerte - Iserlohn
+RB54;Unna - Fröndenberg - Menden - Neuenrade
+RE57;(Winterberg | Brilon Stadt) - Bestwig - Arnsberg - Dortmund
+RB58;Osnabrück - Halen - Bramsche - Delmenhorst - Bremen
+RB59;Dortmund - Unna - Soest
+RE60;Rheine - Osnabrück - Minden - Hannover - Braunschweig
+RB61;Hengelo - Bad Bentheim - Rheine - Osnabrück - Herford - Bielefeld
+RB63;Coesfeld - Münster
+RB64;Enschede - Gronau - Burgsteinfurt - Münster
+RB65;Rheine - Münster
+RB66;Osnabrück - Lengerich - Münster
+RB67;Bielefeld - Gütersloh - Rheda-Wiedenbrück - Beelen - Münster
+RB69;Münster - Hamm - Rheda-Wiedenbrück - Bielefeld
+RE70;Bielefeld - Minden - Hannover - Braunschweig
+RB71;Rahden - Bünde - Herford - Bielefeld
+RB72;Herford - Detmold - Altenbeken - Paderborn
+RB73;Bielefeld - Lage - Lemgo-Lüttfeld
+RB74;Paderborn - Sennestadt - Bielefeld
+RB75;Bielefeld - Halle - Osnabrück
+RB77;Bünde - Löhne - Hameln - Hildesheim
+RE78;Bielefeld - Herford - Minden - Nienburg
+RE82;Altenbeken - Detmold - Bielefeld
+RB84;Holzminden - Ottbergen - Altenbeken - Paderborn
+RB85;Paderborn - Ottbergen - Bodenfelde - Göttingen
+RB89;Münster - Hamm - Soest - Paderborn - Warburg
+RB90;Siegen - Betzdorf - Au (Sieg) - Altenkirchen - Westerburg
+RB91;(Siegen - Finnentrop | Iserlohn) - Letmathe - Hagen
+RB92;Finnentrop - Olpe
+RB93;Bad Berleburg - Erndtebrück - Hilchenbach - Siegen - Betzdorf
+RB94;Erndtebrück - Feudingen - Bad Laasphe - Marburg
+RB95;Siegen - Dillenburg
+RB96;Betzdorf - Neunkirchen - Burbach - Haiger - Dillenburg
+RB97;Brilon - Korbach - Frankenberg - Marburg
+RB97R;Daaden - Betzdorf
+RE99;Siegen - Haiger - Gießen - Frankfurt
