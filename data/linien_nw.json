@@ -15,7 +15,8 @@
     "delim": ";",
     "file": "sources/linien_nw.csv",
     "source": {
-      "name": "Eigene Zusammenstellung"
+      "name": "Eigene Zusammenstellung auf Basis des NRW Fahrplanbuch 2022",
+      "url": "https://www.mobil.nrw/fileadmin/01_Content_Sales_Hub/Downloadcenter/NRW_Fahrplanbuch_2022.pdf"
     },
     "license": {
       "name": "CC0",
@@ -24,6 +25,9 @@
         "type": "twitter",
         "name": "C1710"
       }
-    }
+    },
+    "comments": [
+      "Stand: Januar 2022"
+    ]
   }]
 }
