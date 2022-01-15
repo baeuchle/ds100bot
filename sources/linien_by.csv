@@ -97,15 +97,15 @@ RS7;Memmingen - Illertissen - Senden - Neu-Ulm - Ulm
 RE70;München - Geltendorf - Buchloe - Kempten - Immenstadt - Lindau-Insel
 RE71;Augsburg - Buchloe - Memmingen
 RS71;Ulm - Neu-Ulm - Senden - Weißenhorn
-RE72;München - Geltendorf - Buchloe - Memmingen (- Leutkirch - Kißlegg - Hergatz - Lindau-Insel)
+RE72;München - Geltendorf - Buchloe - Memmingen
 RE73;(Augsburg - Buchloe -) Türkheim - Bad Wörishofen
 RB73;Kempten - Pfronten-Steinach (- Reutte (Tirol))
+RB74;Buchloe - Kaufering - Geltendorf - Fürstenfeldbruck - München-Pasing - München Hbf
 RE74;München - Geltendorf - Buchloe - Kempten
 RE75;Ulm - Memmingen - Kempten (- Immenstadt - Oberstdorf)
-RE77;Ulm - Memmingen - Kempten - Immenstadt - Hergatz - Lindau-Insel / Wangen (Allgäu)
 RB77;Augsburg - Buchloe - Biessenhofen - Füssen
 RB78;Günzburg - Krumbach (- Mindelheim)
-RE79;Augsburg - Buchloe (- Marktoberdorf)
+RE79;Augsburg - Buchloe - Kempten
 RB80;(Gemünden - Würzburg -) Steinach - Ansbach - Treuchtlingen
 RB81;Steinach - Bad Windsheim - Neustadt
 RB82;Rothenburg - Steinach
@@ -118,10 +118,10 @@ RB88; Aschaffenburg - Miltenberg
 RE89;Aalen - Nördlingen - Donauwörth - Augsburg - München
 RB89;Aalen - Nördlingen - Donauwörth
 RB91; Wicklesgreuth - Windsbach
-RB92;(Aulendorf -) Kißlegg - Lindau - Friedrichshafen
+RB92;Lindau-Insel - Wangen (Allgäu) - Kißlegg - Leutkirch - Memmingen
 RB93;Lindau - Friedrichshafen
 RB95;Marktredwitz - Schirnding - Cheb - Hof
-RE96;Lindau - Kißlegg - Memmingen
+RE96;Lindau-Reutin - Kißlegg - Memmingen - Buchloe - München Hbf
 RB96;Hof - Selb
 RE98;Lindau - Bludenz
 RB98;Helmbrechts - Münchberg
