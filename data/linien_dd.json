@@ -24,7 +24,11 @@
       "owner": {
         "type": "twitter",
         "name": "moritzkraehe"
-      }
+      },
+      "contributors": [{
+        "type": "twitter",
+        "name": "jonaes_"
+      }]
     }
   }]
 }
