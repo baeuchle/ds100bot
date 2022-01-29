@@ -24,7 +24,11 @@
       "owner": {
         "type": "twitter",
         "name": "jonasr_97"
-      }
+      },
+      "contributors": [{
+        "type": "twitter",
+        "name": "jonaes_"
+      }]
     }
   }]
 }

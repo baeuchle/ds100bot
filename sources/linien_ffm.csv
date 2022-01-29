@@ -1,13 +1,5 @@
 Nummer,Laufweg
-U1,Ginnheim - Nordwestzentrum - Heddernheim - Südbahnhof
-U2,Bad Homburg Gonzenheim - Nieder-Eschbach - Riedwiese - Heddernheim - Südbahnhof
-U3,Oberursel Hohemark - Oberursel Bf - Niederursel - Heddernheim - Südbahnhof
-U4,Enkheim - Seckbacher Landstraße - Konstablerwache - Hauptbahnhof - Bockenheimer Warte
-U5,Preungesheim - Konstablerwache - Hauptbahnhof
-U6,Hausen - Industriehof - Zoo - Ostbahnhof
-U7,Heerstraße - Industriehof - Zoo - Eissporthalle/Festplatz - Enkheim
-U8,(Nieder-Eschbach -) Riedberg - Niederursel - Heddernheim - Südbahnhof
-U9,Nieder-Eschbach - Riedberg - Niederursel - Nordwestzentrum - Ginnheim
+652,Gravenbruch - Frankfurt Südbahnhof
 11,Höchst Zuckschwerdtstraße - Nied Kirche - Mönchhofstraße - Hauptbahnhof - Innenstadt - Ostbahnhof - Hanauer Landstraße - Fechenheim Schießhüttenstraße
 12,Schwanheim Rheinlandstraße - Niederrad - Hauptbahnhof - Innenstadt - Konstablerwache - Bornheim Mitte - Fechenheim Hugo-Junkers-Straße
 13;EEx,Ebbelwei-Expreß: Zoo - Innenstadt - Hauptbahnhof - Festhalle/Messe - Hauptbahnhof - Südbahnhof - Lokalbahnhof - Zoo
@@ -37,14 +29,13 @@ U9,Nieder-Eschbach - Riedberg - Niederursel - Nordwestzentrum - Ginnheim
 42,Enkheim Victor-Slotosch-Straße - Enkheim (U) - Bergen
 44,Seckbach Leonhardsgasse - Friedhof Fechenheim
 45,Frankfurt Südbahnhof - Sachsenhausen Deutschherrnbrücke (- Offenbach Kaiserlei (S) )
-46,Rebstock Römerhof - Frankfurt Hauptbahnhof
 47,Frankfurt Südbahnhof - Dielmannstraße - Südbahnhof
 48,Frankfurt Südbahnhof - Goetheturm - Südbahnhof
 50,Unterliederbach West - Bockenheimer Warte (U)
 51,Industriepark Höchst Tor Ost - Niederrad Triftstraße
 52,Gallus Schloßborner Straße/Europaviertel West - Griesheim Jägerallee
 53,Zeilsheim Bahnhof - Höchst Bahnhof - Höchst Bolongaropalast
-54,Sindlingen Friedhof - Industriepark Höchst Tor Nord (S) - Höchst Bahnhof - Griesheim Bahnhof (S)
+54,Sindlingen Friedhof - IP Höchst Tor Nord (S) - Höchst Bahnhof - Bolongaropalast (- Griesheim Bahnhof (S) - Neufeld - Rebstock L.-da-Vinci-Allee)
 551,Bad Vilbel - Frankfurt - Offenbach - Neu-Isenburg-Gravenbruch
 56,Eschborn Südbahnhof (S) - Rödelheim Bf - Eschborner Landstraße West
 57,Siedlung Taunusblick - Industriepark Höchst Tor West
@@ -53,24 +44,24 @@ U9,Nieder-Eschbach - Riedberg - Niederursel - Nordwestzentrum - Ginnheim
 61,Flughafen Terminal 1 - Gateway Gardens Nord - Niederrad - Frankfurt Südbahnhof
 62,Flughafen Terminal 1 - Schwanheim
 63,Eschersheim Weißer Stein - Preungesheim Gravensteiner-Platz
-64,Ginnheim (U) - Frankfurt Hauptbahnhof (- Europaviertel West)
+64,Ginnheim (U) - Frankfurt Hauptbahnhof - Baseler Platz
 65,Bad Homburg Ober-Erlenbach - Frankfurt Nieder-Erlenbach - Bad Vilbel Bahnhof
 653,Götzenhain - Neu-Isenburg - Frankfurt Südbahnhof
 66,Eschersheim Weißer Stein - Berkersheim Am Neuenberg
-67,Rüsselsheim - Mörfelden - Walldorf - Frankfurt Flughafen CargoCity Süd
+67,Rüsselsheim - Mörfelden - Walldorf - Frankfurt Flughafen
 68,Kelsterbach Gesamtschule - Frankfurt Schwanheim
-69,Eschersheim Weißer Stein (U) - Dornbusch Hügelstraße (U)
+69,Ginnheim Markus-Krankenhaus - Ginnheim (U) - Eschersheim Weißer Stein (U) - Dornbusch Hügelstraße (U)
 71,Nordwestzentrum (U) - Gerhardt-Hauptmann-Ring - Nordwestzentrum (U)
 72,Bischofsheim - Rüsselsheim - Raunheim - Kelsterbach - Frankfurt Flughafen
 73,Kelsterbach Friedhof - Rathaus - Bahnhof - Frankfurt Flughafen Terminal 1
 75,Frankfurt Bockenheimer Warte (U) - Uni Campus Westend - Bockenheimer Warte (U)
-751,Darmstadt - Walldorf - Frankfurt Flughafen
 78,Schwanheim Rheinlandstraße - Frankfurt Südbahnhof
 79,Niederrad Bahnhof (S) - Bürostadt Niederrad - Niederrad Bahnhof (S)
 804,Kelkheim-Eppenhain/-Fischbach - Kelkheim - Sulzbach MTZ - Ffm-Höchst
 81,Oberrad Buchrainplatz - Goldbergweg - Buchrainplatz
 82,Oberrad Buchrainplatz - Wiener Straße - Buchrainplatz
 83,Lohrberg - Friedberger Warte
+837 AST,Hattersheim - Frankfurt/Sindlingen
 84,Niederrad Oberforsthaus - Niederrad Niederräder Landstraße
 87,Galluswarte (S) - Gutleutviertel Briefzentrum
 E12,Ergänzungsverkehr zur Königsteiner Bahn: Frankfurt-Höchst - Liederbach - Kelkheim
@@ -78,29 +69,40 @@ M32,Frankfurt Ostbahnhof - Frankfurt Westbahnhof
 M34,Gallus Mönchhofstraße - Bornheim Mitte (U)
 M36,Frankfurt Westbahnhof - Sachsenhausen Hainer Weg
 M43,Bornheim Mitte (U) - Bergen Ost
+M46,Rebstock Römerhof - Frankfurt Hauptbahnhof
 M55,Sindlingen Friedhof - Zeilsheim Bahnhof - Höchst Bahnhof - Rödelheim Bahnhof (S)
 M60,Rödelheim Bahnhof (S) - Heddernheim - Alt-Eschersheim Im Uhrig
 M72,Frankfurt Nordwestzentrum (U) - Rödelheim Bahnhof
 M73,Frankfurt Nordwestzentrum (U) - Rödelheim Bahnhof
-OF50;OF 50,Gravenbruch - Frankfurt Südbahnhof
-X17,Hofheim - Hattersheim - Flughafen Terminal 1/Neu-Isenburg
-X19,Obertshausen - Heusenstamm - Neu-Isenburg - Flughafen Terminal 1
-X57,Hanau - Maintal - Frankfurt-Enkheim
-X58,Höchst Bahnhof - Flughafen Terminal 1
-X61,Flughafen Terminal 1 - Gateway Gardens Nord - Frankfurt Südbahnhof
-X77,Frankfurt Südbahnhof - Gateway Gardens - CargoCity Süd
-X97,Offenbach - Bad Vilbel
-837 AST,Hattersheim - Frankfurt/Sindlingen
 N11,Höchst Zuckschwerdtstraße - Nied Kirche - Mönchhofstraße - Hauptbahnhof - Innenstadt - Ostbahnhof - Hanauer Landstraße - Fechenheim Schießhüttenstraße
 N12,Schwanheim Rheinlandstraße - Niederrad - Hauptbahnhof - Innenstadt - Konstablerwache
 N16,Ginnheim - Bockenheim - Festhalle/Messe - Hauptbahnhof - Südbahnhof - Offenbach Stadtgrenze
 N18,Preungesheim Gravensteiner-Platz - Friedberger Warte - Konstablerwache
 N4,Seckbacher Landstraße - Konstablerwache - Hauptbahnhof - Bockenheimer Warte
 N5,Preungesheim - Konstablerwache - Hauptbahnhof
-N7,Heerstraße - Industriehof - Zoo - Eissporthalle/Festplatz - Enkheim
-N8,Nieder-Eschbach - Riedberg - Niederursel - Heddernheim - Südbahnhof
 n61,Frankfurt - Maintal - Hanau
 n65,Frankfurt - Hanauer Landstraße - Offenbach Marktplatz
+N7,Heerstraße - Industriehof - Zoo - Eissporthalle/Festplatz - Enkheim
 n71,Frankfurt - Neu Isenburg - Langen - Darmstadt
 n72,Frankfurt Flughafen - Neu-Isenburg - Offenbach/ Dietzenbach
+N8,Nieder-Eschbach - Riedberg - Niederursel - Heddernheim - Südbahnhof
 n96,Frankfurt - Bad Vilbel - Niederdorfelden - Schöneck
+U1,Ginnheim - Nordwestzentrum - Heddernheim - Südbahnhof
+U2,Bad Homburg Gonzenheim - Nieder-Eschbach - Riedwiese - Heddernheim - Südbahnhof
+U3,Oberursel Hohemark - Oberursel Bf - Niederursel - Heddernheim - Südbahnhof
+U4,Enkheim - Seckbacher Landstraße - Konstablerwache - Hauptbahnhof - Bockenheimer Warte
+U5,Preungesheim - Konstablerwache - Hauptbahnhof
+U6,Hausen - Industriehof - Zoo - Ostbahnhof
+U7,Heerstraße - Industriehof - Zoo - Eissporthalle/Festplatz - Enkheim
+U8,(Nieder-Eschbach -) Riedberg - Niederursel - Heddernheim - Südbahnhof
+U9,Nieder-Eschbach - Riedberg - Niederursel - Nordwestzentrum - Ginnheim
+X15,Darmstadt - Walldorf - Frankfurt Flughafen
+X17,Hofheim - Hattersheim - Flughafen Terminal 1/Neu-Isenburg
+X18,Dietzenbach - Neu-Isenburg - Frankfurt Flughafen CargoCity Süd - Walldorf
+X19,Obertshausen - Heusenstamm - Neu-Isenburg - Flughafen Terminal 1
+X57,Hanau - Maintal - Frankfurt-Enkheim
+X58,Höchst Bahnhof - Flughafen Terminal 1
+X61,Flughafen Terminal 1 - Gateway Gardens Nord - Frankfurt Südbahnhof
+X77,Frankfurt Südbahnhof - Gateway Gardens - CargoCity Süd
+X95,Büdingen - Ronneburg - Erlensee - Bruchköbel - Frankfurt Enkheim (U)
+X97,Offenbach - Bad Vilbel

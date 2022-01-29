@@ -16,11 +16,11 @@ ICE26;(Binz - Stralsund - Rostock - Schwerin -) Hamburg - Hannover - Kassel - Ma
 RJ27;Berlin - Dresden - Prag - Brno - Wien - Graz
 ICE28;(Binz - Stralsund - Greifswald ) | Hamburg > Berlin - Leipzig - Erfurt - Nürnberg - (Ingolstadt) - München
 ICE29;Sprinter: Berlin - Halle - Erfurt - Nürnberg - München
-ICE30; Hamburg - Bremen - Münster - Duisburg - Düsseldorf - Köln
+ICE30; Hamburg - Bremen - Münster - Duisburg - Düsseldorf - Köln - Mannheim - Stuttgart
 ICE31; (Kiel -) Hamburg - Bremen - Münster - Dortmund - Wuppertal - Köln - Koblenz - Mainz - Frankfurt (- Würzburg - Nürnberg - Passau)
 ICE39; Hamburg - Münster - Essen - Duisburg - Düsseldorf - Köln
 ICE41; (Dortmund -) Essen - Duisburg - Düsseldorf - Köln - Frankfurt - Würzburg - Nürnberg - München (- Garmisch-Partenkirchen)
-ICE42;(Hamburg - Bremen - Münster - Essen - Duisburg - Düsseldorf) | Dortmund - Wuppertal > Köln - Frankfurt Flughafen - Mannheim - Stuttgart - Augsburg - München
+ICE42;(Kiel -) Hamburg - Bremen - Münster - Essen - Duisburg - Düsseldorf | (Dortmund - Wuppertal) > Köln - Frankfurt Flughafen - Mannheim - Stuttgart - Augsburg - München
 ICE43;(Hannover - Bielefeld - Dortmund - Wuppertal -) Köln - Frankfurt Flughafen - Mannheim - Karlsruhe - Basel
 ICE45;Köln - Wiesbaden - Mannheim - Heidelberg - Stuttgart
 ICE47;Dortmund | Münster > Essen - Duisburg - Düsseldorf - Köln - Frankfurt Flughafen - Mannheim - Stuttgart
@@ -44,6 +44,7 @@ IC28;(Berlin - Greifswald - Stralsund - Binz) | (Nürnberg - Augsburg - München
 IC30;(Westerland | Kiel | Binz - Stralsund - Rostock - Schwerin) > Hamburg - Bremen - Münster - Dortmund - Duisburg - Düsseldorf - Köln - Koblenz - Mainz < Frankfurt | Mannheim < Stuttgart (> Karlsruhe - Basel < Zürich | Bern - Interlaken)
 IC31;(Kiel | Lübeck) > Hamburg - Bremen - Münster - Dortmund < (Duisburg - Düsseldorf) | Wuppertal > Köln - Koblenz - Mainz - Frankfurt (- Würzburg < Nürnberg - Passau | Augsburg - München)
 IC32;Dortmund - Duisburg - Düsseldorf - Köln - Koblenz - Mainz - Mannheim - Heidelberg - Stuttgart < Tübingen | Augsburg - München - Salzburg - Klagenfurt | Oberstdorf | Friedrichshaven - Innsbruck
+IC34;(Stuttgart - Karlsruhe - Heidelberg - Mannheim - Frankfurt - Siegen - Letmathe < Unna - Hamm (- Münster - Emden - Norddeich | Witten - Dortmund)
 IC35;Norddeich - Emden - Münster - Duisburg - Düsseldorf - Köln (- Koblenz - Mainz - Mannheim < Karlsruhe - Konstanz | Heidelberg - Stuttgart)
 IC37;Düsseldorf - Köln - Koblenz - Trier - Luxembourg
 IC50;Berlin - Halle - Leipzig - Erfurt - Fulda - Frankfurt - Heidelberg - Karlsruhe
