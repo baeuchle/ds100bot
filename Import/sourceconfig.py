@@ -27,7 +27,7 @@ class SourceConfig:
             except json.JSONDecodeError as jde:
                 msg = "{}::{}::{}: JSON object could not be decoded: {}".format(
                     self.file, jde.lineno, jde.colno, jde.msg)
-                raise JsonError(msg)
+                raise JsonError(msg) from jde
         for mf in SourceConfig._mandatory_fields:
             if mf not in self.json:
                 msg = "Key {} missing".format(mf)

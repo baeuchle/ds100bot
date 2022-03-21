@@ -35,7 +35,7 @@ class Twitter:
         try:
             self.myself = self.twit.me()
         except tweepy.error.TweepError as te:
-            raise RuntimeError(str(te))
+            raise RuntimeError(str(te)) from te
         self.measure = Measure()
         self.readonly = not readwrite
 
@@ -253,5 +253,5 @@ def make_twapi(args):
     try:
         api = tweepy.API(auth)
     except tweepy.error.TweepError as te:
-        raise RuntimeError(str(te))
+        raise RuntimeError(str(te)) from te
     return Twitter(api, args.readwrite)

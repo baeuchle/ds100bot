@@ -8,7 +8,7 @@ class Row:
         try:
             return ' '.join(contents[self.cols[col]].split())
         except AttributeError as ae:
-            raise DataError(str(ae))
+            raise DataError(str(ae)) from ae
 
     # pylint: disable=R0903
     def __init__(self, iterator, cols, nolink, filters):
