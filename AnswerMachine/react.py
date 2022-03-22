@@ -87,23 +87,6 @@ def find_tokens(tweet, modus, magic_tag):
     tokens = finder2.findall(tweet, overlapped=True)
     return [Candidate(t, magic_tag) for t in tokens]
 
-def find_source(sql, tag):
-    sql.cursor.execute("""
-        SELECT
-            abbr
-        FROM
-            sourceflags
-        WHERE
-            magictag = :magic
-        LIMIT 1
-        """,
-        ({'magic': tag,})
-    )
-    row = sql.cursor.fetchone()
-    if row is None:
-        return tag
-    return row['abbr']
-
 def process_magic(magic_tags, length, default='DS100'):
     """
         Edits the list of magic hashtags so that
