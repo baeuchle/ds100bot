@@ -15,7 +15,7 @@ parser.add_argument('--statistics-for', action='store', required=False)
 parser.add_argument('--readwrite', help='Change Database', required=False, default=True)
 args = parser.parse_args()
 
-sql = setup_database(args)
+sql = setup_database(args, None)
 
 if args.list:
     sql.cursor.execute("""

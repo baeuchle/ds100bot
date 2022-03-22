@@ -39,7 +39,7 @@ if __name__ == "__main__":
     args = arguments()
     try:
         twitter = setup_twitter(args)
-        database = setup_database(args)
+        database = setup_database(args, 'twitter')
         if args.notify_version:
             Persistence.notify_new_version(twitter, database)
     except RuntimeError as re:

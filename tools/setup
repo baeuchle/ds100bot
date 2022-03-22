@@ -33,7 +33,7 @@ doc_source = Path('doc')
 cardsource = Path('cards')
 Path.mkdir(dump_dir, parents=True, exist_ok=True)
 
-database = setup_database(args)
+database = setup_database(args, None)
 database.purge_data()
 
 configurations = find_all_configs(config_dir)

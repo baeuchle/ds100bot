@@ -58,7 +58,7 @@ if __name__ == "__main__":
     try:
         args = arguments()
         id_list = args.id if args.id is not None else []
-        database = setup_database(args)
+        database = setup_database(args, 'twitter')
         logger.info("Trying to create mock api from %s", args.source)
         twitter = Mock.MockApi(mode=args.source,
                                id_list=[int(x) for x in id_list])

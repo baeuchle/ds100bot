@@ -6,18 +6,19 @@ import sqlite3
 
 from GitVersion import Git
 
-def setup_database(cli_args):
-    return Database(cli_args.readwrite)
+def setup_database(cli_args, network):
+    return Database(cli_args.readwrite, network)
 
 logger = logging.getLogger('bot.db')
 
 class Database:
-    def __init__(self, readwrite):
+    def __init__(self, readwrite, network):
         git_ = Git()
         self.sql = sqlite3.connect(git_.topdir() + '/info.db')
         self.sql.row_factory = sqlite3.Row
         self.cursor = self.sql.cursor()
         self.readonly = not readwrite
+        self.network = network
         if self.readonly:
             logger.info('Running with readonly database')
         logger.debug("Created database connection")
@@ -211,9 +212,10 @@ class Database:
                         abbreviation,
                         derived_source,
                         request_date,
-                        status
+                        status,
+                        network
                     )
-                    VALUES (?,?,?,?,?,?,?)
+                    VALUES (?,?,?,?,?,?,?,?)
             """,
              (result.candidate.explicit_source
             , result.candidate.magic_hashtag
@@ -222,6 +224,7 @@ class Database:
             , result.default_source
             , datetime.datetime.today().strftime('%Y%m%d')
             , result.status
+            , self.network
             ,
             ))
         except sqlite3.Error as sqle:

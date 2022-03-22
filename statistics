@@ -43,7 +43,7 @@ elif args.since == 'year':
 twapi = setup_twitter(args)
 if twapi is None:
     twapi = Mock.MockApi()
-sql = setup_database(args)
+sql = setup_database(args, 'twitter')
 
 counts = sql.count_status(since=since)
 text = f"""Zeit für Statistik! Daten für die Zeit seit {since_text}. Ich habe:

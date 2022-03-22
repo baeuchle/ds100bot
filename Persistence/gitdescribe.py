@@ -15,7 +15,9 @@ def get_last_hash(sql):
             last
         WHERE
             subject = 'githash'
-        """)
+            AND
+            network = ?
+        """, (sql.network, ))
     row = sql.cursor.fetchone()
     if row is None:
         return None
@@ -37,9 +39,11 @@ def store_version(sql):
                 content = ?
             WHERE
                 subject = ?
+                AND
+                network = ?
             """,
             (
-             cont, subj,
+             cont, subj, sql.network,
             )
             )
 
