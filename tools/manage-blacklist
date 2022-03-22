@@ -3,7 +3,7 @@
 """Helper program for management of the bot blacklist"""
 
 import argparse
-import sys
+from sys import stderr
 import parentdir # pylint: disable=W0611
 from Externals import setup_database
 
@@ -27,7 +27,7 @@ if args.list:
     """)
     for row in sql.cursor.fetchall():
         print(row['source'], row['Abk'])
-    sys.exit(0)
+    raise SystemExit(0)
 if not args.statistics_for is None:
     print("Statistics for", args.statistics_for)
     sql.cursor.execute("""
@@ -46,7 +46,7 @@ if not args.statistics_for is None:
         tot_sum += row['c']
         print(row['c'], row['status'])
     print(tot_sum, "total")
-    sys.exit(0)
+    raise SystemExit(0)
 if not args.add is None:
     sql.cursor.execute("""
         SELECT
@@ -65,12 +65,10 @@ if not args.add is None:
             VALUES(?, ?)
         """, (parts[0], parts[1],))
         if sql.cursor.rowcount == 0:
-            print("Keine Daten eingetragen", file=sys.stderr)
-            sys.exit(1)
-        else:
-            print("Erfolgreich eingetragen!")
-            sql.close_sucessfully()
-            sys.exit(0)
-    else:
-        print("Schon eingetragen!")
-        sys.exit(0)
+            print("Keine Daten eingetragen", file=stderr)
+            raise SystemExit(1)
+        print("Erfolgreich eingetragen!")
+        sql.close_sucessfully()
+        raise SystemExit(0)
+    print("Schon eingetragen!")
+    raise SystemExit(0)

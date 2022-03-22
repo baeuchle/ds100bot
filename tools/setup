@@ -3,7 +3,6 @@
 """Setup of data and documentation"""
 
 import argparse
-import sys
 from pathlib import Path
 import subprocess
 import parentdir # pylint: disable=W0611
@@ -42,7 +41,7 @@ database.purge_data()
 
 configurations = find_all_configs(config_dir)
 if configurations is None:
-    sys.exit(1)
+    raise SystemExit(1)
 navilinks = Documentation.navilink_list(Git().describe('--dirty'))
 dumplinks = Documentation.dumplink_list(configurations)
 
@@ -65,7 +64,7 @@ for cid, config in sorted(configurations.items()):
         database.insert_magic_hashtag(cid, mht)
     for dl in config.data_list:
         if not database.insert_datalist(dl, cid):
-            sys.exit(1)
+            raise SystemExit(1)
     Documentation.dump_source(config, dumplinks, navilinks, database, dump_dir)
     licpage.add_source(config)
 

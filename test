@@ -3,7 +3,6 @@
 """Tester for the bot"""
 
 import argparse
-import sys
 
 from AnswerMachine import handle_list
 from Externals import setup_database
@@ -83,7 +82,7 @@ if __name__ == "__main__":
                                 0, tagsearch
                              ), twitter=twitter, database=database, magic_tags=magic_tags)
         if args.source != 'external':
-            sys.exit(twitter.statistics(args.output))
+            raise SystemExit(twitter.statistics(args.output))
     except Exception as e: # pylint: disable=W0703
         log_.log(51, "TESTS FAIL TO RUN")
         log_.info("%s", e)
