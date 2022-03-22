@@ -63,10 +63,14 @@ if __name__ == "__main__":
         twitter = Mock.MockApi(mode=args.source,
                                id_list=[int(x) for x in id_list])
 
-        tagsearch, magic_tags = database.magic_hashtags()
+        magic_tags, magic_emojis = database.magic_hashtags()
         max_id = handle_list(twitter.all_relevant_tweets(
-                                0, tagsearch
-                             ), twitter=twitter, database=database, magic_tags=magic_tags)
+                                0, magic_tags
+                             ),
+                             twitter=twitter,
+                             database=database,
+                             magic_tags=magic_tags,
+                             magic_emojis=magic_emojis)
         if args.source != 'external':
             raise SystemExit(twitter.statistics(args.output))
     except Exception as e: # pylint: disable=W0703

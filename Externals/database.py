@@ -40,7 +40,7 @@ class Database:
         tags = [row[0] for row in self.cursor.fetchall()]
         mht = ['#' + t for t in tags if ord(t[0]) < 2**16]
         emojis = [t for t in tags if ord(t[0]) >= 2**16]
-        return "(" + (" OR ".join(mht)) + ")", [*mht, *emojis]
+        return mht, emojis
 
     def count_status(self, since):
         self.cursor.execute("""

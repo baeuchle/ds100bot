@@ -7,19 +7,10 @@ from .result import Result
 log_ = logging.getLogger('bot.AnswerMachine.react')
 follog_ = logging.getLogger('followlog')
 
-def process_tweet(tweet, twitter, database, magic_tags, **kwargs):
-    textlist = list(tweet.text)
-    for key in ['media', 'urls']:
-        if key in tweet.original.entities:
-            for ent in tweet.original.entities[key]:
-                start = ent['indices'][0]
-                end = ent['indices'][1]
-                length = end - start
-                textlist[start:end] = '_'*length
-    tweet.text = "".join(textlist)
+def process_tweet(tweet, twitter, database, magic_tags, magic_emojis, **kwargs):
     reply = compose_answer(tweet.text,
                            database,
-                           tweet.hashtags(magic_tags),
+                           tweet.hashtags([*magic_tags, *magic_emojis]),
                            kwargs.get('modus', None),
                            kwargs.get('default_magic_tag', 'DS100')
                           )
@@ -32,21 +23,21 @@ def process_tweet(tweet, twitter, database, magic_tags, **kwargs):
     )
 
 def process_commands(tweet, twapi):
-    author = tweet.author()
+    author = tweet.author
     if tweet.has_hashtag(['folgenbitte'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if is_followed:
-            follog_.log(45, "folgenbitte from @%s: already following", author.screen_name)
+            follog_.log(45, "folgenbitte from @%s: already following", str(author))
         else:
-            follog_.log(45, "folgenbitte from @%s: not yet following", author.screen_name)
+            follog_.log(45, "folgenbitte from @%s: not yet following", str(author))
         if not is_followed:
             twapi.follow(author)
     if tweet.has_hashtag(['entfolgen'], case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if is_followed:
-            follog_.log(45, "entfolgen from @%s: still following so far", author.screen_name)
+            follog_.log(45, "entfolgen from @%s: still following so far", str(author))
         else:
-            follog_.log(45, "entfolgen from @%s: not even following yet", author.screen_name)
+            follog_.log(45, "entfolgen from @%s: not even following yet", str(author))
         if is_followed:
             twapi.defollow(author)
 
@@ -74,6 +65,7 @@ def find_tokens(tweet, modus, magic_tag):
         return candidates
     # now: If modus is all and we have at found nothing but maybe the magic_tag,
     # we'll look for more. This can only be uppercase.
+
     finder2 = re.compile(r"""
         (?p)            # find longest match
         (?:^|\W)        # either at the beginning of the text or after a non-alphanumeric character, but don't find this

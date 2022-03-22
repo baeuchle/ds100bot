@@ -10,7 +10,9 @@ class User:
     # pylint: disable=R0903
     def __init__(self, **kwargs):
         self.screen_name = kwargs['screen_name']
+        self._name = kwargs['screen_name']
         self.id = kwargs['id']
+        self._id = kwargs.get('id_str', str(self.id))
         self._mention = {
             'screen_name': self.screen_name,
             'name': kwargs['name'],
@@ -25,6 +27,9 @@ class User:
         result['indices'][0] = start
         result['indices'][1] = start + len(self.screen_name)
         return result
+
+    def __str__(self):
+        return self._name
 
 User.theBot = User(
         id=1065715403622617089,
@@ -91,14 +96,6 @@ User.notfollowed = User(id=12, id_str='12',
                         screen_name='someotheraccount',
                         description='Fake: This user is not followed by the bot.',
                         follows=False)
-User.followers = []
-for i in range(21, 26):
-    User.followers.append(User(id=i, name='Follower', screen_name='follower{}'.format(i),
-                               follows=True))
-User.nonfollowers = []
-for i in range(31, 37):
-    User.nonfollowers.append(User(id=i, name='Nonfollower', screen_name='otherone{}'.format(i),
-                                  follows=False))
 
 class TweepyMock:
     # pylint: disable=R0902
@@ -114,10 +111,7 @@ class TweepyMock:
         self.create_entities()
         self.author = self.raw['user']
         self.display_text_range = self.raw['display_text_range']
-        if 'quoted_status_id' in self.raw:
-            self.quoted_status_id = self.raw['quoted_status_id']
-        else:
-            self.quoted_status_id = None
+        self.quoted_status_id = kwargs.get('quoted_status_id', None)
         self.in_reply_to_status_id = self.raw['in_reply_to_status_id']
         self.expected_answer = self.raw.get('expected_answer', None)
         self.retweeted_status = self.raw.get('retweeted_status', False)
@@ -213,76 +207,6 @@ def mocked_tweets():
         retweeted_status=True,
         user=User.followed
         ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#entfolgen bot%tl%fe%151',
-        id=151,
-        user=User.followers[0]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#entfolgen bot%nl%fe%152',
-        id=152,
-        user=User.followers[1]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#entfolgen @_ds_100 bot%xm%fe%153',
-        id=153,
-        entities={'user_mentions': [User.theBot.mention(12)]},
-        user=User.followers[2]
-        ))
-    User.followers[2].follow_after = False
-    list_of_tweets.append(TweepyMock(
-        full_text='@_ds_100 #entfolgen bot%im%fe%154',
-        id=154,
-        display_text_range=[10, 52],
-        entities={'user_mentions': [User.theBot.mention(0)]},
-        user=User.followers[3]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#DS100 #entfolgen bot%mt%fe%155',
-        id=155,
-        user=User.followers[4]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#folgenbitte bot%tl%fs%161',
-        id=161,
-        user=User.nonfollowers[0]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#folgenbitte bot%nl%fs%162',
-        id=162,
-        user=User.nonfollowers[1]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#folgenbitte @_ds_100 bot%xm%fs%163',
-        id=163,
-        entities={'user_mentions': [User.theBot.mention(12)]},
-        user=User.nonfollowers[2]
-        ))
-    User.nonfollowers[2].follow_after = True
-    list_of_tweets.append(TweepyMock(
-        full_text='@_ds_100 #folgenbitte bot%im%fs%164',
-        id=164,
-        display_text_range=[10, 62],
-        entities={'user_mentions': [User.theBot.mention(0)]},
-        user=User.nonfollowers[3]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='#DS100 #folgenbitte bot%mt%fs%165',
-        id=165,
-        entities={'user_mentions': []},
-        user=User.nonfollowers[4]
-        ))
-    list_of_tweets.append(TweepyMock(
-        full_text='@_ds_100 This tweet xm @_ds_100 in a reply #folgenbitte bot%nl%xm%im%fs%issue[9]%204',
-        display_text_range=[9, 75],
-        id=166,
-        entities={'user_mentions': [
-            User.theBot.mention(0),
-            User.theBot.mention(23)
-        ]},
-        user=User.nonfollowers[5]
-        ))
-    User.nonfollowers[5].follow_after = True
     list_of_tweets.append(TweepyMock(
         full_text='This tweet is quoted with explicit mention. bot%ns%nl%201 FF FK FM FW',
         expected_answer='FF: Frankfurt (Main) Hbf\nFK: Kassel Hbf\nFW: Wiesbaden Hbf',

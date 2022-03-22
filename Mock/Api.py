@@ -4,7 +4,7 @@ import logging
 import tweepy # for exceptions
 from Externals import Twitter
 from Externals.Measure import Measure
-from AnswerMachine.tweet import Tweet
+from Externals.tweet import fromTweet
 from .Tweet import User, mocked_source, mocked_tweets
 logger = logging.getLogger('bot.test.api')
 
@@ -64,25 +64,13 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
             for um in t.raw['entities']['user_mentions']:
                 if um['screen_name'] == self.myself.screen_name:
                     mention_list.append(t)
-                    break
         return mention_list
 
     def timeline(self, highest_id):
         return [t for t in self.mock if t.author.follows]
 
-    def hashtag(self, tag, highest_id):
-        return [t for t in self.mock if Tweet(t).has_hashtag(tag)]
-
-    def is_followed(self, user):
-        return user.follows
-
-    def follow(self, user):
-        super().follow(user)
-        user.follows = True
-
-    def defollow(self, user):
-        super().defollow(user)
-        user.follows = False
+    def hashtag(self, mt_list, highest_id):
+        return [t for t in self.mock if fromTweet(t, self.myself).has_hashtag(mt_list)]
 
     def statistics(self, output='descriptive'):
         stat_log = logging.getLogger('statistics')
@@ -113,35 +101,21 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
             stat_log.warning(t.expected_answer)
             stat_log.warning("↑↑↑↑EXPECTED↑↑↑↑  ↓↓↓↓GOT THIS↓↓↓↓")
             stat_log.warning(self.replies[t.id])
-        for l in User.followers, User.nonfollowers:
-            for u in l:
-                if u.follows == u.follow_after:
-                    stat_log.info("User @%s has correct following behaviour %s",
-                                  u.screen_name, u.follows)
-                    res_count.follow.correct += 1
-                else:
-                    stat_log.error("User @%s doesn't follow correctly (should %s, does %s)",
-                                   u.screen_name, u.follow_after, u.follows)
-                    res_count.follow.missed += 1
         self.report_statisctics(stat_log, output, res_count)
-        return res_count.tweet.missed + res_count.tweet.bad_content + res_count.follow.missed
+        return res_count.tweet.missed + res_count.tweet.bad_content
 
     def report_statisctics(self, stat_log, output, res_count): # pylint: disable=R0201
         denominator = (res_count.tweet.correct + res_count.tweet.missed +
-                       res_count.tweet.bad_content + res_count.follow.correct +
-                       res_count.follow.missed)
+                       res_count.tweet.bad_content)
         if denominator == 0:
             stat_log.log(51, "No testcases found")
         elif output == 'descriptive':
             stat_log.log(51, "ALL GOOD:               %2d", res_count.tweet.correct)
             stat_log.log(51, "INCORRECT TEXT:         %2d", res_count.tweet.bad_content)
             stat_log.log(51, "WRONG ANSWER/NOT ANSWER:%2d", res_count.tweet.missed)
-            stat_log.log(51, "CORRECT FOLLOWING:      %2d", res_count.follow.correct)
-            stat_log.log(51, "WRONG FOLLOWING:        %2d", res_count.follow.missed)
         elif output == 'summary':
-            ratio = (res_count.tweet.correct + res_count.follow.correct) / (0.0 + denominator)
-            stat_log.log(51, "A %d/%d F %d/%d R %.1f%%",
+            ratio = (res_count.tweet.correct) / (0.0 + denominator)
+            stat_log.log(51, "A %d/%d R %.1f%%",
                          res_count.tweet.correct,
                          res_count.tweet.bad_content + res_count.tweet.missed,
-                         res_count.follow.correct, res_count.follow.missed,
                          100.0 * ratio)

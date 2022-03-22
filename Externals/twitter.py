@@ -5,8 +5,8 @@ import logging
 import time
 import tweepy
 
-from AnswerMachine.tweet import Tweet
 from Externals.Measure import Measure
+from Externals.tweet import fromTweet
 log_ = logging.getLogger('bot.api.twitter')
 tweet_log_ = logging.getLogger('msg')
 
@@ -157,18 +157,18 @@ class Twitter:
             reply_id = new_reply_id
         return reply_id
 
-    def all_relevant_tweets(self, highest_id, tag):
+    def all_relevant_tweets(self, highest_id, mt_list):
         results = {}
         for tl in (self.mentions(highest_id),
                    self.timeline(highest_id),
-                   self.hashtag(tag, highest_id)):
+                   self.hashtag(mt_list, highest_id)):
             for t in tl:
                 if t is None:
                     log_.error("Received None tweet")
                     continue
                 if t.id in results:
                     continue
-                msg = Tweet(t)
+                msg = fromTweet(t, self.myself)
                 if msg.has_hashtag(['NOBOT'], case_sensitive=False):
                     continue
                 results[msg.id] = msg
@@ -181,9 +181,10 @@ class Twitter:
     def timeline(self, highest_id):
         return self.cursor(self.twit.home_timeline, since_id=highest_id)
 
-    def hashtag(self, tag, highest_id):
+    def hashtag(self, mt_list, highest_id):
+        tagquery = "(" + " OR ".join(mt_list) + ")"
         tweets = []
-        for ht in self.cursor(self.twit.search, q=tag, since_id=highest_id):
+        for ht in self.cursor(self.twit.search, q=tagquery, since_id=highest_id):
             tweets.append(self.get_tweet(ht.id))
         return tweets
 
@@ -240,11 +241,17 @@ class Twitter:
             return False
 
     def get_other_tweet(self, other_id, tlist):
-        if other_id is None:
+        if not other_id:
+            log_.debug("get_other_tweet with None")
             return None
         if other_id in tlist:
+            log_.debug("get_other_tweet: other_id %d already in %s", other_id, str(tlist))
             return None
-        return self.get_tweet(other_id)
+        log_.debug("Trying to get other tweet")
+        msg = self.get_tweet(other_id)
+        if not msg:
+            return None
+        return fromTweet(msg, self.myself)
 
 def make_twapi(args):
     config = configparser.ConfigParser()

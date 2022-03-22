@@ -7,11 +7,17 @@ pylint_score=$(\
     head -n 1 \
     )
 test_result=$(./test --source testcases --output summary --log-level CRITICAL 2>&1)
-echo "Adding pylint score $pylint_score and test result $test_result to commit message:"
+pytest_result=$(python3 -m pytest tests/ --disable-warnings -q | head -n 1 | tr -s ' ')
 
-git commit --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score | grep -v test\ score)
+echo "Adding pylint score $pylint_score..."
+echo "...and test result $test_result..."
+echo "...and pytest result $pytest_result..."
+echo "...to commit message:"
+
+git commit --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score | grep -v test\ score | grep -v pytest\ score)
 
 pylint score: $pylint_score
-test score: $test_result"
+test score: $test_result
+pytest score: $pytest_result"
 
 git log --format=%B -n1
