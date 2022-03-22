@@ -3,11 +3,15 @@
 """Tester for the bot"""
 
 import argparse
+import logging
 
 from AnswerMachine import handle_list
 from Externals import setup_database
 import Mock
-import Persistence.log as log
+
+import Persistence
+
+logger = Persistence.init_logger('bot')
 
 def arguments():
     parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter,
@@ -19,16 +23,7 @@ def arguments():
   external:  Use mocked tweet objects from tweet_details.py.  That file may be created with
              get_tweet.
     """)
-    parser.add_argument('--verbose', '-v',
-                        dest='verbose',
-                        help='Output lots of stuff',
-                        required=False,
-                        action='count')
-    parser.add_argument('--quiet', '-q',
-                        dest='quiet',
-                        help='Output less stuff',
-                        required=False,
-                        action='count')
+    Persistence.set_logging_args(parser)
     parser.add_argument('--source',
                         choices=['testcases', 'id', 'external'],
                         default='testcases',
@@ -54,26 +49,17 @@ def arguments():
     if args_.source != 'id' and args_.id is not None:
         parser.print_help()
         parser.exit("Error: --id given, but --source is not 'id'")
-    if args_.verbose is None:
-        args_.verbose = 0
-    if args_.quiet is not None:
-        args_.verbose -= args_.quiet
-    args_.verbose = 50 - args_.verbose * 10
+    logger.setLevel(getattr(logging, args_.log_level.upper()))
+    logging.getLogger('msg').setLevel(logging.CRITICAL)
+    logger.debug("test running args: %s", args_)
     return args_
-
-def setup_log(loglvl):
-    if loglvl <= 0:
-        loglvl = 1
-
-    log.basicConfig(level=loglvl, style='{')
-    return log.getLogger('test_ds100')
 
 if __name__ == "__main__":
     try:
         args = arguments()
-        log_ = setup_log(args.verbose)
         id_list = args.id if args.id is not None else []
         database = setup_database(args)
+        logger.info("Trying to create mock api from %s", args.source)
         twitter = Mock.MockApi(mode=args.source,
                                id_list=[int(x) for x in id_list])
 
@@ -84,5 +70,5 @@ if __name__ == "__main__":
         if args.source != 'external':
             raise SystemExit(twitter.statistics(args.output))
     except Exception as e: # pylint: disable=W0703
-        log_.log(51, "TESTS FAIL TO RUN")
-        log_.info("%s", e)
+        logger.log(51, "TESTS FAIL TO RUN")
+        logger.exception("%s", e)

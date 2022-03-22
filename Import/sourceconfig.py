@@ -3,11 +3,11 @@
 """Read source configuation"""
 
 import json
-import Persistence.log as log
+import logging
 from .access import Access
 from .datasource import DataSource
 from .error import JsonError
-log_ = log.getLogger(__name__, fmt='{name}:{levelname} {message}')
+log_ = logging.getLogger('setup.' + __name__)
 
 class SourceConfig:
     # pylint: disable=R0903

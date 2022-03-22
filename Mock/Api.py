@@ -1,12 +1,12 @@
 # pylint: disable=C0114
 
+import logging
 import tweepy # for exceptions
 from Externals import Twitter
 from Externals.Measure import Measure
 from AnswerMachine.tweet import Tweet
-import Persistence.log as log
 from .Tweet import User, mocked_source, mocked_tweets
-log_ = log.getLogger(__name__)
+logger = logging.getLogger('bot.test.api')
 
 class Count: # pylint: disable=too-few-public-methods
     def __init__(self):
@@ -21,7 +21,6 @@ class Result: # pylint: disable=too-few-public-methods
 
 class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
     def __init__(self, **kwargs):
-        log_.setLevel(log_.getEffectiveLevel() - 10)
         self.running_id = 10001
         self.myself = User.theBot
         self.mode = kwargs.get('mode', 'testcases')
@@ -52,7 +51,7 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
             # don't track thread answers:
             if reply_id != self.running_id:
                 if reply_id in self.replies:
-                    log_.warning("Tweet %d was replied to twice!", reply_id)
+                    logger.warning("Tweet %d was replied to twice!", reply_id)
                     self.double_replies.append(reply_id)
                 else:
                     self.replies[reply_id] = text.strip()
@@ -86,7 +85,7 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
         user.follows = False
 
     def statistics(self, output='descriptive'):
-        stat_log = log.getLogger('statistics', '{message}')
+        stat_log = logging.getLogger('statistics')
         res_count = Result()
         stat_log.debug("    RESULTS")
         for t in self.mock:

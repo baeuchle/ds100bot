@@ -3,9 +3,8 @@
 import copy
 import re
 
-
-import Persistence.log as log
-log_ = log.getLogger(__name__)
+import logging
+log_ = logging.getLogger(__name__)
 
 class User:
     # pylint: disable=R0903

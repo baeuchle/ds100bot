@@ -1,11 +1,11 @@
 # pylint: disable=C0114
 
+import logging
 import regex as re
-import Persistence.log as log
 from .candidate import Candidate
 from .result import Result
-log_ = log.getLogger(__name__)
-follog_ = log.getLogger(__name__ + '.following', '{name} {message}')
+log_ = logging.getLogger('bot.AnswerMachine.react')
+follog_ = logging.getLogger('followlog')
 
 def process_tweet(tweet, twitter, database, magic_tags, **kwargs):
     textlist = list(tweet.text)

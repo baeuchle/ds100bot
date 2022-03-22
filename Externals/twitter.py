@@ -1,13 +1,13 @@
 """Twitter API including Command line argumentation"""
 
 import configparser
+import logging
 import time
 import tweepy
 
 from Externals.Measure import Measure
-import Persistence.log as log
-log_ = log.getLogger(__name__)
-tweet_log_ = log.getLogger('tweet', '{message}')
+log_ = logging.getLogger('bot.api.twitter')
+tweet_log_ = logging.getLogger('msg')
 
 def set_arguments(ap):
     group = ap.add_argument_group('Twitter API', description='Configure Twitter API')
@@ -57,7 +57,7 @@ class Twitter:
         if len(text) == 0:
             log_.error("Empty tweet?")
             return -1
-        if tweet_log_.isEnabledFor(log.WARNING):
+        if tweet_log_.isEnabledFor(logging.WARNING):
             lines = text.splitlines()
             length = max([len(l) for l in lines])
             tt = "▄{}┓\n".format('━'*(length+2))

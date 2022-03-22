@@ -1,9 +1,9 @@
 # pylint: disable=C0114
 
-import Persistence.log as log
+import logging
 from .tweet import Tweet
 from .react import process_commands, process_tweet
-log_ = log.getLogger(__name__)
+logger = logging.getLogger('bot.' + __name__)
 
 def filter_list(tweet_list):
     results = {}
@@ -21,17 +21,18 @@ def filter_list(tweet_list):
 def handle_list(tweet_list, twitter, database, magic_tags):
     tweet_dict = filter_list(tweet_list)
     for tid, tweet in tweet_dict.items():
-        log_.info("Looking at tweet %d", tid)
         # exclude some tweets:
         if not tweet.is_eligible(twitter.myself):
+            logger.debug("Status %s is not eligible", tid)
             continue
+        logger.info("Looking at status %d", tid)
         # handle #folgenbitte and #entfolgen and possibly other meta commands, but
         # only for explicit mentions.
         if tweet.is_explicit_mention(twitter.myself):
-            log_.info("Tweet explicitly mentions me")
+            logger.info("Tweet explicitly mentions me")
             process_commands(tweet, twitter)
         if tweet.has_hashtag(magic_tags):
-            log_.info("Tweet has magic hashtag")
+            logger.info("Tweet has magic hashtag")
         # Process this tweet
         mode = tweet.get_mode(twitter.myself, magic_tags)
         process_tweet(tweet, twitter, database, magic_tags, modus=mode)

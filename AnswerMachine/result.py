@@ -1,7 +1,7 @@
 """Abstracts the abbreviation search result"""
 
-import Persistence.log as log
-log_ = log.getLogger(__name__)
+import logging
+logger = logging.getLogger('bot.' + __name__)
 
 class Result:
     # pylint: disable=R0902
@@ -23,7 +23,7 @@ class Result:
             self.type = candidate.type_character
             self.default_source = ''
             self.default_type = ''
-        log_.debug("%s → %s", candidate, self)
+        logger.debug("%s → %s", candidate, self)
 
     def __str__(self):
         if self.status == 'notfound':

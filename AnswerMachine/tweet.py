@@ -1,9 +1,9 @@
 # pylint: disable=C0114
 
+import logging
 import re
-import Persistence.log as log
 from .react import process_tweet
-log_ = log.getLogger(__name__)
+log_ = logging.getLogger('bot.' + __name__)
 
 class Tweet:
     hashtagre = None

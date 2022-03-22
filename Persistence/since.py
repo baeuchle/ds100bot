@@ -1,4 +1,10 @@
-# pylint: disable=C0114
+"""
+    Functions for reading and storing highest ids
+"""
+
+import logging
+
+logger = logging.getLogger('bot.persistence')
 
 def get_since_id(sql):
     sql.cursor.execute("""
@@ -18,6 +24,8 @@ def get_since_id(sql):
         return 0
 
 def store_since_id(sql, highest_id):
+    logger.info("storing highest id: %d",
+            highest_id)
     # store last answer time
     sql.cursor.execute("""
         UPDATE

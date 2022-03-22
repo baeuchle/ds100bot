@@ -1,13 +1,15 @@
 # pylint: disable=C0114
 
-import sqlite3
 import datetime
-import Persistence.log as log
+import logging
+import sqlite3
+
 from GitVersion import Git
-log_ = log.getLogger(__name__)
 
 def setup_database(cli_args):
     return Database(cli_args.readwrite)
+
+logger = logging.getLogger('bot.db')
 
 class Database:
     def __init__(self, readwrite):
@@ -17,12 +19,14 @@ class Database:
         self.cursor = self.sql.cursor()
         self.readonly = not readwrite
         if self.readonly:
-            log_.info('Running with readonly database')
+            logger.info('Running with readonly database')
+        logger.debug("Created database connection")
 
     def close_sucessfully(self):
         self.cursor.close()
         if not self.readonly:
             self.sql.commit()
+            logger.debug("Committing database content")
         self.sql.close()
 
     def magic_hashtags(self):
@@ -129,7 +133,7 @@ class Database:
         return self.cursor.fetchall()
 
     def purge_data(self):
-        log_.info("Purging old data...")
+        logger.info("Purging old data...")
         self.cursor.execute("DELETE FROM shortstore")
         self.cursor.execute("DELETE FROM sources")
         self.cursor.execute("DELETE FROM magic_hashtags")
@@ -168,7 +172,7 @@ class Database:
             try:
                 self.insert_data(row, data_list.id, source_id)
             except sqlite3.Error as sqle:
-                log_.critical("%s: Error inserting data: %s", data_list.position, sqle)
+                logger.critical("%s: Error inserting data: %s", data_list.position, sqle)
                 return False
         return True
 
@@ -221,8 +225,8 @@ class Database:
             ,
             ))
         except sqlite3.Error as sqle:
-            log_.error("Cannot insert request: %s", sqle)
-            log_.error("Missing data: %s %s %s",
+            logger.error("Cannot insert request: %s", sqle)
+            logger.error("Missing data: %s %s %s",
                    result.normalized()
                   , datetime.datetime.today().strftime('%Y%m%d')
                   , result.status

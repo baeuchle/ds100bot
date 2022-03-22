@@ -4,9 +4,12 @@
 
 import argparse
 import datetime
+import logging
 from Externals import setup_database, set_twitter_arguments, setup_twitter
 import Mock
-import Persistence.log as log
+import Persistence
+
+logger = Persistence.init_logger('statistics')
 
 one_day = datetime.timedelta(days=1)
 today = datetime.date.today()
@@ -15,11 +18,7 @@ january_first = first.replace(month=1)
 
 parser = argparse.ArgumentParser(description=__doc__)
 set_twitter_arguments(parser)
-parser.add_argument('--verbose', '-v',
-                    dest='verbose',
-                    help='Output lots of stuff',
-                    required=False,
-                    action='count')
+Persistence.set_logging_args(parser, 'INFO')
 parser.add_argument('--since',
                     dest='since',
                     help='Time frame for statistics',
@@ -28,14 +27,8 @@ parser.add_argument('--since',
                     default=0)
 args = parser.parse_args()
 
-if args.verbose is None:
-    args.verbose = 1
-loglvl = 50 - args.verbose * 10
-if loglvl <= 0:
-    loglvl = 1
-
-log.basicConfig(level=loglvl, style='{')
-log_ = log.getLogger('statistics')
+logger.setLevel(getattr(logging, args.log_level))
+logger.debug("statistics running args: %s", args)
 
 if args.since == "0":
     since = 0
