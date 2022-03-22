@@ -59,26 +59,21 @@ if twapi is None:
 sql = setup_database(args)
 
 counts = sql.count_status(since=since)
-text = """Zeit für Statistik! Daten für die Zeit seit {}. Ich habe:
-• {} Kürzel beantwortet, für
-• {} Kürzel keine lange Version erkannt und
-• {} nicht beantwortet, weil sie auf der Blacklist standen.
+text = f"""Zeit für Statistik! Daten für die Zeit seit {since_text}. Ich habe:
+• {counts.get('found', 0)} Kürzel beantwortet, für
+• {counts.get('notfound', 0)} Kürzel keine lange Version erkannt und
+• {counts.get('blacklist', 0)} nicht beantwortet, weil sie auf der Blacklist standen.
 
 Die populärsten Kürzel waren:
-""".format(
-    since_text,
-    counts.get('found', 0),
-    counts.get('notfound', 0),
-    counts.get('blacklist', 0)
-)
+"""
 
 for row in sql.popular_abbrs(since):
-    text += "• {} ({}×)\n\u200b".format(row['S'], row['C'])
+    text += f"• {row['S']} ({row['C']}×)\n\u200b"
 text += """
 Die populärsten Quellen waren:
 """
 for row in sql.popular_sources(since):
-    text += "• {} ({}×)\n\u200b".format(row['S'], row['C'])
+    text += f"• {row['S']} ({row['C']}×)\n\u200b"
 text += """
 (Keine Garantie für richtiges Zählen)"""
 

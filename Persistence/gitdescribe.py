@@ -46,7 +46,7 @@ def get_changelog(sqlcursor):
 def notify_new_version(twitter, database):
     if is_same_version(database):
         return
-    status = "Ich twittere nun von Version {}".format(git_object.describe())
+    status = f"Ich twittere nun von Version {git_object.describe()}"
     cl = get_changelog(database)
     if cl.strip() != "":
         status += ":\n" + cl
