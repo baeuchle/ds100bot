@@ -20,7 +20,7 @@ def get_since_id(sql):
 def store_since_id(sql, highest_id):
     # store last answer time
     sql.cursor.execute("""
-        UPDATE 
+        UPDATE
             last
         SET
             content = ?
