@@ -1,25 +1,10 @@
 # pylint: disable=C0114
 
 import logging
-from .tweet import Tweet
 from .react import process_commands, process_tweet
 logger = logging.getLogger('bot.' + __name__)
 
-def filter_list(tweet_list):
-    results = {}
-    for api_tweet in tweet_list:
-        if api_tweet is None:
-            continue
-        t = Tweet(api_tweet)
-        if t.id in results:
-            continue
-        if t.has_hashtag(['NOBOT'], case_sensitive=False):
-            continue
-        results[t.id] = t
-    return results
-
-def handle_list(tweet_list, twitter, database, magic_tags):
-    tweet_dict = filter_list(tweet_list)
+def handle_list(tweet_dict, twitter, database, magic_tags):
     for tid, tweet in tweet_dict.items():
         # exclude some tweets:
         if not tweet.is_eligible(twitter.myself):

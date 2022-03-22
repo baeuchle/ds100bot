@@ -5,6 +5,7 @@ import logging
 import time
 import tweepy
 
+from AnswerMachine.tweet import Tweet
 from Externals.Measure import Measure
 log_ = logging.getLogger('bot.api.twitter')
 tweet_log_ = logging.getLogger('msg')
@@ -157,7 +158,7 @@ class Twitter:
         return reply_id
 
     def all_relevant_tweets(self, highest_id, tag):
-        results = []
+        results = {}
         for tl in (self.mentions(highest_id),
                    self.timeline(highest_id),
                    self.hashtag(tag, highest_id)):
@@ -165,7 +166,13 @@ class Twitter:
                 if t is None:
                     log_.error("Received None tweet")
                     continue
-                results.append(t)
+                if t.id in results:
+                    continue
+                msg = Tweet(t)
+                if msg.has_hashtag(['NOBOT'], case_sensitive=False):
+                    continue
+                results[msg.id] = msg
+        log_.info("found %d unique status worth looking into", len(results))
         return results
 
     def mentions(self, highest_id):
