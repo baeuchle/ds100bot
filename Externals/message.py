@@ -1,6 +1,7 @@
 # pylint: disable=C0114
 
 import logging
+import html
 import re
 from Externals.user import User
 log_ = logging.getLogger('bot.' + __name__)
@@ -124,7 +125,7 @@ def fromTweet(tweet, myself):
             end = ent['indices'][1]
             length = end - start
             textlist[start:end] = '_'*length
-    text = "".join(textlist)
+    text = html.unescape("".join(textlist))
     m = Message(
         orig=tweet,
         id=tweet.id,
