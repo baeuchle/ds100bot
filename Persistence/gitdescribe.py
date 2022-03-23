@@ -60,7 +60,7 @@ def notify_new_version(twitter, database):
     cl = get_changelog(database)
     if cl.strip() != "":
         status += ":\n" + cl
-    if twitter.tweet(
+    if twitter.post(
             status,
             auto_populate_reply_metadata=True
             ) > 0:

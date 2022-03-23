@@ -17,7 +17,7 @@ def process_message(message, network, database, magic_tags, magic_emojis, **kwar
     if len(reply.strip()) == 0:
         log_.info("No expandable content found")
         return
-    network.tweet(reply,
+    network.post(reply,
         in_reply_to_status_id=message.id,
         auto_populate_reply_metadata=True
     )

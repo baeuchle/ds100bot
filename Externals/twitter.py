@@ -27,7 +27,7 @@ def set_arguments(ap):
                         )
     group.add_argument('--readwrite',
                         action='store_true',
-                        help="Don't tweet, only read tweets.",
+                        help="Don't post, only read status.",
                         required=False)
 
 class Twitter:
@@ -136,20 +136,20 @@ class Twitter:
                         rrl['limit']
                     )
 
-    def tweet(self, text, **kwargs):
-        """Tweet text, possibly split up into several separate tweets.
+    def post(self, text, **kwargs):
+        """Post text, possibly split up into several separate messages.
 
         Returns:
-            - ID of the last tweet that was sent, if all tweets were sent successfully
-            - ID of the original tweet or last tweet that was sent if the last attempt ended in a
-              duplicate tweet-error.
+            - ID of the last message that was sent, if all message were sent successfully
+            - ID of the original message or last message that was sent if the last attempt ended in
+              a duplicate message-error.
             - Negative API code if there was a different error.
         """
         reply_id = kwargs.get('in_reply_to_status_id', 0)
         kwargs['auto_populate_reply_metadata'] = True
         for part in self.measure.split(text):
             new_reply_id = self.tweet_single(part, **kwargs)
-            if new_reply_id == -187: # duplicate tweet: Don't tweet the others
+            if new_reply_id == -187: # duplicate message: Don't post the others
                 return reply_id
             if new_reply_id < 0: # other error: return error code.
                 return new_reply_id

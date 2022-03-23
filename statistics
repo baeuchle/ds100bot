@@ -66,4 +66,4 @@ text += """
 
 print(text.replace("\u200b", ""))
 
-twapi.tweet(text)
+twapi.post(text)
