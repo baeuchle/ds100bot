@@ -32,9 +32,9 @@ def set_arguments(ap):
 
 class Twitter:
     def __init__(self, api, readwrite, highest_ids):
-        self.twit = api
+        self.api = api
         try:
-            self.myself = self.twit.me()
+            self.myself = self.api.me()
         except tweepy.error.TweepError as te:
             raise RuntimeError(str(te)) from te
         self.measure = Measure()
@@ -71,7 +71,7 @@ class Twitter:
         kwargs['auto_populate_reply_metadata'] = True
         while True: # catches rate limit
             try:
-                new_tweet = self.twit.update_status(text, **kwargs)
+                new_tweet = self.api.update_status(text, **kwargs)
                 return new_tweet
             except tweepy.TweepError as twerror:
                 if twerror.api_code is None:
@@ -93,7 +93,7 @@ class Twitter:
         if self.readonly:
             return
         try:
-            self.twit.create_friendship(id=user.id)
+            self.api.create_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "follow @{}".format(user.screen_name))
 
@@ -102,7 +102,7 @@ class Twitter:
         if self.readonly:
             return
         try:
-            self.twit.destroy_friendship(id=user.id)
+            self.api.destroy_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "defollow @{}".format(user.screen_name))
 
@@ -111,7 +111,7 @@ class Twitter:
         self.print_rate_limit()
 
     def print_rate_limit(self):
-        rls = self.twit.rate_limit_status()
+        rls = self.api.rate_limit_status()
         res = rls['resources']
         for r in res:
             for l in res[r]:
@@ -170,19 +170,19 @@ class Twitter:
         return results
 
     def mentions(self):
-        result = self.cursor(self.twit.mentions_timeline, since_id=self.high_message)
+        result = self.cursor(self.api.mentions_timeline, since_id=self.high_message)
         logger.debug("found %d mentions", len(result))
         return result
 
     def timeline(self):
-        result = self.cursor(self.twit.home_timeline, since_id=self.high_message)
+        result = self.cursor(self.api.home_timeline, since_id=self.high_message)
         logger.debug("found %d status in timeline", len(result))
         return result
 
     def hashtag(self, mt_list):
         tagquery = "(" + " OR ".join(mt_list) + ")"
         result = []
-        for ht in self.cursor(self.twit.search, q=tagquery, since_id=self.high_message):
+        for ht in self.cursor(self.api.search, q=tagquery, since_id=self.high_message):
             result.append(self.get_tweet(ht.id))
         logger.debug("found %d status in hashtags", len(result))
         return result
@@ -208,7 +208,7 @@ class Twitter:
 
     def get_tweet(self, tweet_id):
         try:
-            return self.twit.get_status(
+            return self.api.get_status(
                 tweet_id,
                 tweet_mode='extended',
                 include_ext_alt_text=True
@@ -231,7 +231,7 @@ class Twitter:
 
     def is_followed(self, user):
         try:
-            return self.twit.show_friendship(
+            return self.api.show_friendship(
                 self.myself.id,
                 target_id=user.id
             )[0].following
