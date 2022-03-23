@@ -50,7 +50,7 @@ if __name__ == "__main__":
     max_id = handle_list(twitter.all_relevant_tweets(
                             Persistence.get_since_id(database), magic_tags
                          ),
-                         twitter=twitter,
+                         network=twitter,
                          database=database,
                          magic_tags=magic_tags,
                          magic_emojis=magic_emojis)

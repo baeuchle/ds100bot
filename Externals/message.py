@@ -21,6 +21,7 @@ class Message:
         self.is_repost = kwargs.get('is_repost', False)
         self.is_mention = kwargs.get('is_mention', False)
         self.is_explicit_mention = kwargs.get('is_explicit_mention', self.is_mention)
+        self.is_not_eligible = kwargs.get('is_not_eligible', False)
 
     def has_hashtag(self, tag_list, **kwargs):
         """
@@ -47,19 +48,6 @@ class Message:
             [m.group(0).replace('#', '', 1), m.span()]
             for m in Message.hashtagre.finditer(self.text)
         ]
-
-    def is_eligible(self, myself):
-        """
-        Returns false if this is a message from the bot itself
-        or is a pure repost
-        """
-        if self.author == myself:
-            log_.debug("Not replying to my own posts")
-            return False
-        if self.is_repost:
-            log_.debug("Not processing pure reposts")
-            return False
-        return True
 
     def get_mode(self, magic, emojis):
         if self.is_explicit_mention:
@@ -96,7 +84,7 @@ class Message:
         return dmt
 
     def can_process_as_other(self, **kwargs):
-        if not self.is_eligible(kwargs['myself']):
+        if self.is_not_eligible:
             return False
         if self.is_mention:
             log_.info("Not processing other post because it already mentions me")
@@ -126,18 +114,22 @@ def fromTweet(tweet, myself):
             length = end - start
             textlist[start:end] = '_'*length
     text = html.unescape("".join(textlist))
+    author = User(tweet.author.screen_name, tweet.author.id)
+    is_repost = tweet.__dict__.get('retweeted_status', False)
     m = Message(
         orig=tweet,
         id=tweet.id,
         text=text,
         hashtag_texts=[ht['text'] for ht in
                                 tweet.entities['hashtags']],
-        author=User(tweet.author.screen_name, tweet.author.id),
+        author=author,
         quoted_status_id=quoted_id,
         in_reply_to_status_id=tweet.in_reply_to_status_id,
-        is_repost=tweet.__dict__.get('retweeted_status', False),
-        is_mention=any(um['screen_name'] == myself for um in
-                                tweet.entities['user_mentions']),
+        is_repost=is_repost,
+        is_mention=any(
+            um['screen_name'] == str(myself)
+            for um in tweet.entities['user_mentions']
+        ),
         is_explicit_mention=any(
             um['screen_name'] == str(myself)
             and
@@ -145,6 +137,7 @@ def fromTweet(tweet, myself):
             and
             um['indices'][1] <= tweet.display_text_range[1]
             for um in tweet.entities['user_mentions']
-        )
+        ),
+        is_not_eligible=(author == myself or is_repost)
     )
     return m

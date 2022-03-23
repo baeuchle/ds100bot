@@ -7,7 +7,7 @@ from .result import Result
 log_ = logging.getLogger('bot.AnswerMachine.react')
 follog_ = logging.getLogger('followlog')
 
-def process_tweet(tweet, twitter, database, magic_tags, magic_emojis, **kwargs):
+def process_message(tweet, twitter, database, magic_tags, magic_emojis, **kwargs):
     reply = compose_answer(tweet.text,
                            database,
                            tweet.hashtags([*magic_tags, *magic_emojis]),
