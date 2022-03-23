@@ -31,7 +31,7 @@ def set_arguments(ap):
                         required=False)
 
 class Twitter:
-    def __init__(self, api, readwrite=False):
+    def __init__(self, api, readwrite, highest_ids):
         self.twit = api
         try:
             self.myself = self.twit.me()
@@ -39,6 +39,7 @@ class Twitter:
             raise RuntimeError(str(te)) from te
         self.measure = Measure()
         self.readonly = not readwrite
+        self.high_message = highest_ids
 
     def tweet_single(self, text, **kwargs):
         """Actually posts text as a new tweet.
@@ -157,11 +158,11 @@ class Twitter:
             reply_id = new_reply_id
         return reply_id
 
-    def all_relevant_tweets(self, highest_id, mt_list):
+    def all_relevant_tweets(self, mt_list):
         results = {}
-        for tl in (self.mentions(highest_id),
-                   self.timeline(highest_id),
-                   self.hashtag(mt_list, highest_id)):
+        for tl in (self.mentions(),
+                   self.timeline(),
+                   self.hashtag(mt_list)):
             for t in tl:
                 if t is None:
                     log_.error("Received None status")
@@ -174,21 +175,28 @@ class Twitter:
                     log_.debug("Status %d has NOBOT", t.id)
                     continue
                 results[msg.id] = msg
+        if results:
+            self.high_message = max(self.high_message, *results.keys())
         log_.info("found %d unique status worth looking into", len(results))
         return results
 
-    def mentions(self, highest_id):
-        return self.cursor(self.twit.mentions_timeline, since_id=highest_id)
+    def mentions(self):
+        result = self.cursor(self.twit.mentions_timeline, since_id=self.high_message)
+        log_.debug("found %d mentions", len(result))
+        return result
 
-    def timeline(self, highest_id):
-        return self.cursor(self.twit.home_timeline, since_id=highest_id)
+    def timeline(self):
+        result = self.cursor(self.twit.home_timeline, since_id=self.high_message)
+        log_.debug("found %d status in timeline", len(result))
+        return result
 
-    def hashtag(self, mt_list, highest_id):
+    def hashtag(self, mt_list):
         tagquery = "(" + " OR ".join(mt_list) + ")"
-        tweets = []
-        for ht in self.cursor(self.twit.search, q=tagquery, since_id=highest_id):
-            tweets.append(self.get_tweet(ht.id))
-        return tweets
+        result = []
+        for ht in self.cursor(self.twit.search, q=tagquery, since_id=self.high_message):
+            result.append(self.get_tweet(ht.id))
+        log_.debug("found %d status in hashtags", len(result))
+        return result
 
     def cursor(self, task, **kwargs):
         kwargs['tweet_mode'] = 'extended'
@@ -255,7 +263,7 @@ class Twitter:
             return None
         return fromTweet(msg, self.myself)
 
-def make_twapi(args):
+def make_twapi(args, highest_ids):
     config = configparser.ConfigParser()
     config.read(args.config)
     auth = tweepy.OAuthHandler(
@@ -270,4 +278,5 @@ def make_twapi(args):
         api = tweepy.API(auth)
     except tweepy.error.TweepError as te:
         raise RuntimeError(str(te)) from te
-    return Twitter(api, args.readwrite)
+    log_.info("Created twitter API instance for @%s", api.me().screen_name)
+    return Twitter(api, args.readwrite, highest_ids)

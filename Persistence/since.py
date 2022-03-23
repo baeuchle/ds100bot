@@ -22,9 +22,9 @@ def get_since_id(sql):
     logger.debug("found highest ids for %s: %s", sql.network, result)
     return result.get('since_id', 0)
 
-def store_since_id(sql, highest_id):
-    logger.info("storing highest id: %d",
-            highest_id)
+def store_since_id(sql, network):
+    logger.info("storing highest msg id: %d",
+            network.high_message)
     # store last answer time
     sql.cursor.execute("""
         UPDATE
@@ -37,7 +37,7 @@ def store_since_id(sql, highest_id):
             network = ?
         """,
         (
-         highest_id,
+         network.high_message,
          sql.network,
         )
         )

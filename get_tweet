@@ -89,7 +89,7 @@ if args.mode == 'both':
     do_mock = True
     do_dump = True
 
-twapi = setup_twitter(args)
+twapi = setup_twitter(args, 0)
 
 tid = args.id
 if tid is None:

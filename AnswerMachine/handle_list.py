@@ -44,6 +44,3 @@ def handle_list(message_dict, network, database, magic_tags, magic_emojis):
                     magic_emojis,
                     modus=mode,
                     default_magic_tag=dmt)
-    if len(message_dict) > 0:
-        return max(message_dict.keys())
-    return 0

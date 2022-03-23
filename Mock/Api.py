@@ -37,6 +37,7 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
         self.double_replies = []
         self.measure = Measure()
         self.readonly = True
+        self.high_message = 0
 
     def get_tweet(self, tweet_id):
         for t in self.mock:
@@ -58,19 +59,24 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
         self.running_id += 1
         return self.running_id
 
-    def mentions(self, highest_id):
+    def mentions(self):
         mention_list = []
         for t in self.mock:
             for um in t.raw['entities']['user_mentions']:
                 if um['screen_name'] == self.myself.screen_name:
                     mention_list.append(t)
+        logger.debug("found %d mentions", len(mention_list))
         return mention_list
 
-    def timeline(self, highest_id):
-        return [t for t in self.mock if t.author.follows]
+    def timeline(self):
+        result = [t for t in self.mock if str(t.author) == "followee"]
+        logger.debug("found %d status in timeline", len(result))
+        return result
 
-    def hashtag(self, mt_list, highest_id):
-        return [t for t in self.mock if fromTweet(t, self.myself).has_hashtag(mt_list)]
+    def hashtag(self, mt_list):
+        result = [t for t in self.mock if fromTweet(t, self.myself).has_hashtag(mt_list)]
+        logger.debug("found %d status in hashtags", len(result))
+        return result
 
     def statistics(self, output='descriptive'):
         stat_log = logging.getLogger('statistics')

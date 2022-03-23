@@ -64,13 +64,11 @@ if __name__ == "__main__":
                                id_list=[int(x) for x in id_list])
 
         magic_tags, magic_emojis = database.magic_hashtags()
-        max_id = handle_list(twitter.all_relevant_tweets(
-                                0, magic_tags
-                             ),
-                             network=twitter,
-                             database=database,
-                             magic_tags=magic_tags,
-                             magic_emojis=magic_emojis)
+        handle_list(twitter.all_relevant_tweets(magic_tags),
+                    network=twitter,
+                    database=database,
+                    magic_tags=magic_tags,
+                    magic_emojis=magic_emojis)
         if args.source != 'external':
             raise SystemExit(twitter.statistics(args.output))
     except Exception as e: # pylint: disable=W0703
