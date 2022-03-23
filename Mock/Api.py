@@ -45,8 +45,8 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
                 return t
         raise tweepy.TweepError("Kein solcher Tweet vorhanden")
 
-    def tweet_single(self, text, **kwargs):
-        super().tweet_single(text, **kwargs)
+    def post_single(self, text, **kwargs):
+        super().post_single(text, **kwargs)
         if 'in_reply_to_status_id' in kwargs:
             reply_id = kwargs['in_reply_to_status_id']
             # don't track thread answers:

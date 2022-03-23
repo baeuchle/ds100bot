@@ -41,15 +41,10 @@ class Twitter:
         self.readonly = not readwrite
         self.high_message = highest_ids
 
-    def tweet_single(self, text, **kwargs):
+    def post_single(self, text, **kwargs):
         """Actually posts text as a new tweet.
 
         kwargs are passed to tweepy directly.
-
-        Returns:
-            - the ID of the newly created tweet if there were no errors (positive)
-            - -1 if there was an unknown error
-            - -api_code if there was an error with API code api_code
 
         If api_code is 185 (status update limit), then the program pauses 1 minute and tries again
         (this will be repeated indefinitely) An error message will be logged each time.
@@ -58,7 +53,7 @@ class Twitter:
         """
         if len(text) == 0:
             log_.error("Empty tweet?")
-            return -1
+            return None
         if tweet_log_.isEnabledFor(logging.WARNING):
             lines = text.splitlines()
             length = max([len(l) for l in lines])
@@ -68,15 +63,20 @@ class Twitter:
             tt += "▀{}┛".format('━'*(length+2))
             tweet_log_.warning(tt)
         if self.readonly:
-            return 1
+            return None
+        if 'reply_to_status' in kwargs:
+            orig_tweet = kwargs.pop('reply_to_status')
+            if orig_tweet:
+                kwargs['in_reply_to_status_id'] = orig_tweet.id
+        kwargs['auto_populate_reply_metadata'] = True
         while True: # catches rate limit
             try:
                 new_tweet = self.twit.update_status(text, **kwargs)
-                return new_tweet.id
+                return new_tweet
             except tweepy.TweepError as twerror:
                 if twerror.api_code is None:
                     log_.critical("Unknown error while tweeting: %s", twerror.reason)
-                    return -1
+                    return None
                 if twerror.api_code == 185: # status update limit (tweeted too much)
                     log_.error("Tweeted too much, waiting 1 Minute before trying again")
                     time.sleep(60)
@@ -86,7 +86,7 @@ class Twitter:
                         kwargs.get('in_reply_to_status_id', 'N/A'))
                 elif twerror.api_code != 187: # duplicate tweet
                     log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
-                return -int(twerror.api_code)
+                return None
 
     def follow(self, user):
         log_.warning("Follow @%s", user.screen_name)
@@ -137,26 +137,15 @@ class Twitter:
                     )
 
     def post(self, text, **kwargs):
-        """Post text, possibly split up into several separate messages.
-
-        Returns:
-            - ID of the last message that was sent, if all message were sent successfully
-            - ID of the original message or last message that was sent if the last attempt ended in
-              a duplicate message-error.
-            - Negative API code if there was a different error.
-        """
-        reply_id = kwargs.get('in_reply_to_status_id', 0)
-        kwargs['auto_populate_reply_metadata'] = True
+        """Post text, possibly split up into several separate messages."""
+        reply_to = None
+        if 'reply_to_status' in kwargs:
+            reply_to = kwargs.pop('reply_to_status').orig
         for part in self.measure.split(text):
-            new_reply_id = self.tweet_single(part, **kwargs)
-            if new_reply_id == -187: # duplicate message: Don't post the others
-                return reply_id
-            if new_reply_id < 0: # other error: return error code.
-                return new_reply_id
-            # all ok: go on with new id
-            kwargs['in_reply_to_status_id'] = new_reply_id
-            reply_id = new_reply_id
-        return reply_id
+            reply_to = self.post_single(part, reply_to_status=reply_to, **kwargs)
+            if not reply_to:
+                return None
+        return reply_to
 
     def all_relevant_tweets(self, mt_list):
         results = {}
