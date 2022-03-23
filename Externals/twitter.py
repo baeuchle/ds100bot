@@ -164,12 +164,14 @@ class Twitter:
                    self.hashtag(mt_list, highest_id)):
             for t in tl:
                 if t is None:
-                    log_.error("Received None tweet")
+                    log_.error("Received None status")
                     continue
                 if t.id in results:
+                    log_.debug("Status %d already in results", t.id)
                     continue
                 msg = fromTweet(t, self.myself)
                 if msg.has_hashtag('NOBOT', case_sensitive=False):
+                    log_.debug("Status %d has NOBOT", t.id)
                     continue
                 results[msg.id] = msg
         log_.info("found %d unique status worth looking into", len(results))
