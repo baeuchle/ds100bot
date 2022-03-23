@@ -24,7 +24,7 @@ def process_message(tweet, twitter, database, magic_tags, magic_emojis, **kwargs
 
 def process_commands(tweet, twapi):
     author = tweet.author
-    if tweet.has_hashtag(['folgenbitte'], case_sensitive=False):
+    if tweet.has_hashtag('folgenbitte', case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if is_followed:
             follog_.log(45, "folgenbitte from @%s: already following", str(author))
@@ -32,7 +32,7 @@ def process_commands(tweet, twapi):
             follog_.log(45, "folgenbitte from @%s: not yet following", str(author))
         if not is_followed:
             twapi.follow(author)
-    if tweet.has_hashtag(['entfolgen'], case_sensitive=False):
+    if tweet.has_hashtag('entfolgen', case_sensitive=False):
         is_followed = twapi.is_followed(author)
         if is_followed:
             follog_.log(45, "entfolgen from @%s: still following so far", str(author))

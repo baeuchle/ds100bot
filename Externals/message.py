@@ -27,6 +27,8 @@ class Message:
         """
         Checks if one of the given hashtags is in the message.
         """
+        if isinstance(tag_list, str):
+            tag_list = [tag_list]
         lowlist = [tag.lower() for tag in tag_list]
         alllower = not kwargs.get('case_sensitive', True)
         for ht in self.hashtag_texts:

@@ -169,7 +169,7 @@ class Twitter:
                 if t.id in results:
                     continue
                 msg = fromTweet(t, self.myself)
-                if msg.has_hashtag(['NOBOT'], case_sensitive=False):
+                if msg.has_hashtag('NOBOT', case_sensitive=False):
                     continue
                 results[msg.id] = msg
         log_.info("found %d unique status worth looking into", len(results))
