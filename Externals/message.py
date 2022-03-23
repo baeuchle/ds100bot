@@ -5,7 +5,7 @@ import re
 from Externals.user import User
 log_ = logging.getLogger('bot.' + __name__)
 
-class Tweet:
+class Message:
     # pylint: disable=too-many-instance-attributes
     hashtagre = None
 
@@ -17,13 +17,13 @@ class Tweet:
         self.author = kwargs['author']
         self.quoted_status_id = kwargs.get('quoted_status_id', None)
         self.in_reply_to_status_id = kwargs.get('in_reply_to_status_id', None)
-        self.is_retweet = kwargs.get('is_retweet', False)
+        self.is_repost = kwargs.get('is_repost', False)
         self.is_mention = kwargs.get('is_mention', False)
         self.is_explicit_mention = kwargs.get('is_explicit_mention', self.is_mention)
 
     def has_hashtag(self, tag_list, **kwargs):
         """
-        Checks if one of the given hashtags is in the tweet.
+        Checks if one of the given hashtags is in the message.
         """
         lowlist = [tag.lower() for tag in tag_list]
         alllower = not kwargs.get('case_sensitive', True)
@@ -38,25 +38,25 @@ class Tweet:
     def hashtags(self, candidate_list):
         """
         Returns a list of all the entries in candidate_list that are
-        present in the tweet.
+        present in the message.
         """
-        if Tweet.hashtagre is None:
-            Tweet.hashtagre = re.compile('|'.join(map(re.escape, candidate_list)))
+        if Message.hashtagre is None:
+            Message.hashtagre = re.compile('|'.join(map(re.escape, candidate_list)))
         return [
             [m.group(0).replace('#', '', 1), m.span()]
-            for m in Tweet.hashtagre.finditer(self.text)
+            for m in Message.hashtagre.finditer(self.text)
         ]
 
     def is_eligible(self, myself):
         """
-        Returns false if this is a tweet from the bot itself
-        or is a pure retweet
+        Returns false if this is a message from the bot itself
+        or is a pure repost
         """
         if self.author == myself:
-            log_.debug("Not replying to my own tweets")
+            log_.debug("Not replying to my own posts")
             return False
-        if self.is_retweet:
-            log_.debug("Not processing pure retweets")
+        if self.is_repost:
+            log_.debug("Not processing pure reposts")
             return False
         return True
 
@@ -73,14 +73,14 @@ class Tweet:
         log_.debug("Status %s has neither", str(self.id))
         return None
 
-    def get_other_tweets(self, tweet_list, mode, network, **kwargs):
+    def get_other_posts(self, post_list, mode, network, **kwargs):
         result = []
         if mode != 'all':
             return result
         for other_id in self.in_reply_to_status_id, self.quoted_status_id:
             if not other_id:
                 continue
-            other_msg = network.get_other_tweet(other_id, tweet_list)
+            other_msg = network.get_other_status(other_id, post_list)
             if not other_msg:
                 continue
             if other_msg.can_process_as_other(**kwargs):
@@ -98,13 +98,13 @@ class Tweet:
         if not self.is_eligible(kwargs['myself']):
             return False
         if self.is_mention:
-            log_.info("Not processing other tweet because it already mentions me")
+            log_.info("Not processing other post because it already mentions me")
             return False
         if self.has_hashtag(kwargs['magic_tags']):
-            log_.info("Not processing other tweet because it already has the magic hashtag")
+            log_.info("Not processing other post because it already has the magic hashtag")
             return False
         if self.has_hashtag(kwargs['magic_emojis']):
-            log_.info("Not processing other tweet because it already has the magic emojis")
+            log_.info("Not processing other post because it already has the magic emojis")
             return False
         return True
 
@@ -125,7 +125,7 @@ def fromTweet(tweet, myself):
             length = end - start
             textlist[start:end] = '_'*length
     text = "".join(textlist)
-    m = Tweet(
+    m = Message(
         orig=tweet,
         id=tweet.id,
         text=text,
@@ -134,7 +134,7 @@ def fromTweet(tweet, myself):
         author=User(tweet.author.screen_name, tweet.author.id),
         quoted_status_id=quoted_id,
         in_reply_to_status_id=tweet.in_reply_to_status_id,
-        is_retweet=tweet.__dict__.get('retweeted_status', False),
+        is_repost=tweet.__dict__.get('retweeted_status', False),
         is_mention=any(um['screen_name'] == myself for um in
                                 tweet.entities['user_mentions']),
         is_explicit_mention=any(

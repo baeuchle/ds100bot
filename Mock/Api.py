@@ -4,7 +4,7 @@ import logging
 import tweepy # for exceptions
 from Externals import Twitter
 from Externals.Measure import Measure
-from Externals.tweet import fromTweet
+from Externals.message import fromTweet
 from .Tweet import User, mocked_source, mocked_tweets
 logger = logging.getLogger('bot.test.api')
 

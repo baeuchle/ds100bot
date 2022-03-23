@@ -28,7 +28,7 @@ def handle_list(tweet_dict, twitter, database, magic_tags, magic_emojis):
                 magic_emojis,
                 modus=mode)
         dmt = tweet.default_magic_hashtag([*magic_tags, *magic_emojis])
-        for other in tweet.get_other_tweets(
+        for other in tweet.get_other_posts(
                     tweet_dict,
                     mode=mode,
                     network=twitter,

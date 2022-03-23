@@ -1,6 +1,6 @@
 """Unit tests for AnswerMachine.react.process_commands"""
 
-from Externals.tweet import Tweet as Message
+from Externals.message import Message
 from AnswerMachine.react import process_commands
 
 class MockApi:

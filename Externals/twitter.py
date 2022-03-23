@@ -6,7 +6,7 @@ import time
 import tweepy
 
 from Externals.Measure import Measure
-from Externals.tweet import fromTweet
+from Externals.message import fromTweet
 log_ = logging.getLogger('bot.api.twitter')
 tweet_log_ = logging.getLogger('msg')
 
@@ -240,12 +240,12 @@ class Twitter:
             self.warn_rate_error(rateerror, "is_followed @{}".format(user.screen_name))
             return False
 
-    def get_other_tweet(self, other_id, tlist):
+    def get_other_status(self, other_id, tlist):
         if not other_id:
-            log_.debug("get_other_tweet with None")
+            log_.debug("get_other_status with None")
             return None
         if other_id in tlist:
-            log_.debug("get_other_tweet: other_id %d already in %s", other_id, str(tlist))
+            log_.debug("get_other_status: other_id %d already in %s", other_id, str(tlist))
             return None
         log_.debug("Trying to get other tweet")
         msg = self.get_tweet(other_id)
