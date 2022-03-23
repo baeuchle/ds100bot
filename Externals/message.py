@@ -3,8 +3,27 @@
 import logging
 import html
 import re
+import textwrap
 from Externals.user import User
 log_ = logging.getLogger('bot.' + __name__)
+
+class MessageFormatter(logging.Formatter):
+    def format(self, record):
+        length = 96
+        tt = "▄{}┓\n".format('━'*(length+2))
+        for line in record.msg.splitlines():
+            for x in textwrap.wrap(line, width=length):
+                tt += ("█ {{:{}}} ┃\n".format(length)).format(x)
+        tt += "▀{}┛".format('━'*(length+2))
+        return tt
+
+class MessageHandler(logging.StreamHandler):
+    def __init__(self):
+        super().__init__()
+        self.setFormatter(MessageFormatter())
+
+msg_log = logging.getLogger('msg')
+msg_log.addHandler(MessageHandler())
 
 class Message:
     # pylint: disable=too-many-instance-attributes
@@ -140,6 +159,52 @@ def fromTweet(tweet, myself):
             um['indices'][1] <= tweet.display_text_range[1]
             for um in tweet.entities['user_mentions']
         ),
+        is_not_eligible=(author == myself or is_repost)
+    )
+    return m
+
+def _regexes():
+    """Return the regexes for fromToot, but lazily initialized and only compiled once."""
+    try:
+        return _regexes.all
+    except AttributeError:
+        _regexes.all = {
+            'mentionlink': re.compile(r"<a\b[^>]+?class=.+?\bmention\b[^>]+?>"),
+            'link': re.compile(r"<a\W.+?</a>"),
+            'tags': re.compile(r"<.+?>")
+        }
+        return _regexes.all
+
+def _strip_toot_text(text):
+    regularexps = _regexes()
+    # keep text from mention links (shield them from next step)
+    text = re.sub(regularexps['mentionlink'], "", text)
+    # delete text from links
+    text = re.sub(regularexps['link'], " ", text)
+    # delete tags
+    text = re.sub(regularexps['tags'], "", text)
+    # change HTML characters to real characters:
+    return html.unescape(text)
+
+def fromToot(toot, myself):
+    """Construct a Message object from a toot"""
+    text = '\u200b'.join([
+            toot.spoiler_text,
+            _strip_toot_text(toot.content),
+            *[str(att.description) for att in toot.media_attachments]
+        ])
+    is_repost = bool(toot.reblog)
+    author = User(toot.account.acct, toot.account.id)
+    m = Message(
+        orig=toot,
+        id=toot.id,
+        text=text,
+        hashtag_texts=[ht.name for ht in toot.tags],
+        author=author,
+        quoted_status_id=None, # mastodon doesn't seem to support this
+        in_reply_to_status_id=toot.in_reply_to_account_id,
+        is_repost=is_repost,
+        is_mention=any(men.acct == str(myself) for men in toot.mentions),
         is_not_eligible=(author == myself or is_repost)
     )
     return m

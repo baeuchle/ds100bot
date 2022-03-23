@@ -2,7 +2,7 @@
 
 import logging
 import tweepy # for exceptions
-from Externals import Twitter
+from Externals import Network
 from Externals.Measure import Measure
 from Externals.message import fromTweet
 from .Tweet import User, mocked_source, mocked_tweets
@@ -19,7 +19,7 @@ class Result: # pylint: disable=too-few-public-methods
         self.tweet = Count()
         self.follow = Count()
 
-class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
+class MockApi(Network): # pylint: disable=too-many-instance-attributes
     def __init__(self, **kwargs):
         self.running_id = 10001
         self.myself = User.theBot
@@ -38,10 +38,11 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
         self.measure = Measure()
         self.readonly = True
         self.high_message = 0
+        self.from_function = fromTweet
 
-    def get_tweet(self, tweet_id):
+    def get_status(self, status_id):
         for t in self.mock:
-            if t.id == tweet_id:
+            if t.id == status_id:
                 return t
         raise tweepy.TweepError("Kein solcher Tweet vorhanden")
 
@@ -59,6 +60,15 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
         self.running_id += 1
         return self.running_id
 
+    def defollow(self, _):
+        pass
+
+    def follow(self, _):
+        pass
+
+    def is_followed(self, _):
+        return True
+
     def mentions(self):
         mention_list = []
         for t in self.mock:
@@ -73,7 +83,7 @@ class MockApi(Twitter): # pylint: disable=too-many-instance-attributes
         logger.debug("found %d status in timeline", len(result))
         return result
 
-    def hashtag(self, mt_list):
+    def hashtags(self, mt_list):
         result = [t for t in self.mock if fromTweet(t, self.myself).has_hashtag(mt_list)]
         logger.debug("found %d status in hashtags", len(result))
         return result

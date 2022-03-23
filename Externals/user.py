@@ -13,3 +13,9 @@ class User:
 
     def __eq__(self, rhs):
         return self._name == rhs._name
+
+def fromTwitterUser(twuser):
+    return User(twuser.screen_name, twuser.id)
+
+def fromMastodonUser(mastuser):
+    return User(mastuser.acct, mastuser.id)

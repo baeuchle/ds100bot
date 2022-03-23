@@ -1,53 +1,47 @@
 #!/usr/bin/python3
 
-"""Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
+"""Twitter-Bot für die Expansion Abkürzungen"""
 
 import argparse
 import logging
 
 from AnswerMachine import handle_list
-from Externals import setup_database, set_twitter_arguments, setup_twitter
+from Externals import setup_database, set_arguments, setup_network, test_network_arguments
 import Persistence
 
 logger = Persistence.init_logger()
 
-def arguments():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     Persistence.set_logging_args(parser)
-    set_twitter_arguments(parser)
+    set_arguments(parser)
     parser.add_argument('--no-version',
                         dest='notify_version',
                         help='Do not send out version tweet and do not store last version',
                         required=False,
                         action='store_false',
                         default=True)
-    args_ = parser.parse_args()
-    logger.setLevel(getattr(logging, args_.log_level))
-    logger.debug("ds100 running args: %s", args_)
-    logging.getLogger('msg').setLevel(getattr(logging, args_.log_level))
-    return args_
-
-def teardown_apis(db, notify, network):
-    if notify:
-        Persistence.store_version(db)
-    Persistence.store_since_id(db, network)
-    db.close_sucessfully()
-    logger.info("Bot finished")
-
-if __name__ == "__main__":
-    args = arguments()
+    args = parser.parse_args()
+    network_name = test_network_arguments(args)
+    logger.setLevel(getattr(logging, args.log_level))
+    logger.debug("%s bot running args: %s", network_name, args)
+    logging.getLogger('msg').setLevel(getattr(logging, args.log_level))
     try:
-        database = setup_database(args, 'twitter')
-        twitter = setup_twitter(args, Persistence.get_since_id(database))
+        database = setup_database(args, network_name)
+        network = setup_network(network_name, args, Persistence.get_since_id(database))
         if args.notify_version:
-            Persistence.notify_new_version(twitter, database)
+            Persistence.notify_new_version(network, database)
     except RuntimeError as re:
         logger.critical(re)
         raise SystemExit(1) from re
 
     magic_tags, magic_emojis = database.magic_hashtags()
-    handle_list(network=twitter,
+    handle_list(network=network,
                 database=database,
                 magic_tags=magic_tags,
                 magic_emojis=magic_emojis)
-    teardown_apis(database, args.notify_version, network=twitter)
+    if args.notify_version:
+        Persistence.store_version(database)
+    Persistence.store_since_id(database, network)
+    database.close_sucessfully()
+    logger.info("Bot finished")

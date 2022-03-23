@@ -6,40 +6,22 @@ import time
 import tweepy
 
 from Externals.Measure import Measure
-from Externals.message import fromTweet
+from .message import fromTweet
+from .network import Network
+from .user import fromTwitterUser
+
 logger = logging.getLogger('bot.api.twitter')
-tweet_log_ = logging.getLogger('msg')
+msg_log = logging.getLogger('msg')
 
-def set_arguments(ap):
-    group = ap.add_argument_group('Twitter API', description='Configure Twitter API')
-    group.add_argument('--config',
-                        action='store',
-                        help='path to configuration file',
-                        required=True)
-    group.add_argument('--application',
-                        action='store',
-                        help='Name of the twitter application',
-                        required=True)
-    group.add_argument('--user',
-                        action='store',
-                        help='Name of the user',
-                        required=True
-                        )
-    group.add_argument('--readwrite',
-                        action='store_true',
-                        help="Don't post, only read status.",
-                        required=False)
-
-class Twitter:
+class Twitter(Network):
     def __init__(self, api, readwrite, highest_ids):
         self.api = api
         try:
-            self.myself = self.api.me()
+            me = self.api.me()
         except tweepy.error.TweepError as te:
             raise RuntimeError(str(te)) from te
-        self.measure = Measure()
-        self.readonly = not readwrite
-        self.high_message = highest_ids
+        myself = fromTwitterUser(me)
+        super().__init__(readwrite, highest_ids, Measure(), fromTweet, myself)
 
     def post_single(self, text, **kwargs):
         """Actually posts text as a new tweet.
@@ -54,14 +36,7 @@ class Twitter:
         if len(text) == 0:
             logger.error("Empty tweet?")
             return None
-        if tweet_log_.isEnabledFor(logging.WARNING):
-            lines = text.splitlines()
-            length = max([len(l) for l in lines])
-            tt = "▄{}┓\n".format('━'*(length+2))
-            for l in lines:
-                tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
-            tt += "▀{}┛".format('━'*(length+2))
-            tweet_log_.warning(tt)
+        msg_log.warning(text)
         if self.readonly:
             return None
         if 'reply_to_status' in kwargs:
@@ -136,39 +111,6 @@ class Twitter:
                         rrl['limit']
                     )
 
-    def post(self, text, **kwargs):
-        """Post text, possibly split up into several separate messages."""
-        reply_to = None
-        if 'reply_to_status' in kwargs:
-            reply_to = kwargs.pop('reply_to_status').orig
-        for part in self.measure.split(text):
-            reply_to = self.post_single(part, reply_to_status=reply_to, **kwargs)
-            if not reply_to:
-                return None
-        return reply_to
-
-    def all_relevant_tweets(self, mt_list):
-        results = {}
-        for tl in (self.mentions(),
-                   self.timeline(),
-                   self.hashtag(mt_list)):
-            for t in tl:
-                if t is None:
-                    logger.error("Received None status")
-                    continue
-                if t.id in results:
-                    logger.debug("Status %d already in results", t.id)
-                    continue
-                msg = fromTweet(t, self.myself)
-                if msg.has_hashtag('NOBOT', case_sensitive=False):
-                    logger.debug("Status %d has NOBOT", t.id)
-                    continue
-                results[msg.id] = msg
-        if results:
-            self.high_message = max(self.high_message, *results.keys())
-        logger.info("found %d unique status worth looking into", len(results))
-        return results
-
     def mentions(self):
         result = self.cursor(self.api.mentions_timeline, since_id=self.high_message)
         logger.debug("found %d mentions", len(result))
@@ -179,11 +121,11 @@ class Twitter:
         logger.debug("found %d status in timeline", len(result))
         return result
 
-    def hashtag(self, mt_list):
+    def hashtags(self, mt_list):
         tagquery = "(" + " OR ".join(mt_list) + ")"
         result = []
         for ht in self.cursor(self.api.search, q=tagquery, since_id=self.high_message):
-            result.append(self.get_tweet(ht.id))
+            result.append(self.get_status(ht.id))
         logger.debug("found %d status in hashtags", len(result))
         return result
 
@@ -206,10 +148,10 @@ class Twitter:
             logger.critical("Error %s reading tweets: %s", twerror.api_code, twerror.reason)
         return []
 
-    def get_tweet(self, tweet_id):
+    def get_status(self, status_id):
         try:
             return self.api.get_status(
-                tweet_id,
+                status_id,
                 tweet_mode='extended',
                 include_ext_alt_text=True
             )
@@ -221,11 +163,11 @@ class Twitter:
             finally:
                 pass
             if twerror.api_code == 136: # user has blocked the bot: chill out.
-                logger.debug("%s's Author has blocked us from reading their tweets.", tweet_id)
+                logger.debug("%s's Author has blocked us from reading their tweets.", status_id)
                 return None
             logger.critical("Error %s reading tweet %s: %s",
                           twerror.api_code,
-                          tweet_id,
+                          status_id,
                           twerror.reason)
         return None
 
@@ -238,19 +180,6 @@ class Twitter:
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "is_followed @{}".format(user.screen_name))
             return False
-
-    def get_other_status(self, other_id, tlist):
-        if not other_id:
-            logger.debug("get_other_status with None")
-            return None
-        if other_id in tlist:
-            logger.debug("get_other_status: other_id %d already in %s", other_id, str(tlist))
-            return None
-        logger.debug("Trying to get other tweet")
-        msg = self.get_tweet(other_id)
-        if not msg:
-            return None
-        return fromTweet(msg, self.myself)
 
 def make_twapi(args, highest_ids):
     config = configparser.ConfigParser()

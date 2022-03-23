@@ -14,30 +14,36 @@ def get_since_id(sql):
         FROM
             last
         WHERE
-            subject = 'since_id'
+            subject IN ('since_id', 'since_notification')
             AND
             network = ?
         """, (sql.network, ))
     result = dict(sql.cursor.fetchall())
     logger.debug("found highest ids for %s: %s", sql.network, result)
-    return result.get('since_id', 0)
+    return result
 
 def store_since_id(sql, network):
-    logger.info("storing highest msg id: %d",
-            network.high_message)
+    id_list = {'since_id': network.high_message}
+    try:
+        id_list['since_notification'] = network.high_notification
+    except AttributeError:
+        pass
+    logger.info("storing highest msg id for %s: %s", sql.network, id_list)
     # store last answer time
-    sql.cursor.execute("""
-        UPDATE
-            last
-        SET
-            content = ?
-        WHERE
-            subject = 'since_id'
-            AND
-            network = ?
-        """,
-        (
-         network.high_message,
-         sql.network,
-        )
-        )
+    for name, high in id_list.items():
+        sql.cursor.execute("""
+            UPDATE
+                last
+            SET
+                content = ?
+            WHERE
+                subject = ?
+                AND
+                network = ?
+            """,
+            (
+             high,
+             name,
+             sql.network,
+            )
+            )

@@ -5,8 +5,7 @@
 import argparse
 import datetime
 import logging
-from Externals import setup_database, set_twitter_arguments, setup_twitter
-import Mock
+from Externals import setup_database, set_arguments, setup_network, test_network_arguments
 import Persistence
 
 logger = Persistence.init_logger('statistics')
@@ -17,7 +16,7 @@ first = today.replace(day=1)
 january_first = first.replace(month=1)
 
 parser = argparse.ArgumentParser(description=__doc__)
-set_twitter_arguments(parser)
+set_arguments(parser)
 Persistence.set_logging_args(parser, 'INFO')
 parser.add_argument('--since',
                     dest='since',
@@ -26,7 +25,7 @@ parser.add_argument('--since',
                     choices=['0', 'month', 'year'],
                     default=0)
 args = parser.parse_args()
-
+network = test_network_arguments(args)
 logger.setLevel(getattr(logging, args.log_level))
 logger.debug("statistics running args: %s", args)
 
@@ -40,10 +39,7 @@ elif args.since == 'year':
     since = (january_first - one_day).strftime("%Y0101")
     since_text = 'Anfang letzten Jahres'
 
-twapi = setup_twitter(args, 0)
-if twapi is None:
-    twapi = Mock.MockApi()
-sql = setup_database(args, 'twitter')
+sql = setup_database(args, network)
 
 counts = sql.count_status(since=since)
 text = f"""Zeit für Statistik! Daten für die Zeit seit {since_text}. Ich habe:
@@ -66,4 +62,8 @@ text += """
 
 print(text.replace("\u200b", ""))
 
-twapi.post(text)
+if args.readwrite:
+    nw_api = setup_network(network, args, {})
+    nw_api.post(text)
+else:
+    logger.info("Readonly: not really sending that status.")

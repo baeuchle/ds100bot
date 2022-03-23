@@ -4,7 +4,7 @@ from .react import process_commands, process_message
 logger = logging.getLogger('bot.' + __name__)
 
 def handle_list(network, database, magic_tags, magic_emojis):
-    message_dict = network.all_relevant_tweets(magic_tags)
+    message_dict = network.all_relevant_status(magic_tags)
     for mid, message in message_dict.items():
         # exclude some message:
         if message.is_not_eligible:
