@@ -48,15 +48,14 @@ class MockApi(Network): # pylint: disable=too-many-instance-attributes
 
     def post_single(self, text, **kwargs):
         super().post_single(text, **kwargs)
-        if 'in_reply_to_status_id' in kwargs:
-            reply_id = kwargs['in_reply_to_status_id']
+        orig_tweet = kwargs.get('reply_to_status', None)
+        if orig_tweet:
             # don't track thread answers:
-            if reply_id != self.running_id:
-                if reply_id in self.replies:
-                    logger.warning("Tweet %d was replied to twice!", reply_id)
-                    self.double_replies.append(reply_id)
-                else:
-                    self.replies[reply_id] = text.strip()
+            if orig_tweet != self.running_id:
+                if orig_tweet.id in self.replies:
+                    logger.warning("Tweet %d was replied to twice!", orig_tweet)
+                    self.double_replies.append(orig_tweet.id)
+        self.replies[orig_tweet.id] = text.strip()
         self.running_id += 1
         return self.running_id
 
