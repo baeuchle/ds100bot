@@ -6,8 +6,6 @@ class Candidate:
             self.type_character = '#'
         else:
             self.type_character = parts[0]
-        if self.type_character == '&amp;':
-            self.type_character = '&'
         self.explicit_source = parts[1]
         self.abbr = parts[2]
         self.abbr = self.abbr[0] + self.abbr[1:].replace('_', ' ')
@@ -24,3 +22,6 @@ class Candidate:
 
     def __str__(self):
         return str(self.get_dict())
+
+    def __eq__(self, rhs):
+        return self.__dict__ == rhs.__dict__

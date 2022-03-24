@@ -1,53 +1,33 @@
 """Twitter API including Command line argumentation"""
 
 import configparser
+import logging
 import time
 import tweepy
+from urllib.parse import quote_plus
 
 from Externals.Measure import Measure
-import Persistence.log as log
-log_ = log.getLogger(__name__)
-tweet_log_ = log.getLogger('tweet', '{message}')
+from .message import fromTweet
+from .network import Network
+from .user import fromTwitterUser
 
-def set_arguments(ap):
-    group = ap.add_argument_group('Twitter API', description='Configure Twitter API')
-    group.add_argument('--config',
-                        action='store',
-                        help='path to configuration file',
-                        required=True)
-    group.add_argument('--application',
-                        action='store',
-                        help='Name of the twitter application',
-                        required=True)
-    group.add_argument('--user',
-                        action='store',
-                        help='Name of the user',
-                        required=True
-                        )
-    group.add_argument('--readwrite',
-                        action='store_true',
-                        help="Don't tweet, only read tweets.",
-                        required=False)
+logger = logging.getLogger('bot.api.twitter')
+msg_log = logging.getLogger('msg')
 
-class Twitter:
-    def __init__(self, api, readwrite=False):
-        self.twit = api
+class Twitter(Network):
+    def __init__(self, api, readwrite, highest_ids):
+        self.api = api
         try:
-            self.myself = self.twit.me()
+            me = self.api.me()
         except tweepy.error.TweepError as te:
-            raise RuntimeError(str(te))
-        self.measure = Measure()
-        self.readonly = not readwrite
+            raise RuntimeError(str(te)) from te
+        myself = fromTwitterUser(me)
+        super().__init__(readwrite, highest_ids, Measure(), fromTweet, myself)
 
-    def tweet_single(self, text, **kwargs):
+    def post_single(self, text, **kwargs):
         """Actually posts text as a new tweet.
 
         kwargs are passed to tweepy directly.
-
-        Returns:
-            - the ID of the newly created tweet if there were no errors (positive)
-            - -1 if there was an unknown error
-            - -api_code if there was an error with API code api_code
 
         If api_code is 185 (status update limit), then the program pauses 1 minute and tries again
         (this will be repeated indefinitely) An error message will be logged each time.
@@ -55,61 +35,59 @@ class Twitter:
         If api_code is neither 185 nor 187 (duplicate tweet), a critical log message will be logged.
         """
         if len(text) == 0:
-            log_.error("Empty tweet?")
-            return -1
-        if tweet_log_.isEnabledFor(log.WARNING):
-            lines = text.splitlines()
-            length = max([len(l) for l in lines])
-            tt = "▄{}┓\n".format('━'*(length+2))
-            for l in lines:
-                tt += ("█ {{:{}}} ┃\n".format(length)).format(l)
-            tt += "▀{}┛".format('━'*(length+2))
-            tweet_log_.warning(tt)
+            logger.error("Empty tweet?")
+            return None
+        msg_log.warning(text)
         if self.readonly:
-            return 1
+            return None
+        if 'reply_to_status' in kwargs:
+            orig_tweet = kwargs.pop('reply_to_status')
+            if orig_tweet:
+                kwargs['in_reply_to_status_id'] = orig_tweet.id
+        kwargs['auto_populate_reply_metadata'] = True
         while True: # catches rate limit
             try:
-                new_tweet = self.twit.update_status(text, **kwargs)
-                return new_tweet.id
+                new_tweet = self.api.update_status(text, **kwargs)
+                return new_tweet
             except tweepy.TweepError as twerror:
                 if twerror.api_code is None:
-                    log_.critical("Unknown error while tweeting: %s", twerror.reason)
-                    return -1
+                    logger.critical("Unknown error while tweeting: %s", twerror.reason)
+                    return None
                 if twerror.api_code == 185: # status update limit (tweeted too much)
-                    log_.error("Tweeted too much, waiting 1 Minute before trying again")
+                    logger.error("Tweeted too much, waiting 1 Minute before trying again")
                     time.sleep(60)
                     continue
                 if twerror.api_code == 385:
-                    log_.critical("Error 385: Tried to reply to deleted or invisible tweet %s",
+                    logger.critical("Error 385: Tried to reply to deleted or invisible tweet %s",
                         kwargs.get('in_reply_to_status_id', 'N/A'))
                 elif twerror.api_code != 187: # duplicate tweet
-                    log_.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
-                return -int(twerror.api_code)
+                    logger.critical("Error %s tweeting: %s", twerror.api_code, twerror.reason)
+                return None
 
     def follow(self, user):
-        log_.warning("Follow @%s", user.screen_name)
+        logger.warning("Follow @%s", user.screen_name)
         if self.readonly:
             return
         try:
-            self.twit.create_friendship(id=user.id)
+            self.api.create_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "follow @{}".format(user.screen_name))
 
     def defollow(self, user):
-        log_.warning("Defollow @%s", user.screen_name)
+        logger.warning("Defollow @%s", user.screen_name)
         if self.readonly:
             return
         try:
-            self.twit.destroy_friendship(id=user.id)
+            self.api.destroy_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
             self.warn_rate_error(rateerror, "defollow @{}".format(user.screen_name))
 
     def warn_rate_error(self, rate_err, description):
-        log_.critical("Rate limit violated at %s: %s", description, rate_err.reason)
+        logger.critical("Rate limit violated at %s: %s", description, rate_err.reason)
         self.print_rate_limit()
 
     def print_rate_limit(self):
-        rls = self.twit.rate_limit_status()
+        rls = self.api.rate_limit_status()
         res = rls['resources']
         for r in res:
             for l in res[r]:
@@ -117,68 +95,48 @@ class Twitter:
                 if rrl['limit'] == rrl['remaining']:
                     continue
                 if rrl['remaining'] == 0:
-                    log_.critical("Resource limit for %s used up: limit %s",
+                    logger.critical("Resource limit for %s used up: limit %s",
                         l,
                         rrl['limit']
                     )
                 elif rrl['remaining'] < 5:
-                    log_.warning("Resource limit for %s low: %s of %s remaining",
+                    logger.warning("Resource limit for %s low: %s of %s remaining",
                         l,
                         rrl['remaining'],
                         rrl['limit']
                     )
                 elif rrl['remaining'] < rrl['limit']:
-                    log_.info("Resource limit for %s in use: %s of %s",
+                    logger.info("Resource limit for %s in use: %s of %s",
                         l,
                         rrl['remaining'],
                         rrl['limit']
                     )
 
-    def tweet(self, text, **kwargs):
-        """Tweet text, possibly split up into several separate tweets.
+    def mentions(self):
+        result = self.cursor(self.api.mentions_timeline, since_id=self.high_message)
+        logger.debug("found %d mentions", len(result))
+        return result
 
-        Returns:
-            - ID of the last tweet that was sent, if all tweets were sent successfully
-            - ID of the original tweet or last tweet that was sent if the last attempt ended in a
-              duplicate tweet-error.
-            - Negative API code if there was a different error.
-        """
-        reply_id = kwargs.get('in_reply_to_status_id', 0)
-        kwargs['auto_populate_reply_metadata'] = True
-        for part in self.measure.split(text):
-            new_reply_id = self.tweet_single(part, **kwargs)
-            if new_reply_id == -187: # duplicate tweet: Don't tweet the others
-                return reply_id
-            if new_reply_id < 0: # other error: return error code.
-                return new_reply_id
-            # all ok: go on with new id
-            kwargs['in_reply_to_status_id'] = new_reply_id
-            reply_id = new_reply_id
-        return reply_id
+    def timeline(self):
+        result = self.cursor(self.api.home_timeline, since_id=self.high_message)
+        logger.debug("found %d status in timeline", len(result))
+        return result
 
-    def all_relevant_tweets(self, highest_id, tag):
-        results = []
-        for tl in (self.mentions(highest_id),
-                   self.timeline(highest_id),
-                   self.hashtag(tag, highest_id)):
-            for t in tl:
-                if t is None:
-                    log_.error("Received None tweet")
-                    continue
-                results.append(t)
-        return results
+    def _get_tag_query(self, mt_list):
+        tagquery = "(" + " OR ".join(mt_list) + ")"
+        if len(quote_plus(tagquery)) > 500 and len(mt_list) > 1:
+            logger.debug("tagquery %s too long, partioning...", tagquery)
+            return [*self._get_tag_query(mt_list[::2]), *self._get_tag_query(mt_list[1::2])]
+        logger.debug("tagquery %s short enough; we can use it.", tagquery)
+        return [tagquery]
 
-    def mentions(self, highest_id):
-        return self.cursor(self.twit.mentions_timeline, since_id=highest_id)
-
-    def timeline(self, highest_id):
-        return self.cursor(self.twit.home_timeline, since_id=highest_id)
-
-    def hashtag(self, tag, highest_id):
-        tweets = []
-        for ht in self.cursor(self.twit.search, q=tag, since_id=highest_id):
-            tweets.append(self.get_tweet(ht.id))
-        return tweets
+    def hashtags(self, mt_list):
+        result = []
+        for tagquery in self._get_tag_query(mt_list):
+            for ht in self.cursor(self.api.search, q=tagquery, since_id=self.high_message):
+                result.append(self.get_status(ht.id))
+            logger.debug("found %d status in hashtags", len(result))
+        return result
 
     def cursor(self, task, **kwargs):
         kwargs['tweet_mode'] = 'extended'
@@ -187,7 +145,6 @@ class Twitter:
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
                 result.append(t)
-            log_.warning("%d tweets found", len(result))
             return result
         except tweepy.TweepError as twerror:
             try:
@@ -196,13 +153,13 @@ class Twitter:
                     return []
             finally:
                 pass
-            log_.critical("Error %s reading tweets: %s", twerror.api_code, twerror.reason)
+            logger.critical("Error %s reading tweets: %s", twerror.api_code, twerror.reason)
         return []
 
-    def get_tweet(self, tweet_id):
+    def get_status(self, status_id):
         try:
-            return self.twit.get_status(
-                tweet_id,
+            return self.api.get_status(
+                status_id,
                 tweet_mode='extended',
                 include_ext_alt_text=True
             )
@@ -214,17 +171,17 @@ class Twitter:
             finally:
                 pass
             if twerror.api_code == 136: # user has blocked the bot: chill out.
-                log_.debug("%s's Author has blocked us from reading their tweets.", tweet_id)
+                logger.debug("%s's Author has blocked us from reading their tweets.", status_id)
                 return None
-            log_.critical("Error %s reading tweet %s: %s",
+            logger.critical("Error %s reading tweet %s: %s",
                           twerror.api_code,
-                          tweet_id,
+                          status_id,
                           twerror.reason)
         return None
 
     def is_followed(self, user):
         try:
-            return self.twit.show_friendship(
+            return self.api.show_friendship(
                 self.myself.id,
                 target_id=user.id
             )[0].following
@@ -232,14 +189,7 @@ class Twitter:
             self.warn_rate_error(rateerror, "is_followed @{}".format(user.screen_name))
             return False
 
-    def get_other_tweet(self, other_id, tlist):
-        if other_id is None:
-            return None
-        if other_id in tlist:
-            return None
-        return self.get_tweet(other_id)
-
-def make_twapi(args):
+def make_twapi(args, highest_ids):
     config = configparser.ConfigParser()
     config.read(args.config)
     auth = tweepy.OAuthHandler(
@@ -253,5 +203,6 @@ def make_twapi(args):
     try:
         api = tweepy.API(auth)
     except tweepy.error.TweepError as te:
-        raise RuntimeError(str(te))
-    return Twitter(api, args.readwrite)
+        raise RuntimeError(str(te)) from te
+    logger.info("Created twitter API instance for @%s", api.me().screen_name)
+    return Twitter(api, args.readwrite, highest_ids)

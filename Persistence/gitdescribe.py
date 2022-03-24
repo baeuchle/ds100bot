@@ -1,6 +1,10 @@
 # pylint: disable=C0114
 
+import logging
+
 from GitVersion import Git
+
+logger = logging.getLogger('bot.persistence')
 
 git_object = Git()
 def get_last_hash(sql):
@@ -11,7 +15,9 @@ def get_last_hash(sql):
             last
         WHERE
             subject = 'githash'
-        """)
+            AND
+            network = ?
+        """, (sql.network, ))
     row = sql.cursor.fetchone()
     if row is None:
         return None
@@ -33,9 +39,11 @@ def store_version(sql):
                 content = ?
             WHERE
                 subject = ?
+                AND
+                network = ?
             """,
             (
-             cont, subj,
+             cont, subj, sql.network,
             )
             )
 
@@ -45,13 +53,12 @@ def get_changelog(sqlcursor):
 
 def notify_new_version(twitter, database):
     if is_same_version(database):
+        if logger.isEnabledFor(logging.DEBUG):
+            logger.debug("Using same version as last time: %s", git_object.describe())
         return
-    status = "Ich twittere nun von Version {}".format(git_object.describe())
+    status = f"Ich twittere nun von Version {git_object.describe()}"
     cl = get_changelog(database)
     if cl.strip() != "":
         status += ":\n" + cl
-    if twitter.tweet(
-            status,
-            auto_populate_reply_metadata=True
-            ) > 0:
+    if twitter.post(status):
         store_version(database)

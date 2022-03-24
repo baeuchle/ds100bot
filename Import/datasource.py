@@ -1,10 +1,11 @@
 """Abstracts a data source configuration"""
 
 import csv
-import Persistence.log as log
+import logging
 from .error import DataError, JsonError
 from .row import Row
-log_ = log.getLogger(__name__, fmt='{name}:{levelname} {message}')
+
+log_ = logging.getLogger('setup.' + __name__)
 
 class DataSource:
     _mandatory_fields = (

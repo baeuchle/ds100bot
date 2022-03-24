@@ -3,7 +3,7 @@
 """Setup of data and documentation"""
 
 import argparse
-import sys
+import logging
 from pathlib import Path
 import subprocess
 import parentdir # pylint: disable=W0611
@@ -11,24 +11,20 @@ import Documentation
 from Externals import setup_database
 from GitVersion import Git
 from Import import find_all_configs
-import Persistence.log as log
+import Persistence
+
+logger = Persistence.init_logger('setup')
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--verbose', '-v',
-                    dest='verbose',
-                    help='Output lots of stuff',
-                    required=False,
-                    default=3,
-                    action='count')
+Persistence.set_logging_args(parser)
 parser.add_argument('--readwrite',
                     help='Actually do stuff',
                     required=False,
                     default=True)
 args = parser.parse_args()
-args.verbose = 50 - args.verbose * 10
 
-log.basicConfig(level=args.verbose, style='{')
-log_ = log.getLogger('setup', fmt='{name}:{levelname} {message}')
+logger.setLevel(getattr(logging, args.log_level.upper()))
+logger.debug("setup running args: %s", args)
 
 output_dir = Path('output')
 dump_dir = output_dir / 'dumps'
@@ -37,12 +33,12 @@ doc_source = Path('doc')
 cardsource = Path('cards')
 Path.mkdir(dump_dir, parents=True, exist_ok=True)
 
-database = setup_database(args)
+database = setup_database(args, None)
 database.purge_data()
 
 configurations = find_all_configs(config_dir)
 if configurations is None:
-    sys.exit(1)
+    raise SystemExit(1)
 navilinks = Documentation.navilink_list(Git().describe('--dirty'))
 dumplinks = Documentation.dumplink_list(configurations)
 
@@ -56,7 +52,7 @@ sRM.write(output_dir / 'sources.html')
 licpage = Documentation.Licenses(doc_source / 'copyright.md', navilinks)
 
 for cid, config in sorted(configurations.items()):
-    log_.info("Processing file %s", cid)
+    logger.info("Processing file %s", cid)
     is_default = True
     for a in config.access:
         database.insert_source(a, cid, is_default)
@@ -65,7 +61,7 @@ for cid, config in sorted(configurations.items()):
         database.insert_magic_hashtag(cid, mht)
     for dl in config.data_list:
         if not database.insert_datalist(dl, cid):
-            sys.exit(1)
+            raise SystemExit(1)
     Documentation.dump_source(config, dumplinks, navilinks, database, dump_dir)
     licpage.add_source(config)
 
@@ -82,11 +78,11 @@ if target_dir.exists():
     subprocess.run(['rsync', '-a', str(cardsource / 'socialcard.png'), str(target_dir)],
         check=False)
 else:
-    log_.warning('Not copying documentation')
+    logger.warning('Not copying documentation')
 if avatar_dir.exists():
     subprocess.run(['rsync', '-a', str(doc_source / 'avatar.svg'), str(avatar_dir / 'ds100.svg')],
         check=False)
 else:
-    log_.warning('Not copying avatar')
+    logger.warning('Not copying avatar')
 
-log_.info("Done")
+logger.info("Done")

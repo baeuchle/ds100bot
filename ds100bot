@@ -1,67 +1,47 @@
 #!/usr/bin/python3
 
-"""Twitter-Bot für die Expansion von DS100-Abkürzungen und ähnlichen Abkürzungslisten"""
+"""Twitter-Bot für die Expansion Abkürzungen"""
 
 import argparse
-import sys
+import logging
 
 from AnswerMachine import handle_list
-from Externals import setup_database, set_twitter_arguments, setup_twitter
+from Externals import setup_database, set_arguments, setup_network, test_network_arguments
 import Persistence
-import Persistence.log as log
 
-def arguments():
+logger = Persistence.init_logger()
+
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--verbose', '-v',
-                        dest='verbose',
-                        help='Output lots of stuff',
-                        required=False,
-                        action='count')
-    set_twitter_arguments(parser)
+    Persistence.set_logging_args(parser)
+    set_arguments(parser)
     parser.add_argument('--no-version',
                         dest='notify_version',
                         help='Do not send out version tweet and do not store last version',
                         required=False,
                         action='store_false',
                         default=True)
-    args_ = parser.parse_args()
-    if args_.verbose is None:
-        args_.verbose = 0
-    args_.verbose = 50 - args_.verbose * 10
-    return args_
-
-def setup_log(loglvl):
-    if loglvl <= 0:
-        loglvl = 1
-
-    log.basicConfig(level=loglvl, style='{')
-    return log.getLogger('ds100')
-
-def teardown_apis(db, notify, max_id_=0):
-    if notify:
-        Persistence.store_version(db)
-    if max_id > 0:
-        Persistence.store_since_id(db, max_id_)
-    db.close_sucessfully()
-    log_.info("Bot finished")
-
-if __name__ == "__main__":
-    args = arguments()
-    log_ = setup_log(args.verbose)
+    args = parser.parse_args()
+    network_name = test_network_arguments(args)
+    logger.setLevel(getattr(logging, args.log_level))
+    logger.debug("%s bot running args: %s", network_name, args)
+    logging.getLogger('msg').setLevel(getattr(logging, args.log_level))
     try:
-        twitter = setup_twitter(args)
-        database = setup_database(args)
+        database = setup_database(args, network_name)
+        network = setup_network(network_name, args, Persistence.get_since_id(database))
         if args.notify_version:
-            Persistence.notify_new_version(twitter, database)
+            Persistence.notify_new_version(network, database)
     except RuntimeError as re:
-        log_.critical(re)
-        sys.exit(1)
+        logger.critical(re)
+        raise SystemExit(1) from re
 
-    tagsearch, magic_tags = database.magic_hashtags()
-    max_id = handle_list(twitter.all_relevant_tweets(
-                            Persistence.get_since_id(database), tagsearch
-                         ),
-                         twitter=twitter,
-                         database=database,
-                         magic_tags=magic_tags)
-    teardown_apis(database, args.notify_version, max_id)
+    magic_tags, magic_emojis = database.magic_hashtags()
+    handle_list(network=network,
+                database=database,
+                magic_tags=magic_tags,
+                magic_emojis=magic_emojis)
+    if args.notify_version:
+        Persistence.store_version(database)
+    Persistence.store_since_id(database, network)
+    database.close_sucessfully()
+    logger.info("Bot finished")

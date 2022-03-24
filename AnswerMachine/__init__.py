@@ -3,4 +3,3 @@
 Entrypoint is handle_list::handle_list"""
 
 from .handle_list import handle_list
-from .tweet import Tweet
