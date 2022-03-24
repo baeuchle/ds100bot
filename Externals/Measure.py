@@ -6,7 +6,11 @@ import unicodedata
 
 class MeasureMastodon:
     def __init__(self):
-        self.length = 500
+        # Mastodon allows 500 characters, but counts mentions. Since in replies, these are set
+        # automatically, and extracting and measurig their lengths doesn't seem to be easily doable
+        # here, we'll simply add a margin of error of 100 characters. This is still 120 characters
+        # more than we'll have for Twitter :)
+        self.length = 400
         self.link_length = 23
         self.next_separator = {
             '\u200b': '\n',

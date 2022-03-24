@@ -3,8 +3,8 @@
 import configparser
 import logging
 import time
-import tweepy
 from urllib.parse import quote_plus
+import tweepy
 
 from Externals.Measure import Measure
 from .message import fromTweet
