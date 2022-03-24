@@ -4,6 +4,7 @@ import configparser
 import logging
 import time
 import tweepy
+from urllib.parse import quote_plus
 
 from Externals.Measure import Measure
 from .message import fromTweet
@@ -121,12 +122,20 @@ class Twitter(Network):
         logger.debug("found %d status in timeline", len(result))
         return result
 
-    def hashtags(self, mt_list):
+    def _get_tag_query(self, mt_list):
         tagquery = "(" + " OR ".join(mt_list) + ")"
+        if len(quote_plus(tagquery)) > 500 and len(mt_list) > 1:
+            logger.debug("tagquery %s too long, partioning...", tagquery)
+            return [*self._get_tag_query(mt_list[::2]), *self._get_tag_query(mt_list[1::2])]
+        logger.debug("tagquery %s short enough; we can use it.", tagquery)
+        return [tagquery]
+
+    def hashtags(self, mt_list):
         result = []
-        for ht in self.cursor(self.api.search, q=tagquery, since_id=self.high_message):
-            result.append(self.get_status(ht.id))
-        logger.debug("found %d status in hashtags", len(result))
+        for tagquery in self._get_tag_query(mt_list):
+            for ht in self.cursor(self.api.search, q=tagquery, since_id=self.high_message):
+                result.append(self.get_status(ht.id))
+            logger.debug("found %d status in hashtags", len(result))
         return result
 
     def cursor(self, task, **kwargs):
@@ -136,7 +145,6 @@ class Twitter(Network):
             result = []
             for t in tweepy.Cursor(task, **kwargs).items():
                 result.append(t)
-            logger.warning("%d tweets found", len(result))
             return result
         except tweepy.TweepError as twerror:
             try:
