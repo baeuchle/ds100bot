@@ -119,6 +119,7 @@ class Message:
         return True
 
 def fromTweet(tweet, myself):
+    # pylint: disable=too-many-locals
     """Construct a Message object from a tweet"""
     texts = [tweet.full_text]
     quoted_id = tweet.__dict__.get('quoted_status_id', None)
