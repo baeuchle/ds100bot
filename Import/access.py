@@ -1,8 +1,8 @@
 """Abstracts the source access information (explicit source and magic hashtag)"""
 
-import Persistence.log as log
+import logging
 from .error import JsonError
-log_ = log.getLogger(__name__, fmt='{name}:{levelname} {message}')
+log_ = logging.getLogger('setup.' + __name__)
 
 class Access:
     # pylint: disable=R0903

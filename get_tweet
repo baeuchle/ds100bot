@@ -9,7 +9,7 @@ import pprint
 from textwrap import dedent
 from urllib.parse import urlparse
 from pathlib import Path
-from Externals import set_twitter_arguments, setup_twitter
+from Externals import set_arguments, setup_network
 
 def print_tweet_details(tw, targetfile):
     quoted_status_id = None
@@ -80,7 +80,7 @@ parser.add_argument('--mode',
                     default='mock',
                     action='store'
                    )
-set_twitter_arguments(parser)
+set_arguments(parser)
 
 args = parser.parse_args()
 do_mock = args.mode == 'mock'
@@ -89,7 +89,7 @@ if args.mode == 'both':
     do_mock = True
     do_dump = True
 
-twapi = setup_twitter(args)
+twapi = setup_network('twitter', args, {})
 
 tid = args.id
 if tid is None:
@@ -97,7 +97,7 @@ if tid is None:
         tid = int(Path(urlparse(args.url).path).name)
     except ValueError:
         parser.error("Cannot extract tweet id from URL {}".format(args.url))
-tweepy_tweet = twapi.get_tweet(tid)
+tweepy_tweet = twapi.get_status(tid)
 
 pp = pprint.PrettyPrinter(indent=2, width=80)
 if do_mock:
@@ -109,11 +109,11 @@ if do_mock:
         '''), file=target)
         print_tweet_details(tweepy_tweet, target)
         if tweepy_tweet.in_reply_to_status_id is not None:
-            replied_to_tweet = twapi.get_tweet(tweepy_tweet.in_reply_to_status_id)
+            replied_to_tweet = twapi.get_status(tweepy_tweet.in_reply_to_status_id)
             print_tweet_details(replied_to_tweet, target)
         if 'quoted_status_id' in tweepy_tweet.__dict__:
             if tweepy_tweet.quoted_status_id is not None:
-                quoted_tweet = twapi.get_tweet(tweepy_tweet.quoted_status_id)
+                quoted_tweet = twapi.get_status(tweepy_tweet.quoted_status_id)
                 print_tweet_details(quoted_tweet, target)
 if do_dump:
     # promote inner objects so that pretty print also prints them

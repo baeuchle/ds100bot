@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS "last" (
   `subject` TEXT NOT NULL,
-  `content` TEXT
+  `content` TEXT,
+  `network` TEXT NOT NULL
 );
 CREATE TABLE IF NOT EXISTS "shortstore" (
   `id` TEXT NOT NULL,
@@ -34,5 +35,6 @@ CREATE TABLE "requestlog" (
   "abbreviation" TEXT NOT NULL,
   "request_date" TEXT NOT NULL,
   "derived_source" TEXT NOT NULL,
-  "status" TEXT NOT NULL
+  "status" TEXT NOT NULL,
+  "network" TEXT NOT NULL
 );

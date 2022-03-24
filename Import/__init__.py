@@ -1,9 +1,10 @@
 """Importing data from JSON/CSV into Database"""
 
-import Persistence.log as log
+import logging
 from .sourceconfig import SourceConfig
 from .error import SourceError, JsonError, DataError
-log_ = log.getLogger(__name__)
+
+log_ = logging.getLogger('setup.' + __name__)
 
 def find_all_configs(directory):
     configurations = {}

@@ -3,11 +3,11 @@
 """Read source configuation"""
 
 import json
-import Persistence.log as log
+import logging
 from .access import Access
 from .datasource import DataSource
 from .error import JsonError
-log_ = log.getLogger(__name__, fmt='{name}:{levelname} {message}')
+log_ = logging.getLogger('setup.' + __name__)
 
 class SourceConfig:
     # pylint: disable=R0903
@@ -27,7 +27,7 @@ class SourceConfig:
             except json.JSONDecodeError as jde:
                 msg = "{}::{}::{}: JSON object could not be decoded: {}".format(
                     self.file, jde.lineno, jde.colno, jde.msg)
-                raise JsonError(msg)
+                raise JsonError(msg) from jde
         for mf in SourceConfig._mandatory_fields:
             if mf not in self.json:
                 msg = "Key {} missing".format(mf)
