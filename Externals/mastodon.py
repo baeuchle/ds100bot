@@ -33,7 +33,6 @@ class Mastodon(Network):
         self.api = api
         user = fromMastodonUser(self.api.me())
         super().__init__(readwrite, highest_ids, MeasureMastodon(), fromToot, user)
-        self.high_notification = int(highest_ids.get('since_notification', self.high_message))
 
     def post_single(self, text, **kwargs):
         # pylint: disable=too-many-return-statements
@@ -91,11 +90,13 @@ class Mastodon(Network):
 
     def mentions(self):
         result = []
-        for noti in self.api.notifications(min_id=self.high_notification, mentions_only=True):
-            if noti.id > self.high_notification:
-                self.high_notification = noti.id
+        for noti in self.api.notifications(mentions_only=True):
             if noti.type == 'mention':
                 result.append(noti.status)
+                try:
+                    self.api.notifications_dismiss(noti)
+                except MastodonNotFoundError:
+                    logger.exception("Error while cleaning out notification %s", noti.id)
         logger.debug("found %d mentions", len(result))
         return result
 
