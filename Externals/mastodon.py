@@ -3,7 +3,7 @@
 import configparser
 import logging
 import mastodon
-from mastodon.Mastodon import MastodonNotFoundError
+from mastodon.Mastodon import MastodonAPIError, MastodonNotFoundError
 
 from Externals.Measure import MeasureMastodon
 from .message import fromToot
@@ -36,6 +36,7 @@ class Mastodon(Network):
         self.high_notification = int(highest_ids.get('since_notification', self.high_message))
 
     def post_single(self, text, **kwargs):
+        # pylint: disable=too-many-return-statements
         if len(text) == 0:
             logger.error("Empty tweet?")
             return None
@@ -45,13 +46,36 @@ class Mastodon(Network):
         if 'reply_to_status' in kwargs:
             orig_tweet = kwargs.pop('reply_to_status')
             if orig_tweet:
-                return self.api.status_reply(orig_tweet, text)
+                try:
+                    return self.api.status_reply(orig_tweet, text)
+                except MastodonAPIError:
+                    logger.exception("Error while tooting reply >%s<", text)
+                    text = text[:len(text//2)] + " THIS TOOT WAS TOO LONG cc @baeuchle@chaos.social"
+                    logger.critical("Now re-trying with >%s<", text)
+                    try:
+                        return self.api.status_reply(orig_tweet, text)
+                    except MastodonAPIError:
+                        logger.exception("Second-level error while tooting reply")
         # not replying to anything:
-        return self.api.status_post(text,
-                sensitive=False,
-                visibility='public',
-                **kwargs
-                )
+        try:
+            return self.api.status_post(text,
+                    sensitive=False,
+                    visibility='public',
+                    **kwargs
+                    )
+        except MastodonAPIError:
+            logger.exception("Error while tooting >%s<", text)
+            text = text[:len(text//2)] + " THIS TOOT WAS TOO LONG cc @baeuchle@chaos.social"
+            logger.critical("Now re-trying with >%s<", text)
+            try:
+                return self.api.status_post(text,
+                        sensitive=False,
+                        visibility='public',
+                        **kwargs
+                        )
+            except MastodonAPIError:
+                logger.exception("Second-level error while tooting")
+        return None
 
     def follow(self, user):
         logger.warning("Follow @%s", str(user))
