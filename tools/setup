@@ -16,7 +16,7 @@ import Persistence
 logger = Persistence.init_logger('setup')
 
 parser = argparse.ArgumentParser(description=__doc__)
-Persistence.set_logging_args(parser)
+Persistence.set_logging_args(parser, 'INFO')
 parser.add_argument('--readwrite',
                     help='Actually do stuff',
                     required=False,
