@@ -29,6 +29,11 @@ entsprechenden <span class="only-twitter">Tweets bei Twitter</span><span
 class="only-mastodon">Toots bei Mastodon</span> sind diese Daten auch
 über den Bot oder dessen gespeicherte Daten nicht mehr zugänglich.
 
+Die Statistik wird an jedem ersten eines Monats für den letzten Monat,
+an jedem 1. Januar für das letzte Jahr und immer am 9. Juni (dem
+Geburtstag des Bots) für die gesamte Lebensdauer des Bots
+veröffentlicht.
+
 Beim Besuch *dieser* Seite werden im Rahmen der gesetzlichen
 Vorschriften keine personalisierten Daten erhoben. Es werden keine Cookies
 gesetzt und kein Inhalt von externen Servern, die nicht unter der gleichen
