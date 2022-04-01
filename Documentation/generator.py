@@ -52,8 +52,7 @@ class Generator:
             self.navi.append(kwargs['links'])
 
     def headline(self, titletext):
-        head = ET.SubElement(self.head, 'h1')
-        head.text = titletext
+        ET.SubElement(self.head, 'h1').text = titletext
 
     def write(self, targetfile):
         with targetfile.open(mode='w') as tf:
