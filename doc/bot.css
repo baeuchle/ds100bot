@@ -135,3 +135,33 @@ navi p:before {
 navi:hover ul, navi:active ul {
   display: block;
 }
+
+.only-mastodon {
+  display: initial;
+  color: #ff0000;
+}
+
+.only-twitter {
+  display: initial;
+  color: #0000ff;
+}
+
+.only-mastodon:before {
+   content: "";
+   display: inline-block;
+   background-image: url('mastodon-icon.png');
+   background-size: 100% 100%;
+   height: 16px;
+   width: 16px;
+   margin-right: 4px;
+}
+
+.only-twitter:before {
+   content: "";
+   display: inline-block;
+   background-image: url('twitter-icon.png');
+   background-size: 100% 100%;
+   height: 16px;
+   width: 16px;
+   margin-right: 4px;
+}

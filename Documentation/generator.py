@@ -27,6 +27,10 @@ class Generator:
             'type': 'image/svg+xml',
             'href': 'https://avatar.frankfurtium.de/ds100.svg'
         }))
+        ET.SubElement(head, 'script', attrib={
+            'type': 'text/javascript',
+            'src': '/script.js'
+        }).text = " "
         desc = {'content': kwargs.get('desc', titletext)}
         head.append(ET.Element('meta', attrib={'property': 'og:title', 'content': titletext}))
         head.append(ET.Element('meta', attrib=Generator.SITENAME))
@@ -44,6 +48,15 @@ class Generator:
         title.text = titletext
         body = ET.SubElement(self.html, 'body')
         self.head = ET.SubElement(body, 'header')
+        ET.SubElement(body, 'p').append(Generator.xmltext("""
+     Zeige Passagen, die speziell für…
+     <input type="checkbox" name="show_selector" value="twitter" id="show_tw" checked="checked" onclick="toggle_show(this)" />
+     <label for="show_tw">Twitter</label>
+     <input type="checkbox" name="show_selector" value="mastodon" id="show_ma" checked="checked"  onclick="toggle_show(this)" />
+     <label for="show_ma">Mastodon</label>
+     … sind.
+     <span class="only-twitter">Das hier ist nur für Twitter</span>
+     <span class="only-mastodon">Das hier ist nur für Mastodon</span>"""))
         self.main = ET.SubElement(body, 'main')
         self.foot = ET.SubElement(body, 'footer')
         self.navi = ET.SubElement(self.foot, 'navi')

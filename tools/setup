@@ -74,14 +74,17 @@ target_dir = Path('/var/www/ds100/')
 avatar_dir = Path('/var/www/avatar/')
 if target_dir.exists():
     subprocess.run(['rsync', '-a', str(output_dir) + "/", str(target_dir)], check=False)
-    subprocess.run(['rsync', '-a', str(doc_source / 'bot.css'), str(target_dir)], check=False)
+    for fn in ('bot.css', 'mastodon-icon.png', 'twitter-icon.png', 'script.js'):
+        subprocess.run(['rsync', '-a', str(doc_source / fn), str(target_dir)], check=False)
     subprocess.run(['rsync', '-a', str(cardsource / 'socialcard.png'), str(target_dir)],
-        check=False)
+            check=False)
 else:
     logger.warning('Not copying documentation')
 if avatar_dir.exists():
     subprocess.run(['rsync', '-a', str(doc_source / 'avatar.svg'), str(avatar_dir / 'ds100.svg')],
-        check=False)
+            check=False)
+    subprocess.run(['rsync', '-a', str(doc_source / 'avatar-ril100.svg'), str(avatar_dir /
+        'ril100.svg')], check=False)
 else:
     logger.warning('Not copying avatar')
 
