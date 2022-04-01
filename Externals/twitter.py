@@ -6,7 +6,7 @@ import time
 from urllib.parse import quote_plus
 import tweepy
 
-from Externals.Measure import Measure
+from Externals.Measure import MeasureTweet
 from .message import fromTweet
 from .network import Network
 from .user import fromTwitterUser
@@ -22,7 +22,7 @@ class Twitter(Network):
         except tweepy.error.TweepError as te:
             raise RuntimeError(str(te)) from te
         myself = fromTwitterUser(me)
-        super().__init__(readwrite, highest_ids, Measure(), fromTweet, myself)
+        super().__init__(readwrite, highest_ids, MeasureTweet(), fromTweet, myself)
 
     def post_single(self, text, **kwargs):
         """Actually posts text as a new tweet.

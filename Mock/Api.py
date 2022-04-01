@@ -3,7 +3,7 @@
 import logging
 import tweepy # for exceptions
 from Externals import Network
-from Externals.Measure import Measure
+from Externals.Measure import MeasureTweet
 from Externals.message import fromTweet
 from .Tweet import User, mocked_source, mocked_tweets
 logger = logging.getLogger('bot.test.api')
@@ -35,7 +35,7 @@ class MockApi(Network): # pylint: disable=too-many-instance-attributes
             raise ValueError("Invalid mode in {}: {}".format(__name__, self.mode))
         self.replies = {}
         self.double_replies = []
-        self.measure = Measure()
+        self.measure = MeasureTweet()
         self.readonly = True
         self.high_message = 0
         self.from_function = fromTweet

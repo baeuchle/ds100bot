@@ -5,7 +5,7 @@ import logging
 import mastodon
 from mastodon.Mastodon import MastodonAPIError, MastodonNotFoundError
 
-from Externals.Measure import MeasureMastodon
+from Externals.Measure import MeasureToot
 from .message import fromToot
 from .network import Network
 from .user import fromMastodonUser
@@ -32,7 +32,7 @@ class Mastodon(Network):
     def __init__(self, api, readwrite, highest_ids):
         self.api = api
         user = fromMastodonUser(self.api.me())
-        super().__init__(readwrite, highest_ids, MeasureMastodon(), fromToot, user)
+        super().__init__(readwrite, highest_ids, MeasureToot(), fromToot, user)
 
     def post_single(self, text, **kwargs):
         # pylint: disable=too-many-return-statements

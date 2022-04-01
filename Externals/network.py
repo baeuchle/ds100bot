@@ -73,7 +73,7 @@ class Network:
         reply_to = None
         if 'reply_to_status' in kwargs:
             reply_to = kwargs.pop('reply_to_status').orig
-        for part in self.measure.split(text):
+        for part in self.measure.split(text, reply_to):
             reply_to = self.post_single(part, reply_to_status=reply_to, **kwargs)
             if not reply_to:
                 return None
