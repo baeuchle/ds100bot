@@ -14,9 +14,10 @@ href="https://botsin.space/@ril100">Mastodon (@ril100@botsin.space)</a>.
 Zweck des Bots
 --------------
 
-Der Bot soll helfen, Betriebsstellen Deutschen Bahn nach DS 100
-(Betriebsstellenverzeichnis) abzukürzen und trotzdem sicherzustellen,
-dass auch Dritte den Inhalt des Tweets verstehen können.
+Der Bot soll helfen, Betriebsstellen Deutschen Bahn nach Ril 100
+(Betriebsstellenverzeichnis, ehemals DS 100) abzukürzen und trotzdem
+sicherzustellen, dass auch Dritte den Inhalt des Tweets verstehen
+können.
 
 Der Bot entspringt aus einem privaten Wochenendprojekt und wird _pro
 bono_ betrieben; es stehen keine wirtschaftlichen Interessen und keine
@@ -29,6 +30,12 @@ Dieser Bot wurde ursprünglich für Twitter geschrieben und später so erweitert
 dass er auch bei Mastodon eingesetzt werden kann. Aus diesen historischen
 Gründen benutzt die Dokumentation das _generische Twittertum_ und bezeichnet
 alles als 'Tweets', auch die 'Toots'.
+
+<span class="only-twitter">Dinge, die nur in Twitter relevant sind,
+sehen so aus</span>
+
+<span class="only-mastodon">Dinge, die nur in Mastodon relevant sind,
+sehen so aus</span>
 
 Kurze Funktionsübersicht: Vier Schritte
 ---------------------------------------

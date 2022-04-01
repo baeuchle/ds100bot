@@ -54,9 +54,7 @@ class Generator:
      <label for="show_tw">Twitter</label>
      <input type="checkbox" name="show_selector" value="mastodon" id="show_ma" checked="checked"  onclick="toggle_show(this)" />
      <label for="show_ma">Mastodon</label>
-     … sind.
-     <span class="only-twitter">Das hier ist nur für Twitter</span>
-     <span class="only-mastodon">Das hier ist nur für Mastodon</span>"""))
+     … sind."""))
         self.main = ET.SubElement(body, 'main')
         self.foot = ET.SubElement(body, 'footer')
         self.navi = ET.SubElement(self.foot, 'navi')

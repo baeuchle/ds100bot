@@ -8,9 +8,10 @@ Beitragen
 
 Kommentare zum Bot, Fehlermeldungen und Ideen können gerne per Twitter an
 den [Bot selbst](https://twitter.com/_ds_100) oder an
-[@baeuchle](https://twitter.com/baeuchle) geschickt werden oder als
-Issue bei [github](https://github.com/baeuchle/ds100bot/) angelegt
-werden.
+[@baeuchle](https://twitter.com/baeuchle) beziehungsweise bei Mastodon
+an [@baeuchle@chaos.social](https://chaos.social/@baeuchle) geschickt
+werden oder als Issue bei
+[github](https://github.com/baeuchle/ds100bot/) angelegt werden.
 
 Der Bot [beinhaltet](/copyright.html) Bahnabkürzungslisten von anderen
 Bahnverwaltungen und kann sehr gerne um noch andere Listen erweitert
