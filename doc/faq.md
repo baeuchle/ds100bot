@@ -53,7 +53,7 @@ Warum antwortet der Bot mir, obwohl ich das nicht will?
   egal ist, ob der Bot antwortet oder nicht, aber selbst die Antworten
   des Bots einfach nicht sehen will, kann den Bot auf Stumm schalten.
 - Soll der Bot nur auf einzelne Tweets nicht antworten (aber das muss
-  man vorher wissen), kann dieser Tweet mit #NOBOT markiert werden. 
+  man vorher wissen), kann dieser Tweet mit #NOBOT markiert werden.
 - Der Bot antwortet auch, wenn jemand anders einen Tweet beantwortet und
   in dieser Antwort den Bot markiert oder einen der Magic Hashtags
   benutzt. Das kann für die Verfasserin des originalen Tweets verwirrend
