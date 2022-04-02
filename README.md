@@ -1,7 +1,8 @@
 DS-100-Bot
 ==========
 
-Dies ist ein Twitter-Bot zur Expansion von Bahnabkürzungen.
+Dies ist ein SocialMedia-Bot zur Expansion von Bahnabkürzungen. Aktuell
+können sowohl Twitter als aus Mastodon damit bespielt werden.
 
 Vorbereitungen
 --------------
