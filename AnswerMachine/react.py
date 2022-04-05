@@ -58,7 +58,7 @@ def find_tokens(message, modus, magic_tag):
     if modus != 'all' or len(tokens) > 1:
         return candidates
     # if modus is 'all' and we have only one token and it's not the magic_tag, fine!
-    if len(tokens) == 1 and str.join('', tokens[0][-1]) != magic_tag:
+    if len(tokens) == 1 and ''.join(tokens[0][-1]) != magic_tag:
         return candidates
     # now: If modus is all and we have at found nothing but maybe the magic_tag,
     # we'll look for more. This can only be uppercase.
