@@ -6,19 +6,29 @@
 Finden von Tweets
 =================
 
-Der Bot durchsucht Twitter nach
+Der Bot durchsucht <span class="only-twitter">Twitter</span> <span
+class="only-mastodon">Mastodon</span> nach
 
-- Tweets in seiner Timeline, also von Benutzenden, denen der Bot folgt
-  (siehe [Interaktion](/interaktion.html)). Antworten auf nicht-Gefolgte
-  werden meistens nicht gefunden.
+- <span class="only-twitter">Tweets</span> <span
+  class="only-mastodon">Toots</span> in seiner Timeline, also von
+  Benutzenden, denen der Bot folgt (siehe
+  [Interaktion](/interaktion.html)). Antworten auf nicht-Gefolgte werden
+  meistens nicht gefunden.
 - Tweets, die den Bot erwähnen:
-  - Explizite Erwähnungen (d.h., @\_ds\_100 steht im sichtbaren Text)
+  - Explizite Erwähnungen (d.h., <span
+    class="only-twitter">@\_ds\_100</span> <span
+    class="only-mastodon">@ril100@botsin.space</span> steht im
+    sichtbaren Text)
   - Implizite Erwähnungen (z.B. Antworten auf den Bot oder auf Tweets,
     die den Bot erwähnen)
-- Tweets, die einen der [Magic Hashtags](/finde-listen.html) im normalen
-  Text (nicht im Alternativtext von Medien) enthalten.
+- <span class="only-twitter">Tweets, die einen der [Magic
+  Hashtags](/finde-listen.html) im normalen Text (nicht im
+  Alternativtext von Medien) enthalten.</span> <span
+  class="only-mastodon">[Magic Hashtags](/finde-listen.html) können bei
+  Mastodon **nicht** dafür benutzt werden, Toots zu finden.</span>
 
 Der Bot schließt aus:
+
 - Pure Retweets
 - Seine eigenen Tweets
 
