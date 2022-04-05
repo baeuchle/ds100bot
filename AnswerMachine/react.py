@@ -83,7 +83,7 @@ def process_magic(magic_tags, length, default='DS100'):
             - __ is appended at end.
         Returns the edited list.
     """
-    if len(magic_tags) == 0:
+    if not magic_tags:
         # no magic tag: Only magic is in DS100.
         magic_tags = [[default, [0, 0]]]
     else:
