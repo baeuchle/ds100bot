@@ -65,22 +65,22 @@ class Twitter(Network):
                 return None
 
     def follow(self, user):
-        logger.warning("Follow @%s", user.screen_name)
+        logger.warning("Follow @%s", str(user))
         if self.readonly:
             return
         try:
-            self.api.create_friendship(id=user.id)
+            self.api.create_friendship(id=int(user))
         except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error(rateerror, "follow @{}".format(user.screen_name))
+            self.warn_rate_error(rateerror, "follow @{:s}".format(user))
 
     def defollow(self, user):
-        logger.warning("Defollow @%s", user.screen_name)
+        logger.warning("Defollow @%s", str(user))
         if self.readonly:
             return
         try:
             self.api.destroy_friendship(id=user.id)
         except tweepy.RateLimitError as rateerror:
-            self.warn_rate_error(rateerror, "defollow @{}".format(user.screen_name))
+            self.warn_rate_error(rateerror, "defollow @{:s}".format(user))
 
     def warn_rate_error(self, rate_err, description):
         logger.critical("Rate limit violated at %s: %s", description, rate_err.reason)
