@@ -182,7 +182,7 @@ class Twitter(Network):
     def is_followed(self, user):
         try:
             return self.api.show_friendship(
-                self.myself.id,
+                int(self.myself),
                 target_id=user.id
             )[0].following
         except tweepy.RateLimitError as rateerror:
