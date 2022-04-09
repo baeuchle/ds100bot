@@ -7,3 +7,15 @@ function toggle_show(element) {
     all_elements[i].style.display = calculated_display;
   }
 }
+
+function toggle_menu() {
+  toggle_any("sidenavi");
+}
+
+function toggle_any(classname) {
+  var elements = document.getElementsByClassName(classname);
+  for (var i = 0; i < elements.length; ++i) {
+    elements[i].classList.toggle("shownnavi");
+    elements[i].classList.toggle("hiddennavi");
+  }
+}

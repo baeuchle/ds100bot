@@ -50,16 +50,18 @@ class Generator:
         self.head = ET.SubElement(body, 'header')
         ET.SubElement(body, 'p').append(Generator.xmltext("""
      Zeige Passagen, die speziell für…
-     <input type="checkbox" name="show_selector" value="twitter" id="show_tw" checked="checked" onclick="toggle_show(this)" />
+     <input type="checkbox" name="show_selector" value="twitter"
+        id="show_tw" checked="checked" onclick="toggle_show(this)" />
      <label for="show_tw">Twitter</label>
-     <input type="checkbox" name="show_selector" value="mastodon" id="show_ma" checked="checked"  onclick="toggle_show(this)" />
+     <input type="checkbox" name="show_selector" value="mastodon"
+        id="show_ma" checked="checked"  onclick="toggle_show(this)" />
      <label for="show_ma">Mastodon</label>
      … sind."""))
         self.main = ET.SubElement(body, 'main')
         self.foot = ET.SubElement(body, 'footer')
+        ET.SubElement(self.foot, 'p', onclick="toggle_menu()").text = 'Links'
         self.navi = ET.SubElement(self.foot, 'navi')
         if 'links' in kwargs:
-            ET.SubElement(self.navi, 'p').text = 'Links'
             self.navi.append(kwargs['links'])
 
     def headline(self, titletext):

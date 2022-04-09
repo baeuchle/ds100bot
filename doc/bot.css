@@ -9,7 +9,6 @@ h1::before {
 
 ul.flat {
   padding-left: 0;
-  width: 100%;
   border-top: thin black double;
   border-bottom: thin black double;
 }
@@ -26,10 +25,6 @@ ul.flat li {
   display: inline-block;
   list-style-type: none;
   white-space: nowrap;
-}
-
-ul.flat li.containsul::before {
-  content: "";
 }
 
 blockquote {
@@ -112,13 +107,7 @@ navi, header, section {
   clear: both;
 }
 
-navi ul {
-  display: none;
-  margin-top: .1em;
-  margin-bottom: .1em;
-}
-
-navi p {
+footer p {
   display: block;
   float: left;
   margin-right: 1em;
@@ -126,13 +115,65 @@ navi p {
   margin-bottom: .1em;
 }
 
-navi p:before {
+footer p:before {
   content: "☰ ";
   display: inline-block;
   margin-right: .2em;
 }
 
-navi:hover ul, navi:active ul {
+navi .closenavi:before {
+  content: "× ";
+  display: inline-block;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+navi div.shownnavi {
+  width: 250px;
+}
+
+navi div.hiddennavi {
+  width: 0px;
+}
+
+navi div.sidenavi {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  overflow-x: hidden;
+  background-color: #c0d0ff;
+}
+
+navi ul {
+  list-style-type: none;
+  margin-left: 1em;
+  padding: 0;
+}
+
+navi ul li.hiddennavi span:before {
+  content: "▷ ";
+}
+
+navi ul li.shownnavi span:before {
+  content: "▽ ";
+}
+
+navi ul li {
+  transition: 0.5s;
+}
+
+navi ul li ul {
+  transition: 0.5s;
+}
+
+navi ul li.hiddennavi ul {
+  display: none;
+}
+
+navi ul li.shownnavi ul {
   display: block;
 }
 
