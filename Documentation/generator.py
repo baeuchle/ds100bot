@@ -48,24 +48,20 @@ class Generator:
         title.text = titletext
         body = ET.SubElement(self.html, 'body')
         self.head = ET.SubElement(body, 'header')
-        ET.SubElement(body, 'p').append(Generator.xmltext("""
-     Zeige Passagen, die speziell für…
-     <input type="checkbox" name="show_selector" value="twitter"
-        id="show_tw" checked="checked" onclick="toggle_show(this)" />
-     <label for="show_tw">Twitter</label>
-     <input type="checkbox" name="show_selector" value="mastodon"
-        id="show_ma" checked="checked"  onclick="toggle_show(this)" />
-     <label for="show_ma">Mastodon</label>
-     … sind."""))
         self.main = ET.SubElement(body, 'main')
         self.foot = ET.SubElement(body, 'footer')
-        ET.SubElement(self.foot, 'p', onclick="toggle_menu()").text = 'Links'
         self.navi = ET.SubElement(self.foot, 'navi')
+        ET.SubElement(self.navi, 'p', onclick="toggle_menu()").text = 'Menü'
         if 'links' in kwargs:
             self.navi.append(kwargs['links'])
 
     def headline(self, titletext):
         ET.SubElement(self.head, 'h1').text = titletext
+        self.navi_in_head()
+
+    def navi_in_head(self):
+        navi = ET.SubElement(self.head, 'navi')
+        ET.SubElement(navi, 'p', onclick="toggle_menu()").text = 'Menü'
 
     def write(self, targetfile):
         with targetfile.open(mode='w') as tf:

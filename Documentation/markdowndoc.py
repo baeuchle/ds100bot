@@ -28,6 +28,7 @@ class MarkdownDoc(Generator):
                 generator_kwargs['desc'] = desc.text
         super().__init__(title, **generator_kwargs)
         self.head.append(hl)
+        self.navi_in_head()
         for tag in xmltree:
             if tag.tag == 'h1':
                 continue

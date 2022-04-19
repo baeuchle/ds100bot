@@ -78,14 +78,9 @@ class Dump(Generator):
             description = ET.SubElement(self.head, 'p')
             description.append(Generator.xmltext(config.desc))
         dlnavi = ET.SubElement(self.head, 'navi')
-        ET.SubElement(dlnavi, 'p').text = 'Alle Dumps'
+        ET.SubElement(dlnavi, 'p', onclick="toggle_any('dumpnavi')").text = 'Alle Dumps'
         dlnavi.append(kwargs.get('dumplinks', None))
         self.table = ET.SubElement(self.main, 'table', attrib={'class': 'dumptable'})
-        links = kwargs.get('links', None)
-        if links is not None:
-            uppernavi = ET.SubElement(self.head, 'navi')
-            ET.SubElement(uppernavi, 'p').text = 'Menu'
-            uppernavi.append(links)
         section = ET.SubElement(self.head, 'section', attrib={'class': 'licenses'})
         if self.number_of_data_lists == 1:
             license_p = ET.SubElement(section, 'p')

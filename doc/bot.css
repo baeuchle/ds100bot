@@ -7,26 +7,6 @@ h1::before {
   width: 25px;
 }
 
-ul.flat {
-  padding-left: 0;
-  border-top: thin black double;
-  border-bottom: thin black double;
-}
-
-ul.flat li::before {
-  content: " | ";
-}
-
-ul.flat li:first-child::before {
-  content: "";
-}
-
-ul.flat li {
-  display: inline-block;
-  list-style-type: none;
-  white-space: nowrap;
-}
-
 blockquote {
   border: thin blue solid;
   font-family: sans-serif;
@@ -102,41 +82,45 @@ th.no, td.no {
   background-color: #ff8080;
 }
 
-navi, header, section {
-  display: block;
+header, main, section {
   clear: both;
 }
 
-footer p {
+navi p {
   display: block;
   float: left;
   margin-right: 1em;
   margin-top: .1em;
-  margin-bottom: .1em;
+  margin-bottom: .3em;
 }
 
-footer p:before {
+navi p:before {
   content: "☰ ";
   display: inline-block;
   margin-right: .2em;
 }
 
-navi .closenavi:before {
+.closenavi:before {
   content: "× ";
   display: inline-block;
   font-size: 200%;
   font-weight: bold;
 }
 
-navi div.shownnavi {
+div.shownnavi {
   width: 250px;
 }
 
-navi div.hiddennavi {
+div.dumpnavi.shownnavi {
+  max-width: 100%;
+  min-width: 400px;
+}
+
+div.hiddennavi {
   width: 0px;
 }
 
-navi div.sidenavi {
+div.sidenavi {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -147,26 +131,68 @@ navi div.sidenavi {
   background-color: #c0d0ff;
 }
 
+div.dumpnavi {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  transition: 1s;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #c0d0ff;
+}
+
 navi ul {
   list-style-type: none;
-  margin-left: 1em;
+  margin-left: 0;
   padding: 0;
 }
 
-navi ul li.hiddennavi span:before {
+navi ul li.hiddennavi div:before {
   content: "▷ ";
 }
 
-navi ul li.shownnavi span:before {
+navi ul li.shownnavi div:before {
   content: "▽ ";
 }
 
 navi ul li {
-  transition: 0.5s;
+  display: block;
+  padding: .2em;
+  background-color: #c0d0ff;
+  color: #202840;
+}
+
+navi ul li:hover {
+  background-color: #80a0ff;
+  color: white;
 }
 
 navi ul li ul {
   transition: 0.5s;
+  margin-left: 1em;
+}
+
+navi li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+navi li > a {
+  color: black;
+}
+
+navi li:hover > a {
+  color: white;
+}
+
+navi ul li.transform_version:hover {
+  background-color: #c0d0ff;
+  color: black;
 }
 
 navi ul li.hiddennavi ul {
@@ -175,6 +201,16 @@ navi ul li.hiddennavi ul {
 
 navi ul li.shownnavi ul {
   display: block;
+}
+
+div span.sigil {
+  padding-right: .5em;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+div.bigdumplist div.closenavi {
+  display: none;
 }
 
 .only-mastodon {
