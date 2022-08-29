@@ -34,7 +34,7 @@ Zs2;Zs2;Richtungsanzeiger;Die Fahrstraße führt in die angezeigte Richtung.;
 Zs2v;Zs2v;Richtungsvoranzeiger;Richtungsanzeiger (Zs 2) erwarten.;
 Zs3;Zs3;Geschwindigkeitsanzeiger;Die durch die Kennziffer angezeigte Geschwindigkeit darf vom Signal ab im anschließenden Weichenbereich nicht überschritten werden.;
 Zs3v;Zs3v;Geschwindigkeitsvoranzeiger;Geschwindigkeitsanzeiger (Zs 3) erwarten;
-Zs6;Zs6;Gegengleisanzeiger;Der Fahrweg führt in das Streckengleis entgegen der gewöhnlichen Bedeutung Fahrtrichtung.;
+Zs6;Zs6;Gegengleisanzeiger;Der Fahrweg führt in das Streckengleis entgegen der gewöhnlichen Fahrtrichtung.;
 Zs7;Zs7;Vorsichtsignal;Am Signal Hp 0 oder am gestörten Lichthauptsignal ohne schriftlichen Befehl vorbeifahren! Weiterfahrt auf Sicht.;
 Zs8;Zs8;Gegengleisfahrt-Ersatzsignal;Am Halt zeigenden oder gestörten Hauptsignal vorbeifahren, der Fahrweg führt in das Streckengleis entgegen der gewöhnlichen Fahrtrichtung.;
 ;Zs9;Bahnübergangstafel;Nach dem zulässigen Vorbeifahren an dem Halt zeigenden oder gestörten Lichthauptsignal Halt vor dem Bahnübergang! Weiterfahrt nach Sicherung.;DV
