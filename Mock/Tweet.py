@@ -7,7 +7,7 @@ import logging
 log_ = logging.getLogger(__name__)
 
 class User:
-    # pylint: disable=R0903
+    # pylint: disable=R0903, R0902
     def __init__(self, **kwargs):
         self.screen_name = kwargs['screen_name']
         self._name = kwargs['screen_name']
@@ -21,6 +21,7 @@ class User:
         }
         self.follows = kwargs.get('follows', False)
         self.follow_after = self.follows
+        self.description = 'User description'
 
     def mention(self, start):
         result = copy.deepcopy(self._mention)
@@ -117,6 +118,7 @@ class TweepyMock:
         self.retweeted_status = self.raw.get('retweeted_status', False)
         if 'extended_entities' in self.raw:
             self.extended_entities = self.raw['extended_entities']
+        self.user = self.author
 
     def add_to_raw(self, key, val):
         if key not in self.raw:

@@ -35,6 +35,7 @@ class Message:
         self.text = kwargs['text']
         self.hashtag_texts = kwargs.get('hashtag_texts', [])
         self.author = kwargs['author']
+        self.user_dmt = kwargs.get('user_dmt', 'DS100')
         self.quoted_status_id = kwargs.get('quoted_status_id', None)
         self.in_reply_to_status_id = kwargs.get('in_reply_to_status_id', None)
         self.is_repost = kwargs.get('is_repost', False)
@@ -99,7 +100,7 @@ class Message:
 
     def default_magic_hashtag(self, magic):
         dmt_list = [t[0] for t in self.hashtags(magic)]
-        dmt = 'DS100'
+        dmt = self.user_dmt
         if len(dmt_list) > 0:
             dmt = dmt_list[0]
         return dmt
@@ -117,6 +118,18 @@ class Message:
             log_.info("Not processing other post because it already has the magic emojis")
             return False
         return True
+
+def _user_dmt_from_profile_text(user_description):
+    note = _regexes()['mht_in_description'].search(user_description)
+    if note:
+        return note.groups()[0]
+    return 'DS100'
+
+def _user_dmt_mast(account):
+    for f in account.fields:
+        if f['name'].lower() in ("magic hashtag", "magichashtag", "mht"):
+            return f['value']
+    return _user_dmt_from_profile_text(account.note)
 
 def fromTweet(tweet, myself):
     # pylint: disable=too-many-locals
@@ -160,7 +173,8 @@ def fromTweet(tweet, myself):
             um['indices'][1] <= tweet.display_text_range[1]
             for um in tweet.entities['user_mentions']
         ),
-        is_not_eligible=(author == myself or is_repost)
+        is_not_eligible=(author == myself or is_repost),
+        user_dmt=_user_dmt_from_profile_text(tweet.user.description)
     )
     return m
 
@@ -172,7 +186,8 @@ def _regexes():
         _regexes.all = {
             'mentionlink': re.compile(r"<a\b[^>]+?class=.+?\bmention\b[^>]+?>"),
             'link': re.compile(r"<a\W.+?</a>"),
-            'tags': re.compile(r"<.+?>")
+            'tags': re.compile(r"<.+?>"),
+            'mht_in_description': re.compile(r"(?=^|\W)mht:\s+#?(\S+)(?=\W|$)")
         }
         return _regexes.all
 
@@ -206,6 +221,7 @@ def fromToot(toot, myself):
         in_reply_to_status_id=toot.in_reply_to_account_id,
         is_repost=is_repost,
         is_mention=any(men.acct == str(myself) for men in toot.mentions),
-        is_not_eligible=(author == myself or is_repost)
+        is_not_eligible=(author == myself or is_repost),
+        user_dmt=_user_dmt_mast(toot.account)
     )
     return m

@@ -11,7 +11,9 @@ Standardmäßig werden gefundene Kürzel mithilfe der
 Für jede Abkürzung kann eine Quelle explizit angefordert werden (siehe
 [die Regeln für Abkürzungen](/finde-lang.html)); man kann aber auch die
 „Standard-Liste“ für den Tweet verändern, in dem man einen Magic Hashtag
-oder ein Magic Emoji benutzt. Magic Emojis funktionieren dabei komplett
+oder ein Magic Emoji benutzt. __Durch Einstellungen im Benutzerprofil
+können Benutzende auch den standardmäßig benutzten Magic Hashtag
+beeinflussen__, siehe unten. Magic Emojis funktionieren dabei komplett
 gleichberechtigt wie Magic Hashtags<span class="only-twitter">, nur
 werden sie nicht zur Suche nach Tweets benutzt</span>. Im Detail:
 
@@ -85,3 +87,18 @@ class="only-twitter">Tweets werden jedoch nicht anhand eines Magic
 Emojis gefunden!</span>
 
 Magic Hashtags und Magic Emojis können auch gemischt werden.
+
+Default Magic Hashtag aus dem Profil
+------------------------------------
+
+Ein Nutzer\*innenbezogener Magic Hashtag kann aus dem Profil gelesen
+werden. Dabei wird im dem Profiltext ein Text nach der Form "mht:
+\#DS100" gesucht, also das Wort mht, gefolgt von einem Doppelpunkt,
+Leerzeichen und dann den gewünschten Hashtag inklusive des '#'. <span
+class="only-mastodon">In den „Tabellenfeldern“, die Mastodon für
+strukturierte Informationen bereitstellt, werden nacheinander die
+Schlüssel „magic hashtag“, „magichashtag“ und „mht“ (ohne Beachtung der
+Groß-/Kleinschreibung) gesucht; der Wert im ersten darunter gefundenen
+wird genutzt. Erst wenn hier nichts gefunden wird, wird der Profiltext
+durchsucht.</span> Wird kein Profil-MHT gefunden, wird weiterhin \#DS100
+verwendet.
