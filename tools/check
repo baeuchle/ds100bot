@@ -2,4 +2,5 @@
 
 pylint \
     --reports=n \
+    --generated-members tweepy \
     $(tools/find_all_pys)
