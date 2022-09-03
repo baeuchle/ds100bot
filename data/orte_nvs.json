@@ -1,0 +1,28 @@
+{
+  "id": "orte_nvs",
+  "headline": "Haltestellen vom Nahverkehr Schwerin",
+  "access": [{
+    "x_source": "SCHWERIN",
+    "type": "#"
+  }],
+  "magic_hashtags": [
+    "_SCHWERIN"
+  ],
+  "data": [{
+    "id": "orte_nvs",
+    "short": "Abkürzung",
+    "long": "Haltestelle",
+    "file": "sources/orte_nvs.csv",
+    "source": {
+      "name": "Eigene Zusammenstellung auf Basis von: Website Nahverkehr Schwerin (NVS)"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }]
+}

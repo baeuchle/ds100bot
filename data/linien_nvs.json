@@ -1,0 +1,61 @@
+{
+  "id": "linien_nvs",
+  "headline": "ÖPNV-Linien in Schwerin",
+  "description": "ÖPNV-Linien im Stadtgebiet Potsdam außer Bahn-Verkehr",
+  "access": [{
+    "x_source": "SCHWERIN",
+    "type": "/"
+  }],
+  "magic_hashtags": [
+    "_SCHWERIN"
+  ],
+  "data": [{
+    "id": "linien_nvs",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_nvs.csv",
+    "source": {
+      "name": "Straßenbahn- und Buslinien der Nahverkehr Schwerin GmbH; Eigene Zusammenstellung auf Basis der Webseite"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }, {
+    "id": "linien_vlp",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_vlp.csv",
+    "source": {
+      "name": "Buslinien der Verkehrsgesellschaft Ludwigslust-Parchim mbH; Eigene Zusammenstellung auf Basis der Webseite"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }, {
+    "id": "linien_nwm",
+    "short": "Linie",
+    "long": "Laufweg",
+    "file": "sources/linien_nwm.csv",
+    "source": {
+      "name": "Buslinien der NAHBUS Nordwestmecklenburg GmbH; Eigene Zusammenstellung auf Basis der Webseite"
+    },
+    "license": {
+      "name": "CC-BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "owner": {
+        "type": "twitter",
+        "name": "jonasr_97"
+      }
+    }
+  }]
+}
