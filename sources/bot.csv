@@ -12,7 +12,7 @@ WHOIS;Das ist der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn.
 WHORU;Ich bin der DS100-Bot zur Expansion von DS100-Kürzeln der Deutschen Bahn. Betrieben von @baeuchle.\nhttps://ds100.frankfurtium.de/impressum.html
 COPY,KOPIE,URHBR; © Die Erzeugnisse des Bots unterliegen keinem Urheberrecht, sofern das rechtlich möglich ist. Der Autor ist überzeugt, dass keine ausreichende Schöpfungstiefe vorliegt.\nhttps://ds100.frankfurtium.de/copyright.html
 WIESO,WARUM;Wieso dieser Bot? Damit Leute, die sie kennen, DS100-Abkürzungen benutzen können und Leute, die sie nicht kennen, diese trotzdem verstehen.\nhttps://ds100.frankfurtium.de/motivation.html
-WIE;Dieser Bot ist ein Python-Script, das alle drei Minuten läuft und nach beantwortbaren Tweets sucht.
+WIE;Dieser Bot ist ein Python-Script, das alle paar Minuten läuft und nach beantwortbaren Tweets sucht.
 KI,AI;Dieser Bot besitzt keine Künstliche Intelligenz. Er ist sozusagen strunzdumm. Lernen kann der Bot nur, indem der Autor lernt und etwas neues dazuprogrammiert.
 FOLLOW,FOLGEN,FOLGE;Der Bot kann durch Erwähnung + #folgenbitte dazu gebracht werden, Accounts zu folgen. Dann muss er nicht mehr extra erwähnt werden, um #DS100-Kürzel zu finden. Siehe auch #DEFLLOW
 DEFLLOW,ENTFOLGEN;Wenn der Bot nicht mehr ohne extra Erwähnung (siehe #FOLLOW) die eigenen Tweets nach Kürzeln durchsuchen soll, bitte Erwähnung + #entfolgen benutzen.
