@@ -63,13 +63,13 @@ class Network:
     def is_followed(self, _):
         raise NotImplementedError()
 
-    def report_user_magic_hashtag(self, msg):
+    def report_user_magic_hashtag(self, message):
         msg = f"""Hallo!
 
-Für dich benutze ich standardmäßig den Magic Hashtag {msg.user_dmt}.
+Für dich benutze ich standardmäßig den Magic Hashtag {message.user_dmt}.
 
 Mehr Informationen findest du unter https://ds100.frankfurtium.de/finde-listen.html."""
-        self.post(msg, reply_to_status=msg)
+        self.post(msg, reply_to_status=message)
 
     def post_single(self, text, **_): # pylint: disable=no-self-use
         """Actually posts text as a new status."""
