@@ -37,6 +37,9 @@ def process_commands(message, twapi):
             follog_.log(45, "entfolgen from @%s: not even following yet", str(author))
         if is_followed:
             twapi.defollow(author)
+    if message.has_hashtag('showdefault'):
+        twapi.report_user_magic_hashtag(message)
+        follog_.log(45, "showdefault from @%s: %s", str(author), message.user_dmt)
 
 def find_tokens(message, modus, magic_tag):
     finder = re.compile(r"""

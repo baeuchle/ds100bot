@@ -22,3 +22,7 @@ geschrieben!) mit einer expliziten Erwähnung verbunden werden.
 Zu beiden Aktionen gibt der Bot keine eigene Rückmeldung; ob der Vorgang
 erfolgreich war, muss selbsttätig über die eigenen Twitter-Kanäle
 herausgefunden werden.
+
+Der Bot gibt auch darüber Auskunft, welchen Nutzer\*innen-spezifischen
+Magic Hashtag er standardmäßig verwendet; dafür muss er mit dem Hashtag
+__\#showdefault__ zusammen (explizit) erwähnt werden.
