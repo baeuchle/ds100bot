@@ -101,7 +101,7 @@ tweepy_tweet = twapi.get_status(tid)
 
 pp = pprint.PrettyPrinter(indent=2, width=80)
 if do_mock:
-    with open('tweet_details.py', 'w') as target:
+    with open('tweet_details.py', 'w', encoding='utf-8') as target:
         print(dedent('''\
         import datetime
         from Mock import TweepyMock, User

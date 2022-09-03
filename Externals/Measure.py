@@ -68,7 +68,7 @@ class MeasureTweet(Measure):
     def __init__(self):
         super().__init__()
         self.weight_config = {}
-        with open('config/api_weights.json') as js:
+        with open('config/api_weights.json', encoding='utf-8') as js:
             self.weight_config = json.load(js)
         if self.weight_config['emojiParsingEnabled']:
             self.emoji_flag_re = re.compile('[\U0001F1E6-\U0001F1FF]{2}')

@@ -24,7 +24,7 @@ class DataSource:
                 raise JsonError(msg)
         if self.id is None:
             raise JsonError("Key id neither in top level nor data::id")
-        handle = open(self.config['file'])
+        handle = open(self.config['file'], encoding='utf-8') # pylint: disable=consider-using-with
         self.reader = csv.DictReader(handle, delimiter=self.config.get('delim', ';'))
         self.cols = {
             'short': self.config['short'],
