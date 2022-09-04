@@ -22,13 +22,14 @@ def handle_list(network, database, magic_tags, magic_emojis):
             logger.info("Message has magic emoji")
         # Process this message
         mode = message.get_mode(magic_tags, magic_emojis)
+        dmt = message.default_magic_hashtag([*magic_tags, *magic_emojis])
         process_message(message,
                 network,
                 database,
                 magic_tags,
                 magic_emojis,
-                modus=mode)
-        dmt = message.default_magic_hashtag([*magic_tags, *magic_emojis])
+                modus=mode,
+                default_magic_tag=dmt)
         for other in message.get_other_posts(
                     message_dict,
                     mode=mode,

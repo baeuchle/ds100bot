@@ -101,8 +101,10 @@ class Message:
     def default_magic_hashtag(self, magic):
         dmt_list = [t[0] for t in self.hashtags(magic)]
         dmt = self.user_dmt
+        log_.debug("User dmt: %s", dmt)
         if len(dmt_list) > 0:
             dmt = dmt_list[0]
+            log_.debug("Replacing User DMT with %s", dmt)
         return dmt
 
     def can_process_as_other(self, **kwargs):
