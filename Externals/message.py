@@ -187,7 +187,7 @@ def _regexes():
             'mentionlink': re.compile(r"<a\b[^>]+?class=.+?\bmention\b[^>]+?>"),
             'link': re.compile(r"<a\W.+?</a>"),
             'tags': re.compile(r"<.+?>"),
-            'mht_in_description': re.compile(r"(?=^|\W)mht:\s+#?(\S+)(?=\W|$)")
+            'mht_in_description': re.compile(r"(?:^|\W)mht:\s+#?(\S+)(?:\W|$)")
         }
         return _regexes.all
 
