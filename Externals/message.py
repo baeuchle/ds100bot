@@ -129,7 +129,7 @@ def _user_dmt_mast(account):
     for f in account.fields:
         if f['name'].lower() in ("magic hashtag", "magichashtag", "mht"):
             return f['value']
-    return _user_dmt_from_profile_text(account.note)
+    return _user_dmt_from_profile_text(_strip_toot_text(account.note))
 
 def fromTweet(tweet, myself):
     # pylint: disable=too-many-locals
