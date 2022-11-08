@@ -5,7 +5,6 @@ import regex as re
 from .candidate import Candidate
 from .result import Result
 log_ = logging.getLogger('bot.AnswerMachine.react')
-follog_ = logging.getLogger('followlog')
 
 def process_message(message, network, database, magic_tags, magic_emojis, **kwargs):
     reply = compose_answer(message.text,
@@ -20,26 +19,12 @@ def process_message(message, network, database, magic_tags, magic_emojis, **kwar
     network.post(reply, reply_to_status=message)
 
 def process_commands(message, twapi):
-    author = message.author
     if message.has_hashtag('folgenbitte', case_sensitive=False):
-        is_followed = twapi.is_followed(author)
-        if is_followed:
-            follog_.log(45, "folgenbitte from @%s: already following", str(author))
-        else:
-            follog_.log(45, "folgenbitte from @%s: not yet following", str(author))
-        if not is_followed:
-            twapi.follow(author)
+        twapi.handle_followrequest(message)
     if message.has_hashtag('entfolgen', case_sensitive=False):
-        is_followed = twapi.is_followed(author)
-        if is_followed:
-            follog_.log(45, "entfolgen from @%s: still following so far", str(author))
-        else:
-            follog_.log(45, "entfolgen from @%s: not even following yet", str(author))
-        if is_followed:
-            twapi.defollow(author)
+        twapi.handle_defollowrequest(message)
     if message.has_hashtag('showdefault'):
         twapi.report_user_magic_hashtag(message)
-        follog_.log(45, "showdefault from @%s: %s", str(author), message.user_dmt)
 
 def find_tokens(message, modus, magic_tag):
     finder = re.compile(r"""

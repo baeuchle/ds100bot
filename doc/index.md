@@ -8,8 +8,10 @@ DS100/Ril100-Bot
 ================
 
 Diese Seite beschreibt den Eisenbahnabkürzungsbot für
-[Twitter (@\_ds\_100)](https://twitter.com/_ds_100) und <a rel="me"
-href="https://botsin.space/@ril100">Mastodon (@ril100@botsin.space)</a>.
+[Twitter (@\_ds\_100)](https://twitter.com/_ds_100) und Mastodon (<a rel="me"
+href="https://botsin.space/@ril100">@ril100@botsin.space</a>, <a
+rel="me" href="https://bahn.social/@ril100">@ril100@bahn.social</a> und
+<a rel="me" href="https://zug.network/@ril100">@ril100@zug.network</a>).
 
 Zweck des Bots
 --------------
@@ -36,6 +38,14 @@ sehen so aus</span>
 
 <span class="only-mastodon">Dinge, die nur in Mastodon relevant sind,
 sehen so aus</span>
+
+Instanz-spezifische Mastodon-Accounts
+=====================================
+
+<span class="only-mastodon">Die Accounts <a
+rel="me" href="https://bahn.social/@ril100">@ril100@bahn.social</a> und
+<a rel="me" href="https://zug.network/@ril100">@ril100@zug.network</a>
+beantworten Tweets in der lokalen Timeline der jeweiligen Bahn-zentrierten Mastodon-Instanzen.</span>
 
 Kurze Funktionsübersicht: Vier Schritte
 ---------------------------------------

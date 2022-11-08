@@ -2,9 +2,11 @@
 
 import logging
 from sys import stderr
+from urllib.parse import urlparse
 
 logger = logging.getLogger('bot.api')
 msg_logger = logging.getLogger('msg')
+follog_ = logging.getLogger('followlog')
 
 def set_arguments(parser):
     group = parser.add_argument_group('Network API', description='''
@@ -34,6 +36,10 @@ def set_arguments(parser):
                         help='Mastodon account name',
                         required=False)
 
+def get_hostname(base_url):
+    url = urlparse(base_url)
+    return url.hostname
+
 def test_network_arguments(args):
     if args.account and (args.application or args.user):
         print("Error: Mixing mastodon and twitter arguments", file=stderr)
@@ -42,7 +48,8 @@ def test_network_arguments(args):
         print("Error: twitter arguments, but not both", file=stderr)
         raise SystemExit(1)
     if args.account:
-        return 'mastodon'
+        return args.config[args.account].pop('network',
+                get_hostname(args.config[args.account]['api_base_url']))
     return 'twitter'
 
 class Network:
@@ -53,6 +60,22 @@ class Network:
         self.from_function = from_function
         self.measure = measure
         self.myself = myself
+
+    def handle_followrequest(self, message):
+        author = message.author
+        if self.is_followed(author):
+            follog_.log(45, "folgenbitte from @%s: already following", str(author))
+            return
+        follog_.log(45, "folgenbitte from @%s: not yet following", str(author))
+        self.follow(author)
+
+    def handle_defollowrequest(self, message):
+        author = message.author
+        if not self.is_followed(author):
+            follog_.log(45, "entfolgen from @%s: not even following yet", str(author))
+            return
+        follog_.log(45, "entfolgen from @%s: still following so far", str(author))
+        self.defollow(author)
 
     def follow(self, _):
         raise NotImplementedError()
@@ -70,6 +93,7 @@ Für dich benutze ich standardmäßig den Magic Hashtag {message.user_dmt}.
 
 Mehr Informationen findest du unter https://ds100.frankfurtium.de/finde-listen.html."""
         self.post(msg, reply_to_status=message)
+        follog_.log(45, "showdefault from @%s: %s", str(message.author), message.user_dmt)
 
     def post_single(self, text, **_): # pylint: disable=no-self-use
         """Actually posts text as a new status."""

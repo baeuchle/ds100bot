@@ -10,6 +10,4 @@ from .mastodon import make_mastodon
 def setup_network(name, args, highest_ids):
     if name == 'twitter':
         return setup_twitter(args, highest_ids)
-    if name == 'mastodon':
-        return make_mastodon(args, highest_ids)
-    raise ValueError(f"Bad network name {name}")
+    return make_mastodon(args, highest_ids)

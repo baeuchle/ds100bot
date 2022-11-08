@@ -3,6 +3,7 @@
 """Twitter-Bot für die Expansion Abkürzungen"""
 
 import argparse
+import configparser
 import logging
 
 from AnswerMachine import handle_list
@@ -22,6 +23,8 @@ if __name__ == "__main__":
                         action='store_false',
                         default=True)
     args = parser.parse_args()
+    configuration = configparser.ConfigParser()
+    args.config = configuration.read(args.config)
     network_name = test_network_arguments(args)
     logger.setLevel(getattr(logging, args.log_level))
     logger.debug("%s bot running args: %s", network_name, args)

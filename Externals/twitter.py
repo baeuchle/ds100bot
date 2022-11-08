@@ -1,6 +1,5 @@
 """Twitter API including Command line argumentation"""
 
-import configparser
 import logging
 import time
 from urllib.parse import quote_plus
@@ -190,15 +189,13 @@ class Twitter(Network):
             return False
 
 def make_twapi(args, highest_ids):
-    config = configparser.ConfigParser()
-    config.read(args.config)
     auth = tweepy.OAuthHandler(
-        config[args.application]['key'],
-        config[args.application]['secret']
+        args.config[args.application]['key'],
+        args.config[args.application]['secret']
     )
     auth.set_access_token(
-        config[args.user]['token'],
-        config[args.user]['secret']
+        args.config[args.user]['token'],
+        args.config[args.user]['secret']
     )
     try:
         api = tweepy.API(auth)

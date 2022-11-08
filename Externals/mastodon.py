@@ -1,7 +1,7 @@
 """Mastodon API including Command line argumentation"""
 
-import configparser
 import logging
+from urllib.parse import urlparse
 import mastodon
 from mastodon.Mastodon import MastodonAPIError, MastodonNotFoundError
 
@@ -12,6 +12,7 @@ from .user import fromMastodonUser
 
 logger = logging.getLogger('bot.api.mastodon')
 msg_logger = logging.getLogger('msg')
+follog_ = logging.getLogger('followlog')
 
 def set_arguments(ap):
     group = ap.add_argument_group('Mastodon', description='Configure Mastodon API')
@@ -31,7 +32,15 @@ def set_arguments(ap):
 class Mastodon(Network):
     def __init__(self, api, readwrite, highest_ids):
         self.api = api
-        user = fromMastodonUser(self.api.me())
+        me_ = self.api.me()
+        user = fromMastodonUser(me_)
+        self.mode = 'global'
+        self.public = ''
+        for f in me_.fields:
+            if f['name'] == 'botmode':
+                self.mode = f['value']
+            if f['name'] == 'publicuse':
+                self.public = f['value']
         super().__init__(readwrite, highest_ids, MeasureToot(), fromToot, user)
 
     def post_single(self, text, **kwargs):
@@ -76,6 +85,22 @@ class Mastodon(Network):
                 logger.exception("Second-level error while tooting")
         return None
 
+    def handle_followrequest(self, message):
+        if self.mode == 'global':
+            return super().handle_followrequest(message)
+        # in 'local' mode, only follow in same network:
+        authorurl = urlparse(message.author.url)
+        myurl = urlparse(self.api.me().url)
+        if authorurl.hostname == myurl.hostname:
+            return super().handle_followrequest(message)
+        # for other networks, toot at them.
+        msg = f"""Hallo!
+
+Ich folge nur lokalen Accounts des Netzwerks {myurl.hostname}. Für Accounts außerhalb
+dieses Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
+        follog_.log(45, "folgenbitte from external network %s", authorurl.hostname)
+        return self.post(msg, reply_to_status=message)
+
     def follow(self, user):
         logger.warning("Follow @%s", str(user))
         if self.readonly:
@@ -101,15 +126,22 @@ class Mastodon(Network):
         return result
 
     def timeline(self):
-        result = self.api.timeline_home(since_id=self.high_message)
-        logger.debug("found %d status in timeline", len(result))
+        if self.mode == 'global':
+            result = self.api.timeline_home(since_id=self.high_message)
+            logger.debug("found %d status in timeline", len(result))
+        elif self.mode == 'local':
+            result = self.api.timeline_local(since_id=self.high_message)
+            logger.debug("found %d status in local timeline", len(result))
+        else:
+            raise NotImplementedError("Bad bot mode '%s' in account fields")
         return result
 
     def hashtags(self, mt_list):
         # NOTE: finding magic hashtags from other servers seems inconsistent.
+        local = self.mode == 'local'
         result = []
         for tag in mt_list:
-            for msg in self.api.timeline_hashtag(tag[1:], local=False, since_id=self.high_message):
+            for msg in self.api.timeline_hashtag(tag[1:], local=local, since_id=self.high_message):
                 result.append(msg)
         logger.debug("found %d status in hashtags", len(result))
         return result
@@ -124,10 +156,8 @@ class Mastodon(Network):
         return self.api.account_relationships(int(user))[0].following
 
 def make_mastodon(args, highest_ids):
-    config = configparser.ConfigParser()
-    config.read(args.config)
     mast = mastodon.Mastodon(
-        **config[args.account]
+        **args.config[args.account]
     )
     logger.info("Created mastodon API instance for @%s@%s", mast.me().acct, mast.instance().uri)
     return Mastodon(mast, args.readwrite, highest_ids)
