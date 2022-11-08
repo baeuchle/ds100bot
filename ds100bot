@@ -24,7 +24,8 @@ if __name__ == "__main__":
                         default=True)
     args = parser.parse_args()
     configuration = configparser.ConfigParser()
-    args.config = configuration.read(args.config)
+    configuration.read(args.config)
+    args.config = configuration
     network_name = test_network_arguments(args)
     logger.setLevel(getattr(logging, args.log_level))
     logger.debug("%s bot running args: %s", network_name, args)
