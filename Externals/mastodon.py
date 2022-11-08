@@ -46,7 +46,7 @@ class Mastodon(Network):
     def post_single(self, text, **kwargs):
         # pylint: disable=too-many-return-statements
         if len(text) == 0:
-            logger.error("Empty tweet?")
+            logger.error("Empty toot?")
             return None
         msg_logger.warning(text)
         if self.readonly:

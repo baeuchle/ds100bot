@@ -18,7 +18,7 @@ if __name__ == "__main__":
     set_arguments(parser)
     parser.add_argument('--no-version',
                         dest='notify_version',
-                        help='Do not send out version tweet and do not store last version',
+                        help='Do not send out version status and do not store last version',
                         required=False,
                         action='store_false',
                         default=True)
