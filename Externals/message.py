@@ -223,7 +223,9 @@ def fromToot(toot, myself):
         in_reply_to_status_id=toot.in_reply_to_account_id,
         is_repost=is_repost,
         is_mention=any(men.acct == str(myself) for men in toot.mentions),
-        is_not_eligible=(author == myself or is_repost),
+        # let's only compare the local part of the account name. myself has that anyway (because I
+        # am local to me).
+        is_not_eligible=(toot.account.username == myself or is_repost),
         user_dmt=_user_dmt_mast(toot.account)
     )
     return m
