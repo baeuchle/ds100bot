@@ -14,7 +14,7 @@ echo "...and test result $test_result..."
 echo "...and pytest result $pytest_result..."
 echo "...to commit message:"
 
-git commit --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score | grep -v test\ score | grep -v pytest\ score)
+git commit --allow-empty --amend -m "$(git log --format=%B -n1 | grep -v pylint\ score | grep -v test\ score | grep -v pytest\ score)
 
 pylint score: $pylint_score
 test score: $test_result
