@@ -119,7 +119,8 @@ dieses Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
             if noti.type == 'mention':
                 result.append(noti.status)
                 try:
-                    self.api.notifications_dismiss(noti)
+                    if not self.readonly:
+                        self.api.notifications_dismiss(noti)
                 except MastodonNotFoundError:
                     logger.exception("Error while cleaning out notification %s", noti.id)
         logger.debug("found %d mentions", len(result))
