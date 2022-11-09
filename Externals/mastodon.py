@@ -1,7 +1,6 @@
 """Mastodon API including Command line argumentation"""
 
 import logging
-from urllib.parse import urlparse
 import mastodon
 from mastodon.Mastodon import MastodonAPIError, MastodonNotFoundError
 
@@ -89,16 +88,14 @@ class Mastodon(Network):
         if self.mode == 'global':
             return super().handle_followrequest(message)
         # in 'local' mode, only follow in same network:
-        authorurl = urlparse(message.author.url)
-        myurl = urlparse(self.api.me().url)
-        if authorurl.hostname == myurl.hostname:
+        if message.author.host == self.myself.host:
             return super().handle_followrequest(message)
         # for other networks, toot at them.
         msg = f"""Hallo!
 
-Ich folge nur lokalen Accounts des Netzwerks {myurl.hostname}. Für Accounts außerhalb
-dieses Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
-        follog_.log(45, "folgenbitte from external network %s", authorurl.hostname)
+Ich folge nur lokalen Accounts des Netzwerks {self.myself.host}. Für Accounts außerhalb dieses
+Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
+        follog_.log(45, "folgenbitte from external network %s", message.author.host)
         return self.post(msg, reply_to_status=message)
 
     def follow(self, user):

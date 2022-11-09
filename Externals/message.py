@@ -4,7 +4,7 @@ import logging
 import html
 import re
 import textwrap
-from Externals.user import User
+from Externals.user import fromTwitterUser, fromMastodonUser
 log_ = logging.getLogger('bot.' + __name__)
 
 class MessageFormatter(logging.Formatter):
@@ -151,7 +151,7 @@ def fromTweet(tweet, myself):
             length = end - start
             textlist[start:end] = '_'*length
     text = html.unescape("".join(textlist))
-    author = User(tweet.author.screen_name, tweet.author.id)
+    author = fromTwitterUser(tweet.author)
     is_repost = tweet.__dict__.get('retweeted_status', False)
     m = Message(
         orig=tweet,
@@ -212,7 +212,7 @@ def fromToot(toot, myself):
             *[str(att.description) for att in toot.media_attachments]
         ])
     is_repost = bool(toot.reblog)
-    author = User(toot.account.acct, toot.account.id)
+    author = fromMastodonUser(toot.account)
     m = Message(
         orig=toot,
         id=toot.id,
