@@ -5,7 +5,7 @@ import mastodon
 from mastodon.Mastodon import MastodonAPIError, MastodonNotFoundError
 
 from Externals.Measure import MeasureToot
-from .message import fromToot
+from .message import fromToot, _strip_toot_text
 from .network import Network
 from .user import fromMastodonUser
 
@@ -37,9 +37,9 @@ class Mastodon(Network):
         self.public = ''
         for f in me_.fields:
             if f['name'] == 'botmode':
-                self.mode = f['value']
+                self.mode = _strip_toot_text(f['value'])
             if f['name'] == 'publicuse':
-                self.public = f['value']
+                self.public = _strip_toot_text(f['value'])
         super().__init__(readwrite, highest_ids, MeasureToot(), fromToot, user)
 
     def post_single(self, text, **kwargs):
