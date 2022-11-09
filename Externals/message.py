@@ -219,7 +219,7 @@ def fromToot(toot, myself):
         text=text,
         hashtag_texts=[ht.name for ht in toot.tags],
         author=author,
-        quoted_status_id=None, # mastodon doesn't seem to support this
+        quoted_status_id=None, # mastodon doesn't support this
         in_reply_to_status_id=toot.in_reply_to_account_id,
         is_repost=is_repost,
         is_mention=any(men.acct == str(myself) for men in toot.mentions),
