@@ -12,7 +12,7 @@ class User:
         return self._id
 
     def __eq__(self, rhs):
-        return self._name == rhs._name
+        return str(self) == str(rhs)
 
 def fromTwitterUser(twuser):
     return User(twuser.screen_name, twuser.id)
