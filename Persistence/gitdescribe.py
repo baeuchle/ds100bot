@@ -56,7 +56,7 @@ def notify_new_version(twitter, database):
         if logger.isEnabledFor(logging.DEBUG):
             logger.debug("Using same version as last time: %s", git_object.describe())
         return
-    status = f"Ich twittere nun von Version {git_object.describe()}"
+    status = f"Ich schreibe nun von Version {git_object.describe()}"
     cl = get_changelog(database)
     if cl.strip() != "":
         status += ":\n" + cl
