@@ -8,3 +8,13 @@ doc/dumps.snip
 tweet_details.py
 saved_tweets/
 sonstiges/
+
+# Python Virt-Env
+env/
+
+# VSCode/VSCodium
+.vscode/
+
+# IntelliJ
+.idea/
+*.iml
