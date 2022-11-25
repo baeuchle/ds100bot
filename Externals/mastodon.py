@@ -135,14 +135,7 @@ Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
         return result
 
     def hashtags(self, mt_list):
-        # NOTE: finding magic hashtags from other servers seems inconsistent.
-        local = self.mode == 'local'
         result = []
-        for tag in mt_list:
-            for msg in self.api.timeline_hashtag(tag[1:], local=local, since_id=self.high_message):
-                result.append(msg)
-        logger.debug("found %d status in hashtags", len(result))
-        return result
 
     def get_status(self, status_id):
         try:
