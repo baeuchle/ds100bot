@@ -46,6 +46,7 @@ def store_version(sql):
              cont, subj, sql.network,
             )
             )
+    sql.commit()
 
 def get_changelog(sqlcursor):
     last_hash = get_last_hash(sqlcursor)

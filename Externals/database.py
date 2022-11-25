@@ -23,11 +23,14 @@ class Database:
             logger.info('Running with readonly database')
         logger.debug("Created database connection")
 
-    def close_sucessfully(self):
-        self.cursor.close()
+    def commit(self):
         if not self.readonly:
             self.sql.commit()
             logger.debug("Committing database content")
+
+    def close_sucessfully(self):
+        self.cursor.close()
+        self.commit()
         self.sql.close()
 
     def magic_hashtags(self):
