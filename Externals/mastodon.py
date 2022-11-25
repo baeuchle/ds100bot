@@ -135,7 +135,7 @@ Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
         return result
 
     def hashtags(self, mt_list):
-        result = []
+        return []
 
     def get_status(self, status_id):
         try:
