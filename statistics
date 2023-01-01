@@ -3,6 +3,7 @@
 '''Helper for tweeting bot statistics'''
 
 import argparse
+import configparser
 import datetime
 import logging
 from Externals import setup_database, set_arguments, setup_network, test_network_arguments
@@ -25,6 +26,9 @@ parser.add_argument('--since',
                     choices=['0', 'month', 'year'],
                     default=0)
 args = parser.parse_args()
+configuration = configparser.ConfigParser()
+configuration.read(args.config)
+args.config = configuration
 network = test_network_arguments(args)
 logger.setLevel(getattr(logging, args.log_level))
 logger.debug("statistics running args: %s", args)
