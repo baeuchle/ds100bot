@@ -13,13 +13,12 @@
     "id": "linien_no",
     "short": "Linje",
     "long": "Vei",
-    "file": "sources/linien_no_vy.csv",
+    "file": "sources/linien_no.csv",
     "source": {
-      "name": "Eigene Zusammenstellung"
+      "name": "Liniennummernschema von 2023"
     },
     "comments": [
-      "Alle Linien, die von der VY betrieben werden. Andere Anbieter scheinen sich nicht mehr in das alte Linienschema einzuordnen.",
-      "Stand: 2020"
+      "Stand: 2023"
     ]
   }]
 }

@@ -1,0 +1,33 @@
+Linje;Vei
+F1;Oslo - Karlstad - Stockholm
+F4;Bergensbane: Oslo S - Drammen - Finse - Myrdal - Voss - Arna - Bergen
+F5;Sørlandsbana: Oslo - Drammen - Kongsberg - Nelaug - Kristiansand - Egersund - Stavanger
+F6;Dovrebane: Oslo - Hamar - Lillehammer - Dombås- Støren - Trondheim S
+F7;Nordlandsbane: Trondheim - Steinkjer - Mosjøen - Rognan - Bodø
+F8;Ofotbane: Narvik - Bjørnfjell (- Kiruna)
+FLY1;Flytoget: Drammen - Oslo S - Lillestrøm - OSL (stopper ikke på Stabekk)
+FLY2;Flytoget: Drammen - Stabekk - Oslo S - OSL (stopper ikke på Lillestrøm)
+L1;Spikkestad - Asker - Oslo S - Lillestrøm
+L2;Stabekk - Oslo S - Ski
+L4;Arnabanen: Arna - Bergen
+L5;Egersund - Stavanger
+RE10;Drammen - Asker - Oslo S - OSL - Eidsvoll - Hamar - Lillehammer (- Dombås)
+RE11;Vestfoldbanen: Skien - Larvik - Drammen - Asker - Oslo S - OSL - Eidsvoll
+R12;Kongsberg - Frammen - Asker - Oslo S - OSL - Eidsvoll
+R13;Drammen - Asker - Oslo S - Lillestrøm - Dal
+R14;Asker - Oslo S - Lillestrøm - Kongsvinger
+RE20;Østfoldbanen: Göteborg - Halden - Moss - Ski - Oslo S
+R21;Moss - Ski - Oslo S
+R22;Rakkestad - Mysen - Ski - Oslo S
+R23;Follobanen: Ski - Oslo S
+RE30;Gjøvikbanen: Oslo S - Nittedal - Jaren - Gjøvik
+RE31;Gjøvikbanen: Oslo S - Nittedal - Jaren
+R40;Vossebana: Myrdal - Voss - Arna - Bergen
+R45;Flåmsbana: Myrdal - Flåm
+R50;Arendalsbanen: Nelaug - Arendal
+R55;Bratsbergbanen: Notodden - Nordagutu - Skien - Porsgrunn
+R60;Rørosbanen: Hamar - Røros - Støren - Trondheim S
+R65;Raumabana: Dombås - Åndalsnes
+R70;(Støren / Lerkendal) - Trondheim S - Steinkjer)
+R71;Meråkerbane: Trondheim - Storlien
+R75;Rognan - Fauske - Bodø
