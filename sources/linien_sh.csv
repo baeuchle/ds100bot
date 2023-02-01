@@ -25,5 +25,9 @@ RB76;Kiel Hbf - Kiel-Oppendorf
 RB81;Hamburg Hbf - Hamburg-Wandsbek - Ahrensburg - Bargteheide - Bad Oldesloe
 RB82;Bad Oldesloe - Bad Segeberg - Neumünster
 RB84;Kiel Hbf - Preetz - Plön - Eutin - Bad Schwartau - Lübeck Hbf
-RB85;Lübeck Hbf - Bad Schwartau - Scharbeutz - Sierksdorf < Neustadt (Holst) | Oldenburg (Holst) - Fehmarn-Burg - Puttgarden
+RB85;Lübeck Hbf - Bad Schwartau - Scharbeutz - Sierksdorf - Neustadt (Holst)
+X85;Lübeck ZOB - Haffkrug - Oldenburg (Holst) - Fehmarn-Burg - Puttgarden
 RB86;Lübeck Hbf - Lübeck-Travemünde Strand
+A1;Hamburg-Eidelstedt - Kaltenkirchen (Holst) - Neumünster
+A2;Norderstedt Mitte - Ulzburg Süd (- Kaltenkirchen (Holst))
+A3;Elmshorn - Barmstedt - Ulzburg Süd
