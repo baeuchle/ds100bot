@@ -9,8 +9,9 @@ Daten und Urheberrecht
 Output des Bots
 ---------------
 
-Die Tweets des Bots besitzen keine ausreichende Schöpfungstiefe, die
-die Anwendung eines Urheberrechtes rechtfertigen würden.
+Die Statusmeldungen, die vom Bot erzeugt werden, besitzen keine
+ausreichende Schöpfungstiefe, die die Anwendung eines Urheberrechtes
+rechtfertigen würden.
 
 Datensammlungen
 ---------------
@@ -19,14 +20,14 @@ Die vom Bot verwendeten [Datentabellen](/dumps/) besitzen u.U. eine
 genügend hohe Schöpfungstiefe. Soweit nicht anders angegeben, stehen
 diese Datensammlungen unter © [Apache Software Lizenz
 2.0](http://www.apache.org/licenses/LICENSE-2.0) [Bjørn
-Bäuchle](https://twitter.com/baeuchle).
+Bäuchle](https://chaos.social/@baeuchle).
 
 Dokumentation
 -------------
 
 Die vorliegende Sammlung von Dokumentationsseiten unterliegen © [Apache
 Software Lizenz 2.0](http://www.apache.org/licenses/LICENSE-2.0) [Bjørn
-Bäuchle](https://twitter.com/baeuchle).
+Bäuchle](https://chaos.social/@baeuchle).
 
 Verwendete Daten
 ----------------

@@ -6,8 +6,8 @@
 Aufbau der Antworten des Bots
 =============================
 
-Findet der Bot in einem Tweet erweiterbare Abkürzungen, so antwortet er
-auf diesen Tweet mit diesen Erweiterungen. Hierbei wird eine Zeile pro
+Findet der Bot in einem Status erweiterbare Abkürzungen, so antwortet er
+auf diesen Status mit diesen Erweiterungen. Hierbei wird eine Zeile pro
 Abkürzung geschrieben:
 
     FF: Frankfurt (Main) Hbf
@@ -23,6 +23,6 @@ Mehrere Kürzel werden in der Reihenfolge beantwortet, in der sie
 auftauchen; mehrfach wiederholte gleiche Kürzel werden nur beim ersten
 Mal beantwortet.
 
-Ist die Antwort zu lange für einen Tweet, antwortet der Bot mit dem
+Ist die Antwort zu lange für einen Status, antwortet der Bot mit dem
 nächsten Teil seiner Antwort auf den vorherigen Teil, sodass ein
-Twitter-Thread seiner Antworten entsteht.
+Thread seiner Antworten entsteht.

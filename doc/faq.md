@@ -14,7 +14,7 @@ Mach doch mal ein einfaches Beispiel!
 -------------------------------------
 
 
-- So sieht der Bot diesen Tweet, aber wahrscheinlich nicht Antworten
+- So sieht der Bot diesen Status, aber wahrscheinlich nicht Antworten
   darauf:
 
 > <span class="only-twitter">\#DS100 \#FF</span> <span
@@ -32,22 +32,22 @@ Warum antwortet mir der Bot nicht, obwohl er mir folgt?
 
 - Vielleicht ist er grade kaputt, der Rechner, auf dem er läuft
   überlastet oder was anderes läuft schief. Meistens aber:
-- Wenn dir der Bot folgt, einen Tweet von dir mit richtigem Hashtag
-  (sagen wir, #FF) aber nicht beantwortet, liegt es meistens daran, dass
-  dieser Tweet von dir eine Antwort auf einen anderen Tweet ist. Einen
-  Antwort-Thread „sieht“ der Bot nur dann, wenn er allen beteiligten
-  Personen im Thread folgt (oder wenn er selbst beteiligt ist). Das
-  liegt daran, wie Twitter die Timeline (für jede Benutzerin)
+- <onlyTwitter>Wenn dir der Bot folgt, einen Tweet von dir mit richtigem
+  Hashtag (sagen wir, #FF) aber nicht beantwortet, liegt es meistens
+  daran, dass dieser Tweet von dir eine Antwort auf einen anderen Tweet
+  ist. Einen Antwort-Thread „sieht“ der Bot nur dann, wenn er allen
+  beteiligten Personen im Thread folgt (oder wenn er selbst beteiligt
+  ist). Das liegt daran, wie Twitter die Timeline (für jede Benutzerin)
   zusammenstellt.  Wird ein [Magic Hashtag](/finde-listen.html)
   verwendet oder der Bot im Tweet (oder im Thread) erwähnt, sollte er
-  Tweets auch mitten in Threads sehen.
+  Tweets auch mitten in Threads sehen.</onlyTwitter>
 
 Warum antwortet der Bot mir, obwohl ich das nicht will?
 -------------------------------------------------------
 
 - Der Bot antwortet Benutzerinnen, denen er folgt, automatisch, aber er
   folgt nicht automatisch. Siehe unten.
-- Bei Tweets von nicht-gefolgten Benutzerinnen reagiert er auf
+- Bei Status von nicht-gefolgten Benutzerinnen reagiert er auf
   Erwähnungen und seine [Magic Hashtags](/finde-listen.html) – aber nur
   dann, wenn auch eine erweiterbare Abkürzung im Tweet steckt. Wenn das
   nicht erwünscht ist, ist der Bot nicht beleidigt, wenn er geblockt

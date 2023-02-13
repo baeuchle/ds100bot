@@ -11,23 +11,23 @@ des Bots sind nur auf dem jeweiligen Sozialen Netzwerk abrufbar; für die
 Daten, die dieses Netzwerk erhebt, besteht von Seiten des Bots keine
 Verantwortung.
 
-Der Bot speichert die letzte <span
-class="only-twitter">Tweet</span><span
-class="only-mastodon">Toot</span>-ID, die er gesehen hat, damit er nicht
-zweimal auf den gleichen Status antwortet, sowie jede Abkürzung, die
-er in einem Status zu erkennen glaubte. Diese werden zusammen mit dem
-Erkennungsdatum und der Information, ob die Abkürzung einem Langnamen
-zugeordnet werden konnte, gespeichert. Es wird dabei nicht gespeichert,
-welcher User den Ursprungsstatus verfasst oder anderweitig zur
-Aufmerksamkeit des Bots gebracht hat (etwa durch <span
+Der Bot speichert die letzte Status-ID, die er gesehen hat, damit er
+nicht zweimal auf den gleichen Status antwortet, sowie jede Abkürzung,
+die er in einem Status zu erkennen glaubte. Diese werden zusammen mit
+dem Erkennungsdatum und der Information, ob die Abkürzung einem
+Langnamen zugeordnet werden konnte, gespeichert. Es wird dabei nicht
+gespeichert, welcher User den Ursprungsstatus verfasst oder anderweitig
+zur Aufmerksamkeit des Bots gebracht hat (etwa durch <span
 class="only-twitter">Retweet</span><span
-class="only-mastodon">Retoot</span>). Aus dieser
-Liste kann in regelmäßigen oder unregelmäßigen Abständen eine
-Zusammenstellung der am häufigsten gesuchten Abkürzungen und der
-nicht-erkannten Abkürzungen erstellt werden. Durch Löschen der
-entsprechenden <span class="only-twitter">Tweets bei Twitter</span><span
+class="only-mastodon">Boost</span>). Aus dieser Liste kann in
+regelmäßigen oder unregelmäßigen Abständen eine Zusammenstellung der am
+häufigsten gesuchten Abkürzungen und der nicht-erkannten Abkürzungen
+erstellt werden. Durch Löschen der entsprechenden <span
+class="only-twitter">Tweets bei Twitter</span><span
 class="only-mastodon">Toots bei Mastodon</span> sind diese Daten auch
 über den Bot oder dessen gespeicherte Daten nicht mehr zugänglich.
+Statistiken werden davon nicht beeinflusst, und die Details der Löschung
+obliegt dem jeweiligen Sozialen Netzwerk.
 
 Die Statistik wird an jedem ersten eines Monats für den letzten Monat,
 an jedem 1. Januar für das letzte Jahr und immer am 9. Juni (dem

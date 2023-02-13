@@ -31,17 +31,17 @@ wie der restliche Code; die Autorenschaft ist bei github in der Commit
 history ersichtlich.
 
 Datenlisten können unter davon abweichenden Lizenzen stehen. Wichtig
-ist: [@baeuchle](https://twitter.com/baeuchle) erhält mindestens das
-uneingeschränkte Recht, die Datenliste als Dump zu veröffentlichen,
-anzupassen und die Datenliste im git-Repository zu archivieren. Die
-Erstellerin der Datenliste hat das Recht, ohne Angabe von Gründen die
-weitere Veröffentlichung zu untersagen, aber nicht, dass die
-git-Historie verändert wird, um die Daten nachträglich zu löschen.
+ist: [Die Betreibenden des Bots](/copyright.html) erhalten
+mindestens das uneingeschränkte Recht, die Datenliste als Dump zu
+veröffentlichen, anzupassen und die Datenliste im git-Repository zu
+archivieren. Die Erstellerin der Datenliste hat das Recht, ohne Angabe
+von Gründen die weitere Veröffentlichung zu untersagen, aber nicht, dass
+die git-Historie verändert wird, um die Daten nachträglich zu löschen.
 
 Einem Löschen der Datenliste nach Anforderung durch ihre Erstellerin
-kann eine direkte Wiederveröffentlichung durch
-[@baeuchle](https://twitter.com/baeuchle) folgen, sofern die
-ursprüngliche Lizenz dies erlaubt. (Also etwa bei den CC-Lizenzen).
+kann eine direkte Wiederveröffentlichung durch die Betreibenden des Bots
+folgen, sofern die ursprüngliche Lizenz dies erlaubt. (Also etwa bei den
+CC-Lizenzen).
 
 Einzelne Einträge in den Datenlisten dürfen unter keinen Umständen Texte
 enthalten, auf die jemand urheberrechtliche Ansprüche stellt oder
