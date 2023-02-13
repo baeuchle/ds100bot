@@ -35,17 +35,17 @@ if __name__ == "__main__":
         network = setup_network(network_name, args, Persistence.get_since_id(database))
         if args.notify_version:
             Persistence.notify_new_version(network, database)
-    except RuntimeError as re:
-        logger.critical(re)
-        raise SystemExit(1) from re
 
-    magic_tags, magic_emojis = database.magic_hashtags()
-    handle_list(network=network,
-                database=database,
-                magic_tags=magic_tags,
-                magic_emojis=magic_emojis)
-    if args.notify_version:
-        Persistence.store_version(database)
-    Persistence.store_since_id(database, network)
-    database.close_sucessfully()
+        magic_tags, magic_emojis = database.magic_hashtags()
+        handle_list(network=network,
+                    database=database,
+                    magic_tags=magic_tags,
+                    magic_emojis=magic_emojis)
+        if args.notify_version:
+            Persistence.store_version(database)
+        Persistence.store_since_id(database, network)
+        database.close_sucessfully()
+    except RuntimeError as re:
+        logger.exception("Failure for network %s", network_name)
+        raise SystemExit(1) from re
     logger.info("Bot finished")
