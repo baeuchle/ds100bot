@@ -24,7 +24,8 @@ L10N;Localization: This bot serves data in German except very few exceptions (as
 SPAM,NOSPAM;Dieser Bot soll nicht spammen. Wer sich durch die Aktivitäten des Bots belästigt fühlt, möge bitte freundlich dem @baeuchle Bescheid geben. Siehe auch #ENTFOLGEN.
 XXX;This bot is not x-rated
 NSFW;Dieser Bot ist Safe for Work
-BLACKLIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN). Siehe https://ds100.frankfurtium.de/dumps/blacklist.html
+BLACKLIST;Siehe #IGNORELIST
+IGNORELIST;Einige Kürzel, die häufig in anderem Kontext verwendet werden, werden nur mit vorangestelltem DS: beantwortet (z.B. #DS:WLAN). Siehe https://ds100.frankfurtium.de/dumps/ignorelist.html
 NEUEDATEN,BEITRAGEN;Neue Datenlisten für Betriebsstellen, Signalnamen, Streckenlisten etc. sind gerne gesehen. Am besten bei #GITHUB ein neues Issue erstellen und einschicken. Für Details siehe https://ds100.frankfurtium.de/contribute.html
 POSIX;Die Twitter-Schnittstelle zu diesem Bot ist nicht POSIX-Kompatibel. Siehe #HELP.
 PEOPLE;Der echte Mensch hinter dem Bot ist @baeuchle. @fips_schneider hilft manchmal aus.

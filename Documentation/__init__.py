@@ -4,7 +4,7 @@ from xml.etree import ElementTree as ET
 from pathlib import Path
 from .generator import Generator
 from .dump import Dump
-from .dump_bl import DumpBlacklist
+from .dump_il import DumpIgnorelist
 from .markdowndoc import MarkdownDoc
 from .licenses import Licenses
 
@@ -51,7 +51,7 @@ def dumplink_list(config_list):
         ET.SubElement(listhl, 'span').text = sigils[sigil]
         sublistitem.append(subl)
     item = ET.SubElement(linklist, 'li')
-    ET.SubElement(item, 'a', attrib={'href': '/dumps/blacklist.html'}).text = 'Blacklist'
+    ET.SubElement(item, 'a', attrib={'href': '/dumps/ignorelist.html'}).text = 'Blacklist'
     return div
 
 def navilink_list(version):
@@ -76,8 +76,8 @@ def dump_source(config, dumplinks, navilinks, db, dumpdir):
         dump.add_row(entry_row)
     dump.write(dumpdir / (config.id + '.html'))
 
-def dump_blacklist(dumplinks, navilinks, db, dumpdir):
-    dump = DumpBlacklist(dumplinks=dumplinks, links=navilinks)
+def dump_ignorelist(dumplinks, navilinks, db, dumpdir):
+    dump = DumpIgnorelist(dumplinks=dumplinks, links=navilinks)
     for entry_row in db.dumpblack():
         dump.add_row(entry_row)
-    dump.write(dumpdir / 'blacklist.html')
+    dump.write(dumpdir / 'ignorelist.html')
