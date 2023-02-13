@@ -45,7 +45,7 @@ if __name__ == "__main__":
             Persistence.store_version(database)
         Persistence.store_since_id(database, network)
         database.close_sucessfully()
-    except RuntimeError as re:
+    except BaseException as be:
         logger.exception("Failure for network %s", network_name)
-        raise SystemExit(1) from re
+        raise SystemExit(1) from be
     logger.info("Bot finished")
