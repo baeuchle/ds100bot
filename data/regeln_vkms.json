@@ -19,7 +19,7 @@
     "file": "sources/regeln_vkms.csv",
     "source": {
       "name": "Vehicle Keeper Marking register (VKM)",
-      "url": "https://www.era.europa.eu/sites/default/files/registers/docs/iu_vkm_publiclist_151.xls"
+      "url": "https://www.era.europa.eu/system/files/2023-02/IU-VKM-publiclist-155.xls"
     },
     "license": {
       "name": "ähnlich CC-BY",

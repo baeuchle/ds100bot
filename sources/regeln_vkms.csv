@@ -14,7 +14,7 @@ ABG;ABG;Anhaltische Bahngesellschaft;DE;in use;abg.dwe-web.info;
 ABI;ABI;Eurasia Int Trade;DE;in use;;
 ABLOG;ABLOG;AB Prevoz d.o.o.;RS;in use;;OTIF
 ABR;ABR;Abellio Rail GmbH;DE;Revoked;abeliio.de;
-ABRBW;ABRBW;Abellio Rail Baden-Württemberg GmbH;DE;in use;abellio.de;
+ABRBW;ABRBW;SWEG Bahn Stuttgart GmbH;DE;Revoked;;
 ABRM;ABRM;Abello Rail Mitteldeutschland GmbH;DE;in use;abellio.de;
 ABRN;ABRN;Abellio Rail NRW GmbH;DE;in use;abellio.de;
 ABRRS;ABRRS;Road & Rail Service;DE;in use;road-rail-service.com;
@@ -161,6 +161,7 @@ APH;APH;Agropolychim / Агрополихим;BG;in use;agropolychim.bg;
 APL;APL;Arriva Polska sp. z o.o.;PL;in use;arriva.pl;
 APMFS;APMFS;APMFS (Association pour la Préservation du Matériel Ferroviaire Savoyard);FR;in use;apmfs.fr;
 АПОРР;APORR;ПОРР България ЕООД;BG;in use;porr.at;
+APPFI;APPFI;Fundació per la Preservació del Patrimoni Ferroviari i Industrial;ES;in use;appfi.net;
 APPMF;APPMF;Association pour la Préservation du Patrimoine et des Matériel Ferroviaires;FR;in use;appmf.fr;
 APRO;APRO;CCI APROPORT;FR;in use;aproport.com;
 AQR;AQR;Aquitaine Rail;FR;in use;groupe-cassous.com;
@@ -172,7 +173,7 @@ ARBR;ARBR;Rail ARB s.r.o;SK;in use;;
 ARC;ARC;Aqaba Railway Corporation;JO;in use;;OTIF
 ARCET;ARCET;Association Rhone-alpine de Conservation d'Engins Thermique;FR;in use;site.asso-arcet.com;
 ARCO;ARCO;Arco Transportation GmbH;DE;in use;;
-ARETZ;ARETZ;Aretz GmbH & Co. KG;DE;in use;;
+ARETZ;ARETZ;Aretz GmbH & Co. KG;DE;in use;aretzwaggon.de;
 ArFer;ARFER;Ar.Fer S.r.l. a Socio Unico;IT;in use;;
 ARGE;ARGE;ARGE 1041.15;AT;in use;arge1041.at;
 ARGO;ARGO;ARGO Bohemia s.r.o.;CZ;in use;argogroup.cz;
@@ -194,6 +195,7 @@ ARTE;ARTE;Arterail;FR;in use;arterail.com;
 ARTIN;ARTIN;ART In Energy sp. z o.o.;PL;in use;artinenergy.pl;
 ARVMS;ARVMS;ARRIVA Mobility Solurions, s.r.o.;SK;in use;arriva.sk;
 ARVSK;ARVSK;Arriva Service s.r.o;SK;in use;;
+ARXA;ARXA;Arxada AG;CH;in use;arxada.com;OTIF
 AS;AS;Alexander Schröter;DE;in use;;
 ASBB;ASBB;AS BB25500 (Association de Sauvegarde d'une locomotive de type BB 25500);FR;in use;asbb25500.wixsite.com;
 ASBRE;ASBRE;ASB Recycling;BE;in use;aperam.com;
@@ -211,7 +213,7 @@ ASP;ASP;Anschlussbahn-Servicegesellschaft Pressnitztalbahn mbH;DE;in use;pressni
 ASPO;ASPO;Armádní Servisní, příspěvková organizace;CZ;in use;as-po.cz;
 ASPWR;ASPWR;Aspekt Przedsiębiorstwo Handlowo-Usługowe;PL;in use;;
 ASSIG;ASSIG;ASSIGNIA INFRAESTRUCTURAS, S.A.;ES;in use;assignia.com;
-ASTR;ASTR;"Astra Finance / ""Астра финанс"" ЕООД";BG;in use;;
+ASTR;ASTR;Astra Finance / "Астра финанс" ЕООД;BG;in use;;
 ASTRA;ASTRA;ASTRA VAGOANE ARAD SA;RO;in use;;
 ASWL;ASWL;Schneider & Schneider GmbH;DE;in use;;
 AT;AT;Arriva Tog A/S;DK;in use;arrivatog.dk;
@@ -223,6 +225,7 @@ ATC;ATC;ASTRA TRANS CARPATIC SRL;RO;in use;astratranscarpatic.ro;
 ATCH;ATCH;ANGEL TRAINS SWITZERLAND;CH;Revoked;angeltrains.com;OTIF
 ATDE;ATDE;Alpha Trains Europa GmbH;DE;in use;alphatrains.eu;
 ATG;ATG;DB Cargo Logistics GmbH;DE;in use;dbcargo.com/rail-deutschland-automotive-de/start;
+ATGER;ATGER;ALSTOM Transportation Germany GmbH;DE;in use;alstom.com;
 ATGRV;ATGRV;ATELIERELE CFR GRIVITA SA;RO;in use;;
 ATHOS;ATHOS;ATHOS RAIL S.A.;ES;in use;athoslogistica.com;
 ATIB;ATIB;ALPHA TRAINS IBERIA;ES;in use;alphatrains.eu;
@@ -232,7 +235,7 @@ ATLAS;ATLAS;ATLAS Leipzig Baupartner GmbH;DE;in use;atlas-leipzig.de;
 ATLD;ATLD;Alpha Trains Locomotives GmbH;DE;in use;angeltrains.com;
 ATLII;ATLII;Alpha Trains Luxembourg No. 2 S.à.r.l.;LU;in use;alphatrains.eu;
 ATLU;ATLU;Alpha Trains Luxembourg s.à.r.l.;LU;in use;alphatrains.eu;
-ATMBG;ATMBG;"""ATM BG"" d.o.o, Beograd";RS;in use;atmbg.rs;OTIF
+ATMBG;ATMBG;"ATM BG" d.o.o, Beograd;RS;in use;atmbg.rs;OTIF
 ATN;ATN;Gentra sp. z o.o. sp. k.;PL;in use;;
 ATPL;ATPL;Alpha Trains Polska Sp. z o.o.;PL;in use;alphatrains.eu;
 ATPOL;ATPOL;Atlas Poland Sp.  z o.o.;PL;in use;atlas-poland.pl;
@@ -253,12 +256,13 @@ ATW;ATW;Arriva Trains Wales / Trenau Arriva Cymru;UK;Blocked;arrivatrainswales.c
 AUDI;AUDI;AUDI AG;DE;in use;audi.de;
 AULOC;AULOC;Augsburger Localbahn GmbH;DE;in use;augsburger-localbahn.de;
 AUR;AUR;Aurora Rail Oy;FI;in use;easmar.fi;
+AUSTR;AUSTR;AUSTRO Baumaschinen s.r.o.;CZ;in use;austrobaumaschinen.cz;
 AUTG;AUTG;AUTOGAS IMPEX SRL;RO;in use;;
 AVA;AVA;Aargau Verkehr AG (AVA);CH;in use;;OTIF
 AVC;AVC;ASTRA VAGOANE CALATORI SA;RO;in use;transferoviarcalatori.ro;
 AVE;AVE;Alta Velocidad de Español;ES;Blocked;;
 AVEXP;AVEXP;Associazione Verbano Express;IT;in use;verbanoexpress.com;
-AVG;AVG;Albtal-Verkehrs-Gesellschaft;DE;in use;avg.info;
+AVG;AVG;Albtal-Verkehrs-Gesellschaft mbH;DE;in use;avg.info;
 AVHCB;AVHCB;ATLAS CB Baumaschinen KG;DE;in use;atlas-cottbus.de;
 AVHHH;AVHHH;Atlas Hamburg GmbH;DE;in use;;
 AVHLB;AVHLB;ATLAS von der Wehl GmbH;DE;in use;;
@@ -296,7 +300,7 @@ BALZO;BALZO;Construcciones y Promociones Balzola S.A.U.;ES;in use;balzola.com;
 BAM;BAM;BAM Rail;NL;in use;bam.nl;
 BARÁK;BARAK;Barák Milan;CZ;in use;;
 BARD;BARD;Bardos  a.s.;CZ;in use;;
-BASAB;BASAB;Baneservice Skandinavia AB;SE;in use;baneservice.se;
+BASAB;BASAB;Baneservice Skandinavia AB;SE;Revoked;baneservice.se;
 BASF;BASF;BASF SE;DE;in use;basf.com;
 BAUTE;BAUTE;Bautec GmbH & Co. KG;DE;Revoked;;
 BAX;BAX;BAREXIM SRL;RO;in use;tts-group.ro;
@@ -331,6 +335,7 @@ BCH;BCH;BorsodChem MCHZ, s.r.o.;CZ;in use;;
 BCHEM;BCHEM;BorsodChem Zrt.;HU;in use;borsodchem-group.com;
 BCK;BCK;BauCharter Baumaschinen Vermietungs GmbH;DE;in use;baucharter.com;
 BCR;BCR;Benders Leasing AB;SE;in use;benders.se;
+BDB;BDB;Brünig Dampfbahn BDB;CH;in use;bruenig-dampfbahn.ch/;OTIF
 BDG;BDG;BDG Bahnservice- und Dienstleistungsgesellschaft mbH & Co. KG;DE;in use;bdg-bahnservice.de;
 BDK;BDK;BDK Korkmaz;DE;in use;;
 BDMW;BDMW;BUDAMAR WEST GmbH;DE;in use;budamar.de;
@@ -338,6 +343,7 @@ BDS;BDS;Báňská dopravní spol.s r.o.;CZ;in use;;
 BDVF;BDVF;BDVF;FR;in use;;
 BDWM;BDWM;BDWM Transport AG;CH;Revoked;bdwm.ch;OTIF
 BDX;BDX;BDX Företagen AB;SE;in use;bdx.se;
+BDXRA;BDXRA;BDX Rail AB;SE;in use;bdxrail.se;
 BDZ;BDZ;Chemin de fer de l'Etat bulgare - Bulgarski Durzhavni Zheleznitsi;BG;in use;bdz.bg;
 BDZPP;BDZPP; БДЖ -Пътнически превози ЕOOД (БДЖПП);BG;in use;bdz.bg;
 BDZTP;BDZTP; БДЖ - Товарни превози ЕOOД (БДЖTП);BG;in use;bdz.bg;
@@ -349,7 +355,7 @@ BEG;BEG;Brohltal Schmalspureisenbahn Betriebs-GmbH;DE;in use;vulkan-express.de;
 BEI;BEI;Ireland Luxury Rail Tours Limited;IE;in use;belmond.com;
 BELL;BELL;BELLEZA, s.r.o.;SK;in use;;
 BEM;BEM;Bayerisches Eisenbahnmuseum;DE;in use;bayerisches-eisenbahnmuseum.de;
-BENT;BENT;Benteler Rothrist AG;CH;in use;www.benteler.com;OTIF
+BENT;BENT;Benteler Rothrist AG;CH;in use;benteler.com;OTIF
 BENTZ;BENTZ;BE Netz GmbH;DE;in use;be-netz.eu;
 BERGR;BERGR;Berger Bau SE;DE;in use;bergerholding.eu;
 BERK;BERK;Berk Akaryakıt Nakliyat İnşaat İthalat İhracat Pazarlama Sanayi ve Ticaret Limited Şikerti;TR;in use;berknakliyat.com.tr;OTIF
@@ -363,13 +369,14 @@ BFLSK;BFLSK;Partners 4RAIL, s.r.o.;SK;in use;deutsche-leasing.com/sk;
 BFS;BFS;Bürgerverein zur Förderung des Schienenverkers e.V;DE;Revoked;bfs-buergerbahn.de;
 BGG;BGG;Billerud AB, Gruvöns Bruk, Grums;SE;in use;billerud.com;
 BGT;BGT;BGT Bagger-, Gleis- und Tiefbauarbeiten Rainer Staschok e.K.;DE;in use;;
+BGTG;BGTG;BGT Staschok GmbH;DE;in use;;
 BGTRV;BGTRV;„ТРАНССТРОЙ ВAРНА” АД;BG;in use;transstroy-varna.bg;
-BGZPT/БГЖПТ;BGZPT;"""ЖП - Тракция"" ЕООД";BG;in use;;
+BGZPT/БГЖПТ;BGZPT;"ЖП - Тракция" ЕООД;BG;in use;;
 BHAN;BHAN;Carl Beutlhauser Baumaschinen GmbH (Region Rheinland);DE;in use;beutlhauser.de;
 BHDD;BHDD;Carl Beutlhauser Baumaschinen GmbH;DE;in use;beutlhauser.de;
 BHE;BHE;Bremische Hafeneisenbahn;DE;in use;bremen.de/wuh/;
 BHEV;BHEV;Budapesti Helyi Érdekü Vasút;HU;Revoked;bkv.hu;
-BHL;BHL;Berliner Hafen- und Lagerhausgesellschaft mbH;DE;in use;behala.de;
+BHL;BHL;BEHALA - Berliner Hafen- und Lagerhausgesellschaft mbH;DE;in use;behala.de;
 BID;BID;BID ENGINEERING INFRASTRUCTURE S.R.L.;RO;in use;;
 BIEF;BIEF;Bielefelder Eisenbahnfreunde e.V.;DE;in use;bielefelder-eisenbahnfreunde.de;
 BIF;BIF;Bahn im Film;AT;in use;bahn-im-film.at;
@@ -413,7 +420,7 @@ BLX;BLX;Lineas Group SA/NV;BE;in use;lineas.net;
 BM;BM;BUD-MOST Jan Boruch;PL;in use;;
 BMB;BMB;BM Bahndienste GmbH;DE;in use;bm-bahndienste.de;
 BMC;BMC;Martín Bárta;CZ;in use;;
-BMDM;BMDM;"Bulmarket DM / ""Булмаркет ДМ"" ООД";BG;in use;bulmarket.bg;
+BMDM;BMDM;Bulmarket DM / "Булмаркет ДМ" ООД;BG;in use;bulmarket.bg;
 BMEVU;BMEVU;Bolay & Moser EVU GmbH;DE;in use;;
 BMK;BMK;Agencja Turystyczno-Usługowa ‘’BAWDIM’’ – Roman Mazur;PL;in use;bieszczady.com.pl;
 BMNPK;BMNPK;BM Naprawa Pojazdów Kolejowych Antoni Bartosz Moch;PL;in use;;
@@ -427,12 +434,13 @@ BNKLR;BNKLR;Benkler AG  (Sersa Group);CH;in use;benkler.ch;OTIF
 BNVIT;BNVIT;Bonaventura srl;IT;in use;bonaventura.it;
 BOAG;BOAG;Borner Transport und Lagerhaus AG;CH;in use;borner-ag.ch;OTIF
 BOB;BOB;Berner Oberland Bahnen;CH;in use;jungfraubahnen.ch;OTIF
-BOBFN;BOBFN;Bodensee-Oberschwaben-Bahn;DE;in use;bob-fn.de;
+BOBFN;BOBFN;Bodensee-Oberschwaben-Bahn GmbH & Co. KG;DE;in use;bob-fn.de;
 BOBO;BOBO;BOBO  Járműjavító, Ipari, Kereskedelmi és Szolgáltató KFT;HU;in use;bobokft.hu;
 BOBY;BOBY;Bayerische Oberlandbahn;DE;in use;bayerischeoberlandbahn.de;
 BOEG;BOEG;Bocholter Eisenbahngesellschaft mbH;DE;in use;bocholter-eisenbahn.de;
 Boels;BOELS;Wolfgang Bölstler Baumaschinenverleich;DE;in use;;
 BONAN;BONAN;BONANDRINI;FR;in use;;
+BONN;BONN;BONNES Paweł Kowalczyk ;PL;in use;;
 BOPO;BOPO;Borealis Polyolefine GmbH;AT;in use;borealisgroup.com;
 BORDO;BORDO;BORDON INVERSIONES 2007, S.L.;ES;in use;alphatrains.eu;
 BORSC;BORSC;Boryszew S.A. Oddział Boryszew ERG w Sochaczewie;PL;in use;boryszewerg.com.pl;
@@ -471,6 +479,7 @@ BS;BS;Baneservice AS;NO;in use;baneservice.no;
 BSAG;BSAG;Bremer Straßenbahn SG;DE;in use;cityairporttrain.com;
 BSAS;BSAS;BSAS EisenbahnVerkehrsGmbH & Co.KG;DE;in use;bsas-evg.de;
 BSB;BSB;SWEG Südwestdeutsche Landesverkehrs-AG;DE;Revoked;sweg.de;
+BSBB;BSBB;Bahnservice BB GmbH;DE;in use;bahnbb.de;
 BSBS;BSBS;BSBS Braunschweiger Bahn Service GmbH;DE;in use;N;
 BSBZW;BSBZW;BSB-Saugbagger und Zweiwegetechnik GmbH&Co. KG;DE;in use;saugbagger-betriebe.de;
 BSF;BSF;BSJG Holding AB;SE;in use;bsverkstader.se;
@@ -487,7 +496,7 @@ BT;BT;Bombardier Transportation Sweden AB;SE;in use;bombardier.se;
 BTAS;BTAS;Bohumin terminal, a.s.;CZ;in use;bohuminterminal.cz;
 BTCH;BTCH;Bombardier Transportation (Switzerland) SA;CH;in use;bombardier.com;OTIF
 BTE;BTE;Bremen-Thedinghausener Eisenbahn GmbH;DE;in use;;
-BTEX;BTEX;Bahn Touristik Express GmbH;DE;in use;bahntouristikexpress.de;
+BTEX;BTEX;BTE BahnTouristikExpress GmbH;DE;in use;;
 BTF;BTF;Bombardier Transport France;FR;in use;;
 BTFAB;BTFAB;Berg & Tunnel Förstärkning Sweden AB;SE;in use;;
 BTG;BTG;BTG GmbH;DE;in use;btgbau.de;
@@ -522,7 +531,7 @@ BVM;BVM;BSM GmbH;DE;in use;bsm-bahn.de;
 BVO;BVO;BVO Bahn GmbH;DE;in use;bvo.de;
 BVS;BVS;Böhrer Vertriebs und Service GmbH;DE;in use;bbwa.de;
 BW;BW;Bundeswehr;DE;in use;;
-BWA;BWA;BWA Besitzgesellschaft Waggonbau Ammendorf mbH;DE;in use;bwa-ammendorf.de;
+BWA;BWA;Besitzgesellschaft Waggonbau Ammendorf mbH;DE;in use;bwa-ammendorf.de;
 BWARN;BWARN;Förderverein BW Arnstadt historisch e.V.;DE;in use;Lokschuppen-Arnstadt.de;
 BWESA;BWESA;UWE Adam EVU GmbH;DE;in use;lotrac.de;
 BWKKR;BWKKR;Bahnbetriebswerk Krefeld Betriebs GmbH & Co.KG;DE;in use;bw-krefeld.net;
@@ -600,7 +609,7 @@ CER;CER;Central-European Railway AG.;HU;in use;cer.hu;
 CERB;CERB;Centralna Energoremontna Baza AD / Централна Енергоремонтна База АД;BG;in use;cerb.bg;
 CEROV;CEROV;COMPLEX ENERGETIC ROVINARI SA;RO;in use;;
 CERSK;CERSK;CER Slovakia a.s.;SK;in use;cercargo.sk/index.php;
-CERT;CERT;Certis Europe B.V,;DE;in use;certis-railservice.de;
+CERT;CERT;Certis Belchim B.V. Niederlassung Deutschland;DE;in use;certis-railservice.de;
 CETIS;CETIS;CET SA;RO;in use;cet-iasi.ro;
 CETUR;CETUR;COMPLEXUL ENERGETIC TURCENI SA;RO;in use;eturceni.ro;
 CFC;CFC;LES CHEMINS DE FER DU CREUSOT;FR;in use;train-vapeur.fr;
@@ -621,7 +630,7 @@ CFMUR;CFMUR;CEFMUR SA;RO;in use;tradetrans.com;
 CFPM;CFPM;C.F.P.M.;FR;in use;;
 CFR;CFR;SNTFM CFR Marfa SA;RO;in use;cfr.ro;
 CFRBF;CFRBF;Compagnie Ferroviaire Regionale;FR;in use;cfr-bfc.com;
-CFRTM;CFRTM;"SNCF ""CFR"" SA - SUCURSALA CREIR CF TIMISOARA";RO;in use;cfrtm.ro;
+CFRTM;CFRTM;SNCF "CFR" SA - SUCURSALA CREIR CF TIMISOARA;RO;in use;cfrtm.ro;
 CFS;CFS;Administration Générale des Chemins de Fer Syriens;SY;in use;;OTIF
 CFSP;CFSP;CER FERSPED SA;RO;in use;;
 CFT;CFT;Čechofracht a.s.;CZ;in use;;
@@ -693,7 +702,7 @@ CMT;CMT;CENTROMAT s.r.o.;CZ;in use;;
 ČMŽO;CMZO;Českomoravská železniční opravna s.r.o.;CZ;in use;cmzo.cz;
 CN;CN;CargoNet AS;NO;in use;cargonet.no;
 CNA;CNA;COBRENA ACHATS;FR;in use;;
-CNCFR;CNCFR;"Compania Nationala de Cai Ferate  "" CFR "" S.A";RO;in use;rdslink.ro;
+CNCFR;CNCFR;Compania Nationala de Cai Ferate  " CFR " S.A;RO;in use;rdslink.ro;
 CNFCT;CNFCT;CNCF-SUCURSALA RCF CONSTANTA;RO;in use;;
 CNFGL;CNFGL;CNCF CFR SA - SUCURSALA REGIONALA CF GALATI;RO;in use;cfr.ro;
 CNFIS;CNFIS;CNCF-SUCURSALA REGIONALA CF IASI;RO;in use;;
@@ -734,6 +743,7 @@ CP;CP;Caminhos de Ferro Portugeses, E.P.;PT;in use;cp.pt;
 CPCLP;CPCLP;CP Cargo Logistica e Transoportes Ferroviários de Mercadorias, SA;PT;Revoked;cpcarga.pt;
 CPFBZ;CPFBZ;COMPANIA DE PRODUCTIE FEROVIARA SRL;RO;in use;;
 CPS;CPS;SOCIEDAD ANÓNIMA DE OBRAS Y SERVICIOS, COPASA;ES;in use;copasagroup.com;
+CPSAN;CPSAN;COMPAGNIA PORTUALI SERVIZI SOC.COOP.;IT;in use;;
 CPT;CPT;Conpet SA Ploiesti;RO;in use;;
 CPTF;CPTF;CAPTRAIN France;FR;in use;captrain.fr;
 CPTIP;CPTIP;CARGO Przewozy Towarowe i Pasażerskie sp. z o.o.;PL;in use;;
@@ -831,7 +841,7 @@ DB;DB;Deutsche Bahn /  DB AG;DE;in use;bahn.de;
 ДБКБГ;DBCBG;DB Cargo Bulgaria;BG;in use;;
 DBCCH;DBCCH;DB Cargo Schweiz GmbH;CH;in use;ch.dbcargo.com;OTIF
 DBCCZ;DBCCZ;DB Cargo Czechia s.r.o.;CZ;in use;cz.dbcargo.com;
-DBCFR;DBCFR;DB Cargo France;FR;in use;fr.dbcargo.com/rail-fr-fr;
+DBCFR;DBCFR;DB Cargo France;FR;Revoked;fr.dbcargo.com/rail-fr-fr;
 DBCSC;DBCSC;DB Cargo Scandinavia;DK;in use;dbcargo.com/dk;
 DBFWD;DBFWD;DB Fahrwegdienste GmbH;DE;in use;fahrweg.dbnetze.com/fahrwegde/unternehmen/db_netz_ag/externe_organisationen/fahrwegdienste-1368662;
 DBFZI;DBFZI;DB Fahrzeuginstandhaltung GmbH;DE;in use;bahn.de;
@@ -840,6 +850,7 @@ DBGM;DBGM;Döllnitzbahn GmbH;DE;in use;doellnitzbahn.de;
 DBH;DBH;DB Cargo Hungária Kft;HU;in use;hu.dbcargo.com;
 DBINF;DBINF;Infra SILESIA S.A.;PL;in use;;
 DBKT;DBKT;DB Kommunikationstechnik GmbH;DE;in use;deutschebahn.com;
+DBMP;DBMP;DB Netz AG;DE;in use;dbnetze.com;
 ДБШБГ;DBSBG;DB Cargo Bulgaria;BG;Revoked;;
 DBSCH;DBSCH;DB Schenker Rail Schweiz GmbH;CH;in use;rail.dbschenker.ch;OTIF
 DBSKR;DBSKR;SCHENKER ROMTRANS SA;RO;in use;dbschenker-romtrans.com;
@@ -923,7 +934,7 @@ DMI;DMI;DEMİRYAPI İNŞ.TAAH. VE DAHİLİ TİCARET - Raşıt DEMİR;TR;in use;d
 DMVRC;DMVRC;„ДMB” EООД;BG;in use;;
 DNV;DNV;DNV-Verlag /DNV Touristik GmbH;DE;in use;dnv-tours.de;
 DO;DO;Donner GmbH;DE;in use;donner-gmbh.de;
-DOL;DOL;"""Żwirownia Dolata"", ""Beton Dolata"" Agnieszka Dolata";DE;in use;mdolata.pl;
+DOL;DOL;"Żwirownia Dolata", "Beton Dolata" Agnieszka Dolata;DE;in use;mdolata.pl;
 DOLVA;DOLVA;DOLVAP, s.r.o.;SK;in use;dolvap.sk;
 DOLWR;DOLWR;Dolnośląskie Przedsiębiorstwo Napraw Infrastruktury Komunikacyjnej DOLKOM Sp. z o.o.;PL;in use;dolkom.pkp.wroc.pl;
 DONAU;DONAU;DONAU CHEM SRL;RO;in use;;
@@ -1024,7 +1035,7 @@ ECMS;ECMS;ECM – Service UG;DE;in use;ecm-service.com;
 ECOD;ECOD;ECODIESEL S.A.;RO;in use;;
 ECOM;ECOM;ECOMETAL SIB SRL;RO;in use;;
 ECOSA;ECOSA;Energetyka Cieplna Opolszczyzny S.A.;PL;in use;ec.opole.pl;
-ECR;ECR;Euro Cargo Rail;FR;Revoked;fr.dbcargo.com/rail-fr-fr;
+ECR;ECR;DB Cargo France;FR;in use;fr.dbcargo.com/rail-fr-fr;
 ECS;ECS;EUROVIA CS, a. s.;CZ;in use;eurovia.cz;
 ECTF;ECTF;EC Transporturi Feroviare SRL;RO;in use;;
 EDE;EDE;EQOS Energie Deutschland GmbH;AT;in use;eqos-energie.com;
@@ -1049,7 +1060,7 @@ EFRV;EFRV;Euro  Ferroviaria;IT;in use;;
 EFSA;EFSA;EFSA SA;CH;in use;tracknet.ch;OTIF
 EFSFT;EFSFT;Eisenbahnfreunde Traditionsbahnbetriebswerk Staßfurt e.V.;DE;in use;eisenbahnfreunde-stassfurt.de;
 EFSK;EFSK;Eisenbahnfreunde Treysa e.V.;DE;in use;eftreysa.de;
-EfW;EFW;EfW-Verkehrsgesellschaft;DE;in use;efw-verkehrsgesellschaft.de;
+EFW;EFW;EfW-Verkehrsgesellschaft mbH;DE;in use;efw-verkehrsgesellschaft.de;
 EFWFV;EFWFV;Eisenbahnfreunde Witten e.V.;DE;in use;ruhrtalbahn.de;
 EFWIn;EFWIN;EFW Infrastruktur GmbH;DE;in use;ef-wetterau.de;
 EFWIS;EFWIS;Eisenbahnfreunde Wismar e.V;DE;in use;lokschuppen-wismar.de;
@@ -1057,7 +1068,7 @@ EFZ;EFZ;Eisenbahnfreunde Zollernbahn e.V.;DE;in use;eisenbahnfreunde-zollernbahn
 EGB;EGB;Erfurter Gleisbau GmbH;DE;in use;erfurter-gleisbau.de;
 EGMAR;EGMAR;Eredi Giuseppe Mercuri SpA;IT;in use;;
 EGN;EGN;EGENIE S.A.S;FR;in use;;
-EGOO;EGOO;Eisenbahngesellschaft Ostfriesland-Oldenburg mbH;DE;in use;;
+EGOO;EGOO;e.g.o.o. Eisenbahngesellschaft Ostfriesland-Oldenburg mbH;DE;in use;egoo-bahn.de;
 EGP;EGP;Eisenbahn-Gesellschaft Potsdam mbH;DE;in use;;
 EGS;EGS;E.G. Steele and Company Limited;UK;in use;egsteele.com;
 EH;EH;ThyssenKrupp Steel Europe AG;DE;in use;thyssenkrupp-steel-europe.com;
@@ -1169,6 +1180,7 @@ ERAIL;ERAIL;Eurailpool GmbH;DE;in use;eurailpool.com;
 ERB;ERB;eurobahn GmbH & Co. KG;DE;in use;eurobahn.de;
 ERC;ERC;European Railway Company Deutschland GmbH;DE;in use;ercd.de;
 ERD;ERD;Eiffage Infra-Rail GmbH;DE;in use;eiffaqe-infra.de/rail;
+ERDPL;ERDPL;ERIDON sp. z o.o.;PL;in use;eridon.pl;
 ERE;ERE;OPERE;FR;in use;ere-lgv-bpl.com;
 ERF;ERF;Eiffage Rail;FR;in use;eiffagerail.fr/fr/home-page;
 ERH;ERH;EUROGATE RAIL HUNGARY Szolgaltato Zrt.;HU;in use;eurogate-rail.hu;
@@ -1217,26 +1229,27 @@ EURL;EURL;EURORAIL NV/SA;BE;in use;eurorail.eu;
 EURO;EURO;Euro Express Sonderzüge GmbH & Co KG;DE;in use;euro-express.eu;
 EUROC;EUROC;EUROCONSTRUCT TRADING 98 SRL;RO;in use;;
 EUROW;EUROW;EUROW-Waggon GmbH;DE;in use;;
+EUROY;EUROY;Eurowagon Demiryolu Tic.Ltd.Şti.;TR;in use;;OTIF
 EURSW;EURSW;Euroswitch AG;CH;Revoked;euroswitch.info;OTIF
 EUSCT;EUSCT;Eurailscout;NL;in use;eurailscout.com;
 EUSKO;EUSKO;Eusko Trenbideak - Ferrocarriles Vascos S.A.;ES;in use;euskotren.eus;
 EUWAG;EUWAG;EUROWAGON SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ;PL;in use;euro-wagon.com;
 ev;EV;Eurovapor;CH;in use;eurovapor.ch;OTIF
 EVA;EVA;Ekolsunds Åkeri & Verkstads AB;SE;in use;;
-EVB;EVB;Eisenbahnen und Verkehrsbetriebe Elbe-Weser;DE;in use;evb-elbe-weser.de;
+EVB;EVB;Eisenbahnen und Verkehrsbetriebe Elbe-Weser GmbH;DE;in use;evb-elbe-weser.de;
 EVBG;EVBG;Eisenbahn Verkehr und Besitz GmbH;DE;in use;rheingold-zug.com;
 EVG;EVG;Eifelbahn Verkehrsgesellschaft mbH;DE;in use;zugtouren.de;
 EVM;EVM;EVM Rail S.r.l.;IT;in use;evmrail.it;
 EVR;EVR;Aktsiaselts Eesti Raudtee;EE;Blocked;evr.ee;
 EVRE;EVRE;EVR Exspress;EE;Blocked;evrekspress.ee;
-EBPO;EVRO;"""Евроинженеринг"" ЕООД";BG;in use;;
+EBPO;EVRO;"Евроинженеринг" ЕООД;BG;in use;;
 EVS;EVS;VTG Rail Europe;FR;Revoked;;
 EVTR;EVTR;Evrometal OOD / Еврометал ООД;BG;in use;;
 EVULW;EVULW;LEONHARD WEISS GmbH & Co. KG;DE;in use;leonhard-weiss.de;
 EW;EW;Erik Walter GmbH Co KG;DE;in use;erik-walter.de;
 EWEX;EWEX;E-W Express, s.r.o.;SK;in use;ewex.sk;
 EWG;EWG;EWG Rail Pic.;HU;in use;;
-EWI;EWI;"Firma Handlowo-Usługowa ""Ewimex""";PL;in use;;
+EWI;EWI;Firma Handlowo-Usługowa "Ewimex";PL;in use;;
 EWL;EWL;EWL GmbH East West Logistics;DE;in use;;
 EWOOD;EWOOD;Ecco Wood sp. z o.o.;PL;in use;ecco-wood.eu;
 EWOW;EWOW;AKRENT sp. z o. o.;PL;in use;;
@@ -1343,7 +1356,7 @@ FMR;FMR;FuoriMuro Servizi Portuali e Ferroviari S.r.l.;IT;in use;fuorimuro.it;
 FN;FN;FERROVIENORD S.p.A.;IT;in use;ferrovienord.it;
 FNM;FNM;Ferrovie Nord Milano Esercizio S.p.A.;IT;Revoked;ferrovienord.it;
 FNW;FNW;First North Western;UK;Blocked;firstnorthwestern.co.uk;
-FOD;FOD;"Spolek „Frýdlantské okresní dráhy""";CZ;in use;;
+FOD;FOD;Spolek „Frýdlantské okresní dráhy";CZ;in use;;
 FODPS;FODPS;Fundacja Ochrony Dziedzictwa Przemysłowego Śląska;PL;in use;muzeumtechniki.pl;
 FÖRII;FORII;Föreningen Förstlingen II;SE;in use;forstlingen.com;
 FORMS;FORMS;FORMS Mariusz Koch;PL;in use;forms.com.pl;
@@ -1482,6 +1495,7 @@ GMG;GMG;GMG Gesellschaft f. masch. Gleisbau mbH & Co. KG;DE;in use;xaver-pittric
 GMMM;GMMM;Grand Moulin Maurel;FR;in use;;
 GMOS;GMOS;Migros Ostschweiz;CH;in use;migros-ostschweiz.ch;OTIF
 GNER;GNER;Great North Eastern Railway;UK;Blocked;gner.co.uk;
+GNL;GNL;GLOBAL NEOLOGISTICS DOO;RS;in use;globalneologistics.com;OTIF
 GNP;GNP;Геоактив Некст Проджекст ООД;BG;in use;;
 GNRS;GNRS;Gemernákup, a.s.;SK;in use;;
 GO;GO;CGOSTEC GmbH;DE;in use;gostec.de;
@@ -1496,6 +1510,7 @@ GPMB;GPMB;Grand Port Maritime de Bordeaux;FR;in use;;
 GPMT;GPMT;GP Papenburg Maschinentechnik GmbH;DE;in use;gp.ag;
 GPRC;GPRC;GP RAIL CARGO SA;RO;in use;;
 GR;GR;Chemins de fer de Géorgie;GE;in use;railway.ge;OTIF
+GRAB;GRAB;Grenland Rail AB;SE;in use;grenlandrail.com;
 GRAF;GRAF;Grafschafter Modell- und Eisenbahn-Club e.V.;DE;in use;graf-mec.de;
 GRAG;GRAG;Ing. Greuter AG;CH;in use;greuterag.ch;OTIF
 GRAIL;GRAIL;Gruschina Transport und Vermietungs GmbH;AT;in use;gruschina.at;
@@ -1603,7 +1618,7 @@ HHE;HHE;Freunde der Halle-Hettstedter Eisenbahn e.V.;DE;in use;halle-hettstedter
 HHPI;HHPI;Heavy Haul Power International GmbH;DE;in use;hhpi.de;
 HIFER;HIFER;HIFER CONSTRUCCION, CONSERVACION Y SERVICIOS, S.A.;ES;in use;hifer.es;
 HIP/ХИП;HIP;HIP-AZOTARA DOO;RS;in use;hip-azotara.rs;OTIF
-HISB;HISB;Verein Historische S-Bahn e.V., Berlin;DE;in use;hisb.de;
+HISB;HISB;Historische S-Bahn e.V.;DE;in use;hisb.de;
 HIT;HIT;HIT Holzindustrie Torgau OHG;DE;in use;;
 HJH;HJH;HJH Immobilien- und Projektmanagement GmbH;AT;in use;;
 HK;HK;Hans Kaiser GmbH & Co KG;DE;in use;;
@@ -1618,7 +1633,7 @@ HLB;HLB;HLB Basis AG;DE;in use;hlb-online.de;
 HLG;HLG;Nordlandrail GmbH;DE;in use;nordlandrail.de;
 HLM;HLM;HOLCIM S.A.;RO;in use;;
 HLP;HLP;Traditionsgemeinschaft Bw Halle P e.V.;DE;in use;;
-HLT;HLT;Hallandstrafiken AB;SE;in use;hlt.se;
+HLT;HLT;Region Halland / Hallandstrafiken;SE;in use;regionhalland.se / hallandstrafiken.se;
 HM;HM;Hasselmann GmbH;DE;in use;hasselmann-gmbh.de;
 HMAN;HMAN;H. Manhart GmbH;AT;in use;;
 HMBAU;HMBAU;H&M Bau GmbH;DE;in use;;
@@ -1700,6 +1715,7 @@ ID;ID;CARGOUNIT sp. z o.o.;PL;in use;cargounit.pl;
 IDIS;IDIS;iDispo UG (haftungsbeschränkt);DE;in use;;
 IDS;IDS;IDS - Inženýrské a dopravní stavby Olomouc a.s.;CZ;in use;;
 IDSC;IDSC;IDS CARGO a. s.;CZ;in use;ids-cargo.cz;
+IDSLC;IDSLC;IDS LocoCars s.r.o.;CZ;in use;ids-lococare.cz;
 IE;IE;Iarnrod Eireann (Coras Iompair Eireann);IE;in use;irishrail.ie;
 IECD;IECD;ELECTROCENTRALE SA DEVA;RO;in use;termodeva.ro;
 IF;IF;Innofreight Solutions GmbH;AT;in use;innofreight.com;
@@ -1711,7 +1727,7 @@ IGB;IGB;Industriebahn-Gesellschaft Berlin;DE;in use;captrain.de/unternehmen/stan
 IGDA;IGDA;IG Bw Dresden-Altstadt e.V.;DE;in use;igbwdresden-altstadt.de;
 IGE;IGE;IGE Internationale Gesellschaft für Eisenbahnverkehr GmbH & Co. KG;DE;in use;ige-bahn.de;
 IGEBA;IGEBA;IGEBA – Ingenieurgesellschaft Bahn mbH;DE;in use;;
-IGEW;IGEW;"IGE ""Werrabahn Eisenach"" e.V";DE;in use;ige-werrabahn-eisenach.de;
+IGEW;IGEW;IGE "Werrabahn Eisenach" e.V;DE;in use;ige-werrabahn-eisenach.de;
 IGHB;IGHB;IG Hirzbergbahn e.V;DE;in use;hirzbergbahn.de;
 IGL;IGL;IGL sp. z o. o. sp. k.;PL;in use;;
 IGN;IGN;IG Nebenbahn Nordhessen e.V;DE;in use;;
@@ -1755,9 +1771,9 @@ INFRA;INFRA;Infranord AB;SE;in use;infranord.se;
 INGDE;INGDE;Ing. De Aloe Costruzioni s.r.l.;IT;in use;;
 INKOM;INKOM;P.W. INTER-KOMTRANS SYLWESTER KOMISAREK;PL;in use;;
 INNR;INNR;Innrail Eisenbahndienstleistugen UG;DE;Revoked;innrail.com;
-ИНОСБ;INOSB;"""INOS-BALKAN"" doo Valjevo";RS;in use;inosbalkan.com;OTIF
+ИНОСБ;INOSB;"INOS-BALKAN" doo Valjevo;RS;in use;inosbalkan.com;OTIF
 INR;INR;INRAIL;IT;in use;inrail.it;
-INSA;INSA;"""Insa Gas"" OOD";BG;in use;insa.bg/insagas/;
+INSA;INSA;"Insa Gas" OOD;BG;in use;insa.bg/insagas/;
 INT;INT;ČSKD - INTRANS a.s.;CZ;in use;intrans.cz;
 INTBA;INTBA;Intertop-Bau GmbH;DE;in use;;
 INTEG;INTEG;IntEgro Verkehr GmbH;DE;in use;integro-verkehr.com;
@@ -1806,6 +1822,7 @@ ITL;ITL;ITL Eisenbahngesellschaft mbH;DE;in use;itl-dresden.de;
 ITLB;ITLB;ITL-Benelux;NL;in use;itl-benelux.com;
 ITLPL;ITLPL;ITL Polska Spólka z.o.o.;PL;in use;itlpolska.com.pl;
 ITRUD;ITRUD;ISAR-TANK F.U.H Rudolf GdbR;DE;Revoked;;
+ITX;ITX;InterTourex GmbH;DE;in use;intertourex.de;
 IUYGN;IUYGN;Ismail Uygun Loj. Hiz. Madencilik San. Ve Tic. Ltd. Şti;TR;in use;;OTIF
 IVB;IVB;Innsbrucker Verkehrsbetriebe;AT;Revoked;ivb.at;
 IVE;IVE;IVECOS SPA;IT;in use;ivecos.it;
@@ -1814,7 +1831,7 @@ IVMW;IVMW;Interessenvereinigung Verkehrsgeschichte mittleres Werratal (IVmW) e.V
 IVP;IVP;Imatran Veturipalvelu Oy;FI;in use;;
 IWAG;IWAG;Industriewaggon GmbH;AT;Revoked;;
 İZBAN;IZBAN;İZMIR BANLIYÖ TAŞIMACILIĞI SISTEMI TİCARET A.Ş.;TR;in use;izban.com.tr;OTIF
-IZREM;IZREM;"Przedsiębiorstwo Remontowo Budowlane ""IZOBUD - REM"" Jan Horoszkiewicz";PL;in use;izobud.pl;
+IZREM;IZREM;Przedsiębiorstwo Remontowo Budowlane "IZOBUD - REM" Jan Horoszkiewicz;PL;in use;izobud.pl;
 JÅÅJ;JAAJ;Järnvägssällskapet Åmål-Årjängs Järnväg;SE;in use;jaaj.tk;
 JACEK;JACEK;PPHU Jacek Surdyk;PL;in use;pphu-js.pl;
 JAK;JAK;JANSSEN GmbH & Co. KG;DE;in use;Janssen-landschaftspflege.de;
@@ -1825,7 +1842,7 @@ JAVYS;JAVYS;Jadrová a vyradovacia spoločnost, a.s.;SK;in use;;
 JAXAN;JAXAN;JAXAN GROUP SP. Z O.O.;PL;in use;;
 JB;JB;Jungfraubahn;CH;in use;jungfraubahn.ch;OTIF
 JBM;JBM;Norsk Jernbanemuseum;NO;in use;norsk-jernbanemuseum.no;
-JBV;JBV;Jernbaneverket;NO;in use;jernbaneverket.no;
+JBV;JBV;Bane NOR SF;NO;Revoked;banenor.no;
 JC;JC;Jura-Cement-Fabriken;CH;in use;ermewa.ch;OTIF
 JD;JD;JD Sp. z o.o. Sp. k.;PL;Revoked;jdtrade.com.pl;
 JESSL;JESSL;Brüder Jessl KG;AT;in use;jessl.at;
@@ -1854,7 +1871,7 @@ JN;JN;Johannes Janßen GmbH & Co.KG;DE;in use;johannes-janssen.com;
 JOERG;JOERG;Jörger GmbH;DE;in use;joerger-bau.de;
 JOSE;JOSE;Josera GmbH & Co KG;DE;in use;josera.de;
 JPAVL;JPAVL;Jan Pavliček;CZ;in use;;
-JPK/ЖПК;JPK;"Jelezopaten komplex / ""Железопътен комплекс"" ЕАД";BG;in use;;
+JPK/ЖПК;JPK;Jelezopaten komplex / "Железопътен комплекс" ЕАД;BG;in use;;
 JR;JR;Jumbo Rail GmbH;DE;Revoked;;
 JRZWB;JRZWB;Josef Rädlinger Kiesbaggerei und Fuhrunternehmen Gmbh & Co. KG;DE;in use;raedlinger.com;
 JSK;JSK;Jastrzębska Spółka Kolejowa Sp. z o.o.;PL;in use;jsk.pl;
@@ -1874,7 +1891,9 @@ KAF;KAF;KAF Falkenhahn Bau AG;DE;in use;falkenhahn.de;
 KAFTT;KAFTT;Falkenhahn Baugesellschaft mbH;DE;in use;falkenhahn.de;
 KAGO;KAGO;A. Kaufmann AG;CH;in use;kago.ch;OTIF
 KALE;KALE;KALENAKLIYAT SEYAHAT VE TURIZM A.Ş.;TR;in use;kalenakliyat.com.tr;OTIF
-KALI;KALI;K+S Minerals and Agriculture GmbH  K+S Minerals and Agriculture GmbH;DE;in use;kpluss.com;
+KALI;KALI;K+S Minerals and Agriculture GmbH
+
+K+S Minerals and Agriculture GmbH;DE;in use;kpluss.com;
 KALV;KALV;Kalvacha Gas / Кълвача Газ;BG;in use;kalvacha.bg;
 KALVN;KALVN;Kalvacha Energia / Кълвача Енергия;BG;in use;kalvacha.bg;
 KAM;KAM;Karel Mikolášek;CZ;in use;;
@@ -1934,7 +1953,7 @@ KKLB;KKLB;Kolej-klub, o.s.;CZ;in use;kolejklub.cz;
 KKMAX;KKMAX;Zakład Wielobranżowy „TOR-MAX” Krzysztof Kulesza;PL;Revoked;;
 KKS;KKS;Kibag Kies Seewen AG;CH;in use;zingel.ch;OTIF
 KKTOR;KKTOR;Tor-Max sp. z o.o.;PL;in use;;
-KKZ;KKZ;"Kombinat Koksochemiczny ""Zabrze""S.A";PL;in use;kkzabrze.com.pl;
+KKZ;KKZ;Kombinat Koksochemiczny "Zabrze"S.A;PL;in use;kkzabrze.com.pl;
 KLE;KLE;Klefenz GmbH;DE;in use;klefenz-tiefbau.de;
 KLENK;KLENK;Rhomberg Sersa Deutschland Südwest GmbH;DE;in use;rhomberg-sersa.de;
 KLEY;KLEY;Kley's Baumaschinen;DE;in use;;
@@ -1979,11 +1998,11 @@ KP/KП;KP;Kombinovani prevoz d.o.o., Novi Beograd;RS;in use;kprevoz.co.rs;OTIF
 KPEV;KPEV;Historischer Eisenbahnpark Niederrhein gUG;DE;in use;;
 KPHŽD;KPHZD;Klub priatel’ov histórie železničnej dopravy;SK;in use;kphzd.sk;
 KPKLK;KPKLK;Kopalnia Piasku Kotlamia - Linie Kolejowe sp. Z o.o.;PL;in use;kotlarnia.com.pl/html/linie.html;
-KPKOT;KPKOT;"KOPALNIA PIASKU “KOTLARNIA"" SPÓŁKA AKCYJNA";PL;in use;kotlarnia.com.pl;
+KPKOT;KPKOT;KOPALNIA PIASKU “KOTLARNIA" SPÓŁKA AKCYJNA;PL;in use;kotlarnia.com.pl;
 KPT;KPT;Klub přátel Transverzálky, z.s.;CZ;in use;kptrail.cz;
 KPŽČR;KPZCR;Klub přátel železnic Českého ráje, z.s.;CZ;in use;3100134.cz;
 KR;KR;Komplex Rail Vasúti Szolgáltató Kft.;HU;in use;komplexrail.hu;
-KRAUS;KRAUS;Marcus Kraus;DE;in use;;
+KRAUS;KRAUS;Marcus Kraus;DE;Revoked;;
 KRB;KRB;Norsk Jernbaneklubb - Krøderbanen;NO;in use;njk.no/kroderbanen;
 KRCAL;KRCAL;Kronospan Chemical Szczecinek S p. z o.o.;PL;in use;kronospan.pl;
 KRCHE;KRCHE;Alfa Terminal Szczecin Sp. z o.o.;PL;Revoked;kronospan.pl;
@@ -1999,7 +2018,7 @@ KRONO;KRONO;Länstrafiken Kronoberg;SE;in use;lanstrafikenkron.se;
 KRONR;KRONR;SC KRONOSPAN ROMANIA SRL;RO;in use;;
 KRS;KRS;KAIROS SRL;RO;in use;;
 KRSSW;KRSSW;KRS GmbH Klefenz Rail – Services;DE;in use;klefenz-railservices.de;
-KRT;KRT;"""КАМЕКС КОМЕРС"" EOOD";BG;in use;;
+KRT;KRT;"КАМЕКС КОМЕРС" EOOD;BG;in use;;
 KRUSZ;KRUSZ;Budokrusz S.A.;PL;in use;budokrusz.pl;
 KŠ;KS;LB CEMIX,s.r.o.;CZ;in use;;
 KSC;KSC;Krajowa Spółka Cukrowa S.A.;PL;in use;polski-cukier.pl;
@@ -2060,7 +2079,7 @@ LAN;LAN;Landor;CH;in use;landor.ch;OTIF
 LANGE;LANGE;Lange & CoGmbH;DE;in use;;
 LANTA;LANTA;LANTANIA, S.L.;ES;in use;lantania.com;
 LASCH;LASCH;Lasch GmbH Zwickau;DE;in use;diegleisbauer.de;
-LAT;LAT;LAT Fernmelde, Montage und Tiefbau GmbH;DE;in use;;
+LAT;LAT;LAT Fernmelde, Montage und Tiefbau GmbH;DE;Revoked;Iat.de;
 LAU;LAU;Laude Smart Intermodal S.A.;PL;in use;laude.pl;
 LAUDE;LAUDE;Laude Smart Intermodal S.A.;PL;Revoked;laude.pl;
 LAUFF;LAUFF;Spiess-Urania-Chemicals GmbH;DE;in use;;
@@ -2079,16 +2098,17 @@ LCF;LCF;LOCOFER;FR;in use;;
 LCH;LCH;Logistic Center Hungária Kft.;HU;in use;;
 LCIT;LCIT;Locoltalia Srl;IT;in use;locoitalia.it;
 LCR;LCR;Low Cost Rail SA;ES;in use;lcrail.com;
+LDB;LDB;Lokdienste Braun GmbH;DE;in use;lokdienste-braun.de;
 LDC;LDC;Lausitzer Dampflok Club e.V;DE;in use;;
 LDK;LDK;Leipziger Dampf KulTour;DE;in use;;
 LDS;LDS;LDS GmbH;DE;in use;ldsgmbh.de;
-LDZ;LDZ;"Valsts Akciju Sabiedriba ""Latvijas Dzelzcels""";LV;Blocked;ldz.lv;
+LDZ;LDZ;Valsts Akciju Sabiedriba "Latvijas Dzelzcels";LV;Blocked;ldz.lv;
 LE;LE;Leo Expres, a.s.;CZ;in use;;
 LEACZ;LEACZ;Čestmír Káňa - LEARKA;CZ;in use;;
 LEAG;LEAG;Lausitz Energie Bergbau AG;DE;in use;leag.de;
 LEB;LEB;Compagnie du Chemin de fer Lausanne-Echallens-Bercher;CH;in use;leb.ch;OTIF
-LEG;LEG;Leipziger Eisenbahnverkehrsgesellschaft mbH;DE;in use;leipziger-eisenbahn.de;
-LEGET;LEGET;RTC Luka Leget AD;RS;in use;www.leget.rs;OTIF
+LEG;LEG;LEG Leipziger Eisenbahnverkehrsgesellschaft mbH;DE;in use;leipziger-eisenbahn.de;
+LEGET;LEGET;RTC Luka Leget AD;RS;in use;leget.rs;OTIF
 LEITH;LEITH;Leithenmayr GmbH;AT;in use;;
 LEL;LEL;Landeseisenbahn Lippe e.V.;DE;in use;landeseisenbahn-lippe.de;
 LERG;LERG;LERG S.A.;PL;in use;;
@@ -2097,11 +2117,12 @@ LETEA;LETEA;LETEA S.A.;RO;in use;letea.ro;
 LEUNA;LEUNA;InfraLeuna GmbH;DE;in use;infraleuna.de;
 LEVEN;LEVEN;LEVEN DESARROLLOS, S.L.;ES;in use;levensl.com;
 LF;LF;LOGISTICA FEROVIARA SRL;RO;in use;;
+LFB;LFB;Limfjordsbanen;DK;in use;Limfjordsbanen.dk;
 LFGRO;LFGRO;LAFARGE CIMENT (ROMANIA) SA;RO;in use;lafarge.ro;
 LFI;LFI;Transporto Ferroviario Toscano;IT;in use;trasportoferroviariotoscano.it/;
 LFIAB;LFIAB;Lars Filipsson Invest AB;SE;in use;;
 LFP;LFP;LÍNEA FIGUERAS PERPIGNAN, S.A.;ES;in use;lfpperthus.com;
-LG;LG;"SPAB ""Lietuvos Gelezinkeliai""";LT;Revoked;litrail.lt;
+LG;LG;SPAB "Lietuvos Gelezinkeliai";LT;Revoked;litrail.lt;
 LGAT;LGAT;Linde Gas GmbH;AT;in use;linde-gas.at;
 LGBG;LGBG;Linde Gas Bulgaria EOOD;BG;in use;;
 LGD;LGD;Linde GmbH Gases Division;DE;in use;linde.com;
@@ -2145,7 +2166,7 @@ LMSTE;LMSTE;Lokalbahn Mixnitz – St. Erhard AG;AT;in use;;
 LMVAB;LMVAB;LMV Kontaktledning AB;SE;in use;kontaktledning.se;
 LN;LN;LeNord S.r.l.;IT;in use;lenord.it;
 LNS;LNS;Lineas Group SA/NV;BE;in use;lineas.net;
-LNVG;LNVG;Landesnahverkersgesellschaft Niedersachsen;DE;in use;lnvg.de;
+LNVG;LNVG;Landesnahverkehrsgesellschaft Niedersachsen mbH;DE;in use;lnvg.de;
 LNVV;LNVV;Landi Nord Vaudois-Venoge SA;CH;in use;landinordvaudoisvenoge.ch/;OTIF
 LO;LO;Métro Lausanne-Ouchy SA;CH;Revoked;;OTIF
 LOC;LOC;LoConnect GmbH;DE;in use;loconnect.eu;
@@ -2173,7 +2194,7 @@ LOTOS;LOTOS;LOTOS Kolej Sp. z o.o.;PL;in use;;
 LOTR;LOTR;LOTRAS S.R.L.;FR;in use;;
 LOZYW;LOZYW;LOZYW SPÓŁKA Z O.O.;PL;in use;;
 LP;LP;Lok-Partner Betriebsgesellschaft mbH & Co. KG;DE;in use;lok-partner.de;
-LPAG;LPAG;LokPool AG;CH;in use;www.lokpool.ch;OTIF
+LPAG;LPAG;LokPool AG;CH;in use;lokpool.ch;OTIF
 LPG;LPG;Locomotives Pool GmbH;DE;in use;locomotives-pool.com;
 LPR;LPR;LokoPro s.r.o.;CZ;in use;;
 LPTAB;LPTAB;Logent Terminal AB;SE;in use;longent.se;
@@ -2203,7 +2224,7 @@ LTESK;LTESK;LTE Logistik a Transport Slovakia, s.r.o.;SK;in use;lte.at;
 LTEU;LTEU;Loko Train s.r.o.;CZ;in use;lokotrain.eu;
 LTF;LTF;LOGISTICA Y TRANSPORTE FERROVIARIO, SAU;ES;in use;;
 LTFBG;LTFBG;LO.TRA.FER. -LOGISTICA TRANSPORTI FERROVIARI-s.r.l.;IT;in use;lotrafer.it;
-LTG;LTG;"AB „LTG CARGO""";LT;in use;litrail.lt;
+LTG;LTG;AB „LTG CARGO";LT;in use;litrail.lt;
 LTGPL;LTGPL;LTG CARGO Polska sp. z o.o.;PL;in use;ltgcargo.pl;
 LTL;LTL;LTL GmbH;DE;in use;;
 LTS;LTS;LOKO TRANS;SK;in use;lokotransslovakia.sk;
@@ -2269,7 +2290,7 @@ MBAG;MBAG;Mercedes-Benz AG;DE;in use;group.mercedes-benz.com;
 MBB;MBB;Mecklenburgische Bäderbahn Molli;DE;in use;molli-bahn.de;
 MBBAU;MBBAU;MB Bau und Sicherungsüberwachung e.K.;DE;in use;;
 MBBB;MBBB;Museumsbahn Bremerhaven-Bederkesa e. V.;DE;in use;museumsbahn-bremerhaven-bederkesa.de;
-MBBKB;MBBKB;Buckower Kleinbahn-Eisenbahnverein Märkische Schweiz e.V;DE;in use;buckower-kleinbahn.de;
+MBBKB;MBBKB;Museumsbahn Buckower Kleinbahn e.V.;DE;in use;buckower-kleinbahn.de;
 MBC;MBC;Transports de la région Morges-Bière-Cossonay;CH;in use;mbc.ch;OTIF
 MBG;MBG;Muggenthaler Bau GmbH;DE;in use;muggenthaler-bau.de;
 MBI;MBI;Münzer Bioindustrie GmbH;AT;in use;;
@@ -2404,7 +2425,7 @@ MP;MP;Petr Majernik;CZ;in use;t211.cz;
 MPF;MPF;MIPAF, s.r.o.;CZ;in use;mipaf.cz;
 MPKIS;MPKIS;Muzeum Przemysłu i Kolejnictwa na Śląsku;PL;in use;muzeatechniki.pl;
 MPL;MPL;MORIS Sp. z o.o.;PL;in use;moris.com.pl;
-MR;MR;"Metroferro Roma (""Met.Ro."")";IT;Blocked;atac.roma.it;
+MR;MR;Metroferro Roma ("Met.Ro.");IT;Blocked;atac.roma.it;
 MRE;MRE;Merseyrail Electrics 2002 Ltd;UK;in use;merseyrail.org;
 MREC;MREC;MÁV-REC Kft.;HU;in use;mavrec.hu;
 MRG;MRG;Martin Rose Gleisbau;DE;in use;rose-gleisbau.de;
@@ -2442,7 +2463,7 @@ MTZ;MTZ;Mongolian Railways (MTЗ);MN;in use;mtz.mn;OTIF
 MUEC;MUEC;Modell- und Eisenbahnclub -Rehau e.V;DE;in use;lokschuppen-selb.de;
 MUS;MUS;Mostecká uhelná a.s.;CZ;Revoked;;
 MVA;MVA;Magyar Vasúti Árúszállító Korlátolt Felelősségű Társaság;HU;in use;mvakft.hu;
-MVB;MVB;Migros Verteilbetrieb AG;CH;in use;www.mvb.ch;OTIF
+MVB;MVB;Migros Verteilbetrieb AG;CH;in use;mvb.ch;OTIF
 MVG;MVG;Märkische Eisenbahn Gesellschaft, Plettenberg;DE;in use;;
 MVH;MVH;Maansiirto Veli Hyyryläinen Oy;FI;in use;mvh.fi;
 MVNAG;MVNAG;Migros Verteilbetrieb AG;CH;Revoked;mvn.ch;OTIF
@@ -2451,7 +2472,7 @@ MVS;MVS;Miljø og Veiservice AS;NO;in use;mvs.as;
 MVSFI;MVSFI;Museoveturiseura r.y.;FI;in use;veturimuseo.fi;
 MW;MW;Metro Warszawskie Sp. z o.o.;PL;in use;metro.waw.pl;
 MWAB;MWAB;Midwaggon AB;SE;in use;midwaggon.se;
-MWB;MWB;Mittelweserbahn;DE;in use;mittelweserbahn.de;
+MWB;MWB;Mittelweserbahn GmbH;DE;in use;evb-elbe-weser.de;
 MWBri;MWBRI;Montawerke Brixlegg;AT;in use;montanwerke-brixlegg.com;
 MWRO;MWRO;MW Romania SA;RO;in use;;
 MXMU;MXMU;MODALIS;FR;in use;modalis.com;
@@ -2514,6 +2535,7 @@ NJDR;NJDR;NJD Railvac AS;NO;in use;njd.no;
 NJJ;NJJ;Nordjyske Jernbaner;DK;in use;njba.dk;
 NJM;NJM;Nynäshamns Järnvägsmuseum;SE;in use;njm.nu;
 NK;NK;Nordkalk AB;SE;in use;nordkalk.com;
+NKG;NKG;NEWAG KG Bahntechnik;DE;in use;;
 NKN;NKN;NKN Usługi Kolejowe Sp. z o.o.;PL;in use;nkn.com.pl;
 NKPL;NKPL;Nordkalk Sp. z o.o.;PL;in use;nordkalk.pl;
 NLB;NLB;Verein Neue Landesbahn;AT;in use;landesbahn.at;
@@ -2528,6 +2550,7 @@ NMT;NMT;Norsk Museumstog;NO;in use;njk.no/norsk-museumstog-dekker-hele-landet;
 NNH;NNH;Norilsk Nickel Harjavalta Oy;FI;in use;nornik.fi;
 NOB;NOB;Nord-Ostsee-Bahn;DE;in use;nord-ostsee-bahn.de;
 NOBEG;NOBEG;NOBEG - Reinold;DE;in use;;
+NOE;NOE;Orient Express;FR;in use;orient-express.com;
 NOKTA;NOKTA;NOKTA RAIL ULUSLAR ARASI TAŞIMACILIK VE TIC. A.Ş.;TR;in use;noktalojistik.com.tr;OTIF
 NOPAS;NOPAS;Novopacký parostrojní spolek;CZ;in use;nps.one;
 NOR;NOR;Norske Tog AS;NO;in use;norsketog.no;
@@ -2536,6 +2559,7 @@ NORDI;NORDI;NORDIGAS, a.s.;CZ;in use;;
 NORTH;NORTH;Northland Logistics AB;SE;in use;northland.eu;
 NÖSBB;NOSBB;Niederösterreichische Schneebergbahn GmbH;AT;in use;schneebergbahn.at;
 NOSTA;NOSTA;NOSTA Niederösterreichische Außenhandelsgesellschaft mbH;AT;in use;;
+NOTAR;NOTAR;Impresa Luigi Notari S.p.A.;IT;in use;impresaluiginotari.com;
 NOTR;NOTR;Nordic Train AB;SE;in use;vida.se;
 NOVA;NOVA;NOVATRANS;FR;in use;novatrans.eu;
 NOVAC;NOVAC;Novacarb;FR;in use;novacap.fr;
@@ -2543,6 +2567,7 @@ NOVAL;NOVAL;NOVA Leasing a.s.;SK;in use;novaleasing.sk;
 NOVES;NOVES;Novesia Mineralölhandelsges. mbH;DE;in use;;
 NÖVOG;NOVOG;Niederösterreichische Verkehrsorganisationsgesellschaft mbH;AT;in use;noevog.at;
 NOWRE;NOWRE;NOWREM sp. j. G. Iwański, D. Łata;PL;in use;nowrem.pl;
+NP;NP;NUOVI PROGETTI SRL;IT;in use;nuoviprogettisrl.it;
 NPG;NPG;NPG Bau Neuschitzer GmbH & Co KG;AT;in use;;
 NPL;NPL;Neopul - Sociedade de Estudos e Construção, S.A.;PT;in use;neopul.pt;
 NPS;NPS;Nordic Paper Seffle AB;SE;in use;nordic-paper.com;
@@ -2555,7 +2580,7 @@ NRCS;NRCS;Nordic Railway Construction Sverige AB;SE;in use;nrcgroup.se;
 NRE;NRE;Verein Nostalgie Rhein Express (NRE);CH;in use;nostalgie-rhein-express.ch;OTIF
 NREC;NREC;Nossen-Riesaer Eisenbahn-Compagnie (NRE) GmbH;DE;in use;nre-compagnie.de;
 NRFAB;NRFAB;Nordic Re-Finance AB;SE;in use;nordicrefinance.se;
-NRIC;NRIC;"National railway infrastructure company / Национална компания ""Железопътна инфраструктура""";BG;in use;rail-infra.bg;
+NRIC;NRIC;National railway infrastructure company / Национална компания "Железопътна инфраструктура";BG;in use;rail-infra.bg;
 NRIL;NRIL;Network Rail;UK;in use;networkrail.co.uk;
 NRS;NRS;Nordic Rail Service GmbH;DE;in use;nordic-rail-service.de;
 NRSLH;NRSLH;Normandie Rail Services SAS;FR;in use;;
@@ -2577,7 +2602,7 @@ NTSAB;NTSAB;Nordic Tamping Service AB;SE;in use;nts-ab.se;
 NTV;NTV;Nuovo Transporto Viaggiatori S.p.A. ''NTV'';IT;in use;ntvspa.it;
 NU;NU;Faik Nuhaj Industriedienstungen;DE;in use;;
 HBM;NVM;NOVOMETAL DOO NOVI SAD;RS;in use;novometaldoo.com;OTIF
-NWB;NWB;NordWestBahn;DE;in use;nordwestbahn.de;
+NWB;NWB;NordWestBahn GmbH;DE;in use;nordwestbahn.de;
 NWC;NWC;NordWestCargo GmbH;DE;in use;nordwestcargo.de;
 NWN;NWN;NETINERA WERKE GmbH;DE;in use;netinera-werke.de;
 NWP;NWP;Lokalbahn Neuenmarkt-Waizenkirchen-Peuerbach;AT;Revoked;stern-verkehr.at;
@@ -2596,6 +2621,7 @@ OCG;OCG;Oceanogate Italia SPA;IT;in use;;
 OCK;OCK;Fidum Bau AG;DE;in use;;
 OCRI;OCRI;Oak Capital Rail Invest GmbH;DE;in use;oak-capital.de;
 OCRM;OCRM;Oak Capital Rail Management GmbH;DE;in use;oak-capital.de;
+OCTOP;OCTOP;OCTOPUS Rijeka  d.o.o.;HZ;in use;octopus.hr;
 OCTOS;OCTOS;OКТОПOД С;BG;in use;;
 OCVIA;OCVIA;OC'VIA Maintenance;FR;in use;ocvia.fr;
 OD;OD;Oftobanen Drift AS;NO;in use;oftobanen.no;
@@ -2686,7 +2712,7 @@ PAGAS;PAGAS;Propangas AG;AT;in use;;
 PALMA;PALMA;PALMA Group, a.s.;SK;in use;palma.sk;
 PAN;PAN;PanGas AG;CH;Revoked;pangas.ch;OTIF
 PAPAI;PAPAI;Papai Railway GmbH & Co. KG;DE;in use;papai-erdbau.de;
-PAPAS;PAPAS;"Zarneni hrani 99 /""Зърнени храни 99"" ЕАД";BG;in use;;
+PAPAS;PAPAS;Zarneni hrani 99 /"Зърнени храни 99" ЕАД;BG;in use;;
 PAR;PAR;Porr Austriarail GmbH;AT;in use;austriarail.at;
 PARAC;PARAC;Parachini SA  (Sersa Group);CH;Revoked;sersa.ch;OTIF
 PAROL;PAROL;IMPRESA PAROLDI GIUSEPPE & C. SRL;IT;in use;impresaparoldi.it;
@@ -3023,7 +3049,7 @@ RIM;RIM;Rheinisches Industriebahn Museum e.V;DE;in use;aartalbahn.de;
 RIMEF;RIMEF;R.I.M.E.F. SRL;IT;in use;rimef.com;
 RINCJ;RINCJ;REMATINVEST SRL;RO;in use;rematinvest.ro;
 RIS;RIS;Regio Infra Service Sachsen GmbH;DE;in use;infra-service-sachsen.de;
-RIT;RIT;Riffelalp Tram - Riffelalp Resort AG;CH;in use;www.riffelalp.com;OTIF
+RiT;RIT;Riffelalp Tram - Riffelalp Resort AG;CH;in use;riffelalp.com;OTIF
 RITAL;RITAL;Rail Italia S.r.l.;IT;in use;interportosudeuropa.it;
 RIWNL;RIWNL;Sim Boerema B.V.;NL;in use;riw.nl;
 RJ;RJ;RegioJet, a.s.;CZ;in use;regiojet.cz;
@@ -3035,8 +3061,9 @@ RK;RK;Rhenus Keolis GmbH;DE;in use;rhenus-keolis.de;
 RL;RL;Rail-Loco Paweł Plata;PL;in use;;
 RLAG;RLAG;RaiLogistics AG;CH;Revoked;railogistics.com;OTIF
 RLC;RLC;railCare AG;CH;in use;railcare.ch;OTIF
+RLCTG;RLCTG;Rail Consulting s.r.o.;SK;in use;railconsulting.eu;
 RLFR;RLFR;Rosiński Logistics;PL;in use;rl.kruszywa.pl;
-RLG;RLG;Regionalverkehr Ruhr-Lippe;DE;in use;rlg-online.de;
+RLG;RLG;Regionalverkehr Ruhr-Lippe GmbH;DE;in use;wle-online.de;
 RLGC;RLGC;Railogic;DE;in use;railogic.de;
 RLJ;RLJ;Museiföreningen Risten – Lakviks Järnväg;SE;in use;rlj.se;
 RLK;RLK;RETROLOK s.r.o.;CZ;in use;retrolok.com;
@@ -3098,6 +3125,7 @@ RPVSB;RPVSB;REMONT I PROIZVODNJA ŽELJEZNIČKIH VOZILA d.o.o.;HR;in use;rpvsb.hr
 RR;RR;Rautaruukki  Oy;FI;in use;ruukki.com;
 RRB;RRB;RRB Slovakia, s.r.o.;SK;in use;rrb.sk;
 RRCAB;RRCAB;RailRoad Construction Sweden AB;SE;in use;;
+RRCSM;RRCSM;RRC Spår Maskiner AB;SE;in use;;
 RRF;RRF;Rotterdam Rail Feeding;NL;in use;railfeeding.nl;
 RRFR;RRFR;Regiorail France;FR;in use;;
 RRI;RRI;Rhenus rail St.Ingbert GmbH;DE;in use;rhenus.com;
@@ -3115,7 +3143,7 @@ RSD;RSD;RSD-Sicherheitsdienst GmbH& Co.;DE;in use;;
 RSDER;RSDER;RAILSIDER LOGISTICA FERROVIARIA, S.A.;ES;in use;railsider.es;
 RSE;RSE;RSE Rhein-Sieg-Eisenbahn GmbH;DE;in use;rse-bonn.de;
 RSEJ;RSEJ;Railservice;DK;in use;railservice.dk;
-RSG;RSG;Rhomberg Sersa Deutschland Ost GmbH;DE;in use;rhomberg-sersa.de;
+RSG;RSG;Rhomberg Sersa Deutschland GmbH;DE;in use;germany.rhomberg-sersa.com/de;
 RSL;RSL;Rad und Schiene Logistik GmbH;DE;in use;radundschiene.de;
 RSS;RSS;Railservis s.r.o.;CZ;in use;;
 RSSSK;RSSSK;Rail Services Slovakia, s.r.o.;SK;in use;;
@@ -3157,7 +3185,7 @@ RUSH;RUSH;Rush Rail AB;SE;in use;rushrail.se;
 RUTR;RUTR;RUTR, spol. S.r.o.;CZ;in use;rutr.cz;
 RUWA;RUWA;RUWA Drahtschweisswerk AG;CH;in use;ruwa-ag.ch;OTIF
 RVG;RVG;Railvetica GmbH;CH;in use;railvetica.ch;OTIF
-RVM;RVM;Regionalverkehr Münsterland;DE;in use;rvm-online.de;
+RVM;RVM;Regionalverkehr Münsterland GmbH;DE;in use;wle-online.de;
 RVP;RVP;Remontno-Vuzstanovitelno Predprijatie - Koehne;BG;in use;rvp-koehne.com;
 RVS;RVS;RVS, spol. s r.o.;SK;in use;;
 RVSD;RVSD;Regionalverkehre Start Deutschland GmbH;DE;in use;startgmbh.com;
@@ -3201,6 +3229,7 @@ SBBCI;SBBCI;SBB Cargo Italia S.r.L.;IT;in use;;
 SBBD;SBBD;SBB GmbH;DE;in use;sbb-deutschiand.de;
 SBBH;SBBH;SBB Historic;CH;in use;sbbhistoric.ch;OTIF
 SBBI;SBBI;Schweizerisches Bundesbahnen, Infrastruktur;CH;in use;sbb.ch;OTIF
+SBBIN;SBBIN;SBB Cargo International AG;CH;in use;sbbcargo-international.com/;OTIF
 SBD;SBD;Sächsische Bau GmbH;DE;in use;wiebe.de;
 SBE;SBE;Sächsich-Böhmische-Eisenbahn GmbH;DE;in use;mandaubahn.de;
 SBF;SBF;A/S Storebælt;DK;in use;storebaelt.dk;
@@ -3221,7 +3250,7 @@ SCH;SCH;Sägewerk Schwaiger GmbH & Co. KG;DE;in use;saegewerk-schwaiger.de;
 SCHEU;SCHEU;Scheuchzer SA;CH;in use;scheuchzer.ch;OTIF
 SCHFL;SCHFL;Schienenflotte GmbH;DE;in use;schienenflotte.de;
 SCHL;SCHL;Schleith GmbH Baugesellschaft;DE;in use;schleith.de;
-SCHO;SCHO;Schollenberger Kampfmitteibergung GmbH;DE;in use;schollenberger.de;
+SCHO;SCHO;Schollenberger Kampfmittelbergung GmbH;DE;in use;schollenberger.de;
 SCHW;SCHW;Schwalbe Baugesellschaft mbH & Co. KG;DE;in use;schwalbebau.de;
 SCKL;SCKL;Schröder & Klaus GmbH + Co. KG;DE;in use;;OTIF
 SCP;SCP;Mondi SCP, a.s.;SK;in use;;
@@ -3333,7 +3362,7 @@ SKANS;SKANS;Skanska a.s.;CZ;in use;;
 SKASK;SKASK;Skanska SK a.s.;SK;in use;skanska.sk;
 SKB;SKB;UAB SKINEST BALTIJA;LT;in use;skinest.lt;
 SKBIN;SKBIN;Budamar Innovations, a.s.;SK;in use;budamar.sk;
-SKG;SKG;"""Srbija kargo"" a.d. / JSC Serbia Cargo /";RS;in use;srbcargo.rs;OTIF
+SKG;SKG;"Srbija kargo" a.d. / JSC Serbia Cargo /;RS;in use;srbcargo.rs;OTIF
 SKHT;SKHT;SK – H Trans, s. r. o.;SK;in use;skhtrans.sk;
 SKINE;SKINE;Skinest Rail AS;EE;in use;skinest.ee;
 SKJ;SKJ;Skånska Järnvägar AB;SE;in use;skanskajarnvagar.se;
@@ -3388,7 +3417,7 @@ SNG;SNG;Singergon Petroleum;BG;in use;;
 SNL;SNL;Sven Neunzig;DE;in use;;
 SNSRV;SNSRV;SOCIETATEA NATIONALA A SARII SA - SUCURSALA EXPLOATARE MINIERA RM. VALCEA;RO;in use;salvir.ro;
 SNSSP;SNSSP;SUCURSALA NATIONALA A SARII SA - SUCURSALA SALINA PRAID;RO;in use;salinapraid.ro;
-SNTFC;SNTFC;"SNTFC "" CFR  CALATORI "" SA";RO;in use;cfrcalatori.ro;
+SNTFC;SNTFC;SNTFC " CFR  CALATORI " SA;RO;in use;cfrcalatori.ro;
 SO;SO;Serco Railtest;UK;Blocked;serco.co.uk;
 SOB;SOB;Schweizerische Südostbahn AG;CH;in use;suedostbahn.ch;OTIF
 SOBET;SOBET;Sobetra, a.s.;SK;in use;sobetra.sk;
@@ -3426,6 +3455,8 @@ SPLG;SPLG;SPL Powerlines Germany GmbH;DE;in use;powerlines-group.com;
 SPOL;SPOL;Siemens Mobility Sp. z o.o.;PL;in use;siemens.pl/mobility;
 SPS;SPS;Spitzke Spoorbouw;NL;in use;spitzke.nl;
 SPSAB;SPSAB; ScanPole Sverige AB;SE;in use;scanpole.com;
+SPSPM;SPSPM;Piotr Mieczkowski AUTORYZOWANA STACJA OBSŁUGI SERWIS POJAZDÓW SZYNOWYCH;PL;in use;;
+SPSSK;SPSSK;Serwis Pojazdów Szynowych sp. z o.o. sp. k.;PL;in use;;
 SPU;SPU;Spiess-Urania Chemicals GmbH;DE;in use;spiess-urania.com;
 SPW;SPW;Société Propriétaire des Wagons;FR;in use;viia.com;
 SPYFA;SPYFA;Spyfa Tec GmbH;CH;in use;spyfatec.ch;OTIF
@@ -3436,7 +3467,7 @@ SRA;SRA;S-Rail GmbH;DE;in use;;
 SRAG;SRAG;Stettler AG Biel Studen;CH;in use;stettlerag.ch;OTIF
 SRAIL;SRAIL;Vossloh Rail Services Deutschland GmbH;DE;in use;vossloh.com/de/;
 SRB;SRB;Südburgenländische Regionalbahn;AT;in use;maerchenbahn.at;
-SRC;SRC;SWISS RAIL CARRIER AG - SRC®;CH;in use;www.swissrailcarrier.ch;OTIF
+SRC;SRC;SWISS RAIL CARRIER AG - SRC®;CH;in use;swissrailcarrier.ch;OTIF
 SRCM;SRCM;Swiss Rail Car Management GmbH;CH;in use;;OTIF
 SREQ;SREQ;SIDERURGICA REQUENA, S.A.;ES;in use;;
 SRFL;SRFL;STRABAG Rail Fahrleitungen Gmbh;DE;in use;strabag-rail.com;
@@ -3475,7 +3506,7 @@ SSZV;SSZV;Ing. Lukáš Volek;CZ;in use;stavitelstvivolek.cz;
 ST;ST;Sursee-Triengen Bahn AG;CH;in use;dampfzug.ch;OTIF
 STA;STA;Stahlberg Track Asset GmbH & Co. KG;DE;Revoked;vossloh-rail-services.com;
 STAB;STAB;Svensk Tågkraft AB;SE;in use;tagkraft.com;
-STADS;STADS;Stadler Service AG;CH;in use;www.stadlerrail.com;OTIF
+STADS;STADS;Stadler Service AG;CH;in use;stadlerrail.com;OTIF
 STAG;STAG;Stadler Bussnang AG;CH;in use;stadlerrail.com;OTIF
 STAL;STAL;Siemens Transformers Austria GmbH & Co KG;AT;in use;siemens.com;
 STAP;STAP;Stadler Deutschland GmbH;DE;in use;stadlerrail.de;
@@ -3499,7 +3530,7 @@ STEEL;STEEL;VÍTKOVICE STEEL, a.s.;CZ;in use;;
 STEF;STEF;Stefen GmbH & Co. KG;DE;in use;hermannstefen.de;
 STEG;STEG;Radek Mansfeld;CZ;in use;;
 STENA;STENA;Stena Gotthard AB;SE;in use;stenagotthard.se;
-STENO;STENO;"""STENO v.o.s."" - stavební a inženýrská činnost kolejové dopravé";CZ;in use;;
+STENO;STENO;"STENO v.o.s." - stavební a inženýrská činnost kolejové dopravé;CZ;in use;;
 STGBS;STGBS;Stuttgarter Bahnservice Ltd.;DE;in use;stuttgarter-bahn.de;
 StH;STH;Stern & Hafferl Verkehrsgesellschaft mbH;AT;in use;stern-verkehr.at;
 STI;STI;SERVTRANS INVEST S.A.;RO;in use;servtrans-invest.com;
@@ -3524,7 +3555,7 @@ STSL;STSL;STS Logistic sp. z o.o.;PL;in use;stslogistic.com.pl;
 STSLM;STSLM;Siemens Transportation System Locomotives;DE;in use;transportion.siemens.com;
 STT;STT;Svensk Tågteknik AB;SE;in use;stt-train.se;
 STTRA;STTRA;Statnett Transport AS;NO;in use;statnett-transport.no;
-STVA;STVA;Société transport de véhicules automobiles;FR;in use;stva.com;
+STVA;STVA;CAT France;FR;Correction;groupecat.com;
 STVG;STVG;Stauden -Verkehrs-GmbH;DE;in use;bbgstauden.de;
 STW;STW;Verein Seetal-Wagen STW;CH;Revoked;seetal-wagen.ch;OTIF
 STWB;STWB;Steigerwaldbahn;DE;in use;;
@@ -3536,7 +3567,7 @@ SUMÅF;SUMAF;Storumans Ångtågsförening;SE;in use;storumanloket.se;
 SUND;SUND;Sundström Ab Oy, Entreprenad;FI;in use;sundstroms.fi;
 SUNR;SUNR;SUNRAIL GbR;DE;in use;;
 SUP;SUP;Sturm & Partner GbR;DE;in use;;
-SV;SV;"Joint Stock Company for Passenger Railway Transport ""Srbija voz"" a.d.";RS;in use;srbvoz.rs;OTIF
+SV;SV;Joint Stock Company for Passenger Railway Transport "Srbija voz" a.d.;RS;in use;srbvoz.rs;OTIF
 SVB;SVB;Städtische Verkehrsbetriebe Bern (BERNMOBIL);CH;in use;bernmobil.ch;OTIF
 SVC;SVC;Sonderzugveranstaltungen Chemnitz;DE;in use;zugparty.de;
 SVDJS;SVDJS;„EC BИ ДИ ГРУП” ΑД;BG;in use;;
@@ -3544,7 +3575,7 @@ SVECO;SVECO;SVECO S.P.A.;IT;in use;svecospa.it;
 SVF;SVF;Scala Virgilio & Figli S.p.A.;IT;in use;;
 SVG;SVG;Schienenverkehrsgesellschaft mbH;DE;in use;svgmbh.com;
 SVP;SVP;Associazione Società Veneta Ferrovie APS;IT;in use;societavenetaferrovie.it;
-SVSA;SVSA;"„СΒИЛОЦЕЛ"" EАД";BG;in use;svilosa.bg;
+SVSA;SVSA;„СΒИЛОЦЕЛ" EАД;BG;in use;svilosa.bg;
 SVT;SVT;Förderverein Diesel-Schnelltriebwagen (SVT) e.V.;DE;in use;svt-koeln.de;
 SVTG;SVTG;SVT Görlitz gGmbH i.G.;DE;in use;;
 SVVR;SVVR;Spolok Výhrevne Vrútky, občianske združenie;SK;in use;vyhrevna-vrutky.sk;
@@ -3569,7 +3600,7 @@ SWTAB;SWTAB;SWT Swedtrac Trafik AB;SE;in use;swedtrac.com;
 SWTR;SWTR;Swisstrain SA;CH;in use;swisstrain.ch;OTIF
 SYN;SYN;Syntus;NL;Revoked;syntus.nl;
 SŽ;SZ;Slovenske Zeleznice D.D.;SI;in use;slo-zeleznice.si;
-SZA;SZA;"""Sviloza"" AD / ""Свилоза"" АД";BG;in use;;
+SZA;SZA;"Sviloza" AD / "Свилоза" АД;BG;in use;;
 SŽCZ;SZCZ;Správa železnic, státní organizace;CZ;in use;szdc.cz;
 SZD;SZD;SLEZSKÉ ZEMSKÉ DRÁHY, o.p.s.;CZ;in use;;
 SŽDS;SZDS;Slovenská železničná dopravná spoločnosť, a.s.;SK;in use;szds.sk;
@@ -3582,6 +3613,7 @@ SZVJ;SZVJ;Společnost železniční výtopna Jaroměř, z.s.;CZ;in use;vytopnaja
 TAB;TAB;Tågfrakt AB;SE;in use;tagfrakt.se;
 TABOR;TABOR;Tabor Dębica Sp. z o.o.;PL;in use;tabor-debica.pl;
 TAE;TAE;Transalpin Eisenbahn AG;CH;Revoked;captrain.de;OTIF
+TAFAG;TAFAG;Tafag AG;CH;in use;tafag.ch;OTIF
 TÅGAB;TAGAB;Tågåkeriet i Bergslagen AB;SE;in use;;
 TAL;TAL;Talbot-Services GmbH;DE;in use;talbot-services.com;
 TALDE;TALDE;Talgo (Deutschland) Gmbh;DE;in use;talgo.de;
@@ -3635,7 +3667,7 @@ TELIC;TELIC;TELEFONOS LINEAS Y CENTRALES;ES;in use;telice.es;
 TEMF;TEMF;TEMFERRO;FR;in use;tso.fr;
 TEMMZ;TEMMZ;Tessta s.r.o.;CZ;in use;tessta.cz;
 TEMSK;TEMSK;TEMPRA s.r.o.;SK;in use;tempra.sk;
-TENT;TENT;"Privredno drustvo ""Termoelektrane Nikola Tesla"" d.o.o.";RS;in use;tent.rs;OTIF
+TENT;TENT;Privredno drustvo "Termoelektrane Nikola Tesla" d.o.o.;RS;in use;tent.rs;OTIF
 TER;TER;TPER S.p.A;IT;in use;tper.it;
 TERÄS;TERAS;Teräspyörä Oy;FI;in use;steelwheel.fi;
 TESBG;TESBG;Транселстрой” ЕООД;BG;in use;transelstroi.eu;
@@ -3652,7 +3684,7 @@ TFG;TFG;TRANSFEROVIAR GRUP S.A.;RO;in use;transferoviar.ro;
 TFI;TFI;FEROTRANS TFI SRL;RO;in use;;
 TFT;TFT;Train4Train GmbH;DE;in use;train4train.com;
 TGOJ;TGOJ;TGOJ Trafik AB;SE;Revoked;tgojtrafik.se;
-TGR;TGR;TGR Rostock Tief-, Gleis-, Straßen-, Kabelleitungs- und Ingenieurbau GmbH;DE;in use;tgr-gmbh.de;
+TGR;TGR;T G R Rostock Tief-, Gleis-, Straßen-, Kabelleitungs- und Ingenieurbau GmbH;DE;in use;tgr-gmbh.de;
 THADE;THADE;Thales Deutschland GmbH;DE;in use;thalesgropu.com/de/europe/deutschland;
 THAG;THAG;Thommen AG;CH;in use;thommen-recycling.ch;OTIF
 THAPL;THAPL;Thales Polska sp. z o.o.;PL;in use;thalesgroup.com;
@@ -3688,7 +3720,7 @@ TLG;TLG;Transport und Logistik GmbH;DE;in use;tlg-ag.de;
 TLLOC;TLLOC;Transport line Locomotive s.r.o.;CZ;in use;transportline.eu;
 TLOK;TLOK;PHU TOM-LOK Tomasz Plata;PL;in use;;
 TLS;TLS;ALSTOM Transport Deutschland GmbH;DE;in use;alstom.com;
-TLSA;TLSA;Transports Publics de la Région Lausannoise sa;CH;in use;www.t-l.ch;OTIF
+TLSA;TLSA;Transports Publics de la Région Lausannoise sa;CH;in use;t-l.ch;OTIF
 TLSDY;TLSDY;TLS DEMİRYOLU TAŞIMACILIĞI TICARET A.Ş.;TR;in use;tlslojistik.com;OTIF
 TLSK;TLSK;Tatra-Leasing, s.r.o.;SK;in use;tatraleasing.sk;
 TLSSK;TLSSK;TransLog Slovakia, a.s.;SK;in use;translog.sk;
@@ -3714,7 +3746,7 @@ TN;TN;TRENORD;IT;in use;trenitalialenord.it;
 TNI;TNI;TN International;FR;in use;areva.com;
 TNR;TNR;Tenor S.r.l.;IT;in use;inrail.it;
 TNT;TNT;Association Train Nostalgique de la Vallée du Trient (TNT);CH;in use;;OTIF
-TNTD;TNTD;Tenutado SK s.r.o., Andreja Žarnova 1, 917 02 Trnava;SK;in use;;
+TNTD;TNTD;Tenutado SK, a.s.;SK;in use;;
 TOBI;TOBI;Schmiedewaren Biller;DE;in use;;
 TOELN;TOELN;Tölner GmbH;DE;in use;;
 TOOŽ;TOOZ;Technická obnova a ochrana železníc a.s;SK;in use;;
@@ -3734,6 +3766,7 @@ TPCF;TPCF;TPCF, Train du Pays Cathare et du Fenouillèdes;FR;in use;tpcf.fr;
 TPCZ;TPCZ;TransPlus (Česko);CZ;in use;;
 TPF;TPF;Transports publics fribourgeois;CH;in use;tpf.ch;OTIF
 TPFI;TPFI;Transports publics fribourgeois Infrastructure (TPF INFRA) SA;CH;in use;tpf.ch;OTIF
+TPG;TPG;Transports publics genevois (TPG);CH;in use;tpg.ch/;OTIF
 TPI;TPI;Terminal Piacenza Intermodale S.r.l.;IT;in use;hupac.com/EN/Terminal-Piacenza-Intermodale Srl-Piacenza-6b3c3700;
 TPL;TPL;Toplivo PLC / Топливо АД;BG;in use;;
 TPLN;TPLN;„TPAHC-ПOPT-ЛEЙH” OOД;BG;in use;;
@@ -3744,6 +3777,7 @@ TPSVK;TPSVK;TransPlus (Slovensko) s.r.o.;SK;in use;;
 TPX;TPX;Trans-Pennine Express;UK;Blocked;firstgroup.com/tpexpress;
 TR;TR;TR Trans Rail AG;CH;in use;tr-transrail.ch;OTIF
 TRA;TRA;TRATEC-SK s.r.o.;SK;in use;;
+TRAAL;TRAAL;TRANSMODAL LTD;BG;in use;;
 tracc;TRACC;Traccion Rail s.l.;ES;in use;azvi.es;
 TRACE;TRACE;ТРЕЙС ГРУП ХОЛД АД;BG;in use;tracebg.com;
 TRACK;TRACK;ON-TRACK, s.r.o.;CZ;in use;ontrack-web.com;
@@ -3814,10 +3848,10 @@ TSS;TSS;Traťová strojní společnost, a.s.;CZ;in use;;
 TSSC;TSSC;TSS Cargo;CZ;in use;;
 TSSTT;TSSTT;TSS GRADE, a.s.;SK;in use;tss.sk;
 TSVAB;TSVAB;Trinseo Sverige AB;SE;in use;trinseo.com;
-TSVG;TSVG;"""TSV""Gorna Orjahovitza";BG;in use;tsv-bg.com;
-TSVP;TSVP;"""TSV"" Plovdiv";BG;in use;tsv-bg.com;
-TSVS;TSVS;"""TSV"" Sofia";BG;in use;tsv-bg.com;
-TSVV;TSVV;"""TSV"" Varna";BG;in use;tsvvarna.com;
+TSVG;TSVG;"TSV"Gorna Orjahovitza;BG;in use;tsv-bg.com;
+TSVP;TSVP;"TSV" Plovdiv;BG;in use;tsv-bg.com;
+TSVS;TSVS;"TSV" Sofia;BG;in use;tsv-bg.com;
+TSVV;TSVV;"TSV" Varna;BG;in use;tsvvarna.com;
 TSYS;TSYS;TRAKCJA SYSTEM sp. z o.o.;PL;in use;trakcjasystem.pl;
 TT;TT;Trentino Trasporti S.p.A;IT;in use;trentinotransporti.it;
 TTBG;TTBG;ТТ БЪЛГАРИЯ ЕООД;BG;in use;;
@@ -3846,7 +3880,7 @@ TUAG;TUAG;Marti Tunnel AG;CH;in use;marti-tunnel.ch;OTIF
 TUG;TUG;TUG Tief- und Gleisbau Brandenburg/H. GmbH;DE;in use;tug-brandenburg.de;
 TUL;TUL;Teplárna Ústí nad Labem, a.s.;CZ;in use;;
 TUPRS;TUPRS;TÜPRAŞ (Türkiye Petrol Rafinerileri A.Ş.);TR;in use;tupras.com.tr;OTIF
-TÜVCH;TUVCH;TÜV SÜD Schweiz AG;CH;in use;https://www.tuvsud.com/de-ch;OTIF
+TÜVCH;TUVCH;TÜV SÜD Schweiz AG;CH;in use;tuvsud.com/de-ch;OTIF
 TVA;TVA;Association de la 141R420;FR;in use;trainvapeur-auvergne.com;
 TVAB;TVAB;Tekniska Verken i Linköping AB;SE;Revoked;tekniskaverken.se;
 TVK;TVK;Tiszai Vegyi Kombinát Nyrt;HU;in use;tvk.hu;
@@ -3859,7 +3893,7 @@ TWACH;TWACH;TRANSWAGGON AG;CH;in use;transwaggon.ch;OTIF
 TWASE;TWASE;TRANSWAGGON AB;SE;in use;transwaggon.se;
 TWBS;TWBS;Transwagon Burgas;BG;in use;;
 TWE;TWE;Teutoburger Wald-Eisenbahn Gesellschaft;DE;in use;twe-connex.de;
-TWFÜF;TWFUE;Verein Historischer Triebwagen 5;CH;in use;triebwagen5.ch;OTIF
+TWFÜF;TWFUF;Verein Historischer Triebwagen 5;CH;in use;triebwagen5.ch;OTIF
 TWG;TWG;TANKWAGON Sp. z o.o;PL;in use;tankwagon.pl;
 TXL;TXL;TX Logistik AG;DE;in use;txlogistik.eu;
 TXLA;TXLA;TX Logistik Austria GmbH;AT;in use;txlogistik.at;
@@ -3917,8 +3951,8 @@ UTZ;UTZ;UNICOM TRANZIT SA;RO;in use;unicom-group.ro;
 UVAID;UVAID;UZINA DE VAGOANE AIUD SA;RO;in use;emharghita.ro;
 UWAY;UWAY;UNITED RAILWAYS SRL;RO;in use;;
 UZ/УЗ;UZ;Ukraine Railways - UkrZaliznyza;UA;in use;uz.gov.ua;OTIF
-UZKA;UZKA;UZKA CONSTRUCTION INDUSTRY AND TRADE INC.;TR;in use;www.uzka.com.tr;OTIF
-UZKRY;UZKRY;UZKARAY CONSTRUCTION INDUSTRY AND TRADE INC.;TR;in use;www.uzka.com.tr;OTIF
+UZKA;UZKA;UZKA CONSTRUCTION INDUSTRY AND TRADE INC.;TR;in use;uzka.com.tr;OTIF
+UZKRY;UZKRY;UZKARAY CONSTRUCTION INDUSTRY AND TRADE INC.;TR;in use;uzka.com.tr;OTIF
 UZRCV;UZRCV;COMPLEX ENERGETIC CRAIOVA SA - UZINA DE REPARATII CRAIOVA;RO;in use;;
 VA;VA;Lokalbahn Vöcklamarkt - Attersee;AT;Revoked;stern-verkehr.at;
 VABWG;VABWG;Voestalpine Track Solutions Germany GmbH;DE;in use;voestalpine.com/TrackSolutionsGermany;
@@ -3988,7 +4022,7 @@ VFS;VFS;VFS Trading s.r.o.;CZ;in use;;
 VGH;VGH;Verkehrsbetriebe Grafschaft Hoya;DE;in use;vgh-hoya.de;
 VGOMZ;VGOMZ;Valentin Gas u. Oel GmbH & Co.;DE;in use;;
 VHE;VHE;Verein Historische Eisenbahn Emmental;CH;in use;historische-eisenbahn-emmental.ch;OTIF
-VHEB;VHEB;"Verein „Historische Elektrolokomotiven Bludenz""";AT;in use;nostalgielok.com;
+VHEB;VHEB;Verein „Historische Elektrolokomotiven Bludenz";AT;in use;nostalgielok.com;
 VHÍD;VHID;V-HÍD Vagyonkezelő Kft.;HU;in use;vhid.hu;
 VHSG;VHSG;Vossloh High Speed Grinding GmbH;DE;Revoked;vossloh.com;
 VIA;VIA;VIAMONT Servis a.s.;CZ;in use;viamont.cz;
@@ -4004,6 +4038,7 @@ VICEM;VICEM;Ciments Vigier SA;CH;in use;vicem.ch;OTIF
 VICU;VICU;Transportes Vicuña;FR;in use;transportesvicuna.com;
 VIDA;VIDA;Vida Wood AB;SE;in use;vida.se;
 VIIA;VIIA;VIIA;FR;in use;viia.com;
+VIK;VIK;VIKING-Rail ApS;DK;in use;vikingrail.dk;
 VILOR;VILOR;CONTRATAS VILOR SL;ES;in use;vilor.net;
 VIMAC;VIMAC;VIMAC, S.A.;ES;in use;vimac.es;
 VIMAT;VIMAT;Imathia Consulting & Engineering, S.A.;ES;in use;imathia.es;
@@ -4029,7 +4064,7 @@ VMRS;VMRS;Vossloh Rail Services Deutschland GmbH;DE;in use;vossloh.com;
 VNSS;VNSS;Vossloh Nordic Switch Systems AB;SE;in use;vosslohnordic.com;
 VNTIT;VNTIT;Veneta21 SRL;IT;in use;veneta21.it;
 VNW;VNW;Vonwillerka s.r.o.;CZ;in use;ventilovka.cz;
-ВОДСТ;VODST;"""Водстрой 98"" АД";BG;in use;partner-leasing.com;
+ВОДСТ;VODST;"Водстрой 98" АД;BG;in use;partner-leasing.com;
 Vpac;VPAC;Verein Pacific 01 202;CH;in use;dampflok.ch;OTIF
 VPM;VPM;Verein Pendelzug-Mirage (VPM);CH;in use;pendelzug-mirage.ch;OTIF
 VPS;VPS;Verkehrsbetriebe Peine-Salzgitter GmbH;DE;in use;vps-bahn.de;
@@ -4062,7 +4097,7 @@ VTGA;VTGA;VTG Austria Ges.m.b.H;AT;in use;vtg.de;
 VTGB;VTGB;VTG Benelux;NL;in use;vtg.de;
 VTGCH;VTGCH;VTG Schweiz GmbH;CH;in use;vtg.com;OTIF
 VTGCZ;VTGCZ;RETRACK CZECH s.r.o.;CZ;in use;;
-VTGD;VTGD;VTG Aktiengesellschaft (VTG AG);DE;in use;vtg.de;
+VTGD;VTGD;VTG GmbH;DE;in use;vtg.de;
 VTGE;VTGE;VTG Rail España, S.L.;ES;Revoked;vtg.com;
 VTGF;VTGF;VTG France SAS;FR;in use;vtg.com;
 VTGI;VTGI;VTG Italia S.r.l.;IT;Revoked;vtg.com;
@@ -4095,7 +4130,7 @@ VZ;VZ;Výtopna Zdice z.s.;CZ;in use;saxi.cz;
 BЗСп;VZSP;ˮКоловагˮ АД;BG;Revoked;kolowag.bg;
 WAB;WAB;Westfälische Almetalbahn;DE;in use;wab-altenbeken.de;
 WABA;WABA;Waldbahn Almetal e.V.;DE;in use;waldbahnalmetal.de;
-WABCH;WABCH;Wengernalpbahn AG;CH;in use;www.jungfrau.ch;OTIF
+WABCH;WABCH;Wengernalpbahn AG;CH;in use;jungfrau.ch;OTIF
 WAG;WAG;Westfalen Aktiengesellschaft;DE;in use;;
 WAGN;WAGN;West Anglia Great Northern Railway;UK;Blocked;wagn.co.uk;
 WAGON;WAGON;WAGON-RENT Mirosław Maszoński;PL;in use;;
@@ -4156,10 +4191,11 @@ WKN;WKN;WESTMONTAGE Kabel und Netzwerk GmbH;DE;in use;;
 WL;WL;WIENER LINIEN GmbH & Co KG;AT;in use;wienerlinien.at;
 WLB;WLB;Wiener Lokalbahnen AG;AT;in use;wlb.at;
 WLC;WLC;Wiener Lokalbahnen Cargo GmbH;AT;in use;wlb.at;
-WLE;WLE;Westfälische Landeseisenbahn;DE;in use;wle-online.de;
+WLE;WLE;Westfälische Landes-Eisenbahn GmbH;DE;in use;wle-online.de;
 WLH;WLH;Westfälische-Lokomotiv-Fabrik Reuschling GmbH&co. KG;DE;in use;reuschling.de;
 WLS;WLS;Waggon und Lokreperatur Service GmbH;DE;in use;wls-moers.de;
 WM;WM;Wagonmarket, spol. s.r.o.;SK;in use;irsgroup.eu;
+WmaS;WMAS;Wohnmobil auf Schienen;CH;in use;;OTIF
 WMN;WMN;Wagon Management SRL;RO;in use;wagon.ro;
 WMSZ;WMSZ;Schneider & Schneider GmbH;DE;in use;;
 WNXFR;WNXFR;WYNX Freight s.r.o.;CZ;in use;wynxpool.cz;
@@ -4206,14 +4242,14 @@ YOSAR;YOSAR;Yosaria Trains, a.s.;SK;in use;;
 YPRY;YPRY;Yapiray Demiryolu IngŞaat Sistemleri San. Ve. Tic. A.Ş.;TR;in use;ym.com.tr;OTIF
 ZACH;ZACH;Zakłady Azotowe Chorzów S.A.;PL;in use;azoty-adipol.pl;
 ZAF;ZAF;Zuckerfabriken Aarberg und Frauenfeld AG;CH;in use;zucker.ch;OTIF
-ZAGRO;ZAGRO;ZAGRO Bahn- und Baumaschi;DE;in use;;
+ZAGRO;ZAGRO;ZAGRO Bahn- und Baumaschinen GmbH;DE;in use;zagro-group.com;
 ZAPUL;ZAPUL;Zakłady Azotowe PUŁAWY S.A.;PL;in use;zapulawy.pl;
 ZAS;ZAS;Zweckverband Abfallverwertung Südostbayern (ZAS);DE;in use;zas-burgkirchen.de;
 ZAWCO;ZAWCO;Zweckverband Abfallwirtschaft Nordwest Oberfranken;DE;in use;zaw-coburg.de;
 ZB;ZB;Zillertaler Verkehrsbetriebe AG;AT;in use;zillertalbahn.at;
 ZBAU;ZBAU;Zürcher Bau GmbH;DE;in use;zuercher.de;
 ZBB;ZBB;ZABABA s.r.o.;CZ;in use;masinka.cz;
-ZBCH;ZBCH;zb Zentralbahn AG;CH;in use;www.zentralbahn.ch;OTIF
+ZBCH;ZBCH;zb Zentralbahn AG;CH;in use;zentralbahn.ch;OTIF
 ZBCHS;ZBCHS;ZÁVOD BIOCHEMICKÝCH SLUŽEB, s.r.o.;CZ;in use;;
 ZBKR;ZBKR;Zakład Budownictwa Kolejowego Radom Paweł Czupryn;PL;in use;zbkradom.pl;
 ZBM;ZBM;Zeppelin Baumaschinen GmbH;DE;in use;zeppelin.de;
@@ -4234,7 +4270,7 @@ ZEPHI;ZEPHI;ZEPHIR S.p.A.;IT;in use;zephir.eu;
 ZFA;ZFA;SUIKER UNIE GMBH Zuckerfabrik Anklam;DE;in use;;
 ŽFBH;ZFBH;Željeznice Federacije Bosne i Hercegovine;BA;in use;zfbh.ba;OTIF
 ZGHB;ZGHB;Zakłady Górniczo-Hutnicze “Bolesław” S.A.;PL;in use;zgh.com.pl;
-ЗГОП;ZGOP;"Privredno društvo za građenje, remont i održavanje pruga ""ZGOP"" a.d. Novi Sad";RS;in use;zgop.rs;OTIF
+ЗГОП;ZGOP;Privredno društvo za građenje, remont i održavanje pruga "ZGOP" a.d. Novi Sad;RS;in use;zgop.rs;OTIF
 ŽGP;ZGP;SŽ - ŽELEZNIŠKO GRADBENO PODJETJE LJUBLJANA d.d.;SI;in use;sz-zgp.si;
 ZHL;ZHL;Zahnradbahn Honau - Lichtenstein e.V.;DE;in use;zhl.de;
 ЖПС;ZHPS;„ЖП Строѝ” АД;BG;in use;;
