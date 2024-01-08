@@ -1,0 +1,31 @@
+{
+  "id": "orte_be",
+  "description": "Telegraph Codes for Belgian railway stations^",
+  "headline": "Betriebsstellen Belgien",
+  "access": [{
+    "x_source": "BE",
+    "type": "#"
+  }],
+  "magic_hashtags": [
+    "_BE",
+    "🇧🇪"
+  ],
+  "data": [{
+    "id": "orte_de",
+    "short": "telegraph-code",
+    "long": "name",
+    "delim": ",",
+    "nolink": true,
+    "file": "sources/orte_be.csv",
+    "description": "Telegraph Codes",
+    "source": {
+      "name": "Open transport data in Belgium",
+      "url": "https://github.com/iRail/stations/pull/166/commits",
+      "modified": false
+    },
+    "license": {
+      "name": "CC-0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  }]
+}
