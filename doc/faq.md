@@ -13,34 +13,19 @@ Siehe auch die [FAQ-Abkürzungsliste des Bots](/dumps/faq.html).
 Mach doch mal ein einfaches Beispiel!
 -------------------------------------
 
-
-- So sieht der Bot diesen Status, aber wahrscheinlich nicht Antworten
+- So sieht der Bot einen Status, und wahrscheinlich auch Antworten
   darauf:
 
-> <span class="only-twitter">\#DS100 \#FF</span> <span
-  class="only-mastodon"> (Das mit den Magic Hashtags funktioniert bei
-  Mastodon nicht verlässlich)</span>
-
-- So sieht der Bot einen Tweet, und wahrscheinlich auch Antworten
-  darauf:
-
-> <span class="only-twitter">@\_ds\_100</span> <span
-  class="only-mastodon">@ril100@botsin.space</span> \#FF
+> @ril100@zug.network \#FF
 
 Warum antwortet mir der Bot nicht, obwohl er mir folgt?
 -------------------------------------------------------
 
+- Mastodon braucht manchmal ein bisschen Zeit, um Toots an die richtige
+  Stelle zu liefern. Das ist systemimmanent und kann nicht verbessert
+  werden.
 - Vielleicht ist er grade kaputt, der Rechner, auf dem er läuft
-  überlastet oder was anderes läuft schief. Meistens aber:
-- <onlyTwitter>Wenn dir der Bot folgt, einen Tweet von dir mit richtigem
-  Hashtag (sagen wir, #FF) aber nicht beantwortet, liegt es meistens
-  daran, dass dieser Tweet von dir eine Antwort auf einen anderen Tweet
-  ist. Einen Antwort-Thread „sieht“ der Bot nur dann, wenn er allen
-  beteiligten Personen im Thread folgt (oder wenn er selbst beteiligt
-  ist). Das liegt daran, wie Twitter die Timeline (für jede Benutzerin)
-  zusammenstellt.  Wird ein [Magic Hashtag](/finde-listen.html)
-  verwendet oder der Bot im Tweet (oder im Thread) erwähnt, sollte er
-  Tweets auch mitten in Threads sehen.</onlyTwitter>
+  überlastet oder was anderes läuft schief.
 
 Warum antwortet der Bot mir, obwohl ich das nicht will?
 -------------------------------------------------------
@@ -49,17 +34,17 @@ Warum antwortet der Bot mir, obwohl ich das nicht will?
   folgt nicht automatisch. Siehe unten.
 - Bei Status von nicht-gefolgten Benutzerinnen reagiert er auf
   Erwähnungen und seine [Magic Hashtags](/finde-listen.html) – aber nur
-  dann, wenn auch eine erweiterbare Abkürzung im Tweet steckt. Wenn das
+  dann, wenn auch eine erweiterbare Abkürzung im Toot steckt. Wenn das
   nicht erwünscht ist, ist der Bot nicht beleidigt, wenn er geblockt
   wird. Da der Bot keine personalisierten Daten speichert, kann man ihm
   nicht anders sagen, dass man von ihm ignoriert werden will. Wem es
   egal ist, ob der Bot antwortet oder nicht, aber selbst die Antworten
   des Bots einfach nicht sehen will, kann den Bot auf Stumm schalten.
-- Soll der Bot nur auf einzelne Tweets nicht antworten (aber das muss
-  man vorher wissen), kann dieser Tweet mit #NOBOT markiert werden.
-- Der Bot antwortet auch, wenn jemand anders einen Tweet beantwortet und
+- Soll der Bot nur auf einzelne Toots nicht antworten (aber das muss
+  man vorher wissen), kann dieser Toot mit #NOBOT markiert werden.
+- Der Bot antwortet auch, wenn jemand anders einen Toot beantwortet und
   in dieser Antwort den Bot markiert oder einen der Magic Hashtags
-  benutzt. Das kann für die Verfasserin des originalen Tweets verwirrend
+  benutzt. Das kann für die Verfasserin des originalen Toots verwirrend
   sein.
 
 Warum ist Groß-/Kleinschreibung so wichtig?

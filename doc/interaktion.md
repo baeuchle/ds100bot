@@ -6,12 +6,12 @@
 Interaktion mit dem Bot
 =======================
 
-Der Bot kann Benutzerinnen automatisch folgen, um ihre Tweets in seiner
-Timeline zu sehen und damit ohne gesonderte Aufwände auf diese Tweets zu
+Der Bot kann Benutzerinnen automatisch folgen, um ihre Toots in seiner
+Timeline zu sehen und damit ohne gesonderte Aufwände auf diese Toots zu
 antworten.
 
 Hierfür muss der Bot explizit erwähnt werden (eine einfache Antwort an
-den Bot reicht also nicht: der sichtbare Text des Tweets muss
+den Bot reicht also nicht: der sichtbare Text des Toots muss
 „__@\_ds\_100__“ enthalten!) und der Hashtag __\#folgenbitte__ erwähnt
 werden. (Die Kleinschreibung bei diesem Hashtag ist wichtig!)
 
@@ -20,7 +20,7 @@ entfolgen. Hierfür muss der Hashtag __\#entfolgen__ (wieder: klein
 geschrieben!) mit einer expliziten Erwähnung verbunden werden.
 
 Zu beiden Aktionen gibt der Bot keine eigene Rückmeldung; ob der Vorgang
-erfolgreich war, muss selbsttätig über die eigenen Twitter-Kanäle
+erfolgreich war, muss selbsttätig über die eigenen Social Media-Kanäle
 herausgefunden werden.
 
 Der Bot gibt auch darüber Auskunft, welchen Nutzer\*innen-spezifischen

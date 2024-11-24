@@ -6,7 +6,7 @@
 Finden der Abkürzungen
 ======================
 
-Wurde ein [Tweet gefunden](/finde-tweets.html) und die [aktuelle
+Wurde ein [Toot gefunden](/finde-toots.html) und die [aktuelle
 Abkürzungsliste](/finde-listen.html) festgestellt, wird der Text nach
 beantwortbaren Kürzeln durchsucht. Je nach Kontext werden
 unterschiedliche Dinge gefunden / beantwortet. __In jedem Fall ist
@@ -20,7 +20,7 @@ und in der [Schweiz](/dumps/orte_ch.html) „Herisau“. __He__ in Quelle
 <table>
  <thead>
   <tr>
-    <th rowspan="2">↓ Tweet ist/hat…</th>
+    <th rowspan="2">↓ Toot ist/hat…</th>
     <th colspan="2">Kürzel mit #,$,%,&amp;,/, aber ohne Quelle</th>
     <th colspan="3">Kürzel mit expliziter Quelle</th>
     <th colspan="2">Kürzel ohne #,$,%,&amp;,/</th>
@@ -86,17 +86,17 @@ und in der [Schweiz](/dumps/orte_ch.html) „Herisau“. __He__ in Quelle
 </table>
 
 (1): Kürzel ohne \#, $, &amp;, % oder / werden nur gefunden, wenn sonst
-keine Kandidaten im Tweet vorhanden sind.<br/>
+keine Kandidaten im Toot vorhanden sind.<br/>
 (2): Nur Kürzel ohne Kleinbuchstaben werden bei der Suche ohne \#, $,
 &amp;, % oder / gefunden.
 
 <table>
  <thead>
   <tr>
-   <th>↓ Tweet A ist/hat… ↓/ → A … →</th>
-   <th>… retweetet Tweet B mit Kommentar<br/>
+   <th>↓ Toot A ist/hat… ↓/ → A … →</th>
+   <th>… boostet Toot B mit Kommentar<br/>
        ODER<br/>
-       … beantwortet Tweet B:<br/>
+       … beantwortet Toot B:<br/>
        B wird…</th>
    <th>… enthält #folgenbitte oder #entfolgen</th>
   </tr>

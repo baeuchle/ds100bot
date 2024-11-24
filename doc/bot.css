@@ -32,22 +32,6 @@ blockquote::before {
   color: #888;
 }
 
-blockquote.tweet_nofollow::before {
-  content: "@ungefolgter twittert:";
-}
-
-blockquote.tweet_irgendwer::before {
-  content: "@irgendwer twittert:";
-}
-
-blockquote.tweet_follower::before {
-  content: "@gefolgter twittert:";
-}
-
-blockquote.tweet_bot::before {
-  content: "@_ds_100 twittert:";
-}
-
 table, th, td {
   border-collapse: collapse;
   border: thin black solid;
@@ -218,25 +202,10 @@ div.bigdumplist div.closenavi {
   color: #ff0000;
 }
 
-.only-twitter {
-  display: initial;
-  color: #0000ff;
-}
-
 .only-mastodon:before {
    content: "";
    display: inline-block;
    background-image: url('mastodon-icon.png');
-   background-size: 100% 100%;
-   height: 16px;
-   width: 16px;
-   margin-right: 4px;
-}
-
-.only-twitter:before {
-   content: "";
-   display: inline-block;
-   background-image: url('twitter-icon.png');
    background-size: 100% 100%;
    height: 16px;
    width: 16px;

@@ -1,24 +1,23 @@
 <p id="meta">
 <title>DS100-Bot Startseite</title>
 <desc>Erklärungen und Dokumentation zum Eisenbahnabkürzungsbot für
-Twitter und Mastodon</desc>
+Social Media</desc>
 </p>
 
 DS100/Ril100-Bot
 ================
 
 Diese Seite beschreibt den Eisenbahnabkürzungsbot für
-[Twitter (@\_ds\_100)](https://twitter.com/_ds_100) und Mastodon (<a rel="me"
-href="https://botsin.space/@ril100">@ril100@botsin.space</a>, <a
-rel="me" href="https://bahn.social/@ril100">@ril100@bahn.social</a> und
-<a rel="me" href="https://zug.network/@ril100">@ril100@zug.network</a>).
+Mastodon (<a rel="me"
+href="https://zug.network/@ril100">@ril100@zug.network</a> und <a
+rel="me" href="https://bahn.social/@ril100">@ril100@bahn.social</a>).
 
 Zweck des Bots
 --------------
 
 Der Bot soll helfen, Betriebsstellen Deutschen Bahn nach Ril 100
 (Betriebsstellenverzeichnis, ehemals DS 100) abzukürzen und trotzdem
-sicherzustellen, dass auch Dritte den Inhalt des Tweets verstehen
+sicherzustellen, dass auch Dritte den Inhalt des Toots verstehen
 können.
 
 Der Bot entspringt aus einem privaten Wochenendprojekt und wird _pro
@@ -29,37 +28,30 @@ Twitter vs. Mastodon
 --------------------
 
 Dieser Bot wurde ursprünglich für Twitter geschrieben und später so erweitert,
-dass er auch bei Mastodon eingesetzt werden kann. Aus diesen historischen
-Gründen benutzt die Dokumentation das _generische Twittertum_ und bezeichnet
-alles als 'Tweets', auch die 'Toots'.
-
-<span class="only-twitter">Dinge, die nur in Twitter relevant sind,
-sehen so aus</span>
-
-<span class="only-mastodon">Dinge, die nur in Mastodon relevant sind,
-sehen so aus</span>
+dass er auch bei Mastodon eingesetzt werden kann. Da aus Twitter
+mittlerweile ein faschistisches Arschlochloch geworden ist, wird dieses
+Netzwerk nicht mehr unterstützt.
 
 Instanz-spezifische Mastodon-Accounts
 =====================================
 
-<span class="only-mastodon">Die Accounts <a
-rel="me" href="https://bahn.social/@ril100">@ril100@bahn.social</a> und
-<a rel="me" href="https://zug.network/@ril100">@ril100@zug.network</a>
-beantworten Tweets in der lokalen Timeline der jeweiligen Bahn-zentrierten Mastodon-Instanzen.</span>
+Der Account <a rel="me"
+href="https://bahn.social/@ril100">@ril100@bahn.social</a> beantwortet
+Toots in der lokalen Timeline der jeweiligen Bahn-zentrierten
+Mastodon-Instanzen.
 
 Kurze Funktionsübersicht: Vier Schritte
 ---------------------------------------
 
 Der Bot funktioniert in vier Schritten:
 
-1. [Suche nach Tweets](/finde-tweets.html), die eventuell beantwortet
+1. [Suche nach Toots](/finde-toots.html), die eventuell beantwortet
    werden könnten
 2. [Herausfinden](/finde-listen.html), welche
    [Abkürzungslisten](/copyright.html) benutzt werden sollen
-3. Suche nach [Abkürzungen](/finde-lang.html) in <span
-   class="only-mastodon">Spoilertext,</span> Tweet-Text und
-   Bild-Alternativtexten
-4. [Antwort auf die Tweets](/aufbau-antworten.html) erstellen, in dem
-   die Abkürzungen ausgeschrieben werden.
+3. Suche nach [Abkürzungen](/finde-lang.html) in Spoilertext,
+   Toot-Inhalt und Bild-Alternativtexten
+4. [Antwort auf die Toots](/aufbau-antworten.html) erstellen, in dem die
+   Abkürzungen ausgeschrieben werden.
 
 Mit dem Bot kann auch [interagiert](/interaktion.html) werden.
