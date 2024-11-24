@@ -1,4 +1,4 @@
-"""Classes for mocking fake tweets and parsing those."""
+"""Classes for mocking fake toots and parsing those."""
 
 from .Api import MockApi
 from .Tweet import TweepyMock

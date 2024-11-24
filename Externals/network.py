@@ -152,7 +152,7 @@ Mehr Informationen findest du unter https://ds100.frankfurtium.de/finde-listen.h
         if other_id in tlist:
             logger.debug("get_other_status: other_id %d already in %s", other_id, str(tlist))
             return None
-        logger.debug("Trying to get other tweet")
+        logger.debug("Trying to get other status")
         msg = self.get_status(other_id)
         if not msg:
             return None
