@@ -119,7 +119,7 @@ class MockApi(Network): # pylint: disable=too-many-instance-attributes
         self.report_statisctics(stat_log, output, res_count)
         return res_count.tweet.missed + res_count.tweet.bad_content
 
-    def report_statisctics(self, stat_log, output, res_count): # pylint: disable=R0201
+    def report_statisctics(self, stat_log, output, res_count):
         denominator = (res_count.tweet.correct + res_count.tweet.missed +
                        res_count.tweet.bad_content)
         if denominator == 0:

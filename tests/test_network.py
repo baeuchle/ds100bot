@@ -13,7 +13,7 @@ class MockApi(Network): # pylint: disable=abstract-method
         self.willdefollow = willdefollow
         self.willfollow = willfollow
 
-    def is_followed(self, author): # pylint: disable=no-self-use
+    def is_followed(self, author):
         log.critical(author)
         return author == "follows"
 

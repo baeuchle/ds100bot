@@ -95,7 +95,7 @@ Mehr Informationen findest du unter https://ds100.frankfurtium.de/finde-listen.h
         self.post(msg, reply_to_status=message)
         follog_.log(45, "showdefault from @%s: %s", str(message.author), message.user_dmt)
 
-    def post_single(self, text, **_): # pylint: disable=no-self-use
+    def post_single(self, text, **_):
         """Actually posts text as a new status."""
         msg_logger.warning(text)
         return True

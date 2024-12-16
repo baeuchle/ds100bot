@@ -140,7 +140,8 @@ Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
     def get_status(self, status_id):
         try:
             return self.api.status(id=status_id)
-        except MastodonNotFoundError:
+        except MastodonNotFoundError as mnfe:
+            logger.debug("Cannot find status: %s", mnfe)
             return None
 
     def is_followed(self, user):

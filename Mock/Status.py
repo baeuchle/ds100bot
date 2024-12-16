@@ -141,7 +141,7 @@ class TweepyMock:
 
     def __str__(self):
         lines = self.full_text.splitlines()
-        length = max([len(l) for l in lines])
+        length = max(len(l) for l in lines)
         length = max(length, len(self.author.screen_name) + 2)
         result = "┏{}┓\n".format('━'*(length+2))
         result += ("┃ @{{:{}}} ┃\n".format(length - 1)).format(self.author.screen_name + ":")

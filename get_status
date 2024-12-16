@@ -1,0 +1,122 @@
+#!/usr/bin/python3
+
+"""Helper program for dumping details of real status objects
+
+Use this to generate test cases from the actual representation of status from the API"""
+
+import argparse
+import configparser
+import pprint
+from textwrap import dedent
+from urllib.parse import urlparse
+from pathlib import Path
+from Externals import set_arguments, setup_network, test_network_arguments
+
+def print_status_details(sobj, targetfile):
+    quoted_status_id = None
+    ext = ''
+    if 'quoted_status_id' in sobj:
+        quoted_status_id = sobj.quoted_status_id
+    if 'extended_entities' in sobj:
+        ext = 'extended_entities=\n{},'.format(pp.pformat(sobj.extended_entities))
+    print(dedent(f'''\
+    list_of_status.append(MockedStatus(
+        account=MockedUser(
+            acct={sobj.account.acct!r},
+            fields={sobj.account.fields!r},
+            uri={sobj.account.uri!r},
+            url={sobj.account.url!r}
+        ),
+        application={sobj.application!r},
+        content={sobj.content!r},
+        created_at={sobj.created_at!r},
+        edited_at={sobj.edited_at!r},
+        id={sobj.id!r},
+        in_reply_to_account_id={sobj.in_reply_to_account_id!r},
+        in_reply_to_id={sobj.in_reply_to_id!r},
+        language={sobj.language!r},
+        media_attachments={sobj.media_attachments!r},
+        mentions={sobj.mentions!r},
+        reblog={sobj.reblog!r},
+        sensitive={sobj.sensitive!r},
+        spoiler_text={sobj.spoiler_text!r},
+        tags={sobj.tags!r},
+        uri={sobj.uri!r},
+        url={sobj.url!r},
+        visibility={sobj.visibility!r}
+    )'''),
+    file=targetfile)
+
+parser = argparse.ArgumentParser(description=__doc__)
+group = parser.add_mutually_exclusive_group(required=True)
+group.add_argument('--id',
+                   dest='id',
+                   help='ID of the status that will be downloaded',
+                   type=int,
+                   required=False,
+                   action='store'
+                   )
+group.add_argument('--url',
+                   dest='url',
+                   help='URL of the status that will be downloaded',
+                   type=str,
+                   required=False,
+                   action='store'
+                   )
+parser.add_argument('--mode',
+                    dest='mode',
+                    choices=['dump', 'mock', 'both'],
+                    help=dedent('''\
+                    dump: Just dump the status and be done with it.
+                    mock: Currently disfunctional, create mock objects.
+                    '''),
+                    required=True,
+                    default='mock',
+                    action='store'
+                   )
+set_arguments(parser)
+
+args = parser.parse_args()
+do_mock = args.mode == 'mock'
+do_dump = args.mode == 'dump'
+if args.mode == 'both':
+    do_mock = True
+    do_dump = True
+
+configuration = configparser.ConfigParser()
+configuration.read(args.config)
+args.config = configuration
+network_name = test_network_arguments(args)
+
+network_api = setup_network(None, args, {})
+
+sid = args.id
+print("status id:", sid)
+if sid is None:
+    try:
+        sid = int(Path(urlparse(args.url).path).name)
+    except ValueError:
+        parser.error(f"Cannot extract status id from URL {args.url}")
+status_obj = network_api.get_status(sid)
+if status_obj is None:
+    parser.error(f"Status {sid} not found")
+
+pp = pprint.PrettyPrinter(indent=2, width=80)
+if do_mock:
+    with open(f'status_{sid}.py', 'w', encoding='utf-8') as target:
+        print(dedent('''\
+        import datetime
+        from Mock import MockedStatus, MockedUser
+        list_of_status = []
+        '''), file=target)
+        print_status_details(status_obj, target)
+        if status_obj.in_reply_to_id is not None:
+            replied_to_status = network_api.get_status(status_obj.in_reply_to_id)
+            print_status_details(replied_to_status, target)
+        # this, sadly, doesn't exist in Mastodon.
+        if 'quoted_status_id' in status_obj:
+            if status_obj.quoted_status_id is not None:
+                quoted_status = network_api.get_status(status_obj.quoted_status_id)
+                print_status_details(quoted_status, target)
+if do_dump:
+    pp.pprint(status_obj)
