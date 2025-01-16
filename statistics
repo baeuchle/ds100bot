@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''Helper for tweeting bot statistics'''
+'''Helper for tooting bot statistics'''
 
 import argparse
 import configparser

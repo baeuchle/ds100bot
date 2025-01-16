@@ -6,15 +6,11 @@
 Impressum
 =========
 
-Die meisten Tweets des Bots werden automatisch nach den [dargestellten
+Die meisten Toots des Bots werden automatisch nach den [dargestellten
 Regeln](/finde-lang.html) erzeugt. Erklärungen und Hilfestellungen
-können auch von den <span class="only-twitter">Twitter-Nutzern
-[@baeuchle](https://twitter.com/baeuchle/) und
-[@fips\_schneider](https://twitter.com/fips_schneider/)</span> <span
-class="only-mastodon">Mastodon-Nutzenden
-[@baeuchle@chaos.social](https://chaos.social/@baeuchle/) und
-[@telegnom@chaos.social](https://chaos.social/@telegnom)</span> gegeben
-werden und sollten einfach erkennbar sein.
+können auch von
+[@baeuchle@chaos.social](https://chaos.social/@baeuchle/) gegeben werden
+und sollten einfach erkennbar sein.
 
 Angaben gemäß §5 TMG:
 ---------------------

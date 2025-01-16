@@ -23,7 +23,7 @@ class Measure:
         text_so_far = ""
         for part in possible_parts:
             if not self.is_short_enough(part):
-                # next part is too big: put into its own tweet, separated with next
+                # next part is too big: put into its own status, separated with next
                 # separator.
                 if len(text_so_far.strip()) > 0:
                     status_list.append(text_so_far.strip())

@@ -6,10 +6,9 @@
 Beitragen
 =========
 
-Kommentare zum Bot, Fehlermeldungen und Ideen können gerne per Twitter an
-den [Bot selbst](https://twitter.com/_ds_100) oder an
-[@baeuchle](https://twitter.com/baeuchle) beziehungsweise bei Mastodon
-an [@baeuchle@chaos.social](https://chaos.social/@baeuchle) geschickt
+Kommentare zum Bot, Fehlermeldungen und Ideen können gerne per Mastodon an
+den [Bot selbst](https://zug.network/@ril100) oder (besser) an
+[@baeuchle@chaos.social](https://chaos.social/@baeuchle) geschickt
 werden oder als Issue bei
 [github](https://github.com/baeuchle/ds100bot/) angelegt werden.
 

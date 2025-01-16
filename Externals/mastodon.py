@@ -25,7 +25,7 @@ def set_arguments(ap):
                         required=True)
     group.add_argument('--readwrite',
                         action='store_true',
-                        help="Don't tweet, only read tweets.",
+                        help="Don't toot, only read toots.",
                         required=False)
 
 class Mastodon(Network):
@@ -51,16 +51,16 @@ class Mastodon(Network):
         if self.readonly:
             return None
         if 'reply_to_status' in kwargs:
-            orig_tweet = kwargs.pop('reply_to_status')
-            if orig_tweet:
+            orig_toot = kwargs.pop('reply_to_status')
+            if orig_toot:
                 try:
-                    return self.api.status_reply(orig_tweet, text)
+                    return self.api.status_reply(orig_toot, text)
                 except MastodonAPIError:
                     logger.exception("Error while tooting reply >%s<", text)
                     text = text[:len(text//2)] + " THIS TOOT WAS TOO LONG cc @baeuchle@chaos.social"
                     logger.critical("Now re-trying with >%s<", text)
                     try:
-                        return self.api.status_reply(orig_tweet, text)
+                        return self.api.status_reply(orig_toot, text)
                     except MastodonAPIError:
                         logger.exception("Second-level error while tooting reply")
         # not replying to anything:
@@ -140,7 +140,8 @@ Netzwerkes steht der Bot unter {self.public} zur Verfügung."""
     def get_status(self, status_id):
         try:
             return self.api.status(id=status_id)
-        except MastodonNotFoundError:
+        except MastodonNotFoundError as mnfe:
+            logger.debug("Cannot find status: %s", mnfe)
             return None
 
     def is_followed(self, user):
