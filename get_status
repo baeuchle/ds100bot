@@ -13,12 +13,6 @@ from pathlib import Path
 from Externals import set_arguments, setup_network, test_network_arguments
 
 def print_status_details(sobj, targetfile):
-    quoted_status_id = None
-    ext = ''
-    if 'quoted_status_id' in sobj:
-        quoted_status_id = sobj.quoted_status_id
-    if 'extended_entities' in sobj:
-        ext = 'extended_entities=\n{},'.format(pp.pformat(sobj.extended_entities))
     print(dedent(f'''\
     list_of_status.append(MockedStatus(
         account=MockedUser(
